@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-amber: #F59E0B;
+  --color-amber-light: #FCD34D;
+  --color-amber-dim: oklch(from #F59E0B l c h / 0.13);
+  --color-amber-glow: oklch(from #F59E0B l c h / 0.25);
+
+  /* Dark mode surfaces */
+  --color-vc-bg: #111318;
+  --color-vc-surface: #1A1F2B;
+  --color-vc-surface2: #222838;
+  --color-vc-border: #2A3040;
+  --color-vc-text: #F0F2F8;
+  --color-vc-text2: #9BA3B8;
+  --color-vc-text3: #5C6478;
+
+  /* Light mode surfaces */
+  --color-vc-bg-light: #F8F9FB;
+  --color-vc-surface-light: #FFFFFF;
+  --color-vc-surface2-light: #F0F1F4;
+  --color-vc-border-light: #E5E7EB;
+  --color-vc-text-light: #1A1F2B;
+  --color-vc-text2-light: #6B7280;
+  --color-vc-text3-light: #9CA3AF;
+
+  /* Accents */
+  --color-vc-blue: #667eea;
+  --color-vc-red: #EF4444;
+  --color-vc-green: #34D399;
+  --color-vc-purple: #A78BFA;
+  --color-vc-orange: #FB923C;
+
+  /* Font */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Border radius */
+  --radius-card: 16px;
+  --radius-button: 12px;
+  --radius-badge: 8px;
+}
+
+/* Dark mode by default */
+:root {
+  color-scheme: dark;
+  --bg: var(--color-vc-bg);
+  --surface: var(--color-vc-surface);
+  --surface2: var(--color-vc-surface2);
+  --border: var(--color-vc-border);
+  --text: var(--color-vc-text);
+  --text2: var(--color-vc-text2);
+  --text3: var(--color-vc-text3);
+}
+
+.light {
+  color-scheme: light;
+  --bg: var(--color-vc-bg-light);
+  --surface: var(--color-vc-surface-light);
+  --surface2: var(--color-vc-surface2-light);
+  --border: var(--color-vc-border-light);
+  --text: var(--color-vc-text-light);
+  --text2: var(--color-vc-text2-light);
+  --text3: var(--color-vc-text3-light);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background-color: oklch(from #F59E0B l c h / 0.3);
+  color: white;
+}
