@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Clock, ArrowRight } from 'lucide-react';
+import { Clock } from 'lucide-react';
+import { SKILL_COLORS } from '@/lib/courses';
 
 interface BlogCardProps {
   title: string;
@@ -16,37 +17,42 @@ export default function BlogCard({ title, description, slug, date, readTime, cat
     month: 'long',
     year: 'numeric',
   });
+  const color = SKILL_COLORS[category] || '#F59E0B';
 
   return (
     <Link
       href={`/blog/${slug}`}
-      className="group block rounded-2xl border p-6 transition-all hover:scale-[0.98] hover:border-amber-500/30"
+      className="group flex flex-col rounded-2xl border p-5 transition-all hover:scale-[0.98]"
       style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
     >
-      <span
-        className="inline-block text-xs font-bold px-2.5 py-1 rounded-lg mb-3"
-        style={{ backgroundColor: 'var(--surface2)', color: 'var(--text2)' }}
-      >
-        {category}
-      </span>
+      <div className="flex items-center gap-2 mb-3">
+        <span
+          className="text-[11px] font-bold px-2 py-0.5 rounded-md"
+          style={{ backgroundColor: color + '15', color }}
+        >
+          {category}
+        </span>
+        <span className="text-[11px] flex items-center gap-1" style={{ color: 'var(--text3)' }}>
+          <Clock className="h-3 w-3" />
+          {readTime} min
+        </span>
+      </div>
 
-      <h3 className="text-lg font-bold leading-tight mb-2" style={{ color: 'var(--text)' }}>
+      <h3 className="text-base font-bold leading-snug mb-2" style={{ color: 'var(--text)' }}>
         {title}
       </h3>
 
-      <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+      <p className="text-[13px] leading-relaxed flex-1 mb-4" style={{ color: 'var(--text3)' }}>
         {description}
       </p>
 
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3 text-xs" style={{ color: 'var(--text3)' }}>
-          <span>{formatted}</span>
-          <span className="flex items-center gap-1">
-            <Clock className="h-3 w-3" />
-            {readTime} min
-          </span>
-        </div>
-        <ArrowRight className="h-4 w-4 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+      <div className="flex items-center justify-between pt-3 border-t mt-auto" style={{ borderColor: 'var(--border)' }}>
+        <span className="text-[11px] font-medium" style={{ color: 'var(--text3)' }}>
+          {formatted}
+        </span>
+        <span className="text-[12px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity" style={{ color }}>
+          Lees meer
+        </span>
       </div>
     </Link>
   );

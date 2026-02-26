@@ -50,7 +50,7 @@ const APP_FEATURES = [
   { icon: Brain, title: 'Pulse Check-in', description: 'Dagelijkse reflectie om bewust stil te staan bij je vaderschap' },
   { icon: BarChart3, title: 'Voortgang bijhouden', description: 'Zie je streak, XP en level groeien naarmate je vordert' },
   { icon: Trophy, title: 'Badges & beloningen', description: 'Verdien badges voor je inzet, streaks en voltooide trainingen' },
-  { icon: Zap, title: '2-10 minuten per dag', description: 'Past in elk druk schema — korte, krachtige oefeningen' },
+  { icon: Zap, title: '2-10 minuten per dag', description: 'Past in elk druk schema. Korte, krachtige oefeningen' },
   { icon: Users, title: 'Community', description: 'Deel ervaringen en tips met andere vaders in de buurt' },
   { icon: Smartphone, title: 'Offline beschikbaar', description: 'Oefeningen en trainingen werken ook zonder internet' },
 ];
@@ -70,7 +70,7 @@ export default function AppDownloadPage() {
               trainingen, voortgang bijhouden en een community van vaders die hetzelfde doel hebben.
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--text2)' }}>
-              De app bevat korte trainingen over elk onderwerp — van emotiecoaching tot grenzen stellen.
+              De app bevat korte trainingen over elk onderwerp, van emotiecoaching tot grenzen stellen.
               Eenmalige aankoop, geen abonnement. Koop eenmaal en krijg toegang tot alles.
             </p>
 
@@ -89,13 +89,13 @@ export default function AppDownloadPage() {
                 className="px-6 py-3 rounded-xl text-center text-sm font-bold"
                 style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
               >
-                App Store — Binnenkort
+                App Store · Binnenkort
               </div>
               <div
                 className="px-6 py-3 rounded-xl text-center text-sm font-bold"
                 style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
               >
-                Google Play — Binnenkort
+                Google Play · Binnenkort
               </div>
             </div>
           </div>

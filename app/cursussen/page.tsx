@@ -1,86 +1,16 @@
 import type { Metadata } from 'next';
+import { Download, Check, BookOpen } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
+import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
 
 export const metadata: Metadata = {
   title: 'Cursussen',
   description: 'Praktische PDF-cursussen voor vaders. Gebaseerd op wetenschap en psychologie. Direct toepasbaar.',
 };
 
-const SKILL_COLORS: Record<string, string> = {
-  Emotiecoaching: '#EF4444',
-  Grenzen: '#FBBF24',
-  Aanwezigheid: '#667eea',
-  Zelfregulatie: '#34D399',
-  Verbinding: '#60A5FA',
-  Herstel: '#FB923C',
-  Autonomie: '#A78BFA',
-  Reflectie: '#C084FC',
-};
-
-const COURSES = [
-  {
-    title: 'Emotiecoaching voor Vaders',
-    description: 'Leer hoe je je kind helpt omgaan met emoties. Van driftbuien tot verdriet — praktische handvatten voor elke dag.',
-    price: 14.95,
-    slug: 'emotiecoaching-vaders',
-    category: 'Emotiecoaching',
-    color: SKILL_COLORS.Emotiecoaching,
-    status: 'coming-soon' as const,
-    features: ['40+ pagina\'s praktische oefeningen', 'Gebaseerd op de Gottman-methode', 'Werkbladen en reflectieopdrachten'],
-  },
-  {
-    title: 'Grenzen Stellen met Liefde',
-    description: 'Hoe stel je gezonde grenzen zonder de band met je kind te beschadigen? Concrete scripts en voorbeelden.',
-    price: 12.95,
-    slug: 'grenzen-stellen',
-    category: 'Grenzen',
-    color: SKILL_COLORS.Grenzen,
-    status: 'coming-soon' as const,
-    features: ['Concrete scripts en zinnen', 'Leeftijdsspecifieke tips (0-18)', 'Inclusief werkbladen'],
-  },
-  {
-    title: 'Aanwezig Vaderschap',
-    description: 'Kwaliteitstijd in een druk leven. Leer hoe je echt aanwezig bent, ook in korte momenten.',
-    price: 9.95,
-    slug: 'aanwezig-vaderschap',
-    category: 'Aanwezigheid',
-    color: SKILL_COLORS.Aanwezigheid,
-    status: 'coming-soon' as const,
-    features: ['Dagelijkse micro-oefeningen', '20+ bewezen technieken', 'Reflectie-opdrachten'],
-  },
-  {
-    title: 'Zelfregulatie als Vader',
-    description: 'Hoe blijf je kalm als je kind je tot het uiterste drijft? Leer je eigen emoties reguleren.',
-    price: 11.95,
-    slug: 'zelfregulatie-vader',
-    category: 'Zelfregulatie',
-    color: SKILL_COLORS.Zelfregulatie,
-    status: 'coming-soon' as const,
-    features: ['Ademhalingstechnieken', 'Cognitieve herkadering', 'Noodplan voor moeilijke momenten'],
-  },
-  {
-    title: 'Verbinding met je Tiener',
-    description: 'De puberteit hoeft geen slagveld te zijn. Bouw een sterke band met je tiener.',
-    price: 14.95,
-    slug: 'verbinding-tiener',
-    category: 'Verbinding',
-    color: SKILL_COLORS.Verbinding,
-    status: 'coming-soon' as const,
-    features: ['Communicatietechnieken', 'Omgaan met terugtrekking', 'Vertrouwen opbouwen'],
-  },
-  {
-    title: 'Herstel na Conflict',
-    description: 'Iedereen maakt fouten. Leer hoe je herstelt na een ruzie of een moment waar je spijt van hebt.',
-    price: 9.95,
-    slug: 'herstel-na-conflict',
-    category: 'Herstel',
-    color: SKILL_COLORS.Herstel,
-    status: 'coming-soon' as const,
-    features: ['Hersteltechnieken', 'Verontschuldigingsgids', 'Preventie-strategieën'],
-  },
-];
-
 export default function CursussenPage() {
+  const courses = getAllCourses();
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="max-w-2xl mb-10">
@@ -88,15 +18,107 @@ export default function CursussenPage() {
           Cursussen
         </h1>
         <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-          Praktische PDF-cursussen waarmee je direct aan de slag kunt. Geen coaching nodig —
-          jij bepaalt het tempo.
+          8 verdiepende PDF-cursussen waarmee je direct aan de slag kunt. Wetenschappelijk onderbouwd,
+          praktisch toepasbaar. Jij bepaalt het tempo.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {COURSES.map((course) => (
+      {/* Gratis snelgids */}
+      <div
+        className="rounded-2xl border p-6 sm:p-8 mb-8"
+        style={{ borderColor: '#F59E0B40', backgroundColor: 'var(--surface)' }}
+      >
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div
+            className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl"
+            style={{ backgroundColor: '#F59E0B' }}
+          >
+            <BookOpen className="h-7 w-7 text-black" />
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#F59E0B30', color: '#F59E0B' }}>
+                GRATIS
+              </span>
+            </div>
+            <h2 className="text-xl font-extrabold mb-1" style={{ color: 'var(--text)' }}>
+              {SNELGIDS.title}
+            </h2>
+            <p className="text-sm" style={{ color: 'var(--text2)' }}>
+              {SNELGIDS.description}
+            </p>
+          </div>
+          <a
+            href="/api/free-download"
+            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-black transition-transform hover:scale-[0.97]"
+            style={{ backgroundColor: '#F59E0B' }}
+          >
+            <Download className="h-4 w-4" />
+            Download PDF
+          </a>
+        </div>
+      </div>
+
+      {/* Alle 8 cursussen */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {courses.map((course) => (
           <CourseCard key={course.slug} {...course} />
         ))}
+      </div>
+
+      {/* Bundel */}
+      <div
+        className="mt-8 rounded-2xl border p-6 sm:p-8"
+        style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}
+      >
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>
+                Bundel
+              </span>
+              <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
+                Binnenkort
+              </span>
+            </div>
+            <h2 className="text-2xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
+              {BUNDLE.title}
+            </h2>
+            <p className="text-sm mb-4" style={{ color: 'var(--text2)' }}>
+              {BUNDLE.description}
+            </p>
+            <ul className="space-y-1.5">
+              {[
+                'Alle 8 cursussen in een download',
+                '451 pagina\'s, 77 hoofdstukken',
+                'Honderden oefeningen en werkbladen',
+                `${Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting ten opzichte van losse aankoop`,
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-sm" style={{ color: 'var(--text2)' }}>
+                  <Check className="h-4 w-4 shrink-0 text-amber-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="text-center sm:text-right shrink-0">
+            <div className="text-sm line-through" style={{ color: 'var(--text3)' }}>
+              &euro;{BUNDLE.originalPrice.toFixed(2).replace('.', ',')}
+            </div>
+            <div className="text-4xl font-extrabold" style={{ color: '#F59E0B' }}>
+              &euro;{BUNDLE.price.toFixed(2).replace('.', ',')}
+            </div>
+            <div className="text-xs mb-4" style={{ color: 'var(--text3)' }}>
+              8 cursussen &middot; eenmalige betaling
+            </div>
+            <div
+              className="px-6 py-3 rounded-xl text-sm font-bold text-center"
+              style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
+            >
+              Binnenkort beschikbaar
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

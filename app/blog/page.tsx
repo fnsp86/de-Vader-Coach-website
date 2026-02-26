@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Tips, inzichten en praktisch advies voor vaders. Gebaseerd op wetenschap en ervaring.',
 };
 
-const PLACEHOLDER_POSTS = [
+const POSTS_LIST = [
   {
     title: '5 Manieren om Echt Aanwezig te Zijn voor je Kind',
     description: 'Kwaliteitstijd hoeft niet uren te duren. Ontdek vijf bewezen technieken om in korte momenten een sterke band op te bouwen.',
@@ -17,7 +17,7 @@ const PLACEHOLDER_POSTS = [
   },
   {
     title: 'Waarom Driftbuien Geen Gedragsprobleem Zijn',
-    description: 'Wat er écht gebeurt in het brein van je kind tijdens een driftbui, en hoe je er het beste mee omgaat.',
+    description: 'Wat er echt gebeurt in het brein van je kind tijdens een driftbui, en hoe je er het beste mee omgaat.',
     slug: 'driftbuien-begrijpen',
     date: '2026-02-15',
     readTime: 7,
@@ -39,6 +39,38 @@ const PLACEHOLDER_POSTS = [
     readTime: 4,
     category: 'Herstel',
   },
+  {
+    title: 'Waarom Je Kind Precies Jouw Triggers Kent',
+    description: 'Je kind drukt op je knoppen als geen ander. Begrijp waarom, en leer er anders mee omgaan.',
+    slug: 'waarom-je-kind-je-triggers',
+    date: '2026-01-28',
+    readTime: 6,
+    category: 'Zelfregulatie',
+  },
+  {
+    title: 'Loslaten Zonder Angst: Je Kind Ruimte Geven',
+    description: 'De paradox van beschermen en loslaten. Hoe geef je je kind autonomie zonder de verbinding te verliezen?',
+    slug: 'loslaten-zonder-angst',
+    date: '2026-01-20',
+    readTime: 5,
+    category: 'Autonomie',
+  },
+  {
+    title: 'Praten met je Tiener: Waarom Zij-aan-Zij Werkt',
+    description: 'Je tiener wil niet praten? Probeer het eens zij aan zij in plaats van tegenover elkaar.',
+    slug: 'praten-met-je-tiener',
+    date: '2026-01-12',
+    readTime: 5,
+    category: 'Verbinding',
+  },
+  {
+    title: 'Reflecteren als Vader: De Meest Onderschatte Vaardigheid',
+    description: 'De vader die begrijpt waarom hij boos wordt, is al aan het veranderen.',
+    slug: 'reflecteren-als-vader',
+    date: '2026-01-05',
+    readTime: 4,
+    category: 'Reflectie',
+  },
 ];
 
 export default function BlogPage() {
@@ -54,7 +86,7 @@ export default function BlogPage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {PLACEHOLDER_POSTS.map((post) => (
+        {POSTS_LIST.map((post) => (
           <BlogCard key={post.slug} {...post} />
         ))}
       </div>

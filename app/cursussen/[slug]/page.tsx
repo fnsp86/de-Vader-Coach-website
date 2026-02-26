@@ -1,69 +1,26 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BookOpen, Check, ArrowLeft } from 'lucide-react';
+import {
+  Eye, Heart, Waves, Shield, Sprout, RefreshCw, Handshake, Brain,
+  BookOpen, Check, ArrowLeft, FileText,
+} from 'lucide-react';
+import { COURSES, type Course } from '@/lib/courses';
+import BuyButton from '@/components/BuyButton';
 
-// Placeholder course data — later replaced by MDX/CMS
-const COURSES: Record<string, {
-  title: string;
-  description: string;
-  longDescription: string;
-  price: number;
-  category: string;
-  status: 'available' | 'coming-soon';
-  features: string[];
-  learnPoints: string[];
-  forWho: string[];
-}> = {
-  'emotiecoaching-vaders': {
-    title: 'Emotiecoaching voor Vaders',
-    description: 'Leer hoe je je kind helpt omgaan met emoties.',
-    longDescription: 'Deze cursus leert je de basisprincipes van emotiecoaching: hoe je de emoties van je kind erkent, benoemt en begeleidt. Gebaseerd op de Gottman-methode en moderne ontwikkelingspsychologie.',
-    price: 14.95,
-    category: 'Emotiecoaching',
-    status: 'coming-soon',
-    features: ['40+ pagina\'s', 'Werkbladen', 'Voorbeelddialogen', 'Reflectieopdrachten'],
-    learnPoints: [
-      'Emoties herkennen en benoemen bij je kind',
-      'Empathisch reageren op driftbuien',
-      'Je kind leren omgaan met frustratie',
-      'De emotionele band versterken',
-    ],
-    forWho: [
-      'Vaders van kinderen 0-12 jaar',
-      'Vaders die moeite hebben met driftbuien',
-      'Vaders die hun kind beter willen begrijpen',
-    ],
-  },
-  'grenzen-stellen': {
-    title: 'Grenzen Stellen met Liefde',
-    description: 'Gezonde grenzen zonder de band te beschadigen.',
-    longDescription: 'Leer hoe je duidelijke, liefdevolle grenzen stelt die je kind helpen groeien. Met concrete scripts, voorbeeldgesprekken en werkbladen voor elke leeftijd.',
-    price: 12.95,
-    category: 'Grenzen',
-    status: 'coming-soon',
-    features: ['35+ pagina\'s', 'Scripts per leeftijd', 'Werkbladen', 'Checklists'],
-    learnPoints: [
-      'Grenzen stellen zonder schreeuwen',
-      'Consequenties die werken',
-      'Nee zeggen met empathie',
-      'Leeftijdsgeschikte verwachtingen',
-    ],
-    forWho: [
-      'Vaders van kinderen 2-18 jaar',
-      'Vaders die worstelen met consequent zijn',
-      'Vaders die een betere balans zoeken',
-    ],
-  },
+const ICON_MAP: Record<string, typeof Eye> = {
+  Eye, Heart, Waves, Shield, Sprout, RefreshCw, Handshake, Brain, BookOpen,
 };
 
-// Fallback for unknown slugs
-const DEFAULT_COURSE = {
+const DEFAULT_COURSE: Course = {
   title: 'Cursus niet gevonden',
   description: '',
   longDescription: 'Deze cursus is nog niet beschikbaar.',
   price: 0,
+  pages: 0,
   category: '',
-  status: 'coming-soon' as const,
+  color: '#F59E0B',
+  icon: 'BookOpen',
+  status: 'coming-soon',
   features: [],
   learnPoints: [],
   forWho: [],
@@ -78,6 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const course = COURSES[slug] ?? DEFAULT_COURSE;
+  const accentColor = course.color || '#F59E0B';
+  const IconComponent = ICON_MAP[course.icon] || BookOpen;
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -92,16 +51,16 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
 
       {/* Header */}
       <div className="flex items-start gap-4 mb-6">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-500/10">
-          <BookOpen className="h-7 w-7 text-amber-400" />
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl" style={{ backgroundColor: accentColor + '15' }}>
+          <IconComponent className="h-7 w-7" style={{ color: accentColor }} />
         </div>
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text2)' }}>
+            <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: accentColor + '15', color: accentColor }}>
               {course.category}
             </span>
             {course.status === 'coming-soon' && (
-              <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-400">
+              <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
                 Binnenkort beschikbaar
               </span>
             )}
@@ -125,7 +84,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
             <ul className="space-y-3">
               {course.learnPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-amber-400 shrink-0 mt-0.5" />
+                  <Check className="h-5 w-5 shrink-0 mt-0.5" style={{ color: accentColor }} />
                   <span className="text-sm" style={{ color: 'var(--text2)' }}>{point}</span>
                 </li>
               ))}
@@ -138,7 +97,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
             <ul className="space-y-2">
               {course.forWho.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm" style={{ color: 'var(--text2)' }}>
-                  <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ backgroundColor: '#F59E0B' }} />
+                  <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ backgroundColor: accentColor }} />
                   {item}
                 </li>
               ))}
@@ -146,14 +105,14 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           </div>
         </div>
 
-        {/* Sidebar — koop card */}
+        {/* Sidebar */}
         <div className="lg:col-span-1">
           <div className="sticky top-24 rounded-2xl border p-6" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-            <div className="text-3xl font-extrabold mb-1" style={{ color: '#F59E0B' }}>
+            <div className="text-3xl font-extrabold mb-1" style={{ color: accentColor }}>
               &euro;{course.price.toFixed(2).replace('.', ',')}
             </div>
             <p className="text-xs mb-4" style={{ color: 'var(--text3)' }}>
-              Eenmalige betaling · PDF download
+              Eenmalige betaling &middot; PDF download
             </p>
 
             {course.status === 'coming-soon' ? (
@@ -161,20 +120,27 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
                 Binnenkort beschikbaar
               </div>
             ) : (
-              <button className="w-full px-5 py-3.5 rounded-xl text-base font-bold text-black transition-transform hover:scale-[0.97]" style={{ backgroundColor: '#F59E0B' }}>
-                Kopen
-              </button>
+              <BuyButton slug={slug} color={accentColor} />
             )}
 
             {/* Features */}
             <ul className="mt-5 space-y-2">
               {course.features.map((f) => (
                 <li key={f} className="flex items-center gap-2 text-xs" style={{ color: 'var(--text3)' }}>
-                  <Check className="h-3.5 w-3.5 text-amber-400" />
+                  <Check className="h-3.5 w-3.5" style={{ color: accentColor }} />
                   {f}
                 </li>
               ))}
             </ul>
+
+            {course.pages > 0 && (
+              <div className="mt-4 pt-4 border-t flex items-center gap-2" style={{ borderColor: 'var(--border)' }}>
+                <FileText className="h-4 w-4" style={{ color: 'var(--text3)' }} />
+                <span className="text-xs" style={{ color: 'var(--text3)' }}>
+                  {course.pages} pagina&apos;s
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </div>

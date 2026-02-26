@@ -25,7 +25,7 @@ const VALUES = [
   {
     icon: Users,
     title: 'Voor alle vaders',
-    description: 'Of je nu een ervaren vader bent of net begint — onze cursussen passen zich aan op jouw situatie.',
+    description: 'Of je nu een ervaren vader bent of net begint, onze cursussen passen zich aan op jouw situatie.',
   },
   {
     icon: Sprout,
@@ -50,7 +50,7 @@ export default function OverPage() {
           </h1>
           <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
             De Vadercoach is er om de drempel naar hulp voor vaders te verlagen.
-            Wij geloven dat elke vader beter kan worden — niet door perfectie na te streven,
+            Wij geloven dat elke vader beter kan worden, niet door perfectie na te streven,
             maar door elke dag een klein stapje te zetten.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function OverPage() {
                 <p>
                   We bieden geen coaching sessies aan en fungeren niet als therapeut.
                   Wat we wél doen: je voorzien van het beste materiaal om zelf aan de slag te gaan.
-                  Jij bent de expert van je eigen gezin — wij geven je de tools.
+                  Jij bent de expert van je eigen gezin. Wij geven je de tools.
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function OverPage() {
                 {[
                   'Geen persoonlijke coaching of therapie',
                   'Geen vervanging voor professionele hulp',
-                  'Geen oordeel — alleen ondersteuning',
+                  'Geen oordeel, alleen ondersteuning',
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm font-medium" style={{ color: 'var(--text3)' }}>
                     <span className="h-1.5 w-1.5 rounded-full bg-gray-500 shrink-0" />

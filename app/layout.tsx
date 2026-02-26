@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'De Vadercoach — Word elke dag een betere vader',
+    default: 'De Vadercoach | Word elke dag een betere vader',
     template: '%s | De Vadercoach',
   },
   description:
