@@ -4,8 +4,23 @@ let redis: Redis | null = null;
 
 function getRedis(): Redis | null {
   if (redis) return redis;
-  const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL ?? process.env.STORAGE_URL;
-  const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.STORAGE_TOKEN;
+
+  // Try direct REST API vars first
+  let url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL ?? process.env.STORAGE_URL;
+  let token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.STORAGE_TOKEN;
+
+  // Fallback: derive REST credentials from REDIS_URL (rediss://default:TOKEN@HOST:PORT)
+  if (!url || !token) {
+    const redisUrl = process.env.REDIS_URL;
+    if (redisUrl) {
+      try {
+        const parsed = new URL(redisUrl);
+        url = `https://${parsed.hostname}`;
+        token = parsed.password;
+      } catch { /* ignore parse errors */ }
+    }
+  }
+
   if (!url || !token) return null;
   redis = new Redis({ url, token });
   return redis;
