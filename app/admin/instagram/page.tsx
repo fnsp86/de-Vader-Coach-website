@@ -243,14 +243,14 @@ export default function InstagramPage() {
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-extrabold" style={{ color: 'var(--text)' }}>
-          Instagram Tool
+      <div className="flex items-center justify-between mb-4 sm:mb-6">
+        <h1 className="text-xl sm:text-2xl font-extrabold" style={{ color: 'var(--text)' }}>
+          Instagram
         </h1>
         <div className="flex items-center gap-2">
           <Link
             href="/admin/instagram/kalender"
-            className="flex items-center gap-1.5 text-xs font-bold rounded-xl border px-4 py-2.5 transition-colors hover:border-amber-500/30"
+            className="flex items-center gap-1.5 text-xs font-bold rounded-xl border px-3 sm:px-4 py-2 sm:py-2.5 transition-colors hover:border-amber-500/30"
             style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
           >
             <Calendar className="h-3.5 w-3.5" />
@@ -261,48 +261,48 @@ export default function InstagramPage() {
 
       {/* Action bar: Random + Vrije Post */}
       <div
-        className="rounded-2xl border p-4 mb-6 flex items-center gap-3 flex-wrap"
+        className="rounded-2xl border p-3 sm:p-4 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3 overflow-x-auto"
         style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
       >
-        <Shuffle className="h-4 w-4" style={{ color: '#F59E0B' }} />
-        <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Random:</span>
+        <Shuffle className="h-4 w-4 shrink-0" style={{ color: '#F59E0B' }} />
+        <span className="text-xs sm:text-sm font-bold shrink-0" style={{ color: 'var(--text)' }}>Random:</span>
         {[1, 3, 5, 8].map((n) => (
           <button
             key={n}
             onClick={() => handleRandom(n)}
-            className="text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10"
+            className="text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
             style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
           >
-            {n === 1 ? '1 slide' : `${n} slides`}
+            {n === 1 ? '1' : n}
           </button>
         ))}
-        <div className="w-px h-6 mx-1" style={{ backgroundColor: 'var(--border)' }} />
+        <div className="w-px h-6 shrink-0" style={{ backgroundColor: 'var(--border)' }} />
         <button
           onClick={startVrijePost}
-          className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10"
+          className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
           style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
         >
           <Type className="h-3.5 w-3.5" />
-          Vrije post
+          Vrij
         </button>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Left: Content browser */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+        {/* Left: Content browser — on mobile shows below editor via order */}
         <div
-          className="rounded-2xl border overflow-hidden"
+          className="rounded-2xl border overflow-hidden order-2 lg:order-1"
           style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
         >
           <div className="flex border-b" style={{ borderColor: 'var(--border)' }}>
             {([
-              { id: 'blog' as Tab, label: 'Blogposts', icon: FileText, count: POSTS_LIST.length },
+              { id: 'blog' as Tab, label: 'Blog', icon: FileText, count: POSTS_LIST.length },
               { id: 'cursussen' as Tab, label: 'Cursussen', icon: BookOpen, count: courses.length },
               { id: 'experience' as Tab, label: 'Experience', icon: Calendar, count: 22 },
             ]).map((t) => (
               <button
                 key={t.id}
                 onClick={() => setTab(t.id)}
-                className="flex-1 flex items-center justify-center gap-1.5 px-3 py-3 text-xs font-bold transition-colors"
+                className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-2.5 sm:py-3 text-[11px] sm:text-xs font-bold transition-colors"
                 style={{
                   color: tab === t.id ? '#F59E0B' : 'var(--text3)',
                   borderBottom: tab === t.id ? '2px solid #F59E0B' : '2px solid transparent',
@@ -310,12 +310,12 @@ export default function InstagramPage() {
               >
                 <t.icon className="h-3.5 w-3.5" />
                 {t.label}
-                <span className="opacity-60">({t.count})</span>
+                <span className="opacity-60 hidden sm:inline">({t.count})</span>
               </button>
             ))}
           </div>
 
-          <div className="max-h-[600px] overflow-y-auto p-3 space-y-1">
+          <div className="max-h-[300px] sm:max-h-[600px] overflow-y-auto p-2 sm:p-3 space-y-1">
             {tab === 'blog' &&
               POSTS_LIST.map((post) => (
                 <ContentItem
@@ -352,8 +352,8 @@ export default function InstagramPage() {
           </div>
         </div>
 
-        {/* Right: Post editor */}
-        <div className="space-y-4">
+        {/* Right: Post editor — on mobile shows first via order */}
+        <div className="space-y-3 sm:space-y-4 order-1 lg:order-2">
           {slides[0]?.text ? (
             <>
               {/* Slide thumbnails */}
@@ -413,14 +413,15 @@ export default function InstagramPage() {
                 className="rounded-2xl border overflow-hidden"
                 style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
               >
-                <div className="flex items-center gap-2 px-4 py-3 border-b" style={{ borderColor: 'var(--border)' }}>
-                  <ImageIcon className="h-4 w-4" style={{ color: '#F59E0B' }} />
-                  <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>
+                <div className="px-3 sm:px-4 py-2 sm:py-3 border-b space-y-2" style={{ borderColor: 'var(--border)' }}>
+                <div className="flex items-center gap-2">
+                  <ImageIcon className="h-4 w-4 shrink-0" style={{ color: '#F59E0B' }} />
+                  <span className="text-xs font-bold shrink-0" style={{ color: 'var(--text)' }}>
                     {slides.length > 1 ? `Slide ${activeSlide + 1}` : 'Preview'}
                   </span>
                   <button
                     onClick={() => handleRandom(slides.length)}
-                    className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10"
+                    className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
                     style={{ color: '#F59E0B' }}
                     title="Nieuwe random content"
                   >
@@ -429,28 +430,29 @@ export default function InstagramPage() {
                   {slides.length === 1 && (
                     <button
                       onClick={addSlide}
-                      className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10"
+                      className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
                       style={{ color: 'var(--text3)' }}
                     >
                       <Plus className="h-3 w-3" /> Carousel
                     </button>
                   )}
-                  <div className="ml-auto flex gap-1 flex-wrap">
-                    {(Object.keys(TEMPLATE_LABELS) as Template[]).map((t) => (
-                      <button
-                        key={t}
-                        onClick={() => updateSlide(activeSlide, { template: t })}
-                        className="text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors"
-                        style={{
-                          backgroundColor: current.template === t ? '#F59E0B15' : 'transparent',
-                          color: current.template === t ? '#F59E0B' : 'var(--text3)',
-                        }}
-                      >
-                        {TEMPLATE_LABELS[t]}
-                      </button>
-                    ))}
-                  </div>
                 </div>
+                <div className="flex gap-1 overflow-x-auto pb-1 -mx-1 px-1">
+                  {(Object.keys(TEMPLATE_LABELS) as Template[]).map((t) => (
+                    <button
+                      key={t}
+                      onClick={() => updateSlide(activeSlide, { template: t })}
+                      className="text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors shrink-0"
+                      style={{
+                        backgroundColor: current.template === t ? '#F59E0B15' : 'transparent',
+                        color: current.template === t ? '#F59E0B' : 'var(--text3)',
+                      }}
+                    >
+                      {TEMPLATE_LABELS[t]}
+                    </button>
+                  ))}
+                </div>
+              </div>
                 <div className="p-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -526,8 +528,8 @@ export default function InstagramPage() {
                   />
                 )}
                 {/* Skill icons quick insert — sets skill + color on the slide */}
-                <div className="flex items-center gap-1.5 mt-2 flex-wrap">
-                  <span className="text-[11px] font-bold mr-1" style={{ color: 'var(--text3)' }}>Icoon:</span>
+                <div className="flex items-center gap-1 sm:gap-1.5 mt-2 overflow-x-auto pb-1">
+                  <span className="text-[11px] font-bold mr-1 shrink-0" style={{ color: 'var(--text3)' }}>Icoon:</span>
                   {Object.entries(SKILL_ICONS).map(([name, { icon: Icon }]) => {
                     const clr = SKILL_COLORS[name] ?? '#F59E0B';
                     const isActive = current.skill === name;
@@ -536,31 +538,31 @@ export default function InstagramPage() {
                         key={name}
                         onClick={() => updateSlide(activeSlide, { skill: name, color: clr })}
                         title={name}
-                        className="p-1.5 rounded-lg transition-all"
+                        className="p-2 sm:p-1.5 rounded-lg transition-all shrink-0"
                         style={{
                           color: clr,
                           backgroundColor: isActive ? clr + '20' : 'transparent',
-                          transform: isActive ? 'scale(1.2)' : 'scale(1)',
+                          transform: isActive ? 'scale(1.15)' : 'scale(1)',
                         }}
                       >
-                        <Icon className="h-4 w-4" />
+                        <Icon className="h-5 w-5 sm:h-4 sm:w-4" />
                       </button>
                     );
                   })}
                 </div>
                 {/* Color picker */}
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-[11px] font-bold" style={{ color: 'var(--text3)' }}>Kleur:</span>
+                <div className="flex items-center gap-1.5 sm:gap-2 mt-2 overflow-x-auto pb-1">
+                  <span className="text-[11px] font-bold shrink-0" style={{ color: 'var(--text3)' }}>Kleur:</span>
                   {Object.entries(SKILL_COLORS).map(([name, clr]) => (
                     <button
                       key={name}
                       onClick={() => updateSlide(activeSlide, { color: clr, skill: name })}
                       title={name}
-                      className="w-6 h-6 rounded-full transition-transform"
+                      className="w-8 h-8 sm:w-6 sm:h-6 rounded-full transition-transform shrink-0"
                       style={{
                         backgroundColor: clr,
                         border: current.color === clr ? '2px solid white' : '2px solid transparent',
-                        transform: current.color === clr ? 'scale(1.2)' : 'scale(1)',
+                        transform: current.color === clr ? 'scale(1.15)' : 'scale(1)',
                       }}
                     />
                   ))}
@@ -596,7 +598,7 @@ export default function InstagramPage() {
                       <span className="text-[11px] font-bold block mb-2" style={{ color: 'var(--text3)' }}>
                         Vaardigheid iconen — klik om in te voegen
                       </span>
-                      <div className="grid grid-cols-4 gap-1.5">
+                      <div className="grid grid-cols-4 sm:grid-cols-4 gap-1 sm:gap-1.5">
                         {Object.entries(SKILL_ICONS).map(([name, { icon: Icon }]) => {
                           const clr = SKILL_COLORS[name] ?? '#F59E0B';
                           const isActive = current.skill === name;
@@ -604,19 +606,19 @@ export default function InstagramPage() {
                             <button
                               key={name}
                               onClick={() => updateSlide(activeSlide, { skill: name, color: clr })}
-                              className="flex flex-col items-center gap-1.5 rounded-xl border px-2 py-3 transition-colors hover:border-amber-500/40"
+                              className="flex flex-col items-center gap-1 sm:gap-1.5 rounded-xl border px-1.5 sm:px-2 py-2 sm:py-3 transition-colors hover:border-amber-500/40"
                               style={{
                                 borderColor: isActive ? clr : 'var(--border)',
                                 backgroundColor: isActive ? clr + '15' : clr + '08',
                               }}
                             >
                               <div
-                                className="w-8 h-8 rounded-full flex items-center justify-center"
+                                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center"
                                 style={{ backgroundColor: clr + '20' }}
                               >
-                                <Icon className="h-4 w-4" style={{ color: clr }} />
+                                <Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" style={{ color: clr }} />
                               </div>
-                              <span className="text-[9px] font-bold truncate w-full text-center" style={{ color: isActive ? clr : 'var(--text2)' }}>
+                              <span className="text-[8px] sm:text-[9px] font-bold truncate w-full text-center" style={{ color: isActive ? clr : 'var(--text2)' }}>
                                 {name}
                               </span>
                             </button>
@@ -662,7 +664,7 @@ export default function InstagramPage() {
                       <span className="text-[11px] font-bold block mb-2" style={{ color: 'var(--text3)' }}>
                         Templates — klik om te kiezen
                       </span>
-                      <div className="grid grid-cols-3 gap-1.5">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
                         {Object.entries(TEMPLATE_INFO).map(([key, info]) => (
                           <button
                             key={key}
@@ -711,10 +713,10 @@ export default function InstagramPage() {
               </div>
 
               {/* Action buttons */}
-              <div className="flex gap-2 flex-wrap">
+              <div className="grid grid-cols-2 sm:flex gap-2">
                 <button
                   onClick={handleDownload}
-                  className="flex-1 flex items-center justify-center gap-2 rounded-xl border py-3 text-sm font-bold transition-colors hover:border-amber-500/30"
+                  className="flex items-center justify-center gap-2 rounded-xl border py-3 px-3 text-xs sm:text-sm font-bold transition-colors hover:border-amber-500/30 sm:flex-1"
                   style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
                 >
                   <Download className="h-4 w-4" />
@@ -722,7 +724,7 @@ export default function InstagramPage() {
                 </button>
                 <button
                   onClick={handleSchedule}
-                  className="flex items-center justify-center gap-2 rounded-xl border py-3 px-5 text-sm font-bold transition-colors hover:border-amber-500/30"
+                  className="flex items-center justify-center gap-2 rounded-xl border py-3 px-3 text-xs sm:text-sm font-bold transition-colors hover:border-amber-500/30"
                   style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
                 >
                   <Clock className="h-4 w-4" />
@@ -731,7 +733,7 @@ export default function InstagramPage() {
                 <button
                   onClick={handlePost}
                   disabled={status === 'posting'}
-                  className="flex-1 flex items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold text-black transition-opacity"
+                  className="col-span-2 sm:col-span-1 flex items-center justify-center gap-2 rounded-xl py-3 text-xs sm:text-sm font-bold text-black transition-opacity sm:flex-1"
                   style={{
                     backgroundColor: status === 'success' ? '#34D399' : '#F59E0B',
                     opacity: status === 'posting' ? 0.7 : 1,
@@ -759,17 +761,17 @@ export default function InstagramPage() {
             </>
           ) : (
             <div
-              className="rounded-2xl border p-12 text-center"
+              className="rounded-2xl border p-6 sm:p-12 text-center"
               style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
             >
-              <ImageIcon className="h-12 w-12 mx-auto mb-4 opacity-20" style={{ color: 'var(--text3)' }} />
-              <p className="text-sm font-medium mb-4" style={{ color: 'var(--text3)' }}>
-                Selecteer content links, genereer random, of maak een vrije post
+              <ImageIcon className="h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 sm:mb-4 opacity-20" style={{ color: 'var(--text3)' }} />
+              <p className="text-xs sm:text-sm font-medium mb-3 sm:mb-4" style={{ color: 'var(--text3)' }}>
+                Kies content, genereer random, of maak een vrije post
               </p>
-              <div className="flex items-center justify-center gap-3">
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
                 <button
                   onClick={() => handleRandom(1)}
-                  className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-black"
+                  className="inline-flex items-center gap-2 rounded-xl px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold text-black"
                   style={{ backgroundColor: '#F59E0B' }}
                 >
                   <Shuffle className="h-4 w-4" />
@@ -777,11 +779,11 @@ export default function InstagramPage() {
                 </button>
                 <button
                   onClick={startVrijePost}
-                  className="inline-flex items-center gap-2 rounded-xl border px-5 py-2.5 text-sm font-bold transition-colors hover:border-amber-500/30"
+                  className="inline-flex items-center gap-2 rounded-xl border px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-bold transition-colors hover:border-amber-500/30"
                   style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
                 >
                   <Type className="h-4 w-4" />
-                  Vrije post
+                  Vrij
                 </button>
               </div>
             </div>
