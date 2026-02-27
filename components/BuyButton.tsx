@@ -23,6 +23,13 @@ export default function BuyButton({ slug, color }: BuyButtonProps) {
       const data = await res.json();
 
       if (data.checkoutUrl) {
+        // Track conversion
+        fetch('/api/analytics/track', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ path: `/event/buy-click/${slug}`, referrer: window.location.pathname }),
+        }).catch(() => {});
+
         window.location.href = data.checkoutUrl;
       } else {
         alert('Er ging iets mis. Probeer het opnieuw.');

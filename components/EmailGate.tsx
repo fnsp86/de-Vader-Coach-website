@@ -47,6 +47,14 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
     setSaved(true);
     setSending(false);
     setOpen(false);
+
+    // Track conversion
+    fetch('/api/analytics/track', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ path: '/event/email-signup', referrer: window.location.pathname }),
+    }).catch(() => {});
+
     window.location.href = downloadUrl;
   }
 

@@ -3,10 +3,12 @@ import Link from 'next/link';
 import {
   Heart, Brain, BookOpen, Target, Shield, Smartphone, ArrowRight, Download,
   Eye, Waves, Sprout, RefreshCw, Handshake, Check, X as XIcon, Calendar, Zap,
+  Quote,
 } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
 import EmailGate from '@/components/EmailGate';
 import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
+import { TESTIMONIALS } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
   title: 'De Vadercoach | Word elke dag een betere vader',
@@ -599,20 +601,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Eerlijk blok ──────────────────────────────────── */}
+      {/* ── Wat vaders zeggen ─────────────────────────────── */}
       <section style={{ backgroundColor: 'var(--surface)' }}>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
-          <div className="flex items-start gap-4 max-w-2xl mx-auto">
-            <Heart className="h-5 w-5 shrink-0 mt-0.5 text-amber-400" />
-            <div>
-              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
-                Eerlijk is eerlijk
-              </h3>
-              <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text3)' }}>
-                We zijn net begonnen. Er zijn nog geen honderden reviews. Maar de wetenschap
-                achter onze cursussen is bewezen door decennia onderzoek. Download de gratis snelgids en oordeel zelf.
-              </p>
-            </div>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+          <div className="max-w-lg mb-8">
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
+              Wat vaders zeggen
+            </h2>
+            <p className="text-sm" style={{ color: 'var(--text2)' }}>
+              Echte ervaringen van vaders die de stap hebben gezet.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {TESTIMONIALS.slice(0, 3).map((t) => (
+              <div
+                key={t.name}
+                className="rounded-xl border p-5 relative"
+                style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)' }}
+              >
+                <Quote className="h-5 w-5 mb-3 opacity-20" style={{ color: t.color }} />
+                <p className="text-[13px] leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+                  &ldquo;{t.text}&rdquo;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-xs font-extrabold text-black"
+                    style={{ backgroundColor: t.color }}
+                  >
+                    {t.name[0]}
+                  </div>
+                  <div>
+                    <div className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>{t.name}</div>
+                    <div className="text-[11px]" style={{ color: 'var(--text3)' }}>{t.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

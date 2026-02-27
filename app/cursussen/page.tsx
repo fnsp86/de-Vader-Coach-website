@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { Check, BookOpen } from 'lucide-react';
+import { Check, BookOpen, ChevronDown, ShieldCheck } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
 import EmailGate from '@/components/EmailGate';
 import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
+import { FAQ_CURSUSSEN } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
   title: 'Cursussen',
@@ -119,6 +120,65 @@ export default function CursussenPage() {
           </div>
         </div>
       </div>
+
+      {/* Garantie */}
+      <div
+        className="mt-8 rounded-2xl border p-5 sm:p-6 flex items-start gap-4"
+        style={{ backgroundColor: '#34D39908', borderColor: '#34D39930' }}
+      >
+        <ShieldCheck className="h-6 w-6 shrink-0 mt-0.5" style={{ color: '#34D399' }} />
+        <div>
+          <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
+            30 dagen niet-goed-geld-terug garantie
+          </h3>
+          <p className="text-[13px]" style={{ color: 'var(--text2)' }}>
+            Niet tevreden? Mail naar info@devadercoach.nl en je krijgt je geld terug. Geen vragen, geen gedoe.
+          </p>
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className="mt-12">
+        <h2 className="text-xl sm:text-2xl font-extrabold mb-6" style={{ color: 'var(--text)' }}>
+          Veelgestelde vragen
+        </h2>
+        <div className="space-y-3">
+          {FAQ_CURSUSSEN.map((faq) => (
+            <details
+              key={faq.q}
+              className="group rounded-xl border overflow-hidden"
+              style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+            >
+              <summary
+                className="flex items-center justify-between cursor-pointer px-5 py-4 text-sm font-bold list-none"
+                style={{ color: 'var(--text)' }}
+              >
+                {faq.q}
+                <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-open:rotate-180" style={{ color: 'var(--text3)' }} />
+              </summary>
+              <div className="px-5 pb-4 text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: FAQ_CURSUSSEN.map((faq) => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a },
+            })),
+          }),
+        }}
+      />
     </div>
   );
 }

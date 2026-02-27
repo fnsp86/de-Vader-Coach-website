@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   Eye, Heart, Waves, Shield, Sprout, RefreshCw, Handshake, Brain,
-  BookOpen, Check, ArrowLeft, FileText,
+  BookOpen, Check, ArrowLeft, FileText, ShieldCheck,
 } from 'lucide-react';
 import { COURSES, type Course } from '@/lib/courses';
 import BuyButton from '@/components/BuyButton';
@@ -141,6 +141,13 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
                 </span>
               </div>
             )}
+
+            <div className="mt-4 pt-4 border-t flex items-start gap-2" style={{ borderColor: 'var(--border)' }}>
+              <ShieldCheck className="h-4 w-4 shrink-0 mt-0.5" style={{ color: '#34D399' }} />
+              <span className="text-[11px] leading-snug" style={{ color: 'var(--text3)' }}>
+                30 dagen geld-terug garantie
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -4,10 +4,12 @@ import Link from 'next/link';
 import {
   Heart, Eye, Waves, Shield, Sprout, RefreshCw, Handshake, Brain,
   ArrowRight, Calendar, Clock, Zap, Star, Check, Play, Lock, Trophy, Volume2,
+  ChevronDown, ShieldCheck,
 } from 'lucide-react';
 import { EXPERIENCE_WEEKS, EXPERIENCE_DAYS } from '@/lib/experience';
 import { SKILL_COLORS } from '@/lib/courses';
 import { hasAccess, useExperienceState } from '@/components/ExperienceProgress';
+import { FAQ_EXPERIENCE } from '@/lib/testimonials';
 import { useEffect, useState, useCallback } from 'react';
 
 const TOKEN_KEY = 'vader-experience-token';
@@ -412,6 +414,55 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Garantie */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-10">
+          <div
+            className="rounded-2xl border p-5 sm:p-6 flex items-start gap-4"
+            style={{ backgroundColor: '#34D39908', borderColor: '#34D39930' }}
+          >
+            <ShieldCheck className="h-6 w-6 shrink-0 mt-0.5" style={{ color: '#34D399' }} />
+            <div>
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
+                30 dagen niet-goed-geld-terug garantie
+              </h3>
+              <p className="text-[13px]" style={{ color: 'var(--text2)' }}>
+                Niet tevreden? Je krijgt je geld terug. Geen vragen, geen gedoe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-14">
+          <h2 className="text-xl font-extrabold mb-6 text-center" style={{ color: 'var(--text)' }}>
+            Veelgestelde vragen
+          </h2>
+          <div className="space-y-3">
+            {FAQ_EXPERIENCE.map((faq) => (
+              <details
+                key={faq.q}
+                className="group rounded-xl border overflow-hidden"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+              >
+                <summary
+                  className="flex items-center justify-between cursor-pointer px-5 py-4 text-sm font-bold list-none"
+                  style={{ color: 'var(--text)' }}
+                >
+                  {faq.q}
+                  <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-open:rotate-180" style={{ color: 'var(--text3)' }} />
+                </summary>
+                <div className="px-5 pb-4 text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  {faq.a}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
