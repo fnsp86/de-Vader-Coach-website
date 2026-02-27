@@ -24,23 +24,8 @@ const SKILL_ICONS: Record<string, React.ComponentType<{ className?: string; styl
 };
 
 export default function ExperiencePage() {
-  const [hasToken, setHasToken] = useState(false);
-  const [loaded, setLoaded] = useState(false);
-
-  const activateTestAccess = useCallback(() => {
-    localStorage.setItem(TOKEN_KEY, 'test-access');
-    setHasToken(true);
-  }, []);
-
-  useEffect(() => {
-    setHasToken(hasAccess());
-    setLoaded(true);
-  }, []);
-
-  if (!loaded) return null;
-
-  if (hasToken) return <ExperienceDashboard />;
-  return <ExperienceSalesPage onActivateTest={activateTestAccess} />;
+  // Betaling nog niet actief — altijd salespagina tonen
+  return <ExperienceSalesPage />;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -269,7 +254,7 @@ function ExperienceDashboard() {
    SALES PAGE
    ═══════════════════════════════════════════════════ */
 
-function ExperienceSalesPage({ onActivateTest }: { onActivateTest: () => void }) {
+function ExperienceSalesPage() {
   return (
     <div>
       {/* Hero */}
@@ -295,14 +280,12 @@ function ExperienceSalesPage({ onActivateTest }: { onActivateTest: () => void })
             22 dagen. 8 vaardigheden. Elke dag een herkenbaar scenario met een concrete actie.
           </p>
 
-          <button
-            onClick={onActivateTest}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
-            style={{ backgroundColor: '#F59E0B' }}
+          <div
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold"
+            style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
           >
-            Start voor &euro;19,99
-            <ArrowRight className="h-5 w-5" />
-          </button>
+            Binnenkort beschikbaar
+          </div>
 
           <p className="text-[12px] mt-3" style={{ color: 'var(--text3)' }}>Eenmalig. Geen abonnement.</p>
         </div>
