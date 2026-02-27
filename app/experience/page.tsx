@@ -24,8 +24,25 @@ const SKILL_ICONS: Record<string, React.ComponentType<{ className?: string; styl
 };
 
 export default function ExperiencePage() {
-  // Betaling nog niet actief — altijd salespagina tonen
-  return <ExperienceSalesPage />;
+  const [hasToken, setHasToken] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const isLocal = typeof window !== 'undefined' && window.location.hostname === 'localhost';
+
+  const activateTestAccess = useCallback(() => {
+    localStorage.setItem(TOKEN_KEY, 'test-access');
+    setHasToken(true);
+  }, []);
+
+  useEffect(() => {
+    setHasToken(hasAccess());
+    setLoaded(true);
+  }, []);
+
+  if (!loaded) return null;
+
+  // Localhost: volledige toegang voor testen
+  if (isLocal && hasToken) return <ExperienceDashboard />;
+  return <ExperienceSalesPage isLocal={isLocal} onActivateTest={activateTestAccess} />;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -254,7 +271,7 @@ function ExperienceDashboard() {
    SALES PAGE
    ═══════════════════════════════════════════════════ */
 
-function ExperienceSalesPage() {
+function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: boolean; onActivateTest?: () => void } = {}) {
   return (
     <div>
       {/* Hero */}
@@ -280,12 +297,23 @@ function ExperienceSalesPage() {
             22 dagen. 8 vaardigheden. Elke dag een herkenbaar scenario met een concrete actie.
           </p>
 
-          <div
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold"
-            style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
-          >
-            Binnenkort beschikbaar
-          </div>
+          {isLocal && onActivateTest ? (
+            <button
+              onClick={onActivateTest}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
+              style={{ backgroundColor: '#F59E0B' }}
+            >
+              Start voor &euro;19,99
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          ) : (
+            <div
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold"
+              style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
+            >
+              Binnenkort beschikbaar
+            </div>
+          )}
 
           <p className="text-[12px] mt-3" style={{ color: 'var(--text3)' }}>Eenmalig. Geen abonnement.</p>
         </div>
@@ -415,17 +443,37 @@ function ExperienceSalesPage() {
               ))}
             </div>
 
-            <div
-              className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold"
-              style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
-            >
-              Binnenkort beschikbaar
-            </div>
+            {isLocal && onActivateTest ? (
+              <button
+                onClick={onActivateTest}
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
+                style={{ backgroundColor: '#F59E0B' }}
+              >
+                Start de Experience
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            ) : (
+              <div
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold"
+                style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
+              >
+                Binnenkort beschikbaar
+              </div>
+            )}
           </div>
 
           <div className="space-y-1 text-[11px]" style={{ color: 'var(--text3)' }}>
-            <p>De betaalpagina wordt binnenkort geactiveerd</p>
-            <p>Eenmalige betaling &middot; Levenslang toegang &middot; Eigen tempo</p>
+            {isLocal ? (
+              <>
+                <p>Na aankoop ontvang je een persoonlijke link per e-mail</p>
+                <p>Activeer binnen 24 uur &middot; 1 apparaat &middot; Eigen tempo</p>
+              </>
+            ) : (
+              <>
+                <p>De betaalpagina wordt binnenkort geactiveerd</p>
+                <p>Eenmalige betaling &middot; Levenslang toegang &middot; Eigen tempo</p>
+              </>
+            )}
           </div>
         </div>
       </section>
