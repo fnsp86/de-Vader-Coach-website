@@ -1,28 +1,12 @@
-import { Redis } from '@upstash/redis';
+import Redis from 'ioredis';
 
 let redis: Redis | null = null;
 
 function getRedis(): Redis | null {
   if (redis) return redis;
-
-  // Try direct REST API vars first
-  let url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL ?? process.env.STORAGE_URL;
-  let token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.STORAGE_TOKEN;
-
-  // Fallback: derive REST credentials from REDIS_URL (rediss://default:TOKEN@HOST:PORT)
-  if (!url || !token) {
-    const redisUrl = process.env.REDIS_URL;
-    if (redisUrl) {
-      try {
-        const parsed = new URL(redisUrl);
-        url = `https://${parsed.hostname}`;
-        token = parsed.password;
-      } catch { /* ignore parse errors */ }
-    }
-  }
-
-  if (!url || !token) return null;
-  redis = new Redis({ url, token });
+  const url = process.env.REDIS_URL;
+  if (!url) return null;
+  redis = new Redis(url, { maxRetriesPerRequest: 1, lazyConnect: true });
   return redis;
 }
 
@@ -46,30 +30,20 @@ export async function trackPageview(event: PageviewEvent): Promise<void> {
   const date = today();
   const pipeline = r.pipeline();
 
-  // Daily pageview count
   pipeline.incr(`pv:${date}`);
-
-  // Per-page counts
   pipeline.hincrby(`pv:pages:${date}`, event.path, 1);
-
-  // Unique visitors (IPs)
   pipeline.sadd(`pv:ips:${date}`, event.ip);
 
-  // Referrer counts
   if (event.referrer) {
     pipeline.hincrby(`pv:refs:${date}`, event.referrer, 1);
   }
-
-  // Country counts
   if (event.country) {
     pipeline.hincrby(`pv:countries:${date}`, event.country, 1);
   }
 
-  // Recent pageviews (keep last 200)
   pipeline.lpush('pv:recent', JSON.stringify(event));
   pipeline.ltrim('pv:recent', 0, 199);
 
-  // Set TTL of 90 days on daily keys
   const ttl = 90 * 24 * 60 * 60;
   pipeline.expire(`pv:${date}`, ttl);
   pipeline.expire(`pv:pages:${date}`, ttl);
@@ -81,15 +55,8 @@ export async function trackPageview(event: PageviewEvent): Promise<void> {
 }
 
 export interface AnalyticsData {
-  today: {
-    pageviews: number;
-    visitors: number;
-  };
-  days: Array<{
-    date: string;
-    pageviews: number;
-    visitors: number;
-  }>;
+  today: { pageviews: number; visitors: number };
+  days: Array<{ date: string; pageviews: number; visitors: number }>;
   topPages: Array<{ path: string; count: number }>;
   topReferrers: Array<{ referrer: string; count: number }>;
   countries: Array<{ country: string; count: number }>;
@@ -109,41 +76,38 @@ export async function getAnalytics(daysBack: number = 30): Promise<AnalyticsData
 
   const todayStr = dates[0];
 
-  // Fetch daily counts + visitor counts
+  // ioredis pipeline results are [error, value] tuples
   const pipeline = r.pipeline();
   for (const date of dates) {
     pipeline.get(`pv:${date}`);
     pipeline.scard(`pv:ips:${date}`);
   }
-  // Top pages today
   pipeline.hgetall(`pv:pages:${todayStr}`);
-  // Top referrers today
   pipeline.hgetall(`pv:refs:${todayStr}`);
-  // Countries today
   pipeline.hgetall(`pv:countries:${todayStr}`);
-  // Recent pageviews
   pipeline.lrange('pv:recent', 0, 49);
-  // Today's IPs
   pipeline.smembers(`pv:ips:${todayStr}`);
 
-  const results = await pipeline.exec();
+  const raw = await pipeline.exec();
+  if (!raw) return null;
 
-  // Parse daily data
+  // Helper to safely get value from [error, result] tuple
+  const val = (i: number) => (raw[i]?.[1] ?? null);
+
   const days: AnalyticsData['days'] = [];
   for (let i = 0; i < dates.length; i++) {
-    const pageviews = (results[i * 2] as number) ?? 0;
-    const visitors = (results[i * 2 + 1] as number) ?? 0;
+    const pageviews = Number(val(i * 2)) || 0;
+    const visitors = Number(val(i * 2 + 1)) || 0;
     days.push({ date: dates[i], pageviews, visitors });
   }
 
   const offset = dates.length * 2;
-  const pagesHash = (results[offset] as Record<string, number>) ?? {};
-  const refsHash = (results[offset + 1] as Record<string, number>) ?? {};
-  const countriesHash = (results[offset + 2] as Record<string, number>) ?? {};
-  const recentRaw = (results[offset + 3] as string[]) ?? [];
-  const todayIps = (results[offset + 4] as string[]) ?? [];
+  const pagesHash = (val(offset) as Record<string, string>) ?? {};
+  const refsHash = (val(offset + 1) as Record<string, string>) ?? {};
+  const countriesHash = (val(offset + 2) as Record<string, string>) ?? {};
+  const recentRaw = (val(offset + 3) as string[]) ?? [];
+  const todayIps = (val(offset + 4) as string[]) ?? [];
 
-  // Sort pages by count
   const topPages = Object.entries(pagesHash)
     .map(([path, count]) => ({ path, count: Number(count) }))
     .sort((a, b) => b.count - a.count)
@@ -159,7 +123,6 @@ export async function getAnalytics(daysBack: number = 30): Promise<AnalyticsData
     .sort((a, b) => b.count - a.count)
     .slice(0, 15);
 
-  // Parse recent events and add IPs
   const recent: PageviewEvent[] = recentRaw.map((raw) => {
     try {
       return typeof raw === 'string' ? JSON.parse(raw) : raw;
