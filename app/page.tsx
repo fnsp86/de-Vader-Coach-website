@@ -199,9 +199,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* App */}
-            <div className="rounded-2xl border overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <div className="rounded-2xl border overflow-hidden flex flex-col" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="h-1" style={{ backgroundColor: '#F59E0B' }} />
-              <div className="p-5 sm:p-6">
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
                     <Smartphone className="h-5 w-5" style={{ color: '#F59E0B' }} />
@@ -211,13 +211,21 @@ export default function HomePage() {
                     <p className="text-[11px] font-semibold" style={{ color: '#F59E0B' }}>Dagelijks oefenen</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   Dagelijkse micro-oefeningen, streaks, badges en een community van vaders. 2 tot 10 minuten per dag.
                 </p>
-                <p className="text-[12px] font-semibold mb-4" style={{ color: 'var(--text3)' }}>
-                  Elke dag een kleine stap
+                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: '#F59E0B' }}>
+                  Ideaal als je elke dag een klein moment wilt pakken
                 </p>
-                <div className="flex items-center justify-between">
+                <ul className="space-y-2 mb-5 flex-1">
+                  {['2-10 min per dag', 'Streaks & badges', 'Community van vaders', 'Interactieve oefeningen'].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                      <Check className="h-3.5 w-3.5 shrink-0" style={{ color: '#F59E0B' }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
                   <span className="text-[12px]" style={{ color: 'var(--text3)' }}>Eenmalige aankoop</span>
                   <Link href="/app-download" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
                     Bekijk app <ArrowRight className="h-3.5 w-3.5" />
@@ -227,14 +235,14 @@ export default function HomePage() {
             </div>
 
             {/* Experience */}
-            <div className="rounded-2xl border overflow-hidden relative" style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}>
+            <div className="rounded-2xl border overflow-hidden relative flex flex-col" style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}>
               <div className="h-1" style={{ background: 'linear-gradient(to right, #667eea, #EF4444, #34D399, #FBBF24, #A78BFA, #FB923C, #60A5FA, #C084FC)' }} />
               <div className="absolute top-3 right-3">
                 <span className="text-[9px] font-extrabold px-2 py-0.5 rounded-md" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>
                   NIEUW
                 </span>
               </div>
-              <div className="p-5 sm:p-6">
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
                     <Calendar className="h-5 w-5" style={{ color: '#F59E0B' }} />
@@ -244,13 +252,21 @@ export default function HomePage() {
                     <p className="text-[11px] font-semibold" style={{ color: '#F59E0B' }}>De 22-dagen reis</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   22 scenario-dagen door alle 8 vaardigheden. Herkenbare situaties, concrete acties en dagelijkse reflectie.
                 </p>
-                <p className="text-[12px] font-semibold mb-4" style={{ color: 'var(--text3)' }}>
-                  Een gestructureerde reis
+                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: '#F59E0B' }}>
+                  Ideaal als je een duidelijk stappenplan wilt volgen
                 </p>
-                <div className="flex items-center justify-between">
+                <ul className="space-y-2 mb-5 flex-1">
+                  {['22 vaste dagen', 'Alle 8 vaardigheden', 'Audio-intro per dag', 'Herkenbare scenario\'s'].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                      <Check className="h-3.5 w-3.5 shrink-0" style={{ color: '#F59E0B' }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
                   <span className="text-[12px] font-bold" style={{ color: '#F59E0B' }}>&euro;19,99 eenmalig</span>
                   <Link href="/experience" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
                     Bekijk Experience <ArrowRight className="h-3.5 w-3.5" />
@@ -260,9 +276,9 @@ export default function HomePage() {
             </div>
 
             {/* Cursussen */}
-            <div className="rounded-2xl border overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <div className="rounded-2xl border overflow-hidden flex flex-col" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="h-1" style={{ backgroundColor: '#667eea' }} />
-              <div className="p-5 sm:p-6">
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ backgroundColor: '#667eea15' }}>
                     <BookOpen className="h-5 w-5" style={{ color: '#667eea' }} />
@@ -272,13 +288,21 @@ export default function HomePage() {
                     <p className="text-[11px] font-semibold" style={{ color: '#667eea' }}>Diepgang per vaardigheid</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   8 verdiepende PDF-werkboeken met wetenschap, werkbladen en oefeningen. Per vaardigheid of als bundel.
                 </p>
-                <p className="text-[12px] font-semibold mb-4" style={{ color: 'var(--text3)' }}>
-                  Alles weten over een vaardigheid
+                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#667eea08', color: '#667eea' }}>
+                  Ideaal als je alles wilt weten over één vaardigheid
                 </p>
-                <div className="flex items-center justify-between">
+                <ul className="space-y-2 mb-5 flex-1">
+                  {['8 PDF-werkboeken', '40-80 pagina\'s per stuk', 'Werkbladen & oefeningen', 'Wetenschappelijk onderbouwd'].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                      <Check className="h-3.5 w-3.5 shrink-0" style={{ color: '#667eea' }} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
                   <span className="text-[12px]" style={{ color: 'var(--text3)' }}>Per stuk of bundel</span>
                   <Link href="/cursussen" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#667eea' }}>
                     Bekijk cursussen <ArrowRight className="h-3.5 w-3.5" />
@@ -289,12 +313,31 @@ export default function HomePage() {
           </div>
 
           {/* Combineer hint */}
-          <div className="mt-5 rounded-xl border p-4 flex items-start gap-3" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-            <Zap className="h-4 w-4 shrink-0 mt-0.5 text-amber-400" />
-            <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
-              <span className="font-bold" style={{ color: 'var(--text)' }}>Combineer voor het meeste resultaat.</span>{' '}
-              Gebruik de app voor dagelijkse gewoontes, de Experience als gestructureerde reis door alle vaardigheden, en de cursussen voor verdieping op de onderwerpen die jij het meest nodig hebt. Elk onderdeel versterkt de andere.
-            </p>
+          <div className="mt-5 rounded-xl border p-4 sm:p-5" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+            <div className="flex items-center gap-2 mb-3">
+              <Zap className="h-4 w-4 text-amber-400" />
+              <span className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>Combineer voor het meeste resultaat</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="flex items-start gap-2">
+                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>1</span>
+                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Experience</span> — dagelijks oefenen en een gestructureerd pad
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>2</span>
+                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Cursussen</span> — dagelijks oefenen en verdieping per vaardigheid
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>3</span>
+                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>Alle drie</span> — het complete pakket voor maximaal resultaat
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
