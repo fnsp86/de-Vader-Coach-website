@@ -1,116 +1,223 @@
-import { ImageResponse } from '@vercel/og';
-import { NextRequest } from 'next/server';
+import { ImageResponse } from 'next/og';
+import { NextRequest, NextResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export async function GET(request: NextRequest) {
-  const { searchParams } = request.nextUrl;
-  const template = searchParams.get('template') ?? 'quote';
-  const text = searchParams.get('text') ?? '';
-  const color = searchParams.get('color') ?? '#F59E0B';
-  const skill = searchParams.get('skill') ?? '';
-  const subtitle = searchParams.get('subtitle') ?? '';
-  const number = searchParams.get('number') ?? '';
+const FONT_BOLD_URL =
+  'https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf';
+const FONT_MEDIUM_URL =
+  'https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf';
 
-  const interBold = await fetch(
-    new URL('https://fonts.gstatic.com/s/inter/v18/UcCo3FwrK3iLTcviYwYZ90OcXDcPfOhiJUk3Nq3DNOk.woff2'),
-  ).then((res) => res.arrayBuffer());
+// Lucide SVG paths for the 8 skill icons (viewBox 0 0 24 24, stroke-based)
+const SKILL_ICON_PATHS: Record<string, string[]> = {
+  Aanwezigheid: [
+    'M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0',
+    'M12 12m-3 0a3 3 0 1 0 6 0 3 3 0 1 0-6 0',
+  ],
+  Emotiecoaching: [
+    'M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z',
+  ],
+  Zelfregulatie: [
+    'M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1',
+    'M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1',
+    'M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1',
+  ],
+  Grenzen: [
+    'M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z',
+  ],
+  Autonomie: [
+    'M7 20h10',
+    'M10 20c5.5-2.5.8-6.4 3-10',
+    'M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z',
+    'M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z',
+  ],
+  Herstel: [
+    'M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8',
+    'M21 3v5h-5',
+    'M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16',
+    'M8 16H3v5',
+  ],
+  Verbinding: [
+    'M11 17l2 2a1 1 0 1 0 3-3',
+    'M14 14l2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4',
+    'M21 3l1 11h-2',
+    'M3 3l-1 11 6.5 6.5a1 1 0 1 0 3-3',
+    'M3 4h8',
+  ],
+  Reflectie: [
+    'M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z',
+    'M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z',
+    'M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4',
+    'M17.599 6.5a3 3 0 0 0 .399-1.375',
+    'M6.003 5.125A3 3 0 0 0 6.401 6.5',
+    'M3.477 10.896a4 4 0 0 1 .585-.396',
+    'M19.938 10.5a4 4 0 0 1 .585.396',
+    'M6 18a4 4 0 0 1-1.967-.516',
+    'M19.967 17.484A4 4 0 0 1 18 18',
+  ],
+};
 
-  const interMedium = await fetch(
-    new URL('https://fonts.gstatic.com/s/inter/v18/UcCo3FwrK3iLTcviYwYZ90OcXDcPfG5iJUk3Nq3DNOk.woff2'),
-  ).then((res) => res.arrayBuffer());
+// Skill colors (duplicated here since edge runtime can't import from lib)
+const SKILL_COLORS: Record<string, string> = {
+  Aanwezigheid: '#667eea',
+  Emotiecoaching: '#EF4444',
+  Zelfregulatie: '#34D399',
+  Grenzen: '#FBBF24',
+  Autonomie: '#A78BFA',
+  Herstel: '#FB923C',
+  Verbinding: '#60A5FA',
+  Reflectie: '#C084FC',
+};
 
-  let content;
-  if (template === 'tip') {
-    content = (
-      <TipTemplate text={text} color={color} number={number} />
-    );
-  } else if (template === 'teaser') {
-    content = (
-      <TeaserTemplate text={text} color={color} subtitle={subtitle} skill={skill} />
-    );
-  } else {
-    content = (
-      <QuoteTemplate text={text} color={color} skill={skill} />
-    );
-  }
+const SKILL_ORDER = ['Aanwezigheid', 'Emotiecoaching', 'Zelfregulatie', 'Grenzen', 'Autonomie', 'Herstel', 'Verbinding', 'Reflectie'];
 
-  return new ImageResponse(
-    (
+function SkillIcon({ skill, color, size = 28 }: { skill: string; color: string; size?: number }) {
+  const paths = SKILL_ICON_PATHS[skill];
+  if (!paths) return null;
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{ display: 'flex' }}
+    >
+      {paths.map((d, i) => (
+        <path key={i} d={d} />
+      ))}
+    </svg>
+  );
+}
+
+function SkillBadge({ skill, color }: { skill: string; color: string }) {
+  if (!skill) return null;
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', marginBottom: 40 }}>
       <div
         style={{
-          width: '100%',
-          height: '100%',
+          width: 48,
+          height: 48,
+          borderRadius: 24,
+          backgroundColor: color + '25',
           display: 'flex',
-          flexDirection: 'column',
-          backgroundColor: '#111318',
-          fontFamily: 'Inter',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginRight: 16,
         }}
       >
-        {content}
+        <SkillIcon skill={skill} color={color} size={24} />
       </div>
-    ),
-    {
-      width: 1080,
-      height: 1080,
-      fonts: [
-        { name: 'Inter', data: interBold, weight: 700 },
-        { name: 'Inter', data: interMedium, weight: 500 },
-      ],
-    },
+      <span style={{ fontSize: 28, fontWeight: 700, color, letterSpacing: 2 }}>
+        {skill.toUpperCase()}
+      </span>
+    </div>
   );
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = request.nextUrl;
+    const template = searchParams.get('template') ?? 'quote';
+    const text = searchParams.get('text') ?? '';
+    const color = searchParams.get('color') ?? '#F59E0B';
+    const skill = searchParams.get('skill') ?? '';
+    const subtitle = searchParams.get('subtitle') ?? '';
+    const number = searchParams.get('number') ?? '';
+    const items = searchParams.get('items') ?? '';
+
+    const [interBold, interMedium] = await Promise.all([
+      fetch(FONT_BOLD_URL).then((r) => r.arrayBuffer()),
+      fetch(FONT_MEDIUM_URL).then((r) => r.arrayBuffer()),
+    ]);
+
+    let content;
+    if (template === 'tip') {
+      content = <TipTemplate text={text} color={color} number={number} skill={skill} />;
+    } else if (template === 'teaser') {
+      content = <TeaserTemplate text={text} color={color} subtitle={subtitle} skill={skill} />;
+    } else if (template === 'stat') {
+      content = <StatTemplate text={text} color={color} subtitle={subtitle} skill={skill} />;
+    } else if (template === 'list') {
+      const listItems = items ? items.split('||') : [];
+      content = <ListTemplate text={text} color={color} items={listItems} skill={skill} />;
+    } else if (template === 'cta') {
+      content = <CTATemplate text={text} color={color} subtitle={subtitle} />;
+    } else if (template === 'skills') {
+      content = <SkillsTemplate text={text} color={color} subtitle={subtitle} />;
+    } else {
+      content = <QuoteTemplate text={text} color={color} skill={skill} />;
+    }
+
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: '#111318',
+            fontFamily: 'Inter',
+          }}
+        >
+          {content}
+        </div>
+      ),
+      {
+        width: 1080,
+        height: 1080,
+        fonts: [
+          { name: 'Inter', data: interBold, weight: 700 as const },
+          { name: 'Inter', data: interMedium, weight: 500 as const },
+        ],
+      },
+    );
+  } catch (e) {
+    return NextResponse.json(
+      { error: `Image generation failed: ${e instanceof Error ? e.message : String(e)}` },
+      { status: 500 },
+    );
+  }
 }
 
 function QuoteTemplate({ text, color, skill }: { text: string; color: string; skill: string }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
-      {/* Skill badge top-left */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '40px' }}>
-        <div
-          style={{
-            width: '16px',
-            height: '16px',
-            borderRadius: '8px',
-            backgroundColor: color,
-          }}
-        />
-        <span style={{ fontSize: '28px', fontWeight: 700, color, letterSpacing: '2px', textTransform: 'uppercase' as const }}>
-          {skill}
-        </span>
-      </div>
+      <SkillBadge skill={skill} color={color} />
 
-      {/* Quote text centered */}
       <div style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <p
+        <span
           style={{
             fontSize: text.length > 160 ? 38 : text.length > 100 ? 46 : 54,
             fontWeight: 700,
             color: '#F0F2F8',
             lineHeight: 1.35,
             textAlign: 'center',
-            maxWidth: '900px',
+            maxWidth: 900,
           }}
         >
           {text}
-        </p>
+        </span>
       </div>
 
-      {/* Bottom bar */}
       <BottomBar color={color} />
     </div>
   );
 }
 
-function TipTemplate({ text, color, number }: { text: string; color: string; number: string }) {
+function TipTemplate({ text, color, number, skill }: { text: string; color: string; number: string; skill: string }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
-      {/* Number circle */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px', marginTop: '40px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40, marginTop: 40 }}>
         <div
           style={{
-            width: '120px',
-            height: '120px',
-            borderRadius: '60px',
+            width: 120,
+            height: 120,
+            borderRadius: 60,
             backgroundColor: color + '20',
             border: `4px solid ${color}`,
             display: 'flex',
@@ -118,33 +225,35 @@ function TipTemplate({ text, color, number }: { text: string; color: string; num
             justifyContent: 'center',
           }}
         >
-          <span style={{ fontSize: '56px', fontWeight: 700, color }}>
-            {number || '#'}
-          </span>
+          {number ? (
+            <span style={{ fontSize: 56, fontWeight: 700, color }}>
+              {number}
+            </span>
+          ) : (
+            <SkillIcon skill={skill} color={color} size={48} />
+          )}
         </div>
       </div>
 
-      {/* Tip label */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '30px' }}>
-        <span style={{ fontSize: '24px', fontWeight: 700, color, letterSpacing: '3px', textTransform: 'uppercase' as const }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 30 }}>
+        <span style={{ fontSize: 24, fontWeight: 700, color, letterSpacing: 3 }}>
           VADERTIP
         </span>
       </div>
 
-      {/* Tip text */}
       <div style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <p
+        <span
           style={{
             fontSize: text.length > 140 ? 36 : 44,
             fontWeight: 700,
             color: '#F0F2F8',
             lineHeight: 1.35,
             textAlign: 'center',
-            maxWidth: '880px',
+            maxWidth: 880,
           }}
         >
           {text}
-        </p>
+        </span>
       </div>
 
       <BottomBar color={color} />
@@ -165,49 +274,175 @@ function TeaserTemplate({
 }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
-      {/* Category badge */}
-      <div style={{ display: 'flex', marginBottom: '40px', marginTop: '20px' }}>
+      <div style={{ display: 'flex', marginBottom: 40, marginTop: 20 }}>
         <div
           style={{
             backgroundColor: color + '25',
-            borderRadius: '12px',
+            borderRadius: 12,
             padding: '8px 20px',
             display: 'flex',
             alignItems: 'center',
           }}
         >
-          <span style={{ fontSize: '22px', fontWeight: 700, color, letterSpacing: '1px' }}>
+          <SkillIcon skill={skill} color={color} size={22} />
+          <span style={{ fontSize: 22, fontWeight: 700, color, letterSpacing: 1, marginLeft: 10 }}>
             {skill}
           </span>
         </div>
       </div>
 
-      {/* Blog title */}
       <div style={{ display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
-        <p
+        <span
           style={{
             fontSize: text.length > 60 ? 48 : 56,
             fontWeight: 700,
             color: '#F0F2F8',
             lineHeight: 1.2,
-            marginBottom: '24px',
+            marginBottom: 24,
           }}
         >
           {text}
-        </p>
+        </span>
         {subtitle && (
-          <p
+          <span
             style={{
               fontSize: 28,
               fontWeight: 500,
               color: '#9BA3B8',
               lineHeight: 1.4,
-              maxWidth: '800px',
+              maxWidth: 800,
             }}
           >
             {subtitle}
-          </p>
+          </span>
         )}
+      </div>
+
+      <BottomBar color={color} />
+    </div>
+  );
+}
+
+function StatTemplate({ text, color, subtitle, skill }: { text: string; color: string; subtitle: string; skill: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px', alignItems: 'center', justifyContent: 'center' }}>
+      {skill && SKILL_ICON_PATHS[skill] && (
+        <div style={{ display: 'flex', marginBottom: 30 }}>
+          <SkillIcon skill={skill} color={color} size={48} />
+        </div>
+      )}
+      <span style={{ fontSize: 140, fontWeight: 700, color, lineHeight: 1 }}>
+        {text}
+      </span>
+      <span style={{ fontSize: 36, fontWeight: 500, color: '#9BA3B8', marginTop: 30, textAlign: 'center', maxWidth: 800 }}>
+        {subtitle}
+      </span>
+      <div style={{ display: 'flex', marginTop: 'auto' }}>
+        <BottomBar color={color} />
+      </div>
+    </div>
+  );
+}
+
+function ListTemplate({ text, color, items, skill }: { text: string; color: string; items: string[]; skill: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
+      <SkillBadge skill={skill} color={color} />
+      <span style={{ fontSize: 40, fontWeight: 700, color: '#F0F2F8', marginBottom: 40 }}>
+        {text}
+      </span>
+      <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+        {items.map((item, i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: 20 }}>
+            <div style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: color + '25', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 20, flexShrink: 0 }}>
+              <span style={{ fontSize: 20, fontWeight: 700, color }}>{i + 1}</span>
+            </div>
+            <span style={{ fontSize: 28, fontWeight: 500, color: '#F0F2F8', lineHeight: 1.4 }}>
+              {item}
+            </span>
+          </div>
+        ))}
+      </div>
+      <BottomBar color={color} />
+    </div>
+  );
+}
+
+function CTATemplate({ text, color, subtitle }: { text: string; color: string; subtitle: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px', alignItems: 'center', justifyContent: 'center' }}>
+      <span style={{ fontSize: 80, marginBottom: 40, color }}>♥</span>
+      <span style={{ fontSize: 52, fontWeight: 700, color: '#F0F2F8', textAlign: 'center', marginBottom: 24, maxWidth: 800 }}>
+        {text}
+      </span>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: color, borderRadius: 20, padding: '20px 60px', marginTop: 20 }}>
+        <span style={{ fontSize: 30, fontWeight: 700, color: '#111318' }}>
+          {subtitle || 'devadercoach.nl'}
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function SkillsTemplate({ text, color, subtitle }: { text: string; color: string; subtitle: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '70px' }}>
+      {/* Title */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 50 }}>
+        <span
+          style={{
+            fontSize: text.length > 40 ? 40 : 48,
+            fontWeight: 700,
+            color: '#F0F2F8',
+            textAlign: 'center',
+            lineHeight: 1.2,
+          }}
+        >
+          {text || 'De 8 Vaardigheden'}
+        </span>
+        {subtitle && (
+          <span style={{ fontSize: 24, fontWeight: 500, color: '#9BA3B8', marginTop: 12, textAlign: 'center' }}>
+            {subtitle}
+          </span>
+        )}
+      </div>
+
+      {/* 2x4 grid of skill icons */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flex: 1, alignContent: 'center' }}>
+        {SKILL_ORDER.map((name) => {
+          const clr = SKILL_COLORS[name] ?? '#F59E0B';
+          return (
+            <div
+              key={name}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: '25%',
+                marginBottom: 40,
+              }}
+            >
+              <div
+                style={{
+                  width: 80,
+                  height: 80,
+                  borderRadius: 40,
+                  backgroundColor: clr + '20',
+                  border: `3px solid ${clr}40`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  marginBottom: 12,
+                }}
+              >
+                <SkillIcon skill={name} color={clr} size={36} />
+              </div>
+              <span style={{ fontSize: 18, fontWeight: 700, color: clr, textAlign: 'center' }}>
+                {name}
+              </span>
+            </div>
+          );
+        })}
       </div>
 
       <BottomBar color={color} />
@@ -222,16 +457,14 @@ function BottomBar({ color }: { color: string }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '12px',
         borderTop: `3px solid ${color}30`,
-        paddingTop: '28px',
+        paddingTop: 28,
       }}
     >
-      {/* Heart icon SVG */}
-      <svg width="28" height="28" viewBox="0 0 24 24" fill={color} stroke="none">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-      </svg>
-      <span style={{ fontSize: '26px', fontWeight: 700, color: '#9BA3B8' }}>
+      <span style={{ fontSize: 26, fontWeight: 700, color, marginRight: 12 }}>
+        ♥
+      </span>
+      <span style={{ fontSize: 26, fontWeight: 700, color: '#9BA3B8' }}>
         devadercoach.nl
       </span>
     </div>

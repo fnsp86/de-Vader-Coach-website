@@ -64,22 +64,32 @@ export default function AdminDashboard() {
   useEffect(() => {
     if (!password) return;
 
-    fetch('/api/admin/stats', { headers: { 'x-admin-password': password } })
+    fetch('/api/admin/stats', { headers: { 'x-admin-password': password }, cache: 'no-store' })
       .then((r) => r.json())
       .then(setStats)
       .catch(() => {})
       .finally(() => setLoading(false));
 
-    fetch('/api/admin/analytics?days=30', { headers: { 'x-admin-password': password } })
+    fetch('/api/admin/analytics?days=30', {
+      headers: { 'x-admin-password': password },
+      cache: 'no-store',
+    })
       .then(async (r) => {
-        const data = await r.json();
-        if (data.error) {
-          setAnalyticsError(data.error);
+        const text = await r.text();
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch {
+          setAnalyticsError(`Ongeldig antwoord (HTTP ${r.status}): ${text.slice(0, 200)}`);
+          return;
+        }
+        if (!r.ok || data.error) {
+          setAnalyticsError(`HTTP ${r.status}: ${data.error ?? JSON.stringify(data).slice(0, 200)}`);
         } else {
           setAnalytics(data);
         }
       })
-      .catch(() => setAnalyticsError('Kon analytics niet laden'))
+      .catch((e) => setAnalyticsError(`Fetch error: ${e instanceof Error ? e.message : String(e)}`))
       .finally(() => setAnalyticsLoading(false));
   }, [password]);
 
@@ -115,28 +125,28 @@ export default function AdminDashboard() {
       {analytics && (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <StatCard
+            icon={Users}
+            label="Bezoekers vandaag"
+            value={analyticsLoading ? '...' : `${analytics.today.visitors} uniek`}
+            color="#8B5CF6"
+          />
+          <StatCard
             icon={Eye}
-            label="Vandaag"
-            value={analyticsLoading ? '...' : `${analytics.today.pageviews} views`}
+            label="Views vandaag"
+            value={analyticsLoading ? '...' : analytics.today.pageviews}
             color="#3B82F6"
           />
           <StatCard
             icon={Users}
-            label="Bezoekers vandaag"
-            value={analyticsLoading ? '...' : analytics.today.visitors}
-            color="#8B5CF6"
+            label="Bezoekers (7d)"
+            value={analyticsLoading ? '...' : `${totalVisitors7d} uniek`}
+            color="#EC4899"
           />
           <StatCard
             icon={Eye}
             label="Views (7d)"
             value={analyticsLoading ? '...' : totalPageviews7d}
             color="#06B6D4"
-          />
-          <StatCard
-            icon={Users}
-            label="Bezoekers (7d)"
-            value={analyticsLoading ? '...' : totalVisitors7d}
-            color="#EC4899"
           />
         </div>
       )}
@@ -360,35 +370,59 @@ export default function AdminDashboard() {
 /* ── Mini bar chart ── */
 function MiniChart({ days }: { days: AnalyticsData['days'] }) {
   const reversed = [...days].reverse();
-  const max = Math.max(...reversed.map((d) => d.pageviews), 1);
+  const maxViews = Math.max(...reversed.map((d) => d.pageviews), 1);
+  const maxVisitors = Math.max(...reversed.map((d) => d.visitors), 1);
+  const max = Math.max(maxViews, maxVisitors);
 
   return (
-    <div className="flex items-end gap-1 h-32">
-      {reversed.map((d) => {
-        const height = Math.max((d.pageviews / max) * 100, 2);
-        return (
-          <div
-            key={d.date}
-            className="flex-1 group relative"
-            style={{ height: '100%', display: 'flex', alignItems: 'flex-end' }}
-          >
+    <div>
+      <div className="flex items-center gap-4 mb-2">
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: '#8B5CF6' }} />
+          <span className="text-[11px] font-medium" style={{ color: 'var(--text3)' }}>Unieke bezoekers</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: '#3B82F620' }} />
+          <span className="text-[11px] font-medium" style={{ color: 'var(--text3)' }}>Pageviews</span>
+        </div>
+      </div>
+      <div className="flex items-end gap-1 h-32">
+        {reversed.map((d) => {
+          const viewsHeight = Math.max((d.pageviews / max) * 100, 2);
+          const visitorsHeight = Math.max((d.visitors / max) * 100, d.visitors > 0 ? 4 : 2);
+          return (
             <div
-              className="w-full rounded-t transition-colors"
-              style={{
-                height: `${height}%`,
-                backgroundColor: '#3B82F630',
-                borderTop: '2px solid #3B82F6',
-              }}
-            />
-            <div
-              className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 hidden group-hover:block rounded px-2 py-1 text-[10px] font-bold whitespace-nowrap z-10"
-              style={{ backgroundColor: 'var(--text)', color: 'var(--bg)' }}
+              key={d.date}
+              className="flex-1 group relative"
+              style={{ height: '100%', display: 'flex', alignItems: 'flex-end' }}
             >
-              {d.date.slice(5)}: {d.pageviews} views, {d.visitors} bezoekers
+              {/* Pageviews (background) */}
+              <div
+                className="w-full rounded-t absolute bottom-0"
+                style={{
+                  height: `${viewsHeight}%`,
+                  backgroundColor: '#3B82F615',
+                }}
+              />
+              {/* Unique visitors (foreground) */}
+              <div
+                className="w-full rounded-t absolute bottom-0"
+                style={{
+                  height: `${visitorsHeight}%`,
+                  backgroundColor: '#8B5CF640',
+                  borderTop: '2px solid #8B5CF6',
+                }}
+              />
+              <div
+                className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 hidden group-hover:block rounded px-2 py-1 text-[10px] font-bold whitespace-nowrap z-10"
+                style={{ backgroundColor: 'var(--text)', color: 'var(--bg)' }}
+              >
+                {d.date.slice(5)}: {d.visitors} bezoekers, {d.pageviews} views
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }

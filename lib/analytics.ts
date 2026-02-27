@@ -27,6 +27,12 @@ export async function trackPageview(event: PageviewEvent): Promise<void> {
   const r = getRedis();
   if (!r) return;
 
+  // Skip bots
+  const ua = (event.userAgent ?? '').toLowerCase();
+  if (ua.includes('bot') || ua.includes('crawler') || ua.includes('spider') || ua.includes('vercel-screenshot')) {
+    return;
+  }
+
   const date = today();
   const pipeline = r.pipeline();
 
