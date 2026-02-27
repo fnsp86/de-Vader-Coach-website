@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import { Download, Check, BookOpen } from 'lucide-react';
+import { Check, BookOpen } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
+import EmailGate from '@/components/EmailGate';
 import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
 
 export const metadata: Metadata = {
@@ -48,14 +49,12 @@ export default function CursussenPage() {
               {SNELGIDS.description}
             </p>
           </div>
-          <a
-            href="/api/free-download"
-            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-black transition-transform hover:scale-[0.97]"
+          <EmailGate
+            downloadUrl="/api/free-download"
+            buttonText="Download PDF"
+            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
             style={{ backgroundColor: '#F59E0B' }}
-          >
-            <Download className="h-4 w-4" />
-            Download PDF
-          </a>
+          />
         </div>
       </div>
 

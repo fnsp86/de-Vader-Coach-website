@@ -326,9 +326,33 @@ Misschien herken je jezelf in een van de vaders hierboven. Misschien voelde een 
 ╚══════════════════════════════════════════════════════════╝
 ```
 
-## De cursussen
+---
 
-Elke vaardigheid heeft een complete cursus bij De Vader Coach. Wetenschappelijk onderbouwd, vol praktische oefeningen en werkbladen, met dialoogvoorbeelden voor elke leeftijd.
+## Drie manieren om te groeien
+
+Bij De Vader Coach heb je drie routes. Je hoeft niet te kiezen - combineer ze en haal uit elk onderdeel iets anders.
+
+### De App - Dagelijks oefenen
+
+Elke dag een micro-oefening op je telefoon, afgestemd op jouw situatie. Streaks, badges en een community van vaders. 2 tot 10 minuten per dag. Eenmalige aankoop, geen abonnement.
+
+*Voor vaders die elke dag een kleine stap willen zetten.*
+
+### De Vader Experience - De 22-dagen reis
+
+22 dagen, 8 vaardigheden, elke dag een herkenbaar vaderscenario met een concrete actie. Van 's ochtends de deur opendoen tot het slaapkamerritueel, van ruzie op de achterbank tot sorry zeggen. Een gestructureerde reis door alles wat je als vader nodig hebt.
+
+*Voor vaders die een duidelijk pad willen volgen.*
+
+### De Cursussen - Diepgang per vaardigheid
+
+8 verdiepende PDF-werkboeken, elk over een vaardigheid. Wetenschap vertaald naar je keukentafel, met werkbladen, oefeningen en dialoogvoorbeelden voor elke leeftijd. Per stuk of als voordelige bundel.
+
+*Voor vaders die alles willen weten over een specifieke vaardigheid.*
+
+---
+
+## Overzicht cursussen
 
 | Cursus | Vaardigheid | Voor wie |
 |---|---|---|

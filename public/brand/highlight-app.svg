@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#111318"/>
+  <circle cx="512" cy="512" r="400" fill="none" stroke="#F59E0B" stroke-width="4" opacity="0.15"/>
+  <g transform="translate(512,440) scale(10) translate(-12,-12)" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect width="14" height="20" x="5" y="2" rx="2"/>
+    <path d="M12 18h.01"/>
+  </g>
+  <text x="512" y="680" text-anchor="middle" fill="#F59E0B" font-family="Inter,system-ui,sans-serif" font-size="48" font-weight="700">DE APP</text>
+</svg>

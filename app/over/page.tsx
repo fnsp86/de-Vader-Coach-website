@@ -1,147 +1,240 @@
 import type { Metadata } from 'next';
-import { Heart, Brain, BookOpen, Shield, Users, Sprout } from 'lucide-react';
+import Link from 'next/link';
+import {
+  Heart, Brain, BookOpen, Shield, Target, Smartphone,
+  ArrowRight, Download, Calendar, Zap, Users,
+} from 'lucide-react';
+import EmailGate from '@/components/EmailGate';
 
 export const metadata: Metadata = {
   title: 'Over De Vadercoach',
-  description: 'Onze missie: de drempel verlagen voor hulp aan vaders. Gebaseerd op wetenschap, niet op meningen.',
+  description: 'Door vaders, voor vaders. Wij vertalen wetenschap naar herkenbare keukentafelmomenten.',
 };
-
-const VALUES = [
-  {
-    icon: Brain,
-    title: 'Wetenschap als basis',
-    description: 'Alles wat we maken is gebaseerd op bewezen methoden uit de psychologie, hechtingstheorie en ontwikkelingswetenschap.',
-  },
-  {
-    icon: BookOpen,
-    title: 'Praktisch & direct toepasbaar',
-    description: 'Geen vage theorieën, maar concrete stappen die je vandaag nog kunt toepassen in je gezin.',
-  },
-  {
-    icon: Shield,
-    title: 'Laagdrempelig',
-    description: 'Geen dure coaching sessies of lange wachtlijsten. Betaalbaar materiaal waarmee je zelfstandig aan de slag kunt.',
-  },
-  {
-    icon: Users,
-    title: 'Voor alle vaders',
-    description: 'Of je nu een ervaren vader bent of net begint, onze cursussen passen zich aan op jouw situatie.',
-  },
-  {
-    icon: Sprout,
-    title: 'Groei op je eigen tempo',
-    description: 'Geen verplichtingen, geen deadlines. Leer wanneer het jou uitkomt, in je eigen tempo.',
-  },
-  {
-    icon: Heart,
-    title: 'Vanuit het hart',
-    description: 'De Vadercoach is gemaakt door vaders, voor vaders. We begrijpen de uitdagingen omdat we ze zelf kennen.',
-  },
-];
 
 export default function OverPage() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <div className="max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl font-extrabold mb-4" style={{ color: 'var(--text)' }}>
-            Over De Vadercoach
-          </h1>
-          <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-            De Vadercoach is er om de drempel naar hulp voor vaders te verlagen.
-            Wij geloven dat elke vader beter kan worden, niet door perfectie na te streven,
-            maar door elke dag een klein stapje te zetten.
-          </p>
-        </div>
-      </section>
-
-      {/* Missie */}
-      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-extrabold mb-4" style={{ color: 'var(--text)' }}>
-                Onze missie
-              </h2>
-              <div className="space-y-4 text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
-                <p>
-                  Veel vaders willen een betere vader zijn, maar weten niet waar ze moeten beginnen.
-                  Coaching is duur, boeken zijn tijdrovend, en de drempel om hulp te vragen is hoog.
-                </p>
-                <p>
-                  De Vadercoach biedt een alternatief: praktische, betaalbare cursussen
-                  die je op je eigen tempo kunt volgen. Gebaseerd op wetenschap en psychologie,
-                  maar geschreven in gewone taal met concrete voorbeelden.
-                </p>
-                <p>
-                  We bieden geen coaching sessies aan en fungeren niet als therapeut.
-                  Wat we wél doen: je voorzien van het beste materiaal om zelf aan de slag te gaan.
-                  Jij bent de expert van je eigen gezin. Wij geven je de tools.
-                </p>
+      <section className="relative overflow-hidden">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-6">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B' }}>
+                <Heart className="h-4.5 w-4.5 text-black" strokeWidth={2.5} />
               </div>
+              <span className="text-sm font-bold" style={{ color: '#F59E0B' }}>
+                Over ons
+              </span>
             </div>
 
-            <div className="rounded-2xl border p-8" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <h3 className="text-lg font-bold mb-4" style={{ color: 'var(--text)' }}>Wat De Vadercoach wél is</h3>
-              <ul className="space-y-3 mb-6">
-                {[
-                  'Praktische PDF-cursussen',
-                  'Gebaseerd op wetenschappelijk onderzoek',
-                  'Betaalbaar en laagdrempelig',
-                  'Op je eigen tempo te volgen',
-                  'Een gratis app met dagelijkse oefeningen',
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm font-medium" style={{ color: 'var(--text)' }}>
-                    <span className="h-1.5 w-1.5 rounded-full shrink-0" style={{ backgroundColor: '#F59E0B' }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight mb-6" style={{ color: 'var(--text)' }}>
+              Vaders helpen vaders.{' '}
+              <span style={{ color: '#F59E0B' }}>Dat is het.</span>
+            </h1>
 
-              <h3 className="text-lg font-bold mb-4" style={{ color: 'var(--text)' }}>Wat het niet is</h3>
-              <ul className="space-y-3">
-                {[
-                  'Geen persoonlijke coaching of therapie',
-                  'Geen vervanging voor professionele hulp',
-                  'Geen oordeel, alleen ondersteuning',
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm font-medium" style={{ color: 'var(--text3)' }}>
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <p className="text-lg leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+              We zijn zelf vaders. We kennen de momenten waarop je twijfelt, de avonden dat je denkt &ldquo;had ik dat anders moeten doen?&rdquo; en de frustratie als je voor de zoveelste keer je stem verheft terwijl je dat niet wilde.
+            </p>
+            <p className="text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
+              Daarom bouwden we De Vader Coach. Niet als vervanging voor therapie of coaching, maar als iets dat er niet was: betaalbare, praktische tools voor vaders die het beter willen doen. Elke dag een beetje.
+            </p>
           </div>
         </div>
+
+        <div className="absolute top-0 right-0 -z-10 h-full w-1/2 opacity-15 blur-3xl" style={{ background: 'radial-gradient(circle at 70% 30%, #F59E0B, transparent 60%)' }} />
       </section>
 
-      {/* Waarden */}
-      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <h2 className="text-2xl font-extrabold mb-8 text-center" style={{ color: 'var(--text)' }}>
-            Onze waarden
+      {/* Wat we geloven */}
+      <section style={{ backgroundColor: 'var(--surface)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+          <h2 className="text-2xl sm:text-3xl font-extrabold mb-10" style={{ color: 'var(--text)' }}>
+            Wat we geloven
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {VALUES.map((v) => (
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              {
+                icon: Heart,
+                title: 'Perfectie bestaat niet',
+                desc: 'Je hoeft geen superpapa te zijn. Het gaat om bewustzijn, niet om perfectie. Elke dag een beetje beter is genoeg.',
+              },
+              {
+                icon: Brain,
+                title: 'Wetenschap in gewone taal',
+                desc: 'Gottman, Bowlby, Fonagy - briljante onderzoekers. Maar niemand leest papers aan de keukentafel. Wij vertalen het.',
+              },
+              {
+                icon: Shield,
+                title: 'Geen oordeel, alleen tools',
+                desc: 'We wijzen geen vinger. We geven je de handvatten om het zelf anders te doen. Jij bent de expert van je eigen gezin.',
+              },
+              {
+                icon: Target,
+                title: 'Direct doen, niet alleen lezen',
+                desc: 'Alles wat we maken bevat oefeningen die je vandaag nog kunt toepassen. Kennis zonder actie verandert niks.',
+              },
+              {
+                icon: Users,
+                title: 'Door vaders, voor vaders',
+                desc: 'Geschreven vanuit het vaderperspectief. Met de situaties die je als vader herkent, niet de theorie die je als student leest.',
+              },
+              {
+                icon: Zap,
+                title: 'Past in een druk leven',
+                desc: 'Korte oefeningen, hapklare trainingen, een app die in 2 minuten klaar is. Want vaders hebben geen uren vrij.',
+              },
+            ].map((v) => (
               <div
                 key={v.title}
-                className="rounded-2xl border p-6"
-                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                className="rounded-xl px-5 py-5"
+                style={{ backgroundColor: 'var(--bg)' }}
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl mb-3 bg-amber-500/10">
-                  <v.icon className="h-5 w-5 text-amber-400" />
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg mb-3 bg-amber-500/10">
+                  <v.icon className="h-4.5 w-4.5 text-amber-400" />
                 </div>
-                <h3 className="text-base font-bold mb-1.5" style={{ color: 'var(--text)' }}>
+                <h3 className="text-sm font-bold mb-1.5" style={{ color: 'var(--text)' }}>
                   {v.title}
                 </h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--text2)' }}>
-                  {v.description}
+                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text3)' }}>
+                  {v.desc}
                 </p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Wat we aanbieden */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+          <div className="max-w-lg mb-10">
+            <h2 className="text-2xl sm:text-3xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
+              Wat we aanbieden
+            </h2>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--text2)' }}>
+              Drie manieren om te groeien. Gebruik ze los of combineer ze voor het meeste resultaat.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            {/* App */}
+            <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <div className="flex items-center gap-4 flex-1">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
+                  <Smartphone className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De App</h3>
+                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                    Dagelijkse micro-oefeningen, streaks, badges en een community. 2-10 min per dag.
+                  </p>
+                </div>
+              </div>
+              <Link href="/app-download" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
+                Meer info <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            {/* Experience */}
+            <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}>
+              <div className="flex items-center gap-4 flex-1">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
+                  <Calendar className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <h3 className="text-sm font-extrabold" style={{ color: 'var(--text)' }}>De Experience</h3>
+                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>NIEUW</span>
+                  </div>
+                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                    22 scenario-dagen door alle 8 vaardigheden. Herkenbare situaties en concrete acties.
+                  </p>
+                </div>
+              </div>
+              <Link href="/experience" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
+                Bekijk Experience <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            {/* Cursussen */}
+            <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <div className="flex items-center gap-4 flex-1">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#667eea15' }}>
+                  <BookOpen className="h-5 w-5" style={{ color: '#667eea' }} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De Cursussen</h3>
+                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                    8 verdiepende PDF-werkboeken. Wetenschap, werkbladen en oefeningen per vaardigheid.
+                  </p>
+                </div>
+              </div>
+              <Link href="/cursussen" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#667eea' }}>
+                Bekijk cursussen <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            {/* Snelgids */}
+            <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
+              <div className="flex items-center gap-4 flex-1">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
+                  <Download className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <h3 className="text-sm font-extrabold" style={{ color: 'var(--text)' }}>De Snelgids</h3>
+                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#34D39920', color: '#34D399' }}>GRATIS</span>
+                  </div>
+                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                    De kern van alle 8 vaardigheden in een PDF. Herkenbare situaties en 8 tips die je vandaag kunt toepassen.
+                  </p>
+                </div>
+              </div>
+              <EmailGate
+                downloadUrl="/api/free-download"
+                buttonText="Download PDF"
+                className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all cursor-pointer"
+                style={{ color: '#F59E0B' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Eerlijk is eerlijk */}
+      <section style={{ backgroundColor: 'var(--surface)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
+          <div className="flex items-start gap-4 max-w-2xl mx-auto">
+            <Heart className="h-5 w-5 shrink-0 mt-0.5 text-amber-400" />
+            <div>
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
+                Eerlijk is eerlijk
+              </h3>
+              <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text3)' }}>
+                We zijn net begonnen. Er zijn nog geen honderden reviews of een groot team. Maar de wetenschap achter
+                ons materiaal is bewezen door decennia onderzoek. We zijn geen therapeuten en geen vervanging voor
+                professionele hulp. Wat we wel zijn: vaders die de beste beschikbare kennis vertalen naar iets dat je
+                morgenochtend al kunt gebruiken.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16 text-center">
+          <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
+            Begin vandaag
+          </h2>
+          <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
+            Download de gratis snelgids en ontdek welke vaardigheid bij jou past.
+          </p>
+          <EmailGate
+            downloadUrl="/api/free-download"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
+            style={{ backgroundColor: '#F59E0B' }}
+          />
         </div>
       </section>
     </>

@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'nl_NL',
     siteName: 'De Vadercoach',
+    url: 'https://devadercoach.nl',
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+  alternates: {
+    canonical: 'https://devadercoach.nl',
   },
 };
 
@@ -34,6 +41,45 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'De Vadercoach',
+              url: 'https://devadercoach.nl',
+              logo: 'https://devadercoach.nl/icon.png',
+              description:
+                'Praktische cursussen, een 22-daagse Experience en een app voor vaders die willen groeien. Gebaseerd op wetenschap en psychologie.',
+              sameAs: [],
+              contactPoint: {
+                '@type': 'ContactPoint',
+                email: 'info@devadercoach.nl',
+                contactType: 'customer service',
+                availableLanguage: 'Dutch',
+              },
+              offers: [
+                {
+                  '@type': 'Offer',
+                  name: 'De Vader Experience',
+                  description: '22-daagse reis door 8 opvoedvaardigheden',
+                  price: '19.99',
+                  priceCurrency: 'EUR',
+                  url: 'https://devadercoach.nl/experience',
+                },
+                {
+                  '@type': 'Offer',
+                  name: 'Cursussen bundel',
+                  description: 'Alle 8 verdiepende PDF-werkboeken',
+                  price: '39.99',
+                  priceCurrency: 'EUR',
+                  url: 'https://devadercoach.nl/cursussen',
+                },
+              ],
+            }),
+          }}
         />
       </head>
       <body className="min-h-screen flex flex-col">

@@ -239,7 +239,7 @@ export const BUNDLE = {
 
 export const SNELGIDS = {
   title: 'De 8 Vadervaardigheden - Snelgids',
-  description: '16 pagina\'s met de kern van elke vaardigheid. Herkenbare situaties, praktische tips, en de wetenschap in een notendop.',
+  description: 'De kern van elke vaardigheid, herkenbare situaties, praktische tips, plus een overzicht van de App, Experience en Cursussen.',
   pages: 16,
   pdfPath: '/cursussen/snelgids-8-vadervaardigheden.pdf',
 };
