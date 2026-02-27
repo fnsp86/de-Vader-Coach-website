@@ -877,7 +877,7 @@ Niet omdat het makkelijk is. Maar omdat jij de vader bent die je kinderen nodig 
     title: 'De jeuk in je handen',
     subtitle: 'Waarom je zo graag wilt overnemen  -  en wat het je kind kost',
     readTime: 4,
-    courseSlug: 'autonomie-ondersteunen',
+    courseSlug: 'autonomie-en-loslaten',
     reflection: 'Bij welke dagelijkse handeling neem jij standaard over, terwijl je kind het eigenlijk zelf zou kunnen?',
     content: `Je kind zit op het bankje in de gang. Veters. Het rechter kluwen zit al voor de derde keer in de knoop. Kleine vingertjes trekken, duwen, friemelen. Je ziet het lusje steeds net verkeerd gaan.
 
@@ -941,7 +941,7 @@ Morgen ga je dit oefenen. En ja  -  het wordt rommelig.
     title: 'Laat het kliederen',
     subtitle: 'Eén ding vandaag niet overnemen  -  ook als het misgaat',
     readTime: 4,
-    courseSlug: 'autonomie-ondersteunen',
+    courseSlug: 'autonomie-en-loslaten',
     reflection: 'Hoe voelde het om toe te kijken zonder in te grijpen? Wat zag je bij je kind?',
     exercise: 'Laat je kind vandaag één ding zelf doen dat jij normaal overneemt  -  inschenken, brood smeren, jas dichtdoen. Kijk toe. Grijp niet in. Zeg alleen iets als ze erom vragen.',
     content: `Het is ochtend. Ontbijt. Je kind pakt het pak melk. Of het sap. Die volle, zware liter die bijna net zo groot is als hun onderarm.
@@ -1020,7 +1020,7 @@ Pak vanavond even een stil moment. Denk terug aan dat ene moment. Wat zag je in 
     title: 'De ochtend erna',
     subtitle: 'Je hebt gisteren geschreeuwd  -  en nu zit de schaamte in je maag',
     readTime: 4,
-    courseSlug: 'herstellen-na-conflicten',
+    courseSlug: 'herstel-na-conflict',
     reflection: 'Wanneer heb jij voor het laatst iets kapotgemaakt in het contact met je kind dat je niet hebt gerepareerd?',
     content: `Het is stil in huis. Vroege ochtend. Je kind slaapt nog. Maar jij bent al wakker. Al een tijdje.
 
@@ -1089,7 +1089,7 @@ Morgen ga je dit doen. Concreet. Met woorden. En het wordt spannend.
     title: 'Sorry zeggen zoals je het meent',
     subtitle: 'Drie zinnen die meer doen dan duizend cadeaus',
     readTime: 4,
-    courseSlug: 'herstellen-na-conflicten',
+    courseSlug: 'herstel-na-conflict',
     reflection: 'Wat deed het met jou om deze woorden hardop uit te spreken tegen je kind?',
     exercise: 'Ga vandaag naar je kind en zeg drie zinnen: "Het spijt me dat ik [X] deed. Dat was niet oké. Jij verdiende dat niet." Gebruik echte woorden voor wat er gebeurde.',
     content: `Denk even terug. Wanneer was de laatste keer dat je iets deed waar je kind niet om vroeg en niet om verdiende?
@@ -1168,7 +1168,7 @@ Drie zinnen. Dat is alles.
     title: 'Kijken hoe ze vallen',
     subtitle: 'Er zijn zonder het over te nemen  -  de kunst van loslaten én vasthouden',
     readTime: 5,
-    courseSlug: 'autonomie-ondersteunen',
+    courseSlug: 'autonomie-en-loslaten',
     reflection: 'Welk moment deze week  -  bij het loslaten of het herstellen  -  heeft je het meest geraakt als vader?',
     content: `Zaterdag. Park, of tuin, of stoep voor het huis. Je kind is ergens mee bezig.
 
@@ -1251,7 +1251,7 @@ Je bent al verder dan je denkt.
     title: 'Ga naast ze zitten',
     subtitle: 'Waarom schouder-aan-schouder meer opent dan oog-in-oog',
     readTime: 5,
-    courseSlug: 'verbinding-met-je-kind',
+    courseSlug: 'verbinding-met-je-tiener',
     reflection: 'Wanneer had jij voor het laatst een goed gesprek met je kind zonder dat jullie tegenover elkaar zaten?',
     content: `Het is zondagmiddag. Je kind zit aan de eettafel te knutselen. Stiften, papier, lijm  -  de hele boel ligt uitgespreid. Je hebt even tijd. Je denkt: ik ga erbij zitten.
 
@@ -1317,7 +1317,7 @@ Wat er dan komt, is niet iets wat je kunt forceren. Maar het is precies wat jull
     title: 'De schouder-aan-schouder uitdaging',
     subtitle: 'Vandaag doe je iets naast je kind, niet tegenover',
     readTime: 4,
-    courseSlug: 'verbinding-met-je-kind',
+    courseSlug: 'verbinding-met-je-tiener',
     reflection: 'Wat zei je kind dat je niet had verwacht? En wat zei de stilte daarvoor?',
     exercise: 'Doe vandaag iets NAAST je kind. Niet tegenover, maar naast. Afwassen, wandelen, autorijden, knutselen. Laat de stiltes. Wacht tot zij beginnen te praten.',
     content: `Je staat bij het aanrecht. De vaatwasser moet worden ingeruimd. Geen glamoureuze bezigheid. Je kind loopt langs  -  op weg naar de bank, naar een scherm, naar iets anders.
@@ -1528,7 +1528,7 @@ Laat het er zijn. Schrijf het op. En ga dan slapen.
     title: 'De autorit',
     subtitle: 'Wat er gebeurt als je het stuur vasthoudt en de stilte toelaat',
     readTime: 5,
-    courseSlug: 'verbinding-met-je-kind',
+    courseSlug: 'verbinding-met-je-tiener',
     reflection: 'Als je terugdenkt aan een autorit met je eigen vader: wat herinner je je? En wat wil je dat jouw kind zich later herinnert?',
     content: `Het maakt niet uit waarheen. Naar voetbal, naar oma, naar de supermarkt, naar huis. Je kind zit achter je, of naast je als het al groot genoeg is. De motor zoemt. De weg strekt zich uit.
 

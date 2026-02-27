@@ -426,7 +426,7 @@ export default function HomePage() {
       {/* ── Waarom De Vader Coach? ──────────────────────── */}
       <section className="border-t" style={{ borderColor: 'var(--border)' }}>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Left: USP list */}
             <div>
               <h2 className="text-xl sm:text-2xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>

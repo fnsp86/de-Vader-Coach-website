@@ -30,7 +30,7 @@ export default function DayAudioPlayer({ dag, script, color }: DayAudioPlayerPro
     if (playing) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      audioRef.current.play().catch(() => setPlaying(false));
     }
     setPlaying(!playing);
   };

@@ -23,6 +23,7 @@ export const SKILL_COLORS: Record<string, string> = {
   Herstel: '#FB923C',
   Autonomie: '#A78BFA',
   Reflectie: '#C084FC',
+  Integratie: '#F59E0B',
 };
 
 export const COURSES: Record<string, Course> = {
