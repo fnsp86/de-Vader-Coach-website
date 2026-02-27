@@ -6,14 +6,25 @@ export async function GET(request: NextRequest) {
   if (!verifyAdminAuth(request)) return unauthorizedResponse();
 
   const days = parseInt(request.nextUrl.searchParams.get('days') ?? '30', 10);
-  const data = await getAnalytics(Math.min(days, 90));
 
-  if (!data) {
+  try {
+    const data = await getAnalytics(Math.min(days, 90));
+
+    if (!data) {
+      const hasRedisUrl = !!process.env.REDIS_URL;
+      return NextResponse.json(
+        {
+          error: `Analytics niet geconfigureerd. REDIS_URL ${hasRedisUrl ? 'is set' : 'is MISSING'}.`,
+        },
+        { status: 503 }
+      );
+    }
+
+    return NextResponse.json(data);
+  } catch (e) {
     return NextResponse.json(
-      { error: 'Analytics niet geconfigureerd. Koppel een Redis database in Vercel.' },
-      { status: 503 }
+      { error: `Analytics error: ${e instanceof Error ? e.message : String(e)}` },
+      { status: 500 }
     );
   }
-
-  return NextResponse.json(data);
 }
