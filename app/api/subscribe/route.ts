@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { addSubscriber } from '@/lib/newsletter';
 
 export async function POST(request: Request) {
   try {
@@ -7,6 +8,9 @@ export async function POST(request: Request) {
     if (!email || typeof email !== 'string') {
       return NextResponse.json({ error: 'E-mailadres is verplicht.' }, { status: 400 });
     }
+
+    // Store subscriber in Redis for newsletter
+    await addSubscriber(email, 'snelgids');
 
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) {

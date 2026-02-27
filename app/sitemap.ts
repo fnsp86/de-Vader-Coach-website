@@ -1,33 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { POSTS_LIST } from '@/lib/blog-posts';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
 
 const BASE = 'https://devadercoach.nl';
-
-const BLOG_SLUGS = [
-  'aanwezig-zijn-voor-kind',
-  'driftbuien-begrijpen',
-  'grenzen-zonder-schreeuwen',
-  'herstellen-na-fout',
-  'waarom-je-kind-je-triggers',
-  'loslaten-zonder-angst',
-  'praten-met-je-tiener',
-  'reflecteren-als-vader',
-  'kind-luistert-niet',
-  'peuter-driftbui-wat-doen',
-  'schuldgevoel-als-vader',
-  'vader-burn-out-opvoeding',
-  'quality-time-kind',
-  'kind-bang-in-donker',
-  'scheiden-en-vader-zijn',
-  'puber-telefoon-verslaving',
-  'nieuwe-baby-als-vader',
-  'kind-slaat-andere-kinderen',
-  'vader-eigen-emoties',
-  'huiswerk-strijd',
-  'kind-wil-niet-naar-school',
-  'stiefvader-tips',
-  'vader-kind-weekendvader',
-];
 
 const COURSE_SLUGS = [
   'aanwezig-vaderschap',
@@ -40,7 +15,7 @@ const COURSE_SLUGS = [
   'reflectief-vaderschap',
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date().toISOString();
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -62,12 +37,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = BLOG_SLUGS.map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: now,
+  // Static blog posts
+  const blogPages: MetadataRoute.Sitemap = POSTS_LIST.map((post) => ({
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: post.date,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
+
+  // Dynamic blog posts from Redis
+  let dynamicBlogPages: MetadataRoute.Sitemap = [];
+  try {
+    const { getAllDynamicBlogPosts } = await import('@/lib/blog-storage');
+    const dynamicPosts = await getAllDynamicBlogPosts();
+    dynamicBlogPages = dynamicPosts
+      .filter((p) => p.published)
+      .map((post) => ({
+        url: `${BASE}/blog/${post.slug}`,
+        lastModified: post.updatedAt || post.date,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      }));
+  } catch {}
 
   const experiencePages: MetadataRoute.Sitemap = EXPERIENCE_DAYS.map((day) => ({
     url: `${BASE}/experience/dag/${day.dag}`,
@@ -76,5 +67,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...coursePages, ...blogPages, ...experiencePages];
+  return [...staticPages, ...coursePages, ...blogPages, ...dynamicBlogPages, ...experiencePages];
 }

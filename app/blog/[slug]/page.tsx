@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Clock, User, BookOpen, Download, ArrowRight } from 'lucide-react';
 import { SKILL_COLORS, getAllCourses, SNELGIDS } from '@/lib/courses';
-import { getBlogPost, POSTS_LIST } from '@/lib/blog-posts';
+import { getBlogPostAsync, getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 import ShareButtons from '@/components/ShareButtons';
 
 const DEFAULT_POST = {
@@ -16,7 +16,7 @@ const DEFAULT_POST = {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPost(slug) ?? DEFAULT_POST;
+  const post = (await getBlogPostAsync(slug)) ?? DEFAULT_POST;
   return {
     title: post.title,
     description: post.description,
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogArticle({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = getBlogPost(slug) ?? DEFAULT_POST;
+  const post = (await getBlogPostAsync(slug)) ?? DEFAULT_POST;
   const formatted = new Date(post.date).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
   const categoryColor = SKILL_COLORS[post.category] || '#F59E0B';
 
@@ -41,7 +41,8 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
   const relatedCourse = getAllCourses().find((c) => c.category === post.category);
 
   // Find 3 related blog posts (same category, excluding current)
-  const relatedPosts = POSTS_LIST
+  const allPosts = await getAllBlogPostsAsync();
+  const relatedPosts = allPosts
     .filter((p) => p.slug !== slug)
     .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
     .slice(0, 3);

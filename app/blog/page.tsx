@@ -2,14 +2,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Download } from 'lucide-react';
 import BlogContent from '@/components/BlogContent';
-import { POSTS_LIST } from '@/lib/blog-posts';
+import { getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Verhalen, inzichten en herkenbare momenten voor vaders.',
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllBlogPostsAsync();
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -31,7 +33,7 @@ export default function BlogPage() {
         </Link>
       </div>
 
-      <BlogContent posts={POSTS_LIST} />
+      <BlogContent posts={posts} />
     </div>
   );
 }
