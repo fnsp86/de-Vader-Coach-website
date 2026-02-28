@@ -5,8 +5,14 @@ import BlogContent from '@/components/BlogContent';
 import { getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 
 export const metadata: Metadata = {
-  title: 'Blog',
-  description: 'Verhalen, inzichten en herkenbare momenten voor vaders.',
+  title: 'Vaderschapsblog - Opvoedtips & Verhalen voor Vaders',
+  description:
+    'Herkenbare verhalen en praktische opvoedtips voor vaders. Over grenzen stellen, omgaan met driftbuien, emotiecoaching, vader-kind relatie en meer.',
+  openGraph: {
+    title: 'Vaderschapsblog - Opvoedtips & Verhalen voor Vaders',
+    description:
+      'Herkenbare verhalen en praktische opvoedtips voor vaders. Over grenzen stellen, driftbuien, emotiecoaching en meer.',
+  },
 };
 
 export default async function BlogPage() {
@@ -17,10 +23,10 @@ export default async function BlogPage() {
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
-            Blog
+            Vaderschapsblog
           </h1>
           <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-            Verhalen, inzichten en herkenbare momenten voor vaders.
+            Herkenbare verhalen, opvoedtips en inzichten voor vaders. Over grenzen stellen, emoties begeleiden en betrokken vaderschap.
           </p>
         </div>
         <Link

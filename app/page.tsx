@@ -12,13 +12,13 @@ import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
 import { TESTIMONIALS } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
-  title: 'De Vadercoach | Word elke dag een betere vader',
+  title: 'De Vadercoach | Opvoedtips & Cursussen voor Vaders',
   description:
-    'Leer de 8 essentiële opvoedvaardigheden met de app, de 22-daagse Experience of verdiepende cursussen. Door vaders, voor vaders.',
+    'Hoe word ik een goede vader? Leer 8 opvoedvaardigheden met onze app, de 22-daagse Vader Experience of verdiepende cursussen. Grenzen stellen, emotiecoaching, omgaan met driftbuien en meer. Door vaders, voor vaders.',
   openGraph: {
-    title: 'De Vadercoach | Word elke dag een betere vader',
+    title: 'De Vadercoach | Opvoedtips & Cursussen voor Vaders',
     description:
-      'Leer de 8 essentiële opvoedvaardigheden met de app, de 22-daagse Experience of verdiepende cursussen. Door vaders, voor vaders.',
+      'Leer 8 opvoedvaardigheden met onze app, de 22-daagse Vader Experience of verdiepende cursussen. Door vaders, voor vaders.',
   },
 };
 
@@ -624,10 +624,10 @@ export default function HomePage() {
       <section style={{ backgroundColor: 'var(--surface)' }}>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16 text-center">
           <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
-            Begin vandaag
+            Word vandaag een betere vader
           </h2>
           <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
-            Download de gratis snelgids en ontdek welke vaardigheid bij jou past.
+            Download de gratis snelgids met opvoedtips en ontdek welke vaardigheid bij jou past.
           </p>
           <EmailGate
             downloadUrl="/api/free-download"
@@ -636,6 +636,26 @@ export default function HomePage() {
           />
         </div>
       </section>
+
+      {/* WebSite Schema for sitelinks search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'De Vadercoach',
+            url: 'https://devadercoach.nl',
+            description: 'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Wetenschappelijk onderbouwd vaderschap.',
+            inLanguage: 'nl',
+            publisher: {
+              '@type': 'Organization',
+              name: 'De Vadercoach',
+              url: 'https://devadercoach.nl',
+            },
+          }),
+        }}
+      />
     </>
   );
 }

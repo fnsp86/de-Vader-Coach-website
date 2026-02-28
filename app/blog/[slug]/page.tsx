@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       authors: ['De Vadercoach'],
       url: `https://devadercoach.nl/blog/${slug}`,
     },
+    alternates: {
+      canonical: `https://devadercoach.nl/blog/${slug}`,
+    },
   };
 }
 
@@ -62,16 +65,35 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
     })
     .join('\n');
 
-  // Article structured data for SEO
+  // BlogPosting structured data for SEO
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    dateModified: post.date,
     author: { '@type': 'Organization', name: 'De Vadercoach', url: 'https://devadercoach.nl' },
-    publisher: { '@type': 'Organization', name: 'De Vadercoach', url: 'https://devadercoach.nl' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'De Vadercoach',
+      url: 'https://devadercoach.nl',
+      logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/icon-512.png' },
+    },
     mainEntityOfPage: `https://devadercoach.nl/blog/${slug}`,
+    inLanguage: 'nl',
+    articleSection: post.category,
+    wordCount: post.content.split(/\s+/).length,
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://devadercoach.nl/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://devadercoach.nl/blog/${slug}` },
+    ],
   };
 
   return (
@@ -79,6 +101,10 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <Link

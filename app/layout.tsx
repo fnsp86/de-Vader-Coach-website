@@ -11,16 +11,30 @@ export const metadata: Metadata = {
     template: '%s | De Vadercoach',
   },
   description:
-    'Praktische cursussen en tools voor vaders, gebaseerd op wetenschap en psychologie. Verlaag de drempel naar hulp.',
+    'Praktische opvoedcursussen, een 22-daagse Experience en een app speciaal voor vaders. Leer omgaan met driftbuien, grenzen stellen, emotiecoaching en meer. Gebaseerd op wetenschap, door vaders, voor vaders.',
+  keywords: [
+    'vaderschap', 'opvoedtips', 'vader worden', 'opvoedcursus', 'betere vader',
+    'grenzen stellen kind', 'driftbui peuter', 'emotiecoaching', 'positief opvoeden',
+    'vader tips', 'kind luistert niet', 'opvoeding vader', 'betrokken vaderschap',
+    'online opvoedcursus', 'vader kind relatie', 'zelfregulatie ouder',
+    'omgaan met driftbuien', 'hoe word ik een goede vader', 'opvoedvaardigheden',
+    'vadercoach', 'vader experience', 'opvoedboek vaders',
+  ],
   metadataBase: new URL('https://devadercoach.nl'),
   openGraph: {
     type: 'website',
     locale: 'nl_NL',
     siteName: 'De Vadercoach',
     url: 'https://devadercoach.nl',
+    title: 'De Vadercoach | Word elke dag een betere vader',
+    description:
+      'Praktische opvoedcursussen, een 22-daagse Experience en een app speciaal voor vaders. Gebaseerd op wetenschap, door vaders, voor vaders.',
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'De Vadercoach | Word elke dag een betere vader',
+    description:
+      'Praktische opvoedcursussen en tools voor vaders. Leer omgaan met driftbuien, grenzen stellen en emotiecoaching.',
   },
   alternates: {
     canonical: 'https://devadercoach.nl',
@@ -61,8 +75,8 @@ export default function RootLayout({
               url: 'https://devadercoach.nl',
               logo: 'https://devadercoach.nl/icon-512.png',
               description:
-                'Praktische cursussen, een 22-daagse Experience en een app voor vaders die willen groeien. Gebaseerd op wetenschap en psychologie.',
-              sameAs: [],
+                'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Leer grenzen stellen, omgaan met driftbuien, emotiecoaching en meer. Wetenschappelijk onderbouwd door Gottman, Bowlby en Fonagy.',
+              sameAs: ['https://instagram.com/devadercoach.nl'],
               contactPoint: {
                 '@type': 'ContactPoint',
                 email: 'info@devadercoach.nl',

@@ -6,8 +6,14 @@ import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
 import { FAQ_CURSUSSEN } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
-  title: 'Cursussen',
-  description: 'Praktische PDF-cursussen voor vaders. Gebaseerd op wetenschap en psychologie. Direct toepasbaar.',
+  title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
+  description:
+    'Online opvoedcursussen speciaal voor vaders. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. 8 PDF-werkboeken, wetenschappelijk onderbouwd, direct toepasbaar.',
+  openGraph: {
+    title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
+    description:
+      'Online opvoedcursussen speciaal voor vaders. 8 PDF-werkboeken over grenzen stellen, emotiecoaching, zelfregulatie en meer.',
+  },
 };
 
 export default function CursussenPage() {
@@ -17,11 +23,11 @@ export default function CursussenPage() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="max-w-2xl mb-10">
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
-          Cursussen
+          Opvoedcursussen voor Vaders
         </h1>
         <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-          8 verdiepende PDF-cursussen waarmee je direct aan de slag kunt. Wetenschappelijk onderbouwd,
-          praktisch toepasbaar. Jij bepaalt het tempo.
+          8 verdiepende PDF-werkboeken over opvoedvaardigheden. Van grenzen stellen en emotiecoaching
+          tot zelfregulatie en verbinding met je tiener. Wetenschappelijk onderbouwd, direct toepasbaar.
         </p>
       </div>
 
@@ -175,6 +181,51 @@ export default function CursussenPage() {
               '@type': 'Question',
               name: faq.q,
               acceptedAnswer: { '@type': 'Answer', text: faq.a },
+            })),
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+              { '@type': 'ListItem', position: 2, name: 'Opvoedcursussen', item: 'https://devadercoach.nl/cursussen' },
+            ],
+          }),
+        }}
+      />
+
+      {/* ItemList Schema for all courses */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Opvoedcursussen voor Vaders',
+            description: 'Online opvoedcursussen speciaal voor vaders. 8 PDF-werkboeken, wetenschappelijk onderbouwd.',
+            numberOfItems: courses.length,
+            itemListElement: courses.map((course, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              item: {
+                '@type': 'Course',
+                name: course.title,
+                description: course.description,
+                url: `https://devadercoach.nl/cursussen/${course.slug}`,
+                provider: { '@type': 'Organization', name: 'De Vadercoach' },
+                offers: {
+                  '@type': 'Offer',
+                  price: course.price.toFixed(2),
+                  priceCurrency: 'EUR',
+                },
+              },
             })),
           }),
         }}

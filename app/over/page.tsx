@@ -7,8 +7,9 @@ import {
 import EmailGate from '@/components/EmailGate';
 
 export const metadata: Metadata = {
-  title: 'Over De Vadercoach',
-  description: 'Door vaders, voor vaders. Wij vertalen wetenschap naar herkenbare keukentafelmomenten.',
+  title: 'Over Ons - Opvoedondersteuning voor Vaders',
+  description:
+    'De Vadercoach helpt vaders groeien met wetenschappelijk onderbouwde opvoedcursussen en tools. Gebaseerd op Gottman, Bowlby en Fonagy. Door vaders, voor vaders.',
 };
 
 export default function OverPage() {

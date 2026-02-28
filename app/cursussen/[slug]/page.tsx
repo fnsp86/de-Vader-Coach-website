@@ -29,7 +29,19 @@ const DEFAULT_COURSE: Course = {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const course = COURSES[slug] ?? DEFAULT_COURSE;
-  return { title: course.title, description: course.description };
+  return {
+    title: `${course.title} - Opvoedcursus voor Vaders`,
+    description: `${course.description} PDF-werkboek van ${course.pages} pagina's, wetenschappelijk onderbouwd. €${course.price.toFixed(2).replace('.', ',')} eenmalig.`,
+    openGraph: {
+      title: `${course.title} - Opvoedcursus voor Vaders`,
+      description: course.description,
+      type: 'website',
+      url: `https://devadercoach.nl/cursussen/${slug}`,
+    },
+    alternates: {
+      canonical: `https://devadercoach.nl/cursussen/${slug}`,
+    },
+  };
 }
 
 export default async function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -151,6 +163,51 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
           </div>
         </div>
       </div>
+      {/* Product + Course Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Course',
+            name: course.title,
+            description: course.longDescription,
+            provider: {
+              '@type': 'Organization',
+              name: 'De Vadercoach',
+              url: 'https://devadercoach.nl',
+            },
+            url: `https://devadercoach.nl/cursussen/${slug}`,
+            courseMode: 'Online',
+            inLanguage: 'nl',
+            offers: {
+              '@type': 'Offer',
+              price: course.price.toFixed(2),
+              priceCurrency: 'EUR',
+              availability: course.status === 'available'
+                ? 'https://schema.org/InStock'
+                : 'https://schema.org/PreOrder',
+              url: `https://devadercoach.nl/cursussen/${slug}`,
+            },
+          }),
+        }}
+      />
+
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+              { '@type': 'ListItem', position: 2, name: 'Cursussen', item: 'https://devadercoach.nl/cursussen' },
+              { '@type': 'ListItem', position: 3, name: course.title, item: `https://devadercoach.nl/cursussen/${slug}` },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }
