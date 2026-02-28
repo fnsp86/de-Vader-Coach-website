@@ -1,7 +1,7 @@
 {
   "crons": [
     {
-      "path": "/api/cron/instagram",
+      "path": "/api/cron/automation",
       "schedule": "0 8 * * *"
     }
   ]

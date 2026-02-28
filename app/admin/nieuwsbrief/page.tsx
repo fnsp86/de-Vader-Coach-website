@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { useAdminPassword } from '@/components/AdminAuth';
 import {
   Mail, Send, Users, Clock, Loader2, Trash2, Plus, Eye, History,
-  FileText, ChevronDown, AlertCircle, Check,
+  FileText, ChevronDown, AlertCircle, Check, Zap, Tag,
+  CheckCircle, Pause, Play,
 } from 'lucide-react';
 
 interface Subscriber {
@@ -21,7 +22,25 @@ interface SentNewsletter {
   recipientCount: number;
 }
 
-type Tab = 'compose' | 'subscribers' | 'history';
+interface DripStatus {
+  email: string;
+  step: number;
+  startedAt: string;
+  lastSentAt: string;
+  status: 'active' | 'completed' | 'paused';
+}
+
+interface AutoLogEntry {
+  type: 'welcome' | 'drip' | 'weekly' | 'monthly';
+  email?: string;
+  step?: number;
+  subject: string;
+  sentAt: string;
+  success: boolean;
+  error?: string;
+}
+
+type Tab = 'compose' | 'subscribers' | 'history' | 'automation';
 
 const TEMPLATES = [
   {
@@ -66,6 +85,8 @@ export default function NieuwsbriefPage() {
   const [tab, setTab] = useState<Tab>('compose');
   const [subscribers, setSubscribers] = useState<Subscriber[]>([]);
   const [newsletters, setNewsletters] = useState<SentNewsletter[]>([]);
+  const [dripStatuses, setDripStatuses] = useState<DripStatus[]>([]);
+  const [autoLog, setAutoLog] = useState<AutoLogEntry[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Compose state
@@ -89,9 +110,10 @@ export default function NieuwsbriefPage() {
   async function loadData() {
     setLoading(true);
     try {
-      const [subsRes, nlRes] = await Promise.all([
+      const [subsRes, nlRes, autoRes] = await Promise.all([
         fetch('/api/admin/subscribers', { headers }),
         fetch('/api/admin/newsletter', { headers }),
+        fetch('/api/admin/automation', { headers }),
       ]);
       if (subsRes.ok) {
         const data = await subsRes.json();
@@ -100,6 +122,11 @@ export default function NieuwsbriefPage() {
       if (nlRes.ok) {
         const data = await nlRes.json();
         setNewsletters(data.newsletters || []);
+      }
+      if (autoRes.ok) {
+        const data = await autoRes.json();
+        setDripStatuses(data.dripStatuses || []);
+        setAutoLog(data.log || []);
       }
     } catch {}
     setLoading(false);
@@ -169,6 +196,7 @@ export default function NieuwsbriefPage() {
     { id: 'compose', label: 'Schrijven', icon: FileText },
     { id: 'subscribers', label: `Abonnees (${subscribers.length})`, icon: Users },
     { id: 'history', label: 'Verzonden', icon: History },
+    { id: 'automation', label: 'Automatisering', icon: Zap },
   ];
 
   if (loading) {
@@ -426,6 +454,111 @@ export default function NieuwsbriefPage() {
               <NewsletterHistoryItem key={nl.id} newsletter={nl} />
             ))
           )}
+        </div>
+      )}
+
+      {/* Automation Tab */}
+      {tab === 'automation' && (
+        <div className="space-y-6">
+          {/* Drip statuses */}
+          <div>
+            <h3 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: 'var(--text)' }}>
+              <Tag className="h-4 w-4" style={{ color: '#F59E0B' }} />
+              Drip Mailreeks ({dripStatuses.length} abonnees)
+            </h3>
+            {dripStatuses.length === 0 ? (
+              <div className="rounded-xl border p-6 text-center" style={{ borderColor: 'var(--border)' }}>
+                <p className="text-sm" style={{ color: 'var(--text3)' }}>
+                  Nog geen abonnees in de drip mailreeks.
+                </p>
+              </div>
+            ) : (
+              <div className="rounded-xl border divide-y" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
+                {dripStatuses.map((ds) => (
+                  <div key={ds.email} className="flex items-center justify-between px-4 py-3" style={{ borderColor: 'var(--border)' }}>
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium truncate" style={{ color: 'var(--text)' }}>{ds.email}</p>
+                      <div className="flex items-center gap-2 text-[11px] mt-0.5" style={{ color: 'var(--text3)' }}>
+                        <span>Stap {ds.step}/4</span>
+                        <span>&middot;</span>
+                        <span>Gestart {formatDate(ds.startedAt)}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {ds.status === 'completed' ? (
+                        <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg" style={{ backgroundColor: '#34D39915', color: '#34D399' }}>
+                          <CheckCircle className="h-3 w-3" /> Afgerond
+                        </span>
+                      ) : ds.status === 'paused' ? (
+                        <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>
+                          <Pause className="h-3 w-3" /> Gepauzeerd
+                        </span>
+                      ) : (
+                        <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg" style={{ backgroundColor: '#667eea15', color: '#667eea' }}>
+                          <Play className="h-3 w-3" /> Actief
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Automation log */}
+          <div>
+            <h3 className="text-sm font-bold mb-3 flex items-center gap-2" style={{ color: 'var(--text)' }}>
+              <History className="h-4 w-4" style={{ color: '#F59E0B' }} />
+              Automatiseringslog
+            </h3>
+            {autoLog.length === 0 ? (
+              <div className="rounded-xl border p-6 text-center" style={{ borderColor: 'var(--border)' }}>
+                <p className="text-sm" style={{ color: 'var(--text3)' }}>
+                  Nog geen automatische mails verzonden.
+                </p>
+              </div>
+            ) : (
+              <div className="rounded-xl border divide-y" style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}>
+                {autoLog.slice(0, 50).map((entry, i) => (
+                  <div key={i} className="flex items-center justify-between px-4 py-2.5" style={{ borderColor: 'var(--border)' }}>
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="text-[10px] font-bold uppercase px-1.5 py-0.5 rounded"
+                          style={{
+                            backgroundColor:
+                              entry.type === 'welcome' ? '#34D39915' :
+                              entry.type === 'drip' ? '#667eea15' :
+                              '#F59E0B15',
+                            color:
+                              entry.type === 'welcome' ? '#34D399' :
+                              entry.type === 'drip' ? '#667eea' :
+                              '#F59E0B',
+                          }}
+                        >
+                          {entry.type === 'welcome' ? 'Welkom' :
+                           entry.type === 'drip' ? `Drip ${entry.step || ''}` :
+                           'Maandelijks'}
+                        </span>
+                        <p className="text-xs font-medium truncate" style={{ color: 'var(--text)' }}>{entry.subject}</p>
+                      </div>
+                      <div className="flex items-center gap-2 text-[10px] mt-0.5" style={{ color: 'var(--text3)' }}>
+                        {entry.email && <span>{entry.email}</span>}
+                        <span>{formatDate(entry.sentAt)}</span>
+                      </div>
+                    </div>
+                    <div className="shrink-0 ml-2">
+                      {entry.success ? (
+                        <Check className="h-4 w-4" style={{ color: '#34D399' }} />
+                      ) : (
+                        <span title={entry.error}><AlertCircle className="h-4 w-4" style={{ color: '#EF4444' }} /></span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>

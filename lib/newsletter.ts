@@ -1,8 +1,9 @@
 import Redis from 'ioredis';
+import crypto from 'crypto';
 
 let redis: Redis | null = null;
 
-function getRedis(): Redis | null {
+export function getRedis(): Redis | null {
   if (redis) return redis;
   const url = process.env.REDIS_URL;
   if (!url) return null;
@@ -14,6 +15,8 @@ export interface Subscriber {
   email: string;
   subscribedAt: string;
   source: string;
+  unsubToken?: string;
+  discountCode?: string;
 }
 
 export interface SentNewsletter {
@@ -24,19 +27,42 @@ export interface SentNewsletter {
   recipientCount: number;
 }
 
-export async function addSubscriber(email: string, source: string = 'snelgids'): Promise<void> {
+export interface AutoLogEntry {
+  type: 'welcome' | 'drip' | 'weekly' | 'monthly';
+  email?: string;
+  step?: number;
+  subject: string;
+  sentAt: string;
+  success: boolean;
+  error?: string;
+}
+
+// ── Subscriber management ────────────────────────────
+
+export function generateUnsubToken(): string {
+  return crypto.randomBytes(16).toString('hex');
+}
+
+export async function addSubscriber(email: string, source: string = 'snelgids'): Promise<string> {
   const r = getRedis();
-  if (!r) return;
+  if (!r) return '';
 
   const normalized = email.toLowerCase().trim();
+  const token = generateUnsubToken();
+
   const pipeline = r.pipeline();
   pipeline.sadd('nl:emails', normalized);
   pipeline.hset(`nl:sub:${normalized}`, {
     email: normalized,
     subscribedAt: new Date().toISOString(),
     source,
+    unsubToken: token,
   });
+  // Reverse mapping: token → email
+  pipeline.set(`nl:unsub:${token}`, normalized);
   await pipeline.exec();
+
+  return token;
 }
 
 export async function removeSubscriber(email: string): Promise<void> {
@@ -44,10 +70,46 @@ export async function removeSubscriber(email: string): Promise<void> {
   if (!r) return;
 
   const normalized = email.toLowerCase().trim();
+
+  // Get unsubscribe token before removing
+  const token = await r.hget(`nl:sub:${normalized}`, 'unsubToken');
+
   const pipeline = r.pipeline();
   pipeline.srem('nl:emails', normalized);
   pipeline.del(`nl:sub:${normalized}`);
+  if (token) pipeline.del(`nl:unsub:${token}`);
+  // Clean up drip queue
+  pipeline.zrem('nl:drip:queue', normalized);
+  pipeline.del(`nl:drip:${normalized}`);
   await pipeline.exec();
+}
+
+export async function unsubscribeByToken(token: string): Promise<string | null> {
+  const r = getRedis();
+  if (!r) return null;
+
+  const email = await r.get(`nl:unsub:${token}`);
+  if (!email) return null;
+
+  await removeSubscriber(email);
+  return email;
+}
+
+export async function getSubscriber(email: string): Promise<Subscriber | null> {
+  const r = getRedis();
+  if (!r) return null;
+
+  const normalized = email.toLowerCase().trim();
+  const data = await r.hgetall(`nl:sub:${normalized}`);
+  if (!data || !data.email) return null;
+
+  return {
+    email: data.email,
+    subscribedAt: data.subscribedAt || '',
+    source: data.source || 'onbekend',
+    unsubToken: data.unsubToken,
+    discountCode: data.discountCode,
+  };
 }
 
 export async function getSubscribers(): Promise<Subscriber[]> {
@@ -64,18 +126,20 @@ export async function getSubscribers(): Promise<Subscriber[]> {
   const results = await pipeline.exec();
   if (!results) return [];
 
-  return results
-    .map(([err, data]) => {
-      if (err || !data) return null;
-      const d = data as Record<string, string>;
-      return {
-        email: d.email || '',
-        subscribedAt: d.subscribedAt || '',
-        source: d.source || 'onbekend',
-      };
-    })
-    .filter((s): s is Subscriber => !!s && !!s.email)
-    .sort((a, b) => b.subscribedAt.localeCompare(a.subscribedAt));
+  const subscribers: Subscriber[] = [];
+  for (const [err, data] of results) {
+    if (err || !data) continue;
+    const d = data as Record<string, string>;
+    if (!d.email) continue;
+    subscribers.push({
+      email: d.email,
+      subscribedAt: d.subscribedAt || '',
+      source: d.source || 'onbekend',
+      unsubToken: d.unsubToken,
+      discountCode: d.discountCode,
+    });
+  }
+  return subscribers.sort((a, b) => b.subscribedAt.localeCompare(a.subscribedAt));
 }
 
 export async function getSubscriberCount(): Promise<number> {
@@ -84,18 +148,45 @@ export async function getSubscriberCount(): Promise<number> {
   return r.scard('nl:emails');
 }
 
+// ── Email sending ────────────────────────────────────
+
+export function getUnsubscribeUrl(token: string): string {
+  return `https://devadercoach.nl/uitschrijven?token=${token}`;
+}
+
+export async function sendEmail(
+  to: string,
+  subject: string,
+  html: string,
+  unsubscribeUrl?: string,
+): Promise<void> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) throw new Error('RESEND_API_KEY niet geconfigureerd');
+
+  const { Resend } = await import('resend');
+  const resend = new Resend(apiKey);
+
+  const headers: Record<string, string> = {};
+  if (unsubscribeUrl) {
+    headers['List-Unsubscribe'] = `<${unsubscribeUrl}>`;
+    headers['List-Unsubscribe-Post'] = 'List-Unsubscribe=One-Click';
+  }
+
+  await resend.emails.send({
+    from: 'De Vadercoach <noreply@devadercoach.nl>',
+    to,
+    subject,
+    html,
+    headers: Object.keys(headers).length > 0 ? headers : undefined,
+  });
+}
+
 export async function sendNewsletter(
   subject: string,
   htmlContent: string,
 ): Promise<{ success: boolean; count: number; error?: string }> {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) return { success: false, count: 0, error: 'RESEND_API_KEY niet geconfigureerd' };
-
   const subscribers = await getSubscribers();
   if (subscribers.length === 0) return { success: false, count: 0, error: 'Geen abonnees' };
-
-  const { Resend } = await import('resend');
-  const resend = new Resend(apiKey);
 
   let sent = 0;
   const errors: string[] = [];
@@ -104,12 +195,12 @@ export async function sendNewsletter(
     const batch = subscribers.slice(i, i + 10);
     const promises = batch.map(async (sub) => {
       try {
-        await resend.emails.send({
-          from: 'De Vadercoach <noreply@devadercoach.nl>',
-          to: sub.email,
-          subject,
-          html: htmlContent,
-        });
+        const unsubUrl = sub.unsubToken ? getUnsubscribeUrl(sub.unsubToken) : undefined;
+        // Inject unsubscribe link into the HTML for this subscriber
+        const personalizedHtml = unsubUrl
+          ? htmlContent.replace('{{unsubscribeUrl}}', unsubUrl)
+          : htmlContent;
+        await sendEmail(sub.email, subject, personalizedHtml, unsubUrl);
         sent++;
       } catch (e) {
         errors.push(`${sub.email}: ${e instanceof Error ? e.message : String(e)}`);
@@ -155,7 +246,27 @@ export async function getSentNewsletters(): Promise<SentNewsletter[]> {
     .filter((n): n is SentNewsletter => !!n);
 }
 
-export function wrapInEmailTemplate(bodyHtml: string, preheader?: string): string {
+// ── Automation logging ───────────────────────────────
+
+export async function logAutomation(entry: AutoLogEntry): Promise<void> {
+  const r = getRedis();
+  if (!r) return;
+  await r.lpush('nl:auto:log', JSON.stringify(entry));
+  await r.ltrim('nl:auto:log', 0, 199);
+}
+
+export async function getAutomationLog(): Promise<AutoLogEntry[]> {
+  const r = getRedis();
+  if (!r) return [];
+  const raw = await r.lrange('nl:auto:log', 0, 199);
+  return raw
+    .map((item) => { try { return JSON.parse(item); } catch { return null; } })
+    .filter((e): e is AutoLogEntry => !!e);
+}
+
+// ── Email template ───────────────────────────────────
+
+export function wrapInEmailTemplate(bodyHtml: string, preheader?: string, unsubscribeUrl?: string): string {
   return `<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 <body style="margin:0;padding:0;background-color:#0F0F0F;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
@@ -172,7 +283,7 @@ export function wrapInEmailTemplate(bodyHtml: string, preheader?: string): strin
         <tr><td style="padding-top:24px;text-align:center;">
           <p style="margin:0;font-size:12px;color:#666;">
             Je ontvangt deze e-mail omdat je je hebt aangemeld bij De Vadercoach.<br>
-            <a href="https://devadercoach.nl" style="color:#F59E0B;">devadercoach.nl</a>
+            <a href="https://devadercoach.nl" style="color:#F59E0B;">devadercoach.nl</a>${unsubscribeUrl ? ` &middot; <a href="${unsubscribeUrl}" style="color:#666;">Uitschrijven</a>` : ''}
           </p>
         </td></tr>
       </table>
