@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BookOpen, Wrench, Gift, GraduationCap, ExternalLink } from 'lucide-react';
+import { BookOpen, Wrench, Gift, GraduationCap } from 'lucide-react';
 import type { AffiliateProduct } from '@/lib/affiliate-products';
 import { SKILL_COLORS } from '@/lib/affiliate-products';
 
@@ -72,7 +72,9 @@ export default function AffiliateCard({ product }: { product: AffiliateProduct }
           </span>
         </div>
         {!product.isOwnProduct && (
-          <ExternalLink className="h-3 w-3" style={{ color: 'var(--text3)' }} />
+          <span className="text-[10px] font-bold px-2 py-0.5 rounded" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
+            Binnenkort
+          </span>
         )}
       </div>
     </div>
@@ -86,13 +88,6 @@ export default function AffiliateCard({ product }: { product: AffiliateProduct }
     );
   }
 
-  return (
-    <a
-      href={product.affiliateUrl}
-      target="_blank"
-      rel="noopener sponsored"
-    >
-      {inner}
-    </a>
-  );
+  // External affiliate links are not yet active
+  return <div style={{ opacity: 0.7, cursor: 'default' }}>{inner}</div>;
 }
