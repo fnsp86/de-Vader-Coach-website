@@ -132,7 +132,7 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
                 Binnenkort beschikbaar
               </div>
             ) : (
-              <BuyButton slug={slug} color={accentColor} />
+              <BuyButton slug={slug} color={accentColor} price={course.price} />
             )}
 
             {/* Features */}

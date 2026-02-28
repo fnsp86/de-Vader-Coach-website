@@ -9,6 +9,7 @@ export interface DiscountCode {
   expiresAt: string;
   used: boolean;
   usedAt?: string;
+  source?: string; // e.g. 'badge:streak_30', 'newsletter', etc.
 }
 
 export function generateDiscountCode(): string {
@@ -67,6 +68,7 @@ export async function validateDiscount(code: string): Promise<{ valid: boolean; 
       createdAt: data.createdAt,
       expiresAt: data.expiresAt,
       used: false,
+      source: data.source,
     },
   };
 }

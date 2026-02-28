@@ -26,6 +26,15 @@ export async function POST(request: NextRequest) {
   if (discountCode && typeof discountCode === 'string') {
     const result = await validateDiscount(discountCode.trim().toUpperCase());
     if (result.valid && result.discount) {
+      // Badge reward codes are only valid for individual courses, not bundles/experience
+      const isBadgeReward = result.discount.source?.startsWith('badge:');
+      const isBundle = slug === 'compleet-vaderpakket' || slug === 'experience';
+      if (isBadgeReward && isBundle) {
+        return NextResponse.json(
+          { error: 'Deze kortingscode is alleen geldig op losse cursussen.' },
+          { status: 400 },
+        );
+      }
       finalPrice = Math.round((course.price * (1 - result.discount.percentOff / 100)) * 100) / 100;
       appliedDiscount = result.discount.code;
     }
