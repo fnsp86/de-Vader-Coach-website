@@ -25,6 +25,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://devadercoach.nl',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -52,7 +59,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'De Vadercoach',
               url: 'https://devadercoach.nl',
-              logo: 'https://devadercoach.nl/icon.png',
+              logo: 'https://devadercoach.nl/icon-512.png',
               description:
                 'Praktische cursussen, een 22-daagse Experience en een app voor vaders die willen groeien. Gebaseerd op wetenschap en psychologie.',
               sameAs: [],
