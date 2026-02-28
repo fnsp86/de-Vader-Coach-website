@@ -391,7 +391,7 @@ export default function HomePage() {
                   {SNELGIDS.title}
                 </h3>
                 <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
-                  {SNELGIDS.pages} pagina&apos;s &middot; Geen e-mail nodig
+                  {SNELGIDS.pages} pagina&apos;s &middot; PDF download
                 </p>
               </div>
             </div>
