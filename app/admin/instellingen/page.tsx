@@ -31,10 +31,6 @@ function PasswordSection({ password }: { password: string }) {
     e.preventDefault();
     setStatus(null);
 
-    if (currentPw !== password) {
-      setStatus({ type: 'error', msg: 'Huidig wachtwoord is onjuist.' });
-      return;
-    }
     if (newPw.length < 8) {
       setStatus({ type: 'error', msg: 'Nieuw wachtwoord moet minimaal 8 tekens zijn.' });
       return;
@@ -46,9 +42,10 @@ function PasswordSection({ password }: { password: string }) {
 
     setLoading(true);
     try {
+      // Verify current password server-side via x-admin-password header
       const res = await fetch('/api/admin/settings', {
         method: 'POST',
-        headers: { 'x-admin-password': password, 'Content-Type': 'application/json' },
+        headers: { 'x-admin-password': currentPw, 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'change-password', newPassword: newPw }),
       });
       const data = await res.json();

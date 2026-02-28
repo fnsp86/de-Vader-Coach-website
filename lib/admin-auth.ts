@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyTOTP } from './totp';
+import crypto from 'crypto';
 import Redis from 'ioredis';
 
 let redis: Redis | null = null;
@@ -12,15 +13,38 @@ function getRedis(): Redis | null {
 }
 
 /**
- * Get the active admin password (Redis overrides env var).
+ * Hash a password with scrypt + random salt. Returns "salt:hash" in hex.
  */
-async function getAdminPassword(): Promise<string | null> {
-  const r = getRedis();
-  if (r) {
-    const redisPassword = await r.get('admin:password');
-    if (redisPassword) return redisPassword;
+export function hashPassword(password: string): string {
+  const salt = crypto.randomBytes(16).toString('hex');
+  const hash = crypto.scryptSync(password, salt, 64).toString('hex');
+  return `${salt}:${hash}`;
+}
+
+/**
+ * Verify a password against a "salt:hash" string using constant-time comparison.
+ */
+export function verifyPasswordHash(password: string, stored: string): boolean {
+  const [salt, hash] = stored.split(':');
+  if (!salt || !hash) return false;
+  const inputHash = crypto.scryptSync(password, salt, 64);
+  const storedHash = Buffer.from(hash, 'hex');
+  if (inputHash.length !== storedHash.length) return false;
+  return crypto.timingSafeEqual(inputHash, storedHash);
+}
+
+/**
+ * Constant-time string comparison for plaintext passwords (env var fallback).
+ */
+function safeCompare(a: string, b: string): boolean {
+  const bufA = Buffer.from(a);
+  const bufB = Buffer.from(b);
+  if (bufA.length !== bufB.length) {
+    // Compare against self to prevent timing leaks on length difference
+    crypto.timingSafeEqual(bufA, bufA);
+    return false;
   }
-  return process.env.ADMIN_PASSWORD || null;
+  return crypto.timingSafeEqual(bufA, bufB);
 }
 
 /**
@@ -29,9 +53,27 @@ async function getAdminPassword(): Promise<string | null> {
 export async function verifyAdminAuth(request: NextRequest): Promise<boolean> {
   const password = request.headers.get('x-admin-password');
   if (!password) return false;
-  const adminPassword = await getAdminPassword();
-  if (!adminPassword) return false;
-  return password === adminPassword;
+
+  const r = getRedis();
+  if (r) {
+    const stored = await r.get('admin:password_hash');
+    if (stored) return verifyPasswordHash(password, stored);
+    // Legacy: check unhashed password in Redis, migrate if found
+    const legacyPassword = await r.get('admin:password');
+    if (legacyPassword) {
+      const result = safeCompare(password, legacyPassword);
+      if (result) {
+        // Auto-migrate to hashed storage
+        await r.set('admin:password_hash', hashPassword(legacyPassword));
+        await r.del('admin:password');
+      }
+      return result;
+    }
+  }
+
+  const envPassword = process.env.ADMIN_PASSWORD;
+  if (!envPassword) return false;
+  return safeCompare(password, envPassword);
 }
 
 /**

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAdminAuth, unauthorizedResponse, is2FAEnabled } from '@/lib/admin-auth';
+import { verifyAdminAuth, unauthorizedResponse, is2FAEnabled, hashPassword } from '@/lib/admin-auth';
 import { getTOTPUri, generateSecret } from '@/lib/totp';
 import Redis from 'ioredis';
 
@@ -18,10 +18,6 @@ export async function GET(request: NextRequest) {
 
   return NextResponse.json({
     is2FAEnabled: is2FAEnabled(),
-    totpSecret: process.env.ADMIN_TOTP_SECRET || null,
-    totpUri: process.env.ADMIN_TOTP_SECRET
-      ? getTOTPUri(process.env.ADMIN_TOTP_SECRET, 'admin@devadercoach.nl')
-      : null,
   });
 }
 
@@ -47,8 +43,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Store new password in Redis (overrides env var)
-    await r.set('admin:password', newPassword);
+    // Store hashed password in Redis (overrides env var)
+    await r.set('admin:password_hash', hashPassword(newPassword));
+    // Remove any legacy plaintext password
+    await r.del('admin:password');
     return NextResponse.json({ success: true, message: 'Wachtwoord gewijzigd. Log opnieuw in.' });
   }
 
