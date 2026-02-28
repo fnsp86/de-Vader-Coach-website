@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 
 export async function GET(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const apiKey = process.env.MOLLIE_API_KEY;
   let payments: { total: number; revenue: number; recent: Array<{ id: string; amount: string; description: string; status: string; createdAt: string }> } = {

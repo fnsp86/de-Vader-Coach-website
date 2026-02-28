@@ -160,8 +160,8 @@ export default function OverPage() {
             {/* Cursussen */}
             <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="flex items-center gap-4 flex-1">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#667eea15' }}>
-                  <BookOpen className="h-5 w-5" style={{ color: '#667eea' }} />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
+                  <BookOpen className="h-5 w-5" style={{ color: 'var(--amber-text)' }} />
                 </div>
                 <div>
                   <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De Cursussen</h3>
@@ -170,7 +170,7 @@ export default function OverPage() {
                   </p>
                 </div>
               </div>
-              <Link href="/cursussen" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#667eea' }}>
+              <Link href="/cursussen" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Bekijk cursussen <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>

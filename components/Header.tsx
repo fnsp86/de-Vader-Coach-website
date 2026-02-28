@@ -8,6 +8,7 @@ import ThemeToggle from './ThemeToggle';
 const NAV_LINKS = [
   { href: '/experience', label: 'De Experience' },
   { href: '/cursussen', label: 'Cursussen' },
+  { href: '/aanbevolen', label: 'Aanbevolen' },
   { href: '/blog', label: 'Blog' },
   { href: '/over', label: 'Over' },
   { href: '/app-download', label: 'De App' },

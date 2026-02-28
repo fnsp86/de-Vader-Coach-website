@@ -1,14 +1,19 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { addSubscriber, sendEmail, wrapInEmailTemplate, getUnsubscribeUrl, logAutomation } from '@/lib/newsletter';
 import { createDiscount } from '@/lib/discount';
 import { scheduleDrip } from '@/lib/automation';
+import { checkRateLimit } from '@/lib/rate-limit';
+import { isValidEmail } from '@/lib/validation';
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
+  const rateLimited = checkRateLimit(request, { maxRequests: 5, windowMs: 60_000 });
+  if (rateLimited) return rateLimited;
+
   try {
     const { email } = await request.json();
 
-    if (!email || typeof email !== 'string') {
-      return NextResponse.json({ error: 'E-mailadres is verplicht.' }, { status: 400 });
+    if (!email || typeof email !== 'string' || !isValidEmail(email)) {
+      return NextResponse.json({ error: 'Ongeldig e-mailadres.' }, { status: 400 });
     }
 
     // Store subscriber in Redis (returns unsubscribe token)

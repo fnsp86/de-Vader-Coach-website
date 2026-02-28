@@ -3,13 +3,13 @@ import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 import { sendNewsletter, getSentNewsletters, wrapInEmailTemplate } from '@/lib/newsletter';
 
 export async function GET(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
   const newsletters = await getSentNewsletters();
   return NextResponse.json({ newsletters });
 }
 
 export async function POST(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const { subject, content, wrapTemplate } = await request.json();
 

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 
 export async function POST(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const { imageUrl, imageUrls, caption } = await request.json();
 

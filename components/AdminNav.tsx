@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Instagram, Mail, FileText, LogOut } from 'lucide-react';
+import { LayoutDashboard, Instagram, Mail, FileText, Settings, LogOut } from 'lucide-react';
 
 const LINKS = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/instagram', label: 'Instagram', icon: Instagram },
   { href: '/admin/nieuwsbrief', label: 'Nieuwsbrief', icon: Mail },
   { href: '/admin/blog', label: 'Blog', icon: FileText },
+  { href: '/admin/instellingen', label: 'Instellingen', icon: Settings },
 ];
 
 export default function AdminNav() {
@@ -16,6 +17,7 @@ export default function AdminNav() {
 
   function handleLogout() {
     sessionStorage.removeItem('admin_password');
+    sessionStorage.removeItem('admin_totp');
     window.location.href = '/admin';
   }
 

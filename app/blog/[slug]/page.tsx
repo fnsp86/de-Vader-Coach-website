@@ -5,6 +5,8 @@ import { SKILL_COLORS, getAllCourses, SNELGIDS } from '@/lib/courses';
 import { getBlogPostAsync, getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 import ShareButtons from '@/components/ShareButtons';
 import EmailGate from '@/components/EmailGate';
+import AffiliateCard from '@/components/AffiliateCard';
+import { getRecommendationsForBlog } from '@/lib/affiliate-products';
 
 const DEFAULT_POST = {
   title: 'Artikel niet gevonden',
@@ -216,6 +218,24 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       )}
+
+      {/* Recommended products */}
+      {(() => {
+        const recommendations = getRecommendationsForBlog(post.category);
+        if (recommendations.length === 0) return null;
+        return (
+          <div className="mt-8">
+            <h3 className="text-lg font-extrabold mb-4" style={{ color: 'var(--text)' }}>
+              Aanbevolen bij dit artikel
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {recommendations.map((product) => (
+                <AffiliateCard key={product.slug} product={product} />
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Related articles */}
       {relatedPosts.length > 0 && (

@@ -9,7 +9,7 @@ import {
 } from '@/lib/blog-storage';
 
 export async function GET(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const slug = request.nextUrl.searchParams.get('slug');
 
@@ -23,7 +23,7 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const post: DynamicBlogPost = await request.json();
 
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
 }
 
 export async function DELETE(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const { slug } = await request.json();
   if (!slug) return NextResponse.json({ error: 'Slug is verplicht' }, { status: 400 });

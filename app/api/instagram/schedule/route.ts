@@ -3,14 +3,14 @@ import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 import { schedulePost, getScheduledPosts, deleteScheduledPost } from '@/lib/instagram-schedule';
 
 export async function GET(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const posts = await getScheduledPosts();
   return NextResponse.json({ posts });
 }
 
 export async function POST(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const body = await request.json();
   const { caption, scheduledAt, title, imageUrls } = body;
@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
 }
 
 export async function DELETE(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const { id } = await request.json();
   if (!id) {

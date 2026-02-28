@@ -3,7 +3,7 @@ import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 import { getAnalytics } from '@/lib/analytics';
 
 export async function GET(request: NextRequest) {
-  if (!verifyAdminAuth(request)) return unauthorizedResponse();
+  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const days = parseInt(request.nextUrl.searchParams.get('days') ?? '30', 10);
 

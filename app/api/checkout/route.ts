@@ -2,8 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createMollieClient } from '@mollie/api-client';
 import { getCourse } from '@/lib/courses';
 import { validateDiscount } from '@/lib/discount';
+import { checkRateLimit } from '@/lib/rate-limit';
 
 export async function POST(request: NextRequest) {
+  const rateLimited = checkRateLimit(request, { maxRequests: 10, windowMs: 60_000 });
+  if (rateLimited) return rateLimited;
   const apiKey = process.env.MOLLIE_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ error: 'Payment not configured' }, { status: 500 });
