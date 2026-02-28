@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#111318"/>
+  <!-- Subtle glow -->
+  <circle cx="540" cy="700" r="300" fill="#F59E0B" opacity="0.04"/>
+  <!-- Logo centered -->
+  <g transform="translate(410, 600)">
+    <rect width="260" height="260" rx="52" fill="#F59E0B"/>
+    <g transform="translate(130, 135) scale(0.51)">
+      <path d="M-12-100c-24-24-43.8-32-72-32a88 88 0 0 0-88 88c0 36.8 24 64.8 48 88l112 112 112-112c24-23.4 48-51.4 48-88a88 88 0 0 0-88-88c-28.2 0-48 8-72 32Z" fill="none" stroke="#000" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <!-- Brand name -->
+  <text x="540" y="940" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="52" fill="#F0F2F8" text-anchor="middle">De Vadercoach</text>
+  <!-- Tagline -->
+  <text x="540" y="1000" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="24" fill="#F59E0B" text-anchor="middle">Word elke dag een betere vader</text>
+  <!-- Placeholder for custom text -->
+  <rect x="80" y="1120" width="920" height="400" rx="24" fill="#1A1F2B" stroke="#2A3040" stroke-width="2"/>
+  <text x="540" y="1300" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="28" fill="#7B8498" text-anchor="middle">[Jouw tekst hier]</text>
+  <!-- URL bottom -->
+  <text x="540" y="1750" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="20" fill="#F59E0B" text-anchor="middle">devadercoach.nl</text>
+</svg>

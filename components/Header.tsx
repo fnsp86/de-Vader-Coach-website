@@ -70,7 +70,7 @@ export default function Header() {
               href="https://instagram.com/devadercoach.nl"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg"
+              className="p-2.5 -m-0.5 rounded-lg"
               aria-label="Instagram"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" style={{ color: 'var(--text2)' }}>
@@ -79,7 +79,7 @@ export default function Header() {
             </a>
             <ThemeToggle />
             <button
-              className="p-2 rounded-lg"
+              className="p-2.5 -m-0.5 rounded-lg"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Menu"
             >

@@ -90,3 +90,8 @@ html {
   background-color: oklch(from #D97706 l c h / 0.2);
   color: #111827;
 }
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+}

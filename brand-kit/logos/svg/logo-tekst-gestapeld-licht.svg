@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <g transform="translate(115, 15)">
+    <rect width="70" height="70" rx="14" fill="#F59E0B"/>
+    <g transform="translate(35, 37) scale(0.137)">
+      <path d="M-12-100c-24-24-43.8-32-72-32a88 88 0 0 0-88 88c0 36.8 24 64.8 48 88l112 112 112-112c24-23.4 48-51.4 48-88a88 88 0 0 0-88-88c-28.2 0-48 8-72 32Z" fill="none" stroke="#000" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text x="150" y="125" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#111827" text-anchor="middle">De Vadercoach</text>
+  <text x="150" y="158" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="14" fill="#D97706" text-anchor="middle">Word elke dag een betere vader</text>
+</svg>

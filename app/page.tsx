@@ -358,16 +358,16 @@ export default function HomePage() {
             {SKILLS.map((skill) => (
               <div
                 key={skill.name}
-                className="flex items-center gap-2 px-3 py-2 rounded-xl"
+                className="flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-xl"
                 style={{ backgroundColor: skill.color + '0a' }}
               >
                 <div
-                  className="flex h-7 w-7 items-center justify-center rounded-lg"
+                  className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-lg"
                   style={{ backgroundColor: skill.color + '18' }}
                 >
-                  <skill.icon className="h-3.5 w-3.5" style={{ color: skill.color }} />
+                  <skill.icon className="h-3 w-3 sm:h-3.5 sm:w-3.5" style={{ color: skill.color }} />
                 </div>
-                <span className="text-[12px] font-bold" style={{ color: skill.color }}>{skill.name}</span>
+                <span className="text-[11px] sm:text-[12px] font-bold" style={{ color: skill.color }}>{skill.name}</span>
               </div>
             ))}
           </div>
@@ -448,13 +448,13 @@ export default function HomePage() {
             {/* Right: Comparison table + stats */}
             <div className="space-y-4">
               <div className="rounded-xl border overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-                <table className="w-full text-[13px]">
+                <table className="w-full text-[12px] sm:text-[13px]">
                   <thead>
                     <tr style={{ backgroundColor: 'var(--surface2)' }}>
-                      <th className="text-left px-4 py-2.5 font-semibold" style={{ color: 'var(--text3)' }}></th>
-                      <th className="px-3 py-2.5 text-center font-medium" style={{ color: 'var(--text3)' }}>Boek</th>
-                      <th className="px-3 py-2.5 text-center font-medium" style={{ color: 'var(--text3)' }}>Coach</th>
-                      <th className="px-3 py-2.5 text-center font-bold" style={{ color: 'var(--amber-text)' }}>Ons</th>
+                      <th className="text-left px-2 sm:px-4 py-2.5 font-semibold" style={{ color: 'var(--text3)' }}></th>
+                      <th className="px-1.5 sm:px-3 py-2.5 text-center font-medium" style={{ color: 'var(--text3)' }}>Boek</th>
+                      <th className="px-1.5 sm:px-3 py-2.5 text-center font-medium" style={{ color: 'var(--text3)' }}>Coach</th>
+                      <th className="px-1.5 sm:px-3 py-2.5 text-center font-bold" style={{ color: 'var(--amber-text)' }}>Ons</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -464,17 +464,17 @@ export default function HomePage() {
                         className={i < COMPARE_ROWS.length - 1 ? 'border-b' : ''}
                         style={{ borderColor: 'var(--border)' }}
                       >
-                        <td className="px-4 py-2.5 font-medium" style={{ color: 'var(--text2)' }}>{row.label}</td>
-                        <td className="px-3 py-2.5"><CompareCell value={row.book} /></td>
-                        <td className="px-3 py-2.5"><CompareCell value={row.coach} /></td>
-                        <td className="px-3 py-2.5" style={{ backgroundColor: '#F59E0B06' }}><CompareCell value={row.vc} /></td>
+                        <td className="px-2 sm:px-4 py-2.5 font-medium" style={{ color: 'var(--text2)' }}>{row.label}</td>
+                        <td className="px-1.5 sm:px-3 py-2.5"><CompareCell value={row.book} /></td>
+                        <td className="px-1.5 sm:px-3 py-2.5"><CompareCell value={row.coach} /></td>
+                        <td className="px-1.5 sm:px-3 py-2.5" style={{ backgroundColor: '#F59E0B06' }}><CompareCell value={row.vc} /></td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
 
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {[
                   { value: '451', label: "Pagina's", color: '#667eea' },
                   { value: '8', label: 'Skills', color: '#EF4444' },

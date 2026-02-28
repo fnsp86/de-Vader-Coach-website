@@ -78,7 +78,7 @@ export default function BlogContent({ posts }: { posts: Post[] }) {
       <div className="flex flex-wrap gap-2 mb-8">
         <button
           onClick={() => setActive(null)}
-          className="text-[12px] font-bold px-3.5 py-1.5 rounded-lg border transition-colors"
+          className="text-[12px] font-bold px-3.5 py-2.5 rounded-lg border transition-colors"
           style={{
             backgroundColor: !active ? 'var(--text)' : 'transparent',
             color: !active ? 'var(--bg)' : 'var(--text3)',
@@ -95,7 +95,7 @@ export default function BlogContent({ posts }: { posts: Post[] }) {
             <button
               key={cat}
               onClick={() => setActive(isActive ? null : cat)}
-              className="text-[12px] font-bold px-3.5 py-1.5 rounded-lg border transition-colors"
+              className="text-[12px] font-bold px-3.5 py-2.5 rounded-lg border transition-colors"
               style={{
                 backgroundColor: isActive ? color + '18' : 'transparent',
                 color: isActive ? color : 'var(--text3)',

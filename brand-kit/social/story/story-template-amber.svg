@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#F59E0B"/>
+  <!-- Logo top -->
+  <g transform="translate(440, 120)">
+    <rect width="200" height="200" rx="40" fill="#111318"/>
+    <g transform="translate(100, 104) scale(0.39)">
+      <path d="M-12-100c-24-24-43.8-32-72-32a88 88 0 0 0-88 88c0 36.8 24 64.8 48 88l112 112 112-112c24-23.4 48-51.4 48-88a88 88 0 0 0-88-88c-28.2 0-48 8-72 32Z" fill="none" stroke="#F59E0B" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text x="540" y="400" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="44" fill="#000" text-anchor="middle">De Vadercoach</text>
+  <!-- Quote area -->
+  <text x="540" y="700" font-family="Inter, system-ui, sans-serif" font-weight="300" font-size="120" fill="#00000030" text-anchor="middle">&quot;</text>
+  <rect x="100" y="720" width="880" height="500" rx="0" fill="none"/>
+  <text x="540" y="950" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="36" fill="#000" text-anchor="middle">[Quote hier]</text>
+  <text x="540" y="1300" font-family="Inter, system-ui, sans-serif" font-weight="300" font-size="120" fill="#00000030" text-anchor="middle">&quot;</text>
+  <!-- CTA -->
+  <rect x="290" y="1500" width="500" height="70" rx="16" fill="#111318"/>
+  <text x="540" y="1545" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="22" fill="#F59E0B" text-anchor="middle">devadercoach.nl</text>
+  <!-- Skills bottom -->
+  <text x="540" y="1750" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="16" fill="#00000060" text-anchor="middle">Cursussen · Experience · App</text>
+</svg>

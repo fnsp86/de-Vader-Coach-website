@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <rect width="1584" height="396" fill="#111318"/>
+  <!-- Subtle pattern dots -->
+  <circle cx="100" cy="350" r="60" fill="#F59E0B" opacity="0.04"/>
+  <circle cx="1500" cy="50" r="80" fill="#F59E0B" opacity="0.03"/>
+  <!-- Logo -->
+  <g transform="translate(542, 48)">
+    <rect width="80" height="80" rx="16" fill="#F59E0B"/>
+    <path d="M55 37c3.75-3.7 7.5-8 7.5-13.75A13.75 13.75 0 0 0 48.75 9.5c-4.4 0-7.5 1.25-11.25 5-3.75-3.75-6.85-5-11.25-5A13.75 13.75 0 0 0 12.5 23.25c0 5.75 3.75 10.1 7.5 13.75l17.5 17.5Z" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Text -->
+  <text x="642" y="102" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="36" fill="#F0F2F8">De Vadercoach</text>
+  <!-- Tagline -->
+  <text x="792" y="195" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="22" fill="#F0F2F8" text-anchor="middle">Word elke dag een betere vader</text>
+  <!-- Skills strip -->
+  <g transform="translate(0, 260)" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="13" text-anchor="middle">
+    <text x="198" fill="#667eea">Aanwezigheid</text>
+    <text x="330" fill="#EF4444">Emotiecoaching</text>
+    <text x="462" fill="#34D399">Zelfregulatie</text>
+    <text x="594" fill="#FBBF24">Grenzen</text>
+    <text x="726" fill="#A78BFA">Autonomie</text>
+    <text x="858" fill="#FB923C">Herstel</text>
+    <text x="990" fill="#60A5FA">Verbinding</text>
+    <text x="1122" fill="#C084FC">Reflectie</text>
+  </g>
+  <!-- Dots between skills -->
+  <g transform="translate(0, 256)" fill="#2A3040">
+    <circle cx="264" cy="0" r="2"/>
+    <circle cx="396" cy="0" r="2"/>
+    <circle cx="528" cy="0" r="2"/>
+    <circle cx="660" cy="0" r="2"/>
+    <circle cx="792" cy="0" r="2"/>
+    <circle cx="924" cy="0" r="2"/>
+    <circle cx="1056" cy="0" r="2"/>
+  </g>
+  <!-- Website URL -->
+  <text x="792" y="340" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="14" fill="#7B8498" text-anchor="middle">devadercoach.nl</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="312" viewBox="0 0 820 312">
+  <rect width="820" height="312" fill="#F59E0B"/>
+  <!-- Logo hart -->
+  <g transform="translate(295, 30)">
+    <rect width="70" height="70" rx="14" fill="#111318"/>
+    <g transform="translate(35, 37) scale(0.137)">
+      <path d="M-12-100c-24-24-43.8-32-72-32a88 88 0 0 0-88 88c0 36.8 24 64.8 48 88l112 112 112-112c24-23.4 48-51.4 48-88a88 88 0 0 0-88-88c-28.2 0-48 8-72 32Z" fill="none" stroke="#F59E0B" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text x="385" y="74" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#000">De Vadercoach</text>
+  <text x="410" y="140" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="18" fill="#000" text-anchor="middle">Word elke dag een betere vader</text>
+  <text x="410" y="172" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="13" fill="#00000080" text-anchor="middle">Cursussen · Experience · App — gebaseerd op wetenschap</text>
+  <rect x="305" y="230" width="210" height="42" rx="10" fill="#111318"/>
+  <text x="410" y="256" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="14" fill="#F59E0B" text-anchor="middle">devadercoach.nl</text>
+</svg>

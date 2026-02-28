@@ -66,9 +66,9 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}>
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4" style={{ backgroundColor: 'rgba(0,0,0,0.6)' }}>
           <div
-            className="w-full max-w-sm rounded-2xl p-6 relative"
+            className="w-full sm:max-w-sm rounded-t-2xl sm:rounded-2xl p-6 relative"
             style={{ backgroundColor: 'var(--bg)', border: '1px solid var(--border)' }}
           >
             <button
