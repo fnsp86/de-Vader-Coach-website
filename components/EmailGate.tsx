@@ -87,7 +87,7 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
               Gratis snelgids downloaden
             </h3>
             <p className="text-[13px] mb-4" style={{ color: 'var(--text3)' }}>
-              Vul je e-mailadres in en je ontvangt de snelgids direct. We sturen je af en toe een tip - je kunt je altijd uitschrijven.
+              Vul je e-mailadres in en je ontvangt de snelgids direct.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-3">
@@ -112,6 +112,9 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
                   <><Download className="h-4 w-4" /> Download snelgids</>
                 )}
               </button>
+              <p className="text-[11px] text-center" style={{ color: 'var(--text3)' }}>
+                Je wordt aangemeld voor onze nieuwsbrief met tips over vaderschap. Je kunt je op elk moment uitschrijven.
+              </p>
             </form>
           </div>
         </div>
