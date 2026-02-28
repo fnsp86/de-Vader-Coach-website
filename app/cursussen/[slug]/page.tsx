@@ -18,7 +18,7 @@ const DEFAULT_COURSE: Course = {
   price: 0,
   pages: 0,
   category: '',
-  color: '#F59E0B',
+  color: 'var(--amber-text)',
   icon: 'BookOpen',
   status: 'coming-soon',
   features: [],

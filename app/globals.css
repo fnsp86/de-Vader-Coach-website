@@ -13,17 +13,17 @@
   --color-vc-surface2: #222838;
   --color-vc-border: #2A3040;
   --color-vc-text: #F0F2F8;
-  --color-vc-text2: #9BA3B8;
-  --color-vc-text3: #5C6478;
+  --color-vc-text2: #A0AAC0;
+  --color-vc-text3: #7B8498;
 
   /* Light mode surfaces */
-  --color-vc-bg-light: #F8F9FB;
+  --color-vc-bg-light: #F7F7F5;
   --color-vc-surface-light: #FFFFFF;
   --color-vc-surface2-light: #F0F1F4;
-  --color-vc-border-light: #E5E7EB;
-  --color-vc-text-light: #1A1F2B;
-  --color-vc-text2-light: #6B7280;
-  --color-vc-text3-light: #9CA3AF;
+  --color-vc-border-light: #D4D6DC;
+  --color-vc-text-light: #111827;
+  --color-vc-text2-light: #4B5563;
+  --color-vc-text3-light: #6B7280;
 
   /* Accents */
   --color-vc-blue: #667eea;
@@ -51,6 +51,7 @@
   --text: var(--color-vc-text);
   --text2: var(--color-vc-text2);
   --text3: var(--color-vc-text3);
+  --amber-text: #F59E0B;
 }
 
 .light {
@@ -62,6 +63,7 @@
   --text: var(--color-vc-text-light);
   --text2: var(--color-vc-text2-light);
   --text3: var(--color-vc-text3-light);
+  --amber-text: #D97706;
 }
 
 body {
@@ -82,4 +84,9 @@ html {
 ::selection {
   background-color: oklch(from #F59E0B l c h / 0.3);
   color: white;
+}
+
+.light ::selection {
+  background-color: oklch(from #D97706 l c h / 0.2);
+  color: #111827;
 }

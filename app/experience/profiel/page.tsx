@@ -125,7 +125,7 @@ export default function ProfielPage() {
       {/* ── Overall score ───────────────────── */}
       {rated.length > 0 && (
         <div className="rounded-2xl border p-6 mb-6 text-center" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-          <div className="text-4xl font-extrabold mb-1" style={{ color: '#F59E0B' }}>
+          <div className="text-4xl font-extrabold mb-1" style={{ color: 'var(--amber-text)' }}>
             {overallAvg.toFixed(1)}
           </div>
           <p className="text-[12px] font-semibold" style={{ color: 'var(--text3)' }}>
@@ -209,7 +209,7 @@ export default function ProfielPage() {
           <Link
             href="/experience"
             className="inline-flex items-center gap-1 text-[13px] font-bold mt-3"
-            style={{ color: '#F59E0B' }}
+            style={{ color: 'var(--amber-text)' }}
           >
             Ga naar de Experience <ArrowRight className="h-3.5 w-3.5" />
           </Link>

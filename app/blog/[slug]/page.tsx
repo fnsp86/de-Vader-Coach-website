@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, User, BookOpen, Download, ArrowRight } from 'lucide-r
 import { SKILL_COLORS, getAllCourses, SNELGIDS } from '@/lib/courses';
 import { getBlogPostAsync, getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 import ShareButtons from '@/components/ShareButtons';
+import EmailGate from '@/components/EmailGate';
 
 const DEFAULT_POST = {
   title: 'Artikel niet gevonden',
@@ -132,21 +133,19 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
         className="mt-10 rounded-2xl border p-6 sm:p-8 text-center"
         style={{ backgroundColor: '#F59E0B08', borderColor: '#F59E0B30' }}
       >
-        <Download className="h-8 w-8 mx-auto mb-3" style={{ color: '#F59E0B' }} />
+        <Download className="h-8 w-8 mx-auto mb-3" style={{ color: 'var(--amber-text)' }} />
         <h3 className="text-lg sm:text-xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
           Gratis Snelgids: De 8 Vadervaardigheden
         </h3>
         <p className="text-sm mb-4 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
           {SNELGIDS.description}
         </p>
-        <Link
-          href="/#snelgids"
-          className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-bold text-black transition-transform hover:scale-[0.98]"
+        <EmailGate
+          downloadUrl="/api/free-download"
+          buttonText="Download gratis snelgids"
+          className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-bold text-black transition-transform hover:scale-[0.98] cursor-pointer"
           style={{ backgroundColor: '#F59E0B' }}
-        >
-          <Download className="h-4 w-4" />
-          Download gratis snelgids
-        </Link>
+        />
       </div>
 
       {/* CTA: Related course */}

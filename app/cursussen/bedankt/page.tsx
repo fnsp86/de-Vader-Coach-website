@@ -47,7 +47,7 @@ export default async function BedanktPage({
         <Link
           href="/cursussen"
           className="inline-flex items-center gap-1.5 text-sm font-semibold hover:gap-2.5 transition-all"
-          style={{ color: '#F59E0B' }}
+          style={{ color: 'var(--amber-text)' }}
         >
           <ArrowLeft className="h-4 w-4" />
           Terug naar cursussen

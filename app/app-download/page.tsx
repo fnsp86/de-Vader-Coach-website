@@ -75,7 +75,7 @@ export default function AppDownloadPage() {
             </p>
 
             <div className="rounded-xl border p-4 mb-6 flex items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-              <div className="text-2xl font-extrabold" style={{ color: '#F59E0B' }}>
+              <div className="text-2xl font-extrabold" style={{ color: 'var(--amber-text)' }}>
                 Eenmalig
               </div>
               <div>

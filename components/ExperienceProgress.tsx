@@ -129,7 +129,7 @@ export function ProgressBar({ currentDag }: { currentDag: number }) {
         <span className="text-[12px] font-bold" style={{ color: 'var(--text)' }}>
           Dag {currentDag} van {total}
         </span>
-        <span className="text-[11px] font-semibold" style={{ color: '#F59E0B' }}>
+        <span className="text-[11px] font-semibold" style={{ color: 'var(--amber-text)' }}>
           {done} afgerond ({pct}%)
         </span>
       </div>
@@ -214,7 +214,7 @@ export function WeekOverview() {
         <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>
           {totalCompleted} van 22 dagen afgerond
         </span>
-        <span className="text-[12px] font-semibold" style={{ color: '#F59E0B' }}>
+        <span className="text-[12px] font-semibold" style={{ color: 'var(--amber-text)' }}>
           {Math.round((totalCompleted / 22) * 100)}%
         </span>
       </div>

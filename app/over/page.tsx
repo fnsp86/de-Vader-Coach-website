@@ -22,14 +22,14 @@ export default function OverPage() {
               <div className="flex h-9 w-9 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B' }}>
                 <Heart className="h-4.5 w-4.5 text-black" strokeWidth={2.5} />
               </div>
-              <span className="text-sm font-bold" style={{ color: '#F59E0B' }}>
+              <span className="text-sm font-bold" style={{ color: 'var(--amber-text)' }}>
                 Over ons
               </span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.1] tracking-tight mb-6" style={{ color: 'var(--text)' }}>
               Vaders helpen vaders.{' '}
-              <span style={{ color: '#F59E0B' }}>Dat is het.</span>
+              <span style={{ color: 'var(--amber-text)' }}>Dat is het.</span>
             </h1>
 
             <p className="text-lg leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
@@ -121,7 +121,7 @@ export default function OverPage() {
             <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="flex items-center gap-4 flex-1">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
-                  <Smartphone className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                  <Smartphone className="h-5 w-5" style={{ color: 'var(--amber-text)' }} />
                 </div>
                 <div>
                   <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De App</h3>
@@ -130,7 +130,7 @@ export default function OverPage() {
                   </p>
                 </div>
               </div>
-              <Link href="/app-download" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
+              <Link href="/app-download" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Meer info <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -139,19 +139,19 @@ export default function OverPage() {
             <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}>
               <div className="flex items-center gap-4 flex-1">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
-                  <Calendar className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                  <Calendar className="h-5 w-5" style={{ color: 'var(--amber-text)' }} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
                     <h3 className="text-sm font-extrabold" style={{ color: 'var(--text)' }}>De Experience</h3>
-                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>NIEUW</span>
+                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>NIEUW</span>
                   </div>
                   <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
                     22 scenario-dagen door alle 8 vaardigheden. Herkenbare situaties en concrete acties.
                   </p>
                 </div>
               </div>
-              <Link href="/experience" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: '#F59E0B' }}>
+              <Link href="/experience" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Bekijk Experience <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function OverPage() {
             <div className="rounded-xl border p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="flex items-center gap-4 flex-1">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: '#F59E0B15' }}>
-                  <Download className="h-5 w-5" style={{ color: '#F59E0B' }} />
+                  <Download className="h-5 w-5" style={{ color: 'var(--amber-text)' }} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
@@ -194,7 +194,7 @@ export default function OverPage() {
                 downloadUrl="/api/free-download"
                 buttonText="Download PDF"
                 className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all cursor-pointer"
-                style={{ color: '#F59E0B' }}
+                style={{ color: 'var(--amber-text)' }}
               />
             </div>
           </div>

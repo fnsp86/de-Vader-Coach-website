@@ -80,7 +80,7 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
             </button>
 
             <div className="flex h-10 w-10 items-center justify-center rounded-xl mb-4" style={{ backgroundColor: '#F59E0B20' }}>
-              <Mail className="h-5 w-5" style={{ color: '#F59E0B' }} />
+              <Mail className="h-5 w-5" style={{ color: 'var(--amber-text)' }} />
             </div>
 
             <h3 className="text-lg font-bold mb-1" style={{ color: 'var(--text)' }}>

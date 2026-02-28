@@ -68,7 +68,7 @@ function ExperienceDashboard() {
       {/* ── Header + progress ring ─────────────── */}
       <div className="flex items-center justify-between mb-6">
         <div>
-          <span className="text-[10px] font-extrabold px-2.5 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>
+          <span className="text-[10px] font-extrabold px-2.5 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>
             DE VADER EXPERIENCE
           </span>
           <h1 className="text-2xl font-extrabold mt-2" style={{ color: 'var(--text)' }}>
@@ -86,7 +86,7 @@ function ExperienceDashboard() {
               style={{ transition: 'stroke-dashoffset 0.5s ease' }}
             />
           </svg>
-          <span className="absolute text-sm font-extrabold" style={{ color: '#F59E0B' }}>{pct}%</span>
+          <span className="absolute text-sm font-extrabold" style={{ color: 'var(--amber-text)' }}>{pct}%</span>
         </div>
       </div>
 
@@ -118,7 +118,7 @@ function ExperienceDashboard() {
 
       {done === total && (
         <div className="rounded-2xl p-6 mb-8 text-center" style={{ backgroundColor: '#F59E0B10', border: '1px solid #F59E0B25' }}>
-          <Trophy className="h-8 w-8 mx-auto mb-2" style={{ color: '#F59E0B' }} />
+          <Trophy className="h-8 w-8 mx-auto mb-2" style={{ color: 'var(--amber-text)' }} />
           <h2 className="text-lg font-extrabold mb-1" style={{ color: 'var(--text)' }}>Experience voltooid!</h2>
           <p className="text-sm mb-4" style={{ color: 'var(--text2)' }}>Je hebt alle 22 dagen afgerond. Knap gedaan.</p>
           <Link
@@ -139,7 +139,7 @@ function ExperienceDashboard() {
           className="flex items-center gap-3 rounded-xl px-4 py-3 mb-8 transition-all hover:scale-[0.99]"
           style={{ backgroundColor: 'var(--surface)', border: '1px solid var(--border)' }}
         >
-          <Trophy className="h-4 w-4" style={{ color: '#F59E0B' }} />
+          <Trophy className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
           <span className="text-[13px] font-semibold flex-1" style={{ color: 'var(--text2)' }}>
             Bekijk je Vader-profiel
           </span>
@@ -350,7 +350,7 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--surface)' }}>
               <div className="flex items-center gap-2 mb-2">
-                <Volume2 className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                <Volume2 className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
                 <span className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>Dagelijkse audio-intro</span>
               </div>
               <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text3)' }}>
@@ -359,7 +359,7 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: 'var(--surface)' }}>
               <div className="flex items-center gap-2 mb-2">
-                <Trophy className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                <Trophy className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
                 <span className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>Jouw Vader-profiel</span>
               </div>
               <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text3)' }}>
@@ -475,7 +475,7 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
           </h2>
 
           <div className="rounded-2xl border p-6 mb-5" style={{ backgroundColor: 'var(--bg)', borderColor: '#F59E0B30' }}>
-            <span className="text-3xl font-extrabold" style={{ color: '#F59E0B' }}>&euro;19,99</span>
+            <span className="text-3xl font-extrabold" style={{ color: 'var(--amber-text)' }}>&euro;19,99</span>
             <span className="text-sm ml-1" style={{ color: 'var(--text3)' }}>eenmalig</span>
 
             <div className="grid grid-cols-2 gap-2 mt-5 mb-5">
@@ -488,7 +488,7 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
                 { icon: Lock, text: 'Levenslang' },
               ].map((f) => (
                 <div key={f.text} className="flex items-center gap-2 text-[12px] rounded-lg px-3 py-2" style={{ backgroundColor: 'var(--surface)', color: 'var(--text2)' }}>
-                  <f.icon className="h-3.5 w-3.5 shrink-0" style={{ color: '#F59E0B' }} />
+                  <f.icon className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--amber-text)' }} />
                   {f.text}
                 </div>
               ))}

@@ -51,7 +51,7 @@ function ToegangContent() {
   if (status === 'checking') {
     return (
       <div className="text-center">
-        <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" style={{ color: '#F59E0B' }} />
+        <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" style={{ color: 'var(--amber-text)' }} />
         <h1 className="text-xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
           Toegang activeren...
         </h1>
@@ -144,7 +144,7 @@ export default function ToegangPage() {
     <div className="mx-auto max-w-lg px-4 py-20">
       <Suspense fallback={
         <div className="text-center">
-          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" style={{ color: '#F59E0B' }} />
+          <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4" style={{ color: 'var(--amber-text)' }} />
           <p className="text-sm" style={{ color: 'var(--text3)' }}>Laden...</p>
         </div>
       }>

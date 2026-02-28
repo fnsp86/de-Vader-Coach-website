@@ -39,7 +39,7 @@ export default function CursussenPage() {
           </div>
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#F59E0B30', color: '#F59E0B' }}>
+              <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ backgroundColor: '#F59E0B30', color: 'var(--amber-text)' }}>
                 GRATIS
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function CursussenPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B15', color: '#F59E0B' }}>
+              <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>
                 Bundel
               </span>
               <span className="text-xs font-bold px-2.5 py-1 rounded-lg" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
@@ -105,7 +105,7 @@ export default function CursussenPage() {
             <div className="text-sm line-through" style={{ color: 'var(--text3)' }}>
               &euro;{BUNDLE.originalPrice.toFixed(2).replace('.', ',')}
             </div>
-            <div className="text-4xl font-extrabold" style={{ color: '#F59E0B' }}>
+            <div className="text-4xl font-extrabold" style={{ color: 'var(--amber-text)' }}>
               &euro;{BUNDLE.price.toFixed(2).replace('.', ',')}
             </div>
             <div className="text-xs mb-4" style={{ color: 'var(--text3)' }}>
