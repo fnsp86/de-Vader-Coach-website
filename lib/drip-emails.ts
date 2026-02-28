@@ -28,10 +28,10 @@ export const DRIP_SEQUENCE: DripEmail[] = [
         Telefoon weg. Oogcontact. Knuffel. Twee minuten volledige aandacht voor je kind. Meer niet.
       </p>
       <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-        Die twee minuten zijn krachtiger dan een heel weekend vol activiteiten. Want je kind onthoudt niet <em>wat</em> je deed — het onthoudt hoe het zich <em>voelde</em> als jij erbij was.
+        Die twee minuten zijn krachtiger dan een heel weekend vol activiteiten. Want je kind onthoudt niet <em>wat</em> je deed, het onthoudt hoe het zich <em>voelde</em> als jij erbij was.
       </p>
       <p style="margin:0 0 8px;font-size:15px;color:#ccc;line-height:1.7;">
-        Wil je het hele verhaal lezen? In dit artikel leg ik uit waarom die twee minuten zoveel impact hebben — en hoe je ze kunt inzetten.
+        Wil je het hele verhaal lezen? In dit artikel leg ik uit waarom die twee minuten zoveel impact hebben en hoe je ze kunt inzetten.
       </p>
       ${btn('Lees het artikel', 'https://devadercoach.nl/blog/aanwezig-zijn-voor-kind')}
       <p style="margin:24px 0 0;font-size:13px;color:#888;">
@@ -56,7 +56,7 @@ export const DRIP_SEQUENCE: DripEmail[] = [
         22 dagen. Elke dag 5 tot 10 minuten. Een herkenbaar scenario, een concrete oefening, en een reflectievraag. Zo bouw je stap voor stap 8 vaardigheden op die je vaderschap veranderen.
       </p>
       <div style="background-color:#111;border-radius:12px;padding:20px;margin:20px 0;border:1px solid #2A2A2A;">
-        <p style="margin:0 0 8px;font-size:11px;font-weight:700;color:#F59E0B;text-transform:uppercase;letter-spacing:1px;">Dag 1 — De deur gaat open</p>
+        <p style="margin:0 0 8px;font-size:11px;font-weight:700;color:#F59E0B;text-transform:uppercase;letter-spacing:1px;">Dag 1 - De deur gaat open</p>
         <p style="margin:0 0 12px;font-size:14px;color:#F0F2F8;font-weight:600;">Je komt thuis na een lange dag. De deur gaat open. Wat doe je?</p>
         <p style="margin:0;font-size:13px;color:#888;">
           De meeste vaders pakken hun telefoon. Of roepen &ldquo;hoi&rdquo; terwijl ze hun jas uittrekken. Vandaag ga je iets anders proberen...
@@ -114,7 +114,7 @@ export const DRIP_SEQUENCE: DripEmail[] = [
         Hoi,
       </p>
       <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-        Dit is de laatste mail in deze reeks — en ik wil hem persoonlijk houden.
+        Dit is de laatste mail in deze reeks en ik wil hem persoonlijk houden.
       </p>
       <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
         Ik heb De Vadercoach gebouwd omdat ik geloof dat elke vader het verschil kan maken. Niet door perfect te zijn. Maar door eerlijk te zijn. Door het te proberen. Door op te staan na een slechte dag en het morgen opnieuw te doen.
@@ -128,7 +128,7 @@ export const DRIP_SEQUENCE: DripEmail[] = [
         Je ontvangt voortaan af en toe een maandelijkse mail met tips en inspiratie. Geen spam, beloofd.
       </p>
       <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-        Wil je tussendoor ook inspiratie? Volg ons op Instagram — daar delen we dagelijks korte tips.
+        Wil je tussendoor ook inspiratie? Volg ons op Instagram, daar delen we dagelijks korte tips.
       </p>
       ${btn('Volg op Instagram', 'https://instagram.com/devadercoach.nl')}
       <p style="margin:24px 0 0;font-size:13px;color:#888;">

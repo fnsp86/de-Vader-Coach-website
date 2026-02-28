@@ -74,7 +74,7 @@ function generateWelcomeEmail(discountCode?: string, unsubUrl?: string): string 
       Welkom bij De Vadercoach!
     </p>
     <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-      Goed bezig — je hebt de eerste stap gezet. Hieronder kun je de <strong style="color:#F0F2F8">Snelgids Emotiecoaching</strong> downloaden:
+      Goed bezig, je hebt de eerste stap gezet. Hieronder kun je de <strong style="color:#F0F2F8">Snelgids</strong> downloaden:
     </p>
     <p style="margin:0 0 24px;text-align:center;">
       <a href="https://devadercoach.nl/snelgids-emotiecoaching.pdf" style="display:inline-block;padding:14px 28px;background-color:#F59E0B;color:#000;font-weight:700;font-size:14px;text-decoration:none;border-radius:12px;">Download je snelgids</a>
@@ -96,7 +96,7 @@ function generateWelcomeEmail(discountCode?: string, unsubUrl?: string): string 
     </div>
     ` : ''}
     <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-      De komende weken ontvang je af en toe een mail met praktische tips over vaderschap. Geen spam — alleen dingen die er echt toe doen.
+      De komende weken ontvang je af en toe een mail met praktische tips over vaderschap. Geen spam, alleen dingen die er echt toe doen.
     </p>
     <p style="margin:0 0 8px;font-size:15px;color:#ccc;line-height:1.7;">
       Wil je alvast rondkijken? Bekijk de cursussen en de Vader Experience.

@@ -86,7 +86,7 @@ function generateMonthlyNewsletter(contentIndex: number): { subject: string; htm
   } else if (item.type === 'experience') {
     contentHtml = `
       <div style="background-color:#111;border-radius:12px;padding:20px;margin:20px 0;border:1px solid #2A2A2A;">
-        <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#F59E0B;text-transform:uppercase;letter-spacing:1px;">Vader Experience — Dag ${item.dayNum}</p>
+        <p style="margin:0 0 6px;font-size:11px;font-weight:700;color:#F59E0B;text-transform:uppercase;letter-spacing:1px;">Vader Experience - Dag ${item.dayNum}</p>
         <p style="margin:0 0 8px;font-size:16px;color:#F0F2F8;font-weight:600;">${item.title}</p>
         <p style="margin:0 0 12px;font-size:14px;color:#999;line-height:1.6;">${item.subtitle}</p>
         <a href="https://devadercoach.nl/experience" style="display:inline-block;padding:10px 20px;background-color:#F59E0B;color:#000;font-weight:700;font-size:13px;text-decoration:none;border-radius:10px;">Bekijk de Experience</a>
@@ -106,7 +106,7 @@ function generateMonthlyNewsletter(contentIndex: number): { subject: string; htm
       Hoi,
     </p>
     <p style="margin:0 0 16px;font-size:15px;color:#ccc;line-height:1.7;">
-      Hier is je maandelijkse portie vaderinspiratie. Eén quote, één tip — meer heb je niet nodig.
+      Hier is je maandelijkse portie vaderinspiratie. Een quote, een tip, meer heb je niet nodig.
     </p>
     <div style="background-color:#111;border-radius:12px;padding:20px;margin:20px 0;border-left:3px solid #F59E0B;">
       <p style="margin:0;font-size:16px;color:#F0F2F8;font-weight:600;font-style:italic;line-height:1.6;">
