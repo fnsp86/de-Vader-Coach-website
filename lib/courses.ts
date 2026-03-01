@@ -24,6 +24,8 @@ export const SKILL_COLORS: Record<string, string> = {
   Autonomie: '#A78BFA',
   Reflectie: '#C084FC',
   Integratie: '#F59E0B',
+  Gedrag: '#F97316',
+  Scheiding: '#3B82F6',
 };
 
 export const COURSES: Record<string, Course> = {
@@ -226,6 +228,60 @@ export const COURSES: Record<string, Course> = {
       'Vaders die willen begrijpen waarom ze doen wat ze doen',
       'Vaders die patronen van hun eigen vader herkennen',
       'Vaders die bewuster willen opvoeden',
+    ],
+  },
+  'opvoeden-bij-gedragsproblemen': {
+    title: 'Opvoeden bij Gedragsproblemen',
+    description: 'Wanneer gedrag meer is dan een fase. Begrijp wat er achter zit en leer wat wél werkt.',
+    longDescription:
+      'Je kind luistert niet, escaleert, slaat erop los of weigert naar school te gaan. Is dit een fase, of is er meer aan de hand? Deze cursus helpt je gedragsproblemen herkennen, het brein erachter begrijpen, en geeft je bewezen strategieën om je kind te helpen — zonder de relatie te verliezen.',
+    price: 14.95,
+    pages: 65,
+    category: 'Gedrag',
+    color: SKILL_COLORS.Gedrag,
+    icon: 'Shield',
+    status: 'coming-soon',
+    features: ["65 pagina's", '10 hoofdstukken', 'Ross Greene CPS-methode', 'Gedragsplan & werkbladen'],
+    learnPoints: [
+      'Normaal gedrag onderscheiden van gedragsproblemen',
+      'ADHD, ODD en gedragsstoornissen begrijpen als vader',
+      'De functie achter probleemgedrag herkennen',
+      'De-escaleren bij agressie en extreme uitdagingen',
+      'Samenwerken met school en hulpverleners',
+      'Een gedragsplan maken dat werkt',
+    ],
+    forWho: [
+      'Vaders van kinderen met uitdagend of agressief gedrag',
+      'Vaders die regelmatig gebeld worden door school',
+      'Vaders die het gevoel hebben dat niets werkt',
+      'Vaders van kinderen met (een vermoeden van) ADHD of ODD',
+    ],
+  },
+  'vaderschap-na-scheiding': {
+    title: 'Vaderschap na Scheiding',
+    description: 'Gescheiden, maar nog steeds vader. Bouw een sterke band met je kind, ook vanuit twee huizen.',
+    longDescription:
+      'Een op de drie Nederlandse kinderen maakt een scheiding mee. Voor vaders verandert alles: je ziet je kind minder, moet samenwerken met je ex, en worstelt met schuldgevoel. Deze cursus helpt je een betrokken, stabiele vader te blijven — ongeacht de situatie met je ex.',
+    price: 14.95,
+    pages: 65,
+    category: 'Scheiding',
+    color: SKILL_COLORS.Scheiding,
+    icon: 'Heart',
+    status: 'coming-soon',
+    features: ["65 pagina's", '10 hoofdstukken', 'Co-ouderschap communicatie', 'Twee-huizen werkbladen'],
+    learnPoints: [
+      'Je rol als vader herdefiniëren na de scheiding',
+      'De scheiding uitleggen per leeftijdsfase',
+      'Effectief co-ouderschap met je ex',
+      'Twee huizen, één opvoeding: structuur en rituelen',
+      'Loyaliteitsconflicten bij je kind herkennen en oplossen',
+      'Betrokken blijven, ook op afstand',
+    ],
+    forWho: [
+      'Vaders die gescheiden zijn of in scheiding liggen',
+      'Vaders die hun kind minder zien dan ze willen',
+      'Vaders die worstelen met co-ouderschap',
+      'Vaders in samengestelde gezinnen',
     ],
   },
 };

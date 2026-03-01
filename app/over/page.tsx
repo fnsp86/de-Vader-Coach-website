@@ -10,11 +10,43 @@ export const metadata: Metadata = {
   title: 'Over Ons - Opvoedondersteuning voor Vaders',
   description:
     'De Vadercoach helpt vaders groeien met wetenschappelijk onderbouwde opvoedcursussen en tools. Gebaseerd op Gottman, Bowlby en Fonagy. Door vaders, voor vaders.',
+  openGraph: {
+    title: 'Over Ons - Opvoedondersteuning voor Vaders',
+    description:
+      'De Vadercoach helpt vaders groeien met wetenschappelijk onderbouwde opvoedcursussen en tools. Door vaders, voor vaders.',
+    url: 'https://devadercoach.nl/over',
+  },
+  alternates: {
+    canonical: 'https://devadercoach.nl/over',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+    { '@type': 'ListItem', position: 2, name: 'Over ons', item: 'https://devadercoach.nl/over' },
+  ],
+};
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'De Vadercoach',
+  url: 'https://devadercoach.nl',
+  logo: 'https://devadercoach.nl/icon-512.png',
+  description:
+    'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Wetenschappelijk onderbouwd door Gottman, Bowlby en Fonagy.',
+  foundingDate: '2026',
+  sameAs: ['https://instagram.com/devadercoach.nl'],
 };
 
 export default function OverPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">

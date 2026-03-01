@@ -275,21 +275,27 @@ Dit is geen theorie. Dit is meetbaar. Onderzoek van Ruth Feldman (2007) toont aa
 Elke mens, ook jij, heeft een **"window of tolerance"**: een zone waarbinnen je emoties kunt voelen en er rationeel mee kunt omgaan. Bij kinderen is dit raam veel smaller dan bij volwassenen.
 
 ```
-        Te hoog (hyperarousal)
-        ─────────────────────────
-        Schreeuwen, slaan, gillen
-        Rennen, hyperactiviteit
-        ════════════════════════  ← Bovengrens
-
-        WINDOW OF TOLERANCE
-        Hier kan je kind denken,
-        voelen, leren, luisteren
-
-        ════════════════════════  ← Ondergrens
-        Terugtrekken, afsluiten
-        Niet reageren, bevriezen
-        ─────────────────────────
-        Te laag (hypoarousal)
+╔══════════════════════════════════════════╗
+║  WINDOW OF TOLERANCE                     ║
+╠══════════════════════════════════════════╣
+║                                          ║
+║  Te hoog (hyperarousal)                  ║
+║  Schreeuwen, slaan, gillen              ║
+║  Rennen, hyperactiviteit                ║
+║                                          ║
+║  ═══════ BOVENGRENS ═══════             ║
+║                                          ║
+║  WINDOW OF TOLERANCE                     ║
+║  Hier kan je kind denken,               ║
+║  voelen, leren, luisteren               ║
+║                                          ║
+║  ═══════ ONDERGRENS ═══════             ║
+║                                          ║
+║  Terugtrekken, afsluiten               ║
+║  Niet reageren, bevriezen               ║
+║  Te laag (hypoarousal)                  ║
+║                                          ║
+╚══════════════════════════════════════════╝
 ```
 
 Wanneer je kind buiten het raam schiet, door woede, angst, verdriet of overprikkeling, is de eerste taak altijd: **terug in het raam brengen**. Pas daarna kun je praten, uitleggen of grenzen stellen.
@@ -941,19 +947,19 @@ De intentie is goed: je wilt je kind sterker maken. Maar het effect is averechts
 
 Een praktisch hulpmiddel. Vraag je kind: *"Op een schaal van 1 tot 10, hoe bang ben je?"*
 
-```
-10, Super bang, kan niks meer 🔴
- 9, Heel erg bang
- 8, Erg bang, wil weg
- 7, Best wel bang
- 6, Behoorlijk zenuwachtig
- 5, Een beetje bang 🟡
- 4, Ongemakkelijk
- 3, Kriebels in mijn buik
- 2, Een klein beetje zenuwachtig
- 1, Bijna niks 🟢
- 0, Helemaal niet bang
-```
+| Niveau | Gevoel |
+|--------|--------|
+| **10** | Super bang, kan niks meer |
+| **9** | Heel erg bang |
+| **8** | Erg bang, wil weg |
+| **7** | Best wel bang |
+| **6** | Behoorlijk zenuwachtig |
+| **5** | Een beetje bang |
+| **4** | Ongemakkelijk |
+| **3** | Kriebels in mijn buik |
+| **2** | Een klein beetje zenuwachtig |
+| **1** | Bijna niks |
+| **0** | Helemaal niet bang |
 
 Dit helpt je kind om:
 - Gradaties te leren herkennen (niet alles is 10)
@@ -1191,17 +1197,23 @@ Mogelijk trigger: angst om patronen te herhalen. Paradoxaal genoeg maakt die ang
 ## De triggercyclus doorbreken
 
 ```
-    Situatie (kind gilt)
-         ↓
-    Trigger (ik word boos)
-         ↓
-    Automatische reactie (schreeuwen)
-         ↓
-    Schuldgevoel
-         ↓
-    Overcompensatie (te lief)
-         ↓
-    Situatie herhaalt zich...
+╔══════════════════════════════════════════╗
+║  DE TRIGGERCYCLUS                        ║
+╠══════════════════════════════════════════╣
+║                                          ║
+║  Situatie (kind gilt)                    ║
+║       ↓                                  ║
+║  Trigger (ik word boos)                  ║
+║       ↓                                  ║
+║  Automatische reactie (schreeuwen)       ║
+║       ↓                                  ║
+║  Schuldgevoel                            ║
+║       ↓                                  ║
+║  Overcompensatie (te lief)               ║
+║       ↓                                  ║
+║  Situatie herhaalt zich...               ║
+║                                          ║
+╚══════════════════════════════════════════╝
 ```
 
 ### De doorbraak: de pauze
@@ -1349,29 +1361,25 @@ Gebruik dit werkblad één week lang. Noteer elke dag één emotioneel moment en
 
 Print dit werkblad en bespreek het samen met je kind. Kleur samen de thermometer in.
 
-```
-    ┌─────────────────────────┐
-    │  MIJN GEVOELSTHERMOMETER│
-    │                         │
-    │  10 🔴 HEEL ERG         │
-    │   9                     │
-    │   8                     │
-    │   7                     │
-    │   6                     │
-    │   5 🟡 GEMIDDELD        │
-    │   4                     │
-    │   3                     │
-    │   2                     │
-    │   1                     │
-    │   0 🟢 HELEMAAL NIET    │
-    │                         │
-    │  Ik voel me nu: ___     │
-    │                         │
-    │  Dat komt door: ___     │
-    │                         │
-    │  Wat helpt mij: ___     │
-    └─────────────────────────┘
-```
+| Niveau | Hoe ik me voel |
+|--------|----------------|
+| **10** | HEEL ERG |
+| **9** | |
+| **8** | |
+| **7** | |
+| **6** | |
+| **5** | GEMIDDELD |
+| **4** | |
+| **3** | |
+| **2** | |
+| **1** | |
+| **0** | HELEMAAL NIET |
+
+**Ik voel me nu:** .......................................................................
+
+**Dat komt door:** .......................................................................
+
+**Wat helpt mij:** .......................................................................
 
 ---
 

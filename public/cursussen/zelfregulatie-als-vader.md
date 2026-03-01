@@ -1622,27 +1622,37 @@ Denk aan de laatste keer dat je je kalmte verloor bij je kind.
 
 ---
 
-### Oefening 8.2 - Brief aan je kind
+### Oefening 8.2 - Brief aan jezelf als vader
 
-Schrijf een korte brief aan je kind. Je hoeft hem niet te geven - maar schrijf hem. Dit is voor jou.
+Deze brief is niet voor je kind - hij is voor jou. Schrijf aan de vader die je was op je slechtste moment. Niet om jezelf te veroordelen, maar om te erkennen wat er gebeurde en wat je aan het leren bent.
 
-*Lieve ........................,*
+**Beste [je eigen naam],**
 
-.......................................................................
-
-.......................................................................
+**Het moment dat me het meest raakt als ik terugkijk:**
 
 .......................................................................
 
 .......................................................................
 
-.......................................................................
+**Wat ik nu begrijp over waarom ik zo reageerde:**
 
 .......................................................................
 
 .......................................................................
 
-*Je papa*
+**Wat ik sindsdien heb geleerd over mijn eigen emoties:**
+
+.......................................................................
+
+.......................................................................
+
+**De vader die ik aan het worden ben:**
+
+.......................................................................
+
+.......................................................................
+
+Bewaar deze brief. Lees hem over drie maanden terug. Je zult zien dat je verder bent dan je denkt.
 
 ---
 

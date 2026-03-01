@@ -272,19 +272,25 @@ Gottman vond dat het niet uitmaakt hoe klein of groot de herstelpoging is. Wat u
 Tronick beschrijft de ouder-kindrelatie als een voortdurend proces van:
 
 ```
-    Verbinding (match)
-         ↓
-    Breuk (mismatch)
-         ↓
-    Stress / negatief affect
-         ↓
-    Herstelpoging (repair)
-         ↓
-    Verbinding hersteld (re-match)
-         ↓
-    Versterkte band + nieuw vertrouwen
-         ↓
-    (cyclus herhaalt zich)
+╔══════════════════════════════════════════╗
+║  DE BREUK-HERSTEL CYCLUS                 ║
+╠══════════════════════════════════════════╣
+║                                          ║
+║  Verbinding (match)                      ║
+║       ↓                                  ║
+║  Breuk (mismatch)                        ║
+║       ↓                                  ║
+║  Stress / negatief affect                ║
+║       ↓                                  ║
+║  Herstelpoging (repair)                  ║
+║       ↓                                  ║
+║  Verbinding hersteld (re-match)          ║
+║       ↓                                  ║
+║  Versterkte band + nieuw vertrouwen      ║
+║       ↓                                  ║
+║  (cyclus herhaalt zich)                  ║
+║                                          ║
+╚══════════════════════════════════════════╝
 ```
 
 Elke keer dat deze cyclus wordt doorlopen, wordt het vertrouwen iets sterker. Het kind leert: *breuk is tijdelijk. Verbinding keert terug.* En - cruciaal - het kind leert dat het zelf ook mag falen, ook mag missen, ook mag herstellen.
@@ -1107,25 +1113,31 @@ Patronen zijn niet het bewijs dat je faalt. Patronen zijn **informatie**. Ze ver
 Elk terugkerend conflict volgt een voorspelbare cyclus:
 
 ```
-    TRIGGER
-    (situatie die het conflict start)
-         ↓
-    INTERPRETATIE
-    (wat jij denkt: "hij doet het expres")
-         ↓
-    EMOTIONELE REACTIE
-    (boosheid, frustratie, machteloosheid)
-         ↓
-    GEDRAG
-    (schreeuwen, straffen, terugtrekken)
-         ↓
-    REACTIE KIND
-    (tegenschreeuwen, huilen, bevriezen)
-         ↓
-    RESULTAAT
-    (afstand, schuldgevoel, niks opgelost)
-         ↓
-    ... wacht tot volgende trigger ...
+╔══════════════════════════════════════════════╗
+║  DE CONFLICTCYCLUS                           ║
+╠══════════════════════════════════════════════╣
+║                                              ║
+║  TRIGGER                                     ║
+║  (situatie die het conflict start)           ║
+║       ↓                                      ║
+║  INTERPRETATIE                               ║
+║  (wat jij denkt: "hij doet het expres")      ║
+║       ↓                                      ║
+║  EMOTIONELE REACTIE                          ║
+║  (boosheid, frustratie, machteloosheid)      ║
+║       ↓                                      ║
+║  GEDRAG                                      ║
+║  (schreeuwen, straffen, terugtrekken)        ║
+║       ↓                                      ║
+║  REACTIE KIND                                ║
+║  (tegenschreeuwen, huilen, bevriezen)        ║
+║       ↓                                      ║
+║  RESULTAAT                                   ║
+║  (afstand, schuldgevoel, niks opgelost)      ║
+║       ↓                                      ║
+║  ... wacht tot volgende trigger ...          ║
+║                                              ║
+╚══════════════════════════════════════════════╝
 ```
 
 De sleutel om deze cyclus te doorbreken zit bij **stap 2: de interpretatie**. Want tussen de trigger en jouw reactie zit een gedachte - en die gedachte is vaak niet kloppend. *(Meer over het herkennen en managen van triggers vind je in de cursus Zelfregulatie.)*

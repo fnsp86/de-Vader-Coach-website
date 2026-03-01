@@ -1,18 +1,23 @@
 import type { Metadata } from 'next';
-import { Check, BookOpen, ChevronDown, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
+import { Check, BookOpen, ChevronDown, ShieldCheck, ArrowRight } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
 import EmailGate from '@/components/EmailGate';
 import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
 import { FAQ_CURSUSSEN } from '@/lib/testimonials';
+import { getAllGuides } from '@/lib/guides';
 
 export const metadata: Metadata = {
   title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
   description:
-    'Online opvoedcursussen speciaal voor vaders. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. 8 PDF-werkboeken, wetenschappelijk onderbouwd, direct toepasbaar.',
+    'Online opvoedcursussen speciaal voor vaders. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. 10 PDF-werkboeken, wetenschappelijk onderbouwd, direct toepasbaar.',
   openGraph: {
     title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
     description:
-      'Online opvoedcursussen speciaal voor vaders. 8 PDF-werkboeken over grenzen stellen, emotiecoaching, zelfregulatie en meer.',
+      'Online opvoedcursussen speciaal voor vaders. 10 PDF-werkboeken over grenzen stellen, emotiecoaching, zelfregulatie en meer.',
+  },
+  alternates: {
+    canonical: 'https://devadercoach.nl/cursussen',
   },
 };
 
@@ -26,7 +31,7 @@ export default function CursussenPage() {
           Opvoedcursussen voor Vaders
         </h1>
         <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-          8 verdiepende PDF-werkboeken over opvoedvaardigheden. Van grenzen stellen en emotiecoaching
+          {courses.length} verdiepende PDF-werkboeken over opvoedvaardigheden. Van grenzen stellen en emotiecoaching
           tot zelfregulatie en verbinding met je tiener. Wetenschappelijk onderbouwd, direct toepasbaar.
         </p>
       </div>
@@ -141,6 +146,44 @@ export default function CursussenPage() {
             Niet tevreden? Mail naar info@devadercoach.nl en je krijgt je geld terug. Geen vragen, geen gedoe.
           </p>
         </div>
+      </div>
+
+      {/* Gratis gidsen */}
+      <div className="mt-12">
+        <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
+          Gratis opvoedgidsen
+        </h2>
+        <p className="text-sm mb-6" style={{ color: 'var(--text2)' }}>
+          Wil je eerst gratis kennismaken? Onze uitgebreide gidsen geven je direct toepasbare tips.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {getAllGuides().slice(0, 3).map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/gids/${guide.slug}`}
+              className="group flex items-center gap-3 rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)' }}
+            >
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-amber-500/10">
+                <BookOpen className="h-4 w-4 text-amber-400" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <span className="text-[13px] font-bold block truncate" style={{ color: 'var(--text)' }}>
+                  {guide.title.replace(/:.*/,'')}
+                </span>
+                <span className="text-[11px]" style={{ color: 'var(--text3)' }}>Gratis gids</span>
+              </div>
+              <ArrowRight className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--text3)' }} />
+            </Link>
+          ))}
+        </div>
+        <Link
+          href="/gids"
+          className="inline-flex items-center gap-1.5 text-sm font-bold mt-4 hover:gap-2 transition-all"
+          style={{ color: 'var(--amber-text)' }}
+        >
+          Alle {getAllGuides().length} gidsen bekijken <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
       </div>
 
       {/* FAQ */}

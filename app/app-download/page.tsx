@@ -20,6 +20,15 @@ import {
 export const metadata: Metadata = {
   title: 'De App',
   description: 'De Vadercoach app: dagelijkse oefeningen, trainingen over 8 vaardigheden en een community van vaders.',
+  openGraph: {
+    title: 'De Vadercoach App - Opvoedtools voor Vaders',
+    description:
+      'Dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders. Eenmalige aankoop, geen abonnement.',
+    url: 'https://devadercoach.nl/app-download',
+  },
+  alternates: {
+    canonical: 'https://devadercoach.nl/app-download',
+  },
 };
 
 const SKILL_COLORS = {
@@ -55,9 +64,36 @@ const APP_FEATURES = [
   { icon: Smartphone, title: 'Offline beschikbaar', description: 'Oefeningen en trainingen werken ook zonder internet' },
 ];
 
+const appSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'De Vadercoach',
+  operatingSystem: 'iOS, Android',
+  applicationCategory: 'LifestyleApplication',
+  description:
+    'Dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders.',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/PreOrder',
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+    { '@type': 'ListItem', position: 2, name: 'De App', item: 'https://devadercoach.nl/app-download' },
+  ],
+};
+
 export default function AppDownloadPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

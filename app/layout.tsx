@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     'online opvoedcursus', 'vader kind relatie', 'zelfregulatie ouder',
     'omgaan met driftbuien', 'hoe word ik een goede vader', 'opvoedvaardigheden',
     'vadercoach', 'vader experience', 'opvoedboek vaders',
+    'opvoedcoach', 'kalm blijven als ouder', 'opvoeden zonder schreeuwen',
+    'schermtijd kinderen', 'puber opvoeden', 'ADHD kind opvoeden',
+    'co-ouderschap', 'vader na scheiding', 'weekendvader',
+    'slaapproblemen kind', 'zelfvertrouwen kind', 'gedragsproblemen kind',
+    'opvoedcursus online', 'vader coaching', 'opvoedondersteuning',
   ],
   metadataBase: new URL('https://devadercoach.nl'),
   openGraph: {

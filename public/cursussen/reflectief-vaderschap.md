@@ -147,6 +147,7 @@ _____________________________________________
 
 Dit is geen test. Er zijn geen goede of foute antwoorden. Het feit dat je erover nadenkt, is al reflectie.
 
+```
 ╔══════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                        ║
 ║                                                      ║
@@ -154,6 +155,7 @@ Dit is geen test. Er zijn geen goede of foute antwoorden. Het feit dat je erover
 ║  Reflectie is begrijpen waarom je deed wat je deed.  ║
 ║  Dat inzicht geeft je de vrijheid om te kiezen.      ║
 ╚══════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -275,6 +277,7 @@ Dit hoeft niet lang te zijn. Drie zinnen per dag is genoeg. Het gaat om de gewoo
 | Do  |                  |                       |                |              |                          |
 | Vr  |                  |                       |                |              |                          |
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -282,6 +285,7 @@ Dit hoeft niet lang te zijn. Drie zinnen per dag is genoeg. Het gaat om de gewoo
 ║  Het is de bereidheid om je af te vragen wat het voelt.  ║
 ║  Die bereidheid alleen al verandert hoe je reageert.     ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -408,6 +412,7 @@ Welke ongeschreven regels golden er in het gezin waarin je opgroeide?
 | *(eigen regel:)* _______________ |  |  |  |
 | *(eigen regel:)* _______________ |  |  |  |
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -416,6 +421,7 @@ Welke ongeschreven regels golden er in het gezin waarin je opgroeide?
 ║  anders te doen. Maar als je allebei kunt - begrijpen    ║
 ║  en bewust kiezen - dan doorbreek je het patroon.        ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -532,6 +538,7 @@ _____________________________________________
 
 Bewaar dit. Lees het over een maand opnieuw. Kijk of het nog klopt - of dat het al aan het verschuiven is.
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -539,6 +546,7 @@ Bewaar dit. Lees het over een maand opnieuw. Kijk of het nog klopt - of dat het 
 ║  Je hoeft alleen te weten welk beeld je draagt -         ║
 ║  zodat jij bepaalt hoe je vader bent, niet je beeld.     ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -654,6 +662,7 @@ _____________________________________________
 
 _____________________________________________
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -662,6 +671,7 @@ _____________________________________________
 ║  En je kind leert je waarden niet uit je woorden -       ║
 ║  maar uit je keuzes.                                     ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -766,6 +776,7 @@ _____________________________________________
 
 _____________________________________________
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -773,6 +784,7 @@ _____________________________________________
 ║  De momenten die je het meest raken, vertellen je het     ║
 ║  meest over jezelf. Durf te kijken.                      ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -885,6 +897,7 @@ _____________________________________________
 
 _____________________________________________
 
+```
 ╔══════════════════════════════════════════════════════════╗
 ║  KERNGEDACHTE                                            ║
 ║                                                          ║
@@ -893,6 +906,7 @@ _____________________________________________
 ║  zo heeft je vaderschap regelmatige reflectie nodig.     ║
 ║  Vijf minuten per week. Dat is alles.                    ║
 ╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
@@ -900,26 +914,19 @@ _____________________________________________
 
 ## Samenvatting per hoofdstuk
 
-**Hoofdstuk 1 - De Bewuste Vader**
-Reflectie is het verschil tussen reageren en kiezen. Onder elk opvoedgedrag zitten drie lagen: wat je doet, waarom je het doet, en waar het vandaan komt. Bewust vaderschap begint bij het herkennen van je automatische piloot.
+**Hoofdstuk 1 - De Bewuste Vader:** Reflectie is het verschil tussen reageren en kiezen. Onder elk opvoedgedrag zitten drie lagen: wat je doet, waarom je het doet, en waar het vandaan komt. Bewust vaderschap begint bij het herkennen van je automatische piloot.
 
-**Hoofdstuk 2 - Reflectief Functioneren**
-Mentaliseren is het vermogen om te begrijpen wat er in je kind en in jezelf omgaat. Het is de sterkste voorspeller van veilige hechting. Het vraagt dat je even stopt en je afvraagt: wat voelt mijn kind nu? En wat voel ik?
+**Hoofdstuk 2 - Reflectief Functioneren:** Mentaliseren is het vermogen om te begrijpen wat er in je kind en in jezelf omgaat. Het is de sterkste voorspeller van veilige hechting. Het vraagt dat je even stopt en je afvraagt: wat voelt mijn kind nu? En wat voel ik?
 
-**Hoofdstuk 3 - Het Verhaal van Jouw Vader**
-Je eigen opvoedgeschiedenis werkt door in je vaderschap. Je kunt kopiëren, compenseren of reflecteren. Een coherent verhaal over je verleden - met ruimte voor zowel het goede als het pijnlijke - is de basis voor bewust ouderschap.
+**Hoofdstuk 3 - Het Verhaal van Jouw Vader:** Je eigen opvoedgeschiedenis werkt door in je vaderschap. Je kunt kopiëren, compenseren of reflecteren. Een coherent verhaal over je verleden - met ruimte voor zowel het goede als het pijnlijke - is de basis voor bewust ouderschap.
 
-**Hoofdstuk 4 - Jouw Vaderbeeld**
-Elke vader draagt een onbewust beeld van "een goede vader". Dat beeld stuurt je gedrag. Door het bewust te maken, kun je kiezen welke delen je behoudt en welke je bijstelt.
+**Hoofdstuk 4 - Jouw Vaderbeeld:** Elke vader draagt een onbewust beeld van "een goede vader". Dat beeld stuurt je gedrag. Door het bewust te maken, kun je kiezen welke delen je behoudt en welke je bijstelt.
 
-**Hoofdstuk 5 - Waarden-Gedreven Opvoeden**
-Waarden geven richting waar regels structuur geven. Door je waarden expliciet te maken en te rangschikken, kun je bewuster keuzes maken - vooral als waarden met elkaar botsen.
+**Hoofdstuk 5 - Waarden-Gedreven Opvoeden:** Waarden geven richting waar regels structuur geven. Door je waarden expliciet te maken en te rangschikken, kun je bewuster keuzes maken - vooral als waarden met elkaar botsen.
 
-**Hoofdstuk 6 - De Spiegel van je Kind**
-Je kind laat je zien waar je groeipunten zitten. De momenten waarop je disproportioneel reageert, zijn signalen uit je eigen verleden. Herken projectie en gebruik triggers als informatie.
+**Hoofdstuk 6 - De Spiegel van je Kind:** Je kind laat je zien waar je groeipunten zitten. De momenten waarop je disproportioneel reageert, zijn signalen uit je eigen verleden. Herken projectie en gebruik triggers als informatie.
 
-**Hoofdstuk 7 - Reflectie als Gewoonte**
-Reflectie werkt alleen als het een gewoonte wordt. Kies een praktijk - dagelijkse check-in, weekreflectie, journaling - en maak het klein genoeg om vol te houden.
+**Hoofdstuk 7 - Reflectie als Gewoonte:** Reflectie werkt alleen als het een gewoonte wordt. Kies een praktijk - dagelijkse check-in, weekreflectie, journaling - en maak het klein genoeg om vol te houden.
 
 ---
 

@@ -13,6 +13,23 @@ const COURSE_SLUGS = [
   'herstel-na-conflict',
   'verbinding-met-je-tiener',
   'reflectief-vaderschap',
+  'opvoeden-bij-gedragsproblemen',
+  'vaderschap-na-scheiding',
+];
+
+const GUIDE_SLUGS = [
+  'driftbuien-kind',
+  'kind-luistert-niet',
+  'grenzen-stellen-kind',
+  'positief-opvoeden',
+  'omgaan-met-pubers',
+  'vader-worden',
+  'slaapproblemen-kind',
+  'schermtijd-kinderen',
+  'zelfvertrouwen-kind',
+  'co-ouderschap-tips',
+  'kalm-blijven-als-vader',
+  'adhd-kind-opvoeden',
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -67,5 +84,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...coursePages, ...blogPages, ...dynamicBlogPages, ...experiencePages];
+  const guidePages: MetadataRoute.Sitemap = [
+    { url: `${BASE}/gids`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.8 },
+    ...GUIDE_SLUGS.map((slug) => ({
+      url: `${BASE}/gids/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+
+  return [...staticPages, ...coursePages, ...blogPages, ...dynamicBlogPages, ...experiencePages, ...guidePages];
 }

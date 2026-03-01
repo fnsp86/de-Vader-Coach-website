@@ -30,11 +30,11 @@ Grenzen stellen is een van de lastigste onderdelen van het vaderschap. Te streng
 3. **De Anatomie van een Goede Grens** | Duidelijk, warm en consequent
 4. **Consequenties die Werken** | Logisch, respectvol en effectief
 5. **Grenzen per Leeftijd** | Van peuter tot puber
-6. **Emotionele Stormen Overleven** | Kalm blijven als het escaleert
-7. **Grenzen als Team** | Samen opvoeden met je partner
-8. **Grenzen en Schermen** | Digitale afspraken die werken
-9. **Zelfzorg voor Vaders** | Eerst je eigen beker vullen
-10. **Jouw Persoonlijke Plan** | Aan de slag
+6. **De Moeilijke Momenten** | Praktische scripts voor de zes lastigste situaties
+7. **Consistent Blijven** | Systemen die het makkelijk maken om vol te houden
+8. **Grenzen in Complexe Situaties** | Co-ouderschap, stiefgezinnen, neurodivergentie, grootouders en schermen
+9. **Werkbladen & Opdrachten** | Alles wat je nodig hebt om te oefenen
+10. **Bronnen & Verder Lezen** | Verdieping en ondersteuning
 
 ---
 

@@ -6,6 +6,7 @@ const FOOTER_LINKS = {
     { href: '/experience', label: 'De Vader Experience' },
     { href: '/over', label: 'Over ons' },
     { href: '/cursussen', label: 'Cursussen' },
+    { href: '/gids', label: 'Gratis gidsen' },
     { href: '/aanbevolen', label: 'Aanbevolen' },
     { href: '/blog', label: 'Blog' },
     { href: '/app-download', label: 'De App' },

@@ -28,6 +28,14 @@ export function generateMetadata({ params }: { params: Promise<{ nummer: string 
     return {
       title: `Dag ${day.dag}: ${day.title} - De Vader Experience`,
       description: day.subtitle,
+      openGraph: {
+        title: `Dag ${day.dag}: ${day.title} - De Vader Experience`,
+        description: day.subtitle,
+        url: `https://devadercoach.nl/experience/dag/${nummer}`,
+      },
+      alternates: {
+        canonical: `https://devadercoach.nl/experience/dag/${nummer}`,
+      },
     };
   });
 }

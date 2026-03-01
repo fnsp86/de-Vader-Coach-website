@@ -13,12 +13,47 @@ export const metadata: Metadata = {
     description:
       'Herkenbare verhalen en praktische opvoedtips voor vaders. Over grenzen stellen, driftbuien, emotiecoaching en meer.',
   },
+  alternates: {
+    canonical: 'https://devadercoach.nl/blog',
+  },
 };
 
 export default async function BlogPage() {
   const posts = await getAllBlogPostsAsync();
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://devadercoach.nl/blog' },
+    ],
+  };
+
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Vaderschapsblog',
+    description:
+      'Herkenbare verhalen en praktische opvoedtips voor vaders. Over grenzen stellen, omgaan met driftbuien, emotiecoaching en meer.',
+    url: 'https://devadercoach.nl/blog',
+    publisher: { '@type': 'Organization', name: 'De Vadercoach', url: 'https://devadercoach.nl' },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: posts.length,
+      itemListElement: posts.slice(0, 10).map((post, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `https://devadercoach.nl/blog/${post.slug}`,
+        name: post.title,
+      })),
+    },
+  };
+
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
         <div className="max-w-2xl">
@@ -41,5 +76,6 @@ export default async function BlogPage() {
 
       <BlogContent posts={posts} />
     </div>
+    </>
   );
 }

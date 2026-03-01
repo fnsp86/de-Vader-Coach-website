@@ -1406,23 +1406,29 @@ Het slechte nieuws: de meeste vaders doen het niet goed. Niet uit onwil, maar ui
 Herken dit?
 
 ```
-    Tiener doet/zegt iets
-         ↓
-    Vader corrigeert
-         ↓
-    Tiener verdedigt zich
-         ↓
-    Vader wordt strenger
-         ↓
-    Tiener wordt bozer
-         ↓
-    Vader schreeuwt
-         ↓
-    Tiener schreeuwt terug
-         ↓
-    Deur slaat dicht
-         ↓
-    Stilte. Afstand. Pijn.
+╔══════════════════════════════════════════╗
+║  DE ESCALATIECYCLUS                      ║
+╠══════════════════════════════════════════╣
+║                                          ║
+║  Tiener doet/zegt iets                   ║
+║       ↓                                  ║
+║  Vader corrigeert                        ║
+║       ↓                                  ║
+║  Tiener verdedigt zich                   ║
+║       ↓                                  ║
+║  Vader wordt strenger                    ║
+║       ↓                                  ║
+║  Tiener wordt bozer                      ║
+║       ↓                                  ║
+║  Vader schreeuwt                         ║
+║       ↓                                  ║
+║  Tiener schreeuwt terug                  ║
+║       ↓                                  ║
+║  Deur slaat dicht                        ║
+║       ↓                                  ║
+║  Stilte. Afstand. Pijn.                  ║
+║                                          ║
+╚══════════════════════════════════════════╝
 ```
 
 Dit is de **escalatiecyclus**. En jij - als volwassene met een werkende PFC - bent de aangewezen persoon om hem te doorbreken. Niet je tiener. Jij.

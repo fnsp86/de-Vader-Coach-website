@@ -6,11 +6,15 @@ import { Heart, Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const NAV_LINKS = [
-  { href: '/experience', label: 'De Experience' },
+  { href: '/experience', label: 'Experience' },
   { href: '/cursussen', label: 'Cursussen' },
-  { href: '/aanbevolen', label: 'Aanbevolen' },
+  { href: '/gids', label: 'Gidsen' },
   { href: '/blog', label: 'Blog' },
+  { href: '/aanbevolen', label: 'Aanbevolen' },
   { href: '/over', label: 'Over' },
+];
+
+const MOBILE_EXTRA_LINKS = [
   { href: '/app-download', label: 'De App' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -33,12 +37,12 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3.5 py-2 rounded-lg text-sm font-semibold transition-colors hover:bg-[var(--surface2)]"
+                className="px-2.5 py-2 rounded-lg text-[13px] font-semibold transition-colors hover:bg-[var(--surface2)]"
                 style={{ color: 'var(--text2)' }}
               >
                 {link.label}
@@ -66,7 +70,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile: toggle + hamburger */}
-          <div className="flex md:hidden items-center gap-1">
+          <div className="flex lg:hidden items-center gap-1">
             <a
               href="https://instagram.com/devadercoach.nl"
               target="_blank"
@@ -96,8 +100,8 @@ export default function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <nav className="md:hidden border-t px-4 pb-4 pt-2" style={{ borderColor: 'var(--border)' }}>
-          {NAV_LINKS.map((link) => (
+        <nav className="lg:hidden border-t px-4 pb-4 pt-2" style={{ borderColor: 'var(--border)' }}>
+          {[...NAV_LINKS, ...MOBILE_EXTRA_LINKS].map((link) => (
             <Link
               key={link.href}
               href={link.href}
