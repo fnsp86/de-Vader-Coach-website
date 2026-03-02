@@ -5,6 +5,10 @@ import { useAdminPassword } from '@/components/AdminAuth';
 import { POSTS_LIST, getBlogPost } from '@/lib/blog-posts';
 import { getAllCourses, SKILL_COLORS } from '@/lib/courses';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
+
+// Always use production URL for Instagram image URLs (Instagram can't reach localhost)
+const IG_IMAGE_BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
+
 import {
   generateBlogCaption,
   generateCourseCaption,
@@ -182,7 +186,7 @@ export default function InstagramPage() {
     setStatus('posting');
     setErrorMsg('');
     try {
-      const imageUrls = slides.map((s) => `${window.location.origin}${getImageUrl(s)}`);
+      const imageUrls = slides.map((s) => `${IG_IMAGE_BASE}${getImageUrl(s)}`);
       const res = await fetch('/api/instagram/post', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
@@ -214,12 +218,12 @@ export default function InstagramPage() {
     setStatus('posting');
     setErrorMsg('');
     try {
-      const imageUrls = slides.map((s) => `${window.location.origin}${getImageUrl(s)}`);
+      const imageUrls = slides.map((s) => `${IG_IMAGE_BASE}${getImageUrl(s)}`);
       const res = await fetch('/api/instagram/schedule', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
         body: JSON.stringify({
-          slides: slides.map((s) => ({ ...s, imageUrl: `${window.location.origin}${getImageUrl(s)}` })),
+          slides: slides.map((s) => ({ ...s, imageUrl: `${IG_IMAGE_BASE}${getImageUrl(s)}` })),
           caption,
           scheduledAt: new Date(dateStr).toISOString(),
           title: selectedTitle,

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { NextRequest, NextResponse } from 'next/server';
 
-export const runtime = 'edge';
+// No edge runtime - Instagram can't fetch from edge functions
 
 const FONT_BOLD_URL =
   'https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf';
