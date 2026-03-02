@@ -38,6 +38,9 @@ import {
   Palette,
   Type,
   Sparkles,
+  Facebook,
+  Instagram,
+  Film,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -52,6 +55,9 @@ const TEMPLATE_LABELS: Record<Template, string> = {
   list: 'Lijst',
   cta: 'CTA',
   skills: 'Skills',
+  didyouknow: 'Wist je',
+  challenge: 'Uitdaging',
+  comparison: 'Vergelijk',
 };
 
 function defaultSlide(color: string = '#F59E0B', skill: string = ''): SlideConfig {
@@ -68,6 +74,8 @@ export default function InstagramPage() {
   const [errorMsg, setErrorMsg] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
   const [showBibliotheek, setShowBibliotheek] = useState(false);
+  const [postToFacebook, setPostToFacebook] = useState(false);
+  const [postAsStory, setPostAsStory] = useState(false);
 
   const courses = getAllCourses();
   const current = slides[activeSlide] ?? slides[0];
@@ -194,6 +202,8 @@ export default function InstagramPage() {
           imageUrl: imageUrls[0],
           imageUrls: imageUrls.length > 1 ? imageUrls : undefined,
           caption,
+          postToFacebook,
+          postAsStory,
         }),
       });
       const data = await res.json();
@@ -202,6 +212,12 @@ export default function InstagramPage() {
         setErrorMsg(data.error);
       } else {
         setStatus('success');
+        const extras: string[] = [];
+        if (data.facebook?.success) extras.push('Facebook');
+        if (data.story?.success) extras.push('Story');
+        if (data.facebookError) extras.push(`FB fout: ${data.facebookError}`);
+        if (data.storyError) extras.push(`Story fout: ${data.storyError}`);
+        if (extras.length) setErrorMsg(extras.join(' · '));
         const history = JSON.parse(localStorage.getItem('ig_history') ?? '[]');
         history.unshift({ title: selectedTitle, slides: slides.length, postedAt: new Date().toISOString(), postId: data.postId });
         localStorage.setItem('ig_history', JSON.stringify(history.slice(0, 20)));
@@ -511,15 +527,15 @@ export default function InstagramPage() {
                   onChange={(e) => updateSlide(activeSlide, { text: e.target.value })}
                   className="w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-amber-500/30 mb-2"
                   style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
-                  placeholder="Hoofdtekst"
+                  placeholder={current.template === 'comparison' ? '"Niet" tekst (links)' : 'Hoofdtekst'}
                 />
-                {(current.template === 'teaser' || current.template === 'stat' || current.template === 'cta') && (
+                {(current.template === 'teaser' || current.template === 'stat' || current.template === 'cta' || current.template === 'challenge' || current.template === 'comparison') && (
                   <input
                     value={current.subtitle}
                     onChange={(e) => updateSlide(activeSlide, { subtitle: e.target.value })}
                     className="w-full rounded-xl border px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-amber-500/30 mb-2"
                     style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
-                    placeholder="Subtekst"
+                    placeholder={current.template === 'comparison' ? '"Wel" tekst (rechts)' : 'Subtekst'}
                   />
                 )}
                 {current.template === 'tip' && (
@@ -714,6 +730,49 @@ export default function InstagramPage() {
                   className="w-full rounded-xl border px-4 py-3 text-sm resize-none outline-none focus:ring-2 focus:ring-amber-500/30"
                   style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
                 />
+              </div>
+
+              {/* Platform toggles */}
+              <div
+                className="rounded-2xl border p-4 flex flex-wrap gap-3"
+                style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+              >
+                <span className="text-xs font-bold w-full mb-1" style={{ color: 'var(--text)' }}>
+                  Posten op
+                </span>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: '#E1306C20' }}>
+                    <Instagram className="h-3.5 w-3.5" style={{ color: '#E1306C' }} />
+                  </div>
+                  <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>Feed</span>
+                  <div className="w-4 h-4 rounded bg-amber-500 flex items-center justify-center ml-1">
+                    <Check className="h-3 w-3 text-black" />
+                  </div>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer" onClick={() => setPostAsStory(!postAsStory)}>
+                  <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: '#E1306C20' }}>
+                    <Film className="h-3.5 w-3.5" style={{ color: '#E1306C' }} />
+                  </div>
+                  <span className="text-xs font-bold" style={{ color: 'var(--text2)' }}>Story</span>
+                  <div
+                    className="w-4 h-4 rounded flex items-center justify-center transition-colors"
+                    style={{ backgroundColor: postAsStory ? '#F59E0B' : 'var(--border)' }}
+                  >
+                    {postAsStory && <Check className="h-3 w-3 text-black" />}
+                  </div>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer" onClick={() => setPostToFacebook(!postToFacebook)}>
+                  <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: '#1877F220' }}>
+                    <Facebook className="h-3.5 w-3.5" style={{ color: '#1877F2' }} />
+                  </div>
+                  <span className="text-xs font-bold" style={{ color: 'var(--text2)' }}>Facebook</span>
+                  <div
+                    className="w-4 h-4 rounded flex items-center justify-center transition-colors"
+                    style={{ backgroundColor: postToFacebook ? '#F59E0B' : 'var(--border)' }}
+                  >
+                    {postToFacebook && <Check className="h-3 w-3 text-black" />}
+                  </div>
+                </label>
               </div>
 
               {/* Action buttons */}

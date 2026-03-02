@@ -47,4 +47,7 @@ export const TEMPLATE_INFO: Record<string, { name: string; description: string; 
   list: { name: 'Lijst', description: 'Genummerde lijst met tips', icon: '📋' },
   cta: { name: 'CTA', description: 'Call-to-action met logo en link', icon: '🔔' },
   skills: { name: 'Skills', description: 'Alle 8 vaardigheden in een grid', icon: '🎯' },
+  didyouknow: { name: 'Wist je dat', description: 'Educatief feit met vergrootglas', icon: '🔍' },
+  challenge: { name: 'Uitdaging', description: 'Weekuitdaging met trofee', icon: '🏆' },
+  comparison: { name: 'Vergelijk', description: 'Wel/Niet vergelijking', icon: '⚖️' },
 };

@@ -96,7 +96,7 @@ export function generateExperienceCaption(day: {
 
 /* ── Random content generator ── */
 
-export type Template = 'quote' | 'tip' | 'teaser' | 'stat' | 'list' | 'cta' | 'skills';
+export type Template = 'quote' | 'tip' | 'teaser' | 'stat' | 'list' | 'cta' | 'skills' | 'didyouknow' | 'challenge' | 'comparison';
 
 export interface SlideConfig {
   template: Template;
@@ -205,53 +205,72 @@ interface SlideInput {
   color: string;
 }
 
+// Single-slide template variants for more variety
+const SINGLE_TEMPLATES: Template[] = ['quote', 'didyouknow', 'challenge', 'tip'];
+
 function buildSlides(count: number, input: SlideInput): SlideConfig[] {
   const { quote, tips, title, subtitle, skill, color } = input;
 
   if (count === 1) {
+    // Pick a random single-slide template for variety
+    const template = SINGLE_TEMPLATES[Math.floor(Math.random() * SINGLE_TEMPLATES.length)];
     return [{
-      template: 'quote',
+      template,
       text: quote,
       color,
       skill,
-      subtitle: '',
-      number: '',
+      subtitle: template === 'challenge' ? subtitle.slice(0, 120) : '',
+      number: template === 'tip' ? '1' : '',
     }];
   }
 
   const slides: SlideConfig[] = [];
 
-  // Slide 1: Hook (quote or teaser)
+  // Slide 1: Hook (teaser or didyouknow)
+  const hookTemplate = Math.random() > 0.5 ? 'teaser' : 'didyouknow';
   slides.push({
-    template: 'teaser',
-    text: title,
+    template: hookTemplate,
+    text: hookTemplate === 'didyouknow' ? quote : title,
     color,
     skill,
-    subtitle: subtitle.slice(0, 120),
+    subtitle: hookTemplate === 'teaser' ? subtitle.slice(0, 120) : '',
     number: '',
   });
 
-  // Middle slides: tips
+  // Middle slides: tips (with occasional comparison or challenge)
   const middleCount = Math.min(count - 2, tips.length);
   for (let i = 0; i < middleCount; i++) {
-    slides.push({
-      template: 'tip',
-      text: tips[i],
-      color,
-      skill,
-      subtitle: '',
-      number: String(i + 1),
-    });
+    // Every 3rd middle slide, use comparison if we have enough tips
+    if (i > 0 && i % 3 === 0 && i + 1 < tips.length) {
+      slides.push({
+        template: 'comparison',
+        text: tips[i],
+        color,
+        skill,
+        subtitle: tips[i + 1] || '',
+        number: '',
+      });
+    } else {
+      slides.push({
+        template: 'tip',
+        text: tips[i],
+        color,
+        skill,
+        subtitle: '',
+        number: String(i + 1),
+      });
+    }
   }
 
-  // Fill remaining with quotes if needed
+  // Fill remaining with quotes or challenges if needed
   if (slides.length < count - 1) {
+    const filler = Math.random() > 0.5 ? 'challenge' : 'quote';
     slides.push({
-      template: 'quote',
-      text: quote,
+      template: filler,
+      text: filler === 'challenge' ? quote : quote,
       color,
       skill,
-      subtitle: '',
+      subtitle: filler === 'challenge' ? subtitle.slice(0, 120) : '',
       number: '',
     });
   }

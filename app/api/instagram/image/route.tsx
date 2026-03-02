@@ -148,6 +148,12 @@ export async function GET(request: NextRequest) {
       content = <CTATemplate text={text} color={color} subtitle={subtitle} />;
     } else if (template === 'skills') {
       content = <SkillsTemplate text={text} color={color} subtitle={subtitle} />;
+    } else if (template === 'didyouknow') {
+      content = <DidYouKnowTemplate text={text} color={color} skill={skill} />;
+    } else if (template === 'challenge') {
+      content = <ChallengeTemplate text={text} color={color} subtitle={subtitle} skill={skill} />;
+    } else if (template === 'comparison') {
+      content = <ComparisonTemplate text={text} color={color} subtitle={subtitle} skill={skill} />;
     } else {
       content = <QuoteTemplate text={text} color={color} skill={skill} />;
     }
@@ -446,6 +452,183 @@ function SkillsTemplate({ text, color, subtitle }: { text: string; color: string
       </div>
 
       <BottomBar color={color} />
+    </div>
+  );
+}
+
+function DidYouKnowTemplate({ text, color, skill }: { text: string; color: string; skill: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 30, marginTop: 40 }}>
+        <div
+          style={{
+            width: 100,
+            height: 100,
+            borderRadius: 50,
+            backgroundColor: color + '20',
+            border: `3px solid ${color}40`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <span style={{ fontSize: 48 }}>🔍</span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 40 }}>
+        <span style={{ fontSize: 24, fontWeight: 700, color, letterSpacing: 3 }}>
+          WIST JE DAT...
+        </span>
+      </div>
+
+      <div style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <span
+          style={{
+            fontSize: text.length > 140 ? 36 : text.length > 80 ? 42 : 48,
+            fontWeight: 700,
+            color: '#F0F2F8',
+            lineHeight: 1.35,
+            textAlign: 'center',
+            maxWidth: 880,
+          }}
+        >
+          {text}
+        </span>
+      </div>
+
+      <BottomBar color={color} />
+    </div>
+  );
+}
+
+function ChallengeTemplate({ text, color, subtitle, skill }: { text: string; color: string; subtitle: string; skill: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20, marginTop: 30 }}>
+        <div
+          style={{
+            width: 100,
+            height: 100,
+            borderRadius: 50,
+            backgroundColor: color + '20',
+            border: `3px solid ${color}40`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <span style={{ fontSize: 48 }}>🏆</span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 30 }}>
+        <div
+          style={{
+            backgroundColor: color,
+            borderRadius: 12,
+            padding: '10px 28px',
+            display: 'flex',
+          }}
+        >
+          <span style={{ fontSize: 22, fontWeight: 700, color: '#111318', letterSpacing: 2 }}>
+            WEEKUITDAGING
+          </span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <span
+          style={{
+            fontSize: text.length > 100 ? 38 : 46,
+            fontWeight: 700,
+            color: '#F0F2F8',
+            lineHeight: 1.35,
+            textAlign: 'center',
+            maxWidth: 880,
+            marginBottom: 24,
+          }}
+        >
+          {text}
+        </span>
+        {subtitle && (
+          <span style={{ fontSize: 26, fontWeight: 500, color: '#9BA3B8', textAlign: 'center', maxWidth: 800 }}>
+            {subtitle}
+          </span>
+        )}
+      </div>
+
+      <BottomBar color={color} />
+    </div>
+  );
+}
+
+function ComparisonTemplate({ text, color, subtitle, skill }: { text: string; color: string; subtitle: string; skill: string }) {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '60px 80px' }}>
+      <SkillBadge skill={skill} color={color} />
+
+      <div style={{ display: 'flex', flex: 1, gap: 40 }}>
+        {/* Left: Don't */}
+        <div
+          style={{
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            borderRadius: 24,
+            padding: '40px 30px',
+            backgroundColor: '#EF444415',
+            border: '2px solid #EF444430',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: 30 }}>
+            <span style={{ fontSize: 32, marginRight: 12 }}>✗</span>
+            <span style={{ fontSize: 22, fontWeight: 700, color: '#EF4444', letterSpacing: 1 }}>NIET</span>
+          </div>
+          <span
+            style={{
+              fontSize: text.length > 80 ? 28 : 32,
+              fontWeight: 700,
+              color: '#F0F2F8',
+              lineHeight: 1.4,
+            }}
+          >
+            {text}
+          </span>
+        </div>
+
+        {/* Right: Do */}
+        <div
+          style={{
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            borderRadius: 24,
+            padding: '40px 30px',
+            backgroundColor: color + '15',
+            border: `2px solid ${color}30`,
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: 30 }}>
+            <span style={{ fontSize: 32, marginRight: 12 }}>✓</span>
+            <span style={{ fontSize: 22, fontWeight: 700, color, letterSpacing: 1 }}>WEL</span>
+          </div>
+          <span
+            style={{
+              fontSize: (subtitle || '').length > 80 ? 28 : 32,
+              fontWeight: 700,
+              color: '#F0F2F8',
+              lineHeight: 1.4,
+            }}
+          >
+            {subtitle}
+          </span>
+        </div>
+      </div>
+
+      <div style={{ display: 'flex', marginTop: 30 }}>
+        <BottomBar color={color} />
+      </div>
     </div>
   );
 }

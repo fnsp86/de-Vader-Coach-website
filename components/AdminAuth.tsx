@@ -32,8 +32,8 @@ export default function AdminAuth({ children }: { children: React.ReactNode }) {
       .then((data) => setRequires2FA(data.requires2FA || false))
       .catch(() => {});
 
-    const stored = sessionStorage.getItem('admin_password');
-    const storedTotp = sessionStorage.getItem('admin_totp');
+    const stored = localStorage.getItem('admin_password');
+    const storedTotp = localStorage.getItem('admin_totp');
     if (stored) {
       verify(stored, storedTotp || undefined);
     } else {
@@ -53,12 +53,12 @@ export default function AdminAuth({ children }: { children: React.ReactNode }) {
         headers,
       });
       if (res.ok) {
-        sessionStorage.setItem('admin_password', pw);
-        if (totp) sessionStorage.setItem('admin_totp', totp);
+        localStorage.setItem('admin_password', pw);
+        if (totp) localStorage.setItem('admin_totp', totp);
         setSession({ password: pw, totp });
       } else {
-        sessionStorage.removeItem('admin_password');
-        sessionStorage.removeItem('admin_totp');
+        localStorage.removeItem('admin_password');
+        localStorage.removeItem('admin_totp');
         if (requires2FA && totp) {
           setError('Onjuist wachtwoord of code');
         } else if (requires2FA) {
