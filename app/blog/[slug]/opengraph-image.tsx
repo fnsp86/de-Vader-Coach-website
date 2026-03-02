@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { getBlogPost } from '@/lib/blog-posts';
 
-export const runtime = 'edge';
+// Using Node.js runtime (edge has Vercel deployment issues)
 export const alt = 'De Vadercoach Blog';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';

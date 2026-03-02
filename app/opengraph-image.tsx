@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
+// Using Node.js runtime (edge has Vercel deployment issues)
 export const alt = 'De Vadercoach - Word elke dag een betere vader';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
