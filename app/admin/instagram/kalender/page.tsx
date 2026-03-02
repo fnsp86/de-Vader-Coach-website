@@ -13,6 +13,7 @@ import {
   Loader2,
   Image as ImageIcon,
   Clock,
+  Send,
 } from 'lucide-react';
 
 interface ScheduledPost {
@@ -63,6 +64,31 @@ export default function KalenderPage() {
       // ignore
     }
     setLoading(false);
+  }
+
+  const [publishing, setPublishing] = useState(false);
+
+  async function publishNow(id: string) {
+    if (!confirm('Nu direct posten op Instagram?')) return;
+    setPublishing(true);
+    try {
+      const res = await fetch('/api/instagram/schedule', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
+        body: JSON.stringify({ id }),
+      });
+      const data = await res.json();
+      if (data.error) {
+        alert(`Fout: ${data.error}`);
+      } else {
+        alert('Gepost!');
+      }
+      await fetchPosts();
+      setSelectedPost(null);
+    } catch {
+      alert('Kon niet posten');
+    }
+    setPublishing(false);
   }
 
   async function deletePost(id: string) {
@@ -260,13 +286,24 @@ export default function KalenderPage() {
               )}
 
               {selectedPost.status === 'scheduled' && (
-                <button
-                  onClick={() => deletePost(selectedPost.id)}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl border py-2.5 text-xs font-bold transition-colors hover:border-red-400/40"
-                  style={{ borderColor: 'var(--border)', color: '#EF4444' }}
-                >
-                  <Trash2 className="h-3.5 w-3.5" /> Verwijderen
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => publishNow(selectedPost.id)}
+                    disabled={publishing}
+                    className="flex-1 flex items-center justify-center gap-2 rounded-xl py-2.5 text-xs font-bold transition-colors"
+                    style={{ backgroundColor: '#F59E0B', color: '#111318' }}
+                  >
+                    {publishing ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Send className="h-3.5 w-3.5" />}
+                    {publishing ? 'Posten...' : 'Nu posten'}
+                  </button>
+                  <button
+                    onClick={() => deletePost(selectedPost.id)}
+                    className="flex items-center justify-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold transition-colors hover:border-red-400/40"
+                    style={{ borderColor: 'var(--border)', color: '#EF4444' }}
+                  >
+                    <Trash2 className="h-3.5 w-3.5" />
+                  </button>
+                </div>
               )}
 
               {selectedPost.status === 'posted' && selectedPost.postId && (
