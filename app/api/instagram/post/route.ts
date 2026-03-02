@@ -32,8 +32,8 @@ async function cacheImageForInstagram(imageUrl: string): Promise<string> {
     redis.disconnect();
   }
 
-  // Return the serve-image URL (simple endpoint Instagram can fetch)
-  return `${baseUrl}/api/instagram/serve-image?id=${id}`;
+  // Return a clean URL that looks like a static image file
+  return `${baseUrl}/ig/${id}.png`;
 }
 
 export async function POST(request: NextRequest) {
