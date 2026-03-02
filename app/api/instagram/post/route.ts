@@ -1,6 +1,40 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 import { getInstagramToken } from '@/lib/instagram-token';
+import Redis from 'ioredis';
+import { randomUUID } from 'crypto';
+
+/**
+ * Instagram can't fetch images from our dynamic API endpoints.
+ * This function fetches the image ourselves, stores it in Redis,
+ * and returns a simple serve-image URL that Instagram CAN fetch.
+ */
+async function cacheImageForInstagram(imageUrl: string): Promise<string> {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
+  const fullUrl = imageUrl.startsWith('http') ? imageUrl : `${baseUrl}${imageUrl}`;
+
+  // Fetch the image from our image endpoint
+  const res = await fetch(fullUrl);
+  if (!res.ok) throw new Error(`Kon afbeelding niet ophalen (${res.status})`);
+
+  const buffer = Buffer.from(await res.arrayBuffer());
+  const base64 = buffer.toString('base64');
+  const id = randomUUID();
+
+  // Store in Redis with 1-hour TTL
+  const redisUrl = process.env.REDIS_URL;
+  if (!redisUrl) throw new Error('Redis niet geconfigureerd');
+
+  const redis = new Redis(redisUrl, { maxRetriesPerRequest: 1 });
+  try {
+    await redis.set(`ig-image:${id}`, base64, 'EX', 3600);
+  } finally {
+    redis.disconnect();
+  }
+
+  // Return the serve-image URL (simple endpoint Instagram can fetch)
+  return `${baseUrl}/api/instagram/serve-image?id=${id}`;
+}
 
 export async function POST(request: NextRequest) {
   if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
@@ -18,13 +52,16 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    // Carousel post (multiple images)
+    // Cache images to static URLs that Instagram can fetch
     if (imageUrls && imageUrls.length > 1) {
-      return await postCarousel(accountId, accessToken, imageUrls, caption);
+      const cachedUrls = await Promise.all(
+        imageUrls.map((url: string) => cacheImageForInstagram(url)),
+      );
+      return await postCarousel(accountId, accessToken, cachedUrls, caption);
     }
 
-    // Single image post
-    return await postSingle(accountId, accessToken, imageUrl, caption);
+    const cachedUrl = await cacheImageForInstagram(imageUrl);
+    return await postSingle(accountId, accessToken, cachedUrl, caption);
   } catch (e) {
     return NextResponse.json(
       { error: `Post mislukt: ${e instanceof Error ? e.message : String(e)}` },
@@ -34,7 +71,6 @@ export async function POST(request: NextRequest) {
 }
 
 async function postSingle(accountId: string, accessToken: string, imageUrl: string, caption: string) {
-  // Step 1: Create media container
   const containerRes = await fetch(
     `https://graph.instagram.com/v21.0/${accountId}/media`,
     {
@@ -48,10 +84,8 @@ async function postSingle(accountId: string, accessToken: string, imageUrl: stri
     return NextResponse.json({ error: containerData.error.message }, { status: 400 });
   }
 
-  // Step 2: Wait for processing
   await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  // Step 3: Publish
   const publishRes = await fetch(
     `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
     {
@@ -69,7 +103,6 @@ async function postSingle(accountId: string, accessToken: string, imageUrl: stri
 }
 
 async function postCarousel(accountId: string, accessToken: string, imageUrls: string[], caption: string) {
-  // Step 1: Create a container for each image
   const containerIds: string[] = [];
   for (const url of imageUrls) {
     const res = await fetch(
@@ -87,7 +120,6 @@ async function postCarousel(accountId: string, accessToken: string, imageUrls: s
     containerIds.push(data.id);
   }
 
-  // Step 2: Create carousel container
   const carouselRes = await fetch(
     `https://graph.instagram.com/v21.0/${accountId}/media`,
     {
@@ -106,10 +138,8 @@ async function postCarousel(accountId: string, accessToken: string, imageUrls: s
     return NextResponse.json({ error: `Carousel fout: ${carouselData.error.message}` }, { status: 400 });
   }
 
-  // Step 3: Wait for processing
   await new Promise((resolve) => setTimeout(resolve, 8000));
 
-  // Step 4: Publish
   const publishRes = await fetch(
     `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
     {
