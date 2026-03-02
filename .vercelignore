@@ -1,0 +1,16 @@
+# Exclude large course PDFs from Vercel deployment (served separately)
+# Only keep the snelgids which is needed for free download
+public/cursussen/*.md
+public/cursussen/*.html
+public/cursussen/*.mjs
+public/cursussen/*.sh
+public/cursussen/aanwezig-vaderschap.pdf
+public/cursussen/emotiecoaching-voor-vaders.pdf
+public/cursussen/zelfregulatie-als-vader.pdf
+public/cursussen/grenzen-stellen-met-liefde.pdf
+public/cursussen/autonomie-en-loslaten.pdf
+public/cursussen/herstel-na-conflict.pdf
+public/cursussen/verbinding-met-je-tiener.pdf
+public/cursussen/reflectief-vaderschap.pdf
+public/cursussen/opvoeden-bij-gedragsproblemen.pdf
+public/cursussen/vaderschap-na-scheiding.pdf
