@@ -1,27 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Redis from 'ioredis';
 
-/**
- * Serves a cached Instagram image from Redis.
- * Images are stored temporarily by the post route before sending to Instagram.
- * Simple static-like PNG response that Instagram can reliably download.
- */
 export async function GET(request: NextRequest) {
   const id = request.nextUrl.searchParams.get('id');
   if (!id || !/^[a-f0-9-]+$/.test(id)) {
-    return new NextResponse('Not found', { status: 404 });
+    return NextResponse.json({ error: 'invalid id', id }, { status: 400 });
   }
 
   const redisUrl = process.env.REDIS_URL;
   if (!redisUrl) {
-    return new NextResponse('Redis not configured', { status: 500 });
+    return NextResponse.json({ error: 'no redis url' }, { status: 500 });
   }
 
-  const redis = new Redis(redisUrl, { maxRetriesPerRequest: 1 });
+  let redis: Redis | null = null;
   try {
+    redis = new Redis(redisUrl, { maxRetriesPerRequest: 1 });
     const base64 = await redis.get(`ig-image:${id}`);
+
     if (!base64) {
-      return new NextResponse('Not found', { status: 404 });
+      return NextResponse.json({ error: 'not in redis', key: `ig-image:${id}` }, { status: 404 });
     }
 
     const buffer = Buffer.from(base64, 'base64');
@@ -32,7 +29,9 @@ export async function GET(request: NextRequest) {
         'Cache-Control': 'public, max-age=3600',
       },
     });
+  } catch (e) {
+    return NextResponse.json({ error: 'redis error', message: e instanceof Error ? e.message : String(e) }, { status: 500 });
   } finally {
-    redis.disconnect();
+    redis?.disconnect();
   }
 }
