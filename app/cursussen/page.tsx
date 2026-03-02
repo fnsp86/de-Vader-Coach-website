@@ -8,13 +8,13 @@ import { FAQ_CURSUSSEN } from '@/lib/testimonials';
 import { getAllGuides } from '@/lib/guides';
 
 export const metadata: Metadata = {
-  title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
+  title: 'Opvoedcursussen voor Vaders - Persoonlijke Ontwikkeling Training',
   description:
-    'Online opvoedcursussen speciaal voor vaders. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. 10 PDF-werkboeken, wetenschappelijk onderbouwd, direct toepasbaar.',
+    'Trainingen persoonlijke ontwikkeling voor vaders. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. 10 PDF-werkboeken, wetenschappelijk onderbouwd, direct toepasbaar.',
   openGraph: {
-    title: 'Opvoedcursussen voor Vaders - PDF Werkboeken',
+    title: 'Opvoedcursussen voor Vaders - Persoonlijke Ontwikkeling Training',
     description:
-      'Online opvoedcursussen speciaal voor vaders. 10 PDF-werkboeken over grenzen stellen, emotiecoaching, zelfregulatie en meer.',
+      'Trainingen persoonlijke ontwikkeling voor vaders. 10 PDF-werkboeken over grenzen stellen, emotiecoaching, zelfregulatie en meer.',
   },
   alternates: {
     canonical: 'https://devadercoach.nl/cursussen',

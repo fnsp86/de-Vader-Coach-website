@@ -8,9 +8,8 @@ import ThemeToggle from './ThemeToggle';
 const NAV_LINKS = [
   { href: '/experience', label: 'Experience' },
   { href: '/cursussen', label: 'Cursussen' },
-  { href: '/gids', label: 'Gidsen' },
   { href: '/blog', label: 'Blog' },
-  { href: '/aanbevolen', label: 'Aanbevolen' },
+  { href: '/gids', label: 'Gratis gidsen' },
   { href: '/over', label: 'Over' },
 ];
 
@@ -42,7 +41,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-2.5 py-2 rounded-lg text-[13px] font-semibold transition-colors hover:bg-[var(--surface2)]"
+                className="px-2.5 py-2 rounded-lg text-sm font-semibold transition-colors hover:bg-[var(--surface2)]"
                 style={{ color: 'var(--text2)' }}
               >
                 {link.label}

@@ -7,13 +7,13 @@ import {
 import EmailGate from '@/components/EmailGate';
 
 export const metadata: Metadata = {
-  title: 'Over Ons - Opvoedondersteuning voor Vaders',
+  title: 'Over Ons - Persoonlijke Ontwikkeling voor Vaders',
   description:
-    'De Vadercoach helpt vaders groeien met wetenschappelijk onderbouwde opvoedcursussen en tools. Gebaseerd op Gottman, Bowlby en Fonagy. Door vaders, voor vaders.',
+    'De Vadercoach biedt trainingen persoonlijke ontwikkeling voor vaders. Wetenschappelijk onderbouwde opvoedcursussen en tools gebaseerd op Gottman, Bowlby en Fonagy. Door vaders, voor vaders.',
   openGraph: {
-    title: 'Over Ons - Opvoedondersteuning voor Vaders',
+    title: 'Over Ons - Persoonlijke Ontwikkeling voor Vaders',
     description:
-      'De Vadercoach helpt vaders groeien met wetenschappelijk onderbouwde opvoedcursussen en tools. Door vaders, voor vaders.',
+      'De Vadercoach biedt trainingen persoonlijke ontwikkeling voor vaders. Wetenschappelijk onderbouwde opvoedcursussen en tools.',
     url: 'https://devadercoach.nl/over',
   },
   alternates: {
@@ -35,7 +35,7 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'De Vadercoach',
   url: 'https://devadercoach.nl',
-  logo: 'https://devadercoach.nl/icon-512.png',
+  logo: 'https://devadercoach.nl/logo.png',
   description:
     'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Wetenschappelijk onderbouwd door Gottman, Bowlby en Fonagy.',
   foundingDate: '2026',
@@ -66,10 +66,13 @@ export default function OverPage() {
             </h1>
 
             <p className="text-lg leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
-              We zijn zelf vaders. We kennen de momenten waarop je twijfelt, de avonden dat je denkt &ldquo;had ik dat anders moeten doen?&rdquo; en de frustratie als je voor de zoveelste keer je stem verheft terwijl je dat niet wilde.
+              Het begon op een doordeweekse avond. Mijn zoon van 4 huilde, ik werd boos, en achteraf zat ik op de bank met het gevoel dat ik had gefaald. Ik zocht naar hulp, maar alles wat ik vond was geschreven voor moeders, of zo theoretisch dat ik halverwege afhaakte.
+            </p>
+            <p className="text-lg leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+              Dus ging ik zelf zoeken. In de wetenschap van Gottman, Bowlby en Fonagy vond ik antwoorden die echt werkten. Niet als theorie, maar vertaald naar mijn keukentafel. Naar dat moment dat je kind &ldquo;nee&rdquo; schreeuwt en jij moet kiezen hoe je reageert.
             </p>
             <p className="text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
-              Daarom bouwden we De Vader Coach. Niet als vervanging voor therapie of coaching, maar als iets dat er niet was: betaalbare, praktische tools voor vaders die het beter willen doen. Elke dag een beetje.
+              De Vader Coach is wat ik toen had willen vinden: betaalbare, praktische tools voor vaders die het beter willen doen. Geen perfectie. Elke dag een beetje.
             </p>
           </div>
         </div>
@@ -128,7 +131,7 @@ export default function OverPage() {
                 <h3 className="text-sm font-bold mb-1.5" style={{ color: 'var(--text)' }}>
                   {v.title}
                 </h3>
-                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text3)' }}>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text3)' }}>
                   {v.desc}
                 </p>
               </div>
@@ -144,7 +147,7 @@ export default function OverPage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
               Wat we aanbieden
             </h2>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--text2)' }}>
+            <p className="text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
               Drie manieren om te groeien. Gebruik ze los of combineer ze voor het meeste resultaat.
             </p>
           </div>
@@ -158,12 +161,12 @@ export default function OverPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De App</h3>
-                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                  <p className="text-sm" style={{ color: 'var(--text3)' }}>
                     Dagelijkse micro-oefeningen, streaks, badges en een community. 2-10 min per dag.
                   </p>
                 </div>
               </div>
-              <Link href="/app-download" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+              <Link href="/app-download" className="shrink-0 inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Meer info <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -177,14 +180,14 @@ export default function OverPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
                     <h3 className="text-sm font-extrabold" style={{ color: 'var(--text)' }}>De Experience</h3>
-                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>NIEUW</span>
+                    <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>NIEUW</span>
                   </div>
-                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                  <p className="text-sm" style={{ color: 'var(--text3)' }}>
                     22 scenario-dagen door alle 8 vaardigheden. Herkenbare situaties en concrete acties.
                   </p>
                 </div>
               </div>
-              <Link href="/experience" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+              <Link href="/experience" className="shrink-0 inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Bekijk Experience <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -197,12 +200,12 @@ export default function OverPage() {
                 </div>
                 <div>
                   <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De Cursussen</h3>
-                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                  <p className="text-sm" style={{ color: 'var(--text3)' }}>
                     8 verdiepende PDF-werkboeken. Wetenschap, werkbladen en oefeningen per vaardigheid.
                   </p>
                 </div>
               </div>
-              <Link href="/cursussen" className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+              <Link href="/cursussen" className="shrink-0 inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Bekijk cursussen <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
@@ -216,9 +219,9 @@ export default function OverPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
                     <h3 className="text-sm font-extrabold" style={{ color: 'var(--text)' }}>De Snelgids</h3>
-                    <span className="text-[9px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#34D39920', color: '#34D399' }}>GRATIS</span>
+                    <span className="text-[10px] font-extrabold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#34D39920', color: '#34D399' }}>GRATIS</span>
                   </div>
-                  <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                  <p className="text-sm" style={{ color: 'var(--text3)' }}>
                     De kern van alle 8 vaardigheden in een PDF. Herkenbare situaties en 8 tips die je vandaag kunt toepassen.
                   </p>
                 </div>
@@ -226,7 +229,7 @@ export default function OverPage() {
               <EmailGate
                 downloadUrl="/api/free-download"
                 buttonText="Download PDF"
-                className="shrink-0 inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all cursor-pointer"
+                className="shrink-0 inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all cursor-pointer"
                 style={{ color: 'var(--amber-text)' }}
               />
             </div>
@@ -240,10 +243,10 @@ export default function OverPage() {
           <div className="flex items-start gap-4 max-w-2xl mx-auto">
             <Heart className="h-5 w-5 shrink-0 mt-0.5 text-amber-400" />
             <div>
-              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
+              <h3 className="text-base font-bold mb-1" style={{ color: 'var(--text)' }}>
                 Eerlijk is eerlijk
               </h3>
-              <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text3)' }}>
+              <p className="text-base leading-relaxed" style={{ color: 'var(--text3)' }}>
                 We zijn net begonnen. Er zijn nog geen honderden reviews of een groot team. Maar de wetenschap achter
                 ons materiaal is bewezen door decennia onderzoek. We zijn geen therapeuten en geen vervanging voor
                 professionele hulp. Wat we wel zijn: vaders die de beste beschikbare kennis vertalen naar iets dat je
@@ -260,7 +263,7 @@ export default function OverPage() {
           <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
             Begin vandaag
           </h2>
-          <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
+          <p className="text-base mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
             Download de gratis snelgids en ontdek welke vaardigheid bij jou past.
           </p>
           <EmailGate

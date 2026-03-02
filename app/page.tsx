@@ -8,17 +8,17 @@ import {
 import CourseCard from '@/components/CourseCard';
 import EmailGate from '@/components/EmailGate';
 import DailyQuote from '@/components/DailyQuote';
-import { getAllCourses, BUNDLE, SNELGIDS } from '@/lib/courses';
+import { getAllCourses, BUNDLE } from '@/lib/courses';
 import { TESTIMONIALS } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
-  title: 'De Vadercoach | Opvoedtips & Cursussen voor Vaders',
+  title: 'De Vadercoach | Persoonlijke Ontwikkeling & Opvoedcursussen voor Vaders',
   description:
-    'Hoe word ik een goede vader? Leer 8 opvoedvaardigheden met onze app, de 22-daagse Vader Experience of verdiepende cursussen. Grenzen stellen, emotiecoaching, omgaan met driftbuien en meer. Door vaders, voor vaders.',
+    'Hoe word ik een goede vader? Persoonlijke ontwikkeling training speciaal voor vaders. Leer 8 opvoedvaardigheden met onze app, de 22-daagse Vader Experience of verdiepende cursussen. Grenzen stellen, emotiecoaching en meer.',
   openGraph: {
-    title: 'De Vadercoach | Opvoedtips & Cursussen voor Vaders',
+    title: 'De Vadercoach | Persoonlijke Ontwikkeling & Opvoedcursussen voor Vaders',
     description:
-      'Leer 8 opvoedvaardigheden met onze app, de 22-daagse Vader Experience of verdiepende cursussen. Door vaders, voor vaders.',
+      'Persoonlijke ontwikkeling training voor vaders. Leer 8 opvoedvaardigheden met de Vader Experience, cursussen of onze app. Door vaders, voor vaders.',
   },
 };
 
@@ -72,7 +72,7 @@ const COMPARE_ROWS = [
 function CompareCell({ value }: { value: boolean | string }) {
   if (value === true) return <div className="flex justify-center"><Check className="h-4 w-4 text-emerald-400" /></div>;
   if (value === false) return <div className="flex justify-center"><XIcon className="h-3.5 w-3.5" style={{ color: 'var(--text3)', opacity: 0.4 }} /></div>;
-  return <div className="text-[11px] text-center font-medium" style={{ color: 'var(--text3)' }}>soms</div>;
+  return <div className="text-xs text-center font-medium" style={{ color: 'var(--text3)' }}>soms</div>;
 }
 
 export default function HomePage() {
@@ -102,7 +102,7 @@ export default function HomePage() {
 
             <p className="text-lg sm:text-xl leading-relaxed mb-8 max-w-xl" style={{ color: 'var(--text2)' }}>
               Je hoeft geen perfecte vader te zijn. Je hoeft alleen te willen groeien.
-              8 wetenschappelijk onderbouwde vaardigheden, vertaald naar herkenbare keukentafelsituaties.
+              Persoonlijke ontwikkeling in 8 wetenschappelijk onderbouwde vaardigheden, vertaald naar herkenbare keukentafelsituaties.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
@@ -125,7 +125,7 @@ export default function HomePage() {
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
                 href="/cursussen"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold transition-colors hover:bg-[var(--surface2)]"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-colors hover:bg-[var(--surface2)]"
                 style={{ backgroundColor: 'var(--surface)', color: 'var(--text2)' }}
               >
                 <BookOpen className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
@@ -133,7 +133,7 @@ export default function HomePage() {
               </Link>
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl" style={{ backgroundColor: 'var(--surface)' }}>
                 <Smartphone className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
-                <span className="text-[13px]" style={{ color: 'var(--text2)' }}>
+                <span className="text-sm" style={{ color: 'var(--text2)' }}>
                   Ook als{' '}
                   <Link href="/app-download" className="font-semibold text-amber-400 hover:underline">
                     iOS &amp; Android app
@@ -200,9 +200,8 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
               Kies jouw route
             </h2>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--text2)' }}>
+            <p className="text-base leading-relaxed" style={{ color: 'var(--text2)' }}>
               Drie manieren om te groeien als vader. Elk op zijn eigen manier, elk in zijn eigen tempo.
-              Je hoeft niet te kiezen - combineer ze en haal uit elk onderdeel iets anders.
             </p>
           </div>
 
@@ -217,26 +216,26 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-base font-extrabold" style={{ color: 'var(--text)' }}>De App</h3>
-                    <p className="text-[11px] font-semibold" style={{ color: 'var(--amber-text)' }}>Dagelijks oefenen</p>
+                    <p className="text-xs font-semibold" style={{ color: 'var(--amber-text)' }}>Dagelijks oefenen</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
+                <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   Dagelijkse micro-oefeningen, streaks, badges en een community van vaders. 2 tot 10 minuten per dag.
                 </p>
-                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
+                <p className="text-[13px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
                   Ideaal als je elke dag een klein moment wilt pakken
                 </p>
                 <ul className="space-y-2 mb-5 flex-1">
                   {['2-10 min per dag', 'Streaks & badges', 'Community van vaders', 'Interactieve oefeningen'].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                    <li key={item} className="flex items-center gap-2 text-[13px]" style={{ color: 'var(--text2)' }}>
                       <Check className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--amber-text)' }} />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-[12px]" style={{ color: 'var(--text3)' }}>Eenmalige aankoop</span>
-                  <Link href="/app-download" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+                  <span className="text-[13px]" style={{ color: 'var(--text3)' }}>Eenmalige aankoop</span>
+                  <Link href="/app-download" className="inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                     Bekijk app <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
@@ -247,7 +246,7 @@ export default function HomePage() {
             <div className="rounded-2xl border overflow-hidden relative flex flex-col" style={{ backgroundColor: 'var(--surface)', borderColor: '#F59E0B40' }}>
               <div className="h-1" style={{ background: 'linear-gradient(to right, #667eea, #EF4444, #34D399, #FBBF24, #A78BFA, #FB923C, #60A5FA, #C084FC)' }} />
               <div className="absolute top-3 right-3">
-                <span className="text-[9px] font-extrabold px-2 py-0.5 rounded-md" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>
+                <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md" style={{ backgroundColor: '#F59E0B20', color: 'var(--amber-text)' }}>
                   NIEUW
                 </span>
               </div>
@@ -258,26 +257,26 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-base font-extrabold" style={{ color: 'var(--text)' }}>De Experience</h3>
-                    <p className="text-[11px] font-semibold" style={{ color: 'var(--amber-text)' }}>De 22-dagen reis</p>
+                    <p className="text-xs font-semibold" style={{ color: 'var(--amber-text)' }}>De 22-dagen reis</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
+                <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   22 scenario-dagen door alle 8 vaardigheden. Herkenbare situaties, concrete acties en dagelijkse reflectie.
                 </p>
-                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
+                <p className="text-[13px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
                   Ideaal als je een duidelijk stappenplan wilt volgen
                 </p>
                 <ul className="space-y-2 mb-5 flex-1">
                   {['22 vaste dagen', 'Alle 8 vaardigheden', 'Audio-intro per dag', 'Herkenbare scenario\'s'].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                    <li key={item} className="flex items-center gap-2 text-[13px]" style={{ color: 'var(--text2)' }}>
                       <Check className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--amber-text)' }} />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-[12px] font-bold" style={{ color: 'var(--amber-text)' }}>&euro;19,99 eenmalig</span>
-                  <Link href="/experience" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+                  <span className="text-[13px] font-bold" style={{ color: 'var(--amber-text)' }}>&euro;19,99 eenmalig</span>
+                  <Link href="/experience" className="inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                     Bekijk Experience <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
@@ -294,26 +293,26 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-base font-extrabold" style={{ color: 'var(--text)' }}>De Cursussen</h3>
-                    <p className="text-[11px] font-semibold" style={{ color: 'var(--amber-text)' }}>Diepgang per vaardigheid</p>
+                    <p className="text-xs font-semibold" style={{ color: 'var(--amber-text)' }}>Diepgang per vaardigheid</p>
                   </div>
                 </div>
-                <p className="text-[13px] leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
+                <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
                   8 verdiepende PDF-werkboeken met wetenschap, werkbladen en oefeningen. Per vaardigheid of als bundel.
                 </p>
-                <p className="text-[12px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
+                <p className="text-[13px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
                   Ideaal als je alles wilt weten over één vaardigheid
                 </p>
                 <ul className="space-y-2 mb-5 flex-1">
                   {['8 PDF-werkboeken', '40-80 pagina\'s per stuk', 'Werkbladen & oefeningen', 'Wetenschappelijk onderbouwd'].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-[12px]" style={{ color: 'var(--text2)' }}>
+                    <li key={item} className="flex items-center gap-2 text-[13px]" style={{ color: 'var(--text2)' }}>
                       <Check className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--amber-text)' }} />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-[12px]" style={{ color: 'var(--text3)' }}>Per stuk of bundel</span>
-                  <Link href="/cursussen" className="inline-flex items-center gap-1 text-[13px] font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+                  <span className="text-[13px]" style={{ color: 'var(--text3)' }}>Per stuk of bundel</span>
+                  <Link href="/cursussen" className="inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                     Bekijk cursussen <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
@@ -325,25 +324,25 @@ export default function HomePage() {
           <div className="mt-5 rounded-xl border p-4 sm:p-5" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
             <div className="flex items-center gap-2 mb-3">
               <Zap className="h-4 w-4 text-amber-400" />
-              <span className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>Combineer voor het meeste resultaat</span>
+              <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Combineer voor het meeste resultaat</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="flex items-start gap-2">
-                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>1</span>
-                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
-                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Experience</span> — dagelijks oefenen en een gestructureerd pad
+                <span className="text-xs font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>1</span>
+                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Experience</span> ·dagelijks oefenen en een gestructureerd pad
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>2</span>
-                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
-                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Cursussen</span> — dagelijks oefenen en verdieping per vaardigheid
+                <span className="text-xs font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>2</span>
+                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>App + Cursussen</span> ·dagelijks oefenen en verdieping per vaardigheid
                 </p>
               </div>
               <div className="flex items-start gap-2">
-                <span className="text-[11px] font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>3</span>
-                <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text2)' }}>
-                  <span className="font-semibold" style={{ color: 'var(--text)' }}>Alle drie</span> — het complete pakket voor maximaal resultaat
+                <span className="text-xs font-extrabold shrink-0 mt-0.5 px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B15', color: 'var(--amber-text)' }}>3</span>
+                <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  <span className="font-semibold" style={{ color: 'var(--text)' }}>Alle drie</span> ·het complete pakket voor maximaal resultaat
                 </p>
               </div>
             </div>
@@ -367,47 +366,9 @@ export default function HomePage() {
                 >
                   <skill.icon className="h-3 w-3 sm:h-3.5 sm:w-3.5" style={{ color: skill.color }} />
                 </div>
-                <span className="text-[11px] sm:text-[12px] font-bold" style={{ color: skill.color }}>{skill.name}</span>
+                <span className="text-xs sm:text-[13px] font-bold" style={{ color: skill.color }}>{skill.name}</span>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Gratis Snelgids ───────────────────────────────── */}
-      <section style={{ backgroundColor: 'var(--surface)' }}>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
-            {/* Left: icon + badge */}
-            <div className="flex items-center gap-5 lg:shrink-0">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl" style={{ backgroundColor: '#F59E0B' }}>
-                <BookOpen className="h-7 w-7 text-black" />
-              </div>
-              <div>
-                <div className="text-[11px] font-bold px-2.5 py-0.5 rounded-md inline-block mb-1" style={{ backgroundColor: '#F59E0B30', color: 'var(--amber-text)' }}>
-                  GRATIS
-                </div>
-                <h3 className="text-lg font-extrabold" style={{ color: 'var(--text)' }}>
-                  {SNELGIDS.title}
-                </h3>
-                <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
-                  {SNELGIDS.pages} pagina&apos;s &middot; PDF download
-                </p>
-              </div>
-            </div>
-
-            {/* Middle: description */}
-            <p className="text-sm leading-relaxed flex-1" style={{ color: 'var(--text2)' }}>
-              {SNELGIDS.description} De kern van elke vaardigheid, herkenbare situaties, en 8 tips die je vandaag nog kunt toepassen.
-            </p>
-
-            {/* Right: CTA */}
-            <EmailGate
-              downloadUrl="/api/free-download"
-              buttonText="Download PDF"
-              className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-black transition-transform hover:scale-[0.97] cursor-pointer"
-              style={{ backgroundColor: '#F59E0B' }}
-            />
           </div>
         </div>
       </section>
@@ -421,7 +382,7 @@ export default function HomePage() {
               <h2 className="text-xl sm:text-2xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
                 Waarom De Vader Coach?
               </h2>
-              <p className="text-sm mb-6" style={{ color: 'var(--text2)' }}>
+              <p className="text-base mb-6" style={{ color: 'var(--text2)' }}>
                 Er zijn opvoedboeken. Er zijn coaches. Wij doen het anders.
               </p>
 
@@ -437,8 +398,8 @@ export default function HomePage() {
                       <f.icon className="h-4 w-4 text-amber-400" />
                     </div>
                     <div>
-                      <div className="text-sm font-bold" style={{ color: 'var(--text)' }}>{f.title}</div>
-                      <div className="text-[13px]" style={{ color: 'var(--text3)' }}>{f.desc}</div>
+                      <div className="text-base font-bold" style={{ color: 'var(--text)' }}>{f.title}</div>
+                      <div className="text-sm" style={{ color: 'var(--text3)' }}>{f.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -448,7 +409,7 @@ export default function HomePage() {
             {/* Right: Comparison table + stats */}
             <div className="space-y-4">
               <div className="rounded-xl border overflow-hidden" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
-                <table className="w-full text-[12px] sm:text-[13px]">
+                <table className="w-full text-[13px] sm:text-sm">
                   <thead>
                     <tr style={{ backgroundColor: 'var(--surface2)' }}>
                       <th className="text-left px-2 sm:px-4 py-2.5 font-semibold" style={{ color: 'var(--text3)' }}></th>
@@ -476,10 +437,10 @@ export default function HomePage() {
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {[
-                  { value: '451', label: "Pagina's", color: '#667eea' },
-                  { value: '8', label: 'Skills', color: '#EF4444' },
-                  { value: '77', label: 'Hoofdstukken', color: '#FBBF24' },
                   { value: '100+', label: 'Oefeningen', color: '#34D399' },
+                  { value: '8', label: 'Vaardigheden', color: '#EF4444' },
+                  { value: '22', label: 'Dagen Experience', color: '#FBBF24' },
+                  { value: '5 min', label: 'Per dag', color: '#667eea' },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -487,16 +448,16 @@ export default function HomePage() {
                     style={{ backgroundColor: stat.color + '0a' }}
                   >
                     <div className="text-lg font-extrabold mb-0.5" style={{ color: stat.color }}>{stat.value}</div>
-                    <div className="text-[10px] font-semibold" style={{ color: 'var(--text3)' }}>{stat.label}</div>
+                    <div className="text-xs font-semibold" style={{ color: 'var(--text3)' }}>{stat.label}</div>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Gebouwd op wetenschap — full width row */}
+          {/* Gebouwd op wetenschap ·full width row */}
           <div className="mt-10 pt-8 border-t" style={{ borderColor: 'var(--border)' }}>
-            <p className="text-[11px] font-semibold mb-4 uppercase tracking-wider text-center" style={{ color: 'var(--text3)' }}>
+            <p className="text-xs font-semibold mb-4 uppercase tracking-wider text-center" style={{ color: 'var(--text3)' }}>
               Gebouwd op wetenschap
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2">
@@ -509,7 +470,7 @@ export default function HomePage() {
               ].map((item) => (
                 <span
                   key={item.text}
-                  className="text-[11px] font-semibold px-3 py-1.5 rounded-lg"
+                  className="text-xs font-semibold px-3 py-1.5 rounded-lg"
                   style={{ backgroundColor: item.color + '12', color: item.color }}
                 >
                   {item.text}
@@ -528,8 +489,8 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
                 De cursussen
               </h2>
-              <p className="text-sm" style={{ color: 'var(--text2)' }}>
-                8 verdiepende PDF-cursussen. 451 pagina&apos;s. Wetenschappelijk onderbouwd.
+              <p className="text-base" style={{ color: 'var(--text2)' }}>
+                8 verdiepende PDF-cursussen. Wetenschappelijk onderbouwd, direct toepasbaar.
               </p>
             </div>
             <Link
@@ -558,12 +519,12 @@ export default function HomePage() {
               <div>
                 <div className="flex items-center gap-2 mb-0.5">
                   <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>{BUNDLE.title}</span>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-md" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-md" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
                     Binnenkort
                   </span>
                 </div>
-                <p className="text-[12px]" style={{ color: 'var(--text3)' }}>
-                  Alle 8 cursussen &middot; 451 pagina&apos;s &middot; {Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting
+                <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
+                  Alle 8 cursussen &middot; {Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting
                 </p>
               </div>
             </div>
@@ -586,7 +547,7 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
               Wat vaders zeggen
             </h2>
-            <p className="text-sm" style={{ color: 'var(--text2)' }}>
+            <p className="text-base" style={{ color: 'var(--text2)' }}>
               Echte ervaringen van vaders die de stap hebben gezet.
             </p>
           </div>
@@ -599,7 +560,7 @@ export default function HomePage() {
                 style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <Quote className="h-5 w-5 mb-3 opacity-20" style={{ color: t.color }} />
-                <p className="text-[13px] leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text2)' }}>
                   &ldquo;{t.text}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
@@ -610,8 +571,8 @@ export default function HomePage() {
                     {t.name[0]}
                   </div>
                   <div>
-                    <div className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>{t.name}</div>
-                    <div className="text-[11px]" style={{ color: 'var(--text3)' }}>{t.role}</div>
+                    <div className="text-sm font-bold" style={{ color: 'var(--text)' }}>{t.name}</div>
+                    <div className="text-xs" style={{ color: 'var(--text3)' }}>{t.role}</div>
                   </div>
                 </div>
               </div>
@@ -626,7 +587,7 @@ export default function HomePage() {
           <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
             Word vandaag een betere vader
           </h2>
-          <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
+          <p className="text-base mb-6 max-w-md mx-auto" style={{ color: 'var(--text2)' }}>
             Download de gratis snelgids met opvoedtips en ontdek welke vaardigheid bij jou past.
           </p>
           <EmailGate
@@ -646,13 +607,38 @@ export default function HomePage() {
             '@type': 'WebSite',
             name: 'De Vadercoach',
             url: 'https://devadercoach.nl',
-            description: 'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Wetenschappelijk onderbouwd vaderschap.',
+            description: 'Trainingen persoonlijke ontwikkeling voor vaders. Opvoedcursussen, een 22-daagse Vader Experience en een app. Wetenschappelijk onderbouwd.',
             inLanguage: 'nl',
             publisher: {
               '@type': 'Organization',
               name: 'De Vadercoach',
               url: 'https://devadercoach.nl',
             },
+          }),
+        }}
+      />
+
+      {/* Review Schema for testimonials */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'De Vadercoach',
+            url: 'https://devadercoach.nl',
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              reviewCount: String(TESTIMONIALS.length),
+              bestRating: '5',
+            },
+            review: TESTIMONIALS.map((t) => ({
+              '@type': 'Review',
+              author: { '@type': 'Person', name: t.name },
+              reviewBody: t.text,
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+            })),
           }),
         }}
       />

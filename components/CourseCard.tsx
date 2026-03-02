@@ -28,9 +28,15 @@ export default function CourseCard({ title, description, price, slug, category, 
   return (
     <Link
       href={`/cursussen/${slug}`}
-      className="group flex flex-col rounded-2xl border p-5 transition-all hover:scale-[0.98]"
+      className="group relative flex flex-col rounded-2xl border p-5 transition-all hover:scale-[0.98]"
       style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
     >
+      {status === 'coming-soon' && (
+        <span className="absolute top-3 right-3 text-[11px] font-bold px-2 py-0.5 rounded-md" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
+          Binnenkort
+        </span>
+      )}
+
       {/* Icon + Category */}
       <div className="flex items-center gap-3 mb-3">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: accentColor + '15' }}>
@@ -42,11 +48,6 @@ export default function CourseCard({ title, description, price, slug, category, 
         >
           {category}
         </span>
-        {status === 'coming-soon' && (
-          <span className="text-[11px] font-bold px-2 py-0.5 rounded-md" style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}>
-            Binnenkort
-          </span>
-        )}
       </div>
 
       {/* Title */}

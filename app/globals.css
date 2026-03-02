@@ -17,13 +17,13 @@
   --color-vc-text3: #7B8498;
 
   /* Light mode surfaces */
-  --color-vc-bg-light: #F7F7F5;
-  --color-vc-surface-light: #FFFFFF;
-  --color-vc-surface2-light: #F0F1F4;
-  --color-vc-border-light: #D4D6DC;
-  --color-vc-text-light: #111827;
-  --color-vc-text2-light: #4B5563;
-  --color-vc-text3-light: #6B7280;
+  --color-vc-bg-light: #FAF8F5;
+  --color-vc-surface-light: #FFFEFA;
+  --color-vc-surface2-light: #F3F0EB;
+  --color-vc-border-light: #DDD8CF;
+  --color-vc-text-light: #1A1612;
+  --color-vc-text2-light: #5C5347;
+  --color-vc-text3-light: #7D7568;
 
   /* Accents */
   --color-vc-blue: #667eea;
@@ -63,7 +63,7 @@
   --text: var(--color-vc-text-light);
   --text2: var(--color-vc-text2-light);
   --text3: var(--color-vc-text3-light);
-  --amber-text: #D97706;
+  --amber-text: #E88D00;
 }
 
 body {
@@ -87,8 +87,8 @@ html {
 }
 
 .light ::selection {
-  background-color: oklch(from #D97706 l c h / 0.2);
-  color: #111827;
+  background-color: oklch(from #E88D00 l c h / 0.2);
+  color: #1A1612;
 }
 
 /* Prevent horizontal overflow on mobile */

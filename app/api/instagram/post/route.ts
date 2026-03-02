@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
+import { getInstagramToken } from '@/lib/instagram-token';
 
 export async function POST(request: NextRequest) {
   if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const { imageUrl, imageUrls, caption } = await request.json();
 
-  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+  const accessToken = await getInstagramToken();
   const accountId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
 
   if (!accessToken || !accountId) {
@@ -35,7 +36,7 @@ export async function POST(request: NextRequest) {
 async function postSingle(accountId: string, accessToken: string, imageUrl: string, caption: string) {
   // Step 1: Create media container
   const containerRes = await fetch(
-    `https://graph.facebook.com/v21.0/${accountId}/media`,
+    `https://graph.instagram.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -52,7 +53,7 @@ async function postSingle(accountId: string, accessToken: string, imageUrl: stri
 
   // Step 3: Publish
   const publishRes = await fetch(
-    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
+    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -72,7 +73,7 @@ async function postCarousel(accountId: string, accessToken: string, imageUrls: s
   const containerIds: string[] = [];
   for (const url of imageUrls) {
     const res = await fetch(
-      `https://graph.facebook.com/v21.0/${accountId}/media`,
+      `https://graph.instagram.com/v21.0/${accountId}/media`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -88,7 +89,7 @@ async function postCarousel(accountId: string, accessToken: string, imageUrls: s
 
   // Step 2: Create carousel container
   const carouselRes = await fetch(
-    `https://graph.facebook.com/v21.0/${accountId}/media`,
+    `https://graph.instagram.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -110,7 +111,7 @@ async function postCarousel(accountId: string, accessToken: string, imageUrls: s
 
   // Step 4: Publish
   const publishRes = await fetch(
-    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
+    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

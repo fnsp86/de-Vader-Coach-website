@@ -234,7 +234,7 @@ export const COURSES: Record<string, Course> = {
     title: 'Opvoeden bij Gedragsproblemen',
     description: 'Wanneer gedrag meer is dan een fase. Begrijp wat er achter zit en leer wat wél werkt.',
     longDescription:
-      'Je kind luistert niet, escaleert, slaat erop los of weigert naar school te gaan. Is dit een fase, of is er meer aan de hand? Deze cursus helpt je gedragsproblemen herkennen, het brein erachter begrijpen, en geeft je bewezen strategieën om je kind te helpen — zonder de relatie te verliezen.',
+      'Je kind luistert niet, escaleert, slaat erop los of weigert naar school te gaan. Is dit een fase, of is er meer aan de hand? Deze cursus helpt je gedragsproblemen herkennen, het brein erachter begrijpen, en geeft je bewezen strategieën om je kind te helpen zonder de relatie te verliezen.',
     price: 14.95,
     pages: 65,
     category: 'Gedrag',
@@ -261,7 +261,7 @@ export const COURSES: Record<string, Course> = {
     title: 'Vaderschap na Scheiding',
     description: 'Gescheiden, maar nog steeds vader. Bouw een sterke band met je kind, ook vanuit twee huizen.',
     longDescription:
-      'Een op de drie Nederlandse kinderen maakt een scheiding mee. Voor vaders verandert alles: je ziet je kind minder, moet samenwerken met je ex, en worstelt met schuldgevoel. Deze cursus helpt je een betrokken, stabiele vader te blijven — ongeacht de situatie met je ex.',
+      'Een op de drie Nederlandse kinderen maakt een scheiding mee. Voor vaders verandert alles: je ziet je kind minder, moet samenwerken met je ex, en worstelt met schuldgevoel. Deze cursus helpt je een betrokken, stabiele vader te blijven, ongeacht de situatie met je ex.',
     price: 14.95,
     pages: 65,
     category: 'Scheiding',

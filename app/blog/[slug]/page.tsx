@@ -80,7 +80,7 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
       '@type': 'Organization',
       name: 'De Vadercoach',
       url: 'https://devadercoach.nl',
-      logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/icon-512.png' },
+      logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/logo.png' },
     },
     mainEntityOfPage: `https://devadercoach.nl/blog/${slug}`,
     inLanguage: 'nl',

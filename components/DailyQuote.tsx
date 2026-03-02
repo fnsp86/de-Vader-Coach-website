@@ -32,14 +32,14 @@ interface DailyQuoteData {
 
 const DAILY_QUOTES: DailyQuoteData[] = [
   // Reflectievragen uit de Experience
-  { text: 'Wat is het eerste dat je doet als je thuiskomt — en wat zou je kind willen dat je deed?', skill: 'Aanwezigheid' },
+  { text: 'Wat is het eerste dat je doet als je thuiskomt -en wat zou je kind willen dat je deed?', skill: 'Aanwezigheid' },
   { text: 'Wanneer heb jij voor het laatst iets gevoeld dat je niet goed kon uitleggen?', skill: 'Emotiecoaching' },
-  { text: 'Wat is het laatste moment waarop je voelde dat je ontplofte — en wat had je het liefst anders gedaan?', skill: 'Zelfregulatie' },
-  { text: 'Bij welk moment zeg jij het vaakst "nog één keer" — en wat zou er gebeuren als je dat niet meer deed?', skill: 'Grenzen' },
+  { text: 'Wat is het laatste moment waarop je voelde dat je ontplofte -en wat had je het liefst anders gedaan?', skill: 'Zelfregulatie' },
+  { text: 'Bij welk moment zeg jij het vaakst "nog één keer" -en wat zou er gebeuren als je dat niet meer deed?', skill: 'Grenzen' },
   { text: 'Bij welke dagelijkse handeling neem jij standaard over, terwijl je kind het eigenlijk zelf zou kunnen?', skill: 'Autonomie' },
   { text: 'Wanneer heb jij voor het laatst iets kapotgemaakt in het contact met je kind dat je niet hebt gerepareerd?', skill: 'Herstel' },
-  { text: 'Hoe vaak neem je de stress van buiten mee naar binnen — en merkt je kind dat?', skill: 'Zelfregulatie' },
-  { text: 'Hoe klinkt jouw stem als je een grens stelt — en zou je kind dat omschrijven als veilig?', skill: 'Grenzen' },
+  { text: 'Hoe vaak neem je de stress van buiten mee naar binnen -en merkt je kind dat?', skill: 'Zelfregulatie' },
+  { text: 'Hoe klinkt jouw stem als je een grens stelt -en zou je kind dat omschrijven als veilig?', skill: 'Grenzen' },
   { text: 'Kun jij er zijn voor de emoties van je kind zonder ze te willen repareren?', skill: 'Emotiecoaching' },
   { text: 'Hoe voelde het om toe te kijken zonder in te grijpen? Wat zag je bij je kind?', skill: 'Autonomie' },
   // Inspirerende vader-uitspraken
@@ -56,7 +56,7 @@ const DAILY_QUOTES: DailyQuoteData[] = [
   { text: 'Je kind leert niet van wat je zegt over emoties. Het leert van hoe jij met de jouwe omgaat.', skill: 'Emotiecoaching' },
   { text: '"Nee" zeggen tegen je kind is soms "ja" zeggen tegen zijn toekomst.', skill: 'Grenzen' },
   { text: 'De moed om sorry te zeggen tegen je kind is de grootste les die je kunt geven.', skill: 'Herstel' },
-  { text: 'Als je kind zegt "ik kan het zelf" — laat het. Dat moment is goud.', skill: 'Autonomie' },
+  { text: 'Als je kind zegt "ik kan het zelf" -laat het. Dat moment is goud.', skill: 'Autonomie' },
   { text: 'Verbinding is geen activiteit. Het is een houding.', skill: 'Verbinding' },
   { text: 'De vader die je wilt zijn zit al in je. Hij heeft alleen oefening nodig.', skill: 'Reflectie' },
   { text: 'Thuiskomen is elke dag een nieuwe kans om te laten zien: jij bent het belangrijkste.', skill: 'Aanwezigheid' },

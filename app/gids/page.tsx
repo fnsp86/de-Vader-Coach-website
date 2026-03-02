@@ -58,8 +58,8 @@ export default function GidsenPage() {
             Opvoedgidsen voor Vaders
           </h1>
           <p className="text-lg leading-relaxed" style={{ color: 'var(--text2)' }}>
-            Gratis, praktische gidsen over de meest voorkomende opvoedvragen.
-            Wetenschappelijk onderbouwd, geschreven voor vaders.
+            Gratis, uitgebreide handleidingen over de meest voorkomende opvoedvragen.
+            Dieper dan een blogartikel, met concrete stappen en wetenschappelijke onderbouwing.
           </p>
         </div>
 
@@ -74,13 +74,13 @@ export default function GidsenPage() {
               <div className="flex h-10 w-10 items-center justify-center rounded-xl mb-4 bg-amber-500/10">
                 <BookOpen className="h-5 w-5 text-amber-400" />
               </div>
-              <h2 className="text-sm font-bold mb-2 leading-snug" style={{ color: 'var(--text)' }}>
+              <h2 className="text-base font-bold mb-2 leading-snug" style={{ color: 'var(--text)' }}>
                 {guide.title}
               </h2>
-              <p className="text-[13px] leading-relaxed mb-4 line-clamp-3" style={{ color: 'var(--text3)' }}>
+              <p className="text-sm leading-relaxed mb-4 line-clamp-3" style={{ color: 'var(--text3)' }}>
                 {guide.description}
               </p>
-              <span className="inline-flex items-center gap-1 text-[13px] font-bold group-hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
+              <span className="inline-flex items-center gap-1 text-sm font-bold group-hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
                 Lees gids <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </Link>

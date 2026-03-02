@@ -81,7 +81,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       '@type': 'Organization',
       name: 'De Vadercoach',
       url: 'https://devadercoach.nl',
-      logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/icon-512.png' },
+      logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/logo.png' },
     },
     mainEntityOfPage: `https://devadercoach.nl/gids/${slug}`,
     inLanguage: 'nl',

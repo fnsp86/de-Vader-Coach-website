@@ -104,7 +104,7 @@ export default function BuyButton({ slug, color, price }: BuyButtonProps) {
         {loading
           ? 'Laden...'
           : discountApplied
-            ? `Kopen — €${finalPrice.toFixed(2)}`
+            ? `Kopen · €${finalPrice.toFixed(2)}`
             : 'Kopen'}
       </button>
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | De Vadercoach',
   },
   description:
-    'Praktische opvoedcursussen, een 22-daagse Experience en een app speciaal voor vaders. Leer omgaan met driftbuien, grenzen stellen, emotiecoaching en meer. Gebaseerd op wetenschap, door vaders, voor vaders.',
+    'Persoonlijke ontwikkeling training voor vaders. Opvoedcursussen, een 22-daagse Experience en een app. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. Wetenschappelijk onderbouwd, door vaders, voor vaders.',
   keywords: [
     'vaderschap', 'opvoedtips', 'vader worden', 'opvoedcursus', 'betere vader',
     'grenzen stellen kind', 'driftbui peuter', 'emotiecoaching', 'positief opvoeden',
@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     'co-ouderschap', 'vader na scheiding', 'weekendvader',
     'slaapproblemen kind', 'zelfvertrouwen kind', 'gedragsproblemen kind',
     'opvoedcursus online', 'vader coaching', 'opvoedondersteuning',
+    'persoonlijke ontwikkeling', 'persoonlijke ontwikkeling training',
+    'trainingen persoonlijke ontwikkeling', 'persoonlijke groei vader',
+    'zelfontwikkeling vader', 'persoonlijke ontwikkeling ouderschap',
   ],
   metadataBase: new URL('https://devadercoach.nl'),
   openGraph: {
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
     url: 'https://devadercoach.nl',
     title: 'De Vadercoach | Word elke dag een betere vader',
     description:
-      'Praktische opvoedcursussen, een 22-daagse Experience en een app speciaal voor vaders. Gebaseerd op wetenschap, door vaders, voor vaders.',
+      'Persoonlijke ontwikkeling training voor vaders. Opvoedcursussen, een 22-daagse Experience en een app. Wetenschappelijk onderbouwd, door vaders, voor vaders.',
   },
   twitter: {
     card: 'summary_large_image',
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.ico', sizes: '32x32' },
       { url: '/icon.svg', type: 'image/svg+xml' },
     ],
     apple: '/apple-icon.png',
@@ -63,7 +66,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light')}catch(e){}`,
+            __html: `try{if(localStorage.getItem('theme')!=='dark')document.documentElement.classList.add('light')}catch(e){}`,
           }}
         />
         <link
@@ -78,9 +81,9 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'De Vadercoach',
               url: 'https://devadercoach.nl',
-              logo: 'https://devadercoach.nl/icon-512.png',
+              logo: 'https://devadercoach.nl/logo.png',
               description:
-                'Praktische opvoedcursussen, een 22-daagse Vader Experience en een app voor vaders. Leer grenzen stellen, omgaan met driftbuien, emotiecoaching en meer. Wetenschappelijk onderbouwd door Gottman, Bowlby en Fonagy.',
+                'Trainingen persoonlijke ontwikkeling voor vaders. Opvoedcursussen, een 22-daagse Vader Experience en een app. Leer grenzen stellen, emotiecoaching, zelfregulatie en meer. Wetenschappelijk onderbouwd door Gottman, Bowlby en Fonagy.',
               sameAs: ['https://instagram.com/devadercoach.nl'],
               contactPoint: {
                 '@type': 'ContactPoint',

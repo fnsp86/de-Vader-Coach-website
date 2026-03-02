@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDuePosts, updatePostStatus } from '@/lib/instagram-schedule';
 import { processDripQueue } from '@/lib/automation';
 import { processMonthlyNewsletter } from '@/lib/monthly-newsletter';
+import { getInstagramToken, refreshInstagramToken } from '@/lib/instagram-token';
 
 export const maxDuration = 60;
 
@@ -15,11 +16,21 @@ export async function GET(request: NextRequest) {
 
   const results: Record<string, unknown> = {};
 
+  // ── 0. Instagram token auto-refresh ───────────────
+  try {
+    const refresh = await refreshInstagramToken();
+    results.tokenRefresh = refresh.success
+      ? { refreshed: true, expiresIn: `${Math.round((refresh.expiresIn || 0) / 86400)}d` }
+      : { refreshed: false, error: refresh.error };
+  } catch (e) {
+    results.tokenRefresh = { error: e instanceof Error ? e.message : String(e) };
+  }
+
   // ── 1. Instagram scheduled posts ───────────────────
   try {
     const duePosts = await getDuePosts();
     if (duePosts.length > 0) {
-      const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+      const accessToken = await getInstagramToken();
       const accountId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
 
       if (accessToken && accountId) {
@@ -76,7 +87,7 @@ export async function GET(request: NextRequest) {
 // ── Instagram helpers (moved from instagram cron) ────
 
 async function publishSingle(accountId: string, accessToken: string, imageUrl: string, caption: string): Promise<string> {
-  const containerRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
+  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ image_url: imageUrl, caption, access_token: accessToken }),
@@ -86,7 +97,7 @@ async function publishSingle(accountId: string, accessToken: string, imageUrl: s
 
   await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: containerData.id, access_token: accessToken }),
@@ -100,7 +111,7 @@ async function publishSingle(accountId: string, accessToken: string, imageUrl: s
 async function publishCarousel(accountId: string, accessToken: string, imageUrls: string[], caption: string): Promise<string> {
   const containerIds: string[] = [];
   for (const url of imageUrls) {
-    const res = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
+    const res = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ image_url: url, is_carousel_item: true, access_token: accessToken }),
@@ -110,7 +121,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
     containerIds.push(data.id);
   }
 
-  const carouselRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
+  const carouselRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ media_type: 'CAROUSEL', children: containerIds.join(','), caption, access_token: accessToken }),
@@ -120,7 +131,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
 
   await new Promise((resolve) => setTimeout(resolve, 8000));
 
-  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: carouselData.id, access_token: accessToken }),

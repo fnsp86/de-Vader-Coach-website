@@ -10,7 +10,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Mark',
     role: 'Vader van 2 zoons (6 en 9)',
-    text: 'Na het lezen van de cursus Zelfregulatie merk ik dat ik minder snel ontplof. Mijn vrouw zag het verschil al na een week.',
+    text: 'Sinds ik de snelgids heb gelezen snap ik beter waarom ik soms ontplof. Die tips over zelfregulatie zijn echt eye-openers. Mijn vrouw zag het verschil al na een week.',
     skill: 'Zelfregulatie',
     color: '#34D399',
   },
@@ -31,7 +31,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: 'Dennis',
     role: 'Vader van een tiener (14)',
-    text: 'Ik dacht dat de verbinding met mijn zoon voorbij was. De cursus Verbinding gaf me concrete tools. We praten nu weer.',
+    text: 'Ik dacht dat de verbinding met mijn zoon voorbij was. De Experience gaf me concrete tools om weer contact te maken. We praten nu weer.',
     skill: 'Verbinding',
     color: '#60A5FA',
   },
@@ -51,11 +51,11 @@ export const FAQ_CURSUSSEN = [
   },
   {
     q: 'Hoe ontvang ik de cursus na betaling?',
-    a: 'Direct na betaling ontvang je een downloadlink per e-mail. De PDF is meteen beschikbaar — je kunt direct beginnen.',
+    a: 'Direct na betaling ontvang je een downloadlink per e-mail. De PDF is meteen beschikbaar, je kunt direct beginnen.',
   },
   {
     q: 'Kan ik de cursus delen met mijn partner?',
-    a: 'De cursus is bedoeld voor persoonlijk gebruik. Je mag de inhoud uiteraard bespreken met je partner — dat moedigen we zelfs aan.',
+    a: 'De cursus is bedoeld voor persoonlijk gebruik. Je mag de inhoud uiteraard bespreken met je partner. Dat moedigen we zelfs aan.',
   },
   {
     q: 'Wat als ik niet tevreden ben?',
