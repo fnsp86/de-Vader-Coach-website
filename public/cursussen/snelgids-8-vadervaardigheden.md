@@ -16,7 +16,7 @@ Deze snelgids geeft je het antwoord in een notendop. Acht vaardigheden. Per vaar
 
 De acht vaardigheden zijn gebaseerd op decennia wetenschappelijk onderzoek naar opvoeding, hechting en ontwikkeling. Van Bowlby's hechtingstheorie tot Gottmans emotiecoaching, van de polyvagaaltheorie tot zelfdeterminatietheorie. De wetenschap is helder: vaderschap draait niet om perfectie. Het draait om bewustzijn, verbinding en de bereidheid om te blijven groeien.
 
-Elke vaardigheid heeft een complete cursus bij De Vader Coach. Deze snelgids is je startpunt. Kies de vaardigheid die het meest resoneert en begin daar.
+Elke vaardigheid heeft een verdiepende cursus bij De Vader Coach. Daarnaast zijn er twee specialistische cursussen voor specifieke opvoedsituaties. Deze snelgids is je startpunt. Kies de vaardigheid die het meest resoneert en begin daar.
 
 ---
 
@@ -39,7 +39,7 @@ Elke vaardigheid heeft een complete cursus bij De Vader Coach. Deze snelgids is 
 
 Je zit op de bank terwijl je dochter vertelt over school. Je knikt. Maar je ogen zijn op je telefoon. Je zegt "ja, mooi!" Maar je gedachten zijn bij die deadline.
 
-Onderzoek van Edward Tronick laat iets confronterends zien: kinderen reageren heftiger op een ouder die er half is dan op een ouder die er even niet is. Halfaanwezigheid - fysiek in de kamer, maar mentaal ergens anders - leert een kind: ik ben niet interessant genoeg voor jouw volledige aandacht.
+Onderzoek van Edward Tronick laat iets confronterends zien: kinderen reageren heftiger op een ouder die er half is dan op een ouder die er even niet is. Halfaanwezigheid leert een kind: ik ben niet interessant genoeg voor jouw volledige aandacht.
 
 Het goede nieuws: je hoeft niet uren vrij te maken. Twee minuten echte aandacht doet meer dan een uur op de automatische piloot.
 
@@ -55,7 +55,7 @@ Het verschil? Twintig seconden. Maar Vader B zegt zonder woorden: *jij bent het 
 
 ### Tip: De twee-minuten-regel
 
-Kies een vast moment per dag - thuiskomen van werk, na het eten, voor het slapengaan - en geef je kind twee minuten volledige aandacht. Telefoon weg. Oogcontact. Luisteren. Twee minuten. Elke dag. Het klinkt simpel, maar het verandert alles.
+Kies een vast moment per dag en geef je kind twee minuten volledige aandacht. Telefoon weg. Oogcontact. Luisteren. Het klinkt simpel, maar het effect op de hechting is wetenschappelijk bewezen.
 
 *Meer weten? Zie de cursus Aanwezig Vaderschap*
 
@@ -67,9 +67,9 @@ Kies een vast moment per dag - thuiskomen van werk, na het eten, voor het slapen
 
 Je zoon komt huilend thuis. Zijn vriendje wilde niet met hem spelen. Jouw eerste impuls: "Ach, morgen is hij het vergeten" of "Kom op, het stelt niks voor."
 
-Psycholoog John Gottman ontdekte dat kinderen van ouders die emoties erkennen en begeleiden, beter scoren op bijna elk meetbaar gebied: sociale vaardigheden, schoolprestaties, emotionele intelligentie en zelfs fysieke gezondheid. Niet omdat die ouders perfecte opvoeders waren, maar omdat ze een ding deden dat de meeste ouders niet doen: ze gaven emoties een naam.
+Psycholoog John Gottman ontdekte dat kinderen van ouders die emoties erkennen en begeleiden, beter scoren op bijna elk meetbaar gebied: sociale vaardigheden, schoolprestaties en emotionele intelligentie. Niet omdat die ouders perfect waren, maar omdat ze emoties een naam gaven.
 
-Wanneer je zegt "ik zie dat je verdrietig bent," gebeurt er iets in het brein van je kind. De amygdala - het alarmcentrum - kalmeert. De prefrontale cortex - het denkende brein - wordt actiever. Het kind gaat van overweldigd naar begrepen. En van begrepen naar zelf kunnen denken.
+Wanneer je zegt "ik zie dat je verdrietig bent," kalmeert het alarmcentrum in het brein van je kind en wordt het denkende brein actiever. Je kind gaat van overweldigd naar begrepen.
 
 ### De situatie
 
@@ -81,15 +81,11 @@ Wanneer je zegt "ik zie dat je verdrietig bent," gebeurt er iets in het brein va
 
 Vader A wil helpen, maar zijn kind hoort: mijn gevoel doet er niet toe. Vader B lost niks op, maar zijn kind hoort: papa snapt het. En dat is precies wat het nodig heeft.
 
-### Tip: De drie stappen
+### Tip: Benoem het gevoel
 
-1. **Zie het.** Merk de emotie op. Kijk naar het gezicht, het lichaam, het gedrag.
-2. **Benoem het.** Geef de emotie een naam: "Je bent boos," "Je bent teleurgesteld," "Je bent bang."
-3. **Laat het er zijn.** Niet oplossen. Niet afleiden. Gewoon even samen bij het gevoel zijn.
+Wanneer je kind een sterke emotie laat zien, probeer die emotie te benoemen in plaats van op te lossen. "Je bent boos." "Je bent teleurgesteld." Dat ene zinnetje activeert een rustgevend proces in het brein van je kind.
 
-Dat is de kern. Drie stappen. Dertig seconden. En je kind leert: emoties zijn niet gevaarlijk. Ze horen erbij. En papa begrijpt ze.
-
-*Meer weten? Zie de cursus Emotiecoaching voor Vaders*
+*Meer weten? De cursus Emotiecoaching voor Vaders leert je de volledige 5-stappenmethode.*
 
 ---
 
@@ -97,13 +93,13 @@ Dat is de kern. Drie stappen. Dertig seconden. En je kind leert: emoties zijn ni
 
 ## Kalm blijven als het moeilijk wordt
 
-Het is halfzeven. Je bent moe. Het eten staat op tafel. Je dochter weigert te komen. Je vraagt het nog een keer. En nog een keer. En dan barst je los: "KOM NU AAN TAFEL!"
+Het is halfzeven. Je bent moe. Het eten staat op tafel. Je dochter weigert te komen. En dan barst je los: "KOM NU AAN TAFEL!"
 
 Herkenbaar? Je bent niet de enige. En je bent geen slechte vader. Je bent een vader wiens brein even op tilt sloeg.
 
-Dit is wat er gebeurt: stress activeert je amygdala - het alarmcentrum van je brein. Die stuurt een noodsignaal naar je lichaam: verhoogde hartslag, gespannen spieren, adrenaline. Je prefrontale cortex - het deel dat nadenkt, nuanceert en remt - wordt tijdelijk uitgeschakeld. Je opereert op instinct. En instinct kent maar drie opties: vechten, vluchten of bevriezen.
+Stress activeert je amygdala - het alarmcentrum van je brein. Je prefrontale cortex - het deel dat nadenkt en remt - wordt tijdelijk uitgeschakeld. Je opereert op instinct. En instinct kent maar drie opties: vechten, vluchten of bevriezen.
 
-Neurowetenschapper Richard Davidson toonde aan dat gerichte oefening - ademhaling, bewuste pauzes - meetbare veranderingen veroorzaakt in het brein. De prefrontale cortex wordt sterker. De amygdala wordt minder reactief. Met andere woorden: kalmte is trainbaar.
+Het goede nieuws: neurowetenschapper Richard Davidson toonde aan dat kalmte trainbaar is. Gerichte oefening - ademhaling, bewuste pauzes - veroorzaakt meetbare veranderingen in het brein.
 
 ### De situatie
 
@@ -115,17 +111,11 @@ Neurowetenschapper Richard Davidson toonde aan dat gerichte oefening - ademhalin
 
 Vader B is niet heilig. Hij voelt dezelfde irritatie. Maar hij vangt het signaal op en kiest een reactie in plaats van te reageren.
 
-### Tip: De 4-7-8 ademhaling
+### Tip: Pauze voor reactie
 
-Als je voelt dat je boos wordt - hartslag stijgt, kaken klemmen, stem wordt luider - doe dit:
+Als je voelt dat je boos wordt - hartslag stijgt, kaken klemmen - neem dan bewust twee diepe ademhalingen voordat je reageert. Die paar seconden geven je denkende brein de kans om weer online te komen. Dertig seconden die het verschil maken.
 
-1. **Adem in** door je neus, tel tot 4
-2. **Houd vast**, tel tot 7
-3. **Adem uit** door je mond, tel tot 8
-
-Doe dit twee keer. Het activeert je parasympathisch zenuwstelsel en geeft je prefrontale cortex de tijd om weer online te komen. Het duurt dertig seconden. En in die dertig seconden verander je van reactief naar bewust.
-
-*Meer weten? Zie de cursus Zelfregulatie als Vader*
+*Meer weten? De cursus Zelfregulatie als Vader geeft je ademhalingstechnieken, triggeranalyse en een persoonlijk noodplan.*
 
 ---
 
@@ -133,11 +123,9 @@ Doe dit twee keer. Het activeert je parasympathisch zenuwstelsel en geeft je pre
 
 ## Structuur geven met warmte
 
-"Niet doen." "Omdat ik het zeg." "Als je niet stopt, dan..." Herkenbaar? De meeste vaders stellen grenzen vanuit frustratie. Pas op het moment dat het ze te veel wordt. En dan - te laat, te vaag, te boos.
+"Niet doen." "Omdat ik het zeg." "Als je niet stopt, dan..." Herkenbaar? De meeste vaders stellen grenzen vanuit frustratie. Pas op het moment dat het te veel wordt. En dan - te laat, te vaag, te boos.
 
-Onderzoek naar opvoedstijlen laat keer op keer zien dat de combinatie van warmte en structuur de beste resultaten geeft. Niet streng of lief. Streng en lief. Het kind dat weet dat er grenzen zijn en dat papa van hem houdt, ontwikkelt de beste zelfregulatie, sociale vaardigheden en het sterkste zelfvertrouwen.
-
-Het geheim zit niet in het wat, maar in het hoe. Goede grenzen zijn Kort, Warm en Helder.
+Onderzoek naar opvoedstijlen laat keer op keer zien dat de combinatie van warmte en structuur de beste resultaten geeft. Niet streng of lief. Streng en lief. Het kind dat weet dat er grenzen zijn en dat papa van hem houdt, ontwikkelt de beste zelfregulatie en het sterkste zelfvertrouwen.
 
 ### De situatie
 
@@ -149,15 +137,11 @@ Het geheim zit niet in het wat, maar in het hoe. Goede grenzen zijn Kort, Warm e
 
 Vader A geeft toe onder druk. Zijn kind leert: hard genoeg schreeuwen werkt. Vader B benoemt het gevoel, houdt de grens en biedt een keuze. Zijn kind leert: papa begrijpt me, maar de grens blijft staan.
 
-### Tip: De KWH-formule
+### Tip: Erken en begrens
 
-Bij elke grens die je stelt, gebruik drie stappen:
+Begin met erkenning ("Ik snap dat je dit wilt") en houd dan de grens kort en helder. Geen verhaal, geen onderhandeling. Je kind voelt zich gezien, ook al krijgt het niet zijn zin.
 
-1. **Kort** - Een zin. Niet een verhaal. "We gaan nu naar bed." Niet: "Het is al laat en morgen moet je vroeg op en je hebt gisteren ook al zo laat..."
-2. **Warm** - Begin met erkenning. "Ik snap dat je nog wilt spelen." Het kind voelt zich gezien, ook al krijgt het niet zijn zin.
-3. **Helder** - Geen misschien. Geen onderhandeling. "Over vijf minuten gaan we." En dan ga je over vijf minuten.
-
-*Meer weten? Zie de cursus Grenzen Stellen met Liefde*
+*Meer weten? De cursus Grenzen Stellen met Liefde leert je de KWH-formule en concrete scripts per leeftijd.*
 
 ---
 
@@ -169,31 +153,23 @@ Je dochter van vier wil zelf haar jas dichtritsen. Het duurt. Het duurt lang. Jo
 
 Maar wat heeft ze geleerd? Dat papa het sneller kan. Dat zij het blijkbaar niet kan.
 
-Psychologen Deci en Ryan ontdekten met hun zelfdeterminatietheorie dat intrinsieke motivatie rust op drie pijlers: autonomie (ik mag het zelf doen), competentie (ik kan het) en verbondenheid (ik hoor erbij). Elke keer dat je iets overneemt wat je kind zelf kan, ondermijn je de eerste twee pijlers.
-
-Loslaten voelt onnatuurlijk. Je beschermingsinstinct zegt: ingrijpen. Maar je kind heeft ruimte nodig om te proberen, te falen en weer op te staan. Jouw taak verschuift van beschermer naar coach.
+Psychologen Deci en Ryan ontdekten dat intrinsieke motivatie rust op drie pijlers: autonomie (ik mag het zelf doen), competentie (ik kan het) en verbondenheid (ik hoor erbij). Elke keer dat je iets overneemt wat je kind zelf kan, ondermijn je de eerste twee pijlers.
 
 ### De situatie
 
 **Zoon (8):** "Papa, ik heb ruzie met Thomas."
 
-**Vader A:** "Wat is er gebeurd? Zal ik zijn moeder bellen? Wil je dat ik met Thomas praat?"
+**Vader A:** "Wat is er gebeurd? Zal ik zijn moeder bellen?"
 
 **Vader B:** "Dat klinkt vervelend. Wat denk je dat je kunt doen?"
 
-Vader A lost het op. Zijn zoon leert: ik kan dit niet alleen. Vader B stelt een vraag. Zijn zoon leert: ik heb zelf mogelijkheden. Papa vertrouwt dat ik dit kan.
+Vader A lost het op. Zijn zoon leert: ik kan dit niet alleen. Vader B stelt een vraag. Zijn zoon leert: papa vertrouwt dat ik dit kan.
 
-### Tip: De coachvraag
+### Tip: Stel een vraag in plaats van een oplossing
 
-De volgende keer dat je kind met een probleem komt, slik je eerste impuls in (oplossen!) en stel een van deze vragen:
+De volgende keer dat je kind met een probleem komt, slik je eerste impuls in en vraag: "Wat denk je dat je kunt doen?" Je zult verrast zijn hoe vaak je kind zelf een goede oplossing bedenkt.
 
-- "Wat denk je dat je kunt doen?"
-- "Wat heb je al geprobeerd?"
-- "Wat zou je tegen een vriend zeggen die dit meemaakt?"
-
-Je hoeft niet altijd de coachvraag te stellen. Soms heeft je kind gewoon troost nodig. Maar vaker dan je denkt, heeft het vooral behoefte aan jouw vertrouwen.
-
-*Meer weten? Zie de cursus Autonomie en Loslaten*
+*Meer weten? De cursus Autonomie en Loslaten leert je verantwoordelijkheid gefaseerd over te dragen per leeftijd.*
 
 ---
 
@@ -201,13 +177,13 @@ Je hoeft niet altijd de coachvraag te stellen. Soms heeft je kind gewoon troost 
 
 ## Herstellen na een fout of conflict
 
-Je hebt geschreeuwd. Of je hebt iets gezegd wat je niet meende. Of je was te streng, te hard, te afwezig. Het is gebeurd. Het glas is gevallen.
+Je hebt geschreeuwd. Of je hebt iets gezegd wat je niet meende. Het is gebeurd. Het glas is gevallen.
 
 Nu de vraag: kun je het oprapen?
 
-Psycholoog Ed Tronick ontdekte dat zelfs in gezonde ouder-kind relaties 70% van de interacties niet perfect afgestemd is. Zeventig procent! Het verschil tussen een veilige en onveilige hechting zit niet in het voorkomen van breuken, maar in het vermogen om te herstellen.
+Psycholoog Ed Tronick ontdekte dat zelfs in gezonde ouder-kind relaties 70% van de interacties niet perfect afgestemd is. Het verschil tussen een veilige en onveilige hechting zit niet in het voorkomen van breuken, maar in het vermogen om te herstellen.
 
-Een kind dat leert dat relaties breuken kunnen hebben en dat die breuken gerepareerd worden, ontwikkelt een diep vertrouwen: het mag misgaan, want het komt weer goed. Dat is een van de krachtigste lessen die je je kind kunt meegeven.
+Een kind dat leert dat breuken gerepareerd worden, ontwikkelt een diep vertrouwen: het mag misgaan, want het komt weer goed.
 
 ### De situatie
 
@@ -215,19 +191,15 @@ Een kind dat leert dat relaties breuken kunnen hebben en dat die breuken gerepar
 
 **Vader A:** Doet alsof er niks gebeurd is. Zet een half uur later de tv aan. "Wil je een koekje?"
 
-**Vader B:** *(komt na tien minuten terug, gaat op zijn hurken zitten)* "Hee lieverd. Papa werd net boos en schreeuwde tegen je. Dat was niet oké. Het was maar verf - en jij bent veel belangrijker dan een bank. Het spijt me. Gaat het?"
+**Vader B:** *(komt na tien minuten terug, gaat op zijn hurken zitten)* "Papa werd net boos en schreeuwde tegen je. Dat was niet oké. Het spijt me."
 
 Vader A vermijdt het ongemak. Zijn kind leert: we praten niet over pijnlijke dingen. Vader B neemt verantwoordelijkheid. Zijn kind leert: fouten mogen. En papa maakt ze weer goed.
 
-### Tip: De drie stappen van herstel
+### Tip: Keer terug wanneer je kalm bent
 
-1. **Keer terug wanneer je kalm bent.** Niet als je nog boos of beschaamd bent. Neem vijf minuten, een half uur, een avond - wat je nodig hebt.
-2. **Benoem wat er gebeurde.** Specifiek. "Ik schreeuwde tegen je." Niet: "Het ging niet lekker net."
-3. **Neem verantwoordelijkheid.** "Dat was niet oké van mij. Het spijt me." Geen "maar": geen uitleg, geen rechtvaardiging.
+Na een moment waar je spijt van hebt: wacht tot je kalm bent, benoem specifiek wat er gebeurde ("Ik schreeuwde tegen je") en neem verantwoordelijkheid zonder uitleg of rechtvaardiging.
 
-Het hoeft niet perfect. Het hoeft alleen echt te zijn.
-
-*Meer weten? Zie de cursus Herstel na Conflict*
+*Meer weten? De cursus Herstel na Conflict leert je de volledige 5-stappen verontschuldiging en herstelgesprekken per leeftijd.*
 
 ---
 
@@ -235,9 +207,9 @@ Het hoeft niet perfect. Het hoeft alleen echt te zijn.
 
 ## Contact houden met je tiener
 
-Je zoon van veertien zat vroeger op je schoot. Nu zit hij op zijn kamer met de deur dicht. Je vraagt hoe school was. "Goed." Je vraagt wat hij deed vandaag. "Niks." Je vraagt of alles oké is. "Ja." Einde gesprek.
+Je zoon van veertien zat vroeger op je schoot. Nu zit hij op zijn kamer met de deur dicht. Je vraagt hoe school was. "Goed." Je vraagt wat hij deed vandaag. "Niks." Einde gesprek.
 
-Het voelt als afwijzing. Maar dat is het niet. Het is individuatie - een normaal en gezond ontwikkelingsproces waarbij je tiener leert wie hij is, los van jou. Neurowetenschapper Laurence Steinberg toonde aan dat het tienerbrein letterlijk aan het verbouwen is. De prefrontale cortex - het gebied voor planning, impulscontrole en consequentiedenken - is pas rond het 25e levensjaar volgroeid.
+Het voelt als afwijzing. Maar dat is het niet. Het is individuatie - een normaal ontwikkelingsproces waarbij je tiener leert wie hij is, los van jou. Het tienerbrein is letterlijk aan het verbouwen. De prefrontale cortex is pas rond het 25e levensjaar volgroeid.
 
 Je tiener duwt je weg. Dat hoort erbij. Maar hij heeft je nog steeds nodig. Alleen niet meer op de manier van vroeger.
 
@@ -247,25 +219,17 @@ Je tiener duwt je weg. Dat hoort erbij. Maar hij heeft je nog steeds nodig. Alle
 
 **Vader A:** "Hoe was school?" / "Goed." / "Heb je nog huiswerk?" / "Ja." *(stilte)*
 
-**Vader B:** *(radio staat zacht aan, stilte)* ... *(na een paar minuten)* "Ik had vandaag een raar gesprek op werk. Een collega zei iets en ik wist niet hoe ik moest reageren."
+**Vader B:** *(radio staat zacht aan, stilte)* ... *(na een paar minuten)* "Ik had vandaag een raar gesprek op werk."
 
 **Noor:** "Wat zei hij dan?"
 
 De truc van Vader B: hij vertelt iets over zichzelf. Kwetsbaar, klein, alledaags. En hij stelt geen vraag. Tieners openen zich niet op commando. Ze openen zich wanneer het veilig voelt - en wanneer jij voorgaat.
 
-### Tip: Het zij-aan-zij gesprek
+### Tip: Naast, niet tegenover
 
-Ga naast je tiener zitten, niet tegenover. Oog-in-oog voelt als een verhoor. Schouder-aan-schouder voelt als samen.
+Ga naast je tiener zitten, niet tegenover. Oog-in-oog voelt als een verhoor. Schouder-aan-schouder voelt als samen. De beste gesprekken ontstaan in de auto, tijdens een wandeling of aan het einde van de avond op de bank.
 
-De beste gesprekken met tieners ontstaan:
-- In de auto
-- Tijdens een wandeling
-- Tijdens het koken
-- Aan het einde van de avond op de bank
-
-Geen agenda. Geen vragen. Gewoon samen zijn. En als het gesprek komt, komt het.
-
-*Meer weten? Zie de cursus Verbinding met je Tiener*
+*Meer weten? De cursus Verbinding met je Tiener leert je de zij-aan-zij gesprekstechniek en de wetenschap achter het tienerbrein.*
 
 ---
 
@@ -275,9 +239,9 @@ Geen agenda. Geen vragen. Gewoon samen zijn. En als het gesprek komt, komt het.
 
 Je hoort jezelf schreeuwen en denkt: ik lijk mijn vader wel. Of juist: ik doe alles anders dan mijn vader - en toch gaat het mis.
 
-Psycholoog Peter Fonagy ontdekte dat het sterkste voorspellend vermogen voor een goede ouder-kindrelatie niet is hoeveel opvoedboeken je leest, maar hoe goed je begrijpt waarom je doet wat je doet. Hij noemde dit reflectief functioneren - het vermogen om je eigen gedrag, gedachten en emoties te observeren als een buitenstaander.
+Psycholoog Peter Fonagy ontdekte dat het sterkste voorspellend vermogen voor een goede ouder-kindrelatie niet is hoeveel opvoedboeken je leest, maar hoe goed je begrijpt waarom je doet wat je doet. Hij noemde dit reflectief functioneren.
 
-De vader die zegt: "Ik werd boos en schreeuwde, en dat komt waarschijnlijk doordat mijn eigen vader dat ook deed als hij moe was" - die vader is al aan het veranderen. Niet omdat hij het perfect doet, maar omdat hij begrijpt wat er gebeurt.
+De vader die zegt: "Ik werd boos en dat komt waarschijnlijk doordat mijn eigen vader dat ook deed als hij moe was" - die vader is al aan het veranderen. Niet omdat hij het perfect doet, maar omdat hij begrijpt wat er gebeurt.
 
 ### De situatie
 
@@ -285,25 +249,16 @@ De vader die zegt: "Ik werd boos en schreeuwde, en dat komt waarschijnlijk doord
 
 **Vader A:** "Je moet het nu doen! Als je zo doorgaat, wordt het nooit wat met je!"
 
-**Vader B:** *(merkt zijn irritatie op, denkt: waarom raak ik hier zo van in de stress? Ah. Mijn vader vond het heel belangrijk dat ik presteerde. Ik leg diezelfde druk op mijn zoon.)*
+**Vader B:** *(merkt zijn irritatie op, denkt: waarom raak ik hier zo van in de stress?)*
 "Ik merk dat ik boos word. Even een momentje. ... Oké. Vertel, wat is er moeilijk aan dit huiswerk?"
 
 Vader A reageert vanuit een oud patroon. Vader B herkent het patroon en kiest bewust iets anders.
 
 ### Tip: De weekvraag
 
-Stel jezelf elke zondag een reflectievraag. Schrijf het antwoord op in drie zinnen. Niet meer.
+Stel jezelf elke zondag een reflectievraag en schrijf het antwoord op in drie zinnen. Bijvoorbeeld: "Wanneer reageerde ik deze week op een manier waar ik spijt van heb?" of "Wat heeft mijn kind mij geleerd over mezelf?" Reflectie is het verschil tussen dezelfde fouten herhalen en er stap voor stap van leren.
 
-Vijf vragen om mee te wisselen:
-- Wanneer was ik deze week echt trots op hoe ik reageerde als vader?
-- Wanneer reageerde ik deze week op een manier waar ik spijt van heb?
-- In welke situatie hoorde ik de stem van mijn eigen vader?
-- Wat heeft mijn kind mij deze week geleerd over mezelf?
-- Welk moment van verbinding wil ik onthouden?
-
-Reflectie is geen luxe. Het is het verschil tussen dezelfde fouten blijven herhalen en er stap voor stap van leren.
-
-*Meer weten? Zie de cursus Reflectief Vaderschap*
+*Meer weten? De cursus Reflectief Vaderschap leert je reflectief functioneren als dagelijkse gewoonte.*
 
 ---
 
@@ -334,25 +289,27 @@ Bij De Vader Coach heb je drie routes. Je hoeft niet te kiezen - combineer ze en
 
 ### De App - Dagelijks oefenen
 
-Elke dag een micro-oefening op je telefoon, afgestemd op jouw situatie. Streaks, badges en een community van vaders. 2 tot 10 minuten per dag. Eenmalige aankoop, geen abonnement.
+Elke dag een micro-oefening op je telefoon, afgestemd op jouw situatie. Een dagelijkse Pulse check-in om bij te houden hoe het gaat. Streaks, badges, levels en een community van vaders die hetzelfde pad bewandelen. 2 tot 10 minuten per dag. Eenmalige aankoop, geen abonnement.
 
 *Voor vaders die elke dag een kleine stap willen zetten.*
 
 ### De Vader Experience - De 22-dagen reis
 
-22 dagen, 8 vaardigheden, elke dag een herkenbaar vaderscenario met een concrete actie. Van 's ochtends de deur opendoen tot het slaapkamerritueel, van ruzie op de achterbank tot sorry zeggen. Een gestructureerde reis door alles wat je als vader nodig hebt.
+22 dagen, 8 vaardigheden, elke dag een herkenbaar vaderscenario met een concrete actie. Van 's ochtends de deur opendoen tot het slaapkamerritueel, van ruzie op de achterbank tot sorry zeggen. Met dagelijkse reflecties, uitdagingen en een duidelijk pad dat je stap voor stap door alle vaardigheden leidt. De Experience is beschikbaar in de app en combineert het beste van de cursussen met de structuur van een begeleid programma.
 
-*Voor vaders die een duidelijk pad willen volgen.*
+*Voor vaders die een duidelijk pad willen volgen en in 22 dagen een stevige basis willen leggen.*
 
 ### De Cursussen - Diepgang per vaardigheid
 
-8 verdiepende PDF-werkboeken, elk over een vaardigheid. Wetenschap vertaald naar je keukentafel, met werkbladen, oefeningen en dialoogvoorbeelden voor elke leeftijd. Per stuk of als voordelige bundel.
+10 verdiepende PDF-werkboeken: 8 over de kernvaardigheden en 2 specialistische cursussen voor specifieke opvoedsituaties. Wetenschap vertaald naar je keukentafel, met werkbladen, oefeningen en concrete handvatten voor elke leeftijd. Per stuk of als voordelige bundel met alle 10 cursussen.
 
-*Voor vaders die alles willen weten over een specifieke vaardigheid.*
+*Voor vaders die alles willen weten over een specifieke vaardigheid of situatie.*
 
 ---
 
 ## Overzicht cursussen
+
+### De 8 kernvaardigheden
 
 | Cursus | Vaardigheid | Voor wie |
 |---|---|---|
@@ -364,6 +321,13 @@ Elke dag een micro-oefening op je telefoon, afgestemd op jouw situatie. Streaks,
 | **Herstel na Conflict** | Herstel | Vaders die willen leren herstellen na een fout |
 | **Verbinding met je Tiener** | Verbinding | Vaders van tieners die de band willen behouden |
 | **Reflectief Vaderschap** | Reflectie | Vaders die willen begrijpen waarom ze doen wat ze doen |
+
+### Specialistische cursussen
+
+| Cursus | Thema | Voor wie |
+|---|---|---|
+| **Opvoeden bij Gedragsproblemen** | Gedrag | Vaders van kinderen met uitdagend of agressief gedrag |
+| **Vaderschap na Scheiding** | Scheiding | Gescheiden vaders die een sterke band willen houden |
 
 Ga naar **devadercoach.nl** en begin vandaag.
 
