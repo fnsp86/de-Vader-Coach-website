@@ -3,6 +3,7 @@ import { getDuePosts, updatePostStatus } from '@/lib/instagram-schedule';
 import { processDripQueue } from '@/lib/automation';
 import { processMonthlyNewsletter } from '@/lib/monthly-newsletter';
 import { getInstagramToken, refreshInstagramToken } from '@/lib/instagram-token';
+import { cacheImageForInstagram } from '@/lib/instagram-image-cache';
 
 export const maxDuration = 60;
 
@@ -40,11 +41,18 @@ export async function GET(request: NextRequest) {
         for (const post of duePosts) {
           await updatePostStatus(post.id, 'posting');
           try {
+            // Cache images to fast static URLs before sending to Instagram
+            const cachedUrls: string[] = [];
+            for (const url of post.imageUrls) {
+              const cached = await cacheImageForInstagram(url);
+              cachedUrls.push(cached.url);
+            }
+
             let postId: string;
-            if (post.imageUrls.length > 1) {
-              postId = await publishCarousel(accountId, accessToken, post.imageUrls, post.caption);
+            if (cachedUrls.length > 1) {
+              postId = await publishCarousel(accountId, accessToken, cachedUrls, post.caption);
             } else {
-              postId = await publishSingle(accountId, accessToken, post.imageUrls[0], post.caption);
+              postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
             }
             await updatePostStatus(post.id, 'posted', { postId });
             published++;
@@ -84,7 +92,7 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({ ok: true, results });
 }
 
-// ── Instagram helpers (moved from instagram cron) ────
+// ── Instagram helpers ────
 
 async function publishSingle(accountId: string, accessToken: string, imageUrl: string, caption: string): Promise<string> {
   const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {

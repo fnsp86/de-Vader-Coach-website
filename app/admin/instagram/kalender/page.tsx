@@ -99,8 +99,12 @@ export default function KalenderPage() {
   while (cells.length % 7 !== 0) cells.push(null);
 
   function getPostsForDay(day: number): ScheduledPost[] {
-    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-    return posts.filter((p) => p.scheduledAt.startsWith(dateStr));
+    const dateStr = `${String(day).padStart(2, '0')}-${String(month + 1).padStart(2, '0')}-${year}`;
+    return posts.filter((p) => {
+      const d = new Date(p.scheduledAt);
+      const nlDate = d.toLocaleDateString('nl-NL', { timeZone: 'Europe/Amsterdam', day: '2-digit', month: '2-digit', year: 'numeric' });
+      return nlDate === dateStr;
+    });
   }
 
   return (
@@ -233,7 +237,7 @@ export default function KalenderPage() {
                 })()}
                 <span className="text-xs" style={{ color: 'var(--text3)' }}>
                   <Clock className="h-3 w-3 inline mr-1" />
-                  {new Date(selectedPost.scheduledAt).toLocaleString('nl-NL', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                  {new Date(selectedPost.scheduledAt).toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
                 </span>
                 {selectedPost.type === 'carousel' && (
                   <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
@@ -303,7 +307,7 @@ export default function KalenderPage() {
                       </div>
                       <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
                         <Clock className="h-3 w-3 inline mr-1" />
-                        {new Date(p.scheduledAt).toLocaleString('nl-NL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                        {new Date(p.scheduledAt).toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
                       </span>
                     </button>
                   ))}

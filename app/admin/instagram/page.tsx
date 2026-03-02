@@ -228,9 +228,35 @@ export default function InstagramPage() {
     }
   }
 
+  function formatNLDate(date: Date): string {
+    return date.toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }).replace(',', '');
+  }
+
+  function parseNLDate(str: string): Date | null {
+    // Parse DD-MM-YYYY HH:mm format
+    const match = str.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})\s+(\d{1,2}):(\d{2})$/);
+    if (!match) return null;
+    const [, day, month, year, hour, minute] = match;
+    // Create date in Europe/Amsterdam timezone
+    const isoStr = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}T${hour.padStart(2, '0')}:${minute}:00`;
+    // Use the browser's understanding of the local time (user is in NL)
+    const date = new Date(isoStr);
+    if (isNaN(date.getTime())) return null;
+    return date;
+  }
+
   async function handleSchedule() {
-    const dateStr = prompt('Wanneer posten? (YYYY-MM-DD HH:mm)', new Date(Date.now() + 86400000).toISOString().slice(0, 16).replace('T', ' '));
+    const tomorrow = new Date(Date.now() + 86400000);
+    const defaultDate = formatNLDate(tomorrow);
+    const dateStr = prompt('Wanneer posten? (DD-MM-YYYY HH:mm)', defaultDate);
     if (!dateStr) return;
+
+    const scheduledDate = parseNLDate(dateStr);
+    if (!scheduledDate) {
+      alert('Ongeldig datumformaat. Gebruik DD-MM-YYYY HH:mm (bijv. 15-03-2026 14:30)');
+      return;
+    }
+
     setStatus('posting');
     setErrorMsg('');
     try {
@@ -241,7 +267,7 @@ export default function InstagramPage() {
         body: JSON.stringify({
           slides: slides.map((s) => ({ ...s, imageUrl: `${IG_IMAGE_BASE}${getImageUrl(s)}` })),
           caption,
-          scheduledAt: new Date(dateStr).toISOString(),
+          scheduledAt: scheduledDate.toISOString(),
           title: selectedTitle,
           imageUrls,
         }),
@@ -253,7 +279,7 @@ export default function InstagramPage() {
       } else {
         setStatus('success');
         setErrorMsg('');
-        alert(`Ingepland voor ${dateStr}`);
+        alert(`Ingepland voor ${formatNLDate(scheduledDate)}`);
       }
     } catch {
       setStatus('error');
