@@ -14,6 +14,7 @@ export default function PageviewTracker() {
     // Don't track admin pages
     if (pathname.startsWith('/admin')) return;
 
+    // Custom Redis analytics
     fetch('/api/analytics/track', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -22,6 +23,12 @@ export default function PageviewTracker() {
         referrer: document.referrer,
       }),
     }).catch(() => {});
+
+    // GA4 pageview (initial page already tracked by gtag config)
+    (window as any).gtag?.('event', 'page_view', { page_path: pathname });
+
+    // Facebook Pixel pageview
+    (window as any).fbq?.('track', 'PageView');
   }, [pathname]);
 
   return null;

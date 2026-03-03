@@ -60,6 +60,10 @@ export default function BuyButton({ slug, color, price }: BuyButtonProps) {
           body: JSON.stringify({ path: `/event/buy-click/${slug}`, referrer: window.location.pathname }),
         }).catch(() => {});
 
+        // GA4 + Facebook Pixel
+        (window as any).gtag?.('event', 'begin_checkout', { currency: 'EUR', value: finalPrice, items: [{ item_id: slug }] });
+        (window as any).fbq?.('track', 'InitiateCheckout', { currency: 'EUR', value: finalPrice, content_ids: [slug] });
+
         window.location.href = data.checkoutUrl;
       } else {
         alert(data.error || 'Er ging iets mis. Probeer het opnieuw.');

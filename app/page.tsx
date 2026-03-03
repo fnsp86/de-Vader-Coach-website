@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {
   Heart, Brain, BookOpen, Target, Shield, Smartphone, ArrowRight, Download,
   Eye, Waves, Sprout, RefreshCw, Handshake, Check, X as XIcon, Calendar, Zap,
-  Quote,
+  Quote, HelpCircle,
 } from 'lucide-react';
 import CourseCard from '@/components/CourseCard';
 import EmailGate from '@/components/EmailGate';
@@ -190,6 +190,40 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Quiz CTA ─────────────────────────────── */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <a
+            href="/quiz"
+            className="block rounded-2xl p-6 sm:p-8 border transition-all hover:scale-[0.995]"
+            style={{ backgroundColor: '#F59E0B08', borderColor: '#F59E0B25' }}
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+              <div
+                className="flex h-14 w-14 items-center justify-center rounded-2xl flex-shrink-0"
+                style={{ backgroundColor: '#F59E0B18' }}
+              >
+                <HelpCircle className="h-7 w-7" style={{ color: '#F59E0B' }} />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg sm:text-xl font-extrabold mb-1" style={{ color: 'var(--text)' }}>
+                  Welke vader ben jij?
+                </h3>
+                <p className="text-[14px]" style={{ color: 'var(--text2)' }}>
+                  Doe de gratis quiz en ontdek je sterkste opvoedvaardigheid in 2 minuten. Plus een persoonlijk groeiadvies.
+                </p>
+              </div>
+              <div
+                className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-black flex-shrink-0"
+                style={{ backgroundColor: '#F59E0B' }}
+              >
+                Start de quiz →
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 

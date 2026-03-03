@@ -6,6 +6,7 @@ import { getBlogPostAsync, getAllBlogPostsAsync } from '@/lib/blog-posts-server'
 import ShareButtons from '@/components/ShareButtons';
 import EmailGate from '@/components/EmailGate';
 import AffiliateCard from '@/components/AffiliateCard';
+import InBlogCTA from '@/components/InBlogCTA';
 import { getRecommendationsForBlog } from '@/lib/affiliate-products';
 
 const DEFAULT_POST = {
@@ -64,7 +65,7 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
   const olderPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   // Simple markdown-to-html
-  const htmlContent = post.content
+  const htmlLines = post.content
     .split('\n')
     .map((line) => {
       const trimmed = line.trim();
@@ -74,8 +75,16 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
       if (trimmed.startsWith('*') && trimmed.endsWith('*')) return `<p><em>${trimmed.slice(1, -1)}</em></p>`;
       if (trimmed) return `<p>${trimmed}</p>`;
       return '';
-    })
-    .join('\n');
+    });
+
+  // Split content at first <h2> after intro for mid-article CTA
+  const firstH2 = htmlLines.findIndex((l, i) => i > 2 && l.startsWith('<h2>'));
+  const splitAt = firstH2 > 0 ? firstH2 : Math.ceil(htmlLines.length / 2);
+  const htmlBefore = htmlLines.slice(0, splitAt).join('\n');
+  const htmlAfter = htmlLines.slice(splitAt).join('\n');
+
+  // CTA type: course if available, otherwise quiz
+  const ctaType = relatedCourse ? 'cursus' as const : 'quiz' as const;
 
   // BlogPosting structured data for SEO
   const articleSchema = {
@@ -154,7 +163,21 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
         <div
           className="max-w-none [&_h2]:text-lg [&_h2]:font-bold [&_h2]:mt-8 [&_h2]:mb-3 [&_p]:text-[15px] [&_p]:leading-relaxed [&_p]:mb-4 [&_hr]:my-8 [&_hr]:border-[var(--border)] [&_em]:text-[13px] [&_em]:opacity-70"
           style={{ color: 'var(--text2)' }}
-          dangerouslySetInnerHTML={{ __html: htmlContent }}
+          dangerouslySetInnerHTML={{ __html: htmlBefore }}
+        />
+
+        <InBlogCTA
+          skill={post.category}
+          color={categoryColor}
+          type={ctaType}
+          courseSlug={relatedCourse?.slug}
+          courseTitle={relatedCourse?.title}
+        />
+
+        <div
+          className="max-w-none [&_h2]:text-lg [&_h2]:font-bold [&_h2]:mt-8 [&_h2]:mb-3 [&_p]:text-[15px] [&_p]:leading-relaxed [&_p]:mb-4 [&_hr]:my-8 [&_hr]:border-[var(--border)] [&_em]:text-[13px] [&_em]:opacity-70"
+          style={{ color: 'var(--text2)' }}
+          dangerouslySetInnerHTML={{ __html: htmlAfter }}
         />
 
         <div className="mt-10 pt-6 border-t" style={{ borderColor: 'var(--border)' }}>

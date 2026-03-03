@@ -55,6 +55,10 @@ export default function EmailGate({ downloadUrl, buttonText = 'Download gratis s
       body: JSON.stringify({ path: '/event/email-signup', referrer: window.location.pathname }),
     }).catch(() => {});
 
+    // GA4 + Facebook Pixel
+    (window as any).gtag?.('event', 'sign_up', { method: 'email_gate' });
+    (window as any).fbq?.('track', 'Lead', { content_name: 'snelgids' });
+
     window.location.href = downloadUrl;
   }
 
