@@ -20,6 +20,7 @@ import {
   type SlideConfig,
 } from '@/lib/instagram-captions';
 import { BRAND_COLORS, SKILL_ICONS, TEMPLATE_INFO } from '@/lib/instagram-assets';
+import ReelGenerator from '@/components/ReelGenerator';
 import {
   FileText,
   BookOpen,
@@ -43,6 +44,10 @@ import {
   Instagram,
   Film,
   Library,
+  Video,
+  Upload,
+  Music,
+  Volume2,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -81,6 +86,17 @@ export default function InstagramPage() {
   const [libFilter, setLibFilter] = useState<string>('all');
   const [autoStatus, setAutoStatus] = useState<{ enabled: boolean; lastPostAt: string | null; nextPostAt: string | null; postedCount: number } | null>(null);
   const [autoToggling, setAutoToggling] = useState(false);
+
+  // Reel state
+  const [postMode, setPostMode] = useState<'feed' | 'reel'>('feed');
+  const [reelTab, setReelTab] = useState<'upload' | 'generate'>('generate');
+  const [reelVideoBlob, setReelVideoBlob] = useState<Blob | null>(null);
+  const [reelVideoUrl, setReelVideoUrl] = useState<string | null>(null); // serve URL from backend
+  const [reelVideoPreview, setReelVideoPreview] = useState<string | null>(null); // local object URL
+  const [reelUploading, setReelUploading] = useState(false);
+  const [audioSrc, setAudioSrc] = useState<string>('');
+  const [audioVolume, setAudioVolume] = useState(0.3);
+  const [audioFileName, setAudioFileName] = useState('');
 
   useEffect(() => {
     if (!password) return;
@@ -341,6 +357,145 @@ export default function InstagramPage() {
     }
   }
 
+  // Upload video file to backend
+  async function handleVideoUpload(file: File) {
+    setReelUploading(true);
+    setErrorMsg('');
+    try {
+      const formData = new FormData();
+      formData.append('video', file);
+      const res = await fetch('/api/instagram/upload-video', {
+        method: 'POST',
+        headers: { 'x-admin-password': password },
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.error) {
+        setErrorMsg(data.error);
+      } else {
+        setReelVideoUrl(data.videoUrl);
+        setReelVideoPreview(URL.createObjectURL(file));
+      }
+    } catch {
+      setErrorMsg('Video upload mislukt');
+    }
+    setReelUploading(false);
+  }
+
+  // Handle generated reel blob from ReelGenerator
+  async function handleReelGenerated(blob: Blob) {
+    setReelVideoBlob(blob);
+    setReelUploading(true);
+    setErrorMsg('');
+    try {
+      const formData = new FormData();
+      formData.append('video', new File([blob], 'reel.mp4', { type: 'video/mp4' }));
+      const res = await fetch('/api/instagram/upload-video', {
+        method: 'POST',
+        headers: { 'x-admin-password': password },
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.error) {
+        setErrorMsg(data.error);
+      } else {
+        setReelVideoUrl(data.videoUrl);
+      }
+    } catch {
+      setErrorMsg('Video upload mislukt');
+    }
+    setReelUploading(false);
+  }
+
+  // Post reel to Instagram
+  async function handlePostReel() {
+    if (!reelVideoUrl) {
+      setErrorMsg('Geen video beschikbaar. Upload of genereer eerst een video.');
+      return;
+    }
+    setStatus('posting');
+    setErrorMsg('');
+    try {
+      const res = await fetch('/api/instagram/post', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
+        body: JSON.stringify({
+          isReel: true,
+          videoUrl: reelVideoUrl,
+          caption,
+          postToFacebook,
+        }),
+      });
+      const data = await res.json();
+      if (data.error) {
+        setStatus('error');
+        setErrorMsg(data.error);
+      } else {
+        setStatus('success');
+        const history = JSON.parse(localStorage.getItem('ig_history') ?? '[]');
+        history.unshift({ title: `Reel: ${selectedTitle}`, slides: 0, postedAt: new Date().toISOString(), postId: data.postId });
+        localStorage.setItem('ig_history', JSON.stringify(history.slice(0, 20)));
+      }
+    } catch {
+      setStatus('error');
+      setErrorMsg('Kon niet verbinden met Instagram');
+    }
+  }
+
+  // Schedule reel
+  async function handleScheduleReel() {
+    if (!reelVideoUrl) {
+      setErrorMsg('Geen video beschikbaar. Upload of genereer eerst een video.');
+      return;
+    }
+    const tomorrow = new Date(Date.now() + 86400000);
+    const defaultDate = formatNLDate(tomorrow);
+    const dateStr = prompt('Wanneer posten? (DD-MM-YYYY HH:mm)', defaultDate);
+    if (!dateStr) return;
+
+    const scheduledDate = parseNLDate(dateStr);
+    if (!scheduledDate) {
+      alert('Ongeldig datumformaat. Gebruik DD-MM-YYYY HH:mm (bijv. 15-03-2026 14:30)');
+      return;
+    }
+
+    setStatus('posting');
+    setErrorMsg('');
+    try {
+      const res = await fetch('/api/instagram/schedule', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
+        body: JSON.stringify({
+          mediaType: 'reel',
+          videoUrl: reelVideoUrl,
+          caption,
+          scheduledAt: scheduledDate.toISOString(),
+          title: selectedTitle || 'Reel',
+          postToFacebook,
+        }),
+      });
+      const data = await res.json();
+      if (data.error) {
+        setStatus('error');
+        setErrorMsg(data.error);
+      } else {
+        setStatus('success');
+        setErrorMsg('');
+        alert(`Reel ingepland voor ${formatNLDate(scheduledDate)}`);
+      }
+    } catch {
+      setStatus('error');
+      setErrorMsg('Kon reel niet inplannen');
+    }
+  }
+
+  // Handle audio file upload
+  function handleAudioUpload(file: File) {
+    const url = URL.createObjectURL(file);
+    setAudioSrc(url);
+    setAudioFileName(file.name);
+  }
+
   return (
     <div>
       <div className="flex items-center justify-between mb-4 sm:mb-6">
@@ -359,32 +514,91 @@ export default function InstagramPage() {
         </div>
       </div>
 
-      {/* Action bar: Random + Vrije Post */}
+      {/* Post mode toggle + Action bar */}
       <div
-        className="rounded-2xl border p-3 sm:p-4 mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3 overflow-x-auto"
+        className="rounded-2xl border p-3 sm:p-4 mb-4 sm:mb-6 space-y-3"
         style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
       >
-        <Shuffle className="h-4 w-4 shrink-0" style={{ color: '#F59E0B' }} />
-        <span className="text-xs sm:text-sm font-bold shrink-0" style={{ color: 'var(--text)' }}>Random:</span>
-        {[1, 3, 5, 8].map((n) => (
+        {/* Feed / Reel toggle */}
+        <div className="flex items-center gap-2">
           <button
-            key={n}
-            onClick={() => handleRandom(n)}
-            className="text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
-            style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
+            onClick={() => setPostMode('feed')}
+            className="flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-xl transition-colors"
+            style={{
+              backgroundColor: postMode === 'feed' ? '#F59E0B' : 'var(--bg)',
+              color: postMode === 'feed' ? '#000' : 'var(--text3)',
+            }}
           >
-            {n === 1 ? '1' : n}
+            <ImageIcon className="h-3.5 w-3.5" />
+            Feed Post
           </button>
-        ))}
-        <div className="w-px h-6 shrink-0" style={{ backgroundColor: 'var(--border)' }} />
-        <button
-          onClick={startVrijePost}
-          className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
-          style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
-        >
-          <Type className="h-3.5 w-3.5" />
-          Vrij
-        </button>
+          <button
+            onClick={() => setPostMode('reel')}
+            className="flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-xl transition-colors"
+            style={{
+              backgroundColor: postMode === 'reel' ? '#F59E0B' : 'var(--bg)',
+              color: postMode === 'reel' ? '#000' : 'var(--text3)',
+            }}
+          >
+            <Video className="h-3.5 w-3.5" />
+            Reel
+          </button>
+        </div>
+
+        {/* Action bar: Random + Vrije Post (feed mode only) */}
+        {postMode === 'feed' && (
+          <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto">
+            <Shuffle className="h-4 w-4 shrink-0" style={{ color: '#F59E0B' }} />
+            <span className="text-xs sm:text-sm font-bold shrink-0" style={{ color: 'var(--text)' }}>Random:</span>
+            {[1, 3, 5, 8].map((n) => (
+              <button
+                key={n}
+                onClick={() => handleRandom(n)}
+                className="text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
+                style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
+              >
+                {n === 1 ? '1' : n}
+              </button>
+            ))}
+            <div className="w-px h-6 shrink-0" style={{ backgroundColor: 'var(--border)' }} />
+            <button
+              onClick={startVrijePost}
+              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10 shrink-0"
+              style={{ backgroundColor: 'var(--bg)', color: 'var(--text2)' }}
+            >
+              <Type className="h-3.5 w-3.5" />
+              Vrij
+            </button>
+          </div>
+        )}
+
+        {/* Reel tabs (reel mode) */}
+        {postMode === 'reel' && (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setReelTab('generate')}
+              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors"
+              style={{
+                backgroundColor: reelTab === 'generate' ? '#F59E0B15' : 'var(--bg)',
+                color: reelTab === 'generate' ? '#F59E0B' : 'var(--text3)',
+              }}
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              Genereer slideshow
+            </button>
+            <button
+              onClick={() => setReelTab('upload')}
+              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors"
+              style={{
+                backgroundColor: reelTab === 'upload' ? '#F59E0B15' : 'var(--bg)',
+                color: reelTab === 'upload' ? '#F59E0B' : 'var(--text3)',
+              }}
+            >
+              <Upload className="h-3.5 w-3.5" />
+              Upload video
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Auto-publish status */}
@@ -520,7 +734,329 @@ export default function InstagramPage() {
 
         {/* Right: Post editor — on mobile shows first via order */}
         <div className="space-y-3 sm:space-y-4 order-1 lg:order-2">
-          {slides[0]?.text ? (
+          {/* ─── Reel Editor ─── */}
+          {postMode === 'reel' && (
+            <>
+              {reelTab === 'upload' ? (
+                /* Upload video tab */
+                <div
+                  className="rounded-2xl border p-4 sm:p-6"
+                  style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <Upload className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                    <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Video uploaden</span>
+                  </div>
+
+                  {reelVideoPreview ? (
+                    <div className="space-y-3">
+                      <video
+                        src={reelVideoPreview}
+                        controls
+                        className="w-full rounded-xl"
+                        style={{ maxHeight: 400 }}
+                      />
+                      <button
+                        onClick={() => {
+                          if (reelVideoPreview) URL.revokeObjectURL(reelVideoPreview);
+                          setReelVideoPreview(null);
+                          setReelVideoUrl(null);
+                          setReelVideoBlob(null);
+                        }}
+                        className="text-xs hover:underline"
+                        style={{ color: 'var(--text3)' }}
+                      >
+                        Andere video kiezen
+                      </button>
+                    </div>
+                  ) : (
+                    <label
+                      className="flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-8 cursor-pointer transition-colors hover:border-amber-500/40"
+                      style={{ borderColor: 'var(--border)' }}
+                    >
+                      <Video className="h-10 w-10 opacity-30" style={{ color: 'var(--text3)' }} />
+                      <span className="text-sm font-medium" style={{ color: 'var(--text3)' }}>
+                        {reelUploading ? 'Uploaden...' : 'Klik om een video te kiezen'}
+                      </span>
+                      <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
+                        .mp4 of .mov, max 50MB, max 90 seconden
+                      </span>
+                      <input
+                        type="file"
+                        accept="video/mp4,video/quicktime,.mp4,.mov"
+                        className="hidden"
+                        disabled={reelUploading}
+                        onChange={(e) => {
+                          const f = e.target.files?.[0];
+                          if (f) handleVideoUpload(f);
+                        }}
+                      />
+                      {reelUploading && <Loader2 className="h-5 w-5 animate-spin" style={{ color: '#F59E0B' }} />}
+                    </label>
+                  )}
+                </div>
+              ) : (
+                /* Generate slideshow tab */
+                <>
+                  {/* Slide editor (reuse existing) - show when slides have content */}
+                  {slides[0]?.text ? (
+                    <>
+                      {/* Slide thumbnails */}
+                      {slides.length > 1 && (
+                        <div
+                          className="rounded-2xl border p-3"
+                          style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                        >
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>
+                              Slides ({slides.length})
+                            </span>
+                            <button
+                              onClick={addSlide}
+                              className="ml-auto flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10"
+                              style={{ color: '#F59E0B' }}
+                            >
+                              <Plus className="h-3 w-3" /> Slide
+                            </button>
+                          </div>
+                          <div className="flex gap-2 overflow-x-auto pb-1">
+                            {slides.map((s, i) => (
+                              <button
+                                key={i}
+                                onClick={() => setActiveSlide(i)}
+                                className="relative shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-colors"
+                                style={{ borderColor: i === activeSlide ? '#F59E0B' : 'var(--border)' }}
+                              >
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src={getImageUrl(s)} alt={`Slide ${i + 1}`} className="w-full h-full object-cover" style={{ backgroundColor: '#111318' }} />
+                                <span className="absolute bottom-0.5 right-0.5 text-[9px] font-bold bg-black/60 text-white px-1 rounded">{i + 1}</span>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Preview image */}
+                      <div
+                        className="rounded-2xl border overflow-hidden"
+                        style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                      >
+                        <div className="px-3 py-2 border-b flex items-center gap-2" style={{ borderColor: 'var(--border)' }}>
+                          <Video className="h-4 w-4 shrink-0" style={{ color: '#F59E0B' }} />
+                          <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>
+                            Reel preview ({slides.length} slides)
+                          </span>
+                          <button
+                            onClick={() => handleRandom(slides.length)}
+                            className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10 ml-auto shrink-0"
+                            style={{ color: '#F59E0B' }}
+                          >
+                            <Shuffle className="h-3 w-3" /> Shuffle
+                          </button>
+                        </div>
+                        <div className="p-4">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={getImageUrl(current)}
+                            alt="Reel slide preview"
+                            className="w-full aspect-square rounded-xl"
+                            style={{ backgroundColor: '#111318' }}
+                          />
+                        </div>
+                      </div>
+
+                      {/* Music selection */}
+                      <div
+                        className="rounded-2xl border p-4"
+                        style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                      >
+                        <div className="flex items-center gap-2 mb-3">
+                          <Music className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                          <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>Achtergrondmuziek</span>
+                        </div>
+
+                        <div className="space-y-2">
+                          <label
+                            className="flex items-center gap-2 rounded-lg border px-3 py-2 cursor-pointer transition-colors hover:border-amber-500/30"
+                            style={{ borderColor: audioSrc ? 'var(--border)' : '#F59E0B40', backgroundColor: !audioSrc ? '#F59E0B08' : 'transparent' }}
+                          >
+                            <input
+                              type="radio"
+                              name="audio"
+                              checked={!audioSrc}
+                              onChange={() => { setAudioSrc(''); setAudioFileName(''); }}
+                              className="accent-amber-500"
+                            />
+                            <span className="text-xs" style={{ color: 'var(--text2)' }}>Geen muziek (voeg later toe via Instagram)</span>
+                          </label>
+
+                          <label
+                            className="flex items-center gap-2 rounded-lg border px-3 py-2 cursor-pointer transition-colors hover:border-amber-500/30"
+                            style={{ borderColor: audioSrc ? '#F59E0B40' : 'var(--border)', backgroundColor: audioSrc ? '#F59E0B08' : 'transparent' }}
+                          >
+                            <Upload className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--text3)' }} />
+                            <span className="text-xs" style={{ color: 'var(--text2)' }}>
+                              {audioFileName || 'Upload mp3/wav bestand'}
+                            </span>
+                            <input
+                              type="file"
+                              accept="audio/mp3,audio/wav,audio/mpeg,.mp3,.wav"
+                              className="hidden"
+                              onChange={(e) => {
+                                const f = e.target.files?.[0];
+                                if (f) handleAudioUpload(f);
+                              }}
+                            />
+                          </label>
+
+                          {audioSrc && (
+                            <div className="flex items-center gap-2 px-1">
+                              <Volume2 className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--text3)' }} />
+                              <input
+                                type="range"
+                                min={0}
+                                max={100}
+                                value={Math.round(audioVolume * 100)}
+                                onChange={(e) => setAudioVolume(Number(e.target.value) / 100)}
+                                className="flex-1 accent-amber-500"
+                              />
+                              <span className="text-[11px] w-8 text-right" style={{ color: 'var(--text3)' }}>
+                                {Math.round(audioVolume * 100)}%
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* ReelGenerator */}
+                      <div
+                        className="rounded-2xl border p-4"
+                        style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                      >
+                        <ReelGenerator
+                          slides={slides}
+                          getImageUrl={getImageUrl}
+                          audioSrc={audioSrc || undefined}
+                          audioVolume={audioVolume}
+                          onComplete={handleReelGenerated}
+                        />
+                      </div>
+                    </>
+                  ) : (
+                    /* Empty state for reel generate */
+                    <div
+                      className="rounded-2xl border p-6 sm:p-12 text-center"
+                      style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                    >
+                      <Video className="h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 sm:mb-4 opacity-20" style={{ color: 'var(--text3)' }} />
+                      <p className="text-xs sm:text-sm font-medium mb-3 sm:mb-4" style={{ color: 'var(--text3)' }}>
+                        Kies content uit de bibliotheek of genereer random slides voor je Reel
+                      </p>
+                      <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+                        {[3, 5, 8].map((n) => (
+                          <button
+                            key={n}
+                            onClick={() => handleRandom(n)}
+                            className="inline-flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs sm:text-sm font-bold"
+                            style={{ backgroundColor: n === 5 ? '#F59E0B' : 'var(--bg)', color: n === 5 ? '#000' : 'var(--text2)', border: n === 5 ? 'none' : '1px solid var(--border)' }}
+                          >
+                            <Shuffle className="h-4 w-4" />
+                            {n} slides
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+
+              {/* Caption editor for Reel */}
+              {(reelVideoUrl || (reelTab === 'generate' && slides[0]?.text)) && (
+                <>
+                  <div
+                    className="rounded-2xl border p-4"
+                    style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                  >
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>Caption</span>
+                      <span className="text-[11px]" style={{ color: caption.length > 2000 ? '#EF4444' : 'var(--text3)' }}>
+                        {caption.length}/2200
+                      </span>
+                    </div>
+                    <textarea
+                      value={caption}
+                      onChange={(e) => setCaption(e.target.value)}
+                      rows={4}
+                      className="w-full rounded-xl border px-4 py-3 text-sm resize-none outline-none focus:ring-2 focus:ring-amber-500/30"
+                      style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
+                    />
+                  </div>
+
+                  {/* Facebook toggle for Reel */}
+                  <div
+                    className="rounded-2xl border p-4 flex items-center gap-3"
+                    style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                  >
+                    <label className="flex items-center gap-2 cursor-pointer" onClick={() => setPostToFacebook(!postToFacebook)}>
+                      <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: '#1877F220' }}>
+                        <Facebook className="h-3.5 w-3.5" style={{ color: '#1877F2' }} />
+                      </div>
+                      <span className="text-xs font-bold" style={{ color: 'var(--text2)' }}>Facebook</span>
+                      <div
+                        className="w-4 h-4 rounded flex items-center justify-center transition-colors"
+                        style={{ backgroundColor: postToFacebook ? '#F59E0B' : 'var(--border)' }}
+                      >
+                        {postToFacebook && <Check className="h-3 w-3 text-black" />}
+                      </div>
+                    </label>
+                  </div>
+
+                  {/* Reel action buttons */}
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      onClick={handleScheduleReel}
+                      disabled={!reelVideoUrl || status === 'posting'}
+                      className="flex items-center justify-center gap-2 rounded-xl border py-3 px-3 text-xs sm:text-sm font-bold transition-colors hover:border-amber-500/30 disabled:opacity-40"
+                      style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
+                    >
+                      <Clock className="h-4 w-4" />
+                      Inplannen
+                    </button>
+                    <button
+                      onClick={handlePostReel}
+                      disabled={!reelVideoUrl || status === 'posting'}
+                      className="flex items-center justify-center gap-2 rounded-xl py-3 text-xs sm:text-sm font-bold text-black transition-opacity disabled:opacity-40"
+                      style={{
+                        backgroundColor: status === 'success' ? '#34D399' : '#F59E0B',
+                        opacity: status === 'posting' ? 0.7 : 1,
+                      }}
+                    >
+                      {status === 'posting' ? (
+                        <><Loader2 className="h-4 w-4 animate-spin" />Posten...</>
+                      ) : status === 'success' ? (
+                        <><Check className="h-4 w-4" />Gepost!</>
+                      ) : (
+                        <><Send className="h-4 w-4" />Post Reel</>
+                      )}
+                    </button>
+                  </div>
+
+                  {status === 'error' && errorMsg && (
+                    <div
+                      className="flex items-start gap-2 rounded-xl border px-4 py-3"
+                      style={{ borderColor: '#EF444440', backgroundColor: '#EF444410' }}
+                    >
+                      <AlertCircle className="h-4 w-4 shrink-0 mt-0.5" style={{ color: '#EF4444' }} />
+                      <p className="text-sm" style={{ color: '#EF4444' }}>{errorMsg}</p>
+                    </div>
+                  )}
+                </>
+              )}
+            </>
+          )}
+
+          {/* ─── Feed Post Editor ─── */}
+          {postMode === 'feed' && (slides[0]?.text ? (
             <>
               {/* Slide thumbnails */}
               {slides.length > 1 && (
@@ -996,7 +1532,7 @@ export default function InstagramPage() {
                 </button>
               </div>
             </div>
-          )}
+          ))}
         </div>
       </div>
     </div>

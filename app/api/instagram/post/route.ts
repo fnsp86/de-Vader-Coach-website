@@ -6,7 +6,7 @@ import { cacheImageForInstagram, type CachedImage } from '@/lib/instagram-image-
 export async function POST(request: NextRequest) {
   if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
-  const { imageUrl, imageUrls, caption, postToFacebook, postAsStory } = await request.json();
+  const { imageUrl, imageUrls, caption, postToFacebook, postAsStory, isReel, videoUrl } = await request.json();
 
   const accessToken = await getInstagramToken();
   const accountId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
@@ -19,24 +19,29 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    // Cache images to static URLs that Instagram can fetch
-    let cachedImages: CachedImage[];
-    if (imageUrls && imageUrls.length > 1) {
-      cachedImages = await Promise.all(
-        imageUrls.map((url: string) => cacheImageForInstagram(url)),
-      );
-    } else {
-      cachedImages = [await cacheImageForInstagram(imageUrl)];
-    }
-
-    const cachedUrls = cachedImages.map((c) => c.url);
-
-    // Instagram Feed post
     let igResult: { success: boolean; postId?: string; error?: string };
-    if (cachedUrls.length > 1) {
-      igResult = await postCarousel(accountId, accessToken, cachedUrls, caption);
+    let cachedImages: CachedImage[] = [];
+
+    if (isReel && videoUrl) {
+      // Reel publishing (video)
+      igResult = await postReel(accountId, accessToken, videoUrl, caption);
     } else {
-      igResult = await postSingle(accountId, accessToken, cachedUrls[0], caption);
+      // Image publishing (single or carousel)
+      if (imageUrls && imageUrls.length > 1) {
+        cachedImages = await Promise.all(
+          imageUrls.map((url: string) => cacheImageForInstagram(url)),
+        );
+      } else {
+        cachedImages = [await cacheImageForInstagram(imageUrl)];
+      }
+
+      const cachedUrls = cachedImages.map((c) => c.url);
+
+      if (cachedUrls.length > 1) {
+        igResult = await postCarousel(accountId, accessToken, cachedUrls, caption);
+      } else {
+        igResult = await postSingle(accountId, accessToken, cachedUrls[0], caption);
+      }
     }
 
     if (!igResult.success) {
@@ -45,17 +50,17 @@ export async function POST(request: NextRequest) {
 
     const extras: Record<string, unknown> = {};
 
-    // Instagram Story (optional)
-    if (postAsStory) {
+    // Instagram Story (optional, not for Reels)
+    if (postAsStory && !isReel && cachedImages.length > 0) {
       try {
-        extras.story = await postStory(accountId, accessToken, cachedUrls[0]);
+        extras.story = await postStory(accountId, accessToken, cachedImages[0].url);
       } catch (e) {
         extras.storyError = e instanceof Error ? e.message : String(e);
       }
     }
 
     // Facebook cross-post (optional)
-    if (postToFacebook) {
+    if (postToFacebook && cachedImages.length > 0) {
       try {
         extras.facebook = await crossPostToFacebook(
           cachedImages.map((c) => c.buffer),
@@ -168,6 +173,71 @@ async function postCarousel(
   const publishData = await publishRes.json();
   if (publishData.error) {
     return { success: false, error: `Publicatie fout: ${publishData.error.message}` };
+  }
+
+  return { success: true, postId: publishData.id };
+}
+
+/* ── Instagram Reels ── */
+
+async function postReel(
+  accountId: string,
+  accessToken: string,
+  videoUrl: string,
+  caption: string,
+): Promise<{ success: boolean; postId?: string; error?: string }> {
+  // Create Reel media container
+  const containerRes = await fetch(
+    `https://graph.instagram.com/v21.0/${accountId}/media`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        media_type: 'REELS',
+        video_url: videoUrl,
+        caption,
+        access_token: accessToken,
+      }),
+    },
+  );
+  const containerData = await containerRes.json();
+  if (containerData.error) {
+    return { success: false, error: `Reel container fout: ${containerData.error.message}` };
+  }
+
+  // Poll for video processing status (Instagram processes async)
+  const containerId = containerData.id;
+  const maxWait = 60000; // 60 seconds
+  const pollInterval = 3000; // 3 seconds
+  const start = Date.now();
+
+  while (Date.now() - start < maxWait) {
+    await new Promise((resolve) => setTimeout(resolve, pollInterval));
+
+    const statusRes = await fetch(
+      `https://graph.instagram.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
+    );
+    const statusData = await statusRes.json();
+
+    if (statusData.status_code === 'FINISHED') break;
+    if (statusData.status_code === 'ERROR') {
+      return { success: false, error: 'Instagram kon de video niet verwerken' };
+    }
+    // IN_PROGRESS - keep polling
+  }
+
+  // Publish the Reel
+  const publishRes = await fetch(
+    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ creation_id: containerId, access_token: accessToken }),
+    },
+  );
+  const publishData = await publishRes.json();
+  if (publishData.error) {
+    return { success: false, error: `Reel publicatie fout: ${publishData.error.message}` };
   }
 
   return { success: true, postId: publishData.id };

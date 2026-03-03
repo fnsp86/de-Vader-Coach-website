@@ -15,20 +15,24 @@ export async function POST(request: NextRequest) {
   if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
   const body = await request.json();
-  const { caption, scheduledAt, title, imageUrls, postToFacebook, postAsStory } = body;
+  const { caption, scheduledAt, title, imageUrls, postToFacebook, postAsStory, mediaType, videoUrl } = body;
 
-  if (!scheduledAt || !imageUrls?.length) {
-    return NextResponse.json({ error: 'scheduledAt en imageUrls zijn verplicht' }, { status: 400 });
+  const isReel = mediaType === 'reel';
+
+  if (!scheduledAt || (!isReel && !imageUrls?.length) || (isReel && !videoUrl)) {
+    return NextResponse.json({ error: isReel ? 'scheduledAt en videoUrl zijn verplicht' : 'scheduledAt en imageUrls zijn verplicht' }, { status: 400 });
   }
 
   const post = await schedulePost({
-    type: imageUrls.length > 1 ? 'carousel' : 'single',
+    type: isReel ? 'single' : (imageUrls.length > 1 ? 'carousel' : 'single'),
     title: title ?? 'Untitled',
     caption: caption ?? '',
-    imageUrls,
+    imageUrls: imageUrls ?? [],
     scheduledAt,
     postToFacebook: !!postToFacebook,
-    postAsStory: !!postAsStory,
+    postAsStory: isReel ? false : !!postAsStory,
+    mediaType: isReel ? 'reel' : 'image',
+    videoUrl: isReel ? videoUrl : undefined,
   });
 
   if (!post) {
@@ -60,49 +64,86 @@ export async function PATCH(request: NextRequest) {
 
   await updatePostStatus(id, 'posting');
   try {
-    const cachedImages: CachedImage[] = [];
-    for (const url of post.imageUrls) {
-      cachedImages.push(await cacheImageForInstagram(url));
-    }
-    const cachedUrls = cachedImages.map((c) => c.url);
-
     let postId: string;
-    if (cachedUrls.length > 1) {
-      postId = await publishCarousel(accountId, accessToken, cachedUrls, post.caption);
+
+    if (post.mediaType === 'reel' && post.videoUrl) {
+      // Publish as Reel
+      postId = await publishReel(accountId, accessToken, post.videoUrl, post.caption);
     } else {
-      postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
-    }
-
-    // Instagram Story (optional, 9:16 format)
-    let storyError: string | undefined;
-    if (post.postAsStory) {
-      try {
-        const storyUrl = post.imageUrls[0] + (post.imageUrls[0].includes('?') ? '&' : '?') + 'format=story';
-        const storyImage = await cacheImageForInstagram(storyUrl);
-        await publishStory(accountId, accessToken, storyImage.url);
-      } catch (storyErr) {
-        storyError = storyErr instanceof Error ? storyErr.message : String(storyErr);
+      // Publish as image post
+      const cachedImages: CachedImage[] = [];
+      for (const url of post.imageUrls) {
+        cachedImages.push(await cacheImageForInstagram(url));
       }
-    }
+      const cachedUrls = cachedImages.map((c) => c.url);
 
-    // Facebook cross-post (optional)
-    let facebookError: string | undefined;
-    if (post.postToFacebook) {
-      try {
-        await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
-      } catch (fbErr) {
-        facebookError = fbErr instanceof Error ? fbErr.message : String(fbErr);
-        console.error('[schedule] Facebook cross-post failed:', facebookError);
+      if (cachedUrls.length > 1) {
+        postId = await publishCarousel(accountId, accessToken, cachedUrls, post.caption);
+      } else {
+        postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
+      }
+
+      // Instagram Story (optional, 9:16 format)
+      if (post.postAsStory) {
+        try {
+          const storyUrl = post.imageUrls[0] + (post.imageUrls[0].includes('?') ? '&' : '?') + 'format=story';
+          const storyImage = await cacheImageForInstagram(storyUrl);
+          await publishStory(accountId, accessToken, storyImage.url);
+        } catch {
+          // Story failure should not fail the whole post
+        }
+      }
+
+      // Facebook cross-post (optional)
+      if (post.postToFacebook) {
+        try {
+          await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
+        } catch (fbErr) {
+          console.error('[schedule] Facebook cross-post failed:', fbErr instanceof Error ? fbErr.message : String(fbErr));
+        }
       }
     }
 
     await updatePostStatus(id, 'posted', { postId });
-    return NextResponse.json({ success: true, postId, facebookError, storyError });
+    return NextResponse.json({ success: true, postId });
   } catch (e) {
     const errorMsg = e instanceof Error ? e.message : String(e);
     await updatePostStatus(id, 'failed', { error: errorMsg });
     return NextResponse.json({ error: errorMsg }, { status: 500 });
   }
+}
+
+async function publishReel(accountId: string, accessToken: string, videoUrl: string, caption: string): Promise<string> {
+  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ media_type: 'REELS', video_url: videoUrl, caption, access_token: accessToken }),
+  });
+  const containerData = await containerRes.json();
+  if (containerData.error) throw new Error(`Reel container: ${containerData.error.message}`);
+
+  // Poll for video processing
+  const containerId = containerData.id;
+  const maxWait = 60000;
+  const start = Date.now();
+  while (Date.now() - start < maxWait) {
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    const statusRes = await fetch(
+      `https://graph.instagram.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
+    );
+    const statusData = await statusRes.json();
+    if (statusData.status_code === 'FINISHED') break;
+    if (statusData.status_code === 'ERROR') throw new Error('Instagram kon de video niet verwerken');
+  }
+
+  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ creation_id: containerId, access_token: accessToken }),
+  });
+  const publishData = await publishRes.json();
+  if (publishData.error) throw new Error(`Reel publish: ${publishData.error.message}`);
+  return publishData.id;
 }
 
 async function publishSingle(accountId: string, accessToken: string, imageUrl: string, caption: string): Promise<string> {

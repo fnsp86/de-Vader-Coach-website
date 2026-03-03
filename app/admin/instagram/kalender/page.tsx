@@ -14,6 +14,7 @@ import {
   Image as ImageIcon,
   Clock,
   Send,
+  Video,
 } from 'lucide-react';
 
 interface ScheduledPost {
@@ -27,6 +28,8 @@ interface ScheduledPost {
   postId?: string;
   error?: string;
   createdAt: string;
+  mediaType?: 'image' | 'reel';
+  videoUrl?: string;
 }
 
 const STATUS_COLORS: Record<string, { bg: string; text: string; label: string }> = {
@@ -225,7 +228,7 @@ export default function KalenderPage() {
                         className="w-full text-left rounded px-1.5 py-0.5 mb-0.5 truncate text-[10px] font-medium"
                         style={{ backgroundColor: s.bg, color: s.text }}
                       >
-                        {p.type === 'carousel' ? `📱 ` : ''}{p.title.slice(0, 20)}
+                        {p.mediaType === 'reel' ? '🎬 ' : p.type === 'carousel' ? '📱 ' : ''}{p.title.slice(0, 20)}
                       </button>
                     );
                   })}
@@ -253,7 +256,11 @@ export default function KalenderPage() {
               </div>
 
               {/* Preview */}
-              {selectedPost.imageUrls[0] && (
+              {selectedPost.mediaType === 'reel' ? (
+                <div className="mb-3 flex items-center justify-center aspect-square rounded-xl" style={{ backgroundColor: '#111318' }}>
+                  <Video className="h-12 w-12 opacity-30" style={{ color: 'var(--text3)' }} />
+                </div>
+              ) : selectedPost.imageUrls[0] ? (
                 <div className="mb-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -263,11 +270,18 @@ export default function KalenderPage() {
                     style={{ backgroundColor: '#111318' }}
                   />
                 </div>
-              )}
+              ) : null}
 
-              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>
-                {selectedPost.title}
-              </h3>
+              <div className="flex items-center gap-2 mb-1">
+                <h3 className="text-sm font-bold" style={{ color: 'var(--text)' }}>
+                  {selectedPost.title}
+                </h3>
+                {selectedPost.mediaType === 'reel' && (
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>
+                    Reel
+                  </span>
+                )}
+              </div>
 
               <div className="flex items-center gap-2 mb-3">
                 {(() => {
@@ -353,11 +367,18 @@ export default function KalenderPage() {
                         <span className="text-xs font-bold truncate" style={{ color: 'var(--text)' }}>
                           {p.title}
                         </span>
-                        {p.type === 'carousel' && (
-                          <span className="text-[10px] shrink-0 ml-2" style={{ color: 'var(--text3)' }}>
-                            {p.imageUrls.length} slides
-                          </span>
-                        )}
+                        <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                          {p.mediaType === 'reel' && (
+                            <span className="text-[9px] font-bold px-1.5 py-0.5 rounded" style={{ backgroundColor: '#F59E0B20', color: '#F59E0B' }}>
+                              Reel
+                            </span>
+                          )}
+                          {p.type === 'carousel' && p.mediaType !== 'reel' && (
+                            <span className="text-[10px]" style={{ color: 'var(--text3)' }}>
+                              {p.imageUrls.length} slides
+                            </span>
+                          )}
+                        </div>
                       </div>
                       <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
                         <Clock className="h-3 w-3 inline mr-1" />

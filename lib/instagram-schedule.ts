@@ -23,6 +23,8 @@ export interface ScheduledPost {
   postId?: string;
   error?: string;
   createdAt: string;
+  mediaType?: 'image' | 'reel'; // default 'image' for backward compat
+  videoUrl?: string; // serve-URL for Reel video
 }
 
 function generateId(): string {
