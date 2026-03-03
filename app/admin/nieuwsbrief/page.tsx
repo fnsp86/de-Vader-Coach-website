@@ -78,6 +78,79 @@ const TEMPLATES = [
 <p style="margin:0 0 4px;font-size:14px;color:#ccc;">Groet,</p>
 <p style="margin:0;font-size:14px;font-weight:700;color:#F59E0B;">De Vadercoach</p>`,
   },
+  {
+    name: 'Vadervraag van de week',
+    subject: 'Vadervraag: [onderwerp]',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Vadervraag van de week</h2>
+<p style="margin:0 0 12px;font-size:16px;font-weight:700;color:#F59E0B;">[De vraag - herkenbaar en prikkelend]</p>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Kort antwoord met praktische tip - 3-4 zinnen]</p>
+<p style="margin:0;font-size:13px;color:#999;">Herken je dit? Reageer op deze mail, ik lees alles.</p>`,
+  },
+  {
+    name: 'Niet vs. Wel',
+    subject: 'Dit zeg je beter niet tegen je kind',
+    content: `<h2 style="margin:0 0 12px;font-size:20px;font-weight:800;color:#fff;">Niet vs. Wel</h2>
+<table style="width:100%;border-collapse:collapse;margin:0 0 16px;">
+  <tr>
+    <td style="padding:12px;background:#2a1a1a;border-radius:8px 0 0 8px;color:#f87171;font-size:14px;font-weight:700;width:50%;">&#10007; "[Wat je nu zegt]"</td>
+    <td style="padding:12px;background:#1a2a1a;border-radius:0 8px 8px 0;color:#4ade80;font-size:14px;font-weight:700;width:50%;">&#10003; "[Wat je beter kunt zeggen]"</td>
+  </tr>
+</table>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Uitleg waarom het verschil ertoe doet - 2-3 zinnen]</p>
+<p style="margin:0;font-size:13px;color:#999;">Kleine woordkeuzes, groot verschil.</p>`,
+  },
+  {
+    name: 'Statistiek spotlight',
+    subject: 'Wist je dit over vaderschap?',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Wist je dit?</h2>
+<p style="margin:0 0 4px;font-size:28px;font-weight:800;color:#F59E0B;">[Percentage of getal]</p>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Uitleg van het onderzoekscijfer en wat het voor jou als vader betekent - 3-4 zinnen]</p>
+<p style="margin:0;font-size:12px;color:#666;">Bron: [naam onderzoek/instelling]</p>`,
+  },
+  {
+    name: 'App update',
+    subject: 'Nieuw in De Vadercoach app',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Nieuw in de app</h2>
+<p style="margin:0 0 4px;font-size:16px;font-weight:700;color:#F59E0B;">[Naam van de feature]</p>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Beschrijving: wat doet het, waarom is het handig, hoe gebruik je het - 3-4 zinnen]</p>
+<a href="https://devadercoach.nl" style="display:inline-block;padding:12px 24px;background-color:#F59E0B;color:#000;font-weight:700;font-size:14px;border-radius:12px;text-decoration:none;">Open de app</a>`,
+  },
+  {
+    name: 'Gratis snelgids',
+    subject: 'Gratis voor jou: de Snelgids Bewust Vaderschap',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Heb je de gratis snelgids al?</h2>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">De Snelgids Bewust Vaderschap bevat de belangrijkste inzichten in 15 minuten leestijd. Concreet, direct toepasbaar, en helemaal gratis.</p>
+<p style="margin:0 0 16px;font-size:14px;color:#ccc;">
+  &#10003; 8 praktische vaderschapstips<br>
+  &#10003; Direct toepasbaar in je dagelijks leven<br>
+  &#10003; Gebaseerd op wetenschappelijk onderzoek
+</p>
+<a href="https://devadercoach.nl/snelgids" style="display:inline-block;padding:12px 24px;background-color:#F59E0B;color:#000;font-weight:700;font-size:14px;border-radius:12px;text-decoration:none;">Download de snelgids</a>`,
+  },
+  {
+    name: 'Weekchallenge',
+    subject: 'Challenge: [onderwerp]',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Challenge van de week</h2>
+<p style="margin:0 0 4px;font-size:16px;font-weight:700;color:#F59E0B;">[De challenge in een zin]</p>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Waarom deze challenge werkt + hoe je het aanpakt - 3-4 zinnen]</p>
+<p style="margin:0;font-size:13px;color:#999;">Doe je mee? Reageer op deze mail en vertel hoe het ging.</p>`,
+  },
+  {
+    name: 'Reflectiemoment',
+    subject: 'Even stilstaan bij je vaderschap',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">Reflectiemoment</h2>
+<p style="margin:0 0 16px;font-size:16px;font-style:italic;line-height:1.6;color:#F59E0B;">"[Een reflectievraag om over na te denken]"</p>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Korte toelichting bij de vraag - waarom het de moeite waard is om hier even bij stil te staan - 2-3 zinnen]</p>
+<p style="margin:0;font-size:13px;color:#999;">Neem er even de tijd voor. Er is geen goed of fout antwoord.</p>`,
+  },
+  {
+    name: 'Seizoenstip',
+    subject: '[Seizoen/feestdag]: tip voor vaders',
+    content: `<h2 style="margin:0 0 8px;font-size:20px;font-weight:800;color:#fff;">[Seizoen of feestdag] als vader</h2>
+<p style="margin:0 0 16px;font-size:14px;line-height:1.6;color:#ccc;">[Tip gekoppeld aan het seizoen, een vakantieperiode of feestdag. Bijvoorbeeld: omgaan met verwachtingen rond kerst, samen genieten in de zomer, of terugkijken bij de jaarwisseling - 3-4 zinnen]</p>
+<p style="margin:0 0 4px;font-size:14px;color:#ccc;">Groet,</p>
+<p style="margin:0;font-size:14px;font-weight:700;color:#F59E0B;">De Vadercoach</p>`,
+  },
 ];
 
 export default function NieuwsbriefPage() {
