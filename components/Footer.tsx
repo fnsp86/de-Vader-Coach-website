@@ -10,6 +10,7 @@ const FOOTER_LINKS = {
     { href: '/aanbevolen', label: 'Aanbevolen' },
     { href: '/blog', label: 'Blog' },
     { href: '/app-download', label: 'De App' },
+    { href: '/faq', label: 'Veelgestelde vragen' },
   ],
   Juridisch: [
     { href: '/privacy', label: 'Privacybeleid' },

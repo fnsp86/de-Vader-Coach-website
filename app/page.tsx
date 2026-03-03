@@ -297,13 +297,13 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text2)' }}>
-                  8 verdiepende PDF-werkboeken met wetenschap, werkbladen en oefeningen. Per vaardigheid of als bundel.
+                  10 verdiepende PDF-werkboeken met wetenschap, werkbladen en oefeningen. Per vaardigheid of als bundel.
                 </p>
                 <p className="text-[13px] font-semibold mb-4 px-3 py-1.5 rounded-lg self-start" style={{ backgroundColor: '#F59E0B08', color: 'var(--amber-text)' }}>
                   Ideaal als je alles wilt weten over één vaardigheid
                 </p>
                 <ul className="space-y-2 mb-5 flex-1">
-                  {['8 PDF-werkboeken', '40-80 pagina\'s per stuk', 'Werkbladen & oefeningen', 'Wetenschappelijk onderbouwd'].map((item) => (
+                  {['10 PDF-werkboeken', '40-80 pagina\'s per stuk', 'Werkbladen & oefeningen', 'Wetenschappelijk onderbouwd'].map((item) => (
                     <li key={item} className="flex items-center gap-2 text-[13px]" style={{ color: 'var(--text2)' }}>
                       <Check className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--amber-text)' }} />
                       {item}
@@ -490,7 +490,7 @@ export default function HomePage() {
                 De cursussen
               </h2>
               <p className="text-base" style={{ color: 'var(--text2)' }}>
-                8 verdiepende PDF-cursussen. Wetenschappelijk onderbouwd, direct toepasbaar.
+                10 verdiepende PDF-cursussen. Wetenschappelijk onderbouwd, direct toepasbaar.
               </p>
             </div>
             <Link
@@ -524,7 +524,7 @@ export default function HomePage() {
                   </span>
                 </div>
                 <p className="text-[13px]" style={{ color: 'var(--text3)' }}>
-                  Alle 8 cursussen &middot; {Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting
+                  Alle 10 cursussen &middot; {Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting
                 </p>
               </div>
             </div>

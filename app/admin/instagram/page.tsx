@@ -5,6 +5,7 @@ import { useAdminPassword } from '@/components/AdminAuth';
 import { POSTS_LIST, getBlogPost } from '@/lib/blog-posts';
 import { getAllCourses, SKILL_COLORS } from '@/lib/courses';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
+import { SOCIAL_CONTENT, type SocialContent } from '@/lib/instagram-content';
 
 // Always use production URL for Instagram image URLs (Instagram can't reach localhost)
 const IG_IMAGE_BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
@@ -41,10 +42,11 @@ import {
   Facebook,
   Instagram,
   Film,
+  Library,
 } from 'lucide-react';
 import Link from 'next/link';
 
-type Tab = 'blog' | 'cursussen' | 'experience';
+type Tab = 'blog' | 'cursussen' | 'experience' | 'bibliotheek';
 type PostStatus = 'idle' | 'posting' | 'success' | 'error';
 
 const TEMPLATE_LABELS: Record<Template, string> = {
@@ -76,6 +78,7 @@ export default function InstagramPage() {
   const [showBibliotheek, setShowBibliotheek] = useState(false);
   const [postToFacebook, setPostToFacebook] = useState(false);
   const [postAsStory, setPostAsStory] = useState(false);
+  const [libFilter, setLibFilter] = useState<string>('all');
 
   const courses = getAllCourses();
   const current = slides[activeSlide] ?? slides[0];
@@ -131,6 +134,28 @@ export default function InstagramPage() {
     setSelectedTitle(`Dag ${day.dag}: ${day.title}`);
     resetStatus();
   }
+
+  function selectLibraryContent(item: SocialContent) {
+    const color = SKILL_COLORS[item.skill] ?? '#F59E0B';
+    setSlides([{
+      template: item.template,
+      text: item.text,
+      color,
+      skill: item.skill,
+      subtitle: item.subtitle ?? '',
+      number: item.type === 'tip' ? '1' : '',
+      items: [],
+    }]);
+    setActiveSlide(0);
+    const hashtags = `#vaderschap #opvoeden #devadercoach`;
+    setCaption(`${item.text}\n\n${hashtags}`);
+    setSelectedTitle(item.text.slice(0, 50));
+    resetStatus();
+  }
+
+  const filteredLibrary = libFilter === 'all'
+    ? SOCIAL_CONTENT
+    : SOCIAL_CONTENT.filter((c: SocialContent) => c.type === libFilter || c.skill === libFilter);
 
   function startVrijePost() {
     setSlides([{ template: 'quote', text: 'Typ hier je tekst', color: '#F59E0B', skill: '', subtitle: '', number: '', items: [] }]);
@@ -270,6 +295,8 @@ export default function InstagramPage() {
           scheduledAt: scheduledDate.toISOString(),
           title: selectedTitle,
           imageUrls,
+          postToFacebook,
+          postAsStory,
         }),
       });
       const data = await res.json();
@@ -344,6 +371,7 @@ export default function InstagramPage() {
               { id: 'blog' as Tab, label: 'Blog', icon: FileText, count: POSTS_LIST.length },
               { id: 'cursussen' as Tab, label: 'Cursussen', icon: BookOpen, count: courses.length },
               { id: 'experience' as Tab, label: 'Experience', icon: Calendar, count: 22 },
+              { id: 'bibliotheek' as Tab, label: 'Bibliotheek', icon: Library, count: SOCIAL_CONTENT.length },
             ]).map((t) => (
               <button
                 key={t.id}
@@ -395,6 +423,35 @@ export default function InstagramPage() {
                   onClick={() => selectExperienceDay(d.dag)}
                 />
               ))}
+            {tab === 'bibliotheek' && (
+              <>
+                <div className="flex flex-wrap gap-1 mb-2">
+                  {['all', 'tip', 'stat', 'didyouknow', 'challenge', 'comparison', 'quote'].map((f) => (
+                    <button
+                      key={f}
+                      onClick={() => setLibFilter(f)}
+                      className="text-[10px] font-bold px-2 py-1 rounded-lg transition-colors"
+                      style={{
+                        backgroundColor: libFilter === f ? '#F59E0B' : 'var(--bg)',
+                        color: libFilter === f ? '#000' : 'var(--text3)',
+                      }}
+                    >
+                      {f === 'all' ? 'Alles' : f === 'tip' ? 'Tips' : f === 'stat' ? 'Stats' : f === 'didyouknow' ? 'Wist je' : f === 'challenge' ? 'Uitdaging' : f === 'comparison' ? 'Vergelijk' : 'Quotes'}
+                    </button>
+                  ))}
+                </div>
+                {filteredLibrary.map((item: SocialContent) => (
+                  <ContentItem
+                    key={item.id}
+                    title={item.text.slice(0, 80) + (item.text.length > 80 ? '...' : '')}
+                    badge={item.skill}
+                    badgeColor={SKILL_COLORS[item.skill] ?? '#F59E0B'}
+                    active={selectedTitle === item.text.slice(0, 50)}
+                    onClick={() => selectLibraryContent(item)}
+                  />
+                ))}
+              </>
+            )}
           </div>
         </div>
 

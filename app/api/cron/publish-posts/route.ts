@@ -1,104 +1,91 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
-import { schedulePost, getScheduledPosts, deleteScheduledPost, updatePostStatus } from '@/lib/instagram-schedule';
+import { getDuePosts, updatePostStatus } from '@/lib/instagram-schedule';
 import { getInstagramToken } from '@/lib/instagram-token';
 import { cacheImageForInstagram, type CachedImage } from '@/lib/instagram-image-cache';
 
+export const maxDuration = 60;
+
+/**
+ * Lightweight cron endpoint that ONLY publishes scheduled posts.
+ * Designed to be called every 15 minutes by an external cron service (e.g. cron-job.org)
+ * since Vercel Hobby only supports daily crons.
+ *
+ * Setup:
+ * - URL: https://devadercoach.nl/api/cron/publish-posts
+ * - Header: Authorization: Bearer {CRON_SECRET}
+ * - Interval: every 15 minutes
+ */
 export async function GET(request: NextRequest) {
-  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
-
-  const posts = await getScheduledPosts();
-  return NextResponse.json({ posts });
-}
-
-export async function POST(request: NextRequest) {
-  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
-
-  const body = await request.json();
-  const { caption, scheduledAt, title, imageUrls, postToFacebook, postAsStory } = body;
-
-  if (!scheduledAt || !imageUrls?.length) {
-    return NextResponse.json({ error: 'scheduledAt en imageUrls zijn verplicht' }, { status: 400 });
+  const cronSecret = process.env.CRON_SECRET;
+  const authHeader = request.headers.get('authorization');
+  if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const post = await schedulePost({
-    type: imageUrls.length > 1 ? 'carousel' : 'single',
-    title: title ?? 'Untitled',
-    caption: caption ?? '',
-    imageUrls,
-    scheduledAt,
-    postToFacebook: !!postToFacebook,
-    postAsStory: !!postAsStory,
-  });
-
-  if (!post) {
-    return NextResponse.json({ error: 'Kon post niet inplannen (Redis niet beschikbaar)' }, { status: 503 });
-  }
-
-  return NextResponse.json({ success: true, post });
-}
-
-export async function PATCH(request: NextRequest) {
-  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
-
-  const { id } = await request.json();
-  if (!id) {
-    return NextResponse.json({ error: 'Post ID is verplicht' }, { status: 400 });
-  }
-
-  const posts = await getScheduledPosts();
-  const post = posts.find((p) => p.id === id);
-  if (!post || post.status !== 'scheduled') {
-    return NextResponse.json({ error: 'Post niet gevonden of al gepubliceerd' }, { status: 404 });
+  const duePosts = await getDuePosts();
+  if (duePosts.length === 0) {
+    return NextResponse.json({ ok: true, published: 0, message: 'Geen posts gepland' });
   }
 
   const accessToken = await getInstagramToken();
   const accountId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
+
   if (!accessToken || !accountId) {
     return NextResponse.json({ error: 'Instagram niet geconfigureerd' }, { status: 500 });
   }
 
-  await updatePostStatus(id, 'posting');
-  try {
-    const cachedImages: CachedImage[] = [];
-    for (const url of post.imageUrls) {
-      cachedImages.push(await cacheImageForInstagram(url));
-    }
-    const cachedUrls = cachedImages.map((c) => c.url);
+  let published = 0;
+  let failed = 0;
 
-    let postId: string;
-    if (cachedUrls.length > 1) {
-      postId = await publishCarousel(accountId, accessToken, cachedUrls, post.caption);
-    } else {
-      postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
-    }
-
-    // Instagram Story (optional)
-    if (post.postAsStory) {
-      try {
-        await publishStory(accountId, accessToken, cachedUrls[0]);
-      } catch {
-        // Story failure should not fail the whole post
+  for (const post of duePosts) {
+    await updatePostStatus(post.id, 'posting');
+    try {
+      // Cache images (returns both URL for Instagram and buffer for Facebook)
+      const cachedImages: CachedImage[] = [];
+      for (const url of post.imageUrls) {
+        cachedImages.push(await cacheImageForInstagram(url));
       }
-    }
+      const cachedUrls = cachedImages.map((c) => c.url);
 
-    // Facebook cross-post (optional)
-    if (post.postToFacebook) {
-      try {
-        await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
-      } catch {
-        // Facebook failure should not fail the whole post
+      // Publish to Instagram feed
+      let postId: string;
+      if (cachedUrls.length > 1) {
+        postId = await publishCarousel(accountId, accessToken, cachedUrls, post.caption);
+      } else {
+        postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
       }
-    }
 
-    await updatePostStatus(id, 'posted', { postId });
-    return NextResponse.json({ success: true, postId });
-  } catch (e) {
-    const errorMsg = e instanceof Error ? e.message : String(e);
-    await updatePostStatus(id, 'failed', { error: errorMsg });
-    return NextResponse.json({ error: errorMsg }, { status: 500 });
+      // Instagram Story (optional)
+      if (post.postAsStory) {
+        try {
+          await publishStory(accountId, accessToken, cachedUrls[0]);
+        } catch {
+          // Story failure should not fail the whole post
+        }
+      }
+
+      // Facebook cross-post (optional)
+      if (post.postToFacebook) {
+        try {
+          await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
+        } catch {
+          // Facebook failure should not fail the whole post
+        }
+      }
+
+      await updatePostStatus(post.id, 'posted', { postId });
+      published++;
+    } catch (e) {
+      const errorMsg = e instanceof Error ? e.message : String(e);
+      await updatePostStatus(post.id, 'failed', { error: errorMsg });
+      failed++;
+    }
   }
+
+  return NextResponse.json({ ok: true, published, failed });
 }
+
+// ── Instagram helpers ────
 
 async function publishSingle(accountId: string, accessToken: string, imageUrl: string, caption: string): Promise<string> {
   const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
@@ -108,7 +95,9 @@ async function publishSingle(accountId: string, accessToken: string, imageUrl: s
   });
   const containerData = await containerRes.json();
   if (containerData.error) throw new Error(containerData.error.message);
+
   await new Promise((resolve) => setTimeout(resolve, 5000));
+
   const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -131,6 +120,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
     if (data.error) throw new Error(`Slide: ${data.error.message}`);
     containerIds.push(data.id);
   }
+
   const carouselRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -138,7 +128,9 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
   });
   const carouselData = await carouselRes.json();
   if (carouselData.error) throw new Error(`Carousel: ${carouselData.error.message}`);
+
   await new Promise((resolve) => setTimeout(resolve, 8000));
+
   const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -187,6 +179,7 @@ async function crossPostToFacebook(buffers: Buffer[], caption: string): Promise<
     return;
   }
 
+  // Multi-image: upload each unpublished, then create album post
   const photoIds: string[] = [];
   for (const buffer of buffers) {
     const formData = new FormData();
@@ -212,16 +205,4 @@ async function crossPostToFacebook(buffers: Buffer[], caption: string): Promise<
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-}
-
-export async function DELETE(request: NextRequest) {
-  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
-
-  const { id } = await request.json();
-  if (!id) {
-    return NextResponse.json({ error: 'Post ID is verplicht' }, { status: 400 });
-  }
-
-  await deleteScheduledPost(id);
-  return NextResponse.json({ success: true });
 }

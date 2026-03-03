@@ -201,7 +201,7 @@ export default function OverPage() {
                 <div>
                   <h3 className="text-sm font-extrabold mb-0.5" style={{ color: 'var(--text)' }}>De Cursussen</h3>
                   <p className="text-sm" style={{ color: 'var(--text3)' }}>
-                    8 verdiepende PDF-werkboeken. Wetenschap, werkbladen en oefeningen per vaardigheid.
+                    10 verdiepende PDF-werkboeken. Wetenschap, werkbladen en oefeningen per vaardigheid.
                   </p>
                 </div>
               </div>

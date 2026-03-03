@@ -50,7 +50,7 @@ export default function VoorwaardenPage() {
           <li><strong style={{ color: 'var(--text)' }}>Gratis snelgids</strong> &ndash; een gratis PDF-download beschikbaar na het achterlaten van je e-mailadres.</li>
           <li><strong style={{ color: 'var(--text)' }}>Digitale cursussen (PDF)</strong> &ndash; betaalde werkboeken over specifieke vaderschapsvaardigheden. Prijzen staan vermeld op de productpagina en zijn inclusief BTW.</li>
           <li><strong style={{ color: 'var(--text)' }}>Vader Experience</strong> &ndash; een betaald 22-daags interactief programma. De prijs staat vermeld op de productpagina en is inclusief BTW.</li>
-          <li><strong style={{ color: 'var(--text)' }}>De Vadercoach app</strong> &ndash; gratis te downloaden. De app biedt dagelijkse oefeningen, voortgang bijhouden en toegang tot aangeschafte content.</li>
+          <li><strong style={{ color: 'var(--text)' }}>De Vadercoach app</strong> &ndash; beschikbaar als eenmalige aankoop. De app biedt dagelijkse oefeningen, trainingen over de 8 vadervaardigheden, voortgang bijhouden en een community van vaders.</li>
           <li><strong style={{ color: 'var(--text)' }}>Blogartikelen en gratis content</strong> &ndash; gratis beschikbaar op de website.</li>
         </ul>
         <p>

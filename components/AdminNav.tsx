@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LayoutDashboard, Instagram, Mail, FileText, Settings, LogOut } from 'lucide-react';
+import { LayoutDashboard, Instagram, Mail, FileText, Receipt, Settings, LogOut } from 'lucide-react';
 
 const LINKS = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/instagram', label: 'Instagram', icon: Instagram },
   { href: '/admin/nieuwsbrief', label: 'Nieuwsbrief', icon: Mail },
   { href: '/admin/blog', label: 'Blog', icon: FileText },
+  { href: '/admin/facturen', label: 'Facturen', icon: Receipt },
   { href: '/admin/instellingen', label: 'Instellingen', icon: Settings },
 ];
 

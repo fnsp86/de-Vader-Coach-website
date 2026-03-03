@@ -18,6 +18,8 @@ export interface ScheduledPost {
   imageUrls: string[];
   scheduledAt: string; // ISO timestamp
   status: 'scheduled' | 'posting' | 'posted' | 'failed';
+  postToFacebook?: boolean;
+  postAsStory?: boolean;
   postId?: string;
   error?: string;
   createdAt: string;

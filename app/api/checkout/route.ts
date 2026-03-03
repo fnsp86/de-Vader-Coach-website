@@ -12,12 +12,15 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Payment not configured' }, { status: 500 });
   }
 
-  const { slug, discountCode } = await request.json();
+  const { slug, email, discountCode } = await request.json();
   const course = getCourse(slug);
 
   if (!course || course.status !== 'available' || !course.pdfPath) {
     return NextResponse.json({ error: 'Course not available' }, { status: 400 });
   }
+
+  // Validate email for invoice
+  const buyerEmail = typeof email === 'string' ? email.trim().toLowerCase() : '';
 
   let finalPrice = course.price;
   let appliedDiscount: string | undefined;
@@ -61,6 +64,7 @@ export async function POST(request: NextRequest) {
       courseTitle: course.title,
       discountCode: appliedDiscount || '',
       originalPrice: course.price.toFixed(2),
+      buyerEmail,
     },
   });
 

@@ -3,7 +3,7 @@ import { getDuePosts, updatePostStatus } from '@/lib/instagram-schedule';
 import { processDripQueue } from '@/lib/automation';
 import { processMonthlyNewsletter } from '@/lib/monthly-newsletter';
 import { getInstagramToken, refreshInstagramToken } from '@/lib/instagram-token';
-import { cacheImageForInstagram } from '@/lib/instagram-image-cache';
+import { cacheImageForInstagram, type CachedImage } from '@/lib/instagram-image-cache';
 
 export const maxDuration = 60;
 
@@ -42,11 +42,11 @@ export async function GET(request: NextRequest) {
           await updatePostStatus(post.id, 'posting');
           try {
             // Cache images to fast static URLs before sending to Instagram
-            const cachedUrls: string[] = [];
+            const cachedImages: CachedImage[] = [];
             for (const url of post.imageUrls) {
-              const cached = await cacheImageForInstagram(url);
-              cachedUrls.push(cached.url);
+              cachedImages.push(await cacheImageForInstagram(url));
             }
+            const cachedUrls = cachedImages.map((c) => c.url);
 
             let postId: string;
             if (cachedUrls.length > 1) {
@@ -54,6 +54,25 @@ export async function GET(request: NextRequest) {
             } else {
               postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
             }
+
+            // Instagram Story (optional)
+            if (post.postAsStory) {
+              try {
+                await publishStory(accountId, accessToken, cachedUrls[0]);
+              } catch {
+                // Story failure should not fail the whole post
+              }
+            }
+
+            // Facebook cross-post (optional)
+            if (post.postToFacebook) {
+              try {
+                await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
+              } catch {
+                // Facebook failure should not fail the whole post
+              }
+            }
+
             await updatePostStatus(post.id, 'posted', { postId });
             published++;
           } catch (e) {
@@ -148,4 +167,69 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
   if (publishData.error) throw new Error(`Publish: ${publishData.error.message}`);
 
   return publishData.id;
+}
+
+async function publishStory(accountId: string, accessToken: string, imageUrl: string): Promise<string> {
+  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ media_type: 'STORIES', image_url: imageUrl, access_token: accessToken }),
+  });
+  const containerData = await containerRes.json();
+  if (containerData.error) throw new Error(containerData.error.message);
+
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
+  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ creation_id: containerData.id, access_token: accessToken }),
+  });
+  const publishData = await publishRes.json();
+  if (publishData.error) throw new Error(publishData.error.message);
+  return publishData.id;
+}
+
+async function crossPostToFacebook(buffers: Buffer[], caption: string): Promise<void> {
+  const pageId = process.env.FACEBOOK_PAGE_ID;
+  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+  if (!pageId || !pageToken) return;
+
+  if (buffers.length === 1) {
+    const formData = new FormData();
+    formData.append('source', new Blob([new Uint8Array(buffers[0])], { type: 'image/png' }), 'post.png');
+    formData.append('message', caption);
+    formData.append('access_token', pageToken);
+
+    const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/photos`, { method: 'POST', body: formData });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message);
+    return;
+  }
+
+  const photoIds: string[] = [];
+  for (const buffer of buffers) {
+    const formData = new FormData();
+    formData.append('source', new Blob([new Uint8Array(buffer)], { type: 'image/png' }), 'post.png');
+    formData.append('published', 'false');
+    formData.append('access_token', pageToken);
+
+    const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/photos`, { method: 'POST', body: formData });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message);
+    photoIds.push(data.id);
+  }
+
+  const params = new URLSearchParams();
+  params.set('message', caption);
+  params.set('access_token', pageToken);
+  photoIds.forEach((id, i) => { params.set(`attached_media[${i}]`, JSON.stringify({ media_fbid: id })); });
+
+  const res = await fetch(`https://graph.facebook.com/v21.0/${pageId}/feed`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: params.toString(),
+  });
+  const data = await res.json();
+  if (data.error) throw new Error(data.error.message);
 }

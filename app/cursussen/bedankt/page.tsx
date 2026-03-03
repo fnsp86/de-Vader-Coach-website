@@ -84,8 +84,11 @@ export default async function BedanktPage({
         Download {course.title}
       </a>
 
-      <p className="text-xs mt-4 mb-12" style={{ color: 'var(--text3)' }}>
+      <p className="text-xs mt-4" style={{ color: 'var(--text3)' }}>
         Bewaar deze pagina. Je kunt de PDF opnieuw downloaden via deze link.
+      </p>
+      <p className="text-xs mt-2 mb-12" style={{ color: 'var(--text3)' }}>
+        Je ontvangt een factuur per e-mail op het adres waarmee je hebt besteld.
       </p>
 
       <div className="rounded-2xl border p-6 text-left" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>

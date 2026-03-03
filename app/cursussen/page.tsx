@@ -70,7 +70,7 @@ export default function CursussenPage() {
         </div>
       </div>
 
-      {/* Alle 8 cursussen */}
+      {/* Alle 10 cursussen */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {courses.map((course) => (
           <CourseCard key={course.slug} {...course} />
@@ -100,8 +100,8 @@ export default function CursussenPage() {
             </p>
             <ul className="space-y-1.5">
               {[
-                'Alle 8 cursussen in een download',
-                '451 pagina\'s, 77 hoofdstukken',
+                'Alle 10 cursussen in een download',
+                '614 pagina\'s, 142 hoofdstukken',
                 'Honderden oefeningen en werkbladen',
                 `${Math.round((1 - BUNDLE.price / BUNDLE.originalPrice) * 100)}% korting ten opzichte van losse aankoop`,
               ].map((item) => (
@@ -120,7 +120,7 @@ export default function CursussenPage() {
               &euro;{BUNDLE.price.toFixed(2).replace('.', ',')}
             </div>
             <div className="text-xs mb-4" style={{ color: 'var(--text3)' }}>
-              8 cursussen &middot; eenmalige betaling
+              10 cursussen &middot; eenmalige betaling
             </div>
             <div
               className="px-6 py-3 rounded-xl text-sm font-bold text-center"
@@ -252,7 +252,7 @@ export default function CursussenPage() {
             '@context': 'https://schema.org',
             '@type': 'ItemList',
             name: 'Opvoedcursussen voor Vaders',
-            description: 'Online opvoedcursussen speciaal voor vaders. 8 PDF-werkboeken, wetenschappelijk onderbouwd.',
+            description: 'Online opvoedcursussen speciaal voor vaders. 10 PDF-werkboeken, wetenschappelijk onderbouwd.',
             numberOfItems: courses.length,
             itemListElement: courses.map((course, index) => ({
               '@type': 'ListItem',

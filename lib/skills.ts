@@ -79,7 +79,7 @@ export const SKILLS: Skill[] = [
     color: SKILL_COLORS.Reflectie,
     tagline: 'Leren van je eigen patronen',
     description:
-      'De manier waarop jij bent opgevoed, beinvloedt hoe jij opvoedt. Reflectie is de vaardigheid om je eigen patronen te herkennen, te begrijpen waar ze vandaan komen, en bewust te kiezen welke je wilt doorgeven en welke je wilt doorbreken.',
+      'De manier waarop jij bent opgevoed, beïnvloedt hoe jij opvoedt. Reflectie is de vaardigheid om je eigen patronen te herkennen, te begrijpen waar ze vandaan komen, en bewust te kiezen welke je wilt doorgeven en welke je wilt doorbreken.',
     icon: 'Brain',
   },
 ];

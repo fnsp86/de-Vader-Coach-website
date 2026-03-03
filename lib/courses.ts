@@ -35,12 +35,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Twee minuten echte aandacht doet meer dan een uur half aanwezig zijn. Deze cursus leert je de wetenschap achter aanwezigheid, hechting en hersenontwikkeling. Met 20+ micro-oefeningen die je vandaag nog kunt toepassen.',
     price: 14.95,
-    pages: 63,
+    pages: 62,
     category: 'Aanwezigheid',
     color: SKILL_COLORS.Aanwezigheid,
     icon: 'Eye',
     status: 'coming-soon',
-    features: ["63 pagina's", '10 hoofdstukken', '20+ micro-oefeningen', 'Werkbladen & reflectieopdrachten'],
+    features: ["62 pagina's", '14 hoofdstukken', '20+ micro-oefeningen', 'Werkbladen & reflectieopdrachten'],
     learnPoints: [
       'De wetenschap achter aanwezigheid en hechting',
       'Jouw aanwezigheidsstijl herkennen',
@@ -61,21 +61,21 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Wanneer je zegt "ik zie dat je verdrietig bent" gebeurt er iets in het brein van je kind: de amygdala kalmeert, de prefrontale cortex wordt actiever. Deze cursus leert je de 5 stappen van emotiecoaching, van driftbuien tot verdriet.',
     price: 11.95,
-    pages: 51,
+    pages: 50,
     category: 'Emotiecoaching',
     color: SKILL_COLORS.Emotiecoaching,
     icon: 'Heart',
     status: 'coming-soon',
-    features: ["51 pagina's", '10 hoofdstukken', 'Gottman 5-stappen methode', 'Gevoelsthermometer & werkbladen'],
+    features: ["50 pagina's", '14 hoofdstukken', 'Gottman 5-stappen methode', 'Gevoelsthermometer & werkbladen'],
     learnPoints: [
       'Emoties herkennen en benoemen bij je kind',
       'De 5 stappen van emotiecoaching (Gottman)',
       'Omgaan met driftbuien, angst en verdriet',
-      'Emotiecoaching per leeftijd (0-18)',
+      'Emotiecoaching per leeftijd (0-12)',
       'De emotionele band versterken',
     ],
     forWho: [
-      'Vaders van kinderen 0-18 jaar',
+      'Vaders van kinderen 0-12 jaar',
       'Vaders die moeite hebben met driftbuien',
       'Vaders die hun kind beter willen begrijpen',
     ],
@@ -86,12 +86,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Kalmte is trainbaar. Deze cursus leert je de wetenschap achter je stressreacties, geeft je ademhalingstechnieken, helpt je triggers herkennen en bouwt een noodplan voor moeilijke momenten. Want jouw kalmte is het krachtigste opvoedingsmiddel dat je hebt.',
     price: 14.95,
-    pages: 83,
+    pages: 82,
     category: 'Zelfregulatie',
     color: SKILL_COLORS.Zelfregulatie,
     icon: 'Waves',
     status: 'coming-soon',
-    features: ["83 pagina's", '12 hoofdstukken', 'Ademhalingstechnieken', 'Triggeranalyse & noodplan'],
+    features: ["82 pagina's", '17 hoofdstukken', 'Ademhalingstechnieken', 'Triggeranalyse & noodplan'],
     learnPoints: [
       'Wat er in je brein gebeurt als je boos wordt',
       'Je persoonlijke triggers herkennen',
@@ -111,12 +111,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Goede grenzen zijn Kort, Warm en Helder. Deze cursus leert je de wetenschap achter grenzen, helpt je jouw grensstijl herkennen en geeft concrete scripts per leeftijd. Niet streng of lief, maar streng en lief.',
     price: 12.95,
-    pages: 64,
+    pages: 63,
     category: 'Grenzen',
     color: SKILL_COLORS.Grenzen,
     icon: 'Shield',
     status: 'coming-soon',
-    features: ["64 pagina's", '10 hoofdstukken', 'KWH-formule & scripts', 'Leeftijdsspecifieke tips (2-18)'],
+    features: ["63 pagina's", '14 hoofdstukken', 'KWH-formule & scripts', 'Leeftijdsspecifieke tips (2-12)'],
     learnPoints: [
       'De KWH-formule: Kort, Warm, Helder',
       'Grenzen stellen zonder schreeuwen',
@@ -136,12 +136,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'De paradox van het vaderschap: je instinct zegt beschermen, maar je kind heeft ruimte nodig. Deze cursus leert je de wetenschap achter autonomie, helpt je jouw loslaatstijl herkennen en geeft concrete handvatten per leeftijd.',
     price: 11.95,
-    pages: 47,
+    pages: 46,
     category: 'Autonomie',
     color: SKILL_COLORS.Autonomie,
     icon: 'Sprout',
     status: 'coming-soon',
-    features: ["47 pagina's", '10 hoofdstukken', 'Zelfdeterminatietheorie', 'Loslaatstijl-analyse'],
+    features: ["46 pagina's", '14 hoofdstukken', 'Zelfdeterminatietheorie', 'Loslaatstijl-analyse'],
     learnPoints: [
       'De wetenschap achter autonomie en motivatie',
       'Jouw loslaatstijl herkennen',
@@ -161,12 +161,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Het verschil tussen een veilige en onveilige hechting zit niet in het voorkomen van breuken, maar in het herstellen ervan. Deze cursus leert je de anatomie van een echte verontschuldiging, leeftijdsgerichte herstelgesprekken en hoe je patronen doorbreekt.',
     price: 12.95,
-    pages: 72,
+    pages: 71,
     category: 'Herstel',
     color: SKILL_COLORS.Herstel,
     icon: 'RefreshCw',
     status: 'coming-soon',
-    features: ["72 pagina's", '11 hoofdstukken', '5-stappen verontschuldiging', 'Herstelgesprekken per leeftijd'],
+    features: ["71 pagina's", '15 hoofdstukken', '5-stappen verontschuldiging', 'Herstelgesprekken per leeftijd'],
     learnPoints: [
       'Waarom herstel belangrijker is dan perfectie',
       'De 5 stappen van een echte verontschuldiging',
@@ -186,12 +186,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Je tiener duwt je weg. Dat hoort erbij. Maar hij heeft je nog steeds nodig. Deze cursus leert je de wetenschap achter het tienerbrein, communicatietechnieken die wel werken, en hoe je verbinding houdt - ook als het moeilijk is.',
     price: 12.95,
-    pages: 61,
+    pages: 60,
     category: 'Verbinding',
     color: SKILL_COLORS.Verbinding,
     icon: 'Handshake',
     status: 'coming-soon',
-    features: ["61 pagina's", '11 hoofdstukken', 'Zij-aan-zij gesprekstechniek', 'Tienerbrein-wetenschap'],
+    features: ["60 pagina's", '11 hoofdstukken', 'Zij-aan-zij gesprekstechniek', 'Tienerbrein-wetenschap'],
     learnPoints: [
       'Waarom je tiener je wegduwt (en dat het normaal is)',
       'Het zij-aan-zij gesprek: communicatie die werkt',
@@ -211,12 +211,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'De vader die begrijpt waarom hij boos wordt, is al aan het veranderen. Deze cursus leert je reflectief functioneren: je eigen patronen herkennen, begrijpen waar ze vandaan komen, en bewust kiezen wie je als vader wilt zijn.',
     price: 9.95,
-    pages: 40,
+    pages: 39,
     category: 'Reflectie',
     color: SKILL_COLORS.Reflectie,
     icon: 'Brain',
     status: 'coming-soon',
-    features: ["40 pagina's", '8 hoofdstukken', 'Reflectief functioneren (Fonagy)', 'Weekreflectie-systeem'],
+    features: ["39 pagina's", '13 hoofdstukken', 'Reflectief functioneren (Fonagy)', 'Weekreflectie-systeem'],
     learnPoints: [
       'Reflectief functioneren: jezelf observeren als buitenstaander',
       'Intergenerationele patronen herkennen',
@@ -236,12 +236,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Je kind luistert niet, escaleert, slaat erop los of weigert naar school te gaan. Is dit een fase, of is er meer aan de hand? Deze cursus helpt je gedragsproblemen herkennen, het brein erachter begrijpen, en geeft je bewezen strategieën om je kind te helpen zonder de relatie te verliezen.',
     price: 14.95,
-    pages: 66,
+    pages: 65,
     category: 'Gedrag',
     color: SKILL_COLORS.Gedrag,
     icon: 'Shield',
     status: 'coming-soon',
-    features: ["66 pagina's", '10 hoofdstukken', 'Ross Greene CPS-methode', 'Gedragsplan & werkbladen'],
+    features: ["65 pagina's", '15 hoofdstukken', 'Ross Greene CPS-methode', 'Gedragsplan & werkbladen'],
     learnPoints: [
       'Normaal gedrag onderscheiden van gedragsproblemen',
       'ADHD, ODD en gedragsstoornissen begrijpen als vader',
@@ -263,12 +263,12 @@ export const COURSES: Record<string, Course> = {
     longDescription:
       'Een op de drie Nederlandse kinderen maakt een scheiding mee. Voor vaders verandert alles: je ziet je kind minder, moet samenwerken met je ex, en worstelt met schuldgevoel. Deze cursus helpt je een betrokken, stabiele vader te blijven, ongeacht de situatie met je ex.',
     price: 14.95,
-    pages: 77,
+    pages: 76,
     category: 'Scheiding',
     color: SKILL_COLORS.Scheiding,
     icon: 'Heart',
     status: 'coming-soon',
-    features: ["77 pagina's", '10 hoofdstukken', 'Co-ouderschap communicatie', 'Twee-huizen werkbladen'],
+    features: ["76 pagina's", '15 hoofdstukken', 'Co-ouderschap communicatie', 'Twee-huizen werkbladen'],
     learnPoints: [
       'Je rol als vader herdefiniëren na de scheiding',
       'De scheiding uitleggen per leeftijdsfase',
@@ -288,7 +288,7 @@ export const COURSES: Record<string, Course> = {
 
 export const BUNDLE = {
   title: 'Het Complete Vaderpakket',
-  description: 'Alle 10 cursussen in een pakket. 624 pagina\'s, 102 hoofdstukken, honderden oefeningen.',
+  description: 'Alle 10 cursussen in een pakket. 614 pagina\'s, 142 hoofdstukken, honderden oefeningen.',
   originalPrice: 131.60,
   price: 89.95,
   status: 'coming-soon' as const,

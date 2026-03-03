@@ -74,7 +74,6 @@ const appSchema = {
     'Dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders.',
   offers: {
     '@type': 'Offer',
-    price: '0',
     priceCurrency: 'EUR',
     availability: 'https://schema.org/PreOrder',
   },
