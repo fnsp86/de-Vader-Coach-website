@@ -3,11 +3,13 @@
 import { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
+const THEME_KEY = 'vc-theme';
+
 export default function ThemeToggle() {
   const [light, setLight] = useState(true);
 
   useEffect(() => {
-    const stored = localStorage.getItem('theme');
+    const stored = localStorage.getItem(THEME_KEY);
     if (stored === 'dark') {
       setLight(false);
       document.documentElement.classList.add('dark');
@@ -22,10 +24,10 @@ export default function ThemeToggle() {
     setLight(next);
     if (next) {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      localStorage.setItem(THEME_KEY, 'light');
     } else {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      localStorage.setItem(THEME_KEY, 'dark');
     }
   }
 
