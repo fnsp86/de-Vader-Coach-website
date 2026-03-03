@@ -598,6 +598,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Wat is De Vadercoach?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'De Vadercoach biedt persoonlijke ontwikkeling voor vaders, met 8 wetenschappelijk onderbouwde opvoedvaardigheden. Via cursussen, een 22-daagse Experience en een app leer je vaardigheden als emotiecoaching, zelfregulatie en grenzen stellen.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Voor welke leeftijd zijn de cursussen geschikt?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'De cursussen zijn geschikt voor vaders met kinderen van 0 tot 18 jaar. Elke cursus bevat leeftijdsspecifieke oefeningen en voorbeelden voor peuters, kleuters, basisschoolkinderen en tieners.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Zijn de cursussen wetenschappelijk onderbouwd?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ja. Alle cursussen zijn gebaseerd op bewezen theorieën zoals de hechtingstheorie (Bowlby), emotiecoaching (Gottman), zelfdeterminatietheorie (Deci & Ryan), reflectief functioneren (Fonagy) en de polyvagaaltheorie (Porges). De wetenschap wordt vertaald naar herkenbare dagelijkse situaties.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Wat is de Vader Experience?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'De Vader Experience is een 22-daagse reis door alle 8 opvoedvaardigheden. Elke dag bevat een herkenbaar scenario, concrete acties en een reflectiemoment. Je werkt op je eigen tempo en krijgt dagelijks een nieuwe uitdaging.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Heb ik een abonnement nodig?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Nee. Alle producten van De Vadercoach zijn eenmalige aankopen. Je betaalt een keer en krijgt permanent toegang. Er zijn geen maandelijkse kosten of verborgen abonnementen.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* WebSite Schema for sitelinks search */}
       <script
         type="application/ld+json"

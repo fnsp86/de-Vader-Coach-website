@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, Clock, User, BookOpen, Download, ArrowRight } from 'lucide-react';
+import { ChevronRight, Clock, User, BookOpen, Download, ArrowRight, ArrowLeft } from 'lucide-react';
 import { SKILL_COLORS, getAllCourses, SNELGIDS } from '@/lib/courses';
 import { getBlogPostAsync, getAllBlogPostsAsync } from '@/lib/blog-posts-server';
 import ShareButtons from '@/components/ShareButtons';
@@ -16,6 +16,11 @@ const DEFAULT_POST = {
   category: '',
   content: 'Dit artikel is nog niet beschikbaar. Kom binnenkort terug!',
 };
+
+export async function generateStaticParams() {
+  const posts = await getAllBlogPostsAsync();
+  return posts.map((p) => ({ slug: p.slug }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -52,6 +57,11 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
     .filter((p) => p.slug !== slug)
     .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
     .slice(0, 3);
+
+  // Prev/next navigation (chronological order)
+  const currentIndex = allPosts.findIndex((p) => p.slug === slug);
+  const newerPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const olderPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   // Simple markdown-to-html
   const htmlContent = post.content
@@ -109,14 +119,13 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <Link
-        href="/blog"
-        className="inline-flex items-center gap-1.5 text-sm font-semibold mb-8 hover:gap-2.5 transition-all"
-        style={{ color: 'var(--text3)' }}
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Alle artikelen
-      </Link>
+      <nav className="flex items-center gap-1.5 text-[13px] mb-8" style={{ color: 'var(--text3)' }}>
+        <Link href="/" className="hover:underline">Home</Link>
+        <ChevronRight className="h-3 w-3" />
+        <Link href="/blog" className="hover:underline">Blog</Link>
+        <ChevronRight className="h-3 w-3" />
+        <span className="truncate max-w-[200px]" style={{ color: 'var(--text2)' }}>{post.title}</span>
+      </nav>
 
       <article>
         <div className="mb-8">
@@ -267,6 +276,36 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
               );
             })}
           </div>
+        </div>
+      )}
+
+      {/* Prev / Next navigation */}
+      {(olderPost || newerPost) && (
+        <div className="mt-12 pt-8 border-t grid grid-cols-2 gap-4" style={{ borderColor: 'var(--border)' }}>
+          {olderPost ? (
+            <Link
+              href={`/blog/${olderPost.slug}`}
+              className="flex items-start gap-2 group"
+            >
+              <ArrowLeft className="h-4 w-4 mt-0.5 shrink-0 transition-transform group-hover:-translate-x-0.5" style={{ color: 'var(--text3)' }} />
+              <div>
+                <span className="text-[11px] font-semibold block mb-0.5" style={{ color: 'var(--text3)' }}>Vorig artikel</span>
+                <span className="text-sm font-bold line-clamp-2" style={{ color: 'var(--text2)' }}>{olderPost.title}</span>
+              </div>
+            </Link>
+          ) : <div />}
+          {newerPost ? (
+            <Link
+              href={`/blog/${newerPost.slug}`}
+              className="flex items-start gap-2 text-right ml-auto group"
+            >
+              <div>
+                <span className="text-[11px] font-semibold block mb-0.5" style={{ color: 'var(--text3)' }}>Volgend artikel</span>
+                <span className="text-sm font-bold line-clamp-2" style={{ color: 'var(--text2)' }}>{newerPost.title}</span>
+              </div>
+              <ArrowRight className="h-4 w-4 mt-0.5 shrink-0 transition-transform group-hover:translate-x-0.5" style={{ color: 'var(--text3)' }} />
+            </Link>
+          ) : <div />}
         </div>
       )}
     </div>

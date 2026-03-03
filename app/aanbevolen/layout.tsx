@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       'Onze favoriete opvoedboeken, tools en cursussen per vaardigheid. Voor vaders die willen groeien.',
   },
+  alternates: {
+    canonical: 'https://devadercoach.nl/aanbevolen',
+  },
 };
 
 export default function AanbevolenLayout({ children }: { children: React.ReactNode }) {

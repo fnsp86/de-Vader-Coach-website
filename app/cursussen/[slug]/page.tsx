@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   Eye, Heart, Waves, Shield, Sprout, RefreshCw, Handshake, Brain,
-  BookOpen, Check, ArrowLeft, FileText, ShieldCheck,
+  BookOpen, Check, ChevronRight, FileText, ShieldCheck,
 } from 'lucide-react';
 import { COURSES, type Course } from '@/lib/courses';
 import BuyButton from '@/components/BuyButton';
@@ -25,6 +25,10 @@ const DEFAULT_COURSE: Course = {
   learnPoints: [],
   forWho: [],
 };
+
+export function generateStaticParams() {
+  return Object.keys(COURSES).map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -52,14 +56,13 @@ export default async function CoursePage({ params }: { params: Promise<{ slug: s
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-      <Link
-        href="/cursussen"
-        className="inline-flex items-center gap-1.5 text-sm font-semibold mb-8 hover:gap-2.5 transition-all"
-        style={{ color: 'var(--text3)' }}
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Alle cursussen
-      </Link>
+      <nav className="flex items-center gap-1.5 text-[13px] mb-8" style={{ color: 'var(--text3)' }}>
+        <Link href="/" className="hover:underline">Home</Link>
+        <ChevronRight className="h-3 w-3" />
+        <Link href="/cursussen" className="hover:underline">Cursussen</Link>
+        <ChevronRight className="h-3 w-3" />
+        <span className="truncate max-w-[200px]" style={{ color: 'var(--text2)' }}>{course.title}</span>
+      </nav>
 
       {/* Header */}
       <div className="flex items-start gap-4 mb-6">

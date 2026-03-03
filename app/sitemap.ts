@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { POSTS_LIST } from '@/lib/blog-posts';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
+import { SKILLS } from '@/lib/skills';
 
 const BASE = 'https://devadercoach.nl';
 
@@ -42,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/over`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/app-download`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/aanbevolen`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${BASE}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE}/voorwaarden`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
@@ -94,5 +96,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
-  return [...staticPages, ...coursePages, ...blogPages, ...dynamicBlogPages, ...experiencePages, ...guidePages];
+  const skillPages: MetadataRoute.Sitemap = [
+    { url: `${BASE}/vaardigheid`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.8 },
+    ...SKILLS.map((skill) => ({
+      url: `${BASE}/vaardigheid/${skill.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+
+  return [...staticPages, ...coursePages, ...blogPages, ...dynamicBlogPages, ...experiencePages, ...guidePages, ...skillPages];
 }

@@ -24,13 +24,13 @@ Deze cursus is gebaseerd op de Gottman-methode, moderne ontwikkelingspsychologie
 - Jouw eigen emoties reguleren als vader
 
 **Voor wie:**
-- Vaders van kinderen 0–12 jaar
+- Vaders van kinderen 0-12 jaar
 - Vaders die moeite hebben met driftbuien
 - Vaders die hun kind beter willen begrijpen
 - Vaders die een hechtere band willen opbouwen
 
 **Hoe je deze cursus gebruikt:**
-Lees elk hoofdstuk op je eigen tempo. Doe de oefeningen. Vul de werkbladen in. En het allerbelangrijkste: wees geduldig met jezelf. Je hoeft dit niet in één keer perfect te doen. Elke kleine stap telt.
+Lees elk hoofdstuk op je eigen tempo. Doe de oefeningen. Vul de werkbladen in. En het allerbelangrijkste: wees geduldig met jezelf. Je hoeft dit niet in een keer perfect te doen. Elke kleine stap telt.
 
 ---
 
@@ -43,9 +43,13 @@ Lees elk hoofdstuk op je eigen tempo. Doe de oefeningen. Vul de werkbladen in. E
 5. **Verdriet & Teleurstelling** | Ruimte maken voor pijn
 6. **Angst & Onzekerheid** | Veiligheid bieden zonder te fixen
 7. **Emotiecoaching per Leeftijd** | Van baby tot puber
-8. **Jouw Eigen Emoties als Vader** | De spiegel durven kijken
-9. **Werkbladen & Opdrachten** | Aan de slag
-10. **Bronnen & Verder Lezen**
+8. **Emotiecoaching bij Specifieke Diagnoses** | ADHD, autisme en hooggevoeligheid
+9. **Emotiecoaching tussen Broers en Zussen** | Conflicten als leermomenten
+10. **De Rol van Humor in Emotiecoaching** | Wanneer lachen helpt en wanneer niet
+11. **Emotiecoaching en Genderverschillen** | Voorbij de stereotypen
+12. **Jouw Eigen Emoties als Vader** | De spiegel durven kijken
+13. **Werkbladen & Opdrachten** | Aan de slag
+14. **Bronnen & Verder Lezen**
 
 ---
 
@@ -57,7 +61,7 @@ Stel je dit voor. Je zoon van 5 komt huilend binnen. Zijn toren van blokken is o
 
 **Vader A zegt:** *"Niet huilen, het is maar een toren. Bouw gewoon een nieuwe."*
 
-**Vader B zegt:** *"Hé, je bent echt boos dat je toren is omgevallen. Daar had je lang aan gewerkt, hè?"*
+**Vader B zegt:** *"He, je bent echt boos dat je toren is omgevallen. Daar had je lang aan gewerkt, he?"*
 
 Beide vaders willen het beste voor hun kind. Maar het effect is fundamenteel anders.
 
@@ -148,10 +152,10 @@ Neem een moment. Denk aan de afgelopen week.
 
 **Welke opvoedstijl herken je het meest bij jezelf?**
 
-☐ Afwijzend: "Niet huilen, er is niks aan de hand"
-☐ Afkeurend: "Stel je niet zo aan"
-☐ Laissez-faire: "Het komt wel goed, laat maar"
-☐ Emotie-coach: "Ik zie dat je boos/verdrietig bent"
+- Afwijzend: "Niet huilen, er is niks aan de hand"
+- Afkeurend: "Stel je niet zo aan"
+- Laissez-faire: "Het komt wel goed, laat maar"
+- Emotie-coach: "Ik zie dat je boos/verdrietig bent"
 
 **Schrijf op:** Beschrijf een recent moment waarop je kind emotioneel was. Hoe reageerde je? Hoe had je willen reageren?
 
@@ -203,7 +207,7 @@ Dit is belangrijk. Hoe jouw ouders met jouw emoties omgingen, vormt, bewust of o
 
 # Hoofdstuk 2: Het Brein van je Kind
 
-## Waarom je kind niet 'moeilijk doet'
+## Waarom je kind niet "moeilijk doet"
 
 Je dochter van 3 gooit krijsend haar bord van tafel omdat ze geen toetje krijgt. Je zoon van 7 schreeuwt dat hij je haat omdat hij niet op zijn iPad mag. Je peuter bijt een ander kind in de speeltuin.
 
@@ -211,94 +215,31 @@ Het is verleidelijk om te denken: *dit kind doet het expres. Hij moet leren dat 
 
 Maar de neurowetenschappen vertellen een ander verhaal.
 
-## Het tweelagenbrein
+## Waarom je kind niet kan luisteren als het overstuur is
 
-Daniel Siegel, kinderpsychiater en neurowetenschapper, gebruikt een eenvoudig model dat alles verandert: het **tweelagenbrein**.
+Het denkende deel van het brein (de prefrontale cortex) is bij jonge kinderen nog volop in ontwikkeling. In de cursus *Zelfregulatie als Vader* lees je uitgebreid hoe het brein werkt onder stress. De kern voor emotiecoaching: wanneer je kind sterke emoties ervaart, schakelt het denkende brein uit. Je kind **kan** op dat moment niet logisch nadenken. Het is geen kwestie van **willen**, het is een kwestie van **kunnen**.
 
-### De benedenverdieping: het emotionele brein
+## Het emotionele geheugen van je kind
 
-De onderste laag van het brein, de **amygdala** en het **limbisch systeem**  is verantwoordelijk voor:
-- Basisemoties (angst, woede, verdriet, vreugde)
-- Fight-flight-freeze reacties
-- Overleven
+Wat veel vaders niet weten: elk emotioneel moment met je kind wordt opgeslagen. Niet als een herinnering in woorden, maar als een lichamelijke ervaring. Psycholoog Jaak Panksepp noemde dit het "affectieve geheugen" - een diepere laag dan het bewuste geheugen, opgeslagen in het limbische systeem.
 
-Dit deel is **al actief vanaf de geboorte**. Je baby van 3 maanden heeft al een volledig werkende amygdala.
+Je driejarige onthoudt niet wat je zei toen hij huilde om dat toetje. Maar zijn zenuwstelsel onthoudt wel **hoe het voelde**. Werd hij gekalmeerd of weggestuurd? Werd zijn verdriet erkend of afgewezen? Die lichamelijke herinnering vormt een blauwdruk: *als ik verdrietig ben, gebeurt er dit.*
 
-### De bovenverdieping: het denkende brein
+Dit werkt twee kanten op:
 
-De bovenste laag, de **prefrontale cortex (PFC)**  is verantwoordelijk voor:
-- Logisch denken
-- Impulscontrole
-- Empathie
-- Plannen maken
-- Consequenties overzien
+**Positief emotioneel geheugen:** Als je kind herhaaldelijk ervaart dat zijn emoties welkom zijn, dat papa kalm blijft en helpt, ontwikkelt het een innerlijk model dat zegt: *emoties zijn veilig. Er is iemand die helpt.* Dit kind zal later makkelijker om hulp vragen, zijn emoties beter herkennen en sneller herstellen na tegenslag.
 
-En hier komt het cruciale inzicht: **dit deel is pas volledig ontwikkeld rond het 25e levensjaar.**
+**Negatief emotioneel geheugen:** Als je kind herhaaldelijk ervaart dat emoties worden afgestraft, genegeerd of belachelijk gemaakt, ontwikkelt het een ander model: *emoties zijn gevaarlijk. Ik moet ze verstoppen.* Dit kind leert zijn gevoelens te onderdrukken, wat later kan leiden tot angst, woede-uitbarstingen of moeite met intimiteit.
 
-Bij een kind van 3 is de PFC nauwelijks functioneel. Bij een kind van 7 werkt het nog maar gedeeltelijk. Zelfs bij een tiener van 15 is het nog volop in aanbouw.
-
-## De emotionele kaping
-
-Wanneer een kind sterke emoties ervaart, gebeurt er iets in het brein dat Siegel een **"emotionele kaping"** noemt. De amygdala neemt het over. De prefrontale cortex gaat offline.
-
-Dit betekent letterlijk:
-- Je kind **kan** niet logisch nadenken
-- Je kind **kan** niet luisteren naar redelijke argumenten
-- Je kind **kan** zijn impulsen niet beheersen
-
-Het is geen kwestie van **willen**  het is een kwestie van **kunnen**.
-
-Wanneer jij tegen je huilende driejarige zegt: *"Doe normaal, het is maar een toetje"*, probeer je de bovenverdieping aan te spreken. Maar er is niemand thuis. De benedenverdieping heeft alle deuren op slot gedaan.
-
-> *"Je kunt niet praten met een brein dat in paniek is. Eerst kalmeren, dan pas communiceren."*
-> Daniel Siegel
+Het krachtige hieraan: jij schrijft op dit moment mee aan die blauwdruk. Elke keer dat je de emotie van je kind benoemt in plaats van bestraft, voeg je een positieve ervaring toe. Niet perfect, niet elke keer, maar vaak genoeg om het patroon te vormen.
 
 ## Co-regulatie: jouw rust is het medicijn
 
-Hier komt de sleutel. Jonge kinderen kunnen hun eigen emoties niet reguleren. Ze hebben jouw brein nodig om hun brein te kalmeren. Dit heet **co-regulatie**.
-
-Hoe werkt het?
-
-1. Jij blijft kalm (je eigen PFC blijft online)
-2. Jouw kalmte wordt via spiegelneuronen overgedragen op je kind
-3. Het stressniveau van je kind daalt
-4. De amygdala kalmeert
-5. De PFC komt langzaam weer online
-6. Nu pas kan je kind nadenken, praten, luisteren
-
-Dit is geen theorie. Dit is meetbaar. Onderzoek van Ruth Feldman (2007) toont aan dat de hartslag van kinderen zich letterlijk synchroniseert met die van hun ouders. Als jij kalm bent, kalmeert je kind. Als jij escaleert, escaleert je kind.
-
-**Jouw rust is het medicijn voor je kind.**
+Jonge kinderen kunnen hun eigen emoties niet reguleren. Ze hebben jouw brein nodig om hun brein te kalmeren. Dit heet co-regulatie. Onderzoek van Ruth Feldman (2007) toont aan dat de hartslag van kinderen zich letterlijk synchroniseert met die van hun ouders. Als jij kalm bent, kalmeert je kind. Als jij escaleert, escaleert je kind. Jouw rust is het medicijn voor je kind. De cursus *Aanwezig Vaderschap* behandelt co-regulatie uitgebreid.
 
 ## Het raam van verdraagzaamheid
 
-Elke mens, ook jij, heeft een **"window of tolerance"**: een zone waarbinnen je emoties kunt voelen en er rationeel mee kunt omgaan. Bij kinderen is dit raam veel smaller dan bij volwassenen.
-
-```
-╔══════════════════════════════════════════╗
-║  WINDOW OF TOLERANCE                     ║
-╠══════════════════════════════════════════╣
-║                                          ║
-║  Te hoog (hyperarousal)                  ║
-║  Schreeuwen, slaan, gillen              ║
-║  Rennen, hyperactiviteit                ║
-║                                          ║
-║  ═══════ BOVENGRENS ═══════             ║
-║                                          ║
-║  WINDOW OF TOLERANCE                     ║
-║  Hier kan je kind denken,               ║
-║  voelen, leren, luisteren               ║
-║                                          ║
-║  ═══════ ONDERGRENS ═══════             ║
-║                                          ║
-║  Terugtrekken, afsluiten               ║
-║  Niet reageren, bevriezen               ║
-║  Te laag (hypoarousal)                  ║
-║                                          ║
-╚══════════════════════════════════════════╝
-```
-
-Wanneer je kind buiten het raam schiet, door woede, angst, verdriet of overprikkeling, is de eerste taak altijd: **terug in het raam brengen**. Pas daarna kun je praten, uitleggen of grenzen stellen.
+Elke mens heeft een zone waarbinnen hij emoties kan voelen en er rationeel mee kan omgaan. Bij kinderen is die zone veel smaller dan bij volwassenen. Wanneer je kind buiten die zone schiet, door woede, angst, verdriet of overprikkeling, is de eerste taak altijd: **terug in die zone brengen**. Pas daarna kun je praten, uitleggen of grenzen stellen. Het concept Window of Tolerance wordt uitgebreid behandeld in de cursus *Zelfregulatie als Vader*.
 
 ---
 
@@ -310,40 +251,15 @@ Denk aan het laatste emotionele moment van je kind. Beantwoord deze vragen:
 
 .......................................................................
 
-**Was je kind in de benedenverdieping (emotioneel brein) of bovenverdieping (denkend brein)?**
+**Was het denkende brein van je kind uitgeschakeld, of kon je kind nog nadenken?**
 
 .......................................................................
 
-**Sprak jij de bovenverdieping aan? (bijv. "Doe normaal", "Denk eens na")**
+**Probeerde jij het denkende brein aan te spreken? (bijv. "Doe normaal", "Denk eens na")**
 
 .......................................................................
 
-**Wat had je kunnen doen om eerst de benedenverdieping te kalmeren?**
-
-.......................................................................
-
----
-
-### Oefening 2.2: Jouw Window of Tolerance
-
-Jij hebt ook een raam van verdraagzaamheid. Wanneer word jij als vader uit je raam geduwd?
-
-**Ik word getriggerd door:** (kies wat van toepassing is)
-
-☐ Gillen / schreeuwen
-☐ Niet luisteren na herhaald vragen
-☐ Slaan / schoppen / bijten
-☐ Huilen dat niet stopt
-☐ Brutaal / onrespectful gedrag
-☐ Ruzie tussen kinderen
-☐ Vermoeidheid + emotioneel kind
-☐ Anders: ...............................
-
-**Als ik uit mijn raam ga, dan ik:**
-
-.......................................................................
-
-**Eén ding dat me helpt terug te komen:**
+**Wat had je kunnen doen om je kind eerst te kalmeren?**
 
 .......................................................................
 
@@ -353,18 +269,18 @@ Jij hebt ook een raam van verdraagzaamheid. Wanneer word jij als vader uit je ra
 
 ## De Gottman-methode in de praktijk
 
-John Gottman destilleerde emotiecoaching tot vijf concrete stappen. Dit is het hart van deze cursus. Leer deze stappen, oefen ze, en je zult merken dat emotionele momenten steeds minder een slagveld zijn: en steeds meer een kans om te verbinden.
+John Gottman destilleerde emotiecoaching tot vijf concrete stappen. Dit is het hart van deze cursus. Leer deze stappen, oefen ze, en je zult merken dat emotionele momenten steeds minder een slagveld zijn en steeds meer een kans om te verbinden.
 
 ## Stap 1: Herken de emotie
 
 Voordat je kunt reageren, moet je eerst **opmerken** dat je kind iets voelt. Dat klinkt simpel, maar het is verraderlijk makkelijk om emoties te missen.
 
-**Signalen bij jonge kinderen (0–5 jaar):**
+**Signalen bij jonge kinderen (0-5 jaar):**
 - Fysiek: rode wangen, gebalde vuisten, trillende lip, stijf lichaam
 - Gedrag: terugtrekken, klampgedrag, spullen gooien, niet willen eten
 - Geluid: jammeren, piepen, schreeuwlach (overprikkeling)
 
-**Signalen bij oudere kinderen (6–12 jaar):**
+**Signalen bij oudere kinderen (6-12 jaar):**
 - Verbaal: korte antwoorden, snauwen, zwijgen
 - Gedrag: deur dichtslaan, zich terugtrekken op kamer, pesten van broer/zus
 - Lichamelijk: buikpijn, hoofdpijn, niet kunnen slapen
@@ -376,7 +292,7 @@ Voordat je kunt reageren, moet je eerst **opmerken** dat je kind iets voelt. Dat
 - Schaamte die eruit ziet als teruggetrokkenheid
 
 ### Vuistregel
-> *Achter elk 'moeilijk' gedrag zit een gevoel. Achter elk gevoel zit een behoefte.*
+> *Achter elk "moeilijk" gedrag zit een gevoel. Achter elk gevoel zit een behoefte.*
 
 ---
 
@@ -399,7 +315,7 @@ Dit betekent niet dat je elk gedrag goedkeurt. Het betekent dat je de emotie ach
 Nu komt het echte werk. Je kind voelt iets. Jouw taak: **luisteren zonder te fixen**.
 
 ### Wat je doet:
-- **Ga op ooghoogte**: Zak door je knieën. Maak oogcontact.
+- **Ga op ooghoogte**: Zak door je knieen. Maak oogcontact.
 - **Wees stil**: Geef ruimte. Niet meteen praten.
 - **Spiegel**: Laat met je gezicht zien dat je het begrijpt.
 - **Erken**: Benoem wat je ziet, zonder oordeel.
@@ -408,21 +324,21 @@ Nu komt het echte werk. Je kind voelt iets. Jouw taak: **luisteren zonder te fix
 
 | In plaats van... | Zeg dit... |
 |---|---|
-| "Niet huilen" | "Je bent verdrietig, hè?" |
+| "Niet huilen" | "Je bent verdrietig, he?" |
 | "Er is niks aan de hand" | "Dat was echt schrikken voor je" |
 | "Stel je niet aan" | "Ik snap dat je boos bent" |
-| "Het valt wel mee" | "Dat voelt heel oneerlijk, hè?" |
+| "Het valt wel mee" | "Dat voelt heel oneerlijk, he?" |
 | "Daar hoef je niet bang voor te zijn" | "Het is eng om dat alleen te doen" |
-| "Hou op met huilen" | "Het is oké om te huilen" |
+| "Hou op met huilen" | "Het is oke om te huilen" |
 | "Doe niet zo moeilijk" | "Dit is echt lastig voor je" |
 
 ### Het magische van labelen
 
 Neurowetenschapper Matthew Lieberman ontdekte iets fascinerends: het simpelweg **benoemen** van een emotie vermindert de activiteit in de amygdala met tot wel 50%.
 
-Dit heet **"affect labeling"**  en het werkt bij kinderen en volwassenen.
+Dit heet **"affect labeling"** en het werkt bij kinderen en volwassenen.
 
-Wanneer jij zegt: *"Je bent boos"*, gebeurt er letterlijk iets in het brein van je kind. De PFC wordt geactiveerd door het woord. De amygdala kalmeert. Je kind begint zichzelf weer te voelen.
+Wanneer jij zegt: *"Je bent boos"*, gebeurt er letterlijk iets in het brein van je kind. De prefrontale cortex wordt geactiveerd door het woord. De amygdala kalmeert. Je kind begint zichzelf weer te voelen.
 
 > *"Labelen kalmeert. Zeg gewoon wat je ziet."*
 
@@ -430,16 +346,16 @@ Wanneer jij zegt: *"Je bent boos"*, gebeurt er letterlijk iets in het brein van 
 
 ## Stap 4: Help je kind de emotie te benoemen
 
-Nu ga je een stap verder. Je helpt je kind **zelf** woorden te geven aan wat het voelt. Dit is een van de krachtigste dingen die je als vader kunt doen, je geeft je kind een vocabulaire voor zijn binnenwereld.
+Nu ga je een stap verder. Je helpt je kind **zelf** woorden te geven aan wat het voelt. Dit is een van de krachtigste dingen die je als vader kunt doen. Je geeft je kind een vocabulaire voor zijn binnenwereld.
 
-### Voor jonge kinderen (2–5 jaar):
+### Voor jonge kinderen (2-5 jaar):
 
 Gebruik eenvoudige woorden en bied keuzes:
 - *"Ben je boos of ben je verdrietig?"*
 - *"Voelt het als een groot gevoel of een klein gevoel?"*
 - *"Waar voel je het? In je buik? In je hoofd?"*
 
-### Voor oudere kinderen (6–12 jaar):
+### Voor oudere kinderen (6-12 jaar):
 
 Gebruik meer nuance:
 - *"Het lijkt alsof je gefrustreerd bent. Klopt dat?"*
@@ -462,7 +378,7 @@ Help je kind zijn vocabulaire uit te breiden. Veel kinderen kennen alleen "boos"
 
 Hier maken veel vaders een denkfout. Ze denken dat emotiecoaching betekent: alles maar toelaten. Dat is niet zo.
 
-**De regel is simpel: alle emoties zijn oké. Niet al het gedrag is oké.**
+**De regel is simpel: alle emoties zijn oke. Niet al het gedrag is oke.**
 
 Je kind mag boos zijn. Je kind mag niet slaan.
 Je kind mag gefrustreerd zijn. Je kind mag niet schreeuwen in je gezicht.
@@ -470,13 +386,13 @@ Je kind mag verdrietig zijn. Je kind mag niet de hele dag weigeren mee te werken
 
 ### Hoe je dit doet:
 
-**1. Erken eerst de emotie (stap 1–4)**
+**1. Erken eerst de emotie (stap 1-4)**
 
 *"Ik snap dat je woedend bent dat je broer je lego heeft afgebroken."*
 
 **2. Benoem de grens**
 
-*"Maar slaan is niet oké. Slaan doet pijn."*
+*"Maar slaan is niet oke. Slaan doet pijn."*
 
 **3. Bied een alternatief**
 
@@ -492,7 +408,7 @@ Je kind mag verdrietig zijn. Je kind mag niet de hele dag weigeren mee te werken
 
 ---
 
-**Papa:** *(gaat op knieën bij Milan)* "Hé. Ik zie dat je heel erg boos bent."
+**Papa:** *(gaat op knieen bij Milan)* "He. Ik zie dat je heel erg boos bent."
 
 **Milan:** "ZIJ HEEFT MIJN TOREN KAPOT GEMAAKT!"
 
@@ -500,28 +416,28 @@ Je kind mag verdrietig zijn. Je kind mag niet de hele dag weigeren mee te werken
 
 **Milan:** *(nog steeds boos, maar iets rustiger)* "Ja! En nu is alles kapot!"
 
-**Papa:** "Dat voelt heel oneerlijk, hè? Je had er zo je best op gedaan."
+**Papa:** "Dat voelt heel oneerlijk, he? Je had er zo je best op gedaan."
 
 **Milan:** *(knikt, ogen worden nat)*
 
-**Papa:** "Het is oké om boos te zijn. Ik zou ook boos zijn. Maar we duwen niet. Duwen doet pijn. Kijk, je zusje huilt."
+**Papa:** "Het is oke om boos te zijn. Ik zou ook boos zijn. Maar we duwen niet. Duwen doet pijn. Kijk, je zusje huilt."
 
 **Milan:** *(kijkt naar zusje)*
 
 **Papa:** "Wat denk je, zullen we samen kijken of we de toren weer kunnen bouwen? En misschien kan je zusje helpen?"
 
-**Milan:** "...oké. Maar zij mag niet aan de bovenkant komen."
+**Milan:** "...oke. Maar zij mag niet aan de bovenkant komen."
 
 **Papa:** "Deal. Jij bent de architect."
 
 ---
 
 **Wat papa hier deed:**
-1. ✅ Emotie herkend (boosheid)
-2. ✅ Erkend en gelabeld ("heel erg boos", "echt balen", "oneerlijk")
-3. ✅ Gevalideerd ("ik zou ook boos zijn")
-4. ✅ Grens gesteld ("we duwen niet")
-5. ✅ Samen opgelost ("zullen we samen kijken")
+1. Emotie herkend (boosheid)
+2. Erkend en gelabeld ("heel erg boos", "echt balen", "oneerlijk")
+3. Gevalideerd ("ik zou ook boos zijn")
+4. Grens gesteld ("we duwen niet")
+5. Samen opgelost ("zullen we samen kijken")
 
 ---
 
@@ -562,56 +478,45 @@ Kies een emotioneel moment uit de afgelopen week en loop de 5 stappen langs:
 Knip deze kaart uit of maak een foto. Bewaar hem op je telefoon voor moeilijke momenten.
 
 ```
-╔══════════════════════════════════════════════╗
-║  EMOTIECOACHING SNELGIDS VOOR PAPA          ║
-╠══════════════════════════════════════════════╣
-║                                              ║
-║  DE 6 STAPPEN                                ║
-║                                              ║
-║  1. STOP. Adem in (4 tel), uit (6 tel).      ║
-║     Reguleer eerst jezelf.                   ║
-║                                              ║
-║  2. GA OP OOGHOOGTE                          ║
-║     Zak door je knieën. Maak oogcontact.     ║
-║     Zachte stem. Open houding.               ║
-║                                              ║
-║  3. BENOEM WAT JE ZIET                       ║
-║     "Ik zie dat je [boos/verdrietig] bent."  ║
-║     "Dat is een groot gevoel, hè?"           ║
-║                                              ║
-║  4. ERKEN HET GEVOEL                         ║
-║     "Dat snap ik."                           ║
-║     "Ik zou ook [boos/bang] zijn."           ║
-║     "Het is oké om te huilen."               ║
-║                                              ║
-║  5. GRENS + ALTERNATIEF                      ║
-║     "[Gedrag] mag niet. Wat je wel mag: ..." ║
-║     Alle emoties oké, niet al het gedrag.    ║
-║                                              ║
-║  6. LOS SAMEN OP                             ║
-║     "Wat denk je dat we kunnen doen?"        ║
-║     Laat je kind meedenken.                  ║
-║                                              ║
-║  HANDIGE ZINNEN                              ║
-║                                              ║
-║  Bij boosheid:                               ║
-║    "Je bent echt heel boos, hè?"             ║
-║    "Dat voelt oneerlijk."                    ║
-║                                              ║
-║  Bij verdriet:                               ║
-║    "Het is oké om te huilen."                ║
-║    "Ik ben hier bij je."                     ║
-║                                              ║
-║  Bij angst:                                  ║
-║    "Het is eng, hè? Dat mag."                ║
-║    "Ik sta hier. Je bent veilig."            ║
-║                                              ║
-║  ONTHOUD                                     ║
-║  Eerst kalmeren, dan communiceren.           ║
-║  Jouw rust is het medicijn.                  ║
-║  Fouten maken mag, herstellen is kracht.     ║
-║                                              ║
-╚══════════════════════════════════════════════╝
++----------------------------------------------+
+|  VOORBEELDZINNEN EMOTIECOACHING              |
++----------------------------------------------+
+|                                              |
+|  BIJ BOOSHEID                                |
+|  "Je bent echt heel boos, he?"               |
+|  "Dat voelt oneerlijk."                      |
+|  "Je mag boos zijn. Slaan mag niet."         |
+|  "Wat zou je in plaats daarvan kunnen doen?"  |
+|                                              |
+|  BIJ VERDRIET                                |
+|  "Het is oke om te huilen."                  |
+|  "Ik ben hier bij je."                       |
+|  "Dat doet pijn, he? Dat snap ik."           |
+|  "Wil je even bij me zitten?"                |
+|                                              |
+|  BIJ ANGST                                   |
+|  "Het is eng, he? Dat mag."                  |
+|  "Ik sta hier. Je bent veilig."              |
+|  "Wat maakt het zo eng voor je?"             |
+|  "Zullen we er samen naartoe gaan?"          |
+|                                              |
+|  BIJ FRUSTRATIE                              |
+|  "Het lukt nog niet, he? Dat is balen."      |
+|  "Ik zie dat je je best doet."               |
+|  "Zal ik je helpen of wil je het zelf?"      |
+|                                              |
+|  BIJ JALOEZIE                                |
+|  "Je vindt het moeilijk dat zij dat heeft."  |
+|  "Dat gevoel heet jaloezie. Dat is normaal." |
+|  "Jij bent ook bijzonder. Op jouw manier."   |
+|                                              |
+|  ALTIJD BRUIKBAAR                            |
+|  "Ik zie dat je een groot gevoel hebt."      |
+|  "Alle gevoelens mogen er zijn."             |
+|  "Ik ga nergens heen."                       |
+|  "Wat heb je nu nodig van mij?"              |
+|                                              |
++----------------------------------------------+
 ```
 
 ---
@@ -620,48 +525,48 @@ Knip deze kaart uit of maak een foto. Bewaar hem op je telefoon voor moeilijke m
 
 ## Waarom je kind driftbuien heeft
 
-Laten we één ding vooraf helder maken: **driftbuien zijn normaal**. Ze zijn zelfs een teken van gezonde ontwikkeling.
+Laten we een ding vooraf helder maken: **driftbuien zijn normaal**. Ze zijn zelfs een teken van gezonde ontwikkeling.
 
-Een driftbui betekent dat je kind iets heel graag wil of voelt, maar nog niet de vaardigheden heeft om daarmee om te gaan. De PFC, het deel dat impulsen remt en emoties reguleert, is simpelweg nog niet klaar.
+Een driftbui betekent dat je kind iets heel graag wil of voelt, maar nog niet de vaardigheden heeft om daarmee om te gaan. De prefrontale cortex, het deel dat impulsen remt en emoties reguleert, is simpelweg nog niet klaar.
 
 ### Driftbuien per leeftijd
 
-**1–2 jaar:** Puur frustratiedriftbuien. Het kind wil iets, kan het niet krijgen of doen, en heeft geen woorden. De enige uitlaatklep: schreeuwen, huilen, gooien.
+**1-2 jaar:** Puur frustratiedriftbuien. Het kind wil iets, kan het niet krijgen of doen, en heeft geen woorden. De enige uitlaatklep: schreeuwen, huilen, gooien.
 
-**2–4 jaar:** Piekjaren. Het kind ontwikkelt een eigen wil, maar de PFC kan dit nog niet managen. Resultaat: frequente, intense uitbarstingen. Dit is volledig normaal.
+**2-4 jaar:** Piekjaren. Het kind ontwikkelt een eigen wil, maar de prefrontale cortex kan dit nog niet managen. Resultaat: frequente, intense uitbarstingen. Dit is volledig normaal.
 
-**4–6 jaar:** Driftbuien nemen af in frequentie, maar kunnen intenser worden. Het kind begrijpt meer, voelt meer schaamte achteraf, en heeft meer behoefte aan uitleg.
+**4-6 jaar:** Driftbuien nemen af in frequentie, maar kunnen intenser worden. Het kind begrijpt meer, voelt meer schaamte achteraf, en heeft meer behoefte aan uitleg.
 
-**6–9 jaar:** Minder klassieke driftbuien, maar woede-uitbarstingen komen voor. Vaak getriggerd door oneerlijkheid, falen, of sociale situaties.
+**6-9 jaar:** Minder klassieke driftbuien, maar woede-uitbarstingen komen voor. Vaak getriggerd door oneerlijkheid, falen, of sociale situaties.
 
-**9–12 jaar:** Woede wordt verbaler. Deur dichtslaan, schelden, zich terugtrekken. Onder de woede zit vaak schaamte, frustratie of angst.
+**9-12 jaar:** Woede wordt verbaler. Deur dichtslaan, schelden, zich terugtrekken. Onder de woede zit vaak schaamte, frustratie of angst.
 
 ## Wat NIET werkt bij driftbuien
 
 Laten we eerlijk zijn. De meeste dingen die we als reflex doen, werken niet. Sterker nog: ze maken het erger.
 
-### ❌ Negeren
+### Negeren
 *"Als ik hem negeer, stopt hij vanzelf."*
 
 Het probleem: je kind heeft je nu het hardst nodig. Negeren stuurt het bericht: "Als jij het moeilijk hebt, ben ik er niet." Dit beschadigt de hechting.
 
-### ❌ Schreeuwen
+### Schreeuwen
 *"GA NAAR JE KAMER!"*
 
-Het probleem: je voegt jouw stress toe aan die van je kind. Twee overprikkelde breinen samen = escalatie. Bovendien leer je je kind dat schreeuwen een acceptabele manier is om met emoties om te gaan.
+Het probleem: je voegt jouw stress toe aan die van je kind. Twee overprikkelde breinen samen betekent escalatie. Bovendien leer je je kind dat schreeuwen een acceptabele manier is om met emoties om te gaan.
 
-### ❌ Redeneren
+### Redeneren
 *"Je weet toch dat je dit niet kunt krijgen? We hadden het er toch over gehad?"*
 
-Het probleem: de PFC is offline. Logische argumenten komen letterlijk niet aan. Je praat tegen een muur.
+Het probleem: de prefrontale cortex is offline. Logische argumenten komen letterlijk niet aan. Je praat tegen een muur.
 
-### ❌ Straffen
+### Straffen
 *"Omdat je zo doet, mag je vanavond geen TV."*
 
 Het probleem: je kind leert niet omgaan met emoties, het leert alleen emoties onderdrukken uit angst voor straf. De emotie verdwijnt niet, hij gaat ondergronds.
 
-### ❌ Toegeven
-*"Oké, oké, je krijgt het toetje. Stop maar met huilen."*
+### Toegeven
+*"Oke, oke, je krijgt het toetje. Stop maar met huilen."*
 
 Het probleem: je kind leert dat schreeuwen werkt. Volgende keer schreeuwt het harder.
 
@@ -669,10 +574,10 @@ Het probleem: je kind leert dat schreeuwen werkt. Volgende keer schreeuwt het ha
 
 ### De RUST-methode
 
-**R**  Reguleer jezelf eerst
-**U**  Uitstralen van kalmte
-**S**  Spiegelen en benoemen
-**T**  Tijd en nabijheid geven
+**R** Reguleer jezelf eerst
+**U** Uitstralen van kalmte
+**S** Spiegelen en benoemen
+**T** Tijd en nabijheid geven
 
 ### R, Reguleer jezelf eerst
 
@@ -698,14 +603,14 @@ Je kind leest jouw lichaam. Als jouw lijf zegt "ik ben kalm en veilig", dan kalm
 
 Nu pas ga je praten:
 - *"Wow, je bent echt heel boos."*
-- *"Dat is een groot gevoel, hè?"*
+- *"Dat is een groot gevoel, he?"*
 - *"Je wilde zo graag [X] en nu mag het niet. Dat is echt balen."*
 
 Niet meer dan dat. Geen oplossingen. Geen uitleg. Alleen zien en benoemen.
 
 ### T, Tijd en nabijheid geven
 
-Soms duurt een driftbui even. Dat is oké. Jouw taak is niet om de driftbui te stoppen, het is om er doorheen te zijn.
+Soms duurt een driftbui even. Dat is oke. Jouw taak is niet om de driftbui te stoppen, het is om er doorheen te zijn.
 
 - Blijf in de buurt (tenzij je kind alleen wil zijn)
 - Bied fysiek contact aan (maar dwing niet): *"Wil je een knuffel of liever even niet?"*
@@ -720,7 +625,7 @@ Soms duurt een driftbui even. Dat is oké. Jouw taak is niet om de driftbui te s
 
 ---
 
-**Papa:** *(haalt adem, hurkt naast Sem)* "Jij wilt heel graag dat snoep, hè?"
+**Papa:** *(haalt adem, hurkt naast Sem)* "Jij wilt heel graag dat snoep, he?"
 
 **Sem:** *(gilt harder)* "IK WIL SNOEP!"
 
@@ -728,7 +633,7 @@ Soms duurt een driftbui even. Dat is oké. Jouw taak is niet om de driftbui te s
 
 **Sem:** *(huilt, minder gillen)*
 
-**Papa:** "Het is oké om boos te zijn. Ik blijf hier bij je."
+**Papa:** "Het is oke om boos te zijn. Ik blijf hier bij je."
 
 *(Papa wacht. Sem huilt nog even. Kalmeert langzaam.)*
 
@@ -736,7 +641,7 @@ Soms duurt een driftbui even. Dat is oké. Jouw taak is niet om de driftbui te s
 
 **Papa:** "Dat snap ik, kerel. Zullen we samen het boodschappenkarretje naar de auto rijden? Jij mag sturen."
 
-**Sem:** "...oké."
+**Sem:** "...oke."
 
 ---
 
@@ -815,12 +720,12 @@ Bij verdriet is emotiecoaching anders dan bij woede. Verdriet vraagt niet om act
 Ga zitten. Dicht bij je kind. Zeg niks. Leg misschien een hand op een schouder. Wacht.
 
 **2. Geef het woorden.**
-*"Je mist opa heel erg, hè?"*
+*"Je mist opa heel erg, he?"*
 *"Het is verdrietig dat je vriendje niet meer met je wil spelen."*
 *"Dat doet pijn."*
 
 **3. Maak het normaal.**
-*"Het is oké om te huilen."*
+*"Het is oke om te huilen."*
 *"Verdriet hoort erbij. Het betekent dat je van iets hield."*
 *"Grote mensen zijn ook soms verdrietig."*
 
@@ -830,10 +735,10 @@ Ga zitten. Dicht bij je kind. Zeg niks. Leg misschien een hand op een schouder. 
 
 ### Wat je NIET doet:
 
-- **Niet fixen.** *"We kopen een nieuwe" → vervangt het gevoel voor een oplossing*
-- **Niet relativeren.** *"Er zijn kinderen die het veel erger hebben" → minimaliseert het gevoel*
-- **Niet afleiden.** *"Zullen we een ijsje halen?" → stuurt het bericht dat verdriet vermeden moet worden*
-- **Niet haasten.** *"Ben je nu klaar met huilen?" → verdriet heeft geen deadline*
+- **Niet fixen.** *"We kopen een nieuwe"* vervangt het gevoel voor een oplossing
+- **Niet relativeren.** *"Er zijn kinderen die het veel erger hebben"* minimaliseert het gevoel
+- **Niet afleiden.** *"Zullen we een ijsje halen?"* stuurt het bericht dat verdriet vermeden moet worden
+- **Niet haasten.** *"Ben je nu klaar met huilen?"* Verdriet heeft geen deadline
 
 ---
 
@@ -974,7 +879,7 @@ Dit helpt je kind om:
 
 ---
 
-**Papa:** *(hurkt)* "Hé Daan. Je bent zenuwachtig, hè?"
+**Papa:** *(hurkt)* "He Daan. Je bent zenuwachtig, he?"
 
 **Daan:** "Ik wil niet. Ik ken hier niemand."
 
@@ -998,7 +903,7 @@ Dit helpt je kind om:
 
 **Daan:** *(denkt na)*
 
-**Papa:** "Dit is mijn voorstel. Ga naar binnen. Probeer het één uur. Als het echt niet lukt, bel juf mij en kom ik je halen. Deal?"
+**Papa:** "Dit is mijn voorstel. Ga naar binnen. Probeer het een uur. Als het echt niet lukt, bel juf mij en kom ik je halen. Deal?"
 
 **Daan:** "Deal."
 
@@ -1006,7 +911,7 @@ Dit helpt je kind om:
 
 **Papa:** "En? Hoe was je thermometer aan het eind?"
 
-**Daan:** "Een 3! Er is een jongen die ook van Pokémon houdt!"
+**Daan:** "Een 3! Er is een jongen die ook van Pokemon houdt!"
 
 **Papa:** "Zie je? Je was dapper vandaag. En het was minder eng dan je dacht."
 
@@ -1016,15 +921,15 @@ Dit helpt je kind om:
 
 Welke angsten heeft je kind? (vink aan of vul aan)
 
-☐ Donker
-☐ Alleen slapen
-☐ Monsters/spoken
-☐ School / prestaties
-☐ Sociale situaties
-☐ Nieuwe ervaringen
-☐ Ziek worden / doodgaan
-☐ Ouders die weggaan
-☐ Anders: ...............................
+- Donker
+- Alleen slapen
+- Monsters/spoken
+- School / prestaties
+- Sociale situaties
+- Nieuwe ervaringen
+- Ziek worden / doodgaan
+- Ouders die weggaan
+- Anders: ...............................
 
 **Hoe reageer je meestal op deze angst?**
 
@@ -1044,7 +949,7 @@ Welke angsten heeft je kind? (vink aan of vul aan)
 
 # Hoofdstuk 7: Emotiecoaching per Leeftijd
 
-## 0–2 jaar: De basis leggen
+## 0-2 jaar: De basis leggen
 
 Op deze leeftijd kan je kind nog niet praten over emoties. Maar emotiecoaching begint hier al: via je lichaam, je stem en je aanwezigheid.
 
@@ -1055,10 +960,10 @@ Op deze leeftijd kan je kind nog niet praten over emoties. Maar emotiecoaching b
 - Overprikkeling (te veel geluid, licht, mensen)
 
 ### Wat jij doet:
-- **Stem en gezicht:** Spiegel de emotie met je gezicht. Maak zachte geluiden: "Ohhh, ja, dat was schrikken, hè?"
+- **Stem en gezicht:** Spiegel de emotie met je gezicht. Maak zachte geluiden: "Ohhh, ja, dat was schrikken, he?"
 - **Aanraking:** Houd vast, streel, wieg. Fysiek contact is de primaire taal op deze leeftijd.
 - **Narrate:** Benoem hardop wat er gebeurt: "Je probeert de blokken te pakken en het lukt niet. Dat is frustrerend."
-- **Routine:** Voorspelbaarheid = veiligheid. Vaste rituelen bij eten, slapen en afscheid.
+- **Routine:** Voorspelbaarheid is veiligheid. Vaste rituelen bij eten, slapen en afscheid.
 
 ### Niet doen:
 - "Ssst, niks aan de hand" (het is wel iets voor je baby)
@@ -1067,7 +972,7 @@ Op deze leeftijd kan je kind nog niet praten over emoties. Maar emotiecoaching b
 
 ---
 
-## 3–5 jaar: Driftbuien en meer
+## 3-5 jaar: Driftbuien en meer
 
 De gouden jaren van emotiecoaching. Je kind begint woorden te hebben, maar de emoties zijn groter dan het vocabulaire. Dit is het moment om de basis te leggen.
 
@@ -1082,18 +987,18 @@ De gouden jaren van emotiecoaching. Je kind begint woorden te hebben, maar de em
 - **Label alles:** "Je bent boos", "Je bent verdrietig", "Je vindt het eng"
 - **Bied keuzes:** "Wil je een knuffel of even alleen zijn?"
 - **Gebruik verhalen:** "Weet je wat Puk deed toen hij boos was?" (boeken, verhaaltjes)
-- **Valideer de grootte:** "Dit voelt als een HEEL groot gevoel, hè?" (niet verkleinen)
-- **Vier de kalmte:** "Hé, je was heel boos, en je bent zelf weer rustig geworden. Knap!"
+- **Valideer de grootte:** "Dit voelt als een HEEL groot gevoel, he?" (niet verkleinen)
+- **Vier de kalmte:** "He, je was heel boos, en je bent zelf weer rustig geworden. Knap!"
 
 ### Vuistregels:
-- Korte zinnen (max 5–7 woorden bij hoge emotie)
+- Korte zinnen (max 5-7 woorden bij hoge emotie)
 - Fysiek contact aanbieden, niet forceren
 - Na de storm: kort bespreken, niet eindeloos analyseren
 - Gebruik "en" in plaats van "maar": "Je mag boos zijn EN we slaan niet"
 
 ---
 
-## 6–9 jaar: Groeiend begrip
+## 6-9 jaar: Groeiend begrip
 
 Je kind begint emoties te begrijpen. Het kan nadenken over zijn eigen gevoelens. Maar de impulscontrole is nog beperkt.
 
@@ -1109,7 +1014,7 @@ Je kind begint emoties te begrijpen. Het kan nadenken over zijn eigen gevoelens.
 - **Normaliseer:** "Veel kinderen vinden dit moeilijk"
 - **Deel (kort) je eigen ervaring:** "Ik vond dat vroeger ook lastig"
 - **Help patronen herkennen:** "Valt je op dat je altijd boos wordt als je moe bent?"
-- **Leer coping-strategieën:** Ademhaling, tellen, tekenen, praten
+- **Leer coping-strategieen:** Ademhaling, tellen, tekenen, praten
 
 ### Valkuil op deze leeftijd:
 Kinderen van deze leeftijd zeggen vaak "Niks" als je vraagt wat er is. Niet doordrukken. Probeer:
@@ -1119,7 +1024,7 @@ Kinderen van deze leeftijd zeggen vaak "Niks" als je vraagt wat er is. Niet door
 
 ---
 
-## 10–12 jaar: De prepuberteit
+## 10-12 jaar: De prepuberteit
 
 Je kind wordt zelfstandiger. Het wil minder knuffels en meer ruimte. Maar de behoefte aan emotionele veiligheid is onverminderd groot, alleen het uiterlijk verandert.
 
@@ -1138,7 +1043,7 @@ Je kind wordt zelfstandiger. Het wil minder knuffels en meer ruimte. Maar de beh
 - **Normaliseer de puberemotie:** "Je lichaam verandert en dat brengt veel gevoelens mee. Dat is helemaal normaal."
 
 ### De kunst van het niet-oordelen:
-Op deze leeftijd is je kind hypergevoelig voor oordeel. Eén verkeerde opmerking kan ervoor zorgen dat ze dichtklappen. Dus:
+Op deze leeftijd is je kind hypergevoelig voor oordeel. Een verkeerde opmerking kan ervoor zorgen dat ze dichtklappen. Dus:
 - Luister meer, reageer minder
 - Oordeel niet over hun vrienden, muziek of interesses
 - Zeg niet "Dat is toch niet erg", alles is erg op deze leeftijd
@@ -1164,11 +1069,507 @@ Op deze leeftijd is je kind hypergevoelig voor oordeel. Eén verkeerde opmerking
 
 ---
 
-# Hoofdstuk 8: Jouw Eigen Emoties als Vader
+# Hoofdstuk 8: Emotiecoaching bij Specifieke Diagnoses
+
+## Waarom standaard emotiecoaching soms niet genoeg is
+
+De vijf stappen van Gottman werken. Altijd. Maar voor sommige kinderen moet je ze aanpassen. Kinderen met ADHD, autisme of hooggevoeligheid ervaren emoties op een fundamenteel andere manier. Niet beter of slechter, maar anders. En als vader is het cruciaal om dat verschil te begrijpen, zodat je coaching aansluit bij wat jouw kind nodig heeft.
+
+Het goede nieuws: de basis blijft hetzelfde. Je herkent, erkent, labelt, en helpt. Maar de timing, de woordkeuze en de aanpak vragen om finetuning.
+
+## Emotiecoaching bij ADHD
+
+### Wat er anders is
+
+Kinderen met ADHD ervaren emoties vaak intenser, sneller en heftiger dan leeftijdsgenoten. Dit heet emotionele dysregulatie en het is een kernkenmerk van ADHD dat vaak over het hoofd wordt gezien. Het gaat niet alleen om concentratieproblemen. Het gaat ook om een brein dat moeite heeft met het remmen en reguleren van emoties.
+
+Concreet betekent dit:
+- **Snellere escalatie**: Waar een ander kind langzaam boos wordt, schiet een kind met ADHD in een seconde van nul naar honderd. De opbouw ontbreekt.
+- **Intensere beleving**: Boosheid is niet gewoon boosheid, het is allesverzengende woede. Verdriet is niet even huilen, het is de wereld vergaat.
+- **Moeite met remmen**: Het kind zegt of doet dingen impulsief in het moment. Schelden, slaan, gooien. Niet uit kwaadaardigheid, maar omdat de rem er letterlijk nog niet op zit.
+- **Kortere hersteltijd, maar ook kort geheugen**: Na een uitbarsting kan een kind met ADHD verrassend snel weer vrolijk zijn. Dat is geen manipulatie, dat is hoe hun brein werkt.
+- **Frustratie-intolerantie**: Kleine tegenslagen voelen als grote rampen. Een puzzelstukje dat niet past kan een complete meltdown veroorzaken.
+
+### De Gottman 5-stappen aangepast voor ADHD
+
+**Stap 1, Herken de emotie:** Let extra op de snelheid. Bij ADHD is het raam om te interveniëren klein. Leer de allervroegste signalen herkennen: een verandering in stemtoon, onrust in het lichaam, het ophouden met een activiteit. Als je wacht tot de uitbarsting er is, ben je te laat voor preventie, maar nog op tijd voor begeleiding.
+
+**Stap 2, Zie het als kans:** Dit is bij ADHD extra lastig omdat de uitbarstingen zo frequent kunnen zijn. Het is verleidelijk om te denken: "Daar gaan we weer." Probeer elke keer opnieuw te resetten. Jouw vermoeidheid is begrijpelijk, maar je kind kiest hier niet voor.
+
+**Stap 3, Luister en erken:** Gebruik korte zinnen. Heel kort. "Je bent boos." Punt. Niet meer. Een kind met ADHD in een emotionele piek kan lange zinnen niet verwerken. Herhaal dezelfde korte zin rustig tot het landt.
+
+**Stap 4, Help benoemen:** Bied maximaal twee opties. "Ben je boos of gefrustreerd?" Niet vijf emoties tegelijk. Het werkgeheugen is beperkt, zeker onder stress.
+
+**Stap 5, Grenzen en oplossen:** Wacht langer. Het brein van een kind met ADHD heeft meer tijd nodig om uit de emotionele kaping te komen. Probeer niet te snel naar de oplossingsfase te gaan. En als je grenzen stelt, koppel ze aan concrete, zichtbare consequenties. Niet: "Als je zo doet, krijg je straf." Wel: "We slaan niet. Je mag op het kussen slaan."
+
+### Praktische tips voor ADHD
+
+- **Maak emotiecoaching visueel.** Gebruik een emotie-meter aan de muur, gekleurde kaarten, of een stoplicht-systeem (groen, oranje, rood). Kinderen met ADHD reageren sterker op visuele cues dan op woorden.
+- **Beweeg erbij.** Laat je kind tijdens het praten rondlopen, een bal knijpen, of op een trampoline staan. Stilzitten en praten over emoties is dubbel moeilijk voor een ADHD-brein.
+- **Vier de kleine overwinningen.** "He, je was net heel boos en je hebt NIET geslagen. Dat is knap." Positieve bekrachtiging werkt veel sterker dan correctie.
+- **Verwacht terugval.** Een kind met ADHD kan iets tien keer goed doen en de elfde keer weer ontploffen. Dat is geen falen. Dat is het leerproces bij ADHD.
+
+## Emotiecoaching bij autisme (ASS)
+
+### Wat er anders is
+
+Kinderen met autisme ervaren emoties net zo sterk als andere kinderen, soms zelfs sterker. Maar ze hebben vaak moeite met twee dingen: emoties herkennen (bij zichzelf en anderen) en emoties uiten op een manier die voor de buitenwereld begrijpelijk is. Daar komt bij dat overprikkeling een enorme rol speelt.
+
+Concreet betekent dit:
+- **Alexithymie**: Veel kinderen met autisme hebben moeite om hun eigen emoties te identificeren. Ze voelen dat er iets is, maar weten niet wat. Dit kan leiden tot frustratie, meltdowns of shutdown.
+- **Vertraagde verwerking**: De emotie komt soms pas uren later. Je kind lijkt onbewogen bij een gebeurtenis, en breekt thuis alsnog in. Dit is geen raar gedrag, het is vertraagde emotionele verwerking.
+- **Overprikkeling als emotionele trigger**: Wat eruitziet als een driftbui is vaak een sensorische overbelasting. Te veel geluid, te veel licht, de verkeerde textuur van kleding, een veranderd schema. De meltdown is niet "om niks", het is een reactie op een zintuiglijke overstroming.
+- **Anders uiten**: Emoties worden soms geuit via stimming (fladderen, wiegen, geluiden maken), terugtrekking, of juist heel specifiek taalgebruik. Een kind dat zegt "Mijn hoofd zit vol" bedoelt misschien: "Ik ben overweldigd."
+
+### De Gottman 5-stappen aangepast voor autisme
+
+**Stap 1, Herken de emotie:** Kijk niet alleen naar gezichtsuitdrukkingen. Let op lichaamshouding, stemvolume, stimming, en veranderingen in routinegedrag. Als je kind zich plotseling terugtrekt of juist heel druk wordt, is dat vaak een emotioneel signaal.
+
+**Stap 2, Zie het als kans:** Wees extra geduldig. Emotionele momenten bij autisme duren soms langer en zien er anders uit. Een meltdown is geen driftbui. Het is een overbelasting van het zenuwstelsel. Je kunt het niet "oplossen", je kunt het begeleiden.
+
+**Stap 3, Luister en erken:** Gebruik concrete, letterlijke taal. Niet: "Ik snap dat je het moeilijk vindt." Wel: "Je voelt iets in je buik. Dat is een onrustig gevoel." Metaforen en figuurlijk taalgebruik werken vaak niet. Wees specifiek.
+
+**Stap 4, Help benoemen:** Gebruik visuele hulpmiddelen. Een emotiemeter, een kaart met gezichtjes, of een kleurensysteem. Veel kinderen met autisme leren emoties beter herkennen via beelden dan via woorden. Vraag: "Wijs aan welk gezichtje past bij hoe jij je voelt."
+
+**Stap 5, Grenzen en oplossen:** Bied structuur. Kinderen met autisme hebben baat bij voorspelbare reacties. Maak duidelijke afspraken: "Als je boos bent, mag je naar je rustige plek." Houd deze afspraken consequent. Verandering in de aanpak is extra verwarrend.
+
+### Praktische tips voor autisme
+
+- **Creeer een veilige plek.** Een hoekje in huis met demping, weinig prikkels, en vertrouwde spullen. Dit is geen straf, het is een toevluchtsoord.
+- **Gebruik social stories.** Schrijf samen korte verhalen over emotionele situaties: "Als ik boos word, mag ik naar mijn rustige plek. Papa komt dan bij me zitten."
+- **Respecteer de verwerkingstijd.** Vraag iets, en wacht minimaal 10 seconden. Tel innerlijk. Het brein heeft tijd nodig om de vraag te verwerken, zeker tijdens emotionele stress.
+- **Leer de triggers kennen.** Houd een logboek bij van meltdowns. Na een paar weken zie je patronen: bepaalde geluiden, overgangsmomenten, onverwachte veranderingen. Voorkomen is bij autisme effectiever dan genezen.
+
+## Emotiecoaching bij hooggevoeligheid (HSP)
+
+### Wat er anders is
+
+Hooggevoelige kinderen voelen alles dieper. Letterlijk. Onderzoek van Elaine Aron toont aan dat het brein van hooggevoelige mensen prikkels dieper verwerkt. Dit betekent dat emoties intenser zijn, langer duren, en meer impact hebben.
+
+Concreet betekent dit:
+- **Diepere emotionele beleving**: Een hooggevoelig kind huilt niet alleen om zijn eigen pijn, maar ook om de pijn van een personage in een boek, een dood vogeltje op straat, of de boosheid van een leeftijdsgenoot.
+- **Langere verwerkingstijd**: Waar een ander kind na een ruzie op school het na een uur vergeten is, draagt een hooggevoelig kind het de hele dag of zelfs de hele week mee.
+- **Overprikkeling door emoties van anderen**: Hooggevoelige kinderen vangen de emoties van de mensen om hen heen op als een spons. Als jij gestrest bent, voelen zij dat. Als er ruzie is tussen andere kinderen, raken zij daar ook door van slag.
+- **Intens rechtvaardigheidsgevoel**: Oneerlijkheid raakt hooggevoelige kinderen diep. Niet alleen als het henzelf overkomt, maar ook als ze het bij anderen zien.
+- **Moeite met overgangen**: Van school naar huis, van spelen naar eten, van wakker naar slapen. Elke overgang vraagt emotionele aanpassing, en dat kost energie.
+
+### De Gottman 5-stappen aangepast voor hooggevoeligheid
+
+**Stap 1, Herken de emotie:** Neem subtiele signalen serieus. Een hooggevoelig kind hoeft niet te gillen om iets intens te voelen. Een stille blik, een verandering in houding, of juist overdreven vrolijk gedrag kan een signaal zijn dat er iets speelt.
+
+**Stap 2, Zie het als kans:** Dit is bij hooggevoeligheid relatief makkelijk, want het kind laat je meestal wel zien dat er iets is. De uitdaging is om de frequentie vol te houden. Hooggevoelige kinderen hebben vaker emotionele momenten. Dat kan vermoeiend zijn. Vergeet niet: het is voor hen nog vermoeider.
+
+**Stap 3, Luister en erken:** Neem extra de tijd. Hooggevoelige kinderen hebben baat bij langzaam, rustig luisteren zonder haast. Ze voelen het als je ongeduldig wordt, en dan klappen ze dicht. Stilte is oke. Laat ze hun eigen tempo bepalen.
+
+**Stap 4, Help benoemen:** Hooggevoelige kinderen hebben vaak al een groot emotioneel vocabulaire. Help ze nuances te vinden: "Is het meer teleurgesteld of meer verdrietig? Of misschien allebei?" Ze zijn goed in zelfreflectie als ze de ruimte krijgen.
+
+**Stap 5, Grenzen en oplossen:** Wees zacht maar duidelijk. Hooggevoelige kinderen reageren sterk op harde correctie. Een strenge toon die bij een ander kind effectief is, kan bij een hooggevoelig kind leiden tot dichtklappen of diep verdriet. De boodschap mag dezelfde zijn, de verpakking moet zachter.
+
+### Praktische tips voor hooggevoeligheid
+
+- **Bied decompressietijd.** Na school, na een feestje, na een drukke dag: plan rust in. Niet als luxe, als noodzaak. Het hooggevoelige brein heeft tijd nodig om alle indrukken te verwerken.
+- **Valideer de intensiteit.** Niet: "Het is maar een dood vogeltje." Wel: "Het raakt je dat dat vogeltje dood is. Jij voelt dat heel erg." De grootte van het gevoel is echt, ook als de aanleiding voor jou klein lijkt.
+- **Bereid voor op verandering.** Vertel van tevoren wat er gaat gebeuren. "Morgen gaan we naar oma. We blijven tot vier uur. Daarna gaan we naar huis." Hoe meer voorspelbaarheid, hoe minder overprikkeling.
+- **Erken de gave.** Hooggevoeligheid is geen zwakte. Het is een eigenschap die leidt tot diepe empathie, creativiteit en verbinding. Laat je kind weten dat diep voelen een kracht is. "Jij voelt dingen die anderen missen. Dat maakt je bijzonder."
+
+---
+
+### Oefening 8.1: Diagnose-specifieke emotiekaart
+
+Als je kind een diagnose heeft (of kenmerken vertoont van ADHD, autisme of hooggevoeligheid), vul dan deze kaart in:
+
+**Mijn kind heeft kenmerken van:**
+
+.......................................................................
+
+**De drie situaties waarin emoties het hevigst zijn:**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+**Wat ik nu meestal doe in die situaties:**
+
+.......................................................................
+
+**Welke aanpassing uit dit hoofdstuk ga ik deze week proberen?**
+
+.......................................................................
+
+**Hoe merk ik of het werkt?**
+
+.......................................................................
+
+---
+
+# Hoofdstuk 9: Emotiecoaching tussen Broers en Zussen
+
+## Conflicten als emotie-leermomenten
+
+Broers en zussen ruzieen. Gemiddeld 3 tot 7 keer per uur bij jonge kinderen, volgens onderzoek. Dat voelt als een slagveld. Maar hier is het verrassende: conflicten tussen broers en zussen zijn een van de krachtigste oefenplaatsen voor emotionele ontwikkeling die er bestaan.
+
+Nergens anders oefent je kind zo intensief met boosheid, frustratie, teleurstelling, jaloezie, onderhandelen, vergeven en herstellen. De vraag is niet hoe je conflicten voorkomt. De vraag is hoe jij als vader deze momenten benut om je kinderen emotioneel sterker te maken.
+
+## De valkuil van de scheidsrechter-vader
+
+De meest voorkomende reflex bij ruzie tussen kinderen is: ingrijpen als scheidsrechter. Je komt de kamer in, hoort geschreeuw, en zegt: "Wat is er gebeurd? Wie is begonnen?"
+
+Vanaf dat moment ben je de rechter. Een kind wordt de dader, het andere het slachtoffer. En wat volgt is een uitspraak: "Geef die auto maar terug", of "Jij had moeten delen."
+
+Het probleem? Dit werkt niet. En het maakt het zelfs erger. Dit is waarom:
+
+- **Je mist altijd context.** Jij zag alleen het laatste stuk. Misschien heeft het "slachtoffer" al een uur subtiel gepest.
+- **Je creëert rollen.** Als een kind altijd de schuld krijgt (vaak het oudste), groeit wrok. Als een kind altijd gelijk krijgt (vaak het jongste), leert het hulpeloosheid.
+- **Je ontneemt ze de kans om het zelf op te lossen.** Elke keer dat jij beslist, leren zij: papa lost het op. Waarom zou ik het zelf proberen?
+- **Je valideert geen emoties.** In de haast om vrede te sluiten, sla je de gevoelens van beide kinderen over.
+
+## De emotie-coach-vader bij broer-zusconflicten
+
+Jouw rol is niet scheidsrechter. Jouw rol is coach. Je begeleidt het proces, je beslist niet de uitkomst. En je begint altijd bij de emoties, niet bij de feiten.
+
+### Stap 1: Erken beide kinderen
+
+Ga niet meteen vragen wie begonnen is. Ga op ooghoogte bij beide kinderen en benoem wat je ziet.
+
+*"Ik zie dat jullie allebei boos zijn."*
+*"Jij huilt. En jij schreeuwt. Er is hier veel boosheid."*
+
+### Stap 2: Geef elk kind een beurt
+
+Laat elk kind zijn verhaal vertellen. Zonder onderbreking. Dit is essentieel. Kinderen die zich gehoord voelen, kalmeren sneller.
+
+*"Emma, vertel jij eerst. Wat is er gebeurd?"*
+*(Luister. Vat samen.)*
+*"Oké. En Max, wat is jouw kant?"*
+*(Luister. Vat samen.)*
+
+### Stap 3: Valideer de emoties van allebei
+
+Dit is het moeilijkste. Want je hebt misschien al een oordeel. Maar voor emotiecoaching hoef je het niet eens te zijn met het gedrag om het gevoel te erkennen.
+
+*"Emma, jij voelt je boos omdat Max je tekening kapot maakte. Dat snap ik."*
+*"Max, jij voelt je boos omdat Emma jou niet liet meedoen. Dat snap ik ook."*
+
+### Stap 4: Stel de grens aan gedrag
+
+*"Allebei jullie gevoelens mogen er zijn. En we scheuren geen tekeningen. En we sluiten niemand buiten."*
+
+### Stap 5: Laat ze samen oplossen
+
+*"Wat denken jullie dat we kunnen doen zodat dit eerlijk voelt voor allebei?"*
+
+Je zult versteld staan hoe creatief kinderen zijn als je ze de kans geeft. En de oplossing die zij bedenken, houden ze veel beter vol dan een oplossing die jij oplegt.
+
+## Jaloezie en eerlijkheid
+
+"Dat is niet eerlijk! Hij krijgt altijd meer!"
+
+Elke vader kent deze zin. En de reflex is om te gaan meten en tellen: "Je hebt allebei evenveel gekregen." Maar jaloezie gaat zelden over de werkelijke verdeling. Jaloezie gaat over de angst niet genoeg geliefd te zijn.
+
+### Wat je kind eigenlijk zegt:
+
+"Hij krijgt meer" betekent vaak: "Hou je net zoveel van mij?"
+"Dat is niet eerlijk" betekent vaak: "Zie je mij ook?"
+"Jij vindt haar liever" betekent vaak: "Ben ik goed genoeg?"
+
+### Hoe je hierop reageert:
+
+**Niet:** gaan meten, vergelijken, of bewijzen dat het wel eerlijk is. Dat voedt de wedstrijd.
+
+**Wel:** het onderliggende gevoel adresseren.
+
+*"Het voelt alsof je broer meer aandacht krijgt. Dat is een vervelend gevoel."*
+*"Ik hou van jullie allebei. Niet evenveel, maar even groot. Op een eigen manier."*
+*"Jij bent jij. En er is maar een van jou. En ik zou niemand anders willen."*
+
+De sleutel bij jaloezie is niet gelijkheid in dingen, maar gelijkheid in gezien worden. Zorg dat elk kind regelmatig een-op-een tijd met jou heeft. Dat hoeft niet lang. Vijftien minuten onverdeelde aandacht is krachtiger dan een hele middag samen terwijl je met je telefoon bezig bent.
+
+### Voorbeelddialoog: De oneerlijke verdeling
+
+**Situatie:** Sophie (7) en Luuk (5) ruzieen over wie het grootste stuk taart krijgt. Sophie duwt Luuk. Luuk huilt.
+
+---
+
+**Papa:** *(gaat op knieen, kijkt beide kinderen aan)* "Ho. Er is hier veel boosheid. Sophie, jij bent boos. Luuk, jij bent verdrietig."
+
+**Sophie:** "Hij pakt altijd het grootste stuk!"
+
+**Papa:** "Jij vindt dat het niet eerlijk is. Dat snap ik."
+
+**Luuk:** *(huilt)* "Zij duwde me!"
+
+**Papa:** "Dat deed pijn, he? Geduwd worden is niet fijn."
+
+**Papa:** "Sophie, ik snap dat je boos bent. En we duwen niet. Luuk, ik snap dat je verdrietig bent."
+
+**Papa:** "Hoe denken jullie dat we dit eerlijk kunnen verdelen?"
+
+**Sophie:** "...hij mag kiezen, en dan kies ik het andere stuk."
+
+**Papa:** "Dat klinkt eerlijk. Luuk, wat vind jij?"
+
+**Luuk:** "Oke. Ik wil dat stuk."
+
+**Papa:** "Opgelost. Door jullie. Knap gedaan."
+
+---
+
+### Oefening 9.1: Conflictpatronen herkennen
+
+**De meest voorkomende ruzie tussen mijn kinderen gaat over:**
+
+.......................................................................
+
+**Mijn gebruikelijke reactie is:**
+
+.......................................................................
+
+**Welk kind krijgt meestal de schuld?**
+
+.......................................................................
+
+**Wat zou er gebeuren als ik volgende keer NIET als scheidsrechter optreed, maar als emotiecoach?**
+
+.......................................................................
+
+**Wanneer had ik voor het laatst een-op-een moment met elk kind?**
+
+Kind 1: .......................................................................
+
+Kind 2: .......................................................................
+
+---
+
+# Hoofdstuk 10: De Rol van Humor in Emotiecoaching
+
+## Lachen als emotionele vaardigheid
+
+Humor is een onderschat gereedschap in de vaderkist. Goed ingezette humor kan spanning doorbreken, verbinding creëren, en een kind helpen om afstand te nemen van een overweldigend gevoel. Maar slecht ingezette humor kan precies het tegenovergestelde bereiken: het kan invalideren, kleineren en de emotionele veiligheid beschadigen.
+
+Het verschil zit in timing, intentie en richting. En als vader heb je een unieke positie. Onderzoek toont aan dat vaders vaker humor gebruiken in interactie met hun kinderen dan moeders (StGeorge & Freeman, 2017). Dat is een kracht, mits je weet wanneer het past.
+
+## Wanneer humor helpt
+
+Humor werkt als:
+- De piek van de emotie voorbij is en je kind al aan het kalmeren is
+- Je kind zelf al een beetje kan lachen om de situatie
+- De humor gericht is op de situatie, niet op het kind
+- Het verbindt in plaats van afstand creëert
+
+**Voorbeeld:** Je zoon van 4 heeft een driftbui gehad omdat zijn banaan brak. Na het kalmeren, als hij weer rustig is, zeg je: *"Weet je wat, ik vind gebroken bananen eigenlijk lekkerder. Die zijn al half opgegeten!"* Hij lacht. De spanning lost op. Jullie eten samen de gebroken banaan.
+
+Humor werkt hier omdat:
+1. De emotie eerst volledig erkend is
+2. Het kind al kalm genoeg is om humor te ontvangen
+3. De grap gaat over de banaan, niet over het kind
+4. Het een gedeeld moment creëert
+
+## Wanneer humor invalidatie wordt
+
+Humor wordt schadelijk als het de emotie vervangt in plaats van aanvult. Dan is het geen humor meer. Dan is het een manier om het ongemakkelijke gevoel te ontwijken.
+
+**Voorbeelden van humor als invalidatie:**
+
+*Je dochter huilt omdat ze niet mee mag naar het feestje.*
+"Doe niet zo gek, het is maar een feestje!" *(lachend)*
+
+*Je zoon is bang voor de hond van de buurman.*
+"Haha, die hond is kleiner dan jij! Wie is hier nou de baas?" *(grinnikend)*
+
+*Je kind is teleurgesteld over een slecht cijfer.*
+"Tja, je kunt niet overal goed in zijn, he?" *(met een knipoog)*
+
+In al deze gevallen stuurt de humor het bericht: jouw gevoel is overdreven, niet serieus, en grappig in de ogen van je vader. Dat is het tegenovergestelde van emotiecoaching.
+
+### De vuistregel
+
+**Lach MET je kind, nooit OM je kind.**
+
+Lachen MET je kind betekent: jullie delen het moment. Je kind lacht ook. De humor verbindt.
+
+Lachen OM je kind betekent: jij vindt het grappig, je kind niet. De humor isoleert.
+
+Als je twijfelt, stel jezelf de vraag: "Lacht mijn kind mee? Of krimpt mijn kind ineen?"
+
+## Speelse technieken per leeftijd
+
+### Peuters (2-4 jaar): De kracht van absurditeit
+
+Kleine kinderen houden van het absurde. En absurditeit kan een krachtig middel zijn om een vastgelopen emotie los te wrikken.
+
+**De pratende knuffel:** Pak een knuffel en laat hem "praten". *"He, ik ben Beer. Ik ben ook weleens boos. Dan stamp ik met mijn berenvoeten! Stamp stamp stamp!"* Het kind lacht, stampt mee, en de spanning vloeit weg.
+
+**Het verkeerde verhaal:** *"Weet je wat er vandaag gebeurde? Er kwam een olifant in de keuken en die at ALLE koekjes op!"* Het kind vergeet even zijn frustratie en gaat mee in het spel: *"Nee papa, olifanten passen niet in de keuken!"*
+
+**De overdrijving:** *"Ben je boos? ZO boos? Zo boos als een leeuw? Zo boos als TIEN leeuwen?"* Het kind begint te giechelen bij de overdrijving. Let op: dit werkt alleen als het kind al een beetje kalmeer. Niet midden in een volle meltdown.
+
+### Schoolkinderen (5-9 jaar): Humor als verbinding
+
+Op deze leeftijd begint je kind grappen te begrijpen. Humor wordt een taal die jullie delen.
+
+**Het codwoord:** Spreek samen een grappig codewoord af voor boze momenten. *"Als een van ons heel boos wordt, zeggen we: PANNENKOEK!"* Het doorbreekt de spanning omdat het een gedeeld geheim is.
+
+**De schaal van absurditeit:** *"Oke, hoe boos ben je? Boos als een kat die nat wordt? Of boos als een draak die zijn vuur kwijt is?"* Het kind benoemt de emotie via een grappig beeld, en dat is eigenlijk affect labeling via humor.
+
+**Papa's mislukkingen:** Vertel over een keer dat jij iets doms deed of je schaamde. Kinderen vinden het heerlijk om te horen dat papa ook dingen fout doet. Het normaliseert fouten en verlaagt de drempel om over eigen gevoelens te praten.
+
+### Preteens (10-12 jaar): Droge humor en zelfspot
+
+Op deze leeftijd werkt absurditeit minder. Kinderen willen serieus genomen worden. Maar subtiele humor, zelfspot en gedeelde inside jokes zijn goud waard.
+
+**Zelfspot:** *"Ik had op jouw leeftijd trouwens ook een hekel aan wiskunde. Ik denk dat dat erfelijk is."* Het verlaagt de druk en zegt: je hoeft niet perfect te zijn.
+
+**Inside jokes:** Ontwikkel humor die alleen van jullie is. Een terugkerend grapje, een dom liedje in de auto, een grappige bijnaam voor stressvolle situaties. Dit creëert verbinding die sterker is dan welk serieus gesprek ook.
+
+**Timing respecteren:** Als je tiener met een gezicht als een onweersbui thuiskomt, is het niet het moment voor een grap. Eerst erkennen, dan ruimte geven. De humor komt later, als er weer ruimte voor is.
+
+## Het verschil in de praktijk
+
+| Situatie | Humor als invalidatie | Humor als verbinding |
+|---|---|---|
+| Kind valt en huilt | "Haha, dat was een mooie landing!" | *(Na het troosten)* "Die stoeprand had duidelijk iets tegen je. Zal ik hem een boze brief schrijven?" |
+| Kind is bang voor onweer | "Haha, het is maar een beetje lawaai!" | "Weet je wat ik denk? De wolken zijn aan het bowlen. En die ene wolk is echt slecht." |
+| Kind krijgt slecht cijfer | "Tja, kun je niet allemaal Einstein zijn." | *(Na het erkennen)* "Ik had een keer een 2 voor aardrijkskunde. Ik dacht dat Australie in Europa lag." |
+| Kind is boos op vriendje | "Ach, morgen zijn jullie weer vriendjes." | *(Na het luisteren)* "Zullen we een plan bedenken? Stap 1: heel boos kijken. Stap 2: ... eh, ik weet stap 2 niet. Help je me?" |
+
+---
+
+### Oefening 10.1: Humor-inventarisatie
+
+**Wanneer heb ik voor het laatst echt gelachen met mijn kind?**
+
+.......................................................................
+
+**Herken ik momenten waarop ik humor gebruik om een gevoel weg te lachen?**
+
+.......................................................................
+
+**Wat is een inside joke die ik met mijn kind heb (of zou willen hebben)?**
+
+.......................................................................
+
+**Welke speelse techniek uit dit hoofdstuk past bij de leeftijd van mijn kind?**
+
+.......................................................................
+
+---
+
+# Hoofdstuk 11: Emotiecoaching en Genderverschillen
+
+## We behandelen onze kinderen anders dan we denken
+
+De meeste vaders zullen zeggen: "Ik behandel mijn zoon en dochter hetzelfde." En de meeste vaders menen dat oprecht. Maar onderzoek vertelt een ander verhaal.
+
+Tara Chaplin, psycholoog aan de George Mason University, onderzocht hoe ouders reageren op de emoties van hun kinderen. Haar bevindingen zijn ontnuchterend. Ouders, en vaders in het bijzonder, reageren systematisch anders op emoties van jongens dan op emoties van meisjes. Niet uit kwade wil, maar onbewust, gestuurd door diepgewortelde culturele patronen.
+
+De patronen zijn consistent:
+- Vaders praten meer over emoties met dochters dan met zonen
+- Vaders reageren sneller troostend op huilende dochters dan op huilende zonen
+- Vaders tolereren meer woede-uitingen bij zonen dan bij dochters
+- Vaders gebruiken meer emotievoorden in gesprekken met dochters
+- Vaders moedigen stoerheid en onafhankelijkheid meer aan bij zonen
+
+Dit heeft consequenties. En niet de consequenties die je misschien verwacht.
+
+## Jongens en emoties: de "stoer"-verwachting doorbreken
+
+Jongens krijgen van jongs af aan het bericht dat bepaalde emoties niet bij hen horen. Niet expliciet. Bijna niemand zegt letterlijk: "Jongens huilen niet." Maar het bericht wordt op duizend subtiele manieren overgebracht.
+
+- Papa die sneller troost bij zijn dochter dan bij zijn zoon
+- Andere volwassenen die zeggen: "Wat een dappere jongen!" als hij niet huilt
+- Media die mannelijkheid koppelen aan emotionele controle
+- De speelplaats waar huilen sociale gevolgen heeft
+
+Het resultaat? Jongens leren hun emoties te onderdrukken, te maskeren of om te zetten in de ene emotie die wel geaccepteerd wordt: **boosheid**. Verdriet wordt boosheid. Angst wordt boosheid. Schaamte wordt boosheid. Eenzaamheid wordt boosheid.
+
+Dit verklaart waarom jongens vaker externaliserende gedragsproblemen hebben. Niet omdat ze minder voelen, maar omdat ze minder manieren hebben geleerd om te voelen.
+
+### Wat jij als vader kunt doen:
+
+**Benoem alle emoties bij je zoon.** Niet alleen boosheid. *"Ik zie dat je verdrietig bent."* *"Het is oke om te huilen."* *"Je bent teleurgesteld, he?"* Hoe vaker je zoon hoort dat alle emoties mogen, hoe meer ruimte hij ervaart om ze te voelen.
+
+**Wees zelf het voorbeeld.** Laat je zoon zien dat jij ook verdrietig kunt zijn, zenuwachtig, teleurgesteld. *"Ik had vandaag een moeilijke dag op werk. Ik voel me een beetje somber."* Jij bent het bewijs dat emoties voelen en man zijn samengaan.
+
+**Corrigeer de buitenwereld (zachtjes).** Als oma zegt "Grote jongens huilen niet", hoef je geen scène te maken. Maar zeg later tegen je zoon: *"Ik hoorde wat oma zei. Maar ik denk er anders over. Grote jongens mogen huilen. Grote mannen ook."*
+
+**Maak fysiek contact normaal.** Jongens worden minder aangeraakt naarmate ze ouder worden. Dat is een cultureel patroon, geen biologische noodzaak. Blijf knuffelen, arm om de schouder leggen, een hand op zijn rug. Fysiek contact is emotionele communicatie. Dat geldt voor alle leeftijden.
+
+## Meisjes en emoties: het "lief"-verwachtingspatroon
+
+Waar jongens leren dat ze niet te veel mogen voelen, leren meisjes dat ze niet te veel mogen uiten. Of liever gezegd: alleen bepaalde emoties mogen ze uiten.
+
+Het patroon bij meisjes:
+- Verdriet en angst worden geaccepteerd en getroost
+- Boosheid en assertiviteit worden ontmoedigd: "Doe niet zo boos", "Dat is niet lief"
+- Meisjes die boos zijn worden sneller gelabeld als "lastig" of "dramatisch"
+- Meisjes leren dat harmonie belangrijker is dan hun eigen grenzen
+
+Het resultaat? Meisjes leren hun boosheid te onderdrukken. Ze worden pleasers. Ze leren dat lief zijn belangrijker is dan eerlijk zijn. En dat heeft langetermijngevolgen voor zelfvertrouwen, assertiviteit en het stellen van grenzen in relaties.
+
+### Wat jij als vader kunt doen:
+
+**Verwelkom boosheid bij je dochter.** *"Je bent boos. Dat mag. Vertel me wat er aan de hand is."* Laat haar zien dat boosheid geen bedreiging is voor jullie relatie. Dat je niet minder van haar houdt als ze boos is.
+
+**Moedig assertiviteit aan.** Als je dochter zegt: "Dat vind ik niet leuk", reageer dan niet met: "Doe niet zo moeilijk." Reageer met: "Goed dat je dat zegt. Wat vind je dan wel leuk?" Je leert haar dat haar stem ertoe doet.
+
+**Let op je eigen patronen.** Ga bij jezelf na: praat ik anders over emoties met mijn dochter dan met mijn zoon? Troost ik haar sneller? Moedig ik haar minder aan om dingen zelf op te lossen? De eerlijke antwoorden zijn soms oncomfortabel, maar bewustwording is de eerste stap.
+
+**Laat haar zien dat kracht en gevoeligheid samengaan.** Meisjes die leren dat ze zowel lief als boos mogen zijn, dat ze zowel zacht als sterk mogen zijn, ontwikkelen een breder emotioneel repertoire. En dat begint bij een vader die beide kanten verwelkomt.
+
+## Wat het onderzoek zegt
+
+Chaplin en haar collega's (2015) vonden in hun meta-analyse van 166 studies dat ouders:
+- Meisjes meer aanmoedigen tot emotionele expressie in het algemeen
+- Bij jongens meer nadruk leggen op emotionele controle
+- Bij meisjes meer nadruk leggen op verdriet en angst
+- Bij jongens meer boosheid en trots toelaten
+
+Het opvallende? Deze patronen beginnen al bij baby's. Ouders interpreteren dezelfde gezichtsuitdrukking bij een baby anders, afhankelijk van of ze denken dat het een jongen of meisje is. Een huilende baby in een blauw pakje wordt eerder gelabeld als "boos". Dezelfde baby in een roze pakje wordt eerder gelabeld als "bang" of "verdrietig".
+
+Dit betekent dat wij als vaders actief moeten werken om deze patronen te doorbreken. Niet door te doen alsof er geen verschillen zijn, maar door bewust te kiezen voor gelijke emotionele ruimte.
+
+## De bewuste emotiecoach-vader
+
+Emotiecoaching die rekening houdt met genderverschillen is geen ingewikkelde methode. Het is een bewuste keuze om voor al je kinderen, ongeacht geslacht, dezelfde emotionele ruimte te maken.
+
+Dat betekent:
+- **Bij je zoon:** alle emoties welkom heten, niet alleen boosheid en trots
+- **Bij je dochter:** alle emoties welkom heten, niet alleen verdriet en angst
+- **Bij jezelf:** eerlijk kijken naar je eigen patronen en de moed hebben om ze te veranderen
+
+Het mooiste cadeau dat je je kinderen kunt geven is niet genderneutrale opvoeding als een ideologie. Het is de ervaring dat hun vader hen ziet, in al hun emoties, zonder filter. Dat een zoon mag huilen en een dochter mag schreeuwen. Dat zachtheid en kracht geen tegengestelden zijn, maar partners.
+
+---
+
+### Oefening 11.1: Genderspiegel
+
+**Als mijn zoon huilt, is mijn eerste impuls:**
+
+.......................................................................
+
+**Als mijn dochter boos is, is mijn eerste impuls:**
+
+.......................................................................
+
+**Welk verschil merk ik in hoe ik reageer op emoties van mijn zoon vs. mijn dochter?**
+
+.......................................................................
+
+**Welke boodschap wil ik mijn zoon meegeven over emoties?**
+
+.......................................................................
+
+**Welke boodschap wil ik mijn dochter meegeven over boosheid?**
+
+.......................................................................
+
+---
+
+# Hoofdstuk 12: Jouw Eigen Emoties als Vader
 
 ## De spiegel
 
-We hebben het tot nu toe gehad over de emoties van je kind. Maar de eerlijke waarheid is: de grootste uitdaging in emotiecoaching is niet je kind, het ben jij.
+We hebben het tot nu toe gehad over de emoties van je kind. Maar de eerlijke waarheid is: de grootste uitdaging in emotiecoaching is niet je kind. Het ben jij.
 
 Jouw reacties op de emoties van je kind worden bepaald door:
 - Hoe er met jouw emoties is omgegaan toen je klein was
@@ -1176,140 +1577,70 @@ Jouw reacties op de emoties van je kind worden bepaald door:
 - Je onbewuste triggers
 - Je eigen onverwerkte emoties
 
-## Triggers herkennen
+## Wanneer jouw triggers de emotiecoach saboteren
 
-Een **trigger** is een situatie die een disproportioneel sterke reactie bij je oproept. Je kind doet iets, en plotseling ben je niet meer de kalme vader, je bent een kind van 8 dat terugreageerd vanuit oud pijn.
+Soms doet je kind iets en reageer je disproportioneel. Niet op het gedrag van nu, maar op iets van vroeger. Als je kind huilt en jij voelt irritatie in plaats van empathie, is dat waarschijnlijk geen reactie op je kind. Het is een echo van hoe er met jouw emoties is omgegaan.
 
-### Veelvoorkomende triggers bij vaders:
+De cursus *Zelfregulatie als Vader* behandelt triggers uitgebreid: hoe je ze herkent, waar ze vandaan komen, en hoe je ze doorbreekt. Hier is de korte versie voor als je midden in een emotiecoaching-moment zit en merkt dat je eigen emoties de overhand nemen:
 
-**"Hij luistert niet."**
-Mogelijk trigger: als kind niet gehoord worden, of een controlerende opvoeding waarin gehoorzaamheid alles was.
-
-**"Ze huilt alweer."**
-Mogelijk trigger: opgroeien met de boodschap dat emoties zwakte zijn. Andermans tranen maken jouw onderdrukte verdriet wakker.
-
-**"Hij doet het expres."**
-Mogelijk trigger: zwart-wit denken geleerd als kind. Kinderen worden als mini-volwassenen gezien die bewust keuzes maken.
-
-**"Ik lijk op mijn vader."**
-Mogelijk trigger: angst om patronen te herhalen. Paradoxaal genoeg maakt die angst het moeilijker om anders te reageren.
-
-## De triggercyclus doorbreken
-
-```
-╔══════════════════════════════════════════╗
-║  DE TRIGGERCYCLUS                        ║
-╠══════════════════════════════════════════╣
-║                                          ║
-║  Situatie (kind gilt)                    ║
-║       ↓                                  ║
-║  Trigger (ik word boos)                  ║
-║       ↓                                  ║
-║  Automatische reactie (schreeuwen)       ║
-║       ↓                                  ║
-║  Schuldgevoel                            ║
-║       ↓                                  ║
-║  Overcompensatie (te lief)               ║
-║       ↓                                  ║
-║  Situatie herhaalt zich...               ║
-║                                          ║
-╚══════════════════════════════════════════╝
-```
-
-### De doorbraak: de pauze
-
-Tussen trigger en reactie zit een ruimte. In die ruimte zit je keuze. In die keuze zit je groei.
-
-**Praktisch:**
-
-1. **Herken het lijfsignaal.** Jouw lichaam waarschuwt je eerder dan je brein. Waar voel jij stress? Kaken? Schouders? Borst? Vuisten?
-
-2. **Benoem het innerlijk.** *"Ik word nu boos. Dit is mijn trigger. Dit gaat niet over mijn kind."*
-
-3. **Pauze.** Adem. Tel tot 5. Of zeg hardop: *"Ik heb even een momentje nodig."* En loop weg. Niet als straf, als zelfzorg.
-
-4. **Keer terug.** Wanneer je weer in je raam bent, ga terug naar je kind. En begin bij stap 1 van emotiecoaching.
+1. **Merk het op.** Je lichaam waarschuwt je: spanning in je kaken, vuisten, of borst.
+2. **Benoem het innerlijk.** *"Dit is mijn trigger. Dit gaat niet over mijn kind."*
+3. **Pauze.** *"Ik heb even een momentje nodig."* Loop weg. Niet als straf, als zelfzorg.
+4. **Keer terug.** Wanneer je kalm bent, begin bij stap 1 van emotiecoaching.
 
 ## Herstellen na een fout
 
-Je gaat fouten maken. Je gaat schreeuwen als je niet wilde schreeuwen. Je gaat dingen zeggen die je niet meent. Dat is niet het einde van de wereld, het is een kans.
+Je gaat fouten maken. Je gaat schreeuwen als je niet wilde schreeuwen. Je gaat dingen zeggen die je niet meent. Dat is niet het einde van de wereld. Soms loopt emotiecoaching mis. Hoe je herstelt na zo'n moment lees je in de cursus *Herstel na Conflict*.
 
-### De hersteldialoog:
-
-**1. Kom terug wanneer je kalm bent.**
-
-**2. Erken wat er gebeurde.**
-*"Ik schreeuwde net tegen je. Dat was niet oké."*
-
-**3. Neem verantwoordelijkheid.**
-*"Ik was moe en gestrest, maar dat is geen excuus om te schreeuwen."*
-
-**4. Benoem hoe het had moeten gaan.**
-*"Ik had moeten zeggen: 'Ik ben nu te boos om rustig te praten. Ik ga even kalmeren.'"*
-
-**5. Verbind.**
-*"Sorry. Ik hou van je. En ik probeer het beter te doen."*
-
-### Waarom herstel zo krachtig is:
-
-- Je kind leert dat fouten maken menselijk is
-- Je kind leert dat relaties bestand zijn tegen conflict
-- Je kind leert hoe een echte verontschuldiging eruitziet
-- Je kind leert dat papa ook emoties heeft, en daar verantwoordelijkheid voor neemt
+Het belangrijkste om te onthouden: herstel is geen falen. Herstel is een vaardigheid. Een kind dat ziet dat zijn vader een fout maakt, het erkent, en het repareert, leert iets dat waardevoller is dan perfectie: het leert dat relaties tegen een stootje kunnen.
 
 > *"Sorry zeggen als vader is geen zwakte, het is het sterkste wat je kunt doen."*
 
 ---
 
-### Oefening 8.1: Triggerkaart
+### Oefening 12.1: Mijn emotiecoaching-saboteurs
 
-Vul deze triggerkaart in. Wees eerlijk, dit is alleen voor jou.
+Denk aan de laatste drie keer dat je merkte dat emotiecoaching niet lukte. Niet omdat je kind moeilijk deed, maar omdat jij iets voelde dat in de weg zat.
 
-**Trigger 1:**
+**Moment 1:**
 
-*Situatie:* ...............................
+*Wat deed mijn kind?* ...............................
 
-*Mijn automatische reactie:* ...............................
+*Wat voelde ik (eerlijk)?* ...............................
 
-*Wat ik eigenlijk voel (onder de boosheid):* ...............................
+*Waarom kon ik op dat moment geen emotiecoach zijn?* ...............................
 
-*Waar dit vandaan komt:* ...............................
+**Moment 2:**
 
-*Wat ik volgende keer wil doen:* ...............................
+*Wat deed mijn kind?* ...............................
 
-**Trigger 2:**
+*Wat voelde ik?* ...............................
 
-*Situatie:* ...............................
+*Waarom lukte het niet?* ...............................
 
-*Mijn automatische reactie:* ...............................
+**Moment 3:**
 
-*Wat ik eigenlijk voel (onder de boosheid):* ...............................
+*Wat deed mijn kind?* ...............................
 
-*Waar dit vandaan komt:* ...............................
+*Wat voelde ik?* ...............................
 
-*Wat ik volgende keer wil doen:* ...............................
+*Waarom lukte het niet?* ...............................
 
-**Trigger 3:**
+**Patroon:** Welke emotie van je kind maakt het voor jou het moeilijkst om coach te zijn?
 
-*Situatie:* ...............................
+...............................
 
-*Mijn automatische reactie:* ...............................
-
-*Wat ik eigenlijk voel (onder de boosheid):* ...............................
-
-*Waar dit vandaan komt:* ...............................
-
-*Wat ik volgende keer wil doen:* ...............................
+> Wil je je triggers dieper onderzoeken? De cursus *Zelfregulatie als Vader* bevat een uitgebreide triggerkaart en technieken om je automatische reacties te doorbreken.
 
 ---
 
-### Oefening 8.2: Brief aan jezelf
+### Oefening 12.2: Brief aan jezelf als emotiecoach
 
-Schrijf een korte brief aan jezelf als vader. Wat wil je onthouden op de moeilijke momenten?
+Schrijf een korte brief aan jezelf. Niet als vader in het algemeen, maar specifiek over emotiecoaching. Wat wil je onthouden op de momenten dat je kind huilt, schreeuwt of jou wegduwt?
 
 *Lieve ik,*
 
-.......................................................................
+*Op de moeilijke momenten wil ik onthouden dat...*
 
 .......................................................................
 
@@ -1317,29 +1648,52 @@ Schrijf een korte brief aan jezelf als vader. Wat wil je onthouden op de moeilij
 
 .......................................................................
 
-.......................................................................
+*Het gevoel dat ik mijn kind het meest gun is:*
 
 .......................................................................
+
+*De zin die ik wil zeggen als ik niet meer weet wat ik moet doen:*
 
 .......................................................................
 
 ---
 
-# Hoofdstuk 9: Werkbladen & Opdrachten
+# Hoofdstuk 13: Werkbladen & Opdrachten
 
-## Werkblad 1: Weekplanner Emotiecoaching
+## Werkblad 1: De Emotie-Detectivekaart
 
-Gebruik dit werkblad één week lang. Noteer elke dag één emotioneel moment en hoe je reageerde.
+Lees elke situatie. Speel detective: welke emotie zit eronder? En welke stap van Gottman pas je als eerste toe? Er is niet altijd een "goed" antwoord. Het gaat om bewust worden van wat er onder het gedrag zit.
 
-| Dag | Emotie kind | Mijn reactie | Wat ging goed | Wat kan beter |
-|-----|------------|-------------|---------------|---------------|
-| Ma  |            |             |               |               |
-| Di  |            |             |               |               |
-| Wo  |            |             |               |               |
-| Do  |            |             |               |               |
-| Vr  |            |             |               |               |
-| Za  |            |             |               |               |
-| Zo  |            |             |               |               |
+| # | Situatie | Welke emotie zit eronder? | Welke Gottman-stap pas je toe? |
+|---|---|---|---|
+| 1 | Je dochter (4) weigert haar jas aan te doen en gooit hem door de gang. | | |
+| 2 | Je zoon (8) zegt "school is stom" en wil zijn huiswerk niet maken. | | |
+| 3 | Je kind (3) klampt zich aan je been vast als je het naar de creche brengt. | | |
+| 4 | Je dochter (6) slaat haar broertje als hij haar knuffel pakt. | | |
+| 5 | Je zoon (10) komt heel stil thuis van school en gaat meteen naar zijn kamer. | | |
+| 6 | Je kind (5) schreeuwt "Ik haat jou!" als je de TV uitzet. | | |
+| 7 | Je dochter (7) begint te huilen als ze een slecht cijfer krijgt, en verscheurt haar schrift. | | |
+| 8 | Je zoon (4) wil niet naar bed en begint te gillen als je het licht uitdoet. | | |
+| 9 | Je kind (9) doet overdreven vrolijk en grappig na een ruzie op school. | | |
+| 10 | Je dochter (11) reageert niet als je vraagt hoe het op school was, staart naar haar bord en eet nauwelijks. | | |
+
+**Na het invullen:** Bespreek je antwoorden met je partner of een andere vader. Welke situaties vond je makkelijk? Welke moeilijk? Waar zit jouw blinde vlek?
+
+---
+
+## Werkblad 2: De Emotie-Barometer (weeklogboek)
+
+Gebruik dit werkblad een week lang. Noteer elke dag de sterkste emotie die je bij je kind zag, hoe jij reageerde, en wat het effect was. Geen oordeel, alleen observatie.
+
+| Dag | Sterkste emotie van mijn kind | Wat was de aanleiding? | Hoe reageerde ik? | Wat was het effect op mijn kind? | Cijfer voor mezelf (1-10) |
+|-----|------|------|------|------|------|
+| Ma  | | | | | |
+| Di  | | | | | |
+| Wo  | | | | | |
+| Do  | | | | | |
+| Vr  | | | | | |
+| Za  | | | | | |
+| Zo  | | | | | |
 
 **Reflectie na de week:**
 
@@ -1347,125 +1701,210 @@ Gebruik dit werkblad één week lang. Noteer elke dag één emotioneel moment en
 
 .......................................................................
 
-*Waar ging ik het meest mee worstelen?*
+*Bij welke emotie reageer ik het best?*
 
 .......................................................................
 
-*Welke vooruitgang merk ik?*
+*Bij welke emotie vind ik het het moeilijkst om coach te zijn?*
+
+.......................................................................
+
+*Welk patroon valt me op?*
+
+.......................................................................
+
+*Wat ga ik volgende week anders doen?*
 
 .......................................................................
 
 ---
 
-## Werkblad 2: Emotie-thermometer voor je kind
+## Werkblad 3: Emotiewoordenboek-bouwer
 
-Print dit werkblad en bespreek het samen met je kind. Kleur samen de thermometer in.
+Dit is een werkblad om SAMEN met je kind te maken. Het doel: een persoonlijk emotiewoordenboek bouwen waarin je kind leert om nuance te geven aan wat het voelt. Print dit werkblad of gebruik een leeg schrift.
 
-| Niveau | Hoe ik me voel |
-|--------|----------------|
-| **10** | HEEL ERG |
-| **9** | |
-| **8** | |
-| **7** | |
-| **6** | |
-| **5** | GEMIDDELD |
-| **4** | |
-| **3** | |
-| **2** | |
-| **1** | |
-| **0** | HELEMAAL NIET |
+**Hoe het werkt:**
 
-**Ik voel me nu:** .......................................................................
+Per emotie vullen jij en je kind samen het volgende in:
 
-**Dat komt door:** .......................................................................
+### Emotie: BOOS
 
-**Wat helpt mij:** .......................................................................
+**Hoe voelt het in mijn lijf?**
+(Laat je kind tekenen of beschrijven: buik, hoofd, handen, borst)
+
+.......................................................................
+
+**Welke kleur heeft dit gevoel?**
+
+.......................................................................
+
+**Hoe ziet mijn gezicht eruit?**
+(Laat je kind een gezicht tekenen)
+
+**Andere woorden voor dit gevoel:**
+(Help je kind: geïrriteerd, gefrustreerd, woedend, geprikkeld)
+
+.......................................................................
+
+**Wanneer voel ik dit het vaakst?**
+
+.......................................................................
+
+**Wat helpt mij als ik dit voel?**
+
+.......................................................................
 
 ---
 
-## Werkblad 3: De 5 Stappen Checklist
+Herhaal dit voor: **VERDRIETIG**, **BANG**, **BLIJ**, **JALOERS**, **BESCHAAMD**, en eventueel emoties die je kind zelf bedenkt.
+
+**Tip:** Jonge kinderen (3-5) kunnen tekenen en kleuren in plaats van schrijven. Oudere kinderen (8+) kunnen er een echt boekje van maken met foto's of plaatjes uit tijdschriften.
+
+---
+
+## Werkblad 4: De Vier Stijlen Zelftest
+
+Ontdek je eigen emotie-opvoedstijl. Beantwoord eerlijk. Er zijn geen goede of foute antwoorden, alleen eerlijke.
+
+**Per vraag: kies de reactie die het dichtst bij jouw werkelijke gedrag ligt.**
+
+**1. Je kind (5) huilt omdat het geen ijsje mag.**
+- a) "Niet huilen. Het is maar een ijsje."
+- b) "Hou op met dat gezeur."
+- c) "Ach, laat maar huilen, het gaat wel over."
+- d) "Je wilt heel graag een ijsje en dat mag niet. Dat is balen."
+
+**2. Je kind (8) schreeuwt "Ik haat je!" als je zegt dat het naar bed moet.**
+- a) Ik negeer het en stuur hem naar bed.
+- b) "Zoiets zeg je niet! Naar je kamer, nu!"
+- c) Ik laat het gaan, hij is gewoon moe.
+- d) "Wow, je bent echt boos dat je naar bed moet. Ik snap dat je liever wilt opblijven."
+
+**3. Je dochter (6) huilt omdat haar vriendinnetje niet meer met haar wil spelen.**
+- a) "Zoek dan een ander vriendinnetje."
+- b) "Stel je niet zo aan, je hebt toch genoeg vrienden?"
+- c) Ik laat haar huilen en kijk later wel.
+- d) "Dat doet pijn, he? Als iemand die je leuk vindt niet meer met je wil spelen."
+
+**4. Je zoon (4) gooit zijn bord op de grond als hij het eten niet lust.**
+- a) Ik ruim het op en zeg niks.
+- b) "Dat doe je niet! Naar de hoek!"
+- c) "Ach, hij is gewoon niet hongerig."
+- d) "Je vindt het niet lekker, he? Dat mag. En we gooien niet met borden. Wil je iets anders proberen?"
+
+**5. Je kind (10) komt thuis met een slecht rapport en trekt zich terug op zijn kamer.**
+- a) "Het valt ook wel mee, volgende keer beter."
+- b) "Dit is niet goed genoeg. Je hebt niet hard genoeg gewerkt."
+- c) Ik laat hem even, het komt wel goed.
+- d) Ik klop op zijn deur: "He, ik zag je rapport. Hoe voel je je daarover?"
+
+**6. Je dochter (3) bijt een ander kind in de speeltuin.**
+- a) Ik pak haar op en ga snel weg.
+- b) "Stout! We bijten niet! Zeg sorry!"
+- c) "Ach, kinderen doen dat weleens."
+- d) "Jij bent boos, he? Bijten mag niet, dat doet pijn. Als je boos bent, zeg je: ik ben boos."
+
+**7. Je zoon (7) is bang om te gaan zwemmen en weigert het water in te gaan.**
+- a) "Er is niks om bang voor te zijn. Gewoon gaan."
+- b) "Stel je niet aan. Alle andere kinderen doen het ook."
+- c) "Dan gaan we toch lekker niet? Komt een andere keer wel."
+- d) "Je vindt het eng, he? Dat mag. Wat maakt het zo eng?"
+
+**8. Je kind (5) slaat je omdat je nee zegt.**
+- a) Ik negeer de klap en loop weg.
+- b) Ik schreeuw: "We slaan niet!"
+- c) Ik lach het weg: "Haha, stoer hoor."
+- d) "Je bent zo boos dat je wilt slaan. Dat snap ik. Slaan mag niet. Je mag wel zeggen: ik ben boos!"
+
+**9. Je dochter (9) komt huilend thuis omdat ze gepest wordt.**
+- a) "Negeer ze gewoon, dan stoppen ze vanzelf."
+- b) "Wie doet dat? Dan ga ik die ouders bellen."
+- c) "Ach, kinderen pesten nu eenmaal."
+- d) "Dat klinkt heel naar. Vertel eens, wat is er gebeurd?"
+
+**10. Je zoon (11) weigert naar een verjaardagsfeestje te gaan.**
+- a) "Je moet gewoon gaan. Het is onbeleefd om niet te komen."
+- b) "Dit is belachelijk. Je gaat, punt."
+- c) "Dan ga je toch niet? Maakt niet uit."
+- d) "Je wilt niet gaan. Hoe komt dat? Is er iets wat je dwars zit?"
+
+**11. Je kind (4) heeft een nachtmerrie en komt huilend je slaapkamer in.**
+- a) "Het was maar een droom. Ga maar weer slapen."
+- b) "Je bent te oud om zo te doen. Terug naar je eigen bed."
+- c) Ik laat hem in ons bed kruipen, wat maakt het uit.
+- d) "He, je bent geschrokken. Dat was eng, he? Ik ben hier. Je bent veilig."
+
+**12. Je dochter (7) is woedend omdat haar broertje een hoger cijfer heeft.**
+- a) "Dat maakt toch niet uit? Het gaat niet om cijfers."
+- b) "In plaats van boos zijn moet je harder werken."
+- c) "Ach, de volgende keer beter."
+- d) "Je baalt ervan dat je broertje een hoger cijfer heeft. Dat voelt oneerlijk, he?"
+
+**13. Je zoon (6) weigert zijn spullen op te ruimen en begint te schreeuwen.**
+- a) Ik ruim het zelf op om de lieve vrede.
+- b) "NU opruimen. Anders gaan al die spullen in de prullenbak."
+- c) "Ach, hij is moe. Laat maar."
+- d) "Je hebt geen zin om op te ruimen. Dat snap ik. Het moet wel gebeuren. Zullen we het samen doen?"
+
+**14. Je kind (8) is verdrietig omdat het huisdier van opa is overleden.**
+- a) "Het was al een oud beest. Het heeft een goed leven gehad."
+- b) "Niet zo overdreven doen. Het was maar een kat."
+- c) Ik zeg niks en hoop dat het overgaat.
+- d) "Je bent verdrietig over de kat van opa. Dat snap ik. Jullie hadden een band, he?"
+
+**15. Je dochter (10) wordt steeds stiller en zegt dat alles "prima" is.**
+- a) "Mooi, dan is er niks aan de hand."
+- b) "Vertel me nu wat er is. Ik heb geen zin in dit gedoe."
+- c) "Het gaat wel over."
+- d) "Ik merk dat je je anders gedraagt dan normaal. Je hoeft er niet over te praten, maar ik ben er als je wilt."
+
+---
+
+**Score:**
+
+Tel je antwoorden bij elkaar op:
+
+- **Vooral a):** Afwijzende stijl. Je bedoelt het goed, maar je kind voelt zich niet gezien.
+- **Vooral b):** Afkeurende stijl. Je wilt controle, maar je kind leert zijn emoties te verbergen.
+- **Vooral c):** Laissez-faire stijl. Je accepteert alles, maar je kind mist sturing.
+- **Vooral d):** Emotie-coachende stijl. Je herkent, erkent en begeleidt.
+
+De meeste vaders scoren een mix. Dat is normaal. Het doel is niet om op alles d) te scoren. Het doel is om te zien waar je nu staat, en bij welke situaties je kunt groeien.
+
+**Mijn top-3 situaties waar ik het meest wil groeien:**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+---
+
+## Werkblad 5: De 5 Stappen Checklist
 
 Gebruik deze checklist na een emotioneel moment. Loop de stappen langs:
 
-☐ **Stap 1:** Ik herkende de emotie van mijn kind
-   → Welke emotie? ...............................
+**Stap 1:** Ik herkende de emotie van mijn kind
+   Welke emotie? ...............................
 
-☐ **Stap 2:** Ik zag het als kans om te verbinden (niet als probleem)
+**Stap 2:** Ik zag het als kans om te verbinden (niet als probleem)
 
-☐ **Stap 3:** Ik luisterde en erkende het gevoel
-   → Wat zei ik? ...............................
+**Stap 3:** Ik luisterde en erkende het gevoel
+   Wat zei ik? ...............................
 
-☐ **Stap 4:** Ik hielp mijn kind de emotie te benoemen
-   → Welke woorden gebruikte ik? ...............................
+**Stap 4:** Ik hielp mijn kind de emotie te benoemen
+   Welke woorden gebruikte ik? ...............................
 
-☐ **Stap 5:** Ik stelde een grens EN bood een alternatief
-   → Grens: ...............................
-   → Alternatief: ...............................
+**Stap 5:** Ik stelde een grens EN bood een alternatief
+   Grens: ...............................
+   Alternatief: ...............................
 
 **Cijfer voor mezelf (1-10):** ___
 
-**Eén ding dat ik volgende keer anders doe:**
+**Wat ging goed?**
 
 .......................................................................
 
----
-
-## Werkblad 4: Situatie-oefenkaarten
-
-Lees elke situatie. Schrijf op hoe je zou reageren met emotiecoaching.
-
-### Situatie A
-Je zoon (4) wil niet naar bed. Hij schreeuwt, gooit zijn knuffel, en trapt tegen de deur.
-
-*Jouw reactie met emotiecoaching:*
-
-.......................................................................
-
-.......................................................................
-
-.......................................................................
-
-### Situatie B
-Je dochter (7) komt thuis van school en zegt: "Niemand wil met me spelen." Ze begint te huilen.
-
-*Jouw reactie met emotiecoaching:*
-
-.......................................................................
-
-.......................................................................
-
-.......................................................................
-
-### Situatie C
-Je zoon (10) krijgt een slecht cijfer en verscheurt zijn toets. Hij schreeuwt: "Ik ben dom!"
-
-*Jouw reactie met emotiecoaching:*
-
-.......................................................................
-
-.......................................................................
-
-.......................................................................
-
-### Situatie D
-Je dochter (3) bijt een ander kind in de speeltuin omdat dat kind haar schep afpakte.
-
-*Jouw reactie met emotiecoaching:*
-
-.......................................................................
-
-.......................................................................
-
-.......................................................................
-
-### Situatie E
-Je zoon (9) weigert naar zwemles te gaan. Hij zegt dat hij buikpijn heeft, maar je vermoedt dat hij bang is.
-
-*Jouw reactie met emotiecoaching:*
-
-.......................................................................
-
-.......................................................................
+**Wat wil ik volgende keer anders doen?**
 
 .......................................................................
 
@@ -1473,68 +1912,66 @@ Je zoon (9) weigert naar zwemles te gaan. Hij zegt dat hij buikpijn heeft, maar 
 
 ## Opdracht: 7-Dagen Emotiecoaching Challenge
 
-Dag voor dag oefenen. Kies elke dag één focuspunt:
+Elke dag een focuspunt dat specifiek gaat over het coachen van emoties. Niet generiek "aanwezig zijn", maar gericht oefenen met de Gottman-stappen.
 
-**Dag 1: Herkennen**
-Let vandaag bewust op de emoties van je kind. Noteer er minstens 3.
+**Dag 1: De emotie-detective**
+Let vandaag bewust op de emoties van je kind. Noteer er minstens 3. Probeer bij elke emotie ook de onderliggende emotie te raden. (Boosheid over de iPad? Misschien frustratie. Of angst om iets te missen.)
 
-**Dag 2, Labelen**
-Benoem vandaag minstens 2x hardop wat je kind voelt: "Je bent [emotie]."
+**Dag 2: Labelen zonder fixen**
+Benoem vandaag minstens 2x hardop wat je kind voelt. "Je bent [emotie]." Bied daarna GEEN oplossing. Alleen labelen. Merk op wat er gebeurt.
 
-**Dag 3, Niet fixen**
-Als je kind vandaag verdrietig of boos is, bied dan geen oplossing. Alleen luisteren.
+**Dag 3: De ene-trede-dieper-dag**
+Als je kind vandaag boos of verdrietig is, vraag dan: "En wat zit daaronder?" Of: "Is er misschien nog een ander gevoel?" Probeer voorbij de eerste emotie te kijken.
 
-**Dag 4, Oogcontact**
-Ga bij elk emotioneel moment op ooghoogte. Maak oogcontact.
+**Dag 4: De "en"-dag**
+Gebruik vandaag bij elk emotioneel moment "en" in plaats van "maar". Niet: "Ik snap dat je boos bent, MAAR we slaan niet." Wel: "Ik snap dat je boos bent EN we slaan niet." Merk op hoe dat anders voelt.
 
-**Dag 5, Jouw triggers**
-Let vandaag op jouw eigen reacties. Wanneer raak jij geprikkeld? Wat voel je in je lichaam?
+**Dag 5: De spiegeldag**
+Let vandaag op jouw eigen emoties als je kind emotioneel is. Wat voel jij? Irritatie? Machteloosheid? Verdriet? Schrijf het op. Dit gaat niet over je kind, dit gaat over jou.
 
-**Dag 6, Samen benoemen**
-Help je kind vandaag om zelf woorden te vinden: "Hoe noem je dat gevoel?"
+**Dag 6: Het emotiewoordenboek**
+Help je kind vandaag om een emotie specifieker te benoemen. Niet "boos" maar "gefrustreerd". Niet "verdrietig" maar "teleurgesteld". Bied twee opties en laat je kind kiezen.
 
-**Dag 7, Reflectie**
-Kijk terug op de week. Wat ging goed? Wat vond je lastig? Wat ga je volhouden?
+**Dag 7: Reflectie en vooruitblik**
+Kijk terug op de week. Welke dag ging het best? Welke vond je het moeilijkst? Schrijf op: welke ene ding wil ik blijven doen?
+
+| Dag | Focuspunt | Wat deed ik? | Wat merkte ik bij mijn kind? | Wat merkte ik bij mezelf? |
+|-----|------|------|------|------|
+| 1 | Emotie-detective | | | |
+| 2 | Labelen zonder fixen | | | |
+| 3 | Een trede dieper | | | |
+| 4 | De "en"-dag | | | |
+| 5 | Spiegeldag | | | |
+| 6 | Emotiewoordenboek | | | |
+| 7 | Reflectie | | | |
 
 ---
 
-# Hoofdstuk 10: Bronnen & Verder Lezen
+# Hoofdstuk 14: Bronnen & Verder Lezen
 
 ## Wetenschappelijke bronnen
 
 - **Gottman, J.M. & DeClaire, J.** (1997). *Raising An Emotionally Intelligent Child.* Simon & Schuster.
   De basis van emotiecoaching. Het boek dat deze hele methodiek onderbouwt.
 
-- **Siegel, D.J. & Bryson, T.P.** (2011). *The Whole-Brain Child.* Bantam Books.
-  Het tweelagenbrein-model. Essentieel voor het begrijpen waarom kinderen doen wat ze doen.
-
-- **Siegel, D.J. & Bryson, T.P.** (2014). *No-Drama Discipline.* Bantam Books.
-  Hoe je grenzen stelt zonder de verbinding te verliezen.
-
 - **Lieberman, M.D. et al.** (2007). Putting Feelings into Words: Affect Labeling Disrupts Amygdala Activity. *Psychological Science, 18*(5), 421-428.
   De wetenschap achter labelen: waarom woorden geven aan emoties de amygdala kalmeert.
-
-- **Feldman, R.** (2007). Parent–Infant Synchrony: Biological Foundations and Developmental Outcomes. *Current Directions in Psychological Science, 16*(6), 340-345.
-  Co-regulatie: hoe jouw hartslag en kalmte die van je kind beïnvloedt.
-
-- **Cabrera, N.J. et al.** (2018). Fatherhood in the Twenty‐First Century. *Child Development, 89*(1), 58-68.
-  Waarom de emotionele betrokkenheid van vaders uniek en onvervangbaar is.
 
 - **Ramchandani, P.G. et al.** (2013). Do Early Father-Infant Interactions Predict the Onset of Externalising Behaviours? *Journal of Child Psychology and Psychiatry, 54*(1), 56-64.
   Het effect van vaderlijke betrokkenheid op agressieregulatie bij kinderen.
 
-- **Lamb, M.E.** (2010). *The Role of the Father in Child Development* (5th ed.). Wiley.
-  Het standaardwerk over vaderschap en ontwikkeling.
+- **Chaplin, T.M. et al.** (2015). Gender Differences in Emotion Expression in Children: A Meta-Analytic Review. *Psychological Bulletin, 141*(2), 338-363.
+  Het baanbrekende onderzoek naar hoe ouders anders reageren op emoties van zonen versus dochters.
 
-- **Radesky, J.S. et al.** (2014). Patterns of Mobile Device Use by Caregivers and Children During Meals in Fast Food Restaurants. *Pediatrics, 133*(4), e843-e849.
-  De impact van telefoongebruik op de responsiviteit van ouders.
+- **Aron, E.N.** (2002). *The Highly Sensitive Child.* Broadway Books.
+  Het standaardwerk over hooggevoeligheid bij kinderen.
 
 ## Aanbevolen boeken (Nederlands)
 
-- **Siegel, D.J. & Bryson, T.P.**: *Het Ja-Brein* (Nederlandse vertaling van The Yes Brain)
 - **Gottman, J.M.**: *Opvoeden met Emotionele Intelligentie*
-- **Van der Kolk, B.**: *Traumasporen* (The Body Keeps the Score)
 - **Tsabary, S.**: *De Bewuste Ouder*
+- **Aron, E.N.**: *Hoog Sensitief Kind* (Nederlandse vertaling)
+- **Faber, A. & Mazlish, E.**: *Luister je wel naar mij?* Communicatietechnieken voor emotionele gesprekken met kinderen.
 
 ## Verder leren
 
@@ -1558,5 +1995,5 @@ Je bent een goede vader. Het feit dat je hier bent, bewijst dat.
 
 ---
 
-*© De Vader Coach, devadercoach.nl*
+*De Vader Coach, devadercoach.nl*
 *Alle rechten voorbehouden.*

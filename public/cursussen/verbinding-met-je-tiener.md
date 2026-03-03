@@ -944,10 +944,44 @@ Ja, echt. Vraag of je een potje mee mag doen. Je zult verliezen. Je zult er niks
 Geen preek. Een gesprek.
 
 **4. Maak samen afspraken**
-Betrek je tiener bij de regels over schermtijd - samen afspraken maken werkt beter dan eenzijdig opleggen. In de cursus *Grenzen Stellen* lees je uitgebreid over het opstellen van digitale grenzen en concrete afspraken rond schermtijd.
+Betrek je tiener bij de regels over schermtijd - samen afspraken maken werkt beter dan eenzijdig opleggen. In de cursus *Grenzen Stellen* lees je uitgebreid over het opstellen van digitale grenzen en concrete afspraken rond schermtijd. En in de cursus *Autonomie en Loslaten* vind je het overdrachtsmodel: hoe je stap voor stap de verantwoordelijkheid voor digitale keuzes overdraagt aan je tiener.
 
 ### 5. Wees het voorbeeld
 Als jij tijdens het eten op je telefoon zit, heb je geen been om op te staan. De krachtigste boodschap over schermtijd geef je niet met woorden - maar met je eigen gedrag.
+
+## De digitale wereld van je tiener binnenkomen
+
+Er is een verschil tussen controleren en meeleven. Controleren is: "Laat je telefoon zien." Meeleven is: "Laat eens zien wat je speelt." Dat verschil bepaalt of je tiener de deur openzet of dichtgooit.
+
+Veel vaders voelen zich ongemakkelijk in de digitale wereld van hun tiener. Ze kennen de games niet, snappen TikTok niet, weten niet wat een Discord-server is. En dat ongemak vertalen ze in afstand: *dat is zijn wereld, niet de mijne.* Of in kritiek: *wat een tijdverspilling.*
+
+Maar het werkt andersom. Juist omdat je het niet begrijpt, is je nieuwsgierigheid zo waardevol. Je tiener verwacht niet dat je het snapt. Hij verwacht dat je het **probeert**.
+
+### Gespreksopeners die werken
+
+Het verschil tussen een verhoor en een gesprek zit in de vraag.
+
+**Verhoor-vragen (vermijden):**
+- "Wat doe je op je telefoon?"
+- "Hoeveel uur heb je vandaag gegamed?"
+- "Kun je niet iets nuttigers doen?"
+- "Met wie zit je te appen?"
+
+**Verbindingsvragen (gebruiken):**
+- "He, wat is dat voor game? Hoe werkt dat?"
+- "Wie zijn de mensen met wie je speelt? Ken je ze van school?"
+- "Wat maakt die YouTuber zo grappig? Laat eens een stukje zien."
+- "Ik zag iets over [game/app die je kind gebruikt]. Klopt het dat...?"
+- "Wat was het leukste dat er vandaag online gebeurde?"
+- "Als je mij een game zou moeten leren, welke zou je kiezen?"
+
+De laatste vraag is goud. Je geeft je tiener de expertrol. Hij mag jou iets leren. Dat draait de dynamiek om - en tieners bloeien op wanneer ze de kennishouder zijn.
+
+### Het verschil tussen infiltreren en interesseren
+
+Een waarschuwing: interesse tonen is niet hetzelfde als binnendringen. Als je ineens een TikTok-account aanmaakt en je tiener gaat volgen, is dat geen verbinding. Dat is surveillance in vermomming. Je tiener heeft een digitale ruimte nodig die van hem is, net zoals jij als tiener een slaapkamer had waar je ouders niet elk moment binnenkwamen.
+
+De regel: je bent welkom als gast, niet als bewaker. Wacht op uitnodigingen. En als je er bent, oordeel niet.
 
 ## Gaming: vriend of vijand?
 
@@ -1842,11 +1876,8 @@ Kijk terug op de week.
 - **Erikson, E.H.** (1968). *Identity: Youth and Crisis.* W.W. Norton & Company.
   De basis van identiteitsontwikkeling in de adolescentie.
 
-- **Bowlby, J.** (1988). *A Secure Base: Parent-Child Attachment and Healthy Human Development.* Basic Books.
-  Hechtingstheorie - de basis voor waarom een veilige haven cruciaal is, ook bij tieners.
-
 - **Allen, J.P. & Tan, J.S.** (2016). The Multiple Facets of Attachment in Adolescence. In J. Cassidy & P.R. Shaver (Eds.), *Handbook of Attachment* (3rd ed.). Guilford Press.
-  Hechtingstheorie specifiek toegepast op de adolescentie.
+  Hechtingstheorie specifiek toegepast op de adolescentie. Voor de basis van hechtingstheorie (Bowlby), zie de cursus *Aanwezig Vaderschap*.
 
 - **Casey, B.J., Jones, R.M., & Hare, T.A.** (2008). The Adolescent Brain. *Annals of the New York Academy of Sciences, 1124*, 111-126.
   De neurowetenschappelijke basis van risicogedrag bij tieners.
@@ -1857,9 +1888,6 @@ Kijk terug op de week.
 - **Guilamo-Ramos, V. et al.** (2012). Paternal Influences on Adolescent Sexual Risk Behaviors. *Pediatrics, 130*(5), e1313-e1321.
   Het unieke effect van vaders op het seksuele risicogedrag van tieners.
 
-- **Lamb, M.E.** (2010). *The Role of the Father in Child Development* (5th ed.). Wiley.
-  Het standaardwerk over vaderschap - van babytijd tot adolescentie.
-
 - **Roisman, G.I. et al.** (2004). Salient and Emerging Developmental Tasks in the Transition to Adulthood. *Child Development, 75*(1), 123-133.
   De ontwikkelingstaken van adolescenten en hoe ouders die kunnen ondersteunen.
 
@@ -1869,7 +1897,6 @@ Kijk terug op de week.
 - **Delfos, M.F.** - *Luister je wel naar mij? Gespreksvoering met kinderen tussen 4 en 12 jaar*
 - **Delfos, M.F.** - *Ik heb ook wat te vertellen! Communiceren met pubers en adolescenten*
 - **Bormans, R.** - *Het puberbrein: Wat elke ouder moet weten*
-- **Van der Kolk, B.** - *Traumasporen* (The Body Keeps the Score)
 
 ## Verder leren
 

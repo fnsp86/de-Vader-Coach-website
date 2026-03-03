@@ -54,7 +54,11 @@ Lees elk hoofdstuk op je eigen tempo. Doe de oefeningen - ze werken alleen als j
 7. **Aanwezig Luisteren** | De kunst van niks zeggen
 8. **Aanwezigheid Wanneer Het Moeilijk Is** | Stress, scheiding en afwijzing
 9. **Aanwezigheid per Leeftijd** | Van baby tot tiener
-10. **Werkbladen, Opdrachten & Bronnen** | Aan de slag
+10. **Aanwezigheid en Partnerschap** | Samen opvoeden, niet overnemen
+11. **De Weekstructuur van de Betrokken Vader** | Aanwezigheid inbouwen in je agenda
+12. **Aanwezigheid bij Meerdere Kinderen** | Aandacht eerlijk verdelen
+13. **Culturele Verwachtingen en Vaderschap** | Je eigen definitie bepalen
+14. **Werkbladen, Opdrachten & Bronnen** | Aan de slag
 
 ---
 
@@ -103,19 +107,15 @@ Het goede nieuws: je hoeft geen perfecte vader te zijn. Onderzoek laat zien dat 
 
 ## Co-regulatie: Jullie hartslag klopt samen
 
-Ruth Feldman ontdekte in 2007 iets buitengewoons: wanneer ouder en kind in afstemming zijn, **synchroniseren hun hartslagen letterlijk**. Niet als metafoor - als meetbaar fysiologisch feit. Jullie autonome zenuwstelsels gaan samenwerken.
+Ruth Feldman ontdekte in 2007 iets buitengewoons: wanneer ouder en kind in afstemming zijn, **synchroniseren hun hartslagen letterlijk**. Je kind kan zijn eigen emoties nog niet reguleren, dus gebruikt het jouw zenuwstelsel als sjabloon. Als jij kalm bent, kalmeert je kind. Als jij gestrest bent, escaleert je kind.
 
-Dit heet **co-regulatie**. Je kind kan zijn eigen emoties nog niet reguleren. Zijn brein is daar simpelweg niet rijp genoeg voor. Dus gebruikt hij jouw zenuwstelsel als sjabloon. Als jij kalm bent, kalmeert je kind. Als jij gestrest bent, escaleert je kind.
+Dit heet co-regulatie, en het is een van de krachtigste mechanismen in de opvoeding. Het werkt via spiegelneuronen: als jij glimlacht, vuren dezelfde neuronen in het brein van je kind. Als jij kalm bent, voelt je kind kalmte. Jullie breinen zijn letterlijk verbonden.
 
-## De drie standen van het zenuwstelsel
+Feldman toonde aan dat oxytocine - het bindingshormoon - bij zowel vader als kind stijgt tijdens momenten van synchronisatie. Oogcontact, aanraking, een warme stem: het zijn allemaal triggers voor oxytocine-afgifte. En hoe meer oxytocine, hoe sterker de hechtingsband.
 
-Stephen Porges beschreef met zijn **polyvagaaltheorie** drie standen van het zenuwstelsel:
+De praktische implicatie: jouw kalmte is het krachtigste opvoedingsmiddel dat je hebt. Niet je woorden, niet je regels, niet je goede bedoelingen. Jouw zenuwstelsel.
 
-1. **Ventral vagaal** (veilig/sociaal) - ontspannen, open, verbonden. Hier kan een kind leren, spelen en groeien.
-2. **Sympathisch** (vecht/vlucht) - alert, gespannen. Hier kan een kind alleen overleven, niet leren.
-3. **Dorsaal vagaal** (bevriezen) - uitgeschakeld, bevroren. De noodstop van het lichaam.
-
-**Je kind kan alleen leren in de ventrale staat.** En de snelste manier om een kind daar te brengen? Een ouder die zelf in die staat is. Jouw kalmte is het krachtigste opvoedingsmiddel dat je hebt.
+In de cursus *Zelfregulatie als Vader* lees je hoe je zenuwstelsel reageert op stress en hoe je dat kunt beïnvloeden.
 
 ## Het kerninzicht
 
@@ -271,17 +271,9 @@ De Spookvader had vaak een vader die er fysiek wel was maar emotioneel niet. De 
 
 **Maar hier is het goede nieuws.**
 
-## Neuroplasticiteit: Je kunt veranderen
+## Je kunt veranderen
 
-Je brein is geen beton. Het is klei. Norman Doidge beschreef in *The Brain That Changes Itself* (2007) hoe het brein op elke leeftijd nieuwe neurale paden kan aanleggen. Dit heet **neuroplasticiteit**, en het betekent dat je patronen uit je jeugd niet je lot zijn.
-
-Het vraagt wel drie dingen:
-
-1. **Bewustzijn** - je moet het patroon eerst zien (daar zijn we nu mee bezig)
-2. **Intentie** - je moet bewust kiezen voor een ander gedrag
-3. **Herhaling** - nieuwe paden worden sterker door oefening, niet door goede voornemens
-
-Elke keer dat je je telefoon weglegt en je kind aankijkt, leg je een nieuw pad aan. Elke keer dat je op de grond gaat zitten in plaats van de vaatwasser in te ruimen, versterk je dat pad. Het voelt in het begin onnatuurlijk. Dat is normaal. Nieuw voelt altijd onwennig.
+Je brein is geen beton. Het is klei. Patronen uit je jeugd zijn niet je lot. Elke keer dat je je telefoon weglegt en je kind aankijkt, leg je een nieuw neuraal pad aan. Elke keer dat je op de grond gaat zitten in plaats van de vaatwasser in te ruimen, versterk je dat pad. Het voelt in het begin onnatuurlijk. Dat is normaal. Nieuw voelt altijd onwennig. In de cursus *Zelfregulatie als Vader* lees je uitgebreid hoe neuroplasticiteit werkt en hoe je het kunt benutten om oude patronen te doorbreken.
 
 ```
 ╔══════════════════════════════════════════════════════════╗
@@ -419,34 +411,27 @@ Je zit aan de eettafel. Je kind vertelt over de ruzie op het schoolplein. Maar j
 
 Je kind voelt het. Altijd. Kinderen zijn wandelende emotiedetectoren. Ze weten niet wat "mentale afwezigheid" is, maar ze voelen het in hun botten. En ze trekken altijd dezelfde conclusie: *het ligt aan mij*.
 
-## Het overgangsritueel
+## De eerste twee minuten
 
-De oplossing is niet "probeer harder" of "wees gewoon aanwezig." Dat werkt niet. Je hebt een **systeem** nodig. Een bewust ritueel dat je brein helpt omschakelen van werk-modus naar vader-modus.
+De oplossing is niet "probeer harder" of "wees gewoon aanwezig." Dat werkt niet. Je hebt een bewuste overgang nodig van werk-modus naar vader-modus. In de cursus *Zelfregulatie als Vader* vind je concrete overgangsrituelen die je helpen om te schakelen voordat je thuiskomt.
 
-Dit heet een **overgangsritueel**, en het werkt omdat het je brein een concreet signaal geeft: *nu verandert er iets*.
+Maar er is iets dat minstens zo belangrijk is als hoe je de overgang maakt: **wat er gebeurt in de eerste twee minuten nadat je de deur opent.**
 
-### Voorbeelden die werken:
+Onderzoek naar ouder-kindinteracties laat zien dat kinderen razendsnel "lezen" hoe beschikbaar je bent. De eerste 120 seconden na thuiskomst zetten de toon voor de rest van de avond. Je kind scant drie dingen:
 
-**In de auto:**
-- Telefoon op stil, in de tas
-- Drie diepe ademhalingen
-- Zeg hardop (ja, hardop): *"Nu ben ik papa"*
-- Zet eventueel een vast nummer op dat je helpt landen
+**1. Je lichaamstaal.** Loop je door naar de keuken terwijl je je jas uittrekt? Of draai je je naar je kind toe? Een kind dat ziet dat papa binnenkomt en meteen doorloopt, trekt de conclusie: *hij is er niet echt.*
 
-**Bij de voordeur:**
-- Sta even stil voordat je de deur opent
-- Laat je werkgedachten symbolisch buiten
-- Eerste actie als je binnenkomt: oogcontact met je kind, op hun hoogte
+**2. Je stemtoon.** Het maakt niet uit wat je zegt. "He, hoi!" kan klinken als een uitnodiging of als een afwimpeling. Je kind hoort het verschil voordat het de woorden verwerkt.
 
-**De kleedkamer-techniek:**
-- Trek werkkleren uit, doe huiskleren aan
-- Fysiek wisselen geeft je brein een signaal: andere rol, ander gedrag
+**3. Je oogcontact.** Dit is de krachtigste. Als je binnenkomt en je kind aankijkt, echt aankijkt, op hun hoogte, dan communiceer je iets dat geen woorden kunnen zeggen: *ik zie je. Je bent belangrijk.*
 
-**De vijf-minuten buffer:**
-- Neem vijf minuten alleen. Geen telefoon, geen gesprek. Land even.
-- Daarna: volledig beschikbaar
+### De tweeminuten-regel
 
-Kies er één. Doe het vanavond. Na twee weken is het een gewoonte.
+Maak van de eerste twee minuten na thuiskomst een niet-onderhandelbaar moment. Geen telefoon. Geen post openmaken. Geen "ik ga me eerst even omkleden." Eerst je kind. Twee minuten. Oogcontact, een omhelzing, een vraag die laat zien dat je er bent.
+
+Het klinkt simpel. Maar tel vanavond eens hoe lang het duurt voordat je na thuiskomst echt contact maakt met je kind. Veel vaders ontdekken dat die eerste twee minuten gevuld zijn met jas ophangen, telefoon checken, post pakken, iets tegen hun partner zeggen over het eten. Het kind wacht. En leert wachten.
+
+Twee minuten. Daar begint aanwezig vaderschap.
 
 ## Telefoonregels die werken
 
@@ -1212,14 +1197,7 @@ Het verschil is niet subtiel. Het is enorm. En je kind voelt het verschil binnen
 
 ## Wat Er Gebeurt als een Kind Zich Echt Gehoord Voelt
 
-De neurowetenschapper Stephen Porges beschrijft het sociale betrokkenheidssysteem - een netwerk in het brein dat actief wordt wanneer we ons veilig voelen bij een ander mens. Wanneer je kind merkt dat jij *echt* luistert, gebeurt er iets meetbaars:
-
-- Het **oxytocinegehalte** stijgt - het hormoon van verbinding en vertrouwen
-- Het **cortisolniveau** daalt - minder stress, minder waakzaamheid
-- De **hartslag** stabiliseert zich
-- Het kind voelt zich letterlijk **veilig genoeg** om meer te delen
-
-(Porges, 2011)
+Wanneer je kind merkt dat jij *echt* luistert, verandert er iets meetbaars in zijn lichaam: het stresshormoon cortisol daalt, het bindingshormoon oxytocine stijgt en de hartslag stabiliseert zich. Je kind voelt zich letterlijk veilig genoeg om meer te delen. In de cursus *Zelfregulatie als Vader* lees je hoe je zenuwstelsel reageert op stress en hoe dat doorwerkt in jullie contact.
 
 Dit is geen soft gedoe. Dit is neurobiologie. Jouw aandacht verandert de chemie in het lichaam van je kind. Elke keer dat je echt luistert, bouw je aan een brein dat weet: *ik mag er zijn. Mijn verhaal doet ertoe.*
 
@@ -1430,12 +1408,7 @@ Op de allermoeilijkste dagen: **tien minuten**. Tien minuten echte, onverdeelde 
 
 "Papa, kijk!" Vanaf links. "Papa, mag ik...?" Vanaf rechts. "PAPA!" Vanuit de gang. En jij staat in het midden en hebt maar twee ogen en twee handen.
 
-Meerdere kinderen tegelijk is een van de grootste uitdagingen van aanwezig vaderschap. Hier zijn strategieën die werken:
-
-- **Rotatie:** Tien minuten per kind. Wees daar eerlijk over: "Nu ben ik even helemaal bij Sem. Straks ben ik helemaal bij jou."
-- **Wekelijks één-op-één-tijd:** Zelfs een half uur per week per kind - wandelen, samen boodschappen doen, een spelletje - maakt een enorm verschil.
-- **Benoem wat je doet:** "Wacht even lieverd, ik ben nu bij je broer. Jij bent zo aan de beurt." Kinderen kunnen wachten als ze weten dat ze gezien worden.
-- **Gezamenlijke activiteiten:** Samen koken, samen bouwen, samen een film kijken. Niet alles hoeft individueel.
+Meerdere kinderen tegelijk is een van de grootste uitdagingen van aanwezig vaderschap. De kern: roteer bewust, benoem wat je doet ("Nu ben ik even bij Sem, straks ben ik bij jou"), en plan wekelijks solo-tijd met elk kind. In Hoofdstuk 12 vind je een uitgebreide aanpak voor aandacht verdelen over meerdere kinderen, inclusief tips per leeftijdscombinatie.
 
 ## Als Je Kind Je Afwijst
 
@@ -1487,22 +1460,19 @@ Dit is geen veroordeling. Dit is een oproep: zoek hulp. Niet alleen voor jezelf.
 
 Je bent ontploft. Je hebt geschreeuwd. Misschien heb je iets gezegd wat je niet meende. Je kind keek je aan met grote ogen, en je voelde: *dit is niet wie ik wil zijn.*
 
-Welkom bij het vaderschap. Dit overkomt iedere vader. De vraag is niet of het gebeurt. De vraag is: **wat doe je daarna?**
+Welkom bij het vaderschap. Dit overkomt iedere vader. De vraag is niet of het gebeurt. De vraag is: **wat doe je daarna?** In de cursus *Herstel na Conflict* vind je een compleet stappenplan voor het herstellen van de band na een conflict. Hier gaat het over iets anders: het verschil tussen **weggaan** en **blijven**.
 
-Edward Tronick, ontwikkelingspsycholoog, onderzocht hoe ouder-kindrelaties werken. Zijn conclusie: het gaat niet om perfectie. Het gaat om **rupture and repair** - breuk en herstel. De momenten waarop het misgaat, gevolgd door de momenten waarop je terugkomt en het herstelt. DIT is wat kinderen veerkrachtig maakt (Tronick, 2007).
+### Aanwezig blijven na een fout
 
-**Herstel ziet er zo uit:**
+Er is een specifiek patroon dat veel vaders herkennen. Je hebt geschreeuwd, of je hebt iets gezegd dat pijn deed. En dan voel je de schaamte. En die schaamte drijft je weg. Je trekt je terug in de garage, achter je laptop, naar een andere kamer. Je hebt "even ruimte nodig." Soms is dat oprecht - je hebt tijd nodig om te kalmeren. Maar vaak is het vermijding. Je wilt niet onder ogen zien wat je deed.
 
-Ga terug naar je kind. Ga op ooghoogte. En zeg:
+Dit weglopen na een conflict is een patroon dat in veel gezinnen van generatie op generatie wordt doorgegeven. Vader maakte een fout, vader verdween, het werd nooit meer besproken. Het kind leerde: als het moeilijk wordt, gaan mannen weg. Conflict is het einde van contact.
 
-**Papa:** "Ik had niet moeten schreeuwen. Het spijt me. Jouw gevoel was terecht - je mocht boos zijn. Ik heb het verkeerd aangepakt."
+Het krachtigste wat je als vader kunt doen na een fout, is **blijven**. Niet meteen praten. Niet meteen oplossen. Maar fysiek aanwezig blijven. In dezelfde ruimte. Beschikbaar.
 
-Dat is het. Geen excuses ("Ik was moe"). Geen maar ("Maar jij luisterde ook niet"). Gewoon: ik deed het fout, het spijt me, jouw gevoel telt.
+Je hoeft niet te weten wat je moet zeggen. Je hoeft het niet meteen goed te maken. Maar je kind moet zien dat je niet verdwijnt. Dat je niet wegloopt als het moeilijk wordt. Dat is de boodschap die dieper gaat dan welke verontschuldiging ook: *zelfs als ik het verpest, ga ik niet weg.*
 
-Dit leert je kind drie onbetaalbare lessen:
-1. Fouten maken is menselijk
-2. Herstel is altijd mogelijk
-3. Relaties overleven conflict
+Dit vraagt moed. Het is makkelijker om weg te lopen, een biertje te pakken, de tv aan te zetten. Maar elke keer dat je in de buurt blijft terwijl de schaamte je wegdrijft, leer je je kind iets dat het de rest van zijn leven meeneemt: **conflict hoeft geen scheiding te betekenen. Papa blijft.**
 
 ### Oefening 8.1: Mijn Moeilijkste Moment
 
@@ -1718,205 +1688,849 @@ Hang deze belofte op een plek waar je hem dagelijks ziet. Niet als druk, maar al
 ```
 
 ---
-# Hoofdstuk 10: Werkbladen, Opdrachten & Bronnen
 
-Je hebt gelezen. Je hebt nagedacht. Misschien heb je al iets uitgeprobeerd. Dit laatste hoofdstuk geeft je de gereedschappen om het vol te houden. Geen theorie meer - alleen praktijk. Print deze pagina's uit, hang ze op de koelkast, leg ze op je nachtkastje. Gebruik ze. Dat is het enige wat telt.
+# Hoofdstuk 10: Aanwezigheid en Partnerschap
 
----
+## Samen opvoeden, niet overnemen
 
-## Werkblad 1: Aanwezigheid-dagboek
+Aanwezig vaderschap vindt niet plaats in een vacuüm. Je doet het samen met iemand: je partner. En die samenwerking is een van de meest onderschatte factoren in goed ouderschap.
 
-Houd een week lang bij hoe aanwezig je werkelijk bent. Geen oordeel - alleen eerlijke observatie.
+Veel vaders denken dat betrokken zijn betekent: meer taken overnemen. Meer verschonen, meer koken, meer naar school brengen. En ja, dat helpt. Maar de kern van goed partnerschap in opvoeding is niet taakverdeling. Het is **afstemming**. Het gevoel dat je het samen doet, ook als je het apart doet.
 
-| Dag | Minuten onverdeelde aandacht | Telefoon-vrije momenten | Micro-oefening gedaan | Ritueel gedaan | Luister-moment | Score (1-10) |
-|-----|------------------------------|------------------------|-----------------------|----------------|----------------|--------------|
-| Ma  |                              |                        |                       |                |                |              |
-| Di  |                              |                        |                       |                |                |              |
-| Wo  |                              |                        |                       |                |                |              |
-| Do  |                              |                        |                       |                |                |              |
-| Vr  |                              |                        |                       |                |                |              |
-| Za  |                              |                        |                       |                |                |              |
-| Zo  |                              |                        |                       |                |                |              |
+## "Ik neem het over" versus "We doen het samen"
 
-### Reflectievragen na de week
+Er is een subtiel maar belangrijk verschil tussen deze twee zinnen. "Ik neem het over" klinkt behulpzaam, maar het impliceert: dit is eigenlijk jouw taak, en ik help even. "We doen het samen" zegt iets anders: dit is van ons allebei.
 
-Mijn gemiddelde score: .......................................................................
+Onderzoek naar co-parenting laat zien dat de kwaliteit van de ouderrelatie een sterkere voorspeller is van het welzijn van kinderen dan de hoeveelheid tijd die een individuele ouder besteedt (Feinberg, 2003). Met andere woorden: hoe jullie samenwerken is belangrijker dan hoeveel ieder van jullie afzonderlijk doet.
 
-Wat ik ontdekte over mezelf: .......................................................................
+**Herkenbare patronen:**
+
+| Patroon | Hoe het klinkt | Wat het kind leert |
+|---|---|---|
+| Gatekeeping | "Nee, zo doe je dat niet. Geef maar aan mij." | Papa kan het niet |
+| Overnemen | "Ik doe het wel, ga jij maar even zitten." | Er is maar een echte ouder |
+| Samen doen | "Hoe wil jij dit aanpakken? Ik doe het anders, en dat is prima." | Beide ouders zijn veilig |
+
+## Gatekeeping: de onzichtbare blokkade
+
+Veel moeders doen het onbewust. En veel vaders laten het gebeuren. **Maternal gatekeeping** is het fenomeen waarbij de moeder (vaak onbedoeld) de vader buitensluit door te corrigeren, over te nemen of te bekritiseren hoe hij dingen doet.
+
+"Zo maak je de fles niet warm." "Die broek past niet bij dat shirt." "Laat maar, ik doe het wel, dan gaat het sneller."
+
+Het resultaat: papa trekt zich terug. Niet uit onwil, maar uit het gevoel dat hij het toch nooit goed genoeg doet. En het kind leert: bij mama moet ik zijn, niet bij papa.
+
+De oplossing begint bij allebei. Mama: laat papa het op zijn manier doen. Het hoeft niet perfect te zijn. Papa: trek je niet terug als het een keer niet goed gaat. Blijf je plek innemen.
+
+## Als je partner een andere opvoedstijl heeft
+
+Jij vindt dat het kind om 19:00 naar bed moet. Je partner vindt 19:30 prima. Jij laat het kind zelf kiezen wat het eet. Je partner vindt dat het kind moet eten wat er op tafel staat. Jij denkt dat stoeien goed is voor de ontwikkeling. Je partner vindt het te wild.
+
+Welkom bij het ouderschap met twee mensen die allebei het beste willen maar het anders aanpakken.
+
+**Wat werkt:**
+
+- **Bespreek de grote lijnen.** Jullie hoeven het niet over elk detail eens te zijn. Maar over de kernwaarden wel. Wat zijn jullie drie niet-onderhandelbare opvoedregels?
+- **Respecteer het verschil.** Papa speelt wilder dan mama. Mama troost anders dan papa. Dat is geen probleem, dat is een rijkdom. Je kind leert: er zijn meerdere manieren om met de wereld om te gaan.
+- **Nooit ondermijnen waar het kind bij is.** Oneens? Prima. Maar bespreek het later, niet op het moment zelf. Een kind dat ziet dat papa en mama het oneens zijn over de regels, leert spelen met die verdeeldheid.
+- **Vraag: "Hoe wil jij dit aanpakken?"** In plaats van: "Zo moet het."
+
+## De taakverdeling die werkt
+
+Vergeet de 50/50-verdeling. Die bestaat niet en maakt iedereen ongelukkig. Wat wel werkt: een verdeling die past bij jullie leven, jullie ritme en jullie krachten.
+
+Eén mogelijkheid:
+
+- **Vaste verantwoordelijkheden.** Papa doet het inslapritueel. Mama doet het ochtendgedeelte. Niet omdat dat eerlijk is, maar omdat voorspelbaarheid fijn is, voor jullie en voor je kind.
+- **Flexibele back-up.** Als papa ziek is, neemt mama het inslapritueel over. Zonder drama. Zonder "dat doe je verkeerd."
+- **Wekelijkse check-in.** Vijf minuten per week: hoe gaat het? Wat loopt? Wat schuurt? Dit voorkomt dat frustraties zich ophopen.
+
+### Oefening 10.1: Onze opvoedafspraken
+
+**Onze drie niet-onderhandelbare opvoedregels:**
+
+1. .......................................................................
+
+2. .......................................................................
+
+3. .......................................................................
+
+**Waar zijn we het soms oneens? En hoe lossen we dat op?**
 
 .......................................................................
 
-Wat was het moeilijkst? .......................................................................
-
 .......................................................................
 
-Wat ging verrassend natuurlijk? .......................................................................
+**Hoe verdelen we de vaste momenten?**
 
-.......................................................................
-
-Wat wil ik volgende week anders doen? .......................................................................
-
-.......................................................................
-
----
-
-## Werkblad 2: Telefooncontract
+| Moment | Wie doet dit meestal? | Wie neemt over als het nodig is? |
+|---|---|---|
+| Ochtend / naar school | ..................... | ..................... |
+| Ophalen / thuiskomst | ..................... | ..................... |
+| Avondeten | ..................... | ..................... |
+| Inslapritueel | ..................... | ..................... |
+| Weekend-activiteit | ..................... | ..................... |
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║                                                                      ║
-║                       MIJN TELEFOONCONTRACT                          ║
-║                                                                      ║
-║  Ik leg mijn telefoon weg op de volgende momenten:                   ║
-║                                                                      ║
-║  ☐ Tijdens het eten                                                  ║
-║  ☐ De eerste 30 minuten na thuiskomst                                ║
-║  ☐ Tijdens het bedtijdritueel                                       ║
-║  ☐ Als ik op de grond speel met mijn kind                           ║
-║  ☐ Als mijn kind tegen mij praat                                    ║
-║  ☐ ........................................................          ║
-║                                                                      ║
-║  Telefoonvrije zones in ons huis:                                    ║
-║                                                                      ║
-║  ☐ De eettafel                                                      ║
-║  ☐ De slaapkamers                                                   ║
-║  ☐ De speelkamer / speelhoek                                        ║
-║  ☐ ........................................................          ║
-║                                                                      ║
-║  Als ik merk dat ik toch naar mijn telefoon grijp, dan:             ║
-║                                                                      ║
-║  ........................................................             ║
-║                                                                      ║
-║                                                                      ║
-║  Handtekening papa: ........................  Datum: ..............  ║
-║                                                                      ║
-║  Handtekening kind: ........................  Datum: ..............  ║
-║  (Kinderen vinden het geweldig om mee te tekenen!)                   ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 10                              ║
+║                                                         ║
+║  Je hoeft het niet eens te zijn over elk detail. Maar   ║
+║  je kind moet voelen: papa en mama staan aan dezelfde   ║
+║  kant. Samen opvoeden is niet hetzelfde doen - het is   ║
+║  hetzelfde willen.                                      ║
+╚══════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## Werkblad 3: Mijn Rituelen-planner
+# Hoofdstuk 11: De Weekstructuur van de Betrokken Vader
 
-Kies voor elk moment een ritueel. Klein mag. Consistent is belangrijker dan groots.
+## Aanwezigheid begint in je agenda
 
-| Moment       | Ritueel                        | Frequentie  | Startdatum | Status na 2 weken |
-|--------------|--------------------------------|-------------|------------|--------------------|
-| Ochtend      | ................................ | ........... | .......... | ☐ Loopt ☐ Gestopt |
-| Thuiskomst   | ................................ | ........... | .......... | ☐ Loopt ☐ Gestopt |
-| Bedtijd      | ................................ | ........... | .......... | ☐ Loopt ☐ Gestopt |
-| Weekend      | ................................ | ........... | .......... | ☐ Loopt ☐ Gestopt |
-| Maandelijks  | ................................ | ........... | .......... | ☐ Loopt ☐ Gestopt |
+Je kunt alle goede bedoelingen van de wereld hebben. Maar als je agenda vol staat en je geen structuur hebt, verdampt aanwezigheid in de waan van de dag. "Ik doe het vanavond wel." En vanavond wordt morgen. En morgen wordt volgende week.
 
-**Tip:** Begin met één ritueel. Eén. Voeg pas een tweede toe als het eerste een gewoonte is geworden.
+Aanwezigheid die niet ingepland is, gebeurt niet. Niet omdat je een slechte vader bent, maar omdat de druk van werk, huishouden en het dagelijks leven sterker is dan je goede voornemens.
+
+Dit hoofdstuk geeft je een concrete weekstructuur. Geen ideaalplaatje, maar een werkbaar plan voor vaders die fulltime werken, moe thuiskomen en toch elke dag willen tellen.
+
+## Het ochtendritueel: vijf minuten die de hele dag kleuren
+
+De ochtend is haastig. Broodtrommels, jassen, tanden poetsen, op tijd bij school zijn. Maar ergens in die hectiek zit een moment dat je kunt claimen.
+
+**Het minimale ochtendritueel:**
+- Oogcontact bij het wakker worden. Niet roepen vanuit de gang, maar even aan het bed staan.
+- Een vaste zin. "Goedemorgen, held." "Vandaag wordt een goede dag." Elke ochtend dezelfde.
+- Een knuffel bij de deur. Zes seconden. Altijd.
+
+Dit kost vijf minuten. Maar je kind begint de dag met een gevoel: papa heeft me gezien.
+
+## De middagverbinding: voor thuiswerkende vaders
+
+Werk je (deels) thuis? Dan is de verleiding groot om door te werken tot het avondeten. Maar een kort moment tussendoor maakt een wereld van verschil.
+
+- **Het halfuur-contact.** Om 15:30 (of wanneer je kind thuiskomt): laptop dicht, vijf minuten. "Hoe was het?" Niet achter je scherm vandaan mompelen, maar echt even stoppen.
+- **De gezamenlijke snack.** Samen een appel eten. Klinkt onbeduidend, maar het ritme telt.
+
+## Het avondblok: de gouden twee uur
+
+Tussen thuiskomen en bedtijd zit het belangrijkste stuk van je dag als vader. Twee uur, soms drie. Dit is waar het gebeurt. Dit is waar je kind je het hardst nodig heeft.
+
+**Een werkbare avondstructuur:**
+
+| Tijd | Activiteit | Aanwezigheidstip |
+|---|---|---|
+| 17:30/18:00 | Thuiskomst | Eerste 30 seconden: knuffel, oogcontact, telefoon weg |
+| 18:00-18:30 | Speelkwartier | Kind kiest, jij volgt. Geen klusjes, geen telefoon |
+| 18:30-19:00 | Samen eten | Telefoons weg. Iedereen deelt het beste en het moeilijkste van vandaag |
+| 19:00-19:30 | Klusjes + samen | Kind helpt mee: afruimen, opruimen. Samen doen, niet naast elkaar |
+| 19:30-20:00 | Inslapritueel | Voorlezen, drie-dingen-dankbaar, knuffel. Jouw moment |
+
+Pas dit aan naar jouw situatie. De exacte tijden doen er niet toe. Wat ertoe doet: dat elk blok een bewust moment van aanwezigheid bevat.
+
+## Aanwezigheid als fulltime werker
+
+"Ik werk van acht tot zes. Ik ben moe als ik thuiskom. Hoe moet ik dan aanwezig zijn?"
+
+Dit is de realiteit van de meeste vaders. En het antwoord is niet: doe meer. Het antwoord is: doe het bewust.
+
+**De rekening:**
+- Werkdagen: 5 dagen x 2 uur (avondblok) = 10 uur per week
+- Weekend: 2 dagen x 6 uur beschikbaar = 12 uur per week
+- Totaal: 22 uur potentiele aanwezigheidstijd per week
+
+Van die 22 uur hoef je niet alles "aan" te staan. Maar als je bewust vijf kwalitatieve uren per week kiest, ben je een uitzonderlijk aanwezige vader. Vijf uur. Dat is minder dan de tijd die de gemiddelde Nederlander per dag op zijn telefoon doorbrengt.
+
+**Drie regels voor de werkende vader:**
+1. **Bescherm het avondblok.** Geen werkmail na 18:00. Geen laptop open als de kinderen wakker zijn.
+2. **Kies je momenten.** Je kunt niet altijd aan staan. Kies drie vaste momenten per dag waarop je helemaal aan staat: ochtendknuffel, speelkwartier na werk, inslapritueel.
+3. **Weekend-kwaliteit boven weekdag-kwantiteit.** Eén goed uur op zaterdag is meer waard dan vijf halfslachtige avonden.
+
+## Weekendkwaliteit
+
+Het weekend is je kans. Niet om alles in te halen, maar om dieper te gaan. De activiteiten zijn langer, de druk is lager, het tempo is anders.
+
+**Weekendstructuur voor de aanwezige vader:**
+
+- **Zaterdagochtend: papa-kind-tijd.** Eén uur, één kind. Kind kiest. Dit is heilig.
+- **Zaterdagmiddag: gezinsactiviteit.** Samen naar buiten, samen bouwen, samen koken. Het maakt niet uit wat, als het maar samen is.
+- **Zondagochtend: het trage moment.** Uitslapen. Pannenkoeken. Samen op de bank. Geen haast, geen programma. Gewoon zijn.
+
+### Oefening 11.1: Mijn weekstructuur
+
+Vul je ideale week in. Wees realistisch, niet perfect.
+
+| Dag | Ochtendritueel | Na werk / middag | Avondblok | Weekend-moment |
+|---|---|---|---|---|
+| Maandag | ..................... | ..................... | ..................... | |
+| Dinsdag | ..................... | ..................... | ..................... | |
+| Woensdag | ..................... | ..................... | ..................... | |
+| Donderdag | ..................... | ..................... | ..................... | |
+| Vrijdag | ..................... | ..................... | ..................... | |
+| Zaterdag | ..................... | | | ..................... |
+| Zondag | ..................... | | | ..................... |
+
+**Mijn drie vaste aanwezigheidsmomenten per dag:**
+
+1. .......................................................................
+
+2. .......................................................................
+
+3. .......................................................................
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 11                              ║
+║                                                         ║
+║  Aanwezigheid die niet gepland is, verdampt in de       ║
+║  drukte van de dag. Kies drie vaste momenten per dag.   ║
+║  Plan ze in. Bescherm ze. Dat is het hele systeem.       ║
+╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
-## Werkblad 4: Aanwezigheidsstijl-tracker
+# Hoofdstuk 12: Aanwezigheid bij Meerdere Kinderen
 
-Herken je patronen. Houd vier weken lang bij hoe vaak je in elke "vadermodus" zit.
+## De verdeelopgave
 
-| Week   | Spookvader-momenten | Uitvoerder-momenten | Waarnemer-momenten | Echt aanwezig-momenten |
-|--------|---------------------|---------------------|--------------------|------------------------|
-| Week 1 |                     |                     |                    |                        |
-| Week 2 |                     |                     |                    |                        |
-| Week 3 |                     |                     |                    |                        |
-| Week 4 |                     |                     |                    |                        |
+"Papa, kijk!" Vanaf links. "Papa, mag ik iets vragen?" Vanaf rechts. "PAPA, hij pakt mijn speelgoed!" Vanuit de gang. En jij staat ertussen met twee ogen, twee handen en een brein dat overbelast raakt.
 
-**Spookvader:** Je bent er fysiek, maar mentaal ergens anders. Telefoon, werk in je hoofd, afwezig.
-**Uitvoerder:** Je doet dingen voor je kind, maar niet met je kind. Efficiënt, maar niet verbonden.
-**Waarnemer:** Je kijkt toe, maar stapt niet in. Veilig, maar afstandelijk.
-**Echt aanwezig:** Je bent er. Met je lijf, je ogen, je aandacht. Volledig.
+Aanwezig zijn voor een kind is al een uitdaging. Aanwezig zijn voor twee, drie of vier kinderen tegelijk is een logistieke en emotionele puzzel. Maar het kan. Als je het bewust aanpakt.
 
-Het doel is niet om nooit een spookvader te zijn. Het doel is om het te herkennen - en vaker te kiezen voor echte aanwezigheid.
+## Solo-tijd: het geheim van meerdere kinderen
+
+Het belangrijkste dat je kunt geven aan elk kind is **exclusieve aandacht**. Niet veel, niet lang, maar regelmatig. Eén-op-één-tijd is de sterkste investering die je kunt doen in de relatie met elk individueel kind.
+
+**Waarom solo-tijd werkt:**
+
+In een gezin met meerdere kinderen speelt elk kind een rol: de oudste, de grappige, de stille. Die rollen zijn niet altijd wie ze echt zijn. Maar in een-op-een-tijd valt de rol weg. Je kind hoeft niet te concurreren. Het hoeft niet de luidste te zijn om gehoord te worden. Het mag gewoon zichzelf zijn, met jouw volledige aandacht.
+
+**Hoe je solo-tijd organiseert:**
+
+- **Wekelijks:** Minimaal 30 minuten per kind per week. Kind kiest de activiteit.
+- **Roterend:** Maandag is Sem-avond. Woensdag is Roos-avond. Zo weet elk kind: mijn beurt komt.
+- **Klein is goed genoeg.** Solo-tijd hoeft geen uitje te zijn. Samen boodschappen doen telt. Samen de hond uitlaten telt. Samen op de bank een boek lezen telt.
+
+## Leeftijdsverschillen: de dagelijkse spagaat
+
+Een peuter van 2 en een schoolkind van 7 hebben totaal verschillende behoeften. De peuter wil op schoot, de 7-jarige wil vertellen over school. De peuter schreeuwt, de 7-jarige zucht en loopt weg. Wie krijgt je aandacht?
+
+**Strategieen per situatie:**
+
+- **De peuter heeft acuut nodig, het oudere kind kan wachten.** Benoem het: "Ik kom zo bij jou, ik help eerst je broertje even." Het oudere kind kan dat aan, als het weet dat het gezien wordt.
+- **Betrek het oudere kind.** "Wil jij me helpen met het flesje?" Kinderen voelen zich belangrijk als ze mogen helpen. En het oudere kind leert: ik hoor erbij.
+- **Gebruik de overgangsmomenten.** De peuter slaapt? Dat is jouw moment met het oudere kind. Het oudere kind is naar sport? Vloertijd met de peuter.
+
+## Het "favoriete ouder"-fenomeen
+
+"Ik wil MAMA!" schreeuwt je driejarige. Je zevenjarige kruipt juist bij jou op schoot. En je voelt het, ook al wil je het niet voelen: een steek. Alsof het ene kind je afwijst en het andere je kiest.
+
+Dit is normaal. Kinderen wisselen in voorkeur, soms per dag, soms per fase. Het heeft niets te maken met wie de betere ouder is. Het heeft te maken met ontwikkeling, behoefte en soms simpelweg de stemming van dat moment.
+
+**Wat helpt:**
+
+- **Neem het niet persoonlijk.** (Makkelijk gezegd, moeilijk gedaan. Maar het is waar.)
+- **Blijf aanbieden.** "Ik begrijp dat je nu mama wilt. Ik ben er als je me nodig hebt." En dan: niet beledigd weglopen. Gewoon in de buurt blijven.
+- **Geniet van het kind dat wel naar jou toe komt.** Dat is geen troostprijs. Dat is een uitnodiging.
+
+## Eerlijk verdelen is niet gelijk verdelen
+
+Je driejarige heeft je fysiek nodig: optillen, knuffelen, helpen met eten. Je negenjarige heeft je mentaal nodig: een goed gesprek, interesse in zijn hobby, samen iets bouwen. Je twaalfjarige heeft je beschikbaarheid nodig: er zijn als het moment komt, niet opdringen.
+
+Eerlijk verdelen betekent niet: iedereen krijgt evenveel minuten. Het betekent: iedereen krijgt wat het nodig heeft. Soms is dat niet gelijk. Soms krijgt het jongste kind meer fysieke tijd en het oudste meer kwaliteitstijd. Dat is niet oneerlijk. Dat is afstemmen.
+
+### Oefening 12.1: De aandachtsverdeler
+
+Vul in voor elk kind:
+
+| Kind | Leeftijd | Wat heeft dit kind nu het meest nodig van mij? | Mijn vaste solo-moment met dit kind |
+|---|---|---|---|
+| ..................... | ......... | ..................... | ..................... |
+| ..................... | ......... | ..................... | ..................... |
+| ..................... | ......... | ..................... | ..................... |
+| ..................... | ......... | ..................... | ..................... |
+
+**Wie krijgt nu de meeste aandacht? Waarom?**
+
+.......................................................................
+
+**Wie zou meer aandacht kunnen gebruiken? Hoe ga ik dat aanpakken?**
+
+.......................................................................
+
+.......................................................................
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 12                              ║
+║                                                         ║
+║  Elk kind heeft recht op een moment waarop het het      ║
+║  enige kind ter wereld is. Niet lang, niet duur, niet   ║
+║  spectaculair. Gewoon: jij en ik. Zonder concurrentie.  ║
+╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
-## Werkblad 5: Luister-logboek
+# Hoofdstuk 13: Culturele Verwachtingen en Vaderschap
 
-Volg vijf gesprekken met je kind. Wees eerlijk over je reactie.
+## De druk die je niet ziet
 
-| Nr | Situatie | Wat zei je kind? | Hoe reageerde je? | Fixen of luisteren? | Wat had je anders kunnen doen? |
-|----|----------|------------------|-------------------|---------------------|-------------------------------|
-| 1  | ........ | ................ | ................. | ☐ Fixen ☐ Luisteren | .............................. |
-| 2  | ........ | ................ | ................. | ☐ Fixen ☐ Luisteren | .............................. |
-| 3  | ........ | ................ | ................. | ☐ Fixen ☐ Luisteren | .............................. |
-| 4  | ........ | ................ | ................. | ☐ Fixen ☐ Luisteren | .............................. |
-| 5  | ........ | ................ | ................. | ☐ Fixen ☐ Luisteren | .............................. |
+Je zit 's avonds op de grond met je dochter. Jullie bouwen een puzzel. Je telefoon ligt in de la. Je bent er, helemaal. En ergens in je achterhoofd hoor je een stem. Misschien de stem van je eigen vader. Misschien de stem van een collega. Misschien een onzichtbare verwachting die je niet eens kunt benoemen.
 
-**Eerlijk?** De meeste vaders fixen. Dat zit in ons. Het is geen fout - het is een patroon. En patronen kun je veranderen.
+*"Moet je niet werken? Zit je op de grond te spelen? Wat voor man ben je?"*
+
+Deze stem is cultureel. Hij komt uit een traditie waarin vaders kostwinners waren en moeders de kinderen opvoedden. Een traditie waarin betrokkenheid bij je kind iets was voor vrouwen. Een traditie die misschien niet meer hardop wordt uitgesproken, maar die als stille verwachting doorklinkt in alles: op je werk, in je familie, in je eigen hoofd.
+
+## Het kostwinnersmodel
+
+Decennialang was de rolverdeling helder. Vader werkt, moeder zorgt. Vader brengt geld binnen, moeder brengt de kinderen groot. Vader is de autoriteit, moeder is de warmte.
+
+Dit model is in Nederland aan het verschuiven, maar het verdwijnt langzaam. Uit onderzoek van het SCP blijkt dat vaders gemiddeld nog steeds significant minder uren besteden aan de zorg voor kinderen dan moeders, ook in gezinnen waar beide ouders werken. Niet omdat vaders niet willen, maar omdat de structuren, verwachtingen en gewoonten moeizaam meebewegen.
+
+**De dubbele boodschap:**
+
+Aan de ene kant wordt van je verwacht dat je een betrokken vader bent. Aanwezig. Emotioneel beschikbaar. Naar de schoolvoorstelling. Bij het eerste tandje.
+
+Aan de andere kant wordt van je verwacht dat je carriere maakt. Presteert. Geld verdient. Niet te veel vrij vraagt voor de kinderen.
+
+Deze twee verwachtingen staan op spanning. En jij staat ertussen.
+
+## Druk vanuit familie
+
+"Zo deden wij dat niet." "In mijn tijd ging je gewoon werken." "Jullie verwennen die kinderen."
+
+De generatie voor je heeft het anders gedaan. Niet beter, niet slechter, maar anders. En soms voelt hun commentaar als een oordeel. Alsof jouw keuze om op de grond te zitten met je kind een kritiek is op hoe zij het deden.
+
+Dat is het niet. Je kunt je eigen vader respecteren en tegelijkertijd kiezen om het anders te doen. Die twee sluiten elkaar niet uit.
+
+**Wat helpt:**
+
+- **Weet waarom je het doet.** Niet omdat iemand het zegt. Niet omdat het moet. Maar omdat je de wetenschap kent, de impact begrijpt, en bewust kiest om een aanwezige vader te zijn.
+- **Leg het niet altijd uit.** Je hoeft niet iedereen te overtuigen. Sommige mensen zullen het niet snappen. Dat is hun recht. Jij maakt je eigen keuze.
+- **Zoek gelijkgestemden.** Andere vaders die het herkennen. Online, op het schoolplein, in je vriendengroep. Je bent niet de enige die worstelt met deze spanning.
+
+## "Echte mannen" en aanwezigheid
+
+Er is een hardnekkig beeld van mannelijkheid dat niet goed samengaat met aanwezig vaderschap. Een beeld dat zegt: mannen zijn sterk, stoer, onafhankelijk. Mannen lossen problemen op. Mannen huilen niet. Mannen zitten niet op de grond te spelen met poppen.
+
+Dit beeld is aan het veranderen. Maar het zit diep. Misschien dieper dan je denkt.
+
+Aanwezig vaderschap vraagt iets wat in de traditionele mannelijkheid niet altijd welkom was: kwetsbaarheid. Op de grond gaan zitten is kwetsbaar. Luisteren zonder te fixen is kwetsbaar. Zeggen "het spijt me" is kwetsbaar. Emoties benoemen is kwetsbaar.
+
+Maar kwetsbaarheid is geen zwakte. Kwetsbaarheid in de context van vaderschap is misschien wel de meest moedige keuze die je kunt maken. Je kind vertellen dat je het moeilijk hebt. Naast je zoon zitten als hij huilt, zonder te zeggen "niet huilen." Je dochter laten zien dat papa ook verdrietig kan zijn.
+
+Dit is niet soft. Dit is wat kinderen nodig hebben: een vader die laat zien dat het oké is om mens te zijn.
+
+## Druk vanuit werk
+
+"Ik moet om 16:00 weg, mijn kind heeft een schoolvoorstelling." En dan die blik van je collega. Of die opmerking van je leidinggevende. Of gewoon het ongemakkelijke gevoel dat je niet serieus genoeg bent over je werk.
+
+Veel vaders kiezen het werk. Niet omdat het kind minder belangrijk is, maar omdat de sociale druk van het werk directer voelt. Je kind zegt niet: "Papa, je functioneringsgesprek valt tegen." Je baas wel.
+
+**Wat je kunt doen:**
+
+- **Wees open.** "Ik ga om 16:00, ik heb iets met mijn kind." Niet verontschuldigen. Meedelen.
+- **Lever kwaliteit.** Het beste antwoord op de blik van een collega is goed werk afleveren. In minder uren, maar scherper.
+- **Ken je rechten.** Ouderschapsverlof, zorgverlof, flexibel werken. Het bestaat. Gebruik het.
+- **Weet dat het verandert.** Steeds meer werkgevers begrijpen dat betrokken vaders betere werknemers zijn. Minder burn-out, meer motivatie, hogere loyaliteit.
+
+## Je eigen definitie van vaderschap
+
+Uiteindelijk gaat het hierom: **wie wil jij zijn als vader?** Niet wie je vader was. Niet wie de maatschappij wil dat je bent. Niet wie je collega's verwachten. Maar wie jij wilt zijn.
+
+Die definitie mag je zelf schrijven. En hij mag er anders uitzien dan die van je buurman, je broer of je beste vriend. Er is geen one-size-fits-all vaderschap. Er is alleen het vaderschap dat past bij jou, bij je kind, bij jullie gezin.
+
+### Oefening 13.1: Mijn vaderdefinitie
+
+**Welke verwachtingen over vaderschap heb ik meegekregen van mijn eigen vader / mijn familie / mijn cultuur?**
+
+.......................................................................
+
+.......................................................................
+
+.......................................................................
+
+**Welke van die verwachtingen wil ik houden? Welke wil ik loslaten?**
+
+Houden: .......................................................................
+
+Loslaten: .......................................................................
+
+**Mijn eigen definitie van een goede vader is:**
+
+.......................................................................
+
+.......................................................................
+
+.......................................................................
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 13                              ║
+║                                                         ║
+║  De wereld vertelt je wat voor vader je moet zijn. Je    ║
+║  familie, je werk, je cultuur, je eigen hoofd. Maar de  ║
+║  enige stem die ertoe doet is die van je kind. En die   ║
+║  vraagt maar een ding: ben je er?                       ║
+╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
-## De 7-Dagen Aanwezigheid Challenge
+# Hoofdstuk 14: Werkbladen, Opdrachten & Bronnen
 
-Zeven dagen. Zeven oefeningen. Elke dag één ding anders doen. Dat is alles.
+Je hebt gelezen. Je hebt nagedacht. Misschien heb je al iets uitgeprobeerd. Dit laatste hoofdstuk geeft je de gereedschappen om het vol te houden. Geen theorie meer, alleen praktijk. Print deze pagina's uit, hang ze op de koelkast, leg ze op je nachtkastje. Gebruik ze. Dat is het enige wat telt.
 
-### Dag 1 - De telefoon weg
+---
 
-Leg je telefoon in een la tijdens het avondeten. Niet op tafel, niet op het aanrecht - in een la. Beschrijf wat er verandert aan het gesprek, de sfeer, je eigen rust.
+## Werkblad 1: Het Aanwezigheidslogboek
 
-**Mijn ervaring:** .......................................................................
+Houd een week lang bij wanneer je echt aanwezig was. Niet alleen fysiek, maar mentaal. Per moment noteer je drie dingen: wat deed je, hoe voelde het, en wat merkte je kind? Wees eerlijk. Dit logboek is alleen voor jou.
+
+### Dag 1
+
+**Moment 1:**
+Wat deed ik met mijn kind? .......................................................................
+Was ik er echt (mentaal aanwezig, telefoon weg)? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het om er te zijn? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik met mijn kind? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 2
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 3
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 4
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 5
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 6
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Dag 7
+
+**Moment 1:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+**Moment 2:**
+Wat deed ik? .......................................................................
+Was ik er echt? ☐ Ja ☐ Gedeeltelijk ☐ Nee
+Hoe voelde het? .......................................................................
+Wat merkte ik bij mijn kind? .......................................................................
+
+### Reflectie na de week
+
+**Hoeveel van mijn momenten waren echt aanwezig (mentaal + fysiek)?** .......
+
+**Wat viel me op over het verschil tussen "erbij zijn" en "er echt zijn"?**
 
 .......................................................................
 
-### Dag 2 - Vloertijd
+.......................................................................
 
-Ga tien minuten op de grond zitten bij je kind. Volg wat je kind doet. Leid niet. Stuur niet. Jij bent de gast - je kind is de regisseur. Kijk wat er gebeurt.
-
-**Mijn ervaring:** .......................................................................
+**Wanneer was het het makkelijkst om aanwezig te zijn? Waarom?**
 
 .......................................................................
 
-### Dag 3 - De eerste 30 seconden
-
-Je komt thuis. Laat je tas vallen. Hurk. Maak oogcontact. Knuffel. Geen vragen stellen, geen "hoe was je dag?" - alleen er zijn. Dertig seconden. Dat is genoeg.
-
-**Mijn ervaring:** .......................................................................
+**Wanneer was het het moeilijkst? Wat stond er in de weg?**
 
 .......................................................................
 
-### Dag 4 - Luisteren
-
-Je kind vertelt iets - het maakt niet uit wat. Leg alles neer. Maak oogcontact. Vat samen wat je kind zegt. Fix niks. Los niks op. Luister alleen maar.
-
-**Mijn ervaring:** .......................................................................
+**Wat merkte ik bij mijn kind als ik er echt was, vergeleken met half-aanwezig?**
 
 .......................................................................
 
-### Dag 5 - Het ritueel
+.......................................................................
 
-Start vanavond een bedtijdritueel. Kies er één: drie dingen waar je dankbaar voor bent, een dagscore van 1 tot 10, of het geheim ("vertel me iets dat niemand anders weet van vandaag"). Doe het samen.
+---
 
-**Mijn ervaring:** .......................................................................
+## Werkblad 2: De Rituelen-ontwerper
+
+Ontwerp per kind drie vaste rituelen: een voor de ochtend, een voor een overgangsmoment (thuiskomst, naar school, naar sport), en een voor bedtijd. Beschrijf precies wat je doet, hoe lang het duurt, en wat het bijzonder maakt.
+
+### Kind 1: .......................................................................
+
+**Ochtendritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Overgangsritueel (thuiskomst / naar school / anders):**
+Welk moment? .......................................................................
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Bedtijdritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+### Kind 2: .......................................................................
+
+**Ochtendritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Overgangsritueel:**
+Welk moment? .......................................................................
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Bedtijdritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+### Kind 3: .......................................................................
+
+**Ochtendritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Overgangsritueel:**
+Welk moment? .......................................................................
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Bedtijdritueel:**
+Wat doe ik? .......................................................................
+Hoe lang duurt het? .......................................................................
+Wat maakt het van ons? .......................................................................
+
+**Tip:** Begin met een ritueel voor een kind. Doe het dertig dagen achter elkaar. Pas daarna breid je uit. Een ritueel wordt pas een ritueel door herhaling, niet door goede voornemens.
+
+---
+
+## Werkblad 3: De Aanwezigheidsscan
+
+Twintig micro-momenten per dag. Loop deze checklist elke avond door en vink af wat je vandaag hebt gedaan. Het gaat niet om het scoren van 20 uit 20. Het gaat om bewustzijn. Hoeveel van deze kleine momenten heb je vandaag bewust meegemaakt?
+
+### De 20 micro-momenten van aanwezigheid
+
+**Ochtend:**
+☐ 1. Oogcontact gemaakt bij het wakker worden
+☐ 2. Naam van mijn kind gezegd bij het begroeten (niet "hoi" maar "Goedemorgen, Sem")
+☐ 3. Een echte vraag gesteld bij het ontbijt
+☐ 4. Een knuffel gegeven bij het weggaan
+☐ 5. Een vaste afscheidszin gezegd
+
+**Overdag / na werk:**
+☐ 6. Telefoon weggelegd bij thuiskomst
+☐ 7. Op ooghoogte geknield bij de begroeting
+☐ 8. Naam van mijn kind gezegd als eerste woord bij thuiskomst
+☐ 9. Minstens vijf minuten gespeeld zonder telefoon
+☐ 10. Een vraag gesteld die niet met "goed" beantwoord kan worden
+
+**Avondeten:**
+☐ 11. Telefoon in een andere kamer gelegd tijdens het eten
+☐ 12. Oogcontact gemaakt terwijl mijn kind vertelde
+☐ 13. Doorgevraagd op wat mijn kind zei (niet alleen geknikt)
+☐ 14. Iets van mezelf gedeeld ("Weet je wat ik vandaag meemaakte?")
+
+**Avond / bedtijd:**
+☐ 15. Samen iets gedaan zonder doel (spelen, kletsen, rommelen)
+☐ 16. Mijn kind aangeraakt (hand op schouder, aai over het hoofd, knuffel)
+☐ 17. Voorgelezen of een verhaal verteld
+☐ 18. Gevraagd wat het mooiste was van vandaag
+☐ 19. Een vaste bedtijdzin gezegd
+☐ 20. Het licht uitgedaan met een bewust "welterusten"
+
+### Weekoverzicht
+
+| Dag | Aantal micro-momenten | Welke miste ik het vaakst? |
+|---|---|---|
+| Maandag | ..... / 20 | ..................... |
+| Dinsdag | ..... / 20 | ..................... |
+| Woensdag | ..... / 20 | ..................... |
+| Donderdag | ..... / 20 | ..................... |
+| Vrijdag | ..... / 20 | ..................... |
+| Zaterdag | ..... / 20 | ..................... |
+| Zondag | ..... / 20 | ..................... |
+
+**Mijn gemiddelde na een week:** ..... / 20
+
+**De drie micro-momenten die ik het vaakst mis:**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+**Mijn plan om die drie momenten vaker te pakken:**
 
 .......................................................................
 
-### Dag 6 - Papa-kind-tijd
+.......................................................................
 
-Neem één kind apart. Dertig minuten. Het kind kiest wat jullie doen. Niet jij - het kind. Of het nu Lego is, wandelen, of op de bank zitten en naar het plafond staren: het maakt niet uit. Jouw aanwezigheid is het cadeau.
+---
 
-**Mijn ervaring:** .......................................................................
+## Werkblad 4: De Aandachts-verdeler
+
+Specifiek voor vaders met meerdere kinderen. Plan een week lang bewust solo-tijd met elk kind. Noteer wat je deed, hoe het ging, en wat je opviel.
+
+### Mijn kinderen
+
+| Kind | Leeftijd | Wat heeft dit kind nu het meest nodig van mij? |
+|---|---|---|
+| ..................... | ......... | ..................... |
+| ..................... | ......... | ..................... |
+| ..................... | ......... | ..................... |
+
+### Week-schema solo-tijd
+
+| Dag | Welk kind? | Wat deden we? | Hoe lang? | Hoe voelde het? | Wat zei/deed mijn kind? |
+|---|---|---|---|---|---|
+| Ma | ........... | ........... | ........... | ........... | ........... |
+| Di | ........... | ........... | ........... | ........... | ........... |
+| Wo | ........... | ........... | ........... | ........... | ........... |
+| Do | ........... | ........... | ........... | ........... | ........... |
+| Vr | ........... | ........... | ........... | ........... | ........... |
+| Za | ........... | ........... | ........... | ........... | ........... |
+| Zo | ........... | ........... | ........... | ........... | ........... |
+
+### Reflectie na de week
+
+**Welk kind kreeg deze week de meeste aandacht? Waarom?**
 
 .......................................................................
 
-### Dag 7 - Het niks-moment
-
-Ga ergens samen zitten. In de tuin, op een bankje, op de bank. Doe niks. Zeg niks. Kijk. Luister. Wees stil. Verdraag de stilte. Laat het niks er zijn.
-
-**Mijn ervaring:** .......................................................................
+**Welk kind kwam tekort? Wat ga ik volgende week anders doen?**
 
 .......................................................................
 
-### Na de challenge
+**Wat merkte ik bij mijn kinderen als ze solo-tijd kregen?**
 
-Welke dag maakte de meeste indruk? .......................................................................
+.......................................................................
 
-Wat ga ik blijven doen? .......................................................................
+**Wat was het verschil tussen groepsmomenten en solo-momenten?**
 
-Wat was het moeilijkst om vol te houden? .......................................................................
+.......................................................................
+
+**Mijn plan voor volgende week:**
+
+| Kind | Solo-moment | Dag en tijd |
+|---|---|---|
+| ..................... | ..................... | ..................... |
+| ..................... | ..................... | ..................... |
+| ..................... | ..................... | ..................... |
+
+---
+
+## De 7-Dagen Aanwezigheidschallenge
+
+Zeven dagen. Elke dag een andere laag van aanwezigheid. Je begint bij het weghalen van afleiding, en eindigt bij het diepste niveau: er zijn zonder iets te doen. Noteer elke avond wat je deed en wat je opviel, bij jezelf en bij je kind.
+
+### Dag 1: De afleiding weghalen
+
+Vandaag ga je bewust de grootste vijand van aanwezigheid uitschakelen. Leg je telefoon in een la tijdens het avondeten en het inslapritueel. Niet op tafel, niet op het aanrecht. In een la.
+
+**Wat veranderde er aan het gesprek tijdens het eten?**
+
+.......................................................................
+
+**Hoe voelde het om je telefoon niet bij je te hebben?**
+
+.......................................................................
+
+**Wat deed je kind anders dan normaal?**
+
+.......................................................................
+
+### Dag 2: Het lichaam erbij
+
+Vandaag gaat het over fysieke aanwezigheid. Ga minstens twee keer op ooghoogte van je kind. Kniel, hurk, ga op de grond zitten. Maak oogcontact van dichtbij. Raak je kind aan: hand op de schouder, aai over het hoofd, knuffel.
+
+**Op welke momenten deed ik dit?**
+
+.......................................................................
+
+**Wat merkte ik bij mijn kind toen ik op ooghoogte kwam?**
+
+.......................................................................
+
+**Hoe voelde het om fysiek dichtbij te zijn zonder iets te "doen"?**
+
+.......................................................................
+
+### Dag 3: Het kind volgen
+
+Vandaag ga je tien minuten vloertijd doen. Je kind bepaalt wat jullie doen. Jij volgt. Geen sturing, geen correctie, geen vragen. Alleen beschrijven wat je ziet en meegaan in de fantasie.
+
+**Wat koos mijn kind?**
+
+.......................................................................
+
+**Hoe reageerde mijn kind toen ik volgde in plaats van stuurde?**
+
+.......................................................................
+
+**Wat was het moeilijkst voor mij (niet sturen, niet corrigeren, niet op mijn telefoon kijken)?**
+
+.......................................................................
+
+### Dag 4: Het thuiskomst-moment
+
+Vandaag oefen je het overgangsritueel. Als je thuiskomt: eerst drie keer diep ademen. Dan de deur open. Eerste actie: op je hurken, oogcontact, knuffel. Geen vragen, geen klusjes, geen telefoon. Dertig seconden puur verbinding.
+
+**Hoe verliep mijn thuiskomst?**
+
+.......................................................................
+
+**Wat deed mijn kind toen ik als eerste naar hem/haar toe kwam?**
+
+.......................................................................
+
+**Hoe was de rest van de avond vergeleken met een normale dag?**
+
+.......................................................................
+
+### Dag 5: Luisteren zonder fixen
+
+Vandaag ga je bewust luisteren. Je kind vertelt iets. Jij legt alles neer, maakt oogcontact, en zegt alleen: "Vertel." "En toen?" "Hoe was dat voor je?" Je geeft geen advies. Je lost niets op. Je luistert.
+
+**Wat vertelde mijn kind?**
+
+.......................................................................
+
+**Wat was mijn eerste impuls (fixen, bagatelliseren, afleiden)?**
+
+.......................................................................
+
+**Wat gebeurde er toen ik alleen luisterde?**
+
+.......................................................................
+
+### Dag 6: Het bewuste ritueel
+
+Vandaag start je een bedtijdritueel als je dat nog niet hebt. Kies een van deze drie: samen drie dingen noemen waar je dankbaar voor bent, een dagscore geven (en vertellen waarom), of het geheim delen ("vertel me iets dat niemand anders weet van vandaag").
+
+**Welk ritueel koos ik?**
+
+.......................................................................
+
+**Wat deelde mijn kind?**
+
+.......................................................................
+
+**Wat deelde ik?**
+
+.......................................................................
+
+**Hoe voelde het moment?**
+
+.......................................................................
+
+### Dag 7: Samen niets doen
+
+Dit is de moeilijkste dag. Ga ergens samen zitten. Geen activiteit, geen gesprek, geen telefoon. Kijk samen naar buiten, naar de wolken, naar de straat. Wees stil. Verdraag de stilte. Laat het moment er zijn zonder het te vullen.
+
+**Hoe lang hielden we het vol?**
+
+.......................................................................
+
+**Wat gebeurde er in de stilte?**
+
+.......................................................................
+
+**Hoe voelde het om samen niets te doen?**
+
+.......................................................................
+
+### Na de zeven dagen
+
+**Welke dag maakte de meeste indruk op mij? Waarom?**
+
+.......................................................................
+
+.......................................................................
+
+**Welke dag maakte de meeste indruk op mijn kind? Hoe weet ik dat?**
+
+.......................................................................
+
+.......................................................................
+
+**Wat ga ik blijven doen, elke dag?**
+
+.......................................................................
+
+**Wat heb ik geleerd over mezelf als aanwezige vader?**
+
+.......................................................................
+
+.......................................................................
 
 ---
 
@@ -2001,16 +2615,7 @@ De kennis in deze cursus is gebaseerd op decennia van wetenschappelijk onderzoek
 - Cabrera, N.J., Volling, B.L., & Barr, R. (2018). Fathers are parents, too! Widening the lens on parenting for children's development. *Child Development Perspectives*, 12(3), 152-157.
   *Overzichtsartikel: waarom vaderschap een eigenstandige, unieke bijdrage levert aan kindontwikkeling.*
 
-- Gottman, J. (1997). *Raising an Emotionally Intelligent Child.* New York: Simon & Schuster.
-  *Emotiecoaching: hoe je je kind leert omgaan met gevoelens door er zelf bij aanwezig te zijn.*
-
 ### Brein, Lichaam & Veerkracht
-
-- Porges, S.W. (2011). *The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, and Self-Regulation.* New York: Norton.
-  *De wetenschap achter veiligheid: hoe je zenuwstelsel bepaalt of je kind zich veilig voelt.*
-
-- Siegel, D.J., & Bryson, T.P. (2011). *The Whole-Brain Child: 12 Revolutionary Strategies to Nurture Your Child's Developing Mind.* New York: Delacorte Press.
-  *Praktische strategieën om met kennis van het kinderbrein bewuster op te voeden.*
 
 - Doidge, N. (2007). *The Brain That Changes Itself.* New York: Viking.
   *Neuroplasticiteit: het bewijs dat hersenen - ook die van jou - kunnen veranderen door nieuwe gewoonten.*

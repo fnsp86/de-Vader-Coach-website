@@ -33,7 +33,7 @@
   --color-vc-orange: #FB923C;
 
   /* Font */
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
 
   /* Border radius */
   --radius-card: 16px;

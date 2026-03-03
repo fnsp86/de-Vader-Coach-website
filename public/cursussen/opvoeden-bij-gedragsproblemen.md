@@ -26,6 +26,10 @@ Deze cursus is anders. We gaan niet uit van "je kind is het probleem." We gaan u
 - Gedragsplannen maken die echt werken
 - De relatie met je kind beschermen, ook als het gedrag je wegduwt
 - Omgaan met schaamte en oordeel van de buitenwereld
+- Je plek opeisen bij hulpverleners en op school
+- Een weloverwogen keuze maken over medicatie
+- Zorgen voor de broers en zussen van je kind
+- Je eigen energie en veerkracht bewaken
 
 **Voor wie is deze cursus?**
 
@@ -54,7 +58,12 @@ Lees elk hoofdstuk op je eigen tempo. Doe de oefeningen, ook al voelen ze ongema
 7. **Gedragsplannen die Werken** | Structuur, beloning en consequenties op maat
 8. **De Relatie Beschermen** | Vader blijven als het gedrag je wegduwt
 9. **Omgaan met de Buitenwereld** | Schaamte, oordeel en goedbedoelde adviezen
-10. **Werkbladen, Hulpbronnen & Verder Lezen**
+10. **Samenwerking met Hulpverleners** | Je plek opeisen als vader
+11. **Medicatie: de Beslissing** | Feiten, twijfels en het gesprek
+12. **Broers en Zussen** | Het vergeten kind zien
+13. **Compassievermoeidheid bij Vaders** | Als de emmer leeg is
+14. **Het IEP/Handelingsplan** | Actief meedoen aan schooloverleg
+15. **Werkbladen, Hulpbronnen & Verder Lezen**
 
 ---
 
@@ -156,7 +165,7 @@ Waar kun je terecht?
 - **Het wijkteam / jeugdhulp**: voor ondersteuning en toegang tot hulp
 - **De Opvoedlijn** (0800-5010): gratis en anoniem advies
 
-Meer hierover in Hoofdstuk 6 en Hoofdstuk 10.
+Meer hierover in Hoofdstuk 6, Hoofdstuk 10 en Hoofdstuk 14.
 
 ```
 ╔══════════════════════════════════════════════════════════╗
@@ -228,7 +237,7 @@ Barkley benadrukt dat ADHD geen kennisprobleem is maar een uitvoeringsprobleem. 
 ODD staat voor Oppositional Defiant Disorder, in het Nederlands: oppositioneel-opstandige stoornis. Het wordt gekenmerkt door een aanhoudend patroon van boosheid, opstandigheid en uitdagend gedrag, vooral tegenover autoriteitsfiguren.
 
 Dit zijn de kenmerken:
-- Raakt snel geirriteerd
+- Raakt snel geïrriteerd
 - Is vaak boos en wrevelig
 - Maakt ruzie met volwassenen
 - Weigert actief regels te volgen
@@ -492,7 +501,7 @@ Maar hier is het probleem. Een kind dat in een extreme staat van opwinding is, e
 
 Op dat moment is straffen hetzelfde als schreeuwen tegen iemand die verdrinkt dat hij moet leren zwemmen. Het bereikt hem niet, en het maakt de paniek erger.
 
-Sterker nog: straf tijdens escalatie creëert wat Patterson het "coercieve patroon" noemt (zie Hoofdstuk 2). Jij escaleert, je kind escaleert mee, en beiden komen in een spiraal terecht die elke keer heftiger wordt.
+Sterker nog: straf tijdens escalatie versterkt wat Patterson het "coercieve patroon" noemt (zie Hoofdstuk 2). Jij escaleert, je kind escaleert mee, en beiden komen in een spiraal terecht die elke keer heftiger wordt.
 
 Wil je meer weten over hoe je als vader kalm kunt blijven in dit soort situaties? Zie onze cursus 'Zelfregulatie als Vader'.
 
@@ -660,7 +669,7 @@ Stelen voelt voor een ouder als een morele grensoverschrijding. Maar bij kindere
 
 - **Een impulscontroleprobleem:** het kind ziet het, wil het, pakt het. De rem ontbreekt.
 - **Een gebrek aan eigendomsbegrip:** jonge kinderen begrijpen "van mij" en "van jou" nog niet volledig.
-- **Een behoefteprobleem:** het kind mist iets, aandacht, status bij leeftijdgenoten, snoep dat het thuis niet krijgt, en probeert dat op te lossen.
+- **Een behoefteprobleem:** het kind mist iets (aandacht, status bij leeftijdgenoten, snoep dat het thuis niet krijgt) en probeert dat op te lossen.
 - **Een gevolg van impulsiviteit bij ADHD:** de executieve functie "stop en denk na" werkt niet snel genoeg.
 
 Hoe ga je ermee om:
@@ -768,7 +777,7 @@ Sinds de Wet Passend Onderwijs (2014) is elke school verplicht om een passend aa
 | **Samenwerkingsverband** | Regionale organisatie die bepaalt welke extra ondersteuning een leerling krijgt |
 | **Jeugdarts / jeugdverpleegkundige** | Medische signalering, doorverwijzing |
 
-Als je kind extra ondersteuning nodig heeft, wordt er een ontwikkelingsperspectief (OPP) of handelingsplan opgesteld. Dit is een document waarin staat wat de school gaat doen om je kind te helpen. Je hebt als ouder recht om hierin mee te praten.
+Als je kind extra ondersteuning nodig heeft, wordt er een ontwikkelingsperspectief (OPP) of handelingsplan opgesteld. Dit is een document waarin staat wat de school gaat doen om je kind te helpen. Je hebt als ouder recht om hierin mee te praten. Meer hierover in Hoofdstuk 14.
 
 ## Een team bouwen rond je kind
 
@@ -789,7 +798,7 @@ Tips voor effectief samenwerken:
 Maak een kort overzicht van je kind: diagnose (als die er is), wat werkt, wat niet werkt, wat je kind nodig heeft. Geef dit aan iedereen in het team. Zo voorkom je dat je bij elk gesprek van voren af aan moet beginnen.
 
 **2. Wees open over wat er thuis speelt.**
-Niet alles, maar het relevante. Als er thuis een moeilijke periode is (scheiding, overlijden, verhuizing, financiele stress), heeft de school die informatie nodig om je kind te begrijpen.
+Niet alles, maar het relevante. Als er thuis een moeilijke periode is (scheiding, overlijden, verhuizing, financiële stress), heeft de school die informatie nodig om je kind te begrijpen.
 
 **3. Vraag om een vast contactmoment.**
 Niet alleen als het misgaat. Een wekelijks mailtje van de leerkracht, of een kort telefoontje op vrijdag: "Hoe was de week?" Dit voorkomt dat contact alleen negatief is.
@@ -921,11 +930,11 @@ Greene onderscheidt drie manieren om met een probleem om te gaan:
 
 Plan B heeft drie stappen:
 
-**Stap 1: Empathie-stap.** Je benoemd de zorg van het kind. "Ik merk dat het lastig voor je is om 's avonds op tijd te stoppen met gamen. Help me begrijpen wat het moeilijk maakt."
+**Stap 1: Empathie-stap.** Je benoemt de zorg van het kind. "Ik merk dat het lastig voor je is om 's avonds op tijd te stoppen met gamen. Help me begrijpen wat het moeilijk maakt."
 
 Cruciaal: echt luisteren. Niet ja zeggen en ondertussen je eigen oplossing voorbereiden. Doorvragen: "Hoe bedoel je? Vertel eens meer?"
 
-**Stap 2: Probleem-definiëren.** Je brengt jouw zorg in. "Mijn zorg is dat je te laat naar bed gaat en dan moe bent op school."
+**Stap 2: Probleem definieren.** Je brengt jouw zorg in. "Mijn zorg is dat je te laat naar bed gaat en dan moe bent op school."
 
 Nu liggen twee zorgen op tafel: die van het kind en die van jou. Geen van beiden is belangrijker.
 
@@ -951,7 +960,7 @@ De vuistregel: als je iets vaker dan drie keer per week moet herhalen, maak er e
 
 ## Het gezinsgedragsplan
 
-Een gezinsgedragsplan is een document, het kan op een A3-vel aan de koelkast, dat de afspraken van het hele gezin bevat. Niet alleen voor het kind met gedragsproblemen, maar voor iedereen. Dit voorkomt dat het kind zich singled out voelt.
+Een gezinsgedragsplan is een document (het kan op een A3-vel aan de koelkast) dat de afspraken van het hele gezin bevat. Niet alleen voor het kind met gedragsproblemen, maar voor iedereen. Dit voorkomt dat het kind zich eruit gepikt voelt.
 
 Elementen:
 
@@ -1010,20 +1019,6 @@ Er is een verhaal dat ik niet snel zal vergeten. Een vader vertelde me: "Ik zat 
 
 Als je dit herkent, als je soms het gevoel hebt dat je op bent, dat je niks meer over hebt, dat je je terugtrekt van je eigen kind, dan is dit hoofdstuk voor jou. Want het moeilijkste aan opvoeden bij gedragsproblemen is niet het gedrag. Het is wat het gedrag doet met de relatie.
 
-## Compassie-vermoeidheid
-
-Het concept "compassion fatigue" komt oorspronkelijk uit de zorg: verpleegkundigen, therapeuten en hulpverleners die zoveel geven dat ze emotioneel leegraken. Maar hetzelfde fenomeen komt voor bij ouders, vooral ouders van kinderen met gedragsproblemen.
-
-De kenmerken:
-
-- Emotionele uitputting: je hebt niks meer te geven
-- Verminderde empathie: je reageert vlak of geirriteerd op de emoties van je kind
-- Cynisme: "hij doet het express," "het maakt niet meer uit wat ik doe"
-- Fysieke symptomen: slechte slaap, hoofdpijn, spierspanning
-- Terugtrekking: vermijden van contact met je kind, overlaten aan je partner
-
-Als je dit herkent: dit is geen zwakte. Dit is een normaal menselijk antwoord op een uitzonderlijke belasting. Een brandweerman die dagelijks in vuur staat, raakt ook uitgeput. Dat maakt hem geen slechte brandweerman. Het maakt de omstandigheden buitengewoon.
-
 ## Het afwijzingscircuit
 
 Hier komt een pijnlijk mechanisme. Kinderen met gedragsproblemen duwen hun ouders vaak weg. Niet bewust, niet strategisch, maar als gevolg van hun gedrag. Het kind schopt, schreeuwt, zegt "ik haat je," vernielt dingen, weigert elke toenadering. En de vader, na weken, maanden, jaren van afwijzing, trekt zich terug. Niet uit onwil, maar uit zelfbescherming.
@@ -1054,7 +1049,7 @@ Dit lijkt triviaal. Het is het niet. Onderzoek naar de Parent-Child Interaction 
 Niet elk verbindingsmoment hoeft gepland te zijn. Een hand op zijn schouder in het voorbijgaan. Een knipoog aan tafel. Een briefje in zijn broodtrommel. "Ik denk aan je." Deze micro-momenten stapelen op tot een gevoel van: papa ziet me. Papa is er. Ondanks alles.
 
 **3. De positieve verhouding bewaken.**
-Gottman spreekt over een verhouding van 5:1 in gezonde relaties: voor elke negatieve interactie zijn er vijf positieve nodig. Bij kinderen met gedragsproblemen is die verhouding vaak omgekeerd: vijf negatieve interacties op elke positieve. Bewust sturen op meer positieve momenten is niet soft. Het is noodzakelijk.
+Gottman spreekt over een verhouding van 5:1 in gezonde relaties: voor elke negatieve interactie zijn er vijf positieve nodig. Bij kinderen met gedragsproblemen is die verhouding vaak omgekeerd. Bewust sturen op meer positieve momenten is noodzakelijk. In de cursus Herstel na Conflict lees je uitgebreid over de vertrouwensrekening en de 5:1 verhouding.
 
 ## Jouw kind is niet het probleem
 
@@ -1096,7 +1091,6 @@ Beantwoord eerlijk:
 1. Hoeveel positieve interacties had je deze week met je kind? Hoeveel negatieve?
 2. Herken je het afwijzingscircuit in je eigen gezin? Op welk punt in de cirkel bevind je je nu?
 3. Wanneer was het laatste moment dat je echt plezier had met je kind, zonder dat het gedrag ertussen kwam?
-4. Herken je kenmerken van compassie-vermoeidheid bij jezelf? Welke?
 
 ### Oefening 8.2: Special Time inplannen
 
@@ -1128,14 +1122,7 @@ Schaamte. Dat is waar dit hoofdstuk over gaat. De schaamte van het hebben van "d
 
 ## Schaamte begrijpen
 
-Brene Brown, onderzoeker aan de Universiteit van Houston, heeft twee decennia besteed aan het bestuderen van schaamte. Ze maakt een cruciaal onderscheid:
-
-**Schuld** zegt: "Ik heb iets fouts gedaan."
-**Schaamte** zegt: "Ik ben fout."
-
-Bij vaders van kinderen met gedragsproblemen werkt schaamte dubbel. Er is schaamte over het kind: "Mijn kind is het lastigste kind op school. Wat zegt dat over mij?" En er is schaamte over jezelf: "Ik kan dit niet. Ik faal als vader."
-
-Schaamte groeit in stilte, geheimhouding en isolement. Hoe minder je erover praat, hoe groter het wordt. Het antidote, zegt Brown, is kwetsbaarheid: het durven uitspreken wat je voelt, bij iemand die het kan horen.
+Brene Brown maakt een cruciaal onderscheid tussen schuld en schaamte. Schuld zegt: "Ik heb iets fouts gedaan." Schaamte zegt: "Ik ben fout." Bij vaders van kinderen met gedragsproblemen werkt schaamte dubbel: schaamte over het kind en schaamte over jezelf als vader. In de cursus Herstel na Conflict ga je dieper in op het verschil tussen schuld en schaamte.
 
 ## De oordelen van anderen
 
@@ -1200,15 +1187,7 @@ Praktische tips:
 
 ## Zelfcompassie voor vaders
 
-Kristin Neff, onderzoeker aan de Universiteit van Texas, beschrijft zelfcompassie als drie componenten:
-
-**1. Vriendelijkheid naar jezelf** in plaats van zelfkritiek. Je bent niet de slechtste vader ter wereld. Je bent een vader in moeilijke omstandigheden die zijn best doet.
-
-**2. Gedeelde menselijkheid** in plaats van isolement. Je bent niet de enige. In Nederland groeit naar schatting 10-15% van de kinderen op met gedragsproblemen. Dat zijn tienduizenden vaders die hetzelfde meemaken.
-
-**3. Mindfulness** in plaats van overidentificatie. Je kunt opmerken dat je je schaamt, zonder erin op te gaan. "Ik merk dat ik me nu schaam. Dat is logisch in deze situatie. Het gaat voorbij."
-
-Neff's onderzoek laat zien dat zelfcompassie niet leidt tot passiviteit of zelfmedelijden. Integendeel: ouders met meer zelfcompassie zijn effectievere opvoeders. Ze hebben meer emotionele reserves, reageren rustiger, en herstellen sneller na moeilijke momenten.
+Je kunt niet eindeloos geven zonder jezelf bij te vullen. Kristin Neff beschrijft zelfcompassie als de combinatie van vriendelijkheid naar jezelf, het besef dat je niet de enige bent die dit meemaakt, en het vermogen om je emoties op te merken zonder erin te verdrinken. De cursus Herstel na Conflict behandelt zelfcompassie uitgebreid.
 
 Wil je meer leren over het reguleren van je eigen emoties als vader? Zie onze cursus 'Zelfregulatie als Vader'. Over herstel na een conflict met je kind lees je meer in 'Herstel na Conflict'.
 
@@ -1263,7 +1242,679 @@ Heb je genoeg mensen in je binnenste cirkel? Zo niet, wie zou je willen toevoege
 
 ---
 
-# Hoofdstuk 10: Werkbladen, Hulpbronnen & Verder Lezen
+# Hoofdstuk 10: Samenwerking met Hulpverleners
+
+## De wachtkamer waar je niet bij hoort
+
+Je zit in de wachtkamer van de kinderpsycholoog. Om je heen zitten moeders. Op het prikbord hangen folders met tekeningen van moeders en kinderen. De intake-formulieren vragen naar "de moeder" en "de verzorger." En jij zit daar als vader en denkt: is dit wel mijn plek?
+
+Dat gevoel kennen veel vaders. De wereld van hulpverlening, van schoolgesprekken tot therapiesessies, is historisch ingericht op moeders. Niet uit kwade wil, maar uit gewoonte. En die gewoonte maakt dat vaders zich buitenstaander voelen in een wereld die juist ook van hen is.
+
+Dit hoofdstuk gaat over hoe je als vader je plek inneemt. Niet door te eisen of te vechten, maar door aanwezig te zijn, vragen te stellen en je stem te laten horen. Want je kind heeft twee ouders nodig in dit proces. En hulpverleners hebben jouw perspectief nodig om het volledige plaatje te zien.
+
+## Het gevoel dat je er niet bij hoort
+
+Laten we eerlijk zijn over wat er gebeurt als vaders zich melden bij hulpverleners. Soms word je hartelijk ontvangen. Soms merk je subtiele signalen dat jouw aanwezigheid onverwacht is. De therapeut richt zich vooral tot je partner. De leerkracht belt altijd naar de moeder. Het schoolrapport wordt naar het mailadres van mama gestuurd.
+
+Dit is niet persoonlijk. Maar het voelt wel zo. En het gevolg is dat veel vaders zich terugtrekken. Ze laten de gesprekken over aan hun partner. Ze lezen de verslagen niet. Ze gaan niet mee naar het overleg. Niet omdat ze het niet belangrijk vinden, maar omdat ze het gevoel hebben dat ze er niet toe doen.
+
+Dat gevoel is begrijpelijk. En het is onjuist. Onderzoek van Michael Lamb (2010) laat consequent zien dat de betrokkenheid van vaders bij de behandeling van hun kinderen een zelfstandige positieve factor is. Kinderen wier vader actief meedoet aan de hulpverlening, laten betere resultaten zien. Jouw aanwezigheid doet ertoe. Niet als bonus, maar als noodzaak.
+
+## Het schoolplein en de spreekkamer
+
+Het schoolplein is voor veel vaders al oncomfortabel. Je bent de enige man tussen twintig moeders. Je kent de codes niet. Je weet niet wie de juf is en wie de oppas. En als je je kind ophaalt, krijg je soms de blik van: wat doet hij hier?
+
+Bij de psycholoog of therapeut kan dat gevoel nog sterker zijn. De gesprekken gaan over emoties, over gevoelens, over kwetsbaarheid. Terreinen waar veel mannen niet zijn opgeleid om zich thuis te voelen. En dan komt de vraag: "Hoe voelt u zich daarbij?" En je wilt zeggen: "Prima." Want dat is wat je altijd zegt.
+
+Maar "prima" helpt je kind niet. Wat je kind nodig heeft, is een vader die eerlijk durft te zijn. Die zegt: "Ik voel me machteloos." Die zegt: "Ik weet niet wat ik moet doen." Die zegt: "Ik wil helpen, maar ik weet niet hoe." Dat is geen zwakte. Dat is de informatie die de hulpverlener nodig heeft om jullie te helpen.
+
+## Concrete tips voor het gesprek met de leerkracht
+
+De leerkracht van je kind is een van je belangrijkste bondgenoten. Zij ziet je kind zes uur per dag, vijf dagen per week. Ze ziet dingen die jij niet ziet. En jij ziet dingen die zij niet ziet. Samen hebben jullie het meest complete beeld.
+
+Hoe maak je het gesprek effectief?
+
+**Bereid je voor.** Schrijf van tevoren op wat je wilt bespreken. Niet drie kantjes, maar drie punten. Wat gaat goed? Wat baart je zorgen? Wat wil je afspreken?
+
+**Vraag naar het concrete.** Niet: "Hoe gaat het?" Maar: "In welke situaties gaat het goed? In welke situaties loopt het vast? Wat doet de klas als mijn kind escaleert?"
+
+**Deel je eigen observaties.** "Thuis merk ik dat hij na school erg ontlaadt. Is hij op school ook gespannen, of houdt hij het daar op?" Jouw observaties zijn waardevolle puzzelstukjes.
+
+**Vraag naar de aanpak.** "Welke strategieen gebruiken jullie als het misgaat? Wat werkt en wat niet?" Dit is geen controle, dit is interesse. En het helpt je om thuis dezelfde lijn aan te houden.
+
+**Spreek af, schrijf op.** Maak concrete afspraken en leg ze vast. "We spreken af dat u mij belt als het escaleert, en dat ik hem thuis niet straf voor schoolgedrag." Zo weet iedereen waar hij aan toe is.
+
+## Het gesprek met de gedragstherapeut of kinderpsycholoog
+
+Als je kind in behandeling is bij een psycholoog, orthopedagoog of gedragstherapeut, heb je een andere rol dan bij school. Hier gaat het om diagnostiek, behandeling en begeleiding. En jouw inbreng is daarin onmisbaar.
+
+**Vragen die je moet stellen bij elk gesprek:**
+
+- Wat is het doel van de huidige behandeling? Wat proberen we te bereiken?
+- Hoe gaat het volgens u? Ziet u vooruitgang?
+- Wat kan ik thuis doen om de behandeling te ondersteunen?
+- Zijn er dingen die ik anders zou moeten doen?
+- Wat moet ik weten over wat er in de sessies gebeurt? (Niet alles hoeft gedeeld, maar de grote lijnen wel.)
+- Wanneer evalueren we of de behandeling werkt?
+- Hoe lang verwacht u dat de behandeling duurt?
+- Zijn er signalen waar ik thuis op moet letten?
+
+**Het belang van beide ouders bij gesprekken:**
+
+Als het even kan, ga samen met je partner naar gesprekken met de hulpverlener. Niet omdat een van jullie het niet alleen kan, maar om drie redenen. Ten eerste: twee paar oren horen meer dan een. Ten tweede: de hulpverlener krijgt een completer beeld als beide ouders aanwezig zijn. Ten derde: het voorkomt dat een van jullie de "doorgeefluik" wordt, want informatie die via een tussenpersoon gaat, verliest altijd nuance.
+
+Als samen gaan niet lukt vanwege werk of logistiek, spreek dan af dat de aanwezige ouder dezelfde dag een samenvatting deelt. Niet volgende week. Dezelfde dag, als de details nog vers zijn.
+
+## Zorgen dat jouw observaties serieus worden genomen
+
+Soms heb je het gevoel dat de hulpverlener je niet hoort. Dat jouw observaties worden afgewimpeld met: "Dat is normaal," of: "Dat zien we bij meer kinderen." Of erger: dat de hulpverlener zich vooral tot je partner richt en jou behandelt als de bijzitter.
+
+Hoe zorg je dat je gehoord wordt?
+
+**Wees specifiek.** Niet: "Hij is thuis heel lastig." Maar: "De afgelopen twee weken heeft hij vier keer de eettafel omgegooid en twee keer zijn zusje geslagen. Het gebeurt vooral tussen 17:00 en 18:00, na school."
+
+**Schrijf het op.** Een logboekje met data, tijden en beschrijvingen is krachtig. Het laat zien dat je betrokken bent, en het geeft de hulpverlener harde informatie in plaats van indrukken.
+
+**Benoem als je je niet gehoord voelt.** "Ik merk dat mijn observaties anders zijn dan wat school rapporteert. Ik zou het waarderen als we daar samen naar kijken." Dit is geen aanval. Dit is samenwerking.
+
+**Vraag om uitleg.** Als een hulpverlener iets adviseert dat je niet begrijpt of waar je het niet mee eens bent, vraag dan door. "Kunt u uitleggen waarom u dit aanraadt? Wat is het alternatief?" Een goede hulpverlener waardeert een vader die meedenkt.
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 10                              ║
+║                                                         ║
+║  De hulpverleningswereld is ook jouw wereld. Jouw       ║
+║  perspectief als vader is niet optioneel, het is        ║
+║  essentieel. Neem je plek in. Stel vragen. Wees         ║
+║  aanwezig. Jouw kind heeft het nodig.                   ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+### Oefening 10.1: De hulpverleningssituatie in kaart
+
+1. Met welke hulpverleners heeft je kind te maken? Maak een lijst.
+2. Bij hoeveel van die gesprekken ben jij aanwezig geweest het afgelopen halfjaar?
+3. Als het antwoord "weinig" of "geen" is: wat houdt je tegen? Wees eerlijk.
+4. Wat heb je nodig om vaker aanwezig te zijn?
+5. Wie is het eerste aanspreekpunt voor de hulpverlener: jij of je partner? Wat zou je willen veranderen?
+
+### Oefening 10.2: Voorbereiding op het volgende gesprek
+
+Bereid het eerstvolgende gesprek met een hulpverlener voor:
+
+1. Drie dingen die goed gaan: .......................................................................
+2. Drie zorgen die ik wil bespreken: .......................................................................
+3. Twee vragen die ik wil stellen: .......................................................................
+4. Wat ik thuis heb geobserveerd: .......................................................................
+5. Wat ik wil afspreken: .......................................................................
+
+---
+
+# Hoofdstuk 11: Medicatie: de Beslissing
+
+## Het recept op tafel
+
+De kinderpsychiater kijkt je aan en zegt: "We zouden medicatie kunnen overwegen." En alles in je bevriest. Want dit is het moment waar je bang voor was. Het moment waarop het echt wordt. Het moment waarop je moet beslissen of je je kind pillen gaat geven.
+
+Voor sommige vaders voelt dit als opluchting: eindelijk een concrete stap. Voor andere vaders voelt het als falen: het bewijs dat je het zonder medicijnen niet redt. En voor de meesten is het iets ertussenin: een mengeling van hoop, angst, schuld en verwarring.
+
+Dit hoofdstuk helpt je om een weloverwogen keuze te maken. Niet op basis van angst. Niet op basis van druk. Maar op basis van informatie, gesprek en het belang van je kind.
+
+## Feiten vs. mythes over medicatie bij kinderen
+
+Laten we beginnen met de feiten, want er circuleert veel onzin over medicatie bij kinderen, vooral over ADHD-medicatie.
+
+**Mythe: "Medicatie verandert de persoonlijkheid van je kind."**
+Feit: goed ingestelde medicatie verandert het gedrag niet, het geeft het kind toegang tot vaardigheden die er al zijn maar geblokkeerd worden door de stoornis. Een kind op de juiste dosis methylfenidaat wordt niet een ander kind. Het wordt meer zichzelf, omdat het brein beter kan doen wat het al wil.
+
+**Mythe: "Medicatie is een makkelijke oplossing, een 'pilletje' in plaats van opvoeden."**
+Feit: medicatie is nooit een vervanging voor opvoeding, structuur en begeleiding. Het is een hulpmiddel dat de andere interventies effectiever maakt. Het is een bril voor een kind dat slecht ziet: de bril lost de problemen niet op, maar het kind kan nu wel het bord lezen.
+
+**Mythe: "Kinderen worden verslaafd aan ADHD-medicatie."**
+Feit: grootschalig onderzoek laat zien dat kinderen die adequaat behandeld worden met ADHD-medicatie juist een lager risico hebben op latere verslavingsproblematiek dan kinderen die niet behandeld worden. De medicatie verlaagt impulsiviteit, en impulsiviteit is een risicofactor voor verslaving.
+
+**Mythe: "In Nederland krijgen veel te veel kinderen medicatie."**
+Feit: dit is genuanceerder dan het lijkt. Laura Batstra, hoogleraar aan de Rijksuniversiteit Groningen, wijst erop dat er inderdaad een stijging is in ADHD-diagnoses en medicatievoorschriften. Maar dat betekent niet dat elk individueel voorschrift onterecht is. Het betekent dat je kritisch moet kijken naar of medicatie voor jouw kind de juiste keuze is.
+
+## Het gesprek met je partner
+
+Dit is vaak het moeilijkste gesprek. Want de kans is groot dat jij en je partner er anders over denken. De een ziet medicatie als noodzaak, de ander als laatste redmiddel. De een heeft gelezen dat het helpt, de ander heeft gehoord dat het gevaarlijk is. En beiden willen het beste voor hun kind.
+
+Hoe voer je dit gesprek?
+
+**Erken dat jullie beiden vanuit liefde spreken.** Als je partner tegen medicatie is, is dat niet omdat ze het kind niet wil helpen. Het is omdat ze het kind wil beschermen. En vice versa. Begin vanuit die erkenning.
+
+**Deel je bronnen.** Niet om gelijk te krijgen, maar om dezelfde informatie te hebben. Lees samen een betrouwbaar artikel. Ga samen naar het gesprek met de arts. Laat de arts jullie beiden informeren.
+
+**Maak het geen machtsstrijd.** Het gaat niet om wie gelijk heeft. Het gaat om wat je kind nodig heeft. En die vraag kun je alleen samen beantwoorden.
+
+**Overweeg een proefperiode.** Bij veel ADHD-medicatie (zoals methylfenidaat) kun je een proefperiode afspreken. Twee tot vier weken proberen, en dan evalueren. Dit is geen definitieve keuze. Dit is een experiment met een vangnet.
+
+**Als jullie het echt niet eens worden:** overweeg een onafhankelijke second opinion. Een andere kinderpsychiater die jullie beiden hoort en adviseert.
+
+## Vragen om aan de arts te stellen
+
+Als je met de kinderpsychiater of kinderarts in gesprek gaat over medicatie, neem dan deze vragen mee:
+
+- Welke medicatie raadt u aan en waarom juist deze?
+- Wat zijn de verwachte effecten? Wanneer merken we iets?
+- Wat zijn de meest voorkomende bijwerkingen?
+- Hoe monitoren we de bijwerkingen?
+- Wat is de startdosis? Hoe bouwen we op?
+- Hoelang duurt een eerlijke proefperiode?
+- Wat als het niet werkt? Wat zijn de alternatieven?
+- Is medicatie de enige optie, of zijn er ook niet-medicamenteuze behandelingen die we eerst kunnen proberen?
+- Hoe vaak komen we terug voor controle?
+- Kan mijn kind op elk moment stoppen, of moet dat geleidelijk?
+- Hoe leggen we het aan ons kind uit?
+
+Schrijf de antwoorden op. Je onthoudt in de stress van het moment minder dan je denkt.
+
+## Medicatie als onderdeel van een breder plan
+
+Medicatie staat nooit op zichzelf. Het is een onderdeel van een breder plan dat ook bestaat uit: gedragsmatige begeleiding thuis, aanpassingen op school, eventuele therapie, en een ondersteunende omgeving.
+
+Stel het je zo voor: medicatie is het fundament dat het gebouw stabiel maakt. Maar zonder muren (structuur), ramen (inzicht) en een dak (relatie) heb je nog steeds geen huis. De combinatie maakt het verschil.
+
+In de praktijk betekent dit:
+- Blijf werken aan de strategieen uit deze cursus, ook als medicatie werkt
+- Blijf in contact met school over wat ze merken
+- Blijf het gesprek voeren met je kind over hoe het gaat
+- Evalueer regelmatig: werkt de huidige aanpak nog? Is aanpassing nodig?
+
+## Het kind betrekken bij de beslissing
+
+Afhankelijk van de leeftijd van je kind, kun en moet je het betrekken bij de beslissing over medicatie.
+
+**Jonger dan 7:** Je legt uit in eenvoudige taal. "De dokter heeft een medicijn dat je brein kan helpen om rustiger te worden. Net als een bril je ogen helpt."
+
+**Tussen 7 en 12:** Je geeft meer uitleg en ruimte voor vragen. "De dokter denkt dat dit medicijn kan helpen bij de dingen die je lastig vindt. Wat vind je daarvan? Welke vragen heb je?"
+
+**Ouder dan 12:** Je betrekt het kind als volwaardige gesprekspartner. Een tiener die het niet eens is met medicatie, zal het niet slikken. Punt. Dwang werkt hier niet. Samenwerking wel.
+
+Bij elke leeftijd geldt: neem de zorgen van je kind serieus. "Ik wil geen pillen" is geen koppigheid, het is een angst die je moet onderzoeken. Wat is je kind bang voor? Dat het "gek" is? Dat andere kinderen het merken? Dat het een ander wordt? Bespreek het. Eerlijk en zonder te bagatelliseren.
+
+## Bijwerkingen monitoren
+
+Als je besluit om medicatie te proberen, word jij de ogen en oren van de arts. Want de arts ziet je kind een kwartier per maand. Jij ziet het elke dag.
+
+Waar let je op bij ADHD-medicatie (methylfenidaat, dexamfetamine):
+- **Eetlust:** verminderde eetlust is de meest voorkomende bijwerking. Let op of je kind genoeg eet, en bied een goed ontbijt aan voordat de medicatie ingenomen wordt.
+- **Slaap:** sommige kinderen hebben moeite met inslapen. Let op het tijdstip van de laatste dosis.
+- **Stemming:** is je kind somberder, vlakker of prikkelbaarder? Dat kan een teken zijn dat de dosis te hoog is.
+- **Rebound:** als de medicatie uitwerkt, kan het gedrag tijdelijk erger zijn dan zonder medicatie. Dit heet het "rebound-effect."
+- **Groei:** bij langdurig gebruik kan de groei iets vertragen. De arts zal dit monitoren.
+- **Buikpijn of hoofdpijn:** kan voorkomen in de eerste weken en verdwijnt meestal.
+
+Houd een kort daglogboek bij: datum, dosis, wat je opvalt. Neem dit mee naar de controleafspraak.
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 11                              ║
+║                                                         ║
+║  Medicatie is geen falen en geen wondermiddel. Het      ║
+║  is een gereedschap. De vraag is niet "medicatie        ║
+║  ja of nee" maar "is dit het juiste gereedschap         ║
+║  voor mijn kind, op dit moment, als onderdeel van       ║
+║  een breder plan?"                                      ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+### Oefening 11.1: Jouw houding ten opzichte van medicatie
+
+Beantwoord voor jezelf, eerlijk en zonder oordeel:
+
+1. Wat is je eerste gevoel als je het woord "medicatie" hoort in relatie tot je kind?
+2. Waar komt dat gevoel vandaan? Ervaring, verhalen van anderen, overtuigingen?
+3. Wat zijn je grootste zorgen over medicatie?
+4. Wat zijn je grootste hopen?
+5. Staan jij en je partner op dezelfde lijn? Zo niet, waar zit het verschil?
+
+### Oefening 11.2: Het gesprek voorbereiden
+
+Als medicatie ter sprake is gekomen of gaat komen:
+
+1. Schrijf je drie belangrijkste vragen voor de arts op: .......................................................................
+2. Schrijf op wat je al hebt geprobeerd (zodat de arts het volledige plaatje heeft): .......................................................................
+3. Hoe zou je het aan je kind uitleggen? Oefen het in een of twee zinnen: .......................................................................
+
+---
+
+# Hoofdstuk 12: Broers en Zussen
+
+## Het vergeten kind
+
+Je dochter zit in de hoek van de bank en leest een boek. Ze is stil. Ze doet geen moeite. Ze vraagt niks. Ondertussen ben je al een uur bezig met haar broer die een meltdown heeft. Je partner probeert hem te kalmeren. Jij ruimt de schade op. En je dochter zit daar. Stil. Onzichtbaar.
+
+Later die avond, als alles weer rustig is, zeg je tegen haar: "Goed dat je zo lief was vandaag." En ze kijkt je aan met ogen die iets zeggen dat je niet wilt horen: "Ik ben altijd lief. Maar dat ziet niemand."
+
+Dit hoofdstuk gaat over het kind dat geen problemen geeft. Het kind dat geen aandacht opeist. Het kind dat niet schreeuwt, niet slaat, niet wegloopt. Het kind dat zichzelf klein maakt zodat er ruimte is voor het kind dat alles opslokt. Het vergeten kind.
+
+## De onzichtbare last
+
+Broers en zussen van kinderen met gedragsproblemen dragen een last die zelden wordt benoemd. Onderzoek laat consistent zien dat deze kinderen vaker te maken hebben met:
+
+- Gevoelens van jaloezie en schuld over die jaloezie
+- Schaamte voor het gedrag van hun broer of zus, vooral buitenshuis
+- Angst en onveiligheid als de escalaties heftig zijn
+- Het gevoel dat ze perfect moeten zijn om de ouders niet nog meer te belasten
+- Eenzaamheid, omdat hun eigen problemen "niet belangrijk genoeg" lijken
+- Boosheid die ze niet durven te uiten, want er is al genoeg boosheid in huis
+
+En het lastige is: deze kinderen laten het vaak niet zien. Ze passen zich aan. Ze worden het "makkelijke kind." Ze leren dat hun behoeften op de tweede plek komen. En dat patroon kan ze jaren achtervolgen.
+
+## Signalen dat het andere kind lijdt
+
+Hoe weet je of het andere kind in de knel zit? Want ze zullen het je niet altijd vertellen. Let op deze signalen:
+
+**Gedragsveranderingen:**
+- Het kind trekt zich steeds meer terug
+- Het kind wordt plotseling heel "braaf" of juist opstandig
+- Slaapproblemen, buikpijn, hoofdpijn zonder medische oorzaak
+- Vermijding van thuissituaties (vaker bij vriendjes willen zijn, niet thuis willen eten)
+
+**Emotionele signalen:**
+- "Het maakt niet uit" als antwoord op alles
+- Overdreven verontschuldigend gedrag (sorry zeggen voor dingen die niet zijn schuld zijn)
+- Huilen om kleine dingen, alsof er een reservoir overloopt
+- Woede die nergens over lijkt te gaan
+
+**Sociale signalen:**
+- Geen vriendjes mee naar huis willen nemen (schaamte)
+- Op school een andere rol aannemen dan thuis (de clown, de perfectionist, de onzichtbare)
+- Het broertje of zusje met gedragsproblemen verdedigen tegenover iedereen, behalve thuis
+
+## Aandacht eerlijk verdelen: concrete strategieen
+
+"Eerlijk" betekent niet "gelijk." Eerlijk betekent: elk kind krijgt wat het nodig heeft. En het kind zonder gedragsproblemen heeft ook dingen nodig. Andere dingen. Maar net zo reëel.
+
+**1. Een-op-een tijd, ook voor het "makkelijke" kind.**
+Plan wekelijks een moment met elk kind apart. Niet als beloning voor braaf zijn, maar omdat elk kind recht heeft op onverdeelde aandacht van zijn vader. Ga samen ijs eten. Maak een wandeling. Bouw iets. Het hoeft niet groots te zijn. Het moet alleen van jullie tweeen zijn.
+
+**2. Benoem het onrecht.**
+Kinderen zijn niet gek. Ze zien dat hun broer of zus meer aandacht krijgt. Ontkennen helpt niet. Wat wel helpt is eerlijk zijn: "Ik weet dat het soms lijkt alsof je broer alle aandacht krijgt. Dat is niet eerlijk, en ik vind dat lastig. Maar jij bent net zo belangrijk voor me."
+
+**3. Geef het kind een eigen domein.**
+Zorg dat het kind iets heeft dat helemaal van hemzelf is. Een sport, een hobby, een talent dat los staat van het gezinsdrama. Iets waar het kind gezien wordt om wie het is, niet om wie het niet is.
+
+**4. Bescherm de veiligheid.**
+Als de escalaties van het ene kind leiden tot angst of onveiligheid bij het andere kind, is dat een rode lijn. Het "makkelijke" kind mag zich thuis veilig voelen. Altijd. Als dat niet zo is, moet je actie ondernemen. Een veilige kamer, een vast noodplan (zie Hoofdstuk 4), en het gesprek: "Als het eng wordt, mag je altijd naar [veilige plek] gaan."
+
+**5. Laat het kind geen hulpverlener worden.**
+Sommige kinderen nemen automatisch de rol van helper op zich. Ze troosten hun ouders. Ze kalmeren hun broer of zus. Ze slaan alarm als het escaleert. Dat is veel te veel verantwoordelijkheid voor een kind. Zeg expliciet: "Het is niet jouw taak om je broer te helpen. Dat is mijn taak. Jouw taak is om kind te zijn."
+
+## Het gesprek: "Waarom krijgt hij altijd aandacht?"
+
+Dit gesprek komt. Vroeg of laat. En het verdient een eerlijk antwoord.
+
+Wat je niet moet zeggen:
+- "Dat is niet waar." (Wel waar, en je kind weet dat.)
+- "Hij kan er niks aan doen." (Klopt, maar lost het gevoel niet op.)
+- "Jij bent juist zo fijn omdat je geen problemen geeft." (Maakt het kind verantwoordelijk voor zijn eigen onzichtbaarheid.)
+
+Wat je wel kunt zeggen:
+- "Je hebt gelijk dat je broer veel aandacht krijgt. Dat is zo, en ik vind dat jammer."
+- "Het betekent niet dat hij belangrijker is. Het betekent dat hij nu veel hulp nodig heeft."
+- "Ik wil graag weten hoe dat voor jou is. Je mag boos zijn. Je mag het oneerlijk vinden."
+- "Wat heb jij nodig van mij? Ik wil luisteren."
+
+En dan het allerbelangrijkste: luisteren. Niet verdedigen. Niet uitleggen. Luisteren. En dan iets doen met wat je hoort.
+
+## Wanneer het andere kind ook hulp nodig heeft
+
+Soms is de belasting zo groot dat het andere kind ook professionele hulp nodig heeft. Dat is geen falen. Dat is realiteit. Signalen die aanleiding geven om hulp te zoeken:
+
+- Langdurige slaapproblemen of angstklachten
+- Terugval in gedrag (bedplassen, duimzuigen bij een ouder kind)
+- Zelfbeschadigend gedrag
+- Uitspraken als "ik wou dat ik niet bestond" of "het zou beter zijn zonder mij"
+- Schoolprestaties die plotseling achteruitgaan
+- Sociaal isolement
+
+Een kinderpsycholoog kan het kind helpen om zijn ervaringen te verwerken en copingsstrategieen te ontwikkelen. En het kan het kind een plek geven waar het niet het "andere kind" is, maar gewoon zichzelf.
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 12                              ║
+║                                                         ║
+║  Het kind dat geen problemen geeft, heeft ook            ║
+║  behoeften. Zie het stille kind. Hoor het stille        ║
+║  kind. Geef het de boodschap: jij bent niet minder      ║
+║  belangrijk omdat je minder luid bent.                   ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+### Oefening 12.1: Het andere kind zien
+
+Beantwoord voor jezelf:
+
+1. Hoeveel onverdeelde, een-op-een tijd heb je deze week met elk kind doorgebracht?
+2. Herken je signalen bij het andere kind dat het lijdt onder de situatie? Welke?
+3. Heeft het andere kind ooit gezegd (of laten merken) dat het oneerlijk is? Hoe heb je gereageerd?
+4. Heeft het kind een eigen domein, iets dat helemaal van hemzelf is? Zo niet, wat zou dat kunnen zijn?
+5. Neemt het kind een rol op zich die niet bij zijn leeftijd past (trooster, helper, bemiddelaar)?
+
+### Oefening 12.2: Het gesprek plannen
+
+Bedenk hoe je het gesprek zou voeren als het kind zegt: "Waarom krijgt hij altijd alle aandacht?"
+
+1. Wat zou je eerste impuls zijn? .......................................................................
+2. Wat zou je in plaats daarvan willen zeggen? .......................................................................
+3. Welke vraag zou je stellen om echt te luisteren? .......................................................................
+4. Wat zou je daarna concreet anders doen? .......................................................................
+
+---
+
+# Hoofdstuk 13: Compassievermoeidheid bij Vaders
+
+## De emmer die leegloopt
+
+Stel je voor dat je een emmer hebt. Elke ochtend begin je met een volle emmer. En gedurende de dag worden er scheppen uitgehaald. De meltdown bij het ontbijt: een schep eruit. Het telefoontje van school: een schep eruit. De ruzie over huiswerk: een schep eruit. De driftbui bij het eten: een schep eruit. Het niet willen slapen: een schep eruit.
+
+Aan het eind van de dag is de emmer leeg. En morgen begint het opnieuw. Maar hier is het probleem: de emmer begint morgen niet helemaal vol. Want er is niemand die hem 's nachts bijvult. Dus begin je elke dag met iets minder. En iets minder. En iets minder.
+
+Tot er op een dag niets meer in zit. En dan voel je niets meer. Geen boosheid, geen verdriet, geen medelijden, geen verbinding. Alleen maar leegte. En misschien een stem die fluistert: ik kan dit niet meer.
+
+Dit is compassievermoeidheid. En het overkomt veel meer vaders dan je denkt.
+
+## Wat compassievermoeidheid is
+
+Het concept "compassion fatigue" komt uit de professionele hulpverlening. Het beschrijft wat er gebeurt als iemand die zorgt voor anderen, zo lang en zo intensief geeft dat de eigen reserves opraken. Het is het tegenovergestelde van empathie: niet dat je niet wilt voelen, maar dat je niet meer kunt voelen.
+
+Bij ouders van kinderen met gedragsproblemen is het risico op compassievermoeidheid bijzonder hoog. Want je hebt niet de luxe van een werkdag die eindigt. Je gaat niet om vijf uur naar huis. Je bent al thuis. En de bron van de stress is je eigen kind, het wezen waar je het allermeest van houdt.
+
+## Signalen herkennen
+
+Compassievermoeidheid sluipt erin. Het begint niet met een klap, maar met een langzame verschuiving. Let op deze signalen bij jezelf:
+
+**Prikkelbaarheid.** Je ontploft bij kleine dingen. Niet alleen bij het gedrag van je kind, maar bij alles. Een verkeersopstopping. Een collega die een domme vraag stelt. Je partner die vraagt hoe je dag was.
+
+**Cynisme.** Je begint te denken in donkere termen. "Hij doet het express." "Het maakt niet uit wat ik doe." "Het wordt toch nooit beter." Dit is niet wie je bent. Dit is uitputting die praat.
+
+**Emotionele afstand.** Je voelt minder. Het lukt je niet meer om mee te leven met je kind. Als het huilt, voel je irritatie in plaats van compassie. Als het boos is, voel je niets. Die vlakheid is geen keuze. Het is een beschermingsmechanisme.
+
+**Fysieke symptomen.** Chronische vermoeidheid. Slechte slaap, ook als je de kans hebt om te slapen. Hoofdpijn. Spierspanning. Een lagere weerstand. Je lichaam houdt de score bij, ook als je geest het negeert.
+
+**Terugtrekking.** Je laat het over aan je partner. Je blijft langer op je werk. Je zit op je telefoon terwijl je kind praat. Je bent fysiek aanwezig maar mentaal ergens anders.
+
+## Het verschil tussen moe zijn en opgebrand zijn
+
+Iedereen is weleens moe. Moe los je op met een nacht goed slapen, een weekend vrij, een uurtje voor jezelf. Moe is herstelbaar met rust.
+
+Opgebrand is anders. Opgebrand los je niet op met een weekend weg. Want na het weekend kom je terug in dezelfde situatie, en je bent binnen een dag weer op hetzelfde punt. Opgebrand gaat over de reserves die structureel lager zijn dan de belasting. Het is niet een tekort aan slaap, het is een tekort aan balans.
+
+Hoe weet je het verschil?
+
+| Moe | Opgebrand |
+|---|---|
+| Na een goede nacht voel je je beter | Na een goede nacht voel je je niet veel beter |
+| Je kijkt uit naar dingen | Je kijkt nergens meer naar uit |
+| Je kunt nog genieten van je kind, op goede momenten | Je kunt nauwelijks nog genieten, ook niet op goede momenten |
+| Je voelt frustratie en verdriet | Je voelt voornamelijk leegte of cynisme |
+| Je zoekt oplossingen | Je gelooft niet meer in oplossingen |
+
+Als je jezelf herkent in de rechterkolom: neem dit serieus. Dit gaat niet vanzelf over. Dit vraagt om actie.
+
+## Concrete hersteloefeningen voor vaders
+
+Herstel van compassievermoeidheid begint niet met een vakantie. Het begint met dagelijkse, kleine acties die de emmer weer een beetje vullen.
+
+**1. De vijf-minuten check-in met jezelf.**
+Elke dag, misschien 's avonds als de kinderen slapen: ga even zitten. Vraag jezelf: hoe vol is mijn emmer? Wat heeft vandaag energie gekost? Wat heeft energie gegeven? Dit kost vijf minuten. Het effect is dat je bewust wordt van je eigen staat, in plaats van er doorheen te denderen.
+
+**2. Beweging, ook al is het tien minuten.**
+Je hoeft geen marathon te lopen. Een blokje om. Tien minuten op de hometrainer. Opdrukken in de slaapkamer. Fysieke beweging is een van de best onderzochte interventies tegen stress en uitputting. Het werkt niet omdat het leuk is, het werkt omdat het de stresshormonen afbouwt die in je lichaam opstapelen.
+
+**3. Een activiteit die niets met opvoeden te maken heeft.**
+Veel vaders van kinderen met gedragsproblemen verliezen zichzelf in de vaderschapsrol. Alles draait om het kind, de diagnose, de behandeling, de school. Maar jij bent meer dan de vader van een kind met problemen. Je bent ook een man met eigen interesses, talenten en behoeften. Pak iets op dat van jou is. Muziek, sport, koken, gamen, bouwen, lezen. Iets dat je opladt.
+
+**4. Praten. Met iemand. Over hoe het echt gaat.**
+Niet het standaardantwoord ("gaat wel"). Het echte antwoord. Tegen een vriend, een broer, een collega, een therapeut. "Ik ben op. Ik voel niks meer. Ik weet niet hoe lang ik dit volhoud." Hardop uitspreken is het begin van verlichting.
+
+**5. Professionele hulp voor jezelf.**
+Dit is geen luxe. Als je structureel opgebrand bent, heb je mogelijk zelf ondersteuning nodig. Een gesprek met de huisarts. Een verwijzing naar een psycholoog. Niet voor je kind, voor jou. Een uitgeputte vader kan niet goed voor zijn kind zorgen. Zorgen voor jezelf is zorgen voor je gezin.
+
+## De schuld die je voelt als je even niet meer kunt
+
+En dan is er de schuld. Want als je vader bent van een kind dat het moeilijk heeft, voelt het als verraad om toe te geven dat je het even niet meer aankan. Je kind heeft het al zo zwaar. Wie ben jij om te klagen? Jij bent de volwassene. Jij moet sterk zijn.
+
+Die stem liegt. Die stem vertelt je dat jouw behoeften er niet toe doen. Dat is niet waar. Een lege emmer kan niet geven. Een uitgeputte vader kan niet de stabiele, liefdevolle, geduldige ouder zijn die zijn kind nodig heeft. Rust nemen is geen egoisme, het is verantwoordelijkheid.
+
+En je kind snapt het meer dan je denkt. "Papa heeft even pauze nodig. Ik ben er zo weer." Dat is geen zwakte die je kind laat zien. Dat is een voorbeeld van gezonde zelfzorg. Je leert je kind dat het oke is om grenzen te stellen, ook aan jezelf.
+
+## Je eigen grenzen als vader
+
+Grenzen stellen aan je kind ken je inmiddels. Maar grenzen stellen aan jezelf is iets anders. Dat betekent: weten wanneer je pauze nodig hebt, en die pauze dan ook nemen.
+
+Praktisch:
+- **Het wisselmoment.** Spreek met je partner af dat jullie elkaar aflossen als een van beiden aan de grens zit. Een signaalwoord: "Ik zit op rood." Geen discussie, geen uitleg. De ander neemt over.
+- **De vijf-minuten grens.** Als je merkt dat je op het punt staat om te ontploffen, geef jezelf toestemming om vijf minuten weg te lopen. Naar de wc, naar de tuin, naar de auto. Vijf minuten om te ademen en terug te komen.
+- **Het "niet nu" recht.** Niet elke strijd hoeft nu gestreden te worden. "Ik merk dat ik nu niet rustig genoeg ben om dit goed te doen. We komen hier op terug." Dat is geen opgeven. Dat is wijsheid.
+
+## Het belang van een steunnetwerk
+
+Je kunt dit niet alleen. Dat staat eerder in deze cursus, en het staat hier opnieuw, omdat het zo belangrijk is.
+
+Specifiek voor compassievermoeidheid geldt: je hebt mensen nodig die het begrijpen. Niet mensen die zeggen: "Alle kinderen zijn lastig." Mensen die weten wat het is om elke dag te leven met een kind dat je uitdaagt tot op het bot.
+
+Waar vind je die mensen?
+- **Lotgenotengroepen.** Via de GGZ, het CJG, of organisaties als Balans. Online of fysiek. Het is een opluchting om in een kamer te zitten met mensen die niet uitgelegd hoeven te krijgen waarom je moe bent.
+- **Je partner.** Als jullie een team zijn, ben je al sterker. Maar dat teamgevoel moet je onderhouden. Praat niet alleen over het kind, praat ook over jullie. Hoe gaat het met ons? Wat hebben wij nodig?
+- **Een professional voor jezelf.** Een psycholoog, coach of counselor die met jou werkt. Niet over je kind, over jou. Over je stress, je grenzen, je verlies, je kracht.
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 13                              ║
+║                                                         ║
+║  Je kunt niet geven uit een lege emmer. Zorgen voor     ║
+║  jezelf is geen egoisme. Het is de voorwaarde om        ║
+║  een goede vader te zijn. Vul je eigen emmer. Elke      ║
+║  dag een beetje.                                        ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+### Oefening 13.1: De energiemeter
+
+Vul deze week elke dag in:
+
+| Dag | Emmer-score (1-10) | Wat kostte energie? | Wat gaf energie? | Wat heb ik nodig? |
+|---|---|---|---|---|
+| Maandag | | | | |
+| Dinsdag | | | | |
+| Woensdag | | | | |
+| Donderdag | | | | |
+| Vrijdag | | | | |
+| Zaterdag | | | | |
+| Zondag | | | | |
+
+**Reflectie na de week:**
+
+Welke patronen zie ik? .......................................................................
+
+Wat maakt het verschil tussen een goede en een slechte dag? .......................................................................
+
+Wat is een ding dat ik volgende week ga doen om mijn emmer te vullen? .......................................................................
+
+### Oefening 13.2: Het eerlijke gesprek met jezelf
+
+Beantwoord zonder censuur:
+
+1. Hoe vol is mijn emmer op dit moment? (1 = volkomen leeg, 10 = helemaal vol)
+2. Herken ik signalen van compassievermoeidheid bij mezelf? Welke?
+3. Wanneer heb ik voor het laatst iets gedaan dat alleen voor mij was?
+4. Met wie kan ik eerlijk praten over hoe het werkelijk gaat?
+5. Wat houdt me tegen om hulp te vragen voor mezelf?
+
+---
+
+# Hoofdstuk 14: Het IEP/Handelingsplan
+
+## Het document dat het verschil maakt
+
+Ergens in een la op school, of in een digitaal systeem, ligt een document over je kind. Het heet misschien "handelingsplan." Of "ontwikkelingsperspectief." Of "groeidocument." Of het bestaat nog niet, en dat is op zich al een probleem.
+
+Dit document is belangrijker dan de meeste ouders beseffen. Het bepaalt welke ondersteuning je kind krijgt. Welke doelen er worden nagestreefd. Hoe de school omgaat met het gedrag van je kind. En of er evaluatiemomenten zijn om te kijken of het werkt.
+
+Als vader heb je het recht om bij dit document betrokken te zijn. Niet als toeschouwer, maar als medeopsteller. In dit hoofdstuk leer je wat een handelingsplan is, hoe je er actief aan meedoet, en hoe je ervoor zorgt dat afspraken ook daadwerkelijk worden nagekomen.
+
+## Wat is een handelingsplan?
+
+Een handelingsplan is een werkdocument dat beschrijft hoe de school tegemoet komt aan de specifieke behoeften van een leerling. Het is geen diagnose. Het is een plan van aanpak. Het bevat:
+
+- Een beschrijving van het kind: sterke punten en aandachtspunten
+- Concrete doelen: wat willen we bereiken, en wanneer?
+- Aanpak: welke strategieen en aanpassingen worden ingezet?
+- Verantwoordelijkheden: wie doet wat?
+- Evaluatie: wanneer en hoe kijken we of het werkt?
+
+## Het verschil tussen een OPP, handelingsplan en ontwikkelingsperspectief
+
+In het Nederlandse onderwijs worden verschillende termen gebruikt, en dat kan verwarrend zijn. Hier is een overzicht:
+
+| Document | Wat is het? | Wanneer? |
+|---|---|---|
+| **Handelingsplan** | Een kort, praktisch plan met concrete doelen en aanpak voor een specifiek probleem | Bij lichte tot matige ondersteuningsbehoefte |
+| **Ontwikkelingsperspectief (OPP)** | Een breder document dat het verwachte ontwikkelingsperspectief van het kind beschrijft, inclusief het uitstroomprofiel | Bij langdurige of intensieve ondersteuningsbehoefte |
+| **Groeidocument** | Sommige scholen gebruiken deze term voor een doorlopend dossier van de leerling | Verschilt per school |
+| **Ondersteuningsarrangement** | Een pakket van maatregelen dat via het samenwerkingsverband wordt toegekend | Bij extra ondersteuning die de school niet zelf kan bieden |
+
+Het belangrijkste om te weten: bij elk van deze documenten heb je als ouder instemmingsrecht. De school mag niet zonder jouw akkoord een OPP vaststellen. Dit is wettelijk vastgelegd in de Wet Passend Onderwijs.
+
+## Hoe je als vader actief meedoet aan schooloverleg
+
+Actief meedoen begint met aanwezig zijn. Dat klinkt vanzelfsprekend, maar veel vaders laten schooloverleg over aan hun partner. Soms vanwege werk, soms vanwege ongemak, soms omdat ze het gevoel hebben dat het "het terrein van de moeder" is.
+
+Het is ook jouw terrein. En je aanwezigheid maakt verschil, voor de school, voor je partner en voor je kind.
+
+Hoe bereid je je voor?
+
+**Lees het bestaande plan.** Vraag de school om het meest recente handelingsplan of OPP. Lees het door. Begrijp de doelen. Als iets onduidelijk is, noteer je vragen.
+
+**Maak een lijst van je observaties.** Wat zie jij thuis? Hoe gaat het met huiswerk? Hoe is de overgang van school naar huis? Zijn er patronen die de school moet weten?
+
+**Formuleer je doelen.** Niet alleen de doelen van de school, maar jouw doelen als vader. Wat wil jij dat er verbetert? Waar maak jij je zorgen over?
+
+**Neem iemand mee als je dat prettig vindt.** Je mag een ondersteuner meenemen naar het schooloverleg. Een familielid, een onafhankelijk cliëntondersteuner (gratis via het samenwerkingsverband), of een andere vertrouwenspersoon.
+
+## Je rechten als ouder bij school
+
+Veel ouders weten niet welke rechten ze hebben. Hier een overzicht:
+
+**Je hebt recht op:**
+- Inzage in het leerlingdossier
+- Instemmingsrecht bij het OPP (de school heeft jouw akkoord nodig)
+- Het meebeslissen over de aanpak en de doelen
+- Een second opinion als je het niet eens bent met de conclusies van school
+- Een onafhankelijke cliëntondersteuner (gratis via het samenwerkingsverband)
+- Een gesprek met de IB'er, orthopedagoog of directeur als je dat wilt
+- Het indienen van een klacht als je vindt dat de school tekortschiet (bij de klachtencommissie of de Geschillencommissie Passend Onderwijs)
+
+**Je hebt de plicht om:**
+- Relevante informatie te delen die het functioneren van je kind op school beïnvloedt
+- Samen te werken aan de afspraken die zijn gemaakt
+- School te informeren over veranderingen thuis die effect kunnen hebben
+
+## Concrete checklist voor het schoolgesprek
+
+Neem deze checklist mee naar elk schooloverleg:
+
+**Voor het gesprek:**
+- [ ] Ik heb het huidige handelingsplan/OPP gelezen
+- [ ] Ik heb mijn observaties van thuis opgeschreven
+- [ ] Ik heb mijn vragen genoteerd
+- [ ] Ik heb mijn doelen geformuleerd
+- [ ] Ik weet wie er bij het gesprek aanwezig zijn
+
+**Tijdens het gesprek:**
+- [ ] Ik heb gevraagd wat goed gaat (niet alleen wat misgaat)
+- [ ] Ik heb mijn eigen observaties gedeeld
+- [ ] Ik heb gevraagd naar de concrete aanpak: wat doet de school als het gedrag voorkomt?
+- [ ] Ik heb gevraagd naar de evaluatie: wanneer kijken we of het werkt?
+- [ ] Ik heb concrete afspraken gemaakt met namen en data
+- [ ] Ik heb gevraagd of ik een verslag van het gesprek krijg
+
+**Na het gesprek:**
+- [ ] Ik heb het verslag gelezen en gecheckt of het klopt
+- [ ] Ik heb de afspraken gedeeld met mijn partner
+- [ ] Ik heb de evaluatiedatum in mijn agenda gezet
+- [ ] Ik weet wie ik moet bellen als het tussentijds misgaat
+
+## Opvolging afdwingen zonder de relatie te beschadigen
+
+Hier zit de kunst. Want afspraken worden niet altijd nagekomen. De leerkracht zou wekelijks een terugkoppeling geven, maar dat verwatert. Het handelingsplan zou na zes weken geevalueerd worden, maar niemand plant het gesprek. De aanpassingen in de klas worden de eerste weken gedaan, en dan niet meer.
+
+Hoe ga je hiermee om zonder "die lastige vader" te worden?
+
+**Wees proactief, niet reactief.** Stuur twee weken voor de evaluatiedatum een vriendelijk mailtje: "Ik zag dat we op [datum] zouden evalueren. Zal ik een afspraak inplannen?" Dit is geen druk. Dit is organisatie.
+
+**Benoem wat je merkt, niet wat je vindt.** "Ik merk dat de wekelijkse terugkoppeling de laatste drie weken niet is gekomen. Ik mis die informatie. Kunnen we dat weer oppakken?" Dit is geen beschuldiging. Dit is een observatie.
+
+**Houd het schriftelijk bij.** Mail na elk gesprek een korte samenvatting: "Fijn gesprek vandaag. Om samen te vatten: we spraken af dat [a], [b] en [c]. Klopt dat?" Zo heb je een papieren spoor en kun je terugverwijzen als afspraken worden vergeten.
+
+**Escaleer als het nodig is, maar stap voor stap.** Eerst de leerkracht. Dan de IB'er. Dan de directeur. Dan het samenwerkingsverband. Elke stap met respect, maar ook met vastberadenheid. "Ik merk dat de afspraken niet worden nagekomen. Ik wil graag bespreken hoe we dit kunnen oplossen."
+
+**Blijf altijd bij het kind.** Het gaat niet om gelijk krijgen. Het gaat om wat je kind nodig heeft. Als je dat als kompas gebruikt, kom je altijd geloofwaardig over.
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  KERNGEDACHTE HOOFDSTUK 14                              ║
+║                                                         ║
+║  Een goed handelingsplan is een levend document.         ║
+║  Niet iets dat in een la verdwijnt, maar iets waar      ║
+║  je als vader actief aan meewerkt, over meedenkt        ║
+║  en op terugkomt. Ken je rechten. Stel vragen.          ║
+║  Houd bij wat is afgesproken.                           ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+### Oefening 14.1: Het huidige plan beoordelen
+
+Beantwoord voor jezelf:
+
+1. Heeft je kind op dit moment een handelingsplan of OPP? Zo ja, wanneer heb je het voor het laatst gelezen?
+2. Staan er concrete, meetbare doelen in? Of zijn de doelen vaag ("beter gedrag")?
+3. Is er een evaluatiedatum afgesproken? Zo ja, is die nagekomen?
+4. Ben jij als vader betrokken geweest bij het opstellen van het plan?
+5. Wat zou je willen toevoegen of veranderen aan het huidige plan?
+
+### Oefening 14.2: Het hulpverleners-voorbereidingsblad
+
+Vul dit in voor het eerstvolgende gesprek met school of een hulpverlener:
+
+**Datum gesprek:** .......................................................................
+
+**Met wie:** .......................................................................
+
+**Wat wil ik bespreken?**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+**Wat zijn mijn observaties van thuis?**
+
+.......................................................................
+
+.......................................................................
+
+**Welke vragen heb ik?**
+
+1. .......................................................................
+2. .......................................................................
+
+**Wat zijn mijn zorgen?**
+
+.......................................................................
+
+**Wat wil ik afspreken?**
+
+.......................................................................
+
+.......................................................................
+
+---
+
+# Hoofdstuk 15: Werkbladen, Hulpbronnen & Verder Lezen
 
 ## Samenvattingskaarten per hoofdstuk
 
@@ -1311,95 +1962,56 @@ Heb je genoeg mensen in je binnenste cirkel? Zo niet, wie zou je willen toevoege
 - Visuele structuur ontlast het werkgeheugen
 
 ### Hoofdstuk 8: De Relatie Beschermen
-- Compassie-vermoeidheid is normaal en herkenbaar
 - Het afwijzingscircuit doorbreken begint bij jou
 - Special Time is een van de krachtigste interventies
 - Je kind is niet het probleem; het probleem is het probleem
+- Rouw om het kind dat je verwachtte mag er zijn
 
 ### Hoofdstuk 9: Omgaan met de Buitenwereld
-- Schaamte groeit in stilte; delen is het antidote
+- Schaamte groeit in stilte; delen is het tegengif
 - Kies bewust wie je inlicht en wie je op afstand houdt
-- Zelfcompassie is geen zwakte maar een noodzaak
 - Bouw een steunnetwerk; je kunt dit niet alleen
 
----
+### Hoofdstuk 10: Samenwerking met Hulpverleners
+- Je plek als vader in de hulpverlening is essentieel, niet optioneel
+- Bereid elk gesprek voor met observaties en vragen
+- Zorg dat beide ouders betrokken zijn bij de behandeling
+- Specifieke observaties worden serieuzer genomen dan vage indrukken
 
-## Werkblad: "Mijn Kind Begrijpen"
+### Hoofdstuk 11: Medicatie: de Beslissing
+- Medicatie is geen falen en geen wondermiddel
+- Informeer jezelf met feiten, niet met mythes
+- Voer het gesprek met je partner als team
+- Betrek je kind bij de beslissing, passend bij de leeftijd
+- Monitor bijwerkingen en evalueer regelmatig
 
-Vul dit observatieblad in over een periode van een week. Het helpt je om patronen te zien en je kind beter te begrijpen.
+### Hoofdstuk 12: Broers en Zussen
+- Het kind dat geen problemen geeft, heeft ook behoeften
+- Plan een-op-een tijd met elk kind
+- Benoem het onrecht eerlijk
+- Let op signalen dat het andere kind in de knel zit
 
-**Naam kind:** .......................................................................
+### Hoofdstuk 13: Compassievermoeidheid bij Vaders
+- Je kunt niet geven uit een lege emmer
+- Herken de signalen: prikkelbaarheid, cynisme, emotionele afstand
+- Dagelijkse kleine hersteloefeningen maken het verschil
+- Hulp vragen voor jezelf is zorgen voor je gezin
 
-**Leeftijd:** .......................................................................
-
-**Datum:** .......................................................................
-
-### Sterktes van mijn kind
-
-Noem minstens vijf dingen waar je kind goed in is, los van het gedragsprobleem:
-
-1. .......................................................................
-2. .......................................................................
-3. .......................................................................
-4. .......................................................................
-5. .......................................................................
-
-### Het gedrag dat me zorgen baart
-
-Beschrijf het belangrijkste gedragsprobleem zo concreet mogelijk:
-
-.......................................................................
-
-.......................................................................
-
-### Wanneer gaat het goed?
-
-In welke situaties vertoont je kind geen of weinig probleemgedrag?
-
-.......................................................................
-
-.......................................................................
-
-### Wanneer gaat het mis?
-
-In welke situaties vertoont je kind het meeste probleemgedrag?
-
-.......................................................................
-
-.......................................................................
-
-### Welke vaardigheden mist mijn kind?
-
-Kies uit de lijst (Hoofdstuk 3) de drie belangrijkste:
-
-1. .......................................................................
-2. .......................................................................
-3. .......................................................................
-
-### Wat heb ik al geprobeerd?
-
-| Aanpak | Resultaat |
-|---|---|
-| ........................................ | ........................................ |
-| ........................................ | ........................................ |
-| ........................................ | ........................................ |
-| ........................................ | ........................................ |
-
-### Wat wil ik anders doen na deze cursus?
-
-.......................................................................
-
-.......................................................................
-
-.......................................................................
+### Hoofdstuk 14: Het IEP/Handelingsplan
+- Ken je rechten als ouder bij school
+- Bereid elk schooloverleg voor met een checklist
+- Houd afspraken bij en volg ze op
+- Escaleer stap voor stap als afspraken niet worden nagekomen
 
 ---
 
-## Werkblad: Gedragsobservatie (ABC-weeklog)
+## Werkblad 1: Het ABC-logboek
 
-Vul dit werkblad een week lang in. Noteer bij elk incident het ABC-model.
+Houd twee weken lang gedragssituaties bij. Per situatie noteer je wat eraan voorafging, wat het gedrag was, en wat het gevolg was. Na twee weken kijk je naar patronen.
 
-| Dag / Tijd | A (Wat ging vooraf?) | B (Wat was het gedrag?) | C (Wat gebeurde erna?) | Vermoedelijke functie |
+**Week 1:**
+
+| Dag / Tijd | A: Wat ging eraan vooraf? | B: Wat was het gedrag? | C: Wat was het gevolg? | Welke functie had het gedrag? |
 |---|---|---|---|---|
 | | | | | |
 | | | | | |
@@ -1409,21 +2021,205 @@ Vul dit werkblad een week lang in. Noteer bij elk incident het ABC-model.
 | | | | | |
 | | | | | |
 
+**Week 2:**
+
+| Dag / Tijd | A: Wat ging eraan vooraf? | B: Wat was het gedrag? | C: Wat was het gevolg? | Welke functie had het gedrag? |
+|---|---|---|---|---|
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+
+**Reflectie na twee weken:**
+
+Welke patronen zie ik in de antecedenten (A)? Zijn er vaste tijdstippen, situaties of triggers?
+
+.......................................................................
+
+.......................................................................
+
+Welke functie(s) komen het vaakst terug?
+
+.......................................................................
+
+Wat zou ik kunnen veranderen aan de antecedent (A) om het gedrag te voorkomen?
+
+.......................................................................
+
+.......................................................................
+
+---
+
+## Werkblad 2: De functie-detective
+
+Kies vijf uitdagende situaties van de afgelopen week. Per situatie bepaal je welke van de vier functies het gedrag had: aandacht, ontsnapping, toegang tot iets tastbaars, of sensorische behoefte. Kijk daarna wat het patroon je vertelt over wat je kind nodig heeft.
+
+**Situatie 1:**
+Wat gebeurde er? .......................................................................
+Welke functie had het gedrag? (aandacht / ontsnapping / toegang / sensorisch): .......................................................................
+Waarom denk ik dat? .......................................................................
+
+**Situatie 2:**
+Wat gebeurde er? .......................................................................
+Welke functie had het gedrag? (aandacht / ontsnapping / toegang / sensorisch): .......................................................................
+Waarom denk ik dat? .......................................................................
+
+**Situatie 3:**
+Wat gebeurde er? .......................................................................
+Welke functie had het gedrag? (aandacht / ontsnapping / toegang / sensorisch): .......................................................................
+Waarom denk ik dat? .......................................................................
+
+**Situatie 4:**
+Wat gebeurde er? .......................................................................
+Welke functie had het gedrag? (aandacht / ontsnapping / toegang / sensorisch): .......................................................................
+Waarom denk ik dat? .......................................................................
+
+**Situatie 5:**
+Wat gebeurde er? .......................................................................
+Welke functie had het gedrag? (aandacht / ontsnapping / toegang / sensorisch): .......................................................................
+Waarom denk ik dat? .......................................................................
+
+**Reflectie:**
+Welke functie komt het vaakst terug? .......................................................................
+Wat zegt dat over wat mijn kind nodig heeft? .......................................................................
+Hoe kan ik in die behoefte voorzien op een manier die wel werkt? .......................................................................
+
+---
+
+## Werkblad 3: Het CPS-werkblad (Collaborative Problem Solving)
+
+Kies een terugkerend probleem met je kind. Doorloop de drie stappen van het Collaborative Problem Solving-model van Ross Greene. Schrijf het gesprek uit zodat je het kunt oefenen voordat je het in het echt doet.
+
+**Het terugkerende probleem:**
+
+.......................................................................
+
+.......................................................................
+
+**Stap 1: Empathie uiten en informatie verzamelen**
+
+Wat zou ik zeggen om het gesprek te openen?
+Voorbeeld: "Ik merk dat het voor jou lastig is om [probleem]. Help me begrijpen wat het moeilijk maakt."
+
+Jouw opening: .......................................................................
+
+.......................................................................
+
+Doorvraag 1: "Hoe bedoel je? Vertel eens meer."
+
+Wat zou mijn kind waarschijnlijk zeggen? .......................................................................
+
+Doorvraag 2: "Is er nog meer dat het lastig maakt?"
+
+Wat zou mijn kind waarschijnlijk zeggen? .......................................................................
+
+**Stap 2: Jouw zorg delen**
+
+"Mijn zorg als vader is dat..."
+
+.......................................................................
+
+.......................................................................
+
+**Stap 3: Samen een oplossing bedenken**
+
+"Laten we samen bedenken hoe we dit kunnen oplossen zodat [behoefte kind] en [jouw zorg] allebei kloppen."
+
+Idee van mijn kind: .......................................................................
+
+Mijn idee: .......................................................................
+
+Onze afspraak: .......................................................................
+
+.......................................................................
+
+**Evaluatie na een week:**
+
+Heeft de afspraak gewerkt? .......................................................................
+
+Wat moet er worden aangepast? .......................................................................
+
+---
+
+## Werkblad 4: De energiemeter voor papa
+
+Een weeklogboek voor jezelf. Vul het elke avond in, het kost vijf minuten. Het helpt je om patronen te zien in je eigen energie en veerkracht.
+
+| Dag | Hoe vol is mijn emmer? (1-10) | Wat heeft energie gekost? | Wat heeft energie gegeven? | Wat heb ik nodig? |
+|---|---|---|---|---|
+| Maandag | | | | |
+| Dinsdag | | | | |
+| Woensdag | | | | |
+| Donderdag | | | | |
+| Vrijdag | | | | |
+| Zaterdag | | | | |
+| Zondag | | | | |
+
 **Reflectie na de week:**
 
-Welke patronen zie ik?
+Mijn gemiddelde emmerscore was: .......................................................................
+
+Op welke dag(en) was mijn emmer het leegst? Wat was er die dag(en) anders? .......................................................................
+
+Op welke dag(en) voelde ik me het best? Wat hielp? .......................................................................
+
+Wat is een ding dat ik volgende week ga doen om beter voor mezelf te zorgen? .......................................................................
+
+Wat ga ik laten of delegeren? .......................................................................
+
+---
+
+## Werkblad 5: Het hulpverleners-voorbereidingsblad
+
+Gebruik dit werkblad voor elk gesprek met school, therapeut of andere hulpverlener. Print het uit of vul het digitaal in. Neem het mee naar het gesprek.
+
+**Datum gesprek:** .......................................................................
+
+**Met wie spreek ik?** .......................................................................
+
+**Over welk kind?** .......................................................................
+
+**Wat wil ik bespreken?**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+**Wat zijn mijn observaties van de afgelopen periode?**
+
+Wat gaat goed: .......................................................................
+
+Wat baart me zorgen: .......................................................................
+
+Patronen die ik zie: .......................................................................
+
+**Welke vragen heb ik?**
+
+1. .......................................................................
+2. .......................................................................
+3. .......................................................................
+
+**Wat zijn mijn zorgen?**
 
 .......................................................................
 
 .......................................................................
 
-Welke functie komt het vaakst terug?
+**Wat wil ik afspreken?**
 
-.......................................................................
+1. .......................................................................
+2. .......................................................................
 
-Wat zou ik anders kunnen doen bij de antecedent (A)?
+**Na het gesprek:**
 
-.......................................................................
+Wat is afgesproken? .......................................................................
+
+Wie doet wat? .......................................................................
+
+Wanneer is de evaluatie? .......................................................................
 
 ---
 
@@ -1463,40 +2259,6 @@ Print deze kaart uit en hang hem op een plek waar je hem kunt zien als het escal
 
 ---
 
-## Werkblad: Plan B - Probleemoplossing
-
-Gebruik dit werkblad voor elk terugkerend probleem. Doe het samen met je kind, op een rustig moment.
-
-**Het probleem:** .......................................................................
-
-**Stap 1: Empathie. De zorg van mijn kind begrijpen.**
-
-Wat zegt mijn kind? .......................................................................
-
-Wat bedoelt mijn kind eigenlijk? .......................................................................
-
-Doorvraag: "Help me begrijpen..." .......................................................................
-
-**Stap 2: Mijn zorg inbrengen.**
-
-"Mijn zorg als vader is dat..." .......................................................................
-
-**Stap 3: Samen een oplossing bedenken.**
-
-Idee van mijn kind: .......................................................................
-
-Mijn idee: .......................................................................
-
-Onze afspraak: .......................................................................
-
-**Evaluatie na een week:**
-
-Heeft de afspraak gewerkt? .......................................................................
-
-Wat moet er worden aangepast? .......................................................................
-
----
-
 ## Aanbevolen boeken
 
 ### Nederlands
@@ -1505,13 +2267,9 @@ Wat moet er worden aangepast? ..................................................
 
 - **Haim Omer**: *Verbindend Gezag*. Over hoe je als ouder weer regie kunt nemen zonder autoritair te worden. Vooral sterk bij ODD en gedragsstoornissen.
 
-- **Daniel Siegel & Tina Payne Bryson**: *Het Ja-Brein*. Over de hersenontwikkeling van kinderen en hoe je veerkracht en flexibiliteit kunt opbouwen.
-
 - **Jan Derksen**: *Opvoeden doe je samen*. Over de balans tussen warmte en structuur in de Nederlandse opvoedcultuur.
 
 - **Laura Batstra**: *ADHD: Macht en Misverstanden*. Kritisch en genuanceerd boek over ADHD-diagnostiek in Nederland. Helpt je de diagnose in perspectief te plaatsen.
-
-- **Bessel van der Kolk**: *Traumasporen* (The Body Keeps the Score). Over de impact van stress en trauma op het lichaam en het brein. Relevant als gedragsproblemen samenhangen met stressvolle ervaringen.
 
 ### Engels
 
@@ -1541,23 +2299,15 @@ Wat moet er worden aangepast? ..................................................
 
 6. **Kazdin, A.E.** (2008). *The Kazdin Method for Parenting the Defiant Child*. Houghton Mifflin. Bewezen effectieve methode voor positieve gedragsverandering bij kinderen.
 
-7. **Patterson, G.R.** (1982). *Coercive Family Process*. Castalia. Het oorspronkelijke onderzoek naar coercieve escalatiepatronen in gezinnen.
+7. **McDonnell, A.** (2010). *Managing Aggressive Behaviour in Care Settings*. Wiley-Blackwell. De Low Arousal-benadering voor omgaan met agressie.
 
-8. **McDonnell, A.** (2010). *Managing Aggressive Behaviour in Care Settings*. Wiley-Blackwell. De Low Arousal-benadering voor omgaan met agressie.
+8. **Talwar, V. & Lee, K.** (2008). Social and cognitive correlates of children's lying behavior. *Child Development, 79*(4), 866-881. Onderzoek naar waarom kinderen liegen en wat het betekent.
 
-9. **Talwar, V. & Lee, K.** (2008). Social and cognitive correlates of children's lying behavior. *Child Development, 79*(4), 866-881. Onderzoek naar waarom kinderen liegen en wat het betekent.
+9. **Hughes, D.** (2006). *Building the Bonds of Attachment* (2nd ed.). Jason Aronson. Het PACE-model voor verbinding met kinderen met hechtings- en gedragsproblemen.
 
-10. **Brown, B.** (2012). *Daring Greatly*. Avery. Over schaamte, kwetsbaarheid en de moed om gezien te worden.
+10. **White, M. & Epston, D.** (1990). *Narrative Means to Therapeutic Ends*. Norton. De basis van narratieve therapie: het probleem is het probleem, de persoon is niet het probleem.
 
-11. **Neff, K.** (2011). *Self-Compassion: The Proven Power of Being Kind to Yourself*. William Morrow. De wetenschap achter zelfcompassie.
-
-12. **Hughes, D.** (2006). *Building the Bonds of Attachment* (2nd ed.). Jason Aronson. Het PACE-model voor verbinding met kinderen met hechtings- en gedragsproblemen.
-
-13. **White, M. & Epston, D.** (1990). *Narrative Means to Therapeutic Ends*. Norton. De basis van narratieve therapie: het probleem is het probleem, de persoon is niet het probleem.
-
-14. **Ayres, A.J.** (2005). *Sensory Integration and the Child* (25th Anniversary ed.). Western Psychological Services. Het standaardwerk over sensorische prikkelverwerking bij kinderen.
-
-15. **Lamb, M.E.** (2010). *The Role of the Father in Child Development* (5th ed.). Wiley. Uitgebreid overzicht van de unieke bijdrage van vaders.
+11. **Ayres, A.J.** (2005). *Sensory Integration and the Child* (25th Anniversary ed.). Western Psychological Services. Het standaardwerk over sensorische prikkelverwerking bij kinderen.
 
 ---
 

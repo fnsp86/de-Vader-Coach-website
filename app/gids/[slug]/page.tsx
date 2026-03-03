@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, Download } from 'lucide-react';
+import { ArrowRight, BookOpen, ChevronDown, ChevronRight, Download } from 'lucide-react';
 import { getAllGuides, getGuide } from '@/lib/guides';
 import { getAllCourses, SNELGIDS } from '@/lib/courses';
 import { POSTS_LIST } from '@/lib/blog-posts';
@@ -84,6 +84,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       logo: { '@type': 'ImageObject', url: 'https://devadercoach.nl/logo.png' },
     },
     mainEntityOfPage: `https://devadercoach.nl/gids/${slug}`,
+    datePublished: guide.datePublished,
+    dateModified: guide.datePublished,
     inLanguage: 'nl',
     keywords: guide.keywords.join(', '),
   };
@@ -114,14 +116,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <Link
-        href="/gids"
-        className="inline-flex items-center gap-1.5 text-sm font-semibold mb-8 hover:gap-2.5 transition-all"
-        style={{ color: 'var(--text3)' }}
-      >
-        <ArrowLeft className="h-4 w-4" />
-        Alle gidsen
-      </Link>
+      <nav className="flex items-center gap-1.5 text-[13px] mb-8" style={{ color: 'var(--text3)' }}>
+        <Link href="/" className="hover:underline">Home</Link>
+        <ChevronRight className="h-3 w-3" />
+        <Link href="/gids" className="hover:underline">Gidsen</Link>
+        <ChevronRight className="h-3 w-3" />
+        <span className="truncate max-w-[200px]" style={{ color: 'var(--text2)' }}>{guide.title}</span>
+      </nav>
 
       <article>
         <div className="mb-8">

@@ -32,9 +32,13 @@ Grenzen stellen is een van de lastigste onderdelen van het vaderschap. Te streng
 5. **Grenzen per Leeftijd** | Van peuter tot puber
 6. **De Moeilijke Momenten** | Praktische scripts voor de zes lastigste situaties
 7. **Consistent Blijven** | Systemen die het makkelijk maken om vol te houden
-8. **Grenzen in Complexe Situaties** | Co-ouderschap, stiefgezinnen, neurodivergentie, grootouders en schermen
-9. **Werkbladen & Opdrachten** | Alles wat je nodig hebt om te oefenen
-10. **Bronnen & Verder Lezen** | Verdieping en ondersteuning
+8. **Grenzen bij Digitale Media** | Schermtijd, gaming en social media
+9. **Grenzen Samen met je Partner** | Op een lijn komen en blijven
+10. **Grenzen en Cultuur** | Opvoeden in een multiculturele context
+11. **Grenzen bij Meerdere Kinderen** | Eerlijkheid, verschil en groepsdynamiek
+12. **Grenzen in Complexe Situaties** | Co-ouderschap, stiefgezinnen, neurodivergentie en grootouders
+13. **Werkbladen en Opdrachten** | Alles wat je nodig hebt om te oefenen
+14. **Bronnen en Verder Lezen** | Verdieping en ondersteuning
 
 ---
 
@@ -44,28 +48,17 @@ Grenzen stellen is een van de lastigste onderdelen van het vaderschap. Te streng
 
 Stel je een auto voor zonder remmen. Dat is een kind zonder grenzen. Niet omdat het kind slecht is, maar omdat de hersenen simpelweg nog niet af zijn.
 
-Kinderpsychiater Dan Siegel gebruikt het beeld van een huis met twee verdiepingen. Beneden zit het "oude brein": emoties, impulsen, vecht-of-vluchtreacties. Boven zit het "denkende brein": planning, empathie, zelfbeheersing. Het probleem? De bovenverdieping is pas rond het 25e levensjaar volledig afgebouwd.
+Het brein van een kind kun je zien als een huis met twee verdiepingen. Beneden zit het "oude brein": emoties, impulsen, vecht-of-vluchtreacties. Boven zit het "denkende brein": planning, empathie, zelfbeheersing. De bovenverdieping is pas rond het 25e levensjaar volledig afgebouwd. In de cursus Zelfregulatie als Vader vind je een uitgebreide uitleg over het tweelagenbrein van Dan Siegel.
 
 Als vader ben jij tijdelijk die bovenverdieping. Jouw grenzen functioneren als een extern stuk prefrontale cortex. Niet om je kind klein te houden, maar om het veilig te laten groeien terwijl het eigen brein nog in aanbouw is.
 
-## Hechting: de basis van alles
+## Hechting en grenzen
 
-De Britse psychiater John Bowlby ontdekte iets fundamenteels: kinderen zijn geprogrammeerd om zich te hechten aan hun verzorgers. Die hechting is geen luxe, het is een overlevingsmechanisme.
-
-Uit onderzoek (Ainsworth) blijken er vier hechtingsstijlen:
-
-| Stijl | Kenmerk | Ontstaat door |
-|---|---|---|
-| Veilig | Kind verkent de wereld, zoekt troost bij ouder | Consistent, warm reageren |
-| Vermijdend | Kind lijkt onafhankelijk, onderdrukt emoties | Afwijzing van behoeften |
-| Ambivalent | Kind is aanhankelijk maar moeilijk te troosten | Onvoorspelbaar reageren |
-| Gedesorganiseerd | Kind bevriest, tegenstrijdig gedrag | Angst bij de ouder zelf |
-
-De kern: veilige hechting ontstaat niet door grenzeloosheid, maar door voorspelbaarheid. Een vader die heldere grenzen stelt en tegelijk warm blijft, bouwt veilige hechting op.
+Veilige hechting ontstaat niet door grenzeloosheid, maar door voorspelbaarheid. Een vader die heldere grenzen stelt en tegelijk warm blijft, bouwt veilige hechting op. In de cursus Aanwezig Vaderschap lees je meer over hechting.
 
 ## Wat je zenuwstelsel ermee te maken heeft
 
-Stephen Porges' polyvagaaltheorie laat zien dat ons zenuwstelsel drie standen heeft: veilig en sociaal (ventrale vagus), alarm en vechten (sympathisch), of bevriezen en afsluiten (dorsale vagus). Kinderen kunnen pas leren en samenwerken als ze in die eerste stand zitten. Grenzen die met woede worden gesteld, duwen een kind naar alarm of bevriezing. Grenzen met warmte houden het zenuwstelsel in de "leerstand."
+Kinderen kunnen pas leren en samenwerken als hun zenuwstelsel in een veilige stand staat. Grenzen die met woede worden gesteld, duwen een kind naar alarm of bevriezing. Grenzen met warmte houden het zenuwstelsel in de "leerstand." De cursus Zelfregulatie als Vader behandelt het zenuwstelsel en de polyvagaaltheorie uitgebreid.
 
 ## Drie psychologische basisbehoeften
 
@@ -104,14 +97,14 @@ Veel vaders verwarren grenzen met controle. Het verschil is fundamenteel:
 | Bouwt veiligheid | Bouwt angst |
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  KERNGEDACHTE HOOFDSTUK 1                               ║
-║                                                         ║
-║  Grenzen zijn geen straf. Ze zijn bouwmateriaal          ║
-║  voor het brein van je kind. Jij bent de externe         ║
-║  prefrontale cortex, totdat die van je kind              ║
-║  klaar is.                                              ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 1                                |
+|                                                          |
+|  Grenzen zijn geen straf. Ze zijn bouwmateriaal           |
+|  voor het brein van je kind. Jij bent de externe          |
+|  prefrontale cortex, totdat die van je kind               |
+|  klaar is.                                               |
++----------------------------------------------------------+
 ```
 
 ### Oefening 1.1: Jouw beeld van grenzen
@@ -129,7 +122,7 @@ Beantwoord voor jezelf:
 
 ## Patronen van generatie op generatie
 
-Hoe jij grenzen stelt, is niet toevallig. Onderzoek naar intergenerationele overdracht laat zien dat opvoedpatronen van ouder op kind doorgegeven worden, vaak onbewust. De manier waarop jouw vader (of moeder) grenzen stelde, heeft een blauwdruk achtergelaten in je brein.
+Hoe jij grenzen stelt, is niet toevallig. Opvoedpatronen worden van ouder op kind doorgegeven, vaak onbewust. De manier waarop jouw vader (of moeder) grenzen stelde, heeft een blauwdruk achtergelaten in je brein. De cursus Reflectief Vaderschap gaat diep in op intergenerationele patronen en hoe je ze doorbreekt.
 
 Dit betekent niet dat je gedoemd bent om je ouders te herhalen. Het betekent wel dat je bewust moet worden van je automatische reacties. De eerste stap naar verandering is herkenning.
 
@@ -161,26 +154,26 @@ Herkenbaar: maandag is snoepen prima, dinsdag is snoepen verboden. Het kind weet
 
 Typische achtergrond: geen duidelijk opvoedmodel meegekregen, of hoge werkdruk en stress.
 
-## Het goede nieuws: neuroplasticiteit
+## Het goede nieuws: verandering is mogelijk
 
-Je brein is geen beton. Neurowetenschappelijk onderzoek laat zien dat het brein tot op hoge leeftijd nieuwe verbindingen kan aanmaken. Dit heet neuroplasticiteit. Elke keer dat je bewust een andere reactie kiest dan je automatische patroon, versterk je een nieuw pad in je brein. Het voelt in het begin onwennig en kost energie. Maar na weken van oefening wordt het nieuwe patroon steeds makkelijker.
+Stel je een bos voor. Je huidige reactiepatroon is een breed, uitgetreden pad - je loopt het zonder nadenken. De nieuwe reactie die je wilt aanleren, bijvoorbeeld een grens stellen met warmte in plaats van met woede, is een smal paadje tussen de struiken. De eerste keren kost het moeite om dat smalle pad te kiezen. Je struikelt, je twijfelt, je valt terug op het oude pad. Maar elke keer dat je het nieuwe pad bewandelt, wordt het iets breder. Na weken van bewust oefenen loop je het nieuwe pad steeds vanzelfsprekender, tot het je standaardroute is. In de cursus *Zelfregulatie als Vader* lees je meer over hoe neuroplasticiteit werkt en hoe je dit gericht kunt inzetten.
 
 ## Co-regulatie: eerst jij, dan je kind
 
-Hier zit een paradox: je kind kan pas kalmeren als jij kalm bent. Dit heet co-regulatie. Het zenuwstelsel van een kind stemt zich letterlijk af op dat van de ouder. Als jij ontploft, ontploft je kind mee. Als jij rustig blijft (ook al kost het moeite), geef je het zenuwstelsel van je kind een anker om op terug te keren naar rust.
+Je kind kan pas kalmeren als jij kalm bent. Het zenuwstelsel van een kind stemt zich letterlijk af op dat van de ouder. Als jij ontploft, ontploft je kind mee. Als jij rustig blijft (ook al kost het moeite), geef je het zenuwstelsel van je kind een anker om op terug te keren naar rust. De cursus Aanwezig Vaderschap behandelt co-regulatie uitgebreid.
 
 ## Reflectief functioneren
 
 Psycholoog Peter Fonagy introduceerde het begrip "reflective functioning": het vermogen om na te denken over wat er in het hoofd van je kind omgaat. Niet invullen, maar echt nieuwsgierig zijn. "Waarom doet hij dit?" in plaats van "Hoe durf je!" Dit vermogen is de sterkste voorspeller van veilige hechting, sterker dan welke opvoedtechniek dan ook.
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  KERNGEDACHTE HOOFDSTUK 2                               ║
-║                                                         ║
-║  Je automatische grensstijl is aangeleerd, niet          ║
-║  aangeboren. Herkennen is de eerste stap.                ║
-║  Veranderen is de tweede.                               ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 2                                |
+|                                                          |
+|  Je automatische grensstijl is aangeleerd, niet           |
+|  aangeboren. Herkennen is de eerste stap.                 |
+|  Veranderen is de tweede.                                |
++----------------------------------------------------------+
 ```
 
 ### Oefening 2.1: Herken je type
@@ -226,18 +219,18 @@ Je toon doet er meer toe dan je woorden. Spiegelneuronen in het brein van je kin
 Zeg wat je kind WEL moet doen, niet alleen wat niet mag. "Niet rennen" is vaag. "Loop rustig" is helder. Een heldere grens geeft het brein een concreet beeld om naartoe te werken.
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  DE GRENSFORMULE                                        ║
-║                                                         ║
-║  Stap 1: BENOEM wat je ziet of wat het kind voelt       ║
-║    "Ik zie dat je boos bent"                            ║
-║                                                         ║
-║  Stap 2: STEL DE GRENS, kort en helder                 ║
-║    "Slaan mag niet"                                     ║
-║                                                         ║
-║  Stap 3: BIED EEN ALTERNATIEF                          ║
-║    "Je mag wel op het kussen stompen"                   ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  DE GRENSFORMULE                                         |
+|                                                          |
+|  Stap 1: BENOEM wat je ziet of wat het kind voelt        |
+|    "Ik zie dat je boos bent"                             |
+|                                                          |
+|  Stap 2: STEL DE GRENS, kort en helder                  |
+|    "Slaan mag niet"                                      |
+|                                                          |
+|  Stap 3: BIED EEN ALTERNATIEF                           |
+|    "Je mag wel op het kussen stompen"                    |
++----------------------------------------------------------+
 ```
 
 ### Het drieluik in actie
@@ -316,13 +309,13 @@ Een van de krachtigste tools bij grenzen stellen is het bieden van een keuze. Ni
 - Raak je kind zacht aan (hand op schouder) als het dat toelaat
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  KERNGEDACHTE HOOFDSTUK 3                               ║
-║                                                         ║
-║  Kort. Warm. Helder.                                    ║
-║  Benoem. Stel grens. Bied alternatief.                  ║
-║  Dat is alles. De rest is oefenen.                      ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 3                                |
+|                                                          |
+|  Kort. Warm. Helder.                                     |
+|  Benoem. Stel grens. Bied alternatief.                   |
+|  Dat is alles. De rest is oefenen.                       |
++----------------------------------------------------------+
 ```
 
 ### Oefening 3.1: Herschrijf je eigen grenzen
@@ -427,13 +420,13 @@ Als een grens overschreden wordt, gebruik dit protocol:
 Stap 5 is cruciaal. De relatie moet altijd hersteld worden na een grens.
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  KERNGEDACHTE HOOFDSTUK 4                               ║
-║                                                         ║
-║  Straf onderdrukt gedrag. Logische consequenties         ║
-║  leren gedrag. Zoek het verschil niet in strengheid,    ║
-║  maar in het verband tussen actie en gevolg.            ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 4                                |
+|                                                          |
+|  Straf onderdrukt gedrag. Logische consequenties          |
+|  leren gedrag. Zoek het verschil niet in strengheid,     |
+|  maar in het verband tussen actie en gevolg.             |
++----------------------------------------------------------+
 ```
 
 ### Oefening 4.1: Van straf naar consequentie
@@ -445,7 +438,6 @@ Denk aan de laatste keer dat je je kind strafte (of wilde straffen). Beantwoord:
 3. Voldeed die aan de vier R's? (Respectvol, Redelijk, Gerelateerd, Vooraf benoemd)
 4. Herschrijf de situatie met een logische consequentie.
 5. Hoe had je Plan B (samen oplossen) kunnen inzetten als dit een terugkerend probleem is?
-
 ---
 
 # Hoofdstuk 5: Grenzen per Leeftijd
@@ -537,14 +529,14 @@ Dezelfde grens kan perfect zijn voor een zesjarige en volkomen onredelijk voor e
 | 9-12 | Overleg | "Hoe lossen we dit samen op?" | Ja (gesprek) | Ja (meedenken) | Samen bepaald |
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║  KERNGEDACHTE HOOFDSTUK 5                               ║
-║                                                         ║
-║  Grenzen veranderen van vorm, niet van functie.         ║
-║  Bij een peuter: kort en fysiek begeleiden.             ║
-║  Bij een pre-puber: samen bespreken en onderhandelen.   ║
-║  Het doel blijft: veiligheid, structuur, verbinding.    ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 5                                |
+|                                                          |
+|  Grenzen veranderen van vorm, niet van functie.          |
+|  Bij een peuter: kort en fysiek begeleiden.              |
+|  Bij een pre-puber: samen bespreken en onderhandelen.    |
+|  Het doel blijft: veiligheid, structuur, verbinding.     |
++----------------------------------------------------------+
 ```
 
 ### Oefening 5.1: Leeftijdscheck
@@ -643,7 +635,7 @@ Beschrijf wat je ziet zonder oordeel.
 "Wat zouden jullie kunnen bedenken zodat het voor allebei eerlijk voelt?"
 
 **Stap 5: Laat hen kiezen**
-"Jullie hebben drie ideeen. Welke willen jullie proberen?"
+"Jullie hebben drie ideeën. Welke willen jullie proberen?"
 
 **Voorbeeld:**
 
@@ -659,7 +651,7 @@ Beschrijf wat je ziet zonder oordeel.
 >
 > **Allebei:** "Ja!"
 >
-> **Papa:** "Oké. We hebben een tablet en twee jongens. Wat zou eerlijk zijn?" *(Stap 3 en 4)*
+> **Papa:** "Oke. We hebben een tablet en twee jongens. Wat zou eerlijk zijn?" *(Stap 3 en 4)*
 >
 > **Oudste:** "Nog vijf minuten, dan mag hij."
 >
@@ -677,27 +669,27 @@ Weinig dingen voelen zo ongemakkelijk als een kind dat krijsend op de grond ligt
 **De 5 regels voor openbare scenes:**
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║             5 REGELS VOOR OPENBARE SCENES                ║
-╠══════════════════════════════════════════════════════════╣
-║                                                          ║
-║  1. Dezelfde grens als thuis                             ║
-║     Wat thuis "nee" is, is in de winkel ook "nee."       ║
-║                                                          ║
-║  2. Ga op ooghoogte                                      ║
-║     Hurk neer, fluister. Dit de-escaleert direct.        ║
-║                                                          ║
-║  3. Benoem het gevoel, niet het gedrag                   ║
-║     "Je bent teleurgesteld" in plaats van                 ║
-║     "Hou op met dat gekrijs."                            ║
-║                                                          ║
-║  4. Geef een uitweg                                      ║
-║     "We gaan even naar buiten tot je rustig bent."       ║
-║                                                          ║
-║  5. Negeer het publiek                                   ║
-║     Jij bent de vader. Niet zij.                         ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|             5 REGELS VOOR OPENBARE SCENES                 |
++----------------------------------------------------------+
+|                                                           |
+|  1. Dezelfde grens als thuis                              |
+|     Wat thuis "nee" is, is in de winkel ook "nee."        |
+|                                                           |
+|  2. Ga op ooghoogte                                       |
+|     Hurk neer, fluister. Dit de-escaleert direct.         |
+|                                                           |
+|  3. Benoem het gevoel, niet het gedrag                    |
+|     "Je bent teleurgesteld" in plaats van                  |
+|     "Hou op met dat gekrijs."                             |
+|                                                           |
+|  4. Geef een uitweg                                       |
+|     "We gaan even naar buiten tot je rustig bent."        |
+|                                                           |
+|  5. Negeer het publiek                                    |
+|     Jij bent de vader. Niet zij.                          |
+|                                                           |
++----------------------------------------------------------+
 ```
 
 **Voorbeeld:**
@@ -706,7 +698,7 @@ Weinig dingen voelen zo ongemakkelijk als een kind dat krijsend op de grond ligt
 >
 > **Kind:** *(gilt)* "IK WIL SNOEP! IK WIL SNOEP!"
 >
-> **Papa:** *(hurkt neer, legt hand op schouder, fluistert)* "Hé. Ik zie dat je heel graag snoep wilt. Dat snap ik." *(Regel 2 en 3)*
+> **Papa:** *(hurkt neer, legt hand op schouder, fluistert)* "He. Ik zie dat je heel graag snoep wilt. Dat snap ik." *(Regel 2 en 3)*
 >
 > **Kind:** *(huilt harder)*
 >
@@ -718,7 +710,7 @@ Weinig dingen voelen zo ongemakkelijk als een kind dat krijsend op de grond ligt
 >
 > *(Buiten, wacht tot kind kalmeert. Zegt niets. Aait over rug.)*
 >
-> **Papa:** "Ben je er weer? Oké. Zullen we samen de boodschappen afmaken? Jij mag de appels uitzoeken."
+> **Papa:** "Ben je er weer? Oke. Zullen we samen de boodschappen afmaken? Jij mag de appels uitzoeken."
 
 **Voorbereiding is de helft:** Bespreek voor je de deur uitgaat wat de afspraken zijn. "We gaan naar de supermarkt. We kopen wat op het lijstje staat. Je mag een ding uitkiezen bij het fruit." Dit voorkomt verrassingen.
 
@@ -760,13 +752,13 @@ Het werkt omdat je kind leert dat uit bed komen niets oplevert: geen gesprek, ge
 
 ## Situatie 5: Ochtendchaos
 
-De ochtend is voor veel gezinnen het stressvolgste moment van de dag. Je hebt een deadline (school, werk) en kinderen die niet meewerken. Onderzoek laat zien dat ochtendstress direct samenhangt met hoeveel beslissingen er 's ochtends genomen moeten worden. De oplossing: elimineer beslismomenten.
+De ochtend is voor veel gezinnen het meest stressvolle moment van de dag. Je hebt een deadline (school, werk) en kinderen die niet meewerken. Onderzoek laat zien dat ochtendstress direct samenhangt met hoeveel beslissingen er 's ochtends genomen moeten worden. De oplossing: elimineer beslismomenten.
 
 **De NIEUWE aanpak: voorbereiding en autonomie**
 
 > *(Avond ervoor)*
 >
-> **Papa:** "Hé, morgenochtend gaan we iets nieuws proberen. We gaan een ochtendroutine maken. Wat moet er allemaal gebeuren voor we de deur uit kunnen?"
+> **Papa:** "He, morgenochtend gaan we iets nieuws proberen. We gaan een ochtendroutine maken. Wat moet er allemaal gebeuren voor we de deur uit kunnen?"
 >
 > **Kind (7 jaar):** "Aankleden... ontbijten... tanden poetsen..."
 >
@@ -781,22 +773,22 @@ De ochtend is voor veel gezinnen het stressvolgste moment van de dag. Je hebt ee
 > **Papa:** "Elke ochtend dat de checklist voor achten af is, verdien je een sticker. Vijf stickers is een extra verhaaltje 's avonds."
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║                  OCHTEND CHECKLIST                        ║
-╠══════════════════════════════════════════════════════════╣
-║                                                          ║
-║  □  Aankleden (kleren liggen al klaar)                   ║
-║  □  Ontbijten                                            ║
-║  □  Tanden poetsen                                       ║
-║  □  Tas inpakken (was al ingepakt)                       ║
-║  □  Schoenen en jas aan                                  ║
-║  □  KLAAR! (voor 8:00)                                   ║
-║                                                          ║
-║  Tip: Leg kleren de avond ervoor klaar.                  ║
-║  Tip: Pak de schooltas de avond ervoor in.               ║
-║  Tip: Zet de ontbijttafel de avond ervoor.               ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|                  OCHTEND CHECKLIST                         |
++----------------------------------------------------------+
+|                                                           |
+|  [ ]  Aankleden (kleren liggen al klaar)                  |
+|  [ ]  Ontbijten                                           |
+|  [ ]  Tanden poetsen                                      |
+|  [ ]  Tas inpakken (was al ingepakt)                      |
+|  [ ]  Schoenen en jas aan                                 |
+|  [ ]  KLAAR! (voor 8:00)                                  |
+|                                                           |
+|  Tip: Leg kleren de avond ervoor klaar.                   |
+|  Tip: Pak de schooltas de avond ervoor in.                |
+|  Tip: Zet de ontbijttafel de avond ervoor.                |
+|                                                           |
++----------------------------------------------------------+
 ```
 
 **Sleutels voor de ochtend:**
@@ -869,25 +861,25 @@ Vaste routines elimineren dagelijkse discussies. Als "na het eten ruimen we same
 Kies samen met je gezin drie tot vijf basisregels. Niet twintig, niet tien. Drie tot vijf. Hang ze zichtbaar op. Verwijs ernaar in plaats van steeds opnieuw uit te leggen.
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║                    ONZE HUISREGELS                        ║
-╠══════════════════════════════════════════════════════════╣
-║                                                          ║
-║  1. We zijn aardig voor elkaar                           ║
-║                                                          ║
-║  2. We luisteren als iemand praat                        ║
-║                                                          ║
-║  3. We ruimen onze eigen spullen op                      ║
-║                                                          ║
-║  4. Schermen gaan uit als papa of mama het zegt          ║
-║                                                          ║
-║  5. ............................................          ║
-║     (vul samen in)                                       ║
-║                                                          ║
-║  Afgesproken door: het hele gezin                         ║
-║  Datum: _______________                                  ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|                    ONZE HUISREGELS                         |
++----------------------------------------------------------+
+|                                                           |
+|  1. We zijn aardig voor elkaar                            |
+|                                                           |
+|  2. We luisteren als iemand praat                         |
+|                                                           |
+|  3. We ruimen onze eigen spullen op                       |
+|                                                           |
+|  4. Schermen gaan uit als papa of mama het zegt           |
+|                                                           |
+|  5. ............................................           |
+|     (vul samen in)                                        |
+|                                                           |
+|  Afgesproken door: het hele gezin                          |
+|  Datum: _______________                                   |
+|                                                           |
++----------------------------------------------------------+
 ```
 
 **Zo werkt het in de praktijk:**
@@ -933,7 +925,7 @@ Uit onderzoek naar implementatie-intenties weten we dat mensen die vooraf bedenk
 
 - "Als mijn kind gaat zeuren aan de kassa, dan hurk ik neer en zeg: 'Ik snap dat je het wilt, we kopen vandaag wat op het lijstje staat.'"
 - "Als mijn kind voor de derde keer uit bed komt, dan breng ik het zwijgend terug."
-- "Als ik merk dat ik geirriteerd raak, dan haal ik drie keer diep adem voor ik reageer."
+- "Als ik merk dat ik geïrriteerd raak, dan haal ik drie keer diep adem voor ik reageer."
 
 Schrijf ze op. Plak ze op je koelkast. Herlees ze 's ochtends. Ze werken omdat je brein al een pad heeft aangelegd voor je het moment bereikt.
 
@@ -971,14 +963,564 @@ Neem vijf minuten en beantwoord:
 
 **Wanneer zou een gezinsvergadering passen in jullie week?**
 Dag: ................ Tijd: ................
+---
+
+# Hoofdstuk 8: Grenzen bij Digitale Media
+
+*Schermtijd, gaming en social media: een complete strategie*
+
+Schermtijd is het nieuwe snoep. Het verschil is dat snoep op een gegeven moment op is en een scherm niet. Kinderen willen er eindeloos veel van, en grenzen stellen voelt als een dagelijkse strijd. Dit hoofdstuk geeft je meer dan richtlijnen. Het geeft je een complete strategie om digitale media een gezonde plek te geven in je gezin.
+
+## Waarom dit zo lastig is
+
+Digitale media zijn ontworpen om verslavend te zijn. Apps, games en social media gebruiken dezelfde psychologische trucs als gokmachines: variabele beloningen, sociale druk en de angst om iets te missen. Een kind dat niet van zijn scherm af wil, is geen zwak kind. Het is een kind dat vecht tegen een miljardenbedrijf dat hele teams psychologen inzet om hem aan het scherm te houden. Dat perspectief helpt om je frustratie om te zetten in begrip.
+
+## Een gezinsvisie op schermen
+
+Voordat je regels maakt, is het slim om samen met je partner en (bij oudere kinderen) je kind een visie te formuleren. Niet "schermen zijn slecht," maar: "In ons gezin gebruiken we schermen bewust." Die visie vormt het fundament onder alle afspraken.
+
+Stel jezelf deze vragen:
+- Waar gebruiken wij als gezin schermen voor? (Leren, ontspannen, contact houden)
+- Wat willen we dat schermen niet verdringen? (Buitenspelen, samen eten, slaap)
+- Welk voorbeeld geven wij als ouders?
+
+De antwoorden helpen om afspraken te maken die niet willekeurig aanvoelen, maar voortkomen uit een gedeelde overtuiging.
+
+## Schermtijdafspraken die werken
+
+De meeste schermtijdafspraken mislukken niet omdat de regels verkeerd zijn, maar omdat ze vaag zijn, niet samen gemaakt, of omdat de consequenties niet duidelijk zijn. Hier is een aanpak die wel werkt.
+
+**Stap 1: Maak de afspraken samen.**
+Ga om de tafel zitten op een rustig moment (niet wanneer je kind net zijn scherm moet inleveren). Bespreek hoeveel tijd per dag redelijk is, wanneer schermen mogen en wanneer niet, en wat de consequentie is als de afspraak niet wordt nagekomen.
+
+**Stap 2: Schrijf ze op.**
+Een afspraak die niet opgeschreven is, bestaat niet. Hang de afspraken naast de huisregels. Zo kun je ernaar verwijzen zonder steeds opnieuw te onderhandelen.
+
+**Stap 3: Gebruik een timer.**
+Laat de timer het slechte nieuws brengen, niet jij. "De timer zegt dat de tijd om is" werkt beter dan "Geef hier die tablet!" Gebruik een fysieke timer (zandloper of keukenwekker) of een app die het scherm automatisch vergrendelt.
+
+**Stap 4: Bouw overgangsrituelen in.**
+Het probleem is vaak niet de schermtijd zelf, maar de overgang. Een kind dat midden in een spel zit en abrupt moet stoppen, voelt dat als onrecht. Geef een waarschuwing vijf minuten van tevoren, dan een minuut, en laat je kind zelf het scherm uitzetten. Dat geeft een gevoel van controle.
+
+**Voorbeeldafspraak voor het hele gezin:**
+
+| Wanneer | Regel |
+|---------|-------|
+| Ochtend voor school | Geen schermen |
+| Na school | Eerst huiswerk en buitenspelen, dan schermtijd |
+| Tijdens het eten | Alle schermen weg (ook die van papa) |
+| Avond na 19:00 | Geen schermen meer |
+| Weekend | Maximaal [samen invullen] uur per dag |
+| Vakantie | Ruimere afspraak, maar niet onbeperkt |
+
+## Wat als je kind stiekem op het scherm zit
+
+Stiekem schermgebruik is een signaal, geen misdaad. Het vertelt je dat je kind de verleiding niet kan weerstaan, niet dat het een slecht kind is. De vraag is niet "hoe straf ik dit?" maar "hoe maak ik het makkelijker om de afspraak na te komen?"
+
+**Praktische aanpak:**
+
+1. **Benoem zonder oordeel.** "Ik zie dat je op de tablet zit terwijl de afspraak was dat je nu buiten zou spelen. Wat is er aan de hand?"
+
+2. **Zoek de oorzaak.** Verveelt je kind zich? Is de verleiding te groot omdat het apparaat naast het bed ligt? Wil het kind iets afmaken?
+
+3. **Pas de omgeving aan.** Leg apparaten op een vaste plek in de woonkamer, niet op de slaapkamer. Gebruik ouderlijk toezicht om schermen na een bepaalde tijd automatisch te vergrendelen. Maak het fysiek moeilijker om stiekem te kijken.
+
+4. **Consequentie.** "De afspraak was niet nagekomen, dus morgen begint de schermtijd een half uur later." Kort, logisch, zonder drama.
+
+5. **Herstel het vertrouwen.** "Ik vertrouw je. Als je morgen de afspraak nakomt, is alles weer normaal."
+
+## Gaming: wanneer is het te veel?
+
+Gaming is niet per definitie slecht. Veel games trainen probleemoplossend denken, samenwerking en doorzettingsvermogen. Het wordt een probleem wanneer gaming andere essentielen verdringt. Let op deze signalen:
+
+**Concrete waarschuwingssignalen:**
+- Je kind wordt agressief of extreem emotioneel als het moet stoppen
+- Slaap, schoolwerk of vriendschappen lijden eronder
+- Je kind liegt over hoeveel het gamet
+- Het verliest interesse in activiteiten die het eerder leuk vond
+- Het eet of drinkt niet goed omdat het wil doorspelen
+- Het praat over bijna niets anders meer dan de game
+
+**Wat je kunt doen:**
+- Speel een keer mee. Je begrijpt pas waarom het zo verslavend is als je het zelf ervaart. Bovendien bouw je verbinding op.
+- Maak afspraken over welke games mogen. Kijk samen naar de leeftijdsclassificatie (PEGI). Bespreek waarom sommige games niet geschikt zijn.
+- Gebruik de "verdiende schermtijd" methode (zie hieronder).
+- Stel een maximum in en houd dat consequent vol, ook in het weekend.
+- Maak gamen sociaal: laat je kind een vriendje uitnodigen om samen te spelen in plaats van alleen online.
+
+## Social media grenzen
+
+Social media brengen specifieke risico's mee die losstaan van schermtijd. Het gaat om vergelijking, pestgedrag, privacy en ongepaste inhoud. Hier zijn concrete handvatten.
+
+**Leeftijd.** De meeste platforms hanteren een minimumleeftijd van 13 jaar. Dat is er niet voor niets. Het brein van een kind jonger dan 13 is onvoldoende ontwikkeld om om te gaan met de sociale druk, de constante feedback en de ongefilterde inhoud van social media.
+
+**Privacy.** Kinderen begrijpen niet wat ze weggeven als ze een foto posten of hun locatie delen. Leg uit, concreet en zonder angst aan te jagen, wat er met hun gegevens gebeurt. "Als je een foto post, kan iedereen op de wereld die zien. Wil je dat?"
+
+**Inhoud.** Niet alles wat je kind online tegenkomt is geschikt. Installeer filters, maar weet dat geen enkel filter waterdicht is. Het echte filter is het gesprek. Vraag regelmatig: "Wat heb je vandaag online gezien? Was er iets geks of vervelends bij?"
+
+**De drie afspraken voor social media:**
+1. Wij kennen de wachtwoorden (niet om te controleren, maar voor noodgevallen)
+2. Als je iets ziet dat je een naar gevoel geeft, vertel je het ons
+3. We posten geen foto's van anderen zonder toestemming
+
+## De techniek van "verdiende schermtijd"
+
+Dit systeem werkt goed bij kinderen vanaf een jaar of zes. Het principe is simpel: schermtijd is geen recht, het is iets dat je verdient door andere dingen eerst te doen.
+
+**Hoe het werkt:**
+
+1. Maak een lijst van taken die eerst gedaan moeten worden: huiswerk, buitenspelen (minimaal 30 minuten), kamer opruimen, instrument oefenen.
+
+2. Elke voltooide taak levert een bepaalde hoeveelheid schermtijd op. Bijvoorbeeld: huiswerk gedaan = 15 minuten, buiten gespeeld = 15 minuten, kamer opgeruimd = 10 minuten.
+
+3. De schermtijd is pas beschikbaar als de taken af zijn. Niet eerder, niet als voorschot.
+
+4. Niet gebruikte schermtijd vervalt aan het einde van de dag. Je kunt niet "sparen" voor een marathon-sessie in het weekend.
+
+**Voorbeeld:**
+
+> **Kind (8 jaar):** "Papa, mag ik op de tablet?"
+>
+> **Papa:** "Heb je al buiten gespeeld?"
+>
+> **Kind:** "Nee..."
+>
+> **Papa:** "Eerst buiten, dan tablet. Hoeveel minuten heb je al verdiend vandaag?"
+>
+> **Kind:** "Huiswerk was klaar, dus vijftien minuten."
+>
+> **Papa:** "Mooi. Als je nu een half uur buiten speelt, heb je dertig minuten tabletttijd. Deal?"
+
+Dit systeem werkt omdat het positief is (je verdient iets) in plaats van negatief (je verliest iets). Het leert je kind dat ontspanning volgt op inspanning. En het haalt jou uit de rol van de schermtijdpolitie.
+
+## Hoe je zelf het goede voorbeeld geeft
+
+Dit is het ongemakkelijke gedeelte. Kinderen kopieren wat ze zien, niet wat je zegt. Als jij de hele avond op je telefoon zit, is "leg die tablet neer" een holle boodschap. Onderzoek laat zien dat kinderen van ouders die veel op hun telefoon zitten, meer gedragsproblemen vertonen. Niet omdat de telefoon magische negatieve stralen uitzendt, maar omdat het kind ervaart dat het scherm belangrijker is dan hij.
+
+**Concrete stappen:**
+- Leg je telefoon weg tijdens het eten (voor iedereen)
+- Maak een "telefoonparkeerplaats" in de woonkamer waar alle telefoons naartoe gaan na een bepaalde tijd
+- Als je je telefoon pakt terwijl je kind erbij is, benoem waarom: "Ik check even of opa heeft gebeld, daarna leg ik hem weer weg"
+- Houd je aan dezelfde regels als je kinderen. Als schermen uit zijn na 19:00, geldt dat ook voor jou (in elk geval waar je kind bij is)
+- Wees eerlijk als het je niet lukt: "Papa vindt het ook lastig om zijn telefoon neer te leggen. We oefenen samen."
+
+Die laatste zin is goud waard. Het laat je kind zien dat zelfbeheersing iets is waar iedereen moeite mee heeft, zelfs volwassenen. Het maakt jullie bondgenoten in plaats van tegenstanders.
+
+Naarmate je kind ouder wordt, verschuift de regie geleidelijk van jou naar je kind. De concrete grenzen uit dit hoofdstuk zijn het startpunt, maar het einddoel is dat je kind leert zichzelf te reguleren. In de cursus *Autonomie en Loslaten* lees je hoe je die overgang van externe grenzen naar zelfstandige keuzes stap voor stap begeleidt.
+
+```
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 8                                |
+|                                                          |
+|  Schermtijd is geen gevecht dat je moet winnen.           |
+|  Het is een vaardigheid die je samen oefent.              |
+|  Maak afspraken als het rustig is, niet als het           |
+|  escaleert. En geef zelf het voorbeeld.                   |
++----------------------------------------------------------+
+```
+
+### Oefening 8.1: Jullie digitale huisregels
+
+Ga samen met je partner (en eventueel je kinderen) zitten en beantwoord:
+
+1. Hoeveel schermtijd per dag vinden wij redelijk voor ons kind op dit moment?
+............................
+2. Wanneer zijn schermen in ons huis uit? (Tijdens het eten, na een bepaalde tijd, 's ochtends?)
+............................
+3. Waar worden apparaten opgeladen? (Niet op de slaapkamer!)
+............................
+4. Welke consequentie spreken we af als de schermtijdafspraak niet wordt nagekomen?
+............................
+5. Hoe geef ik zelf het goede voorbeeld?
+............................
 
 ---
 
-# Hoofdstuk 8: Grenzen in Complexe Situaties
+# Hoofdstuk 9: Grenzen Samen met je Partner
 
-*Co-ouderschap, stiefgezinnen, neurodivergentie, grootouders en schermen*
+*Op een lijn komen en blijven*
 
-Niet elk gezin past in hetzelfde plaatje. Dit hoofdstuk behandelt vijf situaties waarin grenzen stellen extra uitdagend is, met praktische handvatten voor elke situatie.
+Grenzen stellen is al lastig genoeg als je het alleen doet. Het wordt pas echt ingewikkeld als je partner er anders over denkt. De een vindt dat het kind om acht uur in bed moet, de ander om negen uur. De een geeft een koekje als het kind huilt, de ander zegt nee. Het kind leert razendsnel wie het moet vragen voor wat het wil. En voor je het weet, spelen jullie tegen elkaar in plaats van samen.
+
+Dit hoofdstuk gaat niet over wie er gelijk heeft. Het gaat over hoe je als team opereert, ook als je het niet eens bent.
+
+## Waarom kinderen profiteren van een gezamenlijk front
+
+Kinderen hebben een fijne antenne voor inconsistentie tussen ouders. Dat is niet stout, dat is slim. Als papa nee zegt en mama misschien, is mama de logische volgende stap. Het probleem is niet dat je kind dit doet (het is normaal), maar dat het ondermijnend werkt als ouders hierdoor tegenover elkaar komen te staan.
+
+Onderzoek laat zien dat kinderen die opgroeien met ouders die op een lijn zitten wat betreft regels en grenzen, minder gedragsproblemen vertonen, een hoger gevoel van veiligheid hebben en beter leren omgaan met frustratie. Dat betekent niet dat jullie het altijd eens moeten zijn. Het betekent dat jullie moeten leren omgaan met de momenten waarop dat niet zo is.
+
+## De voorkant-achterkant strategie
+
+Dit is de belangrijkste regel in dit hoofdstuk: bespreek meningsverschillen over regels achter de schermen, niet voor de ogen van je kind. Aan de voorkant (waar je kind bij is) vormen jullie een team. Aan de achterkant (als de kinderen op bed liggen of op school zitten) bespreken jullie waar je het niet over eens bent.
+
+**Hoe dat eruitziet:**
+
+> *(Kind vraagt om snoep voor het eten. Papa zegt nee.)*
+>
+> **Kind:** "Mama, mag ik een koekje?"
+>
+> **Mama:** *(kijkt even naar papa)* "Papa heeft al gezegd dat we nu niet snoepen."
+>
+> *(Later, als de kinderen op bed liggen)*
+>
+> **Mama:** "Ik vind eigenlijk dat een koekje voor het eten best mag. Hoe zie jij dat?"
+>
+> **Papa:** "Ik maak me zorgen dat ze dan niet meer eten. Kunnen we afspreken dat er een half uur voor het eten geen snoep meer mag?"
+>
+> **Mama:** "Dat lijkt me redelijk. Afgesproken."
+
+De kern: je kind ziet twee ouders die samenwerken. Jullie onderlinge discussie vindt plaats op een moment dat het kind er niet bij is.
+
+**Wat als je het er in het moment niet mee eens bent?**
+
+Soms zegt je partner iets waar je het helemaal niet mee eens bent, en je kind staat erbij. Drie vuistregels:
+
+1. **Steun je partner in het moment.** Je kunt het later bespreken, maar ondermijn de grens niet waar je kind bij is. Zeg iets als: "Papa/mama heeft het gezegd. We bespreken het later."
+
+2. **Gebruik geen vetorecht.** Als je partner een grens heeft gesteld, trek die niet in tenzij het echt onredelijk of schadelijk is. "Mama zei nee, maar ik zeg ja" vernietigt het gezag van je partner.
+
+3. **Neem het op in jullie maandelijks overleg.** Als je het structureel oneens bent over bepaalde regels, is dat geen kwestie van wie er gelijk heeft, maar van samen een werkbare afspraak vinden.
+
+## Wat als je partner veel strenger is dan jij
+
+Dit komt veel voor: de ene ouder is van nature strenger, de andere soepeler. Geen van beiden heeft per definitie gelijk. Het gaat om de balans.
+
+**Het gesprek dat helpt:**
+
+Begin niet met "Jij bent te streng" of "Jij bent te soepel." Begin met nieuwsgierigheid. Stel deze vragen:
+
+- "Wat wil je bereiken met deze regel? Welke waarde zit erachter?"
+- "Waar ben je bang voor als we deze grens niet stellen?"
+- "Hoe werd dit bij jou thuis gedaan? Was dat helpend of juist niet?"
+
+Vaak blijkt dat jullie hetzelfde willen (veiligheid, respect, zelfstandigheid) maar een andere manier kiezen om daar te komen. Als je de onderliggende waarde deelt, wordt het makkelijker om een compromis te vinden over de uitvoering.
+
+**Als jij de soepelere bent:** Besef dat je partner zich misschien alleen voelt in het grenzen stellen. Als jij altijd de leuke ouder bent en je partner altijd de strenge, is dat niet eerlijk. Pak je aandeel op. Stel ook af en toe de grenzen, zodat het niet altijd op dezelfde schouders rust.
+
+**Als jij de strengere bent:** Besef dat soepelheid niet hetzelfde is als zwakte. Je partner kiest misschien bewust voor flexibiliteit omdat hij of zij weet dat het kind op dat moment meer warmte nodig heeft dan structuur. Vertrouw op de intentie, ook als je de aanpak anders zou doen.
+
+## De gezamenlijke grens-meeting
+
+Plan eens per maand een kort overleg (twintig tot dertig minuten) over regels en grenzen. Niet in het heetst van de strijd, niet terloops op de bank, maar als een bewust moment. Maak er een soort "gezinsvergadering voor ouders" van.
+
+**Agenda:**
+
+1. **Wat gaat goed?** Welke regels lopen soepel? Waar werken jullie goed samen?
+2. **Waar lopen we vast?** Welke situatie levert steeds discussie op?
+3. **Aanpassing nodig?** Moet een regel veranderen omdat het kind ouder is geworden of omdat de situatie is veranderd?
+4. **Nieuwe afspraak.** Formuleer samen de regel, de consequentie en wie verantwoordelijk is voor het handhaven.
+5. **Check-in over jullie teamwork.** Voelen we ons allebei gehoord? Is de verdeling eerlijk?
+
+**Tip:** Houd het kort en praktisch. Dit is geen relatietherapie, het is operationeel overleg. Behandel maximaal twee punten per keer. Schrijf de afspraken op, zodat jullie er later naar kunnen verwijzen zonder opnieuw te onderhandelen.
+
+## Meningsverschillen zonder dat je kind het hoort
+
+Kinderen zijn meesters in het oppikken van spanning. Zelfs als je fluistert, voelen ze dat er iets aan de hand is. Daarom is het belangrijk om niet alleen de woorden maar ook de timing te bewaken.
+
+**Drie principes:**
+
+1. **Niet tijdens de situatie.** Als je kind zich misdraagt en je partner iets doet waar je het niet mee eens bent, is dat niet het moment om het te bespreken. Wacht tot het rustig is.
+
+2. **Niet voor het slapengaan.** Discussies over opvoeding voor het slapengaan werken door in je nacht en in je humeur de volgende dag. Plan het op een ander moment.
+
+3. **Begin met "ik" in plaats van "jij."** "Ik merk dat ik me ongemakkelijk voel als..." werkt beter dan "Jij doet altijd..." Dit voorkomt dat het gesprek een aanval en verdediging wordt.
+
+## Specifieke situaties
+
+**Gescheiden ouders die nieuwe partners hebben:**
+Als er nieuwe partners in het spel zijn, worden de grenzen complexer. Het principe blijft hetzelfde: de biologische ouders maken de grote afspraken, nieuwe partners ondersteunen. Bespreek met je nieuwe partner wat zijn of haar rol is (zie ook Hoofdstuk 12, stiefgezinnen).
+
+**Alleenstaande vaders:**
+Als je het alleen doet, mis je de spiegel van een partner. Zoek die spiegel elders: een goede vriend die ook vader is, een familielid dat je vertrouwt, of een professional. Het is geen zwakte om hulp te vragen. Het is wijsheid.
+
+```
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 9                                |
+|                                                          |
+|  Je hoeft het niet altijd eens te zijn.                   |
+|  Je moet wel altijd een team zijn.                        |
+|  Bespreek het achter de schermen.                         |
+|  Aan de voorkant: samen.                                  |
++----------------------------------------------------------+
+```
+
+### Oefening 9.1: Het partner-gesprek
+
+Plan deze week een moment van twintig minuten met je partner. Gebruik deze vragen:
+
+1. Over welke regel of grens zijn wij het het vaakst oneens?
+............................
+2. Welke waarde zit daar voor mij achter? En voor jou?
+............................
+3. Wat zou een werkbare middenweg zijn?
+............................
+4. Hoe zorgen we ervoor dat we als team overkomen bij ons kind?
+............................
+5. Wanneer plannen we ons eerste maandelijkse grens-overleg?
+............................
+
+---
+
+# Hoofdstuk 10: Grenzen en Cultuur
+
+*Opvoeden in een multiculturele context*
+
+Nederland is een land van vele culturen, en dat merk je in de opvoeding. Wat in de ene cultuur volstrekt normaal is (een kind dat met de handen eet, een kind dat pas om tien uur naar bed gaat, een kind dat streng wordt aangesproken door oom of tante) is in een andere cultuur ondenkbaar. Als vader sta je soms op het kruispunt van verschillende verwachtingen: die van je eigen achtergrond, die van je partner, die van de school, en die van de Nederlandse samenleving.
+
+Dit hoofdstuk helpt je om je eigen koers te vinden, met respect voor tradities en met oog voor wat jouw kind nodig heeft.
+
+## Cultuur is geen excuus, maar ook geen vijandin
+
+Elke cultuur bevat waardevolle elementen voor de opvoeding. Respect voor ouderen, gastvrijheid, gemeenschapszin, verantwoordelijkheidsgevoel: dit zijn schatten die je kunt meegeven aan je kind. Tegelijk bevat elke cultuur elementen die je bewust kunt bijstellen als ze niet passen bij hoe je wilt opvoeden.
+
+Het gaat niet om "mijn cultuur is beter" of "de Nederlandse manier is de enige goede manier." Het gaat om bewust kiezen. Welke waarden uit jouw achtergrond wil je doorgeven? Welke gewoontes wil je aanpassen? En waarom?
+
+**Drie vragen die helpen:**
+1. Dient deze gewoonte het welzijn van mijn kind, of dient het vooral de verwachtingen van anderen?
+2. Past dit bij de wereld waarin mijn kind opgroeit?
+3. Kan ik de waarde achter de traditie behouden, ook als ik de vorm aanpas?
+
+## Wat als opa en oma heel andere regels hanteren
+
+Dit is een van de meest genoemde spanningspunten in multiculturele gezinnen. Grootouders die het kind volstoppen met eten omdat "een dun kind een slecht teken is." Grootouders die vinden dat een klap op de billen prima is. Grootouders die je kind verwennen tot het niet meer te houden is als het thuiskomt.
+
+Het lastige is dat je grootouders niet wilt kwetsen. Je houdt van ze, je respecteert ze, en je wilt dat je kind een goede band met ze heeft. Tegelijk wil je dat je eigen opvoedkeuzes gerespecteerd worden.
+
+**Het gesprek voeren:**
+
+De sleutel is respect tonen voor hun ervaring, zonder je eigen grenzen op te geven.
+
+> "Ik weet dat jullie ons met heel veel liefde hebben grootgebracht, en ik ben dankbaar voor alles wat jullie mij hebben meegegeven. Ik probeer sommige dingen anders te doen, niet omdat jullie het fout deden, maar omdat de wereld veranderd is en ik nieuwe dingen heb geleerd. Het zou me heel veel helpen als jullie mij daarin steunen."
+
+Dit is geen confrontatie, het is een uitnodiging. Het erkent hun rol en vraagt om medewerking.
+
+**Als het gesprek niet werkt:**
+Sommige grootouders veranderen niet. Niet uit kwade wil, maar omdat hun overtuigingen diep verankerd zijn. In dat geval:
+- Wees extra duidelijk tegen je kind: "Bij opa en oma gelden soms andere regels. Dat is okey. In ons huis doen we het zo."
+- Beperk de momenten waarop je kind zonder jou bij de grootouders is, als de afwijkingen te groot zijn.
+- Kies je gevechten. Een extra koekje bij oma is niet hetzelfde als een klap bij opa.
+
+## Cultuurverschillen tussen jou en je partner
+
+Als jij en je partner uit verschillende culturele achtergronden komen, is de kans groot dat jullie het over sommige opvoedkwesties fundamenteel oneens zijn. Dat gaat verder dan "strengheid vs. soepelheid." Het gaat over diepe waarden: hoe belangrijk is gehoorzaamheid? Hoe vrij mag een kind zijn? Wat is de rol van religie? Hoe ga je om met seksualiteit?
+
+**De drie stappen:**
+
+**Stap 1: Begrijp de waarde achter de regel.**
+Als je partner vindt dat kinderen hun bord moeten leegeten, is de onderliggende waarde misschien "respect voor eten" of "dankbaarheid." Als jij vindt dat een kind mag stoppen als het vol zit, is jouw waarde "lichaamsgevoel respecteren." Beide waarden zijn geldig.
+
+**Stap 2: Zoek de overlap.**
+Jullie willen allebei dat je kind gezond eet en dankbaar is. De vraag is niet wie er gelijk heeft, maar hoe je beide waarden kunt eren. Misschien kun je afspreken: "Je hoeft niet alles op te eten, maar je schept niet meer op dan je aankunt."
+
+**Stap 3: Maak een duidelijke huisregel.**
+Na het gesprek maak je samen een afspraak die jullie allebei kunnen uitdragen. Die afspraak is dan van jullie allebei, niet van een van jullie. Je kind hoort een gedeelde boodschap.
+
+**Onderwerpen die in multiculturele gezinnen vaak tot discussie leiden:**
+
+| Onderwerp | Mogelijke spanning | Gezamenlijke aanpak |
+|-----------|-------------------|---------------------|
+| Eten | "Bord leeg" vs. "eet tot je vol bent" | Afspreken over portiegrootte, niet over leegeten |
+| Bedtijd | Vroeg vs. laat | Doordeweeks vast tijdstip, weekend iets ruimer |
+| Respect voor ouderen | Gehoorzaamheid vs. eigen mening | Respect tonen in toon, maar eigen mening mag |
+| Straffen | Fysiek straffen vs. nooit fysiek | Samen afspreken: geen fysiek straffen, wel logische consequenties |
+| Religie | Verplicht vs. vrije keuze | Kind laten kennismaken, ruimte voor eigen keuze op latere leeftijd |
+| School | Prestatie vs. plezier | Beide waarderen, geen druk op cijfers maar wel op inzet |
+
+## "Zo doen wij dat thuis": hoe je kind leert omgaan met verschillende regels
+
+Kinderen zijn flexibeler dan je denkt. Ze kunnen prima begrijpen dat er bij opa andere regels gelden dan thuis, dat er op school andere afspraken zijn dan op de voetbalclub, en dat er in het ene land andere gewoontes zijn dan in het andere. Het enige wat ze nodig hebben, is helderheid.
+
+**Het gesprek met je kind:**
+
+> "In de wereld zijn er heel veel manieren om dingen te doen. Bij opa en oma doen ze sommige dingen anders dan wij. Dat is niet fout en niet gek, dat is hoe zij het geleerd hebben. In ons huis hebben wij onze eigen regels. Die heb je mee bedacht. En als je ergens bent waar andere regels gelden, mag je altijd aan papa of mama vragen: hoe zit dat?"
+
+Dit leert je kind drie dingen: er is niet maar een manier om te leven, in ons huis gelden onze regels, en je mag altijd vragen stellen.
+
+## Respect voor tradities vs. je eigen koers kiezen
+
+Je hoeft niet alles over te nemen van je ouders of je cultuur. Je hoeft ook niet alles af te wijzen. De kunst is selectief te zijn: neem mee wat werkt, pas aan wat niet meer past, en wees eerlijk over je keuzes.
+
+**Tradities die je kunt behouden en combineren met grenzen stellen:**
+- Samen eten als gezin (zonder schermen, met echte gesprekken)
+- Respect tonen (maar niet ten koste van de eigen stem van je kind)
+- Gastvrijheid (maar niet ten koste van bedtijden en structuur)
+- Feestdagen vieren (een prachtig moment om waarden over te brengen)
+- Meertaligheid (een cadeau, geen last)
+
+**Tradities waar je bewust van kunt afwijken:**
+- Fysiek straffen ("zo ben ik ook groot geworden" is geen argument)
+- Blinde gehoorzaamheid (kinderen mogen vragen waarom)
+- Emoties onderdrukken ("jongens huilen niet" is achterhaald)
+- Schaamte als opvoedmiddel (beschadiging in plaats van opvoeding)
+
+Je bent niet ondankbaar als je iets anders doet dan je ouders. Je bent moedig. Je kiest voor je kind, met de kennis die je nu hebt. Dat is precies wat een goede vader doet.
+
+```
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 10                               |
+|                                                          |
+|  Je cultuur is je fundament, niet je gevangenis.          |
+|  Neem mee wat waardevol is, pas aan wat niet              |
+|  meer past, en geef je kind de woorden om te              |
+|  navigeren tussen verschillende werelden.                 |
++----------------------------------------------------------+
+```
+
+### Oefening 10.1: Jouw culturele kompas
+
+Beantwoord voor jezelf:
+
+1. Welke waarde uit mijn culturele achtergrond wil ik absoluut doorgeven aan mijn kind?
+............................
+2. Welke gewoonte uit mijn opvoeding wil ik bewust anders doen?
+............................
+3. Waar botst mijn achtergrond met die van mijn partner of met de verwachtingen van de school?
+............................
+4. Hoe leg ik aan mijn kind uit waarom wij sommige dingen anders doen dan opa en oma?
+............................
+
+---
+
+# Hoofdstuk 11: Grenzen bij Meerdere Kinderen
+
+*Eerlijkheid, verschil en groepsdynamiek*
+
+Als je meer dan een kind hebt, weet je dat "dezelfde regels voor iedereen" makkelijker klinkt dan het is. Je oudste mag later opblijven, maar je jongste vindt dat oneerlijk. Je ene kind heeft meer structuur nodig dan het andere. En als ze samenspannen, heb je het gevoel dat je in de minderheid bent. Dit hoofdstuk helpt je om grenzen te stellen die recht doen aan elk kind, zonder dat het in eindeloze discussies over eerlijkheid ontaardt.
+
+## Eerlijkheid vs. gelijkheid
+
+De meest gehoorde zin in een gezin met meerdere kinderen is: "Dat is niet eerlijk!" Kinderen hebben een aangeboren gevoel voor rechtvaardigheid, maar ze verwarren eerlijkheid vaak met gelijkheid. Gelijkheid is: iedereen krijgt hetzelfde. Eerlijkheid is: iedereen krijgt wat hij of zij nodig heeft.
+
+**Het gesprek dat dit verduidelijkt:**
+
+> **Kind (6 jaar):** "Waarom mag zij langer opblijven? Dat is niet eerlijk!"
+>
+> **Papa:** "Stel dat jij een bril nodig hebt en je zus niet. Is het dan eerlijk dat alleen jij een bril krijgt?"
+>
+> **Kind:** "Ja, want ik heb hem nodig."
+>
+> **Papa:** "Precies. Eerlijk betekent niet dat iedereen hetzelfde krijgt. Het betekent dat iedereen krijgt wat hij nodig heeft. Jouw lichaam heeft meer slaap nodig dan dat van je zus, want je bent jonger. Daarom ga jij eerder naar bed. Niet omdat we je minder vinden, maar omdat we van je houden en willen dat je uitgerust bent."
+
+Dit gesprek hoef je niet elke keer opnieuw te voeren. Na een paar keer begrijpen de meeste kinderen het principe. Je kunt er kort naar verwijzen: "Weet je nog wat we zeiden over eerlijk vs. gelijk?"
+
+## Leeftijdsverschillen: de oudste mag meer
+
+Dit is een realiteit die je niet kunt ontkennen: oudere kinderen hebben meer vrijheden dan jongere. Ze mogen later opblijven, ze mogen verder fietsen, ze mogen misschien al een eigen telefoon hebben. Dit voelt voor de jongste als onrecht. Maar het andersom doen (de oudste dezelfde regels geven als de jongste) is ook oneerlijk.
+
+**Hoe je het uitlegt:**
+
+> "Toen je zus zes was, ging zij ook om half acht naar bed. Als jij negen bent, mag jij ook langer opblijven. Grotere kinderen krijgen meer vrijheid, maar ook meer verantwoordelijkheid. Dat is hoe het werkt in ons gezin."
+
+**Maak het concreet met een "vrijheden en verantwoordelijkheden" systeem:**
+
+| Leeftijd | Vrijheid | Verantwoordelijkheid |
+|----------|----------|---------------------|
+| 4-6 jaar | Kiezen welk boek voor het slapen | Eigen speelgoed opruimen |
+| 6-8 jaar | Half uur later naar bed in het weekend | Helpen met tafel dekken |
+| 8-10 jaar | Zelf naar een vriendje fietsen | Eigen kamer opgeruimd houden |
+| 10-12 jaar | Eigen schermtijd beheren (binnen afspraak) | Huiswerk zelfstandig plannen |
+
+Wanneer je jongste kind zegt "dat is niet eerlijk," kun je verwijzen naar het systeem: "Kijk, als jij acht bent, krijg jij dit ook. Zo gaat het voor iedereen."
+
+## Wanneer het ene kind meer structuur nodig heeft dan het andere
+
+Kinderen zijn verschillend. Het ene kind bloeit op met veel vrijheid en weinig regels. Het andere kind heeft juist behoefte aan duidelijke kaders en vaste routines. Dit kan te maken hebben met temperament, leeftijd of neurodivergentie.
+
+**Het dilemma:** als je het ene kind strakker begeleidt dan het andere, lijkt het alsof je ongelijk behandelt. Maar het tegenovergestelde is waar: je behandelt ze juist eerlijk, omdat je elk kind geeft wat het nodig heeft.
+
+**Hoe je dit communiceert naar je kinderen:**
+
+> *(Tegen het kind dat meer structuur krijgt)*
+> "Ik merk dat het je helpt als we samen een plan maken voor na school. Daarom doen we dat. Het is niet omdat ik je niet vertrouw, het is omdat ik wil dat het goed gaat."
+
+> *(Tegen het kind dat meer vrijheid krijgt)*
+> "Jij kunt je huiswerk goed zelf plannen, dat heb je bewezen. Daarom mag je dat zelf doen. Als het een keer niet lukt, helpen we je weer."
+
+> *(Als kinderen het vergelijken)*
+> "Jullie zijn verschillende mensen met verschillende behoeften. Net als dat de een meer slaap nodig heeft dan de ander, heeft de een meer hulp nodig bij plannen. Dat is niet beter of slechter, het is anders."
+
+## Groepsdynamiek: als kinderen samenspannen
+
+Kinderen zijn slimmer dan je denkt, zeker als ze hun krachten bundelen. "We willen ALLEBEI nog een uur op de tablet!" of "Wij vinden ALLEBEI dat we geen groente hoeven!" Het voelt alsof je tegen een mini-vakbond onderhandelt.
+
+**Drie technieken:**
+
+**1. Splits het gesprek.**
+Kinderen die samenspannen zijn moediger dan kinderen die alleen staan. Door het gesprek op te splitsen, neem je de groepsdruk weg.
+
+> "Ik hoor wat jullie samen willen. Ik wil even met ieder apart praten. Sem, wat vind jij er eigenlijk van?"
+
+Vaak blijkt dat een van de twee het niet zo sterk voelt als de ander, maar is meegegaan in het groepsgevoel.
+
+**2. Erken de poging.**
+Het is eigenlijk knap dat ze samenwerken. Benoem dat, zonder toe te geven.
+
+> "Ik zie dat jullie hebben overlegd en samen een voorstel doen. Goed teamwork. Het antwoord is nog steeds nee. Maar ik waardeer dat jullie het netjes vragen."
+
+**3. Bied een gezamenlijk alternatief.**
+Als ze samenspannen voor meer schermtijd, bied dan iets anders aan dat ze samen kunnen doen.
+
+> "Ik snap dat jullie allebei nog willen gamen. De schermtijd is op. Wat zouden jullie samen kunnen doen dat niet op een scherm is? Een bordspel? Buiten voetballen?"
+
+## De valkuil van vergelijken
+
+"Kijk eens hoe netjes je zus opruimt. Waarom kun jij dat niet?" Dit voelt misschien als motivatie, maar het werkt averechts. Vergelijken tussen kinderen leidt tot jaloezie, een negatief zelfbeeld en rivaliteit. Het maakt de ene het goede kind en de andere het lastige kind. Beide rollen zijn schadelijk.
+
+**Wat je in plaats daarvan kunt doen:**
+- Benoem het gewenste gedrag zonder vergelijking: "Ik zie dat er nog lego op de grond ligt. Wil je dat opruimen?"
+- Geef elk kind individuele aandacht en complimenten die niets met de ander te maken hebben
+- Als een kind iets goed doet, benoem dat bij dat kind, niet als afzet tegen de ander
+
+## Individuele tijd als fundament
+
+De beste manier om grenzen eerlijk te houden bij meerdere kinderen is door elk kind regelmatig individuele aandacht te geven. Vijftien minuten per dag, een-op-een, zonder de andere kinderen erbij. In die tijd kies je kind wat jullie doen. Geen opvoeding, geen regels, gewoon samen zijn.
+
+Dit klinkt simpel, maar het effect is groot. Een kind dat zich gezien voelt, heeft minder behoefte om grenzen te testen. Het voelt zich minder bedreigd door de aandacht die naar broers of zussen gaat. En het bouwt een band op die het makkelijker maakt om grenzen te accepteren als die er zijn.
+
+```
++----------------------------------------------------------+
+|  KERNGEDACHTE HOOFDSTUK 11                               |
+|                                                          |
+|  Eerlijk is niet gelijk. Elk kind krijgt wat het          |
+|  nodig heeft. Leg dat uit, wees daar open over,           |
+|  en geef elk kind individuele aandacht.                   |
+|  Dat is het fundament onder alles.                        |
++----------------------------------------------------------+
+```
+
+### Oefening 11.1: De eerlijkheidscheck
+
+Beantwoord per kind:
+
+**Kind 1:** ............................
+- Welke vrijheden passen bij de leeftijd van dit kind?
+............................
+- Welke verantwoordelijkheden horen daarbij?
+............................
+- Heeft dit kind meer of minder structuur nodig dan de andere kinderen?
+............................
+
+**Kind 2:** ............................
+- Welke vrijheden passen bij de leeftijd van dit kind?
+............................
+- Welke verantwoordelijkheden horen daarbij?
+............................
+- Heeft dit kind meer of minder structuur nodig dan de andere kinderen?
+............................
+
+**Voor het gezin:**
+- Hoe leg ik het verschil in regels uit aan mijn kinderen?
+............................
+- Wanneer plan ik individuele tijd met elk kind?
+............................
+---
+
+# Hoofdstuk 12: Grenzen in Complexe Situaties
+
+*Co-ouderschap, stiefgezinnen, neurodivergentie en grootouders*
+
+Niet elk gezin past in hetzelfde plaatje. Dit hoofdstuk behandelt vier situaties waarin grenzen stellen extra uitdagend is, met praktische handvatten voor elke situatie.
 
 ## 1. Co-ouderschap na scheiding
 
@@ -1076,42 +1618,13 @@ Grootouders die je grenzen ondermijnen zijn een van de meest genoemde frustratie
 
 **De drie opties als het niet werkt:**
 
-1. **Accepteren en compenseren.** "Bij opa en oma zijn andere regels. Dat is oké. In ons huis gelden onze regels." (Werkt bij kleine afwijkingen.)
+1. **Accepteren en compenseren.** "Bij opa en oma zijn andere regels. Dat is oke. In ons huis gelden onze regels." (Werkt bij kleine afwijkingen.)
 
 2. **Begrenzen.** Minder logeerpartijtjes, kortere bezoeken, of altijd erbij zijn. Niet als straf, maar als praktische oplossing.
 
 3. **Professionele hulp.** Bij ernstige ondermijning (bijvoorbeeld een grootouder die consequent tegen de afgesproken opvoeding ingaat) kan een familietherapeut helpen om het gesprek te voeren.
 
-## 5. Digitale grenzen
-
-Schermtijd is het nieuwe snoep. Kinderen willen er eindeloos veel van, en grenzen stellen voelt als een dagelijkse strijd. Onderzoek laat zien dat niet de hoeveelheid schermtijd het grootste probleem is, maar het verdringen van slaap, beweging en sociaal contact.
-
-**Richtlijnen per leeftijd:**
-
-| Leeftijd | Richtlijn |
-|----------|-----------|
-| 0-2 jaar | Zo min mogelijk, alleen videobellen |
-| 2-5 jaar | Max 1 uur per dag, samen kijken |
-| 6-9 jaar | Max 1-2 uur per dag, afspraken over inhoud |
-| 10-12 jaar | Afspraken samen maken, focus op balans |
-| 13+ jaar | Samen kaders, privacy respecteren |
-
-**De 3-stappen "scherm afnemen" techniek:**
-
-**Stap 1: Waarschuwing met tijd.**
-"Over vijf minuten gaat het scherm uit."
-
-**Stap 2: Herinnering.**
-"Nog een minuut. Maak af waar je mee bezig bent."
-
-**Stap 3: Consequent uitvoeren.**
-"De tijd is om. Geef het scherm maar."
-
-Bij verzet: kapotte grammofoon. "De tijd is om." Geen discussie, geen onderhandeling. Als het scherm niet vrijwillig wordt gegeven, gaat het de volgende dag eerder uit (of helemaal niet aan).
-
-**Tip:** Maak schermtijd-afspraken als iedereen rustig is, niet in het moment zelf. Schrijf ze op en hang ze naast de huisregels.
-
-## Oefening 8.1: Jouw complexe situatie
+## Oefening 12.1: Jouw complexe situatie
 
 Welke complexe situatie herken jij het meest?
 ............................
@@ -1127,373 +1640,366 @@ Wat heb je nodig om dat te laten lukken?
 
 ---
 
-# Hoofdstuk 9: Werkbladen & Opdrachten
+# Hoofdstuk 13: Werkbladen en Opdrachten
 
 *Alles wat je nodig hebt om te oefenen*
 
-Dit hoofdstuk bevat vijf werkbladen en een 7-dagen challenge. Print ze uit, schrijf erin, hang ze op. Opvoeden leer je door te doen, niet door te lezen.
+Dit hoofdstuk bevat vijf werkbladen en een 7-dagen challenge, specifiek ontworpen voor grenzen stellen. Print ze uit, schrijf erin, hang ze op. Opvoeden leer je door te doen, niet door te lezen.
 
 
-## Werkblad 1: Huisregels Poster
+## Werkblad 1: De grenzen-thermometer
 
-Ga samen met je gezin zitten en kies drie tot vijf regels. Laat kinderen meedenken: regels die ze zelf helpen bedenken, volgen ze beter op. Formuleer positief ("We zijn aardig" in plaats van "Niet slaan") en houd het simpel.
+Per situatie scoor je hoe makkelijk of moeilijk het voor jou is om de grens te handhaven. Dit werkblad helpt je om patronen te ontdekken: waar ben je sterk, en waar heb je extra oefening nodig?
+
+**Instructie:** Schrijf per situatie een score van 1 (heel makkelijk om de grens te houden) tot 10 (bijna onmogelijk om de grens te houden). Noteer bij elke score kort waarom je die score geeft.
+
+| Situatie | Score (1-10) | Waarom deze score? |
+|----------|-------------|-------------------|
+| Bedtijd handhaven | .............. | .............. |
+| Schermtijd beperken | .............. | .............. |
+| Nee zeggen tegen snoep/traktaties | .............. | .............. |
+| Grenzen stellen in het openbaar | .............. | .............. |
+| Consequenties uitvoeren als je moe bent | .............. | .............. |
+| Rustig blijven als je kind schreeuwt | .............. | .............. |
+| Grenzen stellen als je partner het anders doet | .............. | .............. |
+| Nee zeggen terwijl je kind huilt | .............. | .............. |
+| .............. (eigen situatie) | .............. | .............. |
+| .............. (eigen situatie) | .............. | .............. |
+
+**Reflectie:**
+
+Bij welke situaties scoor je het hoogst (het moeilijkst)?
+............................
+
+Zie je een patroon? (Bijvoorbeeld: alles met emotie is lastig, of: alles in het openbaar is lastig)
+............................
+
+Welke situatie ga je deze week als eerste aanpakken?
+............................
+
+Welke techniek uit deze cursus kun je daarvoor inzetten?
+............................
+
+
+## Werkblad 2: Het regelcontract
+
+Dit werkblad is bedoeld om samen met je kind (vanaf een jaar of zes) vijf huisregels op te stellen, inclusief consequenties. Het bijzondere is dat je kind mee beslist en mee ondertekent. Regels die je kind zelf mee bedenkt, worden beter nageleefd.
+
+**Instructie:** Ga samen met je kind aan tafel zitten. Leg uit dat jullie samen de huisregels gaan opschrijven. Laat je kind meedenken over de regels en over wat er gebeurt als een regel gebroken wordt. Formuleer positief (wat je wel doet, niet wat je niet doet).
 
 ```
-╔══════════════════════════════════════════════════════════╗
-║                    ONZE HUISREGELS                        ║
-╠══════════════════════════════════════════════════════════╣
-║                                                          ║
-║  Datum: _______________                                  ║
-║                                                          ║
-║  1. ................................................     ║
-║                                                          ║
-║  2. ................................................     ║
-║                                                          ║
-║  3. ................................................     ║
-║                                                          ║
-║  4. ................................................     ║
-║                                                          ║
-║  5. ................................................     ║
-║                                                          ║
-║  Handtekeningen:                                         ║
-║                                                          ║
-║  Papa: _______________                                   ║
-║                                                          ║
-║  Mama/partner: _______________                           ║
-║                                                          ║
-║  Kind: _______________                                   ║
-║                                                          ║
-║  Kind: _______________                                   ║
-║                                                          ║
-╚══════════════════════════════════════════════════════════╝
++----------------------------------------------------------+
+|                   ONS REGELCONTRACT                        |
++----------------------------------------------------------+
+|                                                           |
+|  Datum: _______________                                   |
+|                                                           |
+|  Regel 1: ............................................    |
+|  Als deze regel niet wordt gevolgd:                       |
+|  ............................................              |
+|                                                           |
+|  Regel 2: ............................................    |
+|  Als deze regel niet wordt gevolgd:                       |
+|  ............................................              |
+|                                                           |
+|  Regel 3: ............................................    |
+|  Als deze regel niet wordt gevolgd:                       |
+|  ............................................              |
+|                                                           |
+|  Regel 4: ............................................    |
+|  Als deze regel niet wordt gevolgd:                       |
+|  ............................................              |
+|                                                           |
+|  Regel 5: ............................................    |
+|  Als deze regel niet wordt gevolgd:                       |
+|  ............................................              |
+|                                                           |
+|  Wij spreken af om deze regels te volgen.                 |
+|                                                           |
+|  Handtekening papa: _______________                       |
+|                                                           |
+|  Handtekening mama/partner: _______________               |
+|                                                           |
+|  Handtekening kind: _______________                       |
+|                                                           |
+|  Handtekening kind: _______________                       |
+|                                                           |
+|  Dit contract wordt elke drie maanden samen               |
+|  bekeken en eventueel aangepast.                          |
+|                                                           |
++----------------------------------------------------------+
 ```
 
-**Tips voor goede huisregels:**
-
-- Maximaal vijf regels (minder is meer)
-- Formuleer positief: wat je wel wilt zien
-- Gebruik taal die je jongste kind begrijpt
-- Maak ze specifiek genoeg om te handhaven
-- "We zijn respectvol" is te vaag. "We luisteren als iemand praat" is concreet.
-
-**Voorbeelden per leeftijd:**
-
-| Leeftijd | Voorbeeld |
-|----------|-----------|
-| 3-5 jaar | "We hebben zachte handjes" |
-| 6-8 jaar | "We vragen voor we iets pakken dat van een ander is" |
-| 9-12 jaar | "We spreken af wanneer we thuiskomen" |
+**Tips:**
+- Laat je kind de regels in eigen woorden formuleren
+- Kies consequenties die voldoen aan de vier R's (Respectvol, Redelijk, Gerelateerd, Vooraf benoemd)
+- Hang het contract zichtbaar op
+- Verwijs ernaar als een regel overtreden wordt: "Weet je nog wat we samen hebben afgesproken?"
+- Plan elke drie maanden een moment om het contract samen te herzien
 
 
-## Werkblad 2: Consequentie-kaart
+## Werkblad 3: De machtsstrijd-detector
 
-Vul vooraf in welke consequentie bij welk gedrag hoort. Dit voorkomt dat je in het moment iets roept waar je spijt van krijgt. Bespreek de kaart met je partner zodat jullie op een lijn zitten.
+Dit weeklogboek helpt je om patronen te ontdekken in de machtsstrijd die je met je kind hebt. Door elke dag kort te noteren wat er gebeurde, ga je zien welke situaties steeds terugkomen, welke triggers er zijn en wat je kunt veranderen.
 
-**Invultabel:**
+**Instructie:** Vul elke avond kort in. Het kost maximaal twee minuten per dag.
 
-| Gedrag | Eerste keer | Tweede keer | Derde keer |
-|--------|------------|-------------|------------|
-| .............. | .............. | .............. | .............. |
-| .............. | .............. | .............. | .............. |
-| .............. | .............. | .............. | .............. |
-| .............. | .............. | .............. | .............. |
-| .............. | .............. | .............. | .............. |
+**Maandag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
-**Voorbeeld (ingevuld):**
+**Dinsdag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
-| Gedrag | Eerste keer | Tweede keer | Derde keer |
-|--------|------------|-------------|------------|
-| Slaan/schoppen | Apart zetten, 1 min per levensjaar | Activiteit stopt | Naar kamer/naar huis |
-| Scherm niet uit op tijd | Herinnering + 1 min | Scherm uit, rest dag geen scherm | Volgende dag geen scherm |
-| Niet opruimen | Timer van 5 min | Speelgoed in opruimbak (1 dag) | Opruimbak 2 dagen |
-| Schelden | Benoem: "Dat woord niet" | 5 min apart | Verlies privilege |
-| Niet luisteren na 2x vragen | Oogcontact + herhaal 1x | Keuze: nu of consequentie | Consequentie uitvoeren |
+**Woensdag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
-**Richtlijnen voor consequenties:**
+**Donderdag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
-- Logisch: de consequentie heeft verband met het gedrag
-- Mild: net genoeg om het punt te maken
-- Uitvoerbaar: dreig niet met iets dat je niet kunt waarmaken
-- Direct: hoe jonger het kind, hoe sneller de consequentie moet volgen
-- Vooraf bekend: geen verrassingsstraffen
+**Vrijdag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
+**Zaterdag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
-## Werkblad 3: Weekplanner Grenzen
-
-Gebruik deze planner om een week lang bij te houden hoe het gaat met grenzen stellen. Schrijf elke dag kort op wat er gebeurde en hoe je reageerde.
-
-| Dag | Situatie | Mijn reactie | Wat ging goed? | Wat kan beter? |
-|-----|---------|-------------|---------------|----------------|
-| Ma | .............. | .............. | .............. | .............. |
-| Di | .............. | .............. | .............. | .............. |
-| Wo | .............. | .............. | .............. | .............. |
-| Do | .............. | .............. | .............. | .............. |
-| Vr | .............. | .............. | .............. | .............. |
-| Za | .............. | .............. | .............. | .............. |
-| Zo | .............. | .............. | .............. | .............. |
+**Zondag:**
+Was er een machtsstrijd? [ ] Ja [ ] Nee
+Wat was de situatie?
+............................
+Wat was de trigger?
+............................
+Hoe eindigde het?
+............................
+Wat had ik anders kunnen doen?
+............................
 
 **Weekreflectie:**
-
-Welk patroon zie ik deze week?
+Hoeveel machtsstrijd-momenten waren er deze week? .....
+Welke situatie kwam het vaakst terug?
+............................
+Welke trigger herken ik bij mezelf?
+............................
+Wat ga ik volgende week anders proberen?
 ............................
 
-Welk moment ben ik het meest trots op?
+
+## Werkblad 4: Grenzen-rollenspel kaarten
+
+Oefen onderstaande acht situaties. Per kaart schrijf je op: wat je zegt (KWH-formule), welk plan je kiest (A, B of C), en welke consequentie je inzet. Je kunt dit alleen doen of samen met je partner.
+
+**Kaart 1: Het snoepgevecht**
+Je kind (5 jaar) wil een tweede ijsje na het eten. Je hebt al nee gezegd. Het begint te huilen.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 2: De huiswerkweigering**
+Je kind (9 jaar) zegt dat het geen huiswerk heeft, maar jij weet van de leerkracht dat het er wel is.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 3: Het bedtijddrama**
+Je kind (4 jaar) komt voor de vijfde keer naar beneden met een nieuw excuus.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 4: De schermtijdexplosie**
+Je kind (10 jaar) weigert de tablet in te leveren. "Iedereen in mijn klas mag langer!"
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 5: De winkelscene**
+Je kind (3 jaar) gaat op de grond liggen in de supermarkt omdat het een speelgoedauto wil.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 6: De broer/zus ruzie**
+Je twee kinderen (6 en 9 jaar) vechten om wie er voorin de auto mag zitten. Het wordt fysiek.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 7: De brutale mond**
+Je kind (8 jaar) zegt: "Jij bent de stomste vader van de wereld!" na een nee.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Kaart 8: Het feestje**
+Op een kinderfeestje van een vriendje gooit je kind (6 jaar) bewust taart naar een ander kind.
+- Wat zeg je (KWH)? ............................
+- Welk plan (A/B/C)? ............................
+- Welke consequentie? ............................
+
+**Reflectie na de kaarten:**
+Bij welke kaart twijfelde je het meest?
+............................
+Welke techniek heb je het vaakst ingezet?
+............................
+Welke kaart ga je met je partner bespreken?
 ............................
 
-Wat ga ik volgende week anders doen?
+
+## Werkblad 5: De consistentie-tracker
+
+Kies een regel die je de komende twee weken consequent wilt handhaven. Elke dag noteer je kort: heb ik het volgehouden, wat maakte het moeilijk, en wat hielp.
+
+**De regel die ik ga bijhouden:**
 ............................
 
-
-## Werkblad 4: Routinekaarten
-
-Vaste routines zijn het fundament van consistent opvoeden. Vul de twee belangrijkste routines in en hang ze op waar je kind ze kan zien.
-
-**Ochtendroutine:**
-
-| Stap | Activiteit | Tijd |
-|------|-----------|------|
-| 1 | Opstaan | ......... |
-| 2 | Aankleden (kleren liggen klaar) | ......... |
-| 3 | Ontbijten | ......... |
-| 4 | Tanden poetsen | ......... |
-| 5 | Tas pakken + schoenen aan | ......... |
-| 6 | De deur uit | ......... |
-
-**Voorbeeld ochtendroutine (kind 7 jaar):**
-
-| Stap | Activiteit | Tijd |
-|------|-----------|------|
-| 1 | Opstaan | 7:00 |
-| 2 | Aankleden | 7:05 |
-| 3 | Ontbijten | 7:15 |
-| 4 | Tanden poetsen | 7:35 |
-| 5 | Tas + schoenen | 7:40 |
-| 6 | De deur uit | 7:50 |
-
-**Avondroutine:**
-
-| Stap | Activiteit | Tijd |
-|------|-----------|------|
-| 1 | Avondeten | ......... |
-| 2 | Opruimen | ......... |
-| 3 | Rustige activiteit | ......... |
-| 4 | Schermen uit | ......... |
-| 5 | Pyjama + tanden poetsen | ......... |
-| 6 | Voorlezen/praten | ......... |
-| 7 | Licht uit | ......... |
-
-**Voorbeeld avondroutine (kind 7 jaar):**
-
-| Stap | Activiteit | Tijd |
-|------|-----------|------|
-| 1 | Avondeten | 17:30 |
-| 2 | Opruimen (samen) | 18:00 |
-| 3 | Spelen of tekenen | 18:15 |
-| 4 | Schermen uit | 18:45 |
-| 5 | Pyjama + tanden poetsen | 19:00 |
-| 6 | Voorlezen | 19:15 |
-| 7 | Licht uit | 19:30 |
-
-**Tip:** Voor kinderen tot zes jaar werken pictogrammen beter dan tekst. Teken of print plaatjes bij elke stap.
-
-
-## Werkblad 5: Situatie-oefenkaarten
-
-Oefen onderstaande situaties. Schrijf per situatie op wat je zou zeggen en doen. Bespreek ze eventueel met je partner.
-
-### Situatie A: De supermarktscene
-
-Je kind (4 jaar) wil snoep bij de kassa. Je zegt nee. Het begint te gillen en gaat op de grond liggen. Andere klanten kijken.
-
-**Wat zeg je?**
-............................
+**De consequentie als de regel niet wordt nagekomen:**
 ............................
 
-**Wat doe je?**
+| Dag | Volgehouden? | Wat maakte het moeilijk? | Wat hielp? |
+|-----|-------------|------------------------|------------|
+| Dag 1 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 2 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 3 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 4 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 5 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 6 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 7 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 8 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 9 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 10 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 11 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 12 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 13 | [ ] Ja [ ] Nee | .............. | .............. |
+| Dag 14 | [ ] Ja [ ] Nee | .............. | .............. |
+
+**Reflectie na week 1:**
+Hoeveel dagen heb ik volgehouden? ..... / 7
+Wat was het moeilijkste moment?
 ............................
-............................
-
-**Tip:** Hurk neer, fluister. De-escaleer met nabijheid, niet met volume.
-
-### Situatie B: Het bedtijdgevecht
-
-Je kind (6 jaar) komt voor de vierde keer naar beneden. "Ik heb dorst." "Ik moet plassen." "Ik ben bang." Je partner zucht.
-
-**Wat zeg je?**
-............................
-............................
-
-**Wat doe je?**
-............................
-............................
-
-**Tip:** De saaie terugkeer. Hoe minder woorden, hoe beter.
-
-### Situatie C: Broers die vechten
-
-Je twee zoons (5 en 8) vechten om de afstandsbediening. De jongste huilt, de oudste zegt "Hij begon!"
-
-**Wat zeg je?**
-............................
+Wat heb ik geleerd?
 ............................
 
-**Wat doe je?**
+**Reflectie na week 2:**
+Hoeveel dagen heb ik volgehouden? ..... / 7
+Is het makkelijker geworden? [ ] Ja [ ] Nee [ ] Een beetje
+Wat is het effect op mijn kind?
 ............................
-............................
-
-**Tip:** Sportverslaggever. Beschrijf wat je ziet, laat hen de oplossing bedenken.
-
-### Situatie D: Schermtijdexplosie
-
-Je dochter (10 jaar) weigert haar telefoon in te leveren. "IEDEREEN in mijn klas mag langer!" Ze wordt steeds bozer.
-
-**Wat zeg je?**
-............................
-............................
-
-**Wat doe je?**
-............................
-............................
-
-**Tip:** Kapotte grammofoon: "De tijd is om." Geen discussie over wat anderen mogen.
-
-### Situatie E: De publieke uitdaging
-
-Op een verjaardagsfeest slaat je zoon (5 jaar) een ander kind. De andere ouder kijkt je aan. Je voelt je generen.
-
-**Wat zeg je tegen je kind?**
-............................
-............................
-
-**Wat zeg je tegen de andere ouder?**
-............................
-............................
-
-**Tip:** Handel eerst, leg later uit. Neem je kind apart, benoem het gedrag, laat het sorry zeggen als het rustig is.
-
-**Reflectie na de oefenkaarten:**
-
-Bij welke situatie voel je de meeste spanning?
-............................
-
-Welke techniek uit deze cursus wil je daar inzetten?
-............................
+Ga ik door met deze regel? [ ] Ja, het werkt [ ] Ja, maar ik pas de consequentie aan [ ] Nee, ik kies een andere regel
 
 
 ## 7-Dagen Challenge: Grenzen Stellen met Liefde
 
-Een week lang elke dag een kleine oefening. Niet om alles in een keer te veranderen, maar om nieuwe gewoontes op te bouwen. Start op een maandag.
+Een week lang elke dag een kleine oefening specifiek gericht op het verbeteren van jouw grenzen. Niet om alles in een keer te veranderen, maar om nieuwe gewoontes op te bouwen. Start op een maandag.
 
-### Dag 1: Maandag. Focus: Observeren
+### Dag 1: Maandag. De grenzen-thermometer invullen
 
-**Waarom:** Voordat je iets verandert, moet je weten wat er gebeurt.
+**Opdracht:** Vul Werkblad 1 (de grenzen-thermometer) in. Kies de situatie met de hoogste score (de moeilijkste) als je focus voor deze week. Schrijf die situatie hier op:
 
-**Opdracht:** Let vandaag bewust op elk moment dat je een grens stelt (of zou moeten stellen). Schrijf er drie op.
+Mijn focussituatie deze week: ............................
+Mijn score op de thermometer: ..... / 10
 
-1. ............................
-2. ............................
-3. ............................
+### Dag 2: Dinsdag. Observeer je focussituatie
 
-**Voorbeeld:** "Ik merkte dat ik drie keer 'stop daarmee' zei zonder consequentie. De vierde keer gaf ik toe."
+**Opdracht:** Let vandaag specifiek op de situatie die je gisteren koos. Schrijf op wat er gebeurde, hoe je reageerde en wat het effect was.
 
-**Reflectie:** Welk patroon zie ik?
-............................
+Wat gebeurde er? ............................
+Hoe reageerde ik? ............................
+Wat was het effect? ............................
 
-### Dag 2: Dinsdag. Focus: Kalm blijven
+### Dag 3: Woensdag. Schrijf je KWH-script
 
-**Waarom:** Jouw kalmte is je grootste gereedschap. Vandaag oefen je bewust om niet direct te reageren.
+**Opdracht:** Schrijf voor je focussituatie een KWH-script op dat je morgen gaat gebruiken. Plak het op je koelkast of in je telefoon.
 
-**Opdracht:** Elke keer dat je kind iets doet dat je irriteert, pauzeer je drie seconden en haal je adem voor je reageert. Houd bij hoe vaak je dat lukt.
+Benoem: ............................
+Grens: ............................
+Alternatief: ............................
 
-Aantal keer gelukt: .....
+### Dag 4: Donderdag. Gebruik je script
 
-**Voorbeeld:** "Mijn zoon gooide zijn beker om. Normaal zeg ik meteen 'Kijk nou uit!' Nu haalde ik adem en zei: 'Oeps. Pak even een doekje.'"
+**Opdracht:** Vandaag pas je je KWH-script toe als de situatie zich voordoet. Als de situatie niet voorkomt, oefen het dan hardop (ja, echt, hardop) zodat je brein het pad al aanlegt.
 
-**Reflectie:** Wat viel me op?
-............................
+Heb ik het script gebruikt? [ ] Ja, in het echt [ ] Ja, hardop geoefend
+Hoe ging het? ............................
 
-### Dag 3: Woensdag. Focus: Erkennen
+### Dag 5: Vrijdag. De consequentie
 
-**Waarom:** Kinderen die zich gehoord voelen, werken beter mee.
+**Opdracht:** Als je focussituatie vandaag voorkomt, voer je de bijbehorende consequentie uit. Schrijf vooraf op welke consequentie dat is (vier R's).
 
-**Opdracht:** Gebruik vandaag minstens drie keer de formule: "Ik snap dat je [gevoel/wens]. En [grens]."
+Mijn consequentie: ............................
+Voldoet aan de vier R's? [ ] Respectvol [ ] Redelijk [ ] Gerelateerd [ ] Vooraf benoemd
+Heb ik het uitgevoerd? [ ] Ja [ ] Nee
+Hoe voelde dat? ............................
 
-1. ............................
-2. ............................
-3. ............................
+### Dag 6: Zaterdag. De verbinding
 
-**Voorbeeld:** "Ik snap dat je boos bent dat we weggaan. En we gaan nu naar huis."
-
-**Reflectie:** Hoe reageerde mijn kind?
-............................
-
-### Dag 4: Donderdag. Focus: Keuzes bieden
-
-**Waarom:** Keuzevrijheid binnen grenzen vermindert machtsstrijd.
-
-**Opdracht:** Geef vandaag bij elke grens een keuze. "Wil je A of B?"
-
-1. ............................
-2. ............................
-3. ............................
-
-**Voorbeeld:** "Wil je nu in bad of na het voorlezen?" in plaats van "Ga nu in bad."
-
-**Reflectie:** Wat merkte ik?
-............................
-
-### Dag 5: Vrijdag. Focus: Consequent uitvoeren
-
-**Waarom:** Vandaag oefen je om te doen wat je zegt.
-
-**Opdracht:** Kies een regel die je vaak laat glippen. Vandaag voer je de consequentie elke keer uit, zonder uitzondering.
-
-Welke regel? ............................
-
-Hoe vaak heb ik de consequentie uitgevoerd? .....
-
-**Voorbeeld:** "Ik heb gezegd dat het scherm uitgaat na het eten. Vandaag deed ik het echt, ook toen ze begon te huilen. Ik bleef kalm en zei: 'Ik snap dat het balen is. Morgen kun je weer kijken.'"
-
-**Reflectie:** Hoe voelde dat?
-............................
-
-### Dag 6: Zaterdag. Focus: Verbinding
-
-**Waarom:** Grenzen werken alleen als er verbinding is. Vandaag investeer je bewust in jullie relatie.
-
-**Opdracht:** Plan vijftien minuten een-op-een tijd met je kind. Geen scherm, geen agenda, geen opvoeding. Gewoon samen zijn. Laat je kind kiezen wat jullie doen.
+**Opdracht:** Plan vijftien minuten een-op-een tijd met je kind. Geen scherm, geen agenda. Laat je kind kiezen wat jullie doen. Grenzen werken alleen als er verbinding is.
 
 Wat hebben we gedaan? ............................
+Hoe reageerde mijn kind? ............................
 
-**Voorbeeld:** "We hebben samen een lego-vliegtuig gebouwd. Geen telefoon erbij. Hij straalde."
+### Dag 7: Zondag. Herschoor je thermometer
 
-**Reflectie:** Wat merkte ik bij mijn kind?
+**Opdracht:** Vul de grenzen-thermometer opnieuw in voor je focussituatie. Is je score veranderd?
+
+Mijn score aan het begin van de week: ..... / 10
+Mijn score nu: ..... / 10
+
+Wat is het belangrijkste dat ik deze week heb geleerd?
 ............................
 
-### Dag 7: Zondag. Focus: Reflectie & Vooruit
-
-**Waarom:** Terugkijken op wat werkt, geeft je brandstof om door te gaan.
-
-**Opdracht:** Beantwoord deze vragen.
-
-Wat was mijn beste moment deze week?
-............................
-
-Wat was het moeilijkste moment?
-............................
-
-Welke techniek werkt het best bij mijn kind?
-............................
-
-Wat wil ik volgende week volhouden?
-............................
-
-Wat wil ik volgende week anders doen?
+Welke situatie pak ik volgende week aan?
 ............................
 
 ---
 
-# Hoofdstuk 10: Bronnen & Verder Lezen
+# Hoofdstuk 14: Bronnen en Verder Lezen
 
 *Verdieping en ondersteuning*
 
@@ -1503,23 +2009,19 @@ De technieken in deze cursus zijn gebaseerd op decennia aan wetenschappelijk ond
 
 1. **Baumrind, D. (1966).** Effects of authoritative parental control on child behavior. Klassiek onderzoek dat de vier opvoedstijlen definieerde, waaronder de autoritatieve stijl die deze cursus als basis gebruikt.
 
-2. **Siegel, D. & Bryson, T. (2011).** The Whole-Brain Child. Laat zien hoe de hersenontwikkeling van kinderen hun gedrag beinvloedt en hoe ouders hierop kunnen inspelen.
+2. **Nelsen, J. (2006).** Positive Discipline. Praktische uitwerking van grenzen stellen met respect, zonder straf en zonder permissiviteit.
 
-3. **Greene, R. (2014).** The Explosive Child. Grondlegger van het Plan B model voor kinderen die moeite hebben met flexibiliteit en frustratie.
+3. **Patterson, G. (2002).** Coercive Family Process. Fundamenteel onderzoek naar hoe escalatiepatronen in gezinnen ontstaan en doorbroken kunnen worden.
 
-4. **Gottman, J. (1997).** Raising an Emotionally Intelligent Child. Beschrijft de "emotion coaching" methode die de basis vormt voor het erkennen van emoties bij grenzen.
+4. **Baumeister, R. & Tierney, J. (2011).** Willpower: Rediscovering the Greatest Human Strength. Onderzoek naar ego depletion en waarom systemen beter werken dan wilskracht.
 
-5. **Baumeister, R. & Tierney, J. (2011).** Willpower: Rediscovering the Greatest Human Strength. Onderzoek naar ego depletion en waarom systemen beter werken dan wilskracht.
+5. **Duhigg, C. (2012).** The Power of Habit. Verklaart hoe gewoontes werken en hoe je routines kunt opbouwen via de "cue, routine, reward" cyclus.
 
-6. **Duhigg, C. (2012).** The Power of Habit. Verklaart hoe gewoontes werken en hoe je routines kunt opbouwen via de "cue, routine, reward" cyclus.
+6. **Gollwitzer, P. (1999).** Implementation Intentions. Het oorspronkelijke onderzoek naar als-dan plannen en waarom ze twee tot drie keer effectiever zijn dan gewone voornemens.
 
-7. **Patterson, G. (2002).** Coercive Family Process. Fundamenteel onderzoek naar hoe escalatiepatronen in gezinnen ontstaan en doorbroken kunnen worden.
+7. **Fonagy, P. (2001).** Attachment Theory and Psychoanalysis. De link tussen reflectief functioneren en grenzen stellen met verbinding.
 
-8. **Gollwitzer, P. (1999).** Implementation Intentions. Het oorspronkelijke onderzoek naar als-dan plannen en waarom ze twee tot drie keer effectiever zijn dan gewone voornemens.
-
-9. **Lamb, M. (2010).** The Role of the Father in Child Development. Uitgebreid overzicht van onderzoek naar de unieke bijdrage van vaders aan de ontwikkeling van kinderen.
-
-10. **Nelsen, J. (2006).** Positive Discipline. Praktische uitwerking van grenzen stellen met respect, zonder straf en zonder permissiviteit.
+8. **Omer, H. (2004).** Non-Violent Resistance: A New Approach to Violent and Self-Destructive Children. De basis van verbindend gezag: krachtig grenzen stellen zonder machtsstrijd.
 
 ## Aanbevolen boeken (Nederlands)
 
@@ -1547,6 +2049,12 @@ Download de app via de App Store of Google Play Store en zoek op 'De Vader Coach
 
 Op de website van De Vader Coach vind je aanvullende bronnen en blogartikelen over bewust vaderschap. Ga naar **devadercoach.nl** voor meer informatie.
 
+### Verwante cursussen
+
+- **Zelfregulatie als Vader**: verdieping in het tweelagenbrein, neuroplasticiteit en het zenuwstelsel
+- **Aanwezig Vaderschap**: alles over hechting en co-regulatie
+- **Reflectief Vaderschap**: intergenerationele patronen herkennen en doorbreken
+
 ## Tot slot
 
 Grenzen stellen met liefde is geen techniek die je een keer leert en dan beheerst. Het is een dagelijkse oefening, een keuze die je steeds opnieuw maakt. Er zullen dagen zijn dat het niet lukt, dat je schreeuwt terwijl je kalm wilde blijven, dat je toegeeft terwijl je standvastig wilde zijn. Dat is normaal. Dat maakt je geen slechte vader. Dat maakt je een mens.
@@ -1563,4 +2071,4 @@ KWH: Kijk wat het resultaat is. Wees trots op elke stap.
 
 *Alle rechten voorbehouden.*
 
-*© De Vader Coach, devadercoach.nl*
+*De Vader Coach, devadercoach.nl*

@@ -8,6 +8,7 @@ export interface Guide {
   title: string;
   description: string;
   keywords: string[];
+  datePublished: string;
   relatedCourses: string[];
   relatedPosts: string[];
   faq: GuideFAQ[];
@@ -17,6 +18,7 @@ export interface Guide {
 export const GUIDES: Guide[] = [
   {
     slug: 'driftbuien-kind',
+    datePublished: '2025-12-15',
     title: 'Driftbuien bij Kinderen: De Complete Gids voor Vaders',
     description:
       'Alles wat je als vader moet weten over driftbuien bij peuters en kleuters. Hoe je kalm blijft, wat er in het kinderbrein gebeurt, en wat echt werkt.',
@@ -92,6 +94,7 @@ Pas als het kind weer tot rust is gekomen kun je kort bespreken wat er gebeurde.
   },
   {
     slug: 'kind-luistert-niet',
+    datePublished: '2025-12-15',
     title: 'Kind Luistert Niet? Dit Kun Je Als Vader Doen',
     description:
       'Waarom je kind niet luistert als je het voor de vierde keer zegt. Praktische tips en wetenschappelijk onderbouwde strategieën voor vaders.',
@@ -166,6 +169,7 @@ Er is een alternatief voor het luider-harder-strenger patroon. Het begint niet b
   },
   {
     slug: 'grenzen-stellen-kind',
+    datePublished: '2025-12-15',
     title: 'Grenzen Stellen bij Kinderen: Zo Doe Je Dat als Vader',
     description:
       'Hoe stel je grenzen bij kinderen zonder te schreeuwen? Praktische gids voor vaders over grenzen stellen met liefde, consequenties en structuur.',
@@ -233,6 +237,7 @@ Soms stel je een grens en escaleert het. Je kind huilt. Jij voelt je rot. Dat mo
   },
   {
     slug: 'positief-opvoeden',
+    datePublished: '2025-12-15',
     title: 'Positief Opvoeden als Vader: Wetenschappelijk Onderbouwd',
     description:
       'Wat is positief opvoeden en hoe pas je het toe als vader? Praktische tips gebaseerd op Gottman, Bowlby en modern opvoedonderzoek.',
@@ -303,6 +308,7 @@ Kinderen met betrokken vaders scoren beter op emotionele regulatie, hebben meer 
   },
   {
     slug: 'omgaan-met-pubers',
+    datePublished: '2025-12-15',
     title: 'Omgaan met Pubers: Gids voor Vaders',
     description:
       'Hoe ga je als vader om met je puber? Praktische tips over communicatie, grenzen en de vader-tiener relatie. Gebaseerd op hersenonderzoek.',
@@ -384,6 +390,7 @@ Maar betrokkenheid ziet er anders uit dan toen ze klein waren:
   },
   {
     slug: 'vader-worden',
+    datePublished: '2025-12-15',
     title: 'Vader Worden: Alles Over Je Nieuwe Rol',
     description:
       'Net vader geworden of bijna? Alles wat je moet weten over de eerste weken, de band opbouwen met je baby, en je rol als vader vinden.',
@@ -455,6 +462,7 @@ De band komt. De onzekerheid wordt minder. De slaap komt terug. En op een dag ki
   },
   {
     slug: 'slaapproblemen-kind',
+    datePublished: '2025-12-15',
     title: 'Kind Wil Niet Slapen: Praktische Gids voor Vaders',
     description:
       'Praktische gids over slaapproblemen bij kinderen: bedtijdstrijd, nachtelijk wakker worden, slaapangst. Vanuit het perspectief van de vader. Met concrete tips die vanavond al werken.',
@@ -547,6 +555,7 @@ Slaapproblemen bij kinderen zijn vermoeiend. Voor je kind en voor jou. Maar ze z
   },
   {
     slug: 'schermtijd-kinderen',
+    datePublished: '2025-12-15',
     title: 'Schermtijd bij Kinderen: Gids voor Vaders over Grenzen aan Beeldschermen',
     description:
       'Hoe ga je als vader om met schermtijd? Praktische gids over beeldschermen, gaming en telefoongebruik bij kinderen en tieners. Met heldere regels per leeftijd.',
@@ -650,6 +659,7 @@ Dat leer je niet door te verbieden. Dat leer je door voor te leven, samen afspra
   },
   {
     slug: 'zelfvertrouwen-kind',
+    datePublished: '2025-12-15',
     title: 'Zelfvertrouwen bij Kinderen: Zo Help Je als Vader',
     description:
       'Hoe bouw je als vader het zelfvertrouwen van je kind op? De unieke rol van vaders, het verschil tussen prijzen en aanmoedigen, en dagelijkse acties die echt werken.',
@@ -760,6 +770,7 @@ Zelfvertrouwen is geen eigenschap die je kind wel of niet heeft. Het is iets dat
   },
   {
     slug: 'co-ouderschap-tips',
+    datePublished: '2025-12-15',
     title: 'Co-ouderschap na Scheiding: Gids voor Vaders',
     description:
       'Hoe bouw je als vader een goed co-ouderschap op na een scheiding? Praktische tips over communicatie met je ex, consistentie tussen twee huizen, en je kinderen beschermen tegen conflict.',
@@ -866,6 +877,7 @@ Maar er zullen ook momenten zijn waarop je ziet dat je kinderen oké zijn. Dat z
   },
   {
     slug: 'kalm-blijven-als-vader',
+    datePublished: '2025-12-15',
     title: 'Kalm Blijven als Vader: Wat Te Doen als je Kind je Triggert',
     description:
       'Waarom je als vader soms je geduld verliest en wat je eraan kunt doen. De wetenschap achter boosheid, praktische technieken om kalm te blijven, en wat je doet als het toch misgaat.',
@@ -987,6 +999,7 @@ En weet dit: het feit dat je dit leest, het feit dat je wilt veranderen - dat ma
   },
   {
     slug: 'adhd-kind-opvoeden',
+    datePublished: '2025-12-15',
     title: 'ADHD bij Kinderen: Opvoedtips voor Vaders',
     description:
       'Alles wat je als vader moet weten over het opvoeden van een kind met ADHD. Wat ADHD werkelijk is, hoe je je opvoedstijl aanpast, en waarom jij als vader een unieke rol speelt.',

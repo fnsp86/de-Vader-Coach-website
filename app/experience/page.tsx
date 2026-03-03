@@ -26,24 +26,25 @@ const SKILL_ICONS: Record<string, React.ComponentType<{ className?: string; styl
 };
 
 export default function ExperiencePage() {
-  const [hasToken, setHasToken] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const [showDashboard, setShowDashboard] = useState(false);
   const isLocal = typeof window !== 'undefined' && window.location.hostname === 'localhost';
 
   const activateTestAccess = useCallback(() => {
     localStorage.setItem(TOKEN_KEY, 'test-access');
-    setHasToken(true);
+    setShowDashboard(true);
   }, []);
 
   useEffect(() => {
-    setHasToken(hasAccess());
-    setLoaded(true);
-  }, []);
+    // Only show dashboard on localhost with valid token
+    if (isLocal && hasAccess()) {
+      setShowDashboard(true);
+    }
+  }, [isLocal]);
 
-  if (!loaded) return null;
+  // Dashboard for localhost testing (client-side only)
+  if (showDashboard) return <ExperienceDashboard />;
 
-  // Localhost: volledige toegang voor testen
-  if (isLocal && hasToken) return <ExperienceDashboard />;
+  // Sales page always renders server-side (Google can crawl this)
   return <ExperienceSalesPage isLocal={isLocal} onActivateTest={activateTestAccess} />;
 }
 

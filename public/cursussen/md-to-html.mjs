@@ -60,9 +60,23 @@ processed = processed.replace(
   }
 );
 
+// Convert code blocks with +---+ borders to styled-box divs
+processed = processed.replace(
+  /```\n(\+[-]+\+\n([\s\S]*?)\+[-]+\+)\n```/g,
+  (_, _full, bodyContent) => {
+    const lines = bodyContent.split('\n')
+      .map(l => l.replace(/^\|\s?/, '').replace(/\s*\|$/, ''))
+      .filter(l => l.trim().length > 0 && !/^\+[-]+\+$/.test(l.trim()));
+    const title = lines[0]?.trim() || '';
+    const bodyLines = lines.slice(1);
+    const bodyHtml = bodyLines.map(l => l.trim()).join('<br>');
+    return `<div class="styled-box" data-title="${title}">\n<div class="styled-box-title">${title}</div>\n<div class="styled-box-body">\n${bodyHtml}\n</div>\n</div>`;
+  }
+);
+
 // Convert other code blocks (like email templates) to pre blocks
 processed = processed.replace(
-  /```\n((?!╔|┌)[\s\S]*?)```/g,
+  /```\n((?!╔|┌|\+[-])[\s\S]*?)```/g,
   (_, content) => `<pre><code>${content.trim()}</code></pre>`
 );
 

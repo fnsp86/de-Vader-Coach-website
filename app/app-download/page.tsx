@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'De App',
+  title: 'De Vadercoach App - Dagelijkse Opvoedoefeningen voor Vaders',
   description: 'De Vadercoach app: dagelijkse oefeningen, trainingen over 8 vaardigheden en een community van vaders.',
   openGraph: {
     title: 'De Vadercoach App - Opvoedtools voor Vaders',
