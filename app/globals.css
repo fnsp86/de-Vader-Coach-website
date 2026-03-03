@@ -17,13 +17,13 @@
   --color-vc-text3: #7B8498;
 
   /* Light mode surfaces */
-  --color-vc-bg-light: #FAF8F5;
-  --color-vc-surface-light: #FFFEFA;
-  --color-vc-surface2-light: #F3F0EB;
-  --color-vc-border-light: #DDD8CF;
-  --color-vc-text-light: #1A1612;
-  --color-vc-text2-light: #5C5347;
-  --color-vc-text3-light: #7D7568;
+  --color-vc-bg-light: #F8F8FB;
+  --color-vc-surface-light: #FFFFFF;
+  --color-vc-surface2-light: #F0F1F5;
+  --color-vc-border-light: #D8DAE2;
+  --color-vc-text-light: #151820;
+  --color-vc-text2-light: #505668;
+  --color-vc-text3-light: #737A90;
 
   /* Accents */
   --color-vc-blue: #667eea;
@@ -87,8 +87,8 @@ html {
 }
 
 .light ::selection {
-  background-color: oklch(from #E88D00 l c h / 0.2);
-  color: #1A1612;
+  background-color: oklch(from #F59E0B l c h / 0.2);
+  color: #151820;
 }
 
 /* Prevent horizontal overflow on mobile */

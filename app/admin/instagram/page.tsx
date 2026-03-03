@@ -6,6 +6,7 @@ import { POSTS_LIST, getBlogPost } from '@/lib/blog-posts';
 import { getAllCourses, SKILL_COLORS } from '@/lib/courses';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
 import { SOCIAL_CONTENT, type SocialContent } from '@/lib/instagram-content';
+import { REEL_LIBRARY, type ReelSequence } from '@/lib/instagram-reel-content';
 
 // Always use production URL for Instagram image URLs (Instagram can't reach localhost)
 const IG_IMAGE_BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
@@ -89,7 +90,7 @@ export default function InstagramPage() {
 
   // Reel state
   const [postMode, setPostMode] = useState<'feed' | 'reel'>('feed');
-  const [reelTab, setReelTab] = useState<'upload' | 'generate'>('generate');
+  const [reelTab, setReelTab] = useState<'library' | 'upload' | 'generate'>('library');
   const [reelVideoBlob, setReelVideoBlob] = useState<Blob | null>(null);
   const [reelVideoUrl, setReelVideoUrl] = useState<string | null>(null); // serve URL from backend
   const [reelVideoPreview, setReelVideoPreview] = useState<string | null>(null); // local object URL
@@ -496,6 +497,16 @@ export default function InstagramPage() {
     setAudioFileName(file.name);
   }
 
+  // Select a curated reel from the library
+  function selectReelFromLibrary(reel: ReelSequence) {
+    setSlides(reel.slides);
+    setActiveSlide(0);
+    setCaption(reel.caption);
+    setSelectedTitle(reel.title);
+    setReelTab('generate');
+    resetStatus();
+  }
+
   return (
     <div>
       <div className="flex items-center justify-between mb-4 sm:mb-6">
@@ -576,6 +587,17 @@ export default function InstagramPage() {
         {postMode === 'reel' && (
           <div className="flex items-center gap-2">
             <button
+              onClick={() => setReelTab('library')}
+              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors"
+              style={{
+                backgroundColor: reelTab === 'library' ? '#F59E0B15' : 'var(--bg)',
+                color: reelTab === 'library' ? '#F59E0B' : 'var(--text3)',
+              }}
+            >
+              <Library className="h-3.5 w-3.5" />
+              Bieb ({REEL_LIBRARY.length})
+            </button>
+            <button
               onClick={() => setReelTab('generate')}
               className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors"
               style={{
@@ -584,7 +606,7 @@ export default function InstagramPage() {
               }}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              Genereer slideshow
+              Random
             </button>
             <button
               onClick={() => setReelTab('upload')}
@@ -737,7 +759,52 @@ export default function InstagramPage() {
           {/* ─── Reel Editor ─── */}
           {postMode === 'reel' && (
             <>
-              {reelTab === 'upload' ? (
+              {/* Reel library */}
+              {reelTab === 'library' && (
+                <div
+                  className="rounded-2xl border overflow-hidden"
+                  style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                >
+                  <div className="px-4 py-3 border-b" style={{ borderColor: 'var(--border)' }}>
+                    <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>
+                      Reel Bibliotheek ({REEL_LIBRARY.length} reels)
+                    </span>
+                    <p className="text-[11px] mt-0.5" style={{ color: 'var(--text3)' }}>
+                      Klik om slides en caption te laden, pas aan en genereer
+                    </p>
+                  </div>
+                  <div className="max-h-[500px] overflow-y-auto p-2 space-y-1">
+                    {REEL_LIBRARY.map((reel) => (
+                      <button
+                        key={reel.id}
+                        onClick={() => selectReelFromLibrary(reel)}
+                        className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-left transition-colors hover:bg-amber-500/5"
+                        style={{
+                          backgroundColor: selectedTitle === reel.title ? '#F59E0B10' : 'transparent',
+                          borderLeft: selectedTitle === reel.title ? '3px solid #F59E0B' : '3px solid transparent',
+                        }}
+                      >
+                        <span
+                          className="text-[10px] font-bold px-2 py-0.5 rounded shrink-0"
+                          style={{ backgroundColor: (SKILL_COLORS[reel.skill] ?? '#F59E0B') + '15', color: SKILL_COLORS[reel.skill] ?? '#F59E0B' }}
+                        >
+                          {reel.skill}
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <span className="text-sm font-medium block truncate" style={{ color: selectedTitle === reel.title ? 'var(--text)' : 'var(--text2)' }}>
+                            {reel.title}
+                          </span>
+                          <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
+                            {reel.slides.length} slides · {reel.category}
+                          </span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {reelTab === 'upload' && (
                 /* Upload video tab */
                 <div
                   className="rounded-2xl border p-4 sm:p-6"
@@ -795,7 +862,9 @@ export default function InstagramPage() {
                     </label>
                   )}
                 </div>
-              ) : (
+              )}
+
+              {(reelTab === 'generate' || reelTab === 'library') && (
                 /* Generate slideshow tab */
                 <>
                   {/* Slide editor (reuse existing) - show when slides have content */}
@@ -846,13 +915,25 @@ export default function InstagramPage() {
                           <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>
                             Reel preview ({slides.length} slides)
                           </span>
-                          <button
-                            onClick={() => handleRandom(slides.length)}
-                            className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10 ml-auto shrink-0"
-                            style={{ color: '#F59E0B' }}
-                          >
-                            <Shuffle className="h-3 w-3" /> Shuffle
-                          </button>
+                          <div className="flex items-center gap-1 ml-auto">
+                            {[3, 5, 8].map((n) => (
+                              <button
+                                key={n}
+                                onClick={() => handleRandom(n)}
+                                className="text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10"
+                                style={{ color: slides.length === n ? '#F59E0B' : 'var(--text3)' }}
+                              >
+                                {n}
+                              </button>
+                            ))}
+                            <button
+                              onClick={() => handleRandom(slides.length)}
+                              className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors hover:bg-amber-500/10"
+                              style={{ color: '#F59E0B' }}
+                            >
+                              <Shuffle className="h-3 w-3" />
+                            </button>
+                          </div>
                         </div>
                         <div className="p-4">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -971,7 +1052,7 @@ export default function InstagramPage() {
               )}
 
               {/* Caption editor for Reel */}
-              {(reelVideoUrl || (reelTab === 'generate' && slides[0]?.text)) && (
+              {(reelVideoUrl || ((reelTab === 'generate' || reelTab === 'library') && slides[0]?.text)) && (
                 <>
                   <div
                     className="rounded-2xl border p-4"
