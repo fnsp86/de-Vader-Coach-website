@@ -77,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="nl" className={inter.variable} suppressHydrationWarning>
       <head>
+        <meta name="color-scheme" content="light" />
         <script
           dangerouslySetInnerHTML={{
             __html: `try{if(localStorage.getItem('vc-theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}`,
