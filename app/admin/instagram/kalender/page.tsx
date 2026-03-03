@@ -93,13 +93,23 @@ export default function KalenderPage() {
 
   async function deletePost(id: string) {
     if (!confirm('Weet je zeker dat je deze post wilt verwijderen?')) return;
-    await fetch('/api/instagram/schedule', {
-      method: 'DELETE',
-      headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
-      body: JSON.stringify({ id }),
-    });
-    setPosts((prev) => prev.filter((p) => p.id !== id));
+    try {
+      const res = await fetch('/api/instagram/schedule', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
+        body: JSON.stringify({ id }),
+      });
+      const data = await res.json();
+      if (!data.success) {
+        alert('Kon post niet verwijderen');
+        return;
+      }
+    } catch {
+      alert('Kon post niet verwijderen');
+      return;
+    }
     if (selectedPost?.id === id) setSelectedPost(null);
+    await fetchPosts();
   }
 
   function prevMonth() {
