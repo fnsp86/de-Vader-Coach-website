@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAdminAuth, unauthorizedResponse } from '@/lib/admin-auth';
 
 export async function GET(request: NextRequest) {
-  if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
+  const cronSecret = process.env.CRON_SECRET;
+  const authHeader = request.headers.get('authorization');
+  if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
 
   const pageId = process.env.FACEBOOK_PAGE_ID;
   const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
