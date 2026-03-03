@@ -55,10 +55,12 @@ export async function GET(request: NextRequest) {
               postId = await publishSingle(accountId, accessToken, cachedUrls[0], post.caption);
             }
 
-            // Instagram Story (optional)
+            // Instagram Story (optional, 9:16 format)
             if (post.postAsStory) {
               try {
-                await publishStory(accountId, accessToken, cachedUrls[0]);
+                const storyUrl = post.imageUrls[0] + (post.imageUrls[0].includes('?') ? '&' : '?') + 'format=story';
+                const storyImage = await cacheImageForInstagram(storyUrl);
+                await publishStory(accountId, accessToken, storyImage.url);
               } catch {
                 // Story failure should not fail the whole post
               }
@@ -68,8 +70,8 @@ export async function GET(request: NextRequest) {
             if (post.postToFacebook) {
               try {
                 await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
-              } catch {
-                // Facebook failure should not fail the whole post
+              } catch (fbErr) {
+                console.error('[cron] Facebook cross-post failed:', fbErr instanceof Error ? fbErr.message : String(fbErr));
               }
             }
 

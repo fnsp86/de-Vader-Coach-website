@@ -128,6 +128,7 @@ export async function GET(request: NextRequest) {
     const subtitle = searchParams.get('subtitle') ?? '';
     const number = searchParams.get('number') ?? '';
     const items = searchParams.get('items') ?? '';
+    const format = searchParams.get('format') ?? 'feed'; // 'feed' (1080x1080) or 'story' (1080x1920)
 
     const [interBold, interMedium] = await Promise.all([
       fetch(FONT_BOLD_URL).then((r) => r.arrayBuffer()),
@@ -158,6 +159,10 @@ export async function GET(request: NextRequest) {
       content = <QuoteTemplate text={text} color={color} skill={skill} />;
     }
 
+    const isStory = format === 'story';
+    const imgWidth = 1080;
+    const imgHeight = isStory ? 1920 : 1080;
+
     return new ImageResponse(
       (
         <div
@@ -166,16 +171,22 @@ export async function GET(request: NextRequest) {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
             backgroundColor: '#111318',
             fontFamily: 'Inter',
           }}
         >
-          {content}
+          {isStory ? (
+            <div style={{ width: 1080, height: 1080, display: 'flex', flexDirection: 'column' }}>
+              {content}
+            </div>
+          ) : content}
         </div>
       ),
       {
-        width: 1080,
-        height: 1080,
+        width: imgWidth,
+        height: imgHeight,
         fonts: [
           { name: 'Inter', data: interBold, weight: 700 as const },
           { name: 'Inter', data: interMedium, weight: 500 as const },
