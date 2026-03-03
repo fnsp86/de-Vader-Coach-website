@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAdminPassword } from '@/components/AdminAuth';
 import { POSTS_LIST, getBlogPost } from '@/lib/blog-posts';
 import { getAllCourses, SKILL_COLORS } from '@/lib/courses';
@@ -79,6 +79,33 @@ export default function InstagramPage() {
   const [postToFacebook, setPostToFacebook] = useState(false);
   const [postAsStory, setPostAsStory] = useState(false);
   const [libFilter, setLibFilter] = useState<string>('all');
+  const [autoStatus, setAutoStatus] = useState<{ enabled: boolean; lastPostAt: string | null; nextPostAt: string | null; postedCount: number } | null>(null);
+  const [autoToggling, setAutoToggling] = useState(false);
+
+  useEffect(() => {
+    if (!password) return;
+    fetch('/api/instagram/auto-publish', { headers: { 'x-admin-password': password } })
+      .then((r) => r.json())
+      .then(setAutoStatus)
+      .catch(() => {});
+  }, [password]);
+
+  async function toggleAutoPublish() {
+    if (!autoStatus) return;
+    setAutoToggling(true);
+    try {
+      const res = await fetch('/api/instagram/auto-publish', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json', 'x-admin-password': password },
+        body: JSON.stringify({ enabled: !autoStatus.enabled }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setAutoStatus((prev) => prev ? { ...prev, enabled: data.enabled } : prev);
+      }
+    } catch {}
+    setAutoToggling(false);
+  }
 
   const courses = getAllCourses();
   const current = slides[activeSlide] ?? slides[0];
@@ -359,6 +386,42 @@ export default function InstagramPage() {
           Vrij
         </button>
       </div>
+
+      {/* Auto-publish status */}
+      {autoStatus && (
+        <div
+          className="rounded-2xl border p-3 sm:p-4 mb-4 sm:mb-6 flex items-center justify-between"
+          style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+        >
+          <div className="flex items-center gap-3">
+            <Sparkles className="h-4 w-4 shrink-0" style={{ color: autoStatus.enabled ? '#34D399' : 'var(--text3)' }} />
+            <div>
+              <span className="text-xs sm:text-sm font-bold" style={{ color: 'var(--text)' }}>
+                Auto-posting (elke 3 dagen)
+              </span>
+              <p className="text-[11px]" style={{ color: 'var(--text3)' }}>
+                {autoStatus.enabled
+                  ? autoStatus.nextPostAt
+                    ? `Volgende post: ${new Date(autoStatus.nextPostAt).toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`
+                    : 'Actief - wordt gepost bij volgende cron run'
+                  : 'Gepauzeerd'}
+                {autoStatus.postedCount > 0 && ` · ${autoStatus.postedCount} items gepost`}
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={toggleAutoPublish}
+            disabled={autoToggling}
+            className="text-xs font-bold px-4 py-2 rounded-xl transition-colors"
+            style={{
+              backgroundColor: autoStatus.enabled ? '#EF444420' : '#34D39920',
+              color: autoStatus.enabled ? '#EF4444' : '#34D399',
+            }}
+          >
+            {autoToggling ? '...' : autoStatus.enabled ? 'Pauzeren' : 'Hervatten'}
+          </button>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
         {/* Left: Content browser — on mobile shows below editor via order */}

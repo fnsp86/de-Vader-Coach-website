@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getDuePosts, updatePostStatus } from '@/lib/instagram-schedule';
 import { processDripQueue } from '@/lib/automation';
 import { processMonthlyNewsletter } from '@/lib/monthly-newsletter';
+import { executeAutoPublish } from '@/lib/instagram-auto-publish';
 import { getInstagramToken, refreshInstagramToken } from '@/lib/instagram-token';
 import { cacheImageForInstagram, type CachedImage } from '@/lib/instagram-image-cache';
 
@@ -108,6 +109,14 @@ export async function GET(request: NextRequest) {
     results.monthly = monthly;
   } catch (e) {
     results.monthly = { error: e instanceof Error ? e.message : String(e) };
+  }
+
+  // ── 4. Automatisch Instagram posten (elke 3 dagen) ──
+  try {
+    const auto = await executeAutoPublish();
+    results.autoPublish = auto;
+  } catch (e) {
+    results.autoPublish = { error: e instanceof Error ? e.message : String(e) };
   }
 
   return NextResponse.json({ ok: true, results });

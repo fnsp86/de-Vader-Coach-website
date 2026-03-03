@@ -23,7 +23,7 @@ const GENERAL_HASHTAGS = [
   '#devadercoach',
 ];
 
-function getHashtags(category: string): string {
+export function getHashtags(category: string): string {
   const specific = HASHTAG_SETS[category] ?? [];
   // Instagram best practice: max 5 hashtags
   const picked = [...specific.slice(0, 3), ...GENERAL_HASHTAGS.slice(0, 2)];
