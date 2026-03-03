@@ -41,20 +41,8 @@
   --radius-badge: 8px;
 }
 
-/* Dark mode by default */
+/* Light mode by default */
 :root {
-  color-scheme: dark;
-  --bg: var(--color-vc-bg);
-  --surface: var(--color-vc-surface);
-  --surface2: var(--color-vc-surface2);
-  --border: var(--color-vc-border);
-  --text: var(--color-vc-text);
-  --text2: var(--color-vc-text2);
-  --text3: var(--color-vc-text3);
-  --amber-text: #F59E0B;
-}
-
-.light {
   color-scheme: light;
   --bg: var(--color-vc-bg-light);
   --surface: var(--color-vc-surface-light);
@@ -64,6 +52,18 @@
   --text2: var(--color-vc-text2-light);
   --text3: var(--color-vc-text3-light);
   --amber-text: #E88D00;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: var(--color-vc-bg);
+  --surface: var(--color-vc-surface);
+  --surface2: var(--color-vc-surface2);
+  --border: var(--color-vc-border);
+  --text: var(--color-vc-text);
+  --text2: var(--color-vc-text2);
+  --text3: var(--color-vc-text3);
+  --amber-text: #F59E0B;
 }
 
 body {
@@ -82,13 +82,13 @@ html {
 
 /* Selection */
 ::selection {
-  background-color: oklch(from #F59E0B l c h / 0.3);
-  color: white;
-}
-
-.light ::selection {
   background-color: oklch(from #F59E0B l c h / 0.2);
   color: #151820;
+}
+
+.dark ::selection {
+  background-color: oklch(from #F59E0B l c h / 0.3);
+  color: white;
 }
 
 /* Prevent horizontal overflow on mobile */
