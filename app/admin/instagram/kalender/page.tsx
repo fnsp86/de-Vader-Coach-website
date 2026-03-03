@@ -81,7 +81,14 @@ export default function KalenderPage() {
       if (data.error) {
         alert(`Fout: ${data.error}`);
       } else {
-        alert('Gepost!');
+        const warnings: string[] = [];
+        if (data.facebookError) warnings.push(`Facebook: ${data.facebookError}`);
+        if (data.storyError) warnings.push(`Story: ${data.storyError}`);
+        if (warnings.length) {
+          alert(`Gepost op Instagram!\n\nMaar met problemen:\n${warnings.join('\n')}`);
+        } else {
+          alert('Gepost!');
+        }
       }
       await fetchPosts();
       setSelectedPost(null);

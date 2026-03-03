@@ -74,27 +74,30 @@ export async function PATCH(request: NextRequest) {
     }
 
     // Instagram Story (optional, 9:16 format)
+    let storyError: string | undefined;
     if (post.postAsStory) {
       try {
         const storyUrl = post.imageUrls[0] + (post.imageUrls[0].includes('?') ? '&' : '?') + 'format=story';
         const storyImage = await cacheImageForInstagram(storyUrl);
         await publishStory(accountId, accessToken, storyImage.url);
-      } catch {
-        // Story failure should not fail the whole post
+      } catch (storyErr) {
+        storyError = storyErr instanceof Error ? storyErr.message : String(storyErr);
       }
     }
 
     // Facebook cross-post (optional)
+    let facebookError: string | undefined;
     if (post.postToFacebook) {
       try {
         await crossPostToFacebook(cachedImages.map((c) => c.buffer), post.caption);
       } catch (fbErr) {
-        console.error('[schedule] Facebook cross-post failed:', fbErr instanceof Error ? fbErr.message : String(fbErr));
+        facebookError = fbErr instanceof Error ? fbErr.message : String(fbErr);
+        console.error('[schedule] Facebook cross-post failed:', facebookError);
       }
     }
 
     await updatePostStatus(id, 'posted', { postId });
-    return NextResponse.json({ success: true, postId });
+    return NextResponse.json({ success: true, postId, facebookError, storyError });
   } catch (e) {
     const errorMsg = e instanceof Error ? e.message : String(e);
     await updatePostStatus(id, 'failed', { error: errorMsg });
