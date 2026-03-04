@@ -194,6 +194,47 @@ export default function FaqPage() {
               Neem contact op
             </Link>
           </div>
+
+          {/* Cross-links */}
+          <div className="mt-12 border-t pt-10" style={{ borderColor: 'var(--border)' }}>
+            <h2 className="text-lg font-extrabold mb-4" style={{ color: 'var(--text)' }}>
+              Direct aan de slag
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link
+                href="/cursussen"
+                className="group rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+              >
+                <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Opvoedcursussen</h3>
+                <p className="text-xs" style={{ color: 'var(--text3)' }}>Verdiepende PDF-werkboeken voor vaders</p>
+              </Link>
+              <Link
+                href="/experience"
+                className="group rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+              >
+                <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>De Vader Experience</h3>
+                <p className="text-xs" style={{ color: 'var(--text3)' }}>22-daagse reis door 8 vaardigheden</p>
+              </Link>
+              <Link
+                href="/blog"
+                className="group rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+              >
+                <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Vaderschapsblog</h3>
+                <p className="text-xs" style={{ color: 'var(--text3)' }}>Gratis artikelen en opvoedtips</p>
+              </Link>
+              <Link
+                href="/gids"
+                className="group rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+              >
+                <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Gratis opvoedgidsen</h3>
+                <p className="text-xs" style={{ color: 'var(--text3)' }}>Uitgebreide handleidingen per onderwerp</p>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

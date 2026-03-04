@@ -9,7 +9,7 @@ import PageviewTracker from '@/components/PageviewTracker';
 import ExitIntent from '@/components/ExitIntent';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
-const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-2GRZT78WC3';
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
 
 const inter = Inter({

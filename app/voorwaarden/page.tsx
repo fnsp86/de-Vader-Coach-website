@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Algemene Voorwaarden',
   description: 'Algemene voorwaarden van De Vadercoach. Toepasselijkheid, betalingen, herroeping, aansprakelijkheid en meer.',
+  alternates: {
+    canonical: 'https://devadercoach.nl/voorwaarden',
+  },
 };
 
 export default function VoorwaardenPage() {

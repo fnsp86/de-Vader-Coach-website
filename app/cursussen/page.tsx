@@ -186,6 +186,30 @@ export default function CursussenPage() {
         </Link>
       </div>
 
+      {/* Experience & Blog links */}
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <Link
+          href="/experience"
+          className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+          style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+        >
+          <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>De Vader Experience</h3>
+          <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+            22-daagse reis door alle 8 opvoedvaardigheden met dagelijkse oefeningen
+          </p>
+        </Link>
+        <Link
+          href="/blog"
+          className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+          style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+        >
+          <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Vaderschapsblog</h3>
+          <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+            Gratis artikelen en opvoedtips over vaderschap
+          </p>
+        </Link>
+      </div>
+
       {/* FAQ */}
       <div className="mt-12">
         <h2 className="text-xl sm:text-2xl font-extrabold mb-6" style={{ color: 'var(--text)' }}>

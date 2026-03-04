@@ -75,6 +75,45 @@ export default async function BlogPage() {
       </div>
 
       <BlogContent posts={posts} />
+
+      {/* Cross-links */}
+      <div className="mt-16 border-t pt-12" style={{ borderColor: 'var(--border)' }}>
+        <h2 className="text-xl font-extrabold mb-6" style={{ color: 'var(--text)' }}>
+          Meer van De Vadercoach
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <Link
+            href="/cursussen"
+            className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+            style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+          >
+            <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Opvoedcursussen</h3>
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+              Verdiepende PDF-werkboeken over 8 opvoedvaardigheden
+            </p>
+          </Link>
+          <Link
+            href="/experience"
+            className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+            style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+          >
+            <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>De Vader Experience</h3>
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+              22 dagen, 8 vaardigheden, dagelijkse oefeningen
+            </p>
+          </Link>
+          <Link
+            href="/gids"
+            className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+            style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+          >
+            <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Gratis opvoedgidsen</h3>
+            <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+              Uitgebreide handleidingen over veelvoorkomende opvoedvragen
+            </p>
+          </Link>
+        </div>
+      </div>
     </div>
     </>
   );

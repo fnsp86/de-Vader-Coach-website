@@ -529,6 +529,47 @@ function ExperienceSalesPage({ isLocal = false, onActivateTest }: { isLocal?: bo
           </div>
         </div>
       </section>
+
+      {/* Cross-links */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-xl font-extrabold mb-6" style={{ color: 'var(--text)' }}>
+            Meer van De Vadercoach
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Link
+              href="/cursussen"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Opvoedcursussen</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                Verdiepende PDF-werkboeken per vaardigheid
+              </p>
+            </Link>
+            <Link
+              href="/blog"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Vaderschapsblog</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                Herkenbare verhalen en praktische opvoedtips
+              </p>
+            </Link>
+            <Link
+              href="/gids"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Gratis opvoedgidsen</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                Uitgebreide handleidingen over veelvoorkomende opvoedvragen
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

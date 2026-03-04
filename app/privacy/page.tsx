@@ -3,6 +3,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacybeleid',
   description: 'Privacyverklaring van De Vadercoach. Hoe wij omgaan met je gegevens conform de AVG/GDPR.',
+  alternates: {
+    canonical: 'https://devadercoach.nl/privacy',
+  },
 };
 
 export default function PrivacyPage() {

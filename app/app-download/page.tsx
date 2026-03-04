@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import {
   Smartphone,
   Target,
@@ -208,6 +209,47 @@ export default function AppDownloadPage() {
                 <p className="text-xs leading-relaxed" style={{ color: 'var(--text2)' }}>{f.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cross-links */}
+      <section className="border-t" style={{ borderColor: 'var(--border)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-xl font-extrabold mb-6" style={{ color: 'var(--text)' }}>
+            Meer van De Vadercoach
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Link
+              href="/cursussen"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Opvoedcursussen</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                Verdiepende PDF-werkboeken over alle 8 vaardigheden
+              </p>
+            </Link>
+            <Link
+              href="/experience"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>De Vader Experience</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                22-daagse reis door alle opvoedvaardigheden
+              </p>
+            </Link>
+            <Link
+              href="/blog"
+              className="group rounded-2xl border p-5 transition-colors hover:border-amber-500/30"
+              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--surface)' }}
+            >
+              <h3 className="text-sm font-bold mb-1" style={{ color: 'var(--text)' }}>Vaderschapsblog</h3>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--text3)' }}>
+                Gratis artikelen en opvoedtips voor vaders
+              </p>
+            </Link>
           </div>
         </div>
       </section>
