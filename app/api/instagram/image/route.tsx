@@ -178,7 +178,7 @@ export async function GET(request: NextRequest) {
           }}
         >
           {isStory ? (
-            <div style={{ width: 1080, height: 1080, display: 'flex', flexDirection: 'column' }}>
+            <div style={{ width: 1080, height: 1920, display: 'flex', flexDirection: 'column', paddingTop: 160, paddingBottom: 160 }}>
               {content}
             </div>
           ) : content}
