@@ -615,6 +615,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Samen App promotie ─────────────────────────────── */}
+      <section style={{ backgroundColor: 'var(--bg)' }}>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+          <div
+            className="rounded-2xl border p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-6 sm:gap-10"
+            style={{ borderColor: '#C4704B30', backgroundColor: '#C4704B08' }}
+          >
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl" style={{ backgroundColor: '#C4704B15' }}>
+              <Heart className="h-7 w-7" style={{ color: '#C4704B' }} />
+            </div>
+            <div className="flex-1">
+              <h2 className="text-xl sm:text-2xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
+                Een goede vader begint bij een sterke relatie
+              </h2>
+              <p className="text-base leading-relaxed mb-5" style={{ color: 'var(--text2)' }}>
+                Jullie relatie is het fundament van jullie gezin. Met Samen - onze app voor koppels - investeer je dagelijks in jullie band. Vijf minuten per dag voor een sterkere relatie en een gelukkiger gezin.
+              </p>
+              <a
+                href="https://samenapp.nl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white transition-transform hover:scale-[0.97]"
+                style={{ backgroundColor: '#C4704B' }}
+              >
+                Ontdek Samen <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Laatste CTA ──────────────────────────────────── */}
       <section style={{ backgroundColor: 'var(--surface)' }}>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16 text-center">
