@@ -173,7 +173,7 @@ export async function GET(request: NextRequest) {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: '#111318',
+            backgroundColor: '#FAF8F5',
             fontFamily: 'Inter',
           }}
         >
@@ -211,7 +211,7 @@ function QuoteTemplate({ text, color, skill }: { text: string; color: string; sk
           style={{
             fontSize: text.length > 160 ? 38 : text.length > 100 ? 46 : 54,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             lineHeight: 1.35,
             textAlign: 'center',
             maxWidth: 900,
@@ -263,7 +263,7 @@ function TipTemplate({ text, color, number, skill }: { text: string; color: stri
           style={{
             fontSize: text.length > 140 ? 36 : 44,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             lineHeight: 1.35,
             textAlign: 'center',
             maxWidth: 880,
@@ -313,7 +313,7 @@ function TeaserTemplate({
           style={{
             fontSize: text.length > 60 ? 48 : 56,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             lineHeight: 1.2,
             marginBottom: 24,
           }}
@@ -325,7 +325,7 @@ function TeaserTemplate({
             style={{
               fontSize: 28,
               fontWeight: 500,
-              color: '#9BA3B8',
+              color: '#7D7568',
               lineHeight: 1.4,
               maxWidth: 800,
             }}
@@ -351,7 +351,7 @@ function StatTemplate({ text, color, subtitle, skill }: { text: string; color: s
       <span style={{ fontSize: 140, fontWeight: 700, color, lineHeight: 1 }}>
         {text}
       </span>
-      <span style={{ fontSize: 36, fontWeight: 500, color: '#9BA3B8', marginTop: 30, textAlign: 'center', maxWidth: 800 }}>
+      <span style={{ fontSize: 36, fontWeight: 500, color: '#7D7568', marginTop: 30, textAlign: 'center', maxWidth: 800 }}>
         {subtitle}
       </span>
       <div style={{ display: 'flex', marginTop: 'auto' }}>
@@ -365,7 +365,7 @@ function ListTemplate({ text, color, items, skill }: { text: string; color: stri
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px' }}>
       <SkillBadge skill={skill} color={color} />
-      <span style={{ fontSize: 40, fontWeight: 700, color: '#F0F2F8', marginBottom: 40 }}>
+      <span style={{ fontSize: 40, fontWeight: 700, color: '#1A1612', marginBottom: 40 }}>
         {text}
       </span>
       <div style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
@@ -374,7 +374,7 @@ function ListTemplate({ text, color, items, skill }: { text: string; color: stri
             <div style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: color + '25', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 20, flexShrink: 0 }}>
               <span style={{ fontSize: 20, fontWeight: 700, color }}>{i + 1}</span>
             </div>
-            <span style={{ fontSize: 28, fontWeight: 500, color: '#F0F2F8', lineHeight: 1.4 }}>
+            <span style={{ fontSize: 28, fontWeight: 500, color: '#1A1612', lineHeight: 1.4 }}>
               {item}
             </span>
           </div>
@@ -389,11 +389,11 @@ function CTATemplate({ text, color, subtitle }: { text: string; color: string; s
   return (
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', padding: '80px', alignItems: 'center', justifyContent: 'center' }}>
       <span style={{ fontSize: 80, marginBottom: 40, color }}>♥</span>
-      <span style={{ fontSize: 52, fontWeight: 700, color: '#F0F2F8', textAlign: 'center', marginBottom: 24, maxWidth: 800 }}>
+      <span style={{ fontSize: 52, fontWeight: 700, color: '#1A1612', textAlign: 'center', marginBottom: 24, maxWidth: 800 }}>
         {text}
       </span>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: color, borderRadius: 20, padding: '20px 60px', marginTop: 20 }}>
-        <span style={{ fontSize: 30, fontWeight: 700, color: '#111318' }}>
+        <span style={{ fontSize: 30, fontWeight: 700, color: '#FFFFFF' }}>
           {subtitle || 'devadercoach.nl'}
         </span>
       </div>
@@ -410,7 +410,7 @@ function SkillsTemplate({ text, color, subtitle }: { text: string; color: string
           style={{
             fontSize: text.length > 40 ? 40 : 48,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             textAlign: 'center',
             lineHeight: 1.2,
           }}
@@ -418,7 +418,7 @@ function SkillsTemplate({ text, color, subtitle }: { text: string; color: string
           {text || 'De 8 Vaardigheden'}
         </span>
         {subtitle && (
-          <span style={{ fontSize: 24, fontWeight: 500, color: '#9BA3B8', marginTop: 12, textAlign: 'center' }}>
+          <span style={{ fontSize: 24, fontWeight: 500, color: '#7D7568', marginTop: 12, textAlign: 'center' }}>
             {subtitle}
           </span>
         )}
@@ -498,7 +498,7 @@ function DidYouKnowTemplate({ text, color, skill }: { text: string; color: strin
           style={{
             fontSize: text.length > 140 ? 36 : text.length > 80 ? 42 : 48,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             lineHeight: 1.35,
             textAlign: 'center',
             maxWidth: 880,
@@ -542,7 +542,7 @@ function ChallengeTemplate({ text, color, subtitle, skill }: { text: string; col
             display: 'flex',
           }}
         >
-          <span style={{ fontSize: 22, fontWeight: 700, color: '#111318', letterSpacing: 2 }}>
+          <span style={{ fontSize: 22, fontWeight: 700, color: '#FFFFFF', letterSpacing: 2 }}>
             WEEKUITDAGING
           </span>
         </div>
@@ -553,7 +553,7 @@ function ChallengeTemplate({ text, color, subtitle, skill }: { text: string; col
           style={{
             fontSize: text.length > 100 ? 38 : 46,
             fontWeight: 700,
-            color: '#F0F2F8',
+            color: '#1A1612',
             lineHeight: 1.35,
             textAlign: 'center',
             maxWidth: 880,
@@ -563,7 +563,7 @@ function ChallengeTemplate({ text, color, subtitle, skill }: { text: string; col
           {text}
         </span>
         {subtitle && (
-          <span style={{ fontSize: 26, fontWeight: 500, color: '#9BA3B8', textAlign: 'center', maxWidth: 800 }}>
+          <span style={{ fontSize: 26, fontWeight: 500, color: '#7D7568', textAlign: 'center', maxWidth: 800 }}>
             {subtitle}
           </span>
         )}
@@ -600,7 +600,7 @@ function ComparisonTemplate({ text, color, subtitle, skill }: { text: string; co
             style={{
               fontSize: text.length > 80 ? 28 : 32,
               fontWeight: 700,
-              color: '#F0F2F8',
+              color: '#1A1612',
               lineHeight: 1.4,
             }}
           >
@@ -628,7 +628,7 @@ function ComparisonTemplate({ text, color, subtitle, skill }: { text: string; co
             style={{
               fontSize: (subtitle || '').length > 80 ? 28 : 32,
               fontWeight: 700,
-              color: '#F0F2F8',
+              color: '#1A1612',
               lineHeight: 1.4,
             }}
           >
@@ -658,7 +658,7 @@ function BottomBar({ color }: { color: string }) {
       <span style={{ fontSize: 26, fontWeight: 700, color, marginRight: 12 }}>
         ♥
       </span>
-      <span style={{ fontSize: 26, fontWeight: 700, color: '#9BA3B8' }}>
+      <span style={{ fontSize: 26, fontWeight: 700, color: '#7D7568' }}>
         devadercoach.nl
       </span>
     </div>
