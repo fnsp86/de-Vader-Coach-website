@@ -31,6 +31,11 @@ const GUIDE_SLUGS = [
   'co-ouderschap-tips',
   'kalm-blijven-als-vader',
   'adhd-kind-opvoeden',
+  'overprikkeld-kind',
+  'straffen-kind-alternatief',
+  'vader-dochter-relatie',
+  'druk-kind-tot-rust-brengen',
+  'kind-gepest-op-school',
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

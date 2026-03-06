@@ -50,7 +50,7 @@ export const GUIDES: Guide[] = [
 
 ## Wat er in het brein van je kind gebeurt
 
-Een driftbui is geen bewuste keuze van je kind. Het is een brein dat overbelast raakt. De prefrontale cortex - het deel dat nadenkt, plant en remt - is bij peuters en kleuters nog volop in ontwikkeling. Wat wél volop werkt, is de amygdala: het alarmsysteem.
+Een driftbui is geen bewuste keuze van je kind. Het is een brein dat overbelast raakt. De prefrontale cortex - het deel dat nadenkt, plant en remt - is bij peuters en kleuters nog volop in ontwikkeling. Wat wel volop werkt, is de amygdala: het alarmsysteem.
 
 Als je kind iets wil en het niet krijgt, slaat dat alarmsysteem aan. Het stresshormoon cortisol schiet omhoog. Op dat moment is redeneren met je kind zoiets als wiskundesommen uitleggen tijdens een brandalarm. Het gaat niet landen.
 
@@ -1132,6 +1132,469 @@ Je kind brengt een groot deel van zijn dag op school door. Een goede samenwerkin
 ADHD is geen ziekte die je geneest. Het is een manier waarop het brein werkt. Met de juiste ondersteuning - thuis, op school, eventueel met medicatie - kunnen kinderen met ADHD uitstekend functioneren. Veel volwassenen met ADHD zijn juist enorm creatief, energiek en ondernemend.
 
 Jouw rol als vader is niet om ADHD te fixen. Jouw rol is om je kind te laten zien dat hij oké is zoals hij is. Dat zijn brein anders is, niet minder. Dat hij uitdagingen heeft én krachten. En dat jij er bent - geduldig, liefdevol, en met een plan.`,
+  },
+  {
+    slug: 'overprikkeld-kind',
+    datePublished: '2026-03-06',
+    title: 'Overprikkeld Kind Kalmeren: Praktische Gids voor Vaders',
+    description:
+      'Wat overprikkeling bij kinderen is, hoe je het herkent en wat je als vader kunt doen. Concrete kalmeringstechnieken en tips om prikkels te verminderen.',
+    keywords: [
+      'overprikkeld kind', 'prikkelverwerking kind', 'kind overprikkeld kalmeren',
+      'hsp kind', 'hooggevoelig kind', 'druk kind kalmeren',
+    ],
+    relatedCourses: ['emotiecoaching-voor-vaders', 'zelfregulatie-als-vader'],
+    relatedPosts: ['driftbuien-begrijpen', 'vader-eigen-emoties'],
+    faq: [
+      {
+        question: 'Hoe herken ik dat mijn kind overprikkeld is?',
+        answer: 'Signalen van overprikkeling zijn onder andere: handen over de oren, ogen dichtknijpen, plotseling huilen of schreeuwen zonder duidelijke aanleiding, zich terugtrekken, agressief worden, of zeggen dat het "te veel" is. Bij jongere kinderen zie je het vaak als plotselinge driftbuien aan het einde van een drukke dag.',
+      },
+      {
+        question: 'Is mijn kind hooggevoelig of heeft het een stoornis?',
+        answer: 'Hooggevoeligheid (HSP) is geen stoornis maar een temperamentskenmerk dat bij ongeveer 20% van alle kinderen voorkomt. Deze kinderen verwerken prikkels dieper en raken daardoor sneller overbelast. Als de overprikkeling het dagelijks functioneren ernstig belemmert, is het verstandig om met een kinderpsycholoog te overleggen om sensorische verwerkingsproblemen uit te sluiten.',
+      },
+      {
+        question: 'Wat kan ik doen als mijn kind overprikkeld raakt op een feestje?',
+        answer: 'Zoek samen een rustige plek op, weg van de drukte. Praat zacht, vermijd vragen en bied fysiek comfort aan als je kind dat toelaat. Geef het de tijd om tot rust te komen zonder druk om terug te gaan. Bespreek vooraf een "geheim teken" waarmee je kind kan aangeven dat het te veel wordt.',
+      },
+      {
+        question: 'Hoe kan ik overprikkeling voorkomen?',
+        answer: 'Plan rustmomenten in na drukke activiteiten, beperk het aantal prikkels in de thuisomgeving (minder geluid, minder schermen), houd een vast dagritme aan en geef je kind de ruimte om zich terug te trekken. Bereid je kind voor op wat er gaat gebeuren, zodat het weet wat het kan verwachten.',
+      },
+    ],
+    content: `Het is zondagmiddag. Jullie komen terug van een verjaardagsfeestje. Je kind was de hele middag vrolijk, maar in de auto begint het. Tranen, schreeuwen, alles is stom. Je denkt: wat is er in hemelsnaam gebeurd? Het antwoord is overprikkeling. En het is veel normaler dan je denkt.
+
+## Wat is overprikkeling precies?
+
+Het zenuwstelsel van je kind verwerkt continu prikkels: geluiden, beelden, geuren, aanrakingen, emoties van anderen. Bij de meeste kinderen gaat dat automatisch. Maar sommige kinderen verwerken al die informatie dieper en intensiever. Hun brein is als een spons die alles opzuigt, tot het verzadigd is.
+
+Psycholoog Elaine Aron, die het begrip "hooggevoeligheid" introduceerde, schat dat 15 tot 20 procent van alle kinderen hoogsensitief is. Maar ook kinderen die niet hooggevoelig zijn, kunnen overprikkeld raken na een dag vol indrukken.
+
+Het belangrijkste om te begrijpen: overprikkeling is geen gedragsprobleem. Het is een zenuwstelsel dat op zijn grenzen loopt.
+
+## De signalen herkennen
+
+Overprikkeling ziet er per kind anders uit, maar veelvoorkomende signalen zijn:
+
+- **Terugtrekken.** Je kind wil ineens alleen zijn, kruipt weg of reageert nergens meer op.
+- **Uitbarsten.** Huilen, schreeuwen, slaan of schoppen zonder duidelijke aanleiding. Dit lijkt op een driftbui, maar de oorzaak is anders.
+- **Fysieke klachten.** Buikpijn, hoofdpijn, handen over de oren, ogen dichtknijpen.
+- **Rigiditeit.** Alles moet precies zo, kleine veranderingen worden onverdraaglijk.
+
+Het lastige is dat deze signalen vaak pas komen als het al te laat is. Het kind heeft de hele dag indrukken opgespaard en thuis, in de veiligheid, komt alles eruit.
+
+## Wat je als vader kunt doen in het moment
+
+Als je kind overprikkeld is, werkt redeneren niet. Het brein staat in overlevingsmodus. Dit helpt wel:
+
+**1. Verminder prikkels direct.** Zet de televisie uit, dim het licht, praat zachter. Minder input betekent dat het zenuwstelsel kan bijkomen.
+
+**2. Bied veiligheid, geen oplossingen.** "Ik ben hier. Je hoeft niks te doen." Dat is genoeg. Geen vragen, geen uitleg, geen "het valt toch wel mee."
+
+**3. Gebruik diepe druk.** Stevig knuffelen (als je kind dat wil), een gewichtsdeken, of samen op de grond zitten met een kussen op schoot. Diepe druk activeert het parasympathische zenuwstelsel en helpt het lichaam kalmeren.
+
+**4. Ademhaling.** Adem zelf rustig en hoorbaar. Kinderen reguleren hun zenuwstelsel via dat van jou. Dit heet co-regulatie en het werkt krachtiger dan welke techniek ook.
+
+**5. Wacht.** Het gaat voorbij. Dat voelt lang, maar het gaat voorbij.
+
+## Overprikkeling voorkomen
+
+Voorkomen is beter dan genezen. Een paar aanpassingen in het dagelijks leven maken een groot verschil:
+
+- **Bouw rustmomenten in.** Na school, na een feestje, na een drukke ochtend. Niet als straf, maar als tankmomenten.
+- **Beperk schermtijd.** Schermen zijn prikkelkanonnen. Vooral voor het slapengaan heeft het zenuwstelsel rust nodig.
+- **Houd een vast ritme aan.** Voorspelbaarheid is het tegenovergestelde van overprikkeling. Als je kind weet wat er komt, hoeft het brein minder te verwerken.
+- **Bereid voor.** "We gaan straks naar oma, er zijn vijf mensen, we blijven tot drie uur." Concrete informatie vermindert de prikkelbelasting.
+- **Maak een rustplek.** Een hoekje in huis met kussens, een deken, misschien een koptelefoon. Geen strafhoek, maar een oplaadplek.
+
+## De valkuil voor vaders
+
+De grootste valkuil is het persoonlijk opvatten. Je kind schreeuwt, duwt je weg, wil niks van je weten. Je denkt: ik doe het verkeerd. Maar het tegenovergestelde is waar. Je kind voelt zich veilig genoeg bij jou om los te laten.
+
+De tweede valkuil is "even doorzetten." Op een feestje blijven omdat je anders onbeleefd bent. Nog een activiteit erbij omdat andere kinderen het ook aankunnen. Jouw kind is jouw kind. En als het aangeeft dat het te veel is, dan is het te veel.
+
+## Wanneer zoek je hulp?
+
+Overprikkeling hoort bij veel kinderen, maar als het dagelijks functioneren er structureel onder lijdt, als je kind niet meer naar school wil, niet meer kan slapen, of chronisch angstig is, dan is het verstandig om een kinderpsycholoog te raadplegen. Vroeg ingrijpen maakt een groot verschil.
+
+## Wat je vandaag kunt doen
+
+1. **Let op het patroon.** Na welke situaties raakt je kind overprikkeld? Noteer het een week lang.
+2. **Plan een rustmoment.** Bouw vandaag nog een kwartier stilte in na de drukste activiteit.
+3. **Maak een afspraak.** Spreek met je kind een geheim teken af voor als het te veel wordt. Een hand op je arm, een bepaald woord.
+4. **Wees het voorbeeld.** Als jij laat zien dat het oké is om even terug te trekken, leert je kind dat ook.`,
+  },
+  {
+    slug: 'straffen-kind-alternatief',
+    datePublished: '2026-03-06',
+    title: 'Alternatieven voor Straffen: Wat Werkt Beter bij Kinderen',
+    description:
+      'Waarom straffen niet het gewenste effect heeft en welke alternatieven wel werken. Praktische gids voor vaders over positieve discipline en natuurlijke consequenties.',
+    keywords: [
+      'kind straffen alternatief', 'opvoeden zonder straffen', 'positieve discipline',
+      'consequenties kind', 'belonen of straffen kind', 'straf alternatief opvoeding',
+    ],
+    relatedCourses: ['grenzen-stellen-met-liefde', 'herstel-na-conflict'],
+    relatedPosts: ['grenzen-zonder-schreeuwen', 'herstellen-na-fout'],
+    faq: [
+      {
+        question: 'Is opvoeden zonder straffen niet te soft?',
+        answer: 'Nee. Opvoeden zonder straffen betekent niet opvoeden zonder grenzen. Het betekent dat je grenzen stelt met respect en consequenties gebruikt die logisch verbonden zijn aan het gedrag. Onderzoek laat zien dat kinderen die met positieve discipline worden opgevoed juist beter luisteren op de lange termijn, omdat ze de redenen achter de regels begrijpen.',
+      },
+      {
+        question: 'Wat is het verschil tussen straf en consequentie?',
+        answer: 'Een straf is een opgelegde onaangename reactie die vaak niet gerelateerd is aan het gedrag ("je mag niet op de iPad omdat je je broer sloeg"). Een natuurlijke consequentie vloeit logisch voort uit het gedrag ("je broer wil nu even niet met je spelen omdat je hem pijn deed"). Consequenties leren kinderen oorzaak en gevolg, straf leert ze vooral om niet betrapt te worden.',
+      },
+      {
+        question: 'Wat als mijn kind bewust regels overtreedt?',
+        answer: 'Bewust regels overtreden is een normaal onderdeel van de ontwikkeling. Je kind test grenzen om te leren waar ze liggen. Reageer kalm en consequent: benoem wat je ziet, herhaal de regel, en pas de afgesproken consequentie toe. Vermijd machtsstrijd. Als je kind merkt dat de grens elke keer op dezelfde plek staat, leert het die te respecteren.',
+      },
+      {
+        question: 'Hoe ga ik om met druk van buitenaf om strenger te straffen?',
+        answer: 'Veel vaders krijgen van hun eigen ouders of omgeving te horen dat ze strenger moeten zijn. Weet dat de wetenschap aan jouw kant staat: positieve discipline levert betere resultaten op dan streng straffen. Je hoeft je keuze niet te verdedigen. Laat de resultaten spreken.',
+      },
+    ],
+    content: `Je zoon van zes heeft net een glas melk door de kamer gegooid. Expres. Je voelt de boosheid opkomen. De eerste impuls: naar zijn kamer sturen, iPad afpakken, televisie de rest van de dag verbieden. Het is begrijpelijk. Maar werkt het?
+
+## Waarom straffen niet doet wat je denkt
+
+Straffen lijkt te werken. Je kind stopt met het gedrag, tenminste op dat moment. Maar wat er onder de oppervlakte gebeurt, is minder gunstig.
+
+Onderzoeker Alan Kazdin van Yale University toonde aan dat straf op de korte termijn gedrag onderdrukt, maar op de lange termijn drie problemen veroorzaakt: het kind leert het gedrag te verbergen in plaats van te veranderen, de relatie tussen ouder en kind verslechtert, en het kind ontwikkelt minder zelfregulatievaardigheden.
+
+Psycholoog Alfie Kohn vatte het samen: straf leert kinderen niet wat ze wel moeten doen. Het leert ze alleen wat er gebeurt als ze betrapt worden.
+
+Dit betekent niet dat alles maar moet kunnen. Integendeel. Kinderen hebben grenzen nodig. De vraag is: hoe stel je die grenzen zonder te straffen?
+
+## Natuurlijke en logische consequenties
+
+Het krachtigste alternatief voor straf is de consequentie. Er zijn twee soorten:
+
+**Natuurlijke consequenties** zijn gevolgen die vanzelf ontstaan. Je kind weigert een jas aan te trekken? Het heeft het koud buiten. Geen preek nodig, de werkelijkheid is de leraar.
+
+**Logische consequenties** zijn gevolgen die jij instelt, maar die direct verbonden zijn aan het gedrag. Je kind gooit met eten? Dan is het klaar met eten. Je kind breekt expres speelgoed van een ander? Dan helpt het mee om het te repareren of te vervangen.
+
+Het verschil met straf is de logica. "Je mag niet op de iPad omdat je je zus sloeg" is een straf. "Je zus wil nu even niet bij je in de buurt zijn omdat je haar pijn deed" is een consequentie. Het eerste voelt willekeurig, het tweede leert oorzaak en gevolg.
+
+## De vier stappen van positieve discipline
+
+**1. Benoem wat je ziet.** Niet: "Waarom doe je dat nou weer?" Wel: "Ik zie dat je de melk door de kamer hebt gegooid." Neutraal, zonder oordeel.
+
+**2. Benoem het gevoel.** "Je bent boos over iets." Dit is geen beloning voor slecht gedrag. Dit is erkenning van de emotie achter het gedrag. Kinderen die zich begrepen voelen, zijn sneller bereid om mee te werken.
+
+**3. Stel de grens.** "Eten gooien we niet. Daar wordt de kamer vies van en het is zonde." Kort, duidelijk, zonder dreigement.
+
+**4. Bied een alternatief.** "Als je boos bent, kun je dat zeggen. Of je kunt op het kussen slaan. Maar niet met eten gooien." Je leert je kind wat het wel kan doen met dat gevoel.
+
+## Herstellen in plaats van straffen
+
+Een van de krachtigste alternatieven voor straf is herstel. Als je kind iets kapotmaakt, helpt het mee repareren. Als het iemand pijn heeft gedaan, bedenkt het samen met jou hoe het weer goed te maken. Als het een rommel heeft gemaakt, ruimt het op.
+
+Herstel is geen straf. Het verschil zit in de toon. "Jij gaat dat nu opruimen!" is straf. "De melk ligt op de grond. Wil je een doek pakken of zal ik helpen?" is herstel. Het kind leert verantwoordelijkheid nemen zonder beschaamd te worden.
+
+Onderzoekers van de Universiteit van Cambridge vonden dat kinderen die leren herstellen na een fout, meer empathie ontwikkelen en beter in staat zijn om conflicten op te lossen.
+
+## Maar wat als het echt niet lukt?
+
+Er zijn momenten waarop je alles goed doet en je kind toch niet meewerkt. Dat is normaal. Op die momenten:
+
+- **Neem een pauze.** Niet als straf, maar als ademruimte. "Ik merk dat we allebei boos zijn. Ik ga even vijf minuten zitten, en dan praten we verder."
+- **Kies je gevechten.** Niet alles hoeft nu opgelost. Soms is het beter om het te laten rusten en er later op terug te komen.
+- **Wees eerlijk.** "Ik weet even niet wat ik moet doen. Maar ik wil het samen oplossen." Kwetsbaarheid is geen zwakte. Het is voorbeeldgedrag.
+
+## De valkuil van belonen
+
+Belonen klinkt als het tegenovergestelde van straffen, maar het kan dezelfde valkuil zijn. Als je kind alleen goed gedrag vertoont voor een sticker of een cadeautje, leert het niet om vanuit zichzelf het goede te doen. Gebruik waardering in plaats van beloning: "Ik zag dat je je broertje hielp. Dat vind ik fijn" werkt beter dan "Als je lief bent, krijg je een ijsje."
+
+## Wat je vandaag kunt doen
+
+1. **Let op je eerste reactie.** De volgende keer dat je kind iets doet wat niet mag, pauzeer twee seconden. Dat is genoeg om van reactie naar bewuste keuze te gaan.
+2. **Vervang een straf door een consequentie.** Kies vandaag een situatie waarin je normaal zou straffen en pas in plaats daarvan een logische consequentie toe.
+3. **Oefen de zin:** "Ik zie dat je [emotie] bent. [Gedrag] mag niet, maar je kunt wel [alternatief]."
+4. **Praat met je partner.** Bespreek samen welke consequenties jullie hanteren, zodat jullie op een lijn zitten.`,
+  },
+  {
+    slug: 'vader-dochter-relatie',
+    datePublished: '2026-03-06',
+    title: 'Vader-Dochterrelatie Versterken: Gids voor Betrokken Vaders',
+    description:
+      'Waarom de vader-dochterrelatie zo belangrijk is en hoe je als vader een sterke band opbouwt. Tips per leeftijd, veelgemaakte fouten en quality time ideeën.',
+    keywords: [
+      'vader dochter relatie', 'vader dochter band', 'vader dochter verbeteren',
+      'relatie met dochter', 'vader meisje opvoeden', 'betrokken vader dochter',
+    ],
+    relatedCourses: ['verbinding-met-je-tiener', 'aanwezig-vaderschap'],
+    relatedPosts: ['aanwezig-zijn-voor-kind', 'quality-time-kind', 'praten-met-je-tiener'],
+    faq: [
+      {
+        question: 'Waarom is de vader-dochterrelatie zo belangrijk?',
+        answer: 'Onderzoek toont aan dat meisjes met een betrokken vader meer zelfvertrouwen ontwikkelen, betere schoolprestaties behalen en als volwassene gezondere relaties aangaan. De manier waarop jij als vader met je dochter omgaat, vormt haar beeld van hoe mannen zich horen te gedragen.',
+      },
+      {
+        question: 'Mijn dochter is een tiener en duwt me weg. Wat nu?',
+        answer: 'Dit is normaal tienergedrag en betekent niet dat ze je niet nodig heeft. Blijf beschikbaar zonder opdringerig te zijn. Zoek gedeelde activiteiten, luister zonder te oordelen, en respecteer haar privacy. De afstand is tijdelijk, maar jouw aanwezigheid op de achtergrond is blijvend.',
+      },
+      {
+        question: 'Hoe praat ik met mijn dochter over emoties?',
+        answer: 'Begin met luisteren in plaats van oplossen. Meisjes willen vaak eerst gehoord worden voordat ze een oplossing willen. Gebruik zinnen als "Dat klinkt moeilijk" of "Hoe voelde dat?" in plaats van "Je moet gewoon..." Deel ook je eigen gevoelens om te laten zien dat emoties bij iedereen horen.',
+      },
+      {
+        question: 'Kan ik als vader net zo goed zorgen als de moeder?',
+        answer: 'Absoluut. Onderzoek laat zien dat vaders niet minder capabel zijn, maar anders zorgen. Vaders moedigen vaker fysiek spel en risico-nemen aan, wat bijdraagt aan het zelfvertrouwen en de weerbaarheid van meisjes. Jouw manier van zorgen is niet minder, maar aanvullend.',
+      },
+    ],
+    content: `Ze is drie en wil dat je haar kroontje opzet. Ze is acht en wil dat je meekijkt naar haar dansje. Ze is veertien en wil dat je weggaat. En achttien en belt ze je huilend op vanuit haar studentenkamer. De vader-dochterrelatie is een van de meest invloedrijke relaties in het leven van een meisje. En jij hebt meer impact dan je denkt.
+
+## Wat de wetenschap zegt
+
+Onderzoekster Linda Nielsen van Wake Forest University bestudeerde decennialang de vader-dochterrelatie. Haar conclusie is helder: meisjes met een betrokken vader hebben meer zelfvertrouwen, presteren beter op school, hebben minder kans op depressie en angst, en gaan als volwassene gezondere romantische relaties aan.
+
+De reden is niet ingewikkeld. Jij bent de eerste man in haar leven. De manier waarop jij met haar omgaat, hoe je luistert, hoe je haar behandelt, hoe je met haar moeder omgaat, vormt haar verwachtingspatroon voor alle toekomstige relaties met mannen.
+
+## Per leeftijd: wat je dochter van je nodig heeft
+
+**0-5 jaar: Aanwezigheid en speelsheid.** Op deze leeftijd is fysieke aanwezigheid het belangrijkste. Samen spelen, voorlezen, knuffelen. Je dochter leert dat ze veilig is bij jou. Dat je er bent als ze je nodig heeft.
+
+**6-9 jaar: Interesse en aanmoediging.** Je dochter ontdekt de wereld. Toon oprechte interesse in wat ze leert, maakt, en meemaakt. Ga naar het schooltoneel. Vraag naar haar vriendinnen. Dit is de leeftijd waarop ze leert dat ze het waard is om aandacht aan te besteden.
+
+**10-13 jaar: Stabiliteit en luisteren.** De puberteit begint, het lichaam verandert, emoties worden intenser. Je dochter heeft een vader nodig die stabiel is, die niet schrikt van grote emoties, en die luistert zonder direct te willen fixen.
+
+**14-17 jaar: Ruimte en vertrouwen.** Ze duwt je weg. Dat hoort erbij. Geef ruimte, maar blijf beschikbaar. Wees niet de vader die alles controleert, maar de vader die vertrouwen geeft. Laat haar fouten maken en wees er als het misgaat.
+
+**18+: Gelijkwaardigheid.** De relatie verschuift. Ze is volwassen, maar heeft nog steeds een vader nodig. Nu als klankbord, als rots, als iemand die onvoorwaardelijk van haar houdt zonder over haar te oordelen.
+
+## De vijf grootste valkuilen
+
+**1. De reddersrol.** Alles voor haar willen oplossen. Soms heeft ze geen oplossing nodig, maar een luisterend oor.
+
+**2. Alleen "leuke papa" zijn.** Altijd ja zeggen, nooit grenzen stellen. Je dochter heeft ook je nee nodig. Grenzen geven veiligheid.
+
+**3. Emoties afkappen.** "Niet huilen" of "stel je niet aan" zijn zinnen die een muur bouwen. Laat haar voelen wat ze voelt en wees erbij.
+
+**4. Vergelijken.** Niet met andere kinderen, niet met je zoon, niet met hoe jij op die leeftijd was. Ze is zichzelf.
+
+**5. Verdwijnen als het moeilijk wordt.** De tienerjaren zijn zwaar. Ze zegt dingen die pijn doen. Maar achter "ga weg" zit vaak "ben je er nog als ik je wegduw?"
+
+## Quality time die werkt
+
+De beste momenten met je dochter zijn vaak niet gepland. Maar het helpt om bewust tijd vrij te maken:
+
+- **Samen iets leren.** Een recept, een spel, een vaardigheid. Zij als expert, jij als leerling. Dat versterkt haar zelfvertrouwen.
+- **Rituelen.** Een vast moment per week dat van jullie is. Pannenkoeken op zondag, een wandeling na het eten, een film op vrijdagavond.
+- **Meedoen in haar wereld.** Luister naar haar muziek, kijk haar serie, vraag naar haar hobby. Je hoeft het niet leuk te vinden. Je hoeft er alleen te zijn.
+- **Praten tijdens iets anders.** De beste gesprekken met meisjes ontstaan niet tegenover elkaar aan tafel, maar naast elkaar in de auto, tijdens een wandeling, of terwijl je samen kookt.
+
+## Wat je vandaag kunt doen
+
+1. **Plan een moment.** Kies deze week een uur dat alleen voor jou en je dochter is. Zonder telefoon, zonder agenda.
+2. **Stel een open vraag.** Niet "hoe was je dag" (antwoord: "goed"), maar "wat was het grappigste dat er vandaag gebeurde?"
+3. **Luister langer.** De volgende keer dat ze iets vertelt, wacht vijf seconden voordat je reageert. Vaak komt het belangrijkste pas na de stilte.
+4. **Zeg het hardop.** "Ik ben trots op je" of "Ik vind het leuk om bij je te zijn." Meisjes hebben bevestiging van hun vader nodig, op elke leeftijd.`,
+  },
+  {
+    slug: 'druk-kind-tot-rust-brengen',
+    datePublished: '2026-03-06',
+    title: 'Druk Kind tot Rust Brengen: Wat Werkt (en Wat Niet)',
+    description:
+      'Is je kind altijd druk en onrustig? Ontdek waarom kinderen druk zijn, wat het verschil is met ADHD, en welke technieken echt helpen om rust te creëren.',
+    keywords: [
+      'druk kind', 'druk kind kalmeren', 'hyperactief kind',
+      'kind kan niet stilzitten', 'onrustig kind', 'druk kind tot rust brengen', 'energiek kind',
+    ],
+    relatedCourses: ['zelfregulatie-als-vader', 'grenzen-stellen-met-liefde'],
+    relatedPosts: ['vader-burn-out-opvoeding', 'driftbuien-begrijpen'],
+    faq: [
+      {
+        question: 'Is mijn kind druk of heeft het ADHD?',
+        answer: 'Druk zijn is normaal kindergedrag, vooral bij kinderen van 3-7 jaar. ADHD kenmerkt zich door aanhoudende concentratieproblemen, impulsiviteit en hyperactiviteit die het functioneren op meerdere gebieden belemmeren (school, thuis, sociaal). Als je je zorgen maakt, bespreek het met de huisarts of een kinderpsycholoog. Maar weet: de meeste drukke kinderen hebben geen ADHD.',
+      },
+      {
+        question: 'Waarom is mijn kind zo druk na school?',
+        answer: 'Op school moet je kind zich de hele dag inhouden: stilzitten, luisteren, regels volgen. Thuis laat het die opgekropte energie los. Dit is gezond gedrag. Bied na school eerst ruimte om te bewegen en stoom af te blazen voordat je rust verwacht.',
+      },
+      {
+        question: 'Helpt het om mijn kind meer te laten sporten?',
+        answer: 'Ja, beweging is een van de effectiefste manieren om een druk kind tot rust te brengen. Minstens een uur per dag intensief bewegen helpt het zenuwstelsel om te reguleren. Vooral buitenspelen, rennen, klimmen en zwemmen werken goed. Plan beweging niet vlak voor het slapengaan.',
+      },
+      {
+        question: 'Mijn kind kan niet inslapen door de drukte. Wat helpt?',
+        answer: 'Bouw een vast avondritueel op: geen schermen minimaal een uur voor bedtijd, dimmen van verlichting, rustige activiteiten zoals voorlezen of tekenen, en elke avond hetzelfde tijdstip. Een warm bad voor het slapengaan helpt het zenuwstelsel te kalmeren. Consistentie is belangrijker dan de specifieke activiteit.',
+      },
+    ],
+    content: `Het is halfzeven. Je bent net thuis van je werk. Je zoon van vijf rent rondjes door de kamer, springt op de bank, gooit kussens door de lucht en schreeuwt dat hij een dinosaurus is. Je partner kijkt je aan met een blik die zegt: nu jij. Je vraagt je af: is dit normaal? Het korte antwoord: waarschijnlijk wel.
+
+## Waarom kinderen druk zijn
+
+Kinderen zijn van nature druk. Hun brein is in volle ontwikkeling, hun lichaam zit vol energie, en de wereld is nieuw en spannend. Onderzoek van de Universiteit van Michigan laat zien dat kinderen tussen 3 en 7 jaar gemiddeld 40 procent meer bewegen dan volwassenen. Ze zijn niet gebouwd om stil te zitten.
+
+Daarnaast speelt de context mee. Na een dag op school of de opvang, waar kinderen zich moeten inhouden, komt thuis alle opgekropte energie eruit. Dat is niet ongehoorzaamheid. Dat is een ventiel dat opengaat.
+
+Belangrijk is het verschil tussen een druk kind en een kind met ADHD. Een druk kind kan zich concentreren als het iets boeiend vindt, kan wachten op zijn beurt als de situatie het vraagt, en wordt rustiger naarmate het ouder wordt. Bij ADHD zijn de problemen structureel, in meerdere omgevingen aanwezig, en verbeteren ze niet vanzelf met de leeftijd.
+
+## Wat niet werkt
+
+**Schreeuwen om stilte.** De ironie van "ZIT NOU EENS STIL!" is dat je er meer energie mee toevoegt aan een situatie die al overloopt. Je kind wordt niet rustiger van jouw onrust.
+
+**Straffen voor energie.** Een kind straffen omdat het beweegt, is als een vis straffen omdat hij zwemt. De energie moet ergens heen. De vraag is: waar?
+
+**Schermen als kalmering.** Een tablet of televisie maakt een kind stil, maar niet rustig. Schermen geven een constante stroom prikkels die het zenuwstelsel juist opwinden. Na het scherm is je kind vaak drukker dan ervoor.
+
+## Wat wel werkt
+
+**1. Beweging voor rust.** Het klinkt tegenstrijdig, maar een druk kind heeft meer beweging nodig, niet minder. Laat het eerst rennen, klimmen, springen of fietsen. Pas als de energie eruit is, kan het zenuwstelsel kalmeren. Onderzoek van Harvard toont aan dat kinderen die dagelijks minimaal een uur intensief bewegen, 's avonds significant beter tot rust komen.
+
+**2. Structuur en voorspelbaarheid.** Drukke kinderen varen bij routine. Niet omdat ze braaf moeten zijn, maar omdat hun brein minder hoeft te verwerken als de dag voorspelbaar is. Dezelfde volgorde: thuiskomen, buitenspelen, eten, rustige activiteit, bed. Elke dag.
+
+**3. De overgang begeleiden.** Het moeilijkste moment is de switch van actief naar rustig. Help je kind door die overgang te markeren. "Over vijf minuten gaan we eten. Nog twee minuten rennen, en dan wassen we onze handen." Gebruik een timer als visueel hulpmiddel.
+
+**4. Zintuiglijke kalmering.** Als je kind niet zelf kan kalmeren, help dan via de zintuigen:
+- **Geluid:** zachte muziek, fluisteren, of samen ademhalen
+- **Aanraking:** stevig knuffelen, rug krabben, of samen onder een deken
+- **Zicht:** dimmen van licht, weg van schermen
+- **Beweging:** schommelen, wiegen, of langzaam wandelen
+
+**5. Samen rustig zijn.** Kinderen leren regulatie niet door instructies, maar door imitatie. Als jij na een drukke dag op de bank ploft en zelf tot rust komt, leert je kind dat rust iets is wat je doet, niet iets wat je wordt opgelegd.
+
+## Het avondritueel
+
+De avond is het slagveld. Alles moet: eten, opruimen, tanden poetsen, pyjama aan, en dan ook nog rustig in bed liggen. Voor een druk kind is dat een enorme opgave.
+
+Een effectief avondritueel:
+- **18:00** Eten zonder schermen, samen aan tafel
+- **18:30** Nog even bewegen: stoeipartij met papa, dansen in de kamer
+- **19:00** De switch: warm bad of douche, pyjama, licht dimmen
+- **19:15** Rustige activiteit: voorlezen, puzzelen, tekenen
+- **19:30** Bed: kort gesprekje, knuffel, licht uit
+
+De sleutel is consistentie. Niet elke avond zal perfect gaan. Maar het patroon geeft het brein een signaal: we gaan naar rust toe.
+
+## Wanneer maak je je zorgen?
+
+Een druk kind is meestal gewoon een druk kind. Maar zoek hulp als:
+- Je kind zich nergens langer dan een paar minuten kan concentreren, ook niet bij dingen die het leuk vindt
+- De drukte structureel leidt tot problemen op school en met vriendjes
+- Je kind zelf lijdt onder de onrust en niet weet hoe het moet stoppen
+- De situatie thuis onhoudbaar wordt voor jou of je partner
+
+## Wat je vandaag kunt doen
+
+1. **Bouw een beweegmoment in.** Direct na school of opvang: minstens dertig minuten actief buitenspelen.
+2. **Schrap een scherm.** Vervang vandaag een schermmoment door een fysieke activiteit.
+3. **Markeer de overgang.** Gebruik een timer of een vast ritueel om de switch van actief naar rustig te begeleiden.
+4. **Wees geduldig.** Je kind is niet lastig. Het is een kind vol energie in een wereld die vaak te veel stilte verwacht.`,
+  },
+  {
+    slug: 'kind-gepest-op-school',
+    datePublished: '2026-03-06',
+    title: 'Kind Wordt Gepest op School: Wat Kun Je Als Vader Doen?',
+    description:
+      'Hoe herken je dat je kind gepest wordt, hoe reageer je als vader, en wat kun je doen om je kind weerbaarder te maken. Praktische gids met concrete stappen.',
+    keywords: [
+      'kind gepest school', 'pesten school wat doen', 'kind wordt gepest',
+      'weerbaarheid kind', 'gepest worden kind', 'vader kind gepest',
+    ],
+    relatedCourses: ['emotiecoaching-voor-vaders', 'verbinding-met-je-tiener'],
+    relatedPosts: ['kind-slaat-andere-kinderen', 'aanwezig-zijn-voor-kind', 'schuldgevoel-als-vader'],
+    faq: [
+      {
+        question: 'Hoe weet ik of mijn kind gepest wordt?',
+        answer: 'Kinderen vertellen het zelden direct. Let op indirecte signalen: niet meer naar school willen, buikpijn of hoofdpijn op schooldagen, terugtrekgedrag, slaapproblemen, plotseling geen vrienden meer, beschadigde spullen, of onverklaarbare stemmingswisselingen. Stel open vragen en luister naar wat je kind niet zegt.',
+      },
+      {
+        question: 'Moet ik contact opnemen met de school?',
+        answer: 'Ja, maar overleg eerst met je kind. Neem contact op met de leerkracht of de intern begeleider. Houd het zakelijk en gericht op oplossingen, niet op beschuldigingen. Vraag welk pestprotocol de school hanteert en hoe jullie samen kunnen werken. Documenteer wat je kind vertelt met data en details.',
+      },
+      {
+        question: 'Moet ik mijn kind leren terugslaan?',
+        answer: 'Terugslaan is geen effectieve oplossing en kan de situatie verergeren. Weerbaarheid gaat niet over slaan, maar over stevig in je schoenen staan. Leer je kind om duidelijk nee te zeggen, oogcontact te maken, weg te lopen, en een volwassene in te schakelen. Een weerbaarheidstraining kan hierbij helpen.',
+      },
+      {
+        question: 'Mijn kind wordt online gepest. Wat nu?',
+        answer: 'Bij cyberpesten: maak screenshots van alle berichten als bewijs. Blokkeer de pesters op de platforms. Meld het bij de school, ook als het buiten schooltijd gebeurt. Bespreek veilig internetgebruik met je kind zonder het internet te verbieden, want dat isoleert je kind juist meer. Schakel bij ernstige gevallen de wijkagent in.',
+      },
+    ],
+    content: `Je kind komt thuis van school. Stiller dan normaal. Je vraagt hoe het was. "Gewoon." Je voelt dat er iets is, maar je kind praat niet. Een week later vind je een kapotte schooltas. Twee weken later wil het niet meer naar school. En dan valt het kwartje: je kind wordt gepest.
+
+## Het herkennen
+
+Kinderen die gepest worden, vertellen het zelden rechtstreeks. Ze schamen zich, zijn bang dat het erger wordt, of denken dat het hun eigen schuld is. Onderzoek van Dan Olweus, de grondlegger van pestonderzoek, toont aan dat meer dan de helft van de gepeste kinderen het nooit uit zichzelf aan een volwassene vertelt.
+
+Waar je op kunt letten:
+- **Lichamelijke klachten** op schooldagen: buikpijn, hoofdpijn, misselijkheid
+- **Gedragsverandering:** stiller, prikkelbaarder, terugtrekken, slechter slapen
+- **Schoolmijding:** smoesjes om thuis te blijven, opeens "ziek" zijn
+- **Spullen:** kapotte kleding of spullen, kwijt zijn van bezittingen
+- **Sociaal:** niet meer afspreken, geen vrienden meer noemen
+
+## Jouw eerste reactie als vader
+
+Het moment dat je beseft dat je kind gepest wordt, is een van de moeilijkste momenten als vader. Je voelt woede, machteloosheid, verdriet. Je wilt het oplossen. Nu.
+
+Maar wat je kind op dit moment het hardst nodig heeft, is niet een vader die in actie schiet. Het heeft een vader nodig die luistert.
+
+**Wat je wel doet:**
+- Luister. Echt luisteren. Niet onderbreken, niet oordelen, niet direct oplossingen geven.
+- Erken het gevoel. "Dat klinkt heel naar. Ik snap dat je je rot voelt."
+- Bedank je kind voor het vertellen. Dat kost enorme moed.
+- Zeg: "Het is niet jouw schuld." Gepeste kinderen denken bijna altijd dat ze het zelf veroorzaken.
+
+**Wat je niet doet:**
+- Niet zeggen: "Sla terug." Dat escaleert de situatie en legt de verantwoordelijkheid bij je kind.
+- Niet zeggen: "Trek je er niks van aan." Dat ontkent wat je kind voelt.
+- Niet zelf naar de pester of diens ouders stappen in boosheid. Dat maakt het voor je kind op school vaak erger.
+
+## Het gesprek met je kind
+
+Stel open vragen, geen ja-nee-vragen:
+- "Wat gebeurt er precies?"
+- "Wie zijn erbij?"
+- "Hoe vaak gebeurt het?"
+- "Weten de juffen of meesters ervan?"
+- "Wat heb je al geprobeerd?"
+
+Schrijf op wat je kind vertelt. Datums, namen, wat er precies is gezegd of gedaan. Dit heb je nodig voor het gesprek met school.
+
+## Contact met school
+
+Neem contact op met de leerkracht of intern begeleider. Benader het als samenwerkingspartner, niet als tegenstander. De meeste scholen willen pesten net zo graag stoppen als jij.
+
+Vraag naar:
+- Het antipestprotocol van de school
+- Wat de leerkracht heeft waargenomen
+- Welke stappen er worden gezet
+- Hoe jullie contact houden over de voortgang
+
+Als de school niet adequaat reageert, schakel dan de directie in. Elke school is wettelijk verplicht om een veilig schoolklimaat te bieden.
+
+## Weerbaarheid opbouwen
+
+Weerbaarheid is niet "hard" worden. Het is stevig in je schoenen staan. Dit kun je als vader helpen ontwikkelen:
+
+**Lichaamshouding.** Oefen thuis: rechtop staan, oogcontact maken, duidelijk praten. Kinderen die zelfverzekerd overkomen, worden minder vaak als doelwit gekozen.
+
+**Zinnen oefenen.** "Stop. Ik wil dit niet." Simpel, kort, krachtig. Oefen het als een spel, zodat het automatisch wordt.
+
+**Sociale vaardigheden.** Help je kind om vriendschappen te versterken buiten school. Nodig een klasgenoot uit, schrijf in bij een sportclub of hobby. Een kind met vrienden is minder kwetsbaar.
+
+**Zelfvertrouwen.** Geef je kind ervaringen waarin het succesvol is. Sport, muziek, kunst, het maakt niet uit wat. Een kind dat ergens goed in is, voelt zich sterker.
+
+## Wanneer professionele hulp?
+
+Schakel hulp in als:
+- Het pesten langer dan een paar weken aanhoudt ondanks interventie
+- Je kind angstig of depressief wordt
+- Je kind zichzelf pijn doet of over dood praat
+- De school onvoldoende actie onderneemt
+
+Een kinderpsycholoog kan je kind helpen met verwerking en weerbaarheid. De huisarts kan doorverwijzen.
+
+## Wat je vandaag kunt doen
+
+1. **Stel de vraag.** Niet "word je gepest?" maar "hoe zijn de kinderen op school voor je?"
+2. **Luister naar het onuitgesproken.** Let op de signalen, niet alleen de woorden.
+3. **Versterk de thuisbasis.** Een kind dat thuis gezien en gehoord wordt, kan meer aan op school.
+4. **Wees er.** Niet als redder, niet als vechtmachine, maar als vader. Dat is genoeg.`,
   },
 ];
 
