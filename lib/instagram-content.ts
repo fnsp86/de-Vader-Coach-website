@@ -2,11 +2,13 @@ import type { Template } from './instagram-captions';
 
 export interface SocialContent {
   id: string;
-  type: 'tip' | 'stat' | 'didyouknow' | 'challenge' | 'comparison' | 'quote';
+  type: 'tip' | 'stat' | 'didyouknow' | 'challenge' | 'comparison' | 'quote' | 'cta';
   skill: string;
   text: string;
   subtitle?: string;
   template: Template;
+  /** Pre-filled caption (overrides auto-generated caption when selecting from library) */
+  caption?: string;
 }
 
 export const SOCIAL_CONTENT: SocialContent[] = [
@@ -2553,6 +2555,33 @@ export const SOCIAL_CONTENT: SocialContent[] = [
     skill: 'Autonomie',
     text: 'Je taak is niet om het pad voor je kind vrij te maken. Je taak is om een kind te vormen dat elk pad aankan.',
     template: 'quote',
+  },
+
+  // ════════════════════════════════════════════════════════════════════
+  // ANNOUNCEMENTS
+  // ════════════════════════════════════════════════════════════════════
+  {
+    id: 'announce-app-testers',
+    type: 'cta',
+    skill: '',
+    text: 'Wil jij De Vadercoach app als eerste testen?',
+    subtitle: 'Word beta-tester',
+    template: 'cta',
+    caption: `We zoeken vaders die onze gloednieuwe app willen testen! De Vadercoach app geeft je elke week persoonlijke oefeningen, trainingen en inzichten om een betere vader te worden.
+
+Wat we vragen:
+- Installeer de app en probeer hem uit
+- Geef eerlijke feedback via de app of DM
+
+Hoe doe je mee?
+
+iPhone: open de TestFlight-link in onze bio en je kunt direct aan de slag.
+
+Android: stuur ons een DM met je Gmail-adres, dan voegen we je toe als tester.
+
+De eerste testers krijgen voor altijd gratis toegang. Doe je mee?
+
+#vaderschap #opvoeden #devadercoach #app #beta #testen`,
   },
 ];
 

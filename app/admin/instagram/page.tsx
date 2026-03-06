@@ -191,8 +191,12 @@ export default function InstagramPage() {
       items: [],
     }]);
     setActiveSlide(0);
-    const hashtags = `#vaderschap #opvoeden #devadercoach`;
-    setCaption(`${item.text}\n\n${hashtags}`);
+    if (item.caption) {
+      setCaption(item.caption);
+    } else {
+      const hashtags = `#vaderschap #opvoeden #devadercoach`;
+      setCaption(`${item.text}\n\n${hashtags}`);
+    }
     setSelectedTitle(item.text.slice(0, 50));
     resetStatus();
   }
