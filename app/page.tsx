@@ -646,6 +646,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Populaire Gidsen ─────────────────────────────── */}
+      <section>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-extrabold" style={{ color: 'var(--text)' }}>
+                Gratis opvoedgidsen
+              </h2>
+              <p className="text-sm mt-1" style={{ color: 'var(--text2)' }}>
+                Praktische gidsen voor veelvoorkomende opvoedsituaties
+              </p>
+            </div>
+            <Link
+              href="/gids"
+              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold hover:underline"
+              style={{ color: 'var(--amber-text)' }}
+            >
+              Alle gidsen <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { slug: 'driftbuien-kind', title: 'Driftbuien bij Kinderen', desc: 'Hoe je kalm blijft en wat echt werkt' },
+              { slug: 'kind-luistert-niet', title: 'Kind Luistert Niet?', desc: 'Waarom herhalen niet helpt en wat wel' },
+              { slug: 'grenzen-stellen-kind', title: 'Grenzen Stellen', desc: 'Duidelijk zijn zonder te schreeuwen' },
+              { slug: 'overprikkeld-kind', title: 'Overprikkeld Kind', desc: 'Herkennen en kalmeren in het moment' },
+              { slug: 'straffen-kind-alternatief', title: 'Alternatieven voor Straffen', desc: 'Wat werkt beter dan straf' },
+              { slug: 'druk-kind-tot-rust-brengen', title: 'Druk Kind tot Rust Brengen', desc: 'Wat werkt (en wat niet)' },
+            ].map((g) => (
+              <Link
+                key={g.slug}
+                href={`/gids/${g.slug}`}
+                className="flex items-start gap-3 rounded-xl border p-5 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)' }}
+              >
+                <div className="shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#F59E0B15' }}>
+                  <BookOpen className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="text-sm font-bold mb-0.5" style={{ color: 'var(--text)' }}>{g.title}</h3>
+                  <p className="text-xs" style={{ color: 'var(--text3)' }}>{g.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/gids"
+            className="sm:hidden mt-4 inline-flex items-center gap-1.5 text-sm font-semibold hover:underline"
+            style={{ color: 'var(--amber-text)' }}
+          >
+            Bekijk alle gidsen <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
+
       {/* ── Laatste CTA ──────────────────────────────────── */}
       <section style={{ backgroundColor: 'var(--surface)' }}>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16 text-center">

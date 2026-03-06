@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ArrowRight, BookOpen, ChevronDown, ChevronRight, Download } from 'lucide-react';
-import { getAllGuides, getGuide } from '@/lib/guides';
+import { getAllGuides, getGuide, type Guide } from '@/lib/guides';
 import { getAllCourses, SNELGIDS } from '@/lib/courses';
 import { POSTS_LIST } from '@/lib/blog-posts';
 import EmailGate from '@/components/EmailGate';
@@ -43,6 +43,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const relatedPosts = guide.relatedPosts
     .map((s) => POSTS_LIST.find((p) => p.slug === s))
     .filter(Boolean);
+
+  // Other guides (share a relatedCourse or relatedPost, excluding self)
+  const allGuides = getAllGuides();
+  const otherGuides = allGuides
+    .filter((g) => g.slug !== slug && (
+      g.relatedCourses.some((rc) => guide.relatedCourses.includes(rc)) ||
+      g.relatedPosts.some((rp) => guide.relatedPosts.includes(rp))
+    ))
+    .slice(0, 3);
 
   // Render content: simple markdown to HTML
   const htmlContent = guide.content
@@ -252,6 +261,33 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                   {post.title}
                 </span>
                 <ArrowRight className="h-3.5 w-3.5 shrink-0 ml-auto" style={{ color: 'var(--text3)' }} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+      {/* Other guides */}
+      {otherGuides.length > 0 && (
+        <div className="mt-8">
+          <h3 className="text-lg font-extrabold mb-4" style={{ color: 'var(--text)' }}>
+            Lees ook
+          </h3>
+          <div className="grid gap-3">
+            {otherGuides.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/gids/${g.slug}`}
+                className="flex items-start gap-3 rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)' }}
+              >
+                <div className="shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#F59E0B15' }}>
+                  <BookOpen className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-sm font-bold mb-0.5" style={{ color: 'var(--text)' }}>{g.title}</h4>
+                  <p className="text-xs line-clamp-1" style={{ color: 'var(--text3)' }}>{g.description}</p>
+                </div>
+                <ArrowRight className="h-3.5 w-3.5 shrink-0 mt-1 ml-auto" style={{ color: 'var(--text3)' }} />
               </Link>
             ))}
           </div>

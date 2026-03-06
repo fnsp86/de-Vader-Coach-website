@@ -8,6 +8,7 @@ import EmailGate from '@/components/EmailGate';
 import AffiliateCard from '@/components/AffiliateCard';
 import InBlogCTA from '@/components/InBlogCTA';
 import { getRecommendationsForBlog } from '@/lib/affiliate-products';
+import { getAllGuides } from '@/lib/guides';
 
 const DEFAULT_POST = {
   title: 'Artikel niet gevonden',
@@ -58,6 +59,12 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
     .filter((p) => p.slug !== slug)
     .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
     .slice(0, 3);
+
+  // Find related guides (by checking if this blog slug is in a guide's relatedPosts, or same-category courses)
+  const allGuides = getAllGuides();
+  const relatedGuides = allGuides
+    .filter((g) => g.relatedPosts.includes(slug) || g.relatedCourses.some((rc) => relatedCourse && rc === relatedCourse.slug))
+    .slice(0, 2);
 
   // Prev/next navigation (chronological order)
   const currentIndex = allPosts.findIndex((p) => p.slug === slug);
@@ -268,6 +275,34 @@ export default async function BlogArticle({ params }: { params: Promise<{ slug: 
           </div>
         );
       })()}
+
+      {/* Related guides */}
+      {relatedGuides.length > 0 && (
+        <div className="mt-8">
+          <h3 className="text-lg font-extrabold mb-4" style={{ color: 'var(--text)' }}>
+            Gratis gidsen
+          </h3>
+          <div className="grid gap-3">
+            {relatedGuides.map((g) => (
+              <Link
+                key={g.slug}
+                href={`/gids/${g.slug}`}
+                className="flex items-start gap-3 rounded-xl border p-4 transition-colors hover:border-amber-500/30"
+                style={{ borderColor: 'var(--border)' }}
+              >
+                <div className="shrink-0 w-9 h-9 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#F59E0B15' }}>
+                  <BookOpen className="h-4 w-4" style={{ color: 'var(--amber-text)' }} />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-sm font-bold mb-0.5" style={{ color: 'var(--text)' }}>{g.title}</h4>
+                  <p className="text-xs line-clamp-1" style={{ color: 'var(--text3)' }}>{g.description}</p>
+                </div>
+                <ArrowRight className="h-3.5 w-3.5 shrink-0 mt-1 ml-auto" style={{ color: 'var(--text3)' }} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Related articles */}
       {relatedPosts.length > 0 && (
