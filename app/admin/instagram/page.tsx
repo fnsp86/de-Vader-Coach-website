@@ -96,7 +96,7 @@ export default function InstagramPage() {
 
   // Reel state
   const [postMode, setPostMode] = useState<'feed' | 'reel'>('feed');
-  const [reelTab, setReelTab] = useState<'library' | 'upload' | 'generate'>('library');
+  const [reelTab, setReelTab] = useState<'library' | 'upload' | 'generate' | 'custom'>('library');
   const [reelVideoBlob, setReelVideoBlob] = useState<Blob | null>(null);
   const [reelVideoUrl, setReelVideoUrl] = useState<string | null>(null); // serve URL from backend
   const [reelVideoPreview, setReelVideoPreview] = useState<string | null>(null); // local object URL
@@ -104,6 +104,10 @@ export default function InstagramPage() {
   const [audioSrc, setAudioSrc] = useState<string>('');
   const [audioVolume, setAudioVolume] = useState(0.3);
   const [audioFileName, setAudioFileName] = useState('');
+
+  // Custom reel state
+  const [customTextSlides, setCustomTextSlides] = useState<string[]>(['']);
+  const [customReelMode, setCustomReelMode] = useState<'text' | 'video'>('text');
 
   useEffect(() => {
     if (!password) return;
@@ -695,6 +699,17 @@ export default function InstagramPage() {
               <Upload className="h-3.5 w-3.5" />
               Upload video
             </button>
+            <button
+              onClick={() => setReelTab('custom')}
+              className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors"
+              style={{
+                backgroundColor: reelTab === 'custom' ? '#F59E0B15' : 'var(--bg)',
+                color: reelTab === 'custom' ? '#F59E0B' : 'var(--text3)',
+              }}
+            >
+              <Plus className="h-3.5 w-3.5" />
+              Eigen reel
+            </button>
           </div>
         )}
       </div>
@@ -997,6 +1012,299 @@ export default function InstagramPage() {
                       </label>
                     )}
                   </div>
+                </div>
+              )}
+
+              {reelTab === 'custom' && (
+                /* Custom reel tab - own video or text */
+                <div className="space-y-4">
+                  {/* Mode toggle: text reel or video upload */}
+                  <div
+                    className="rounded-2xl border p-4"
+                    style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <Plus className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                      <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Eigen reel maken</span>
+                    </div>
+                    <div className="flex gap-2 mb-4">
+                      <button
+                        onClick={() => setCustomReelMode('text')}
+                        className="flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded-lg transition-colors"
+                        style={{
+                          backgroundColor: customReelMode === 'text' ? '#F59E0B' : 'var(--bg)',
+                          color: customReelMode === 'text' ? '#000' : 'var(--text3)',
+                        }}
+                      >
+                        <Type className="h-3.5 w-3.5" />
+                        Tekst slides
+                      </button>
+                      <button
+                        onClick={() => setCustomReelMode('video')}
+                        className="flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded-lg transition-colors"
+                        style={{
+                          backgroundColor: customReelMode === 'video' ? '#F59E0B' : 'var(--bg)',
+                          color: customReelMode === 'video' ? '#000' : 'var(--text3)',
+                        }}
+                      >
+                        <Video className="h-3.5 w-3.5" />
+                        Eigen video
+                      </button>
+                    </div>
+
+                    {customReelMode === 'text' && (
+                      <div className="space-y-2">
+                        <p className="text-[11px] mb-2" style={{ color: 'var(--text3)' }}>
+                          Voeg tekst slides toe. Elke slide wordt een scherm in de video.
+                        </p>
+                        {customTextSlides.map((text, i) => (
+                          <div key={i} className="flex items-start gap-2">
+                            <span className="text-[11px] font-bold mt-2.5 shrink-0 w-5 text-right" style={{ color: 'var(--text3)' }}>{i + 1}</span>
+                            <textarea
+                              value={text}
+                              onChange={(e) => {
+                                const updated = [...customTextSlides];
+                                updated[i] = e.target.value;
+                                setCustomTextSlides(updated);
+                              }}
+                              rows={2}
+                              placeholder={i === 0 ? 'Eerste slide (bijv. titel)' : `Slide ${i + 1}`}
+                              className="flex-1 rounded-lg border px-3 py-2 text-sm resize-none outline-none focus:ring-2 focus:ring-amber-500/30"
+                              style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
+                            />
+                            {customTextSlides.length > 1 && (
+                              <button
+                                onClick={() => setCustomTextSlides(customTextSlides.filter((_, j) => j !== i))}
+                                className="mt-2 shrink-0 opacity-40 hover:opacity-100 transition-opacity"
+                                style={{ color: '#EF4444' }}
+                              >
+                                <Trash2 className="h-3.5 w-3.5" />
+                              </button>
+                            )}
+                          </div>
+                        ))}
+                        <button
+                          onClick={() => setCustomTextSlides([...customTextSlides, ''])}
+                          className="flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors hover:bg-amber-500/10"
+                          style={{ color: '#F59E0B' }}
+                        >
+                          <Plus className="h-3 w-3" /> Slide toevoegen
+                        </button>
+                      </div>
+                    )}
+
+                    {customReelMode === 'video' && (
+                      <div>
+                        {reelVideoPreview ? (
+                          <div className="space-y-3">
+                            <video
+                              src={reelVideoPreview}
+                              controls
+                              className="w-full rounded-xl"
+                              style={{ maxHeight: 400 }}
+                            />
+                            <button
+                              onClick={() => {
+                                if (reelVideoPreview) URL.revokeObjectURL(reelVideoPreview);
+                                setReelVideoPreview(null);
+                                setReelVideoUrl(null);
+                                setReelVideoBlob(null);
+                              }}
+                              className="text-xs hover:underline"
+                              style={{ color: 'var(--text3)' }}
+                            >
+                              Andere video kiezen
+                            </button>
+                          </div>
+                        ) : (
+                          <label
+                            className="flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-8 cursor-pointer transition-colors hover:border-amber-500/40"
+                            style={{ borderColor: 'var(--border)' }}
+                          >
+                            <Video className="h-10 w-10 opacity-30" style={{ color: 'var(--text3)' }} />
+                            <span className="text-sm font-medium" style={{ color: 'var(--text3)' }}>
+                              {reelUploading ? 'Uploaden...' : 'Klik om een video te kiezen'}
+                            </span>
+                            <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
+                              .mp4 of .mov, max 50MB, max 90 seconden
+                            </span>
+                            <input
+                              type="file"
+                              accept="video/mp4,video/quicktime,.mp4,.mov"
+                              className="hidden"
+                              disabled={reelUploading}
+                              onChange={(e) => {
+                                const f = e.target.files?.[0];
+                                if (f) handleVideoUpload(f);
+                              }}
+                            />
+                            {reelUploading && <Loader2 className="h-5 w-5 animate-spin" style={{ color: '#F59E0B' }} />}
+                          </label>
+                        )}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* TextReelGenerator for custom text slides */}
+                  {customReelMode === 'text' && customTextSlides.filter((t) => t.trim()).length > 0 && (
+                    <div
+                      className="rounded-2xl border p-4 sm:p-6"
+                      style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                    >
+                      <div className="flex items-center gap-2 mb-3">
+                        <Film className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                        <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>
+                          Video genereren ({customTextSlides.filter((t) => t.trim()).length} slides)
+                        </span>
+                      </div>
+
+                      {/* Music selection for custom text reel */}
+                      <div className="space-y-2 mb-4">
+                        <div className="flex items-center gap-2">
+                          <Music className="h-3.5 w-3.5" style={{ color: 'var(--text3)' }} />
+                          <span className="text-xs font-bold" style={{ color: 'var(--text2)' }}>Muziek</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <label
+                            className="flex items-center gap-2 rounded-lg border px-3 py-1.5 cursor-pointer text-xs transition-colors hover:border-amber-500/30"
+                            style={{ borderColor: audioSrc ? 'var(--border)' : '#F59E0B40', color: 'var(--text2)' }}
+                          >
+                            <input
+                              type="radio"
+                              name="custom-audio"
+                              checked={!audioSrc}
+                              onChange={() => { setAudioSrc(''); setAudioFileName(''); }}
+                              className="accent-amber-500"
+                            />
+                            Geen
+                          </label>
+                          <label
+                            className="flex items-center gap-2 rounded-lg border px-3 py-1.5 cursor-pointer text-xs transition-colors hover:border-amber-500/30"
+                            style={{ borderColor: audioSrc ? '#F59E0B40' : 'var(--border)', color: 'var(--text2)' }}
+                          >
+                            <Upload className="h-3 w-3 shrink-0" />
+                            {audioFileName || 'Upload mp3'}
+                            <input
+                              type="file"
+                              accept="audio/mp3,audio/wav,audio/mpeg,.mp3,.wav"
+                              className="hidden"
+                              onChange={(e) => {
+                                const f = e.target.files?.[0];
+                                if (f) handleAudioUpload(f);
+                              }}
+                            />
+                          </label>
+                        </div>
+                        {audioSrc && (
+                          <div className="flex items-center gap-2 px-1">
+                            <Volume2 className="h-3.5 w-3.5 shrink-0" style={{ color: 'var(--text3)' }} />
+                            <input
+                              type="range"
+                              min={0}
+                              max={100}
+                              value={Math.round(audioVolume * 100)}
+                              onChange={(e) => setAudioVolume(Number(e.target.value) / 100)}
+                              className="flex-1 accent-amber-500"
+                            />
+                            <span className="text-[11px] w-8 text-right" style={{ color: 'var(--text3)' }}>
+                              {Math.round(audioVolume * 100)}%
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
+                      <TextReelGenerator
+                        textSlides={customTextSlides.filter((t) => t.trim())}
+                        audioSrc={audioSrc || undefined}
+                        audioVolume={audioVolume}
+                        onComplete={handleReelGenerated}
+                      />
+                    </div>
+                  )}
+
+                  {/* Caption editor for custom reel */}
+                  {(reelVideoUrl || (customReelMode === 'text' && customTextSlides.filter((t) => t.trim()).length > 0)) && (
+                    <>
+                      <div
+                        className="rounded-2xl border p-4"
+                        style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-xs font-bold" style={{ color: 'var(--text)' }}>Caption</span>
+                          <span className="text-[11px]" style={{ color: caption.length > 2000 ? '#EF4444' : 'var(--text3)' }}>
+                            {caption.length}/2200
+                          </span>
+                        </div>
+                        <textarea
+                          value={caption}
+                          onChange={(e) => setCaption(e.target.value)}
+                          rows={4}
+                          placeholder="Schrijf een caption voor je reel..."
+                          className="w-full rounded-xl border px-4 py-3 text-sm resize-none outline-none focus:ring-2 focus:ring-amber-500/30"
+                          style={{ backgroundColor: 'var(--bg)', borderColor: 'var(--border)', color: 'var(--text2)' }}
+                        />
+                      </div>
+
+                      {/* Facebook toggle */}
+                      <div
+                        className="rounded-2xl border p-4 flex items-center gap-3"
+                        style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                      >
+                        <label className="flex items-center gap-2 cursor-pointer" onClick={() => setPostToFacebook(!postToFacebook)}>
+                          <div className="w-5 h-5 rounded flex items-center justify-center" style={{ backgroundColor: '#1877F220' }}>
+                            <Facebook className="h-3.5 w-3.5" style={{ color: '#1877F2' }} />
+                          </div>
+                          <span className="text-xs font-bold" style={{ color: 'var(--text2)' }}>Facebook</span>
+                          <div
+                            className="w-4 h-4 rounded flex items-center justify-center transition-colors"
+                            style={{ backgroundColor: postToFacebook ? '#F59E0B' : 'var(--border)' }}
+                          >
+                            {postToFacebook && <Check className="h-3 w-3 text-black" />}
+                          </div>
+                        </label>
+                      </div>
+
+                      {/* Action buttons */}
+                      <div className="grid grid-cols-2 gap-2">
+                        <button
+                          onClick={handleScheduleReel}
+                          disabled={!reelVideoUrl || status === 'posting'}
+                          className="flex items-center justify-center gap-2 rounded-xl border py-3 px-3 text-xs sm:text-sm font-bold transition-colors hover:border-amber-500/30 disabled:opacity-40"
+                          style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
+                        >
+                          <Clock className="h-4 w-4" />
+                          Inplannen
+                        </button>
+                        <button
+                          onClick={handlePostReel}
+                          disabled={!reelVideoUrl || status === 'posting'}
+                          className="flex items-center justify-center gap-2 rounded-xl py-3 text-xs sm:text-sm font-bold text-black transition-opacity disabled:opacity-40"
+                          style={{
+                            backgroundColor: status === 'success' ? '#34D399' : '#F59E0B',
+                            opacity: status === 'posting' ? 0.7 : 1,
+                          }}
+                        >
+                          {status === 'posting' ? (
+                            <><Loader2 className="h-4 w-4 animate-spin" />Posten...</>
+                          ) : status === 'success' ? (
+                            <><Check className="h-4 w-4" />Gepost!</>
+                          ) : (
+                            <><Send className="h-4 w-4" />Post Reel</>
+                          )}
+                        </button>
+                      </div>
+
+                      {status === 'error' && errorMsg && (
+                        <div
+                          className="flex items-start gap-2 rounded-xl border px-4 py-3"
+                          style={{ borderColor: '#EF444440', backgroundColor: '#EF444410' }}
+                        >
+                          <AlertCircle className="h-4 w-4 shrink-0 mt-0.5" style={{ color: '#EF4444' }} />
+                          <p className="text-sm" style={{ color: '#EF4444' }}>{errorMsg}</p>
+                        </div>
+                      )}
+                    </>
+                  )}
                 </div>
               )}
 
