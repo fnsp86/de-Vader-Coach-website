@@ -56,6 +56,14 @@ export default function AdminAuth({ children }: { children: React.ReactNode }) {
         localStorage.setItem('admin_password', pw);
         if (totp) localStorage.setItem('admin_totp', totp);
         setSession({ password: pw, totp });
+      } else if (res.status === 429) {
+        // Rate limited - trust the stored credentials if they exist
+        const stored = localStorage.getItem('admin_password');
+        if (stored === pw) {
+          setSession({ password: pw, totp });
+        } else {
+          setError('Te veel pogingen. Probeer het over een minuut opnieuw.');
+        }
       } else {
         localStorage.removeItem('admin_password');
         localStorage.removeItem('admin_totp');

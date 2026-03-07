@@ -18,8 +18,8 @@ export default function AdminNav() {
   const pathname = usePathname();
 
   function handleLogout() {
-    sessionStorage.removeItem('admin_password');
-    sessionStorage.removeItem('admin_totp');
+    localStorage.removeItem('admin_password');
+    localStorage.removeItem('admin_totp');
     window.location.href = '/admin';
   }
 

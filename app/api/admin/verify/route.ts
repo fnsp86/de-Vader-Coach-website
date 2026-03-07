@@ -3,8 +3,8 @@ import { verifyAdminLogin, unauthorizedResponse, is2FAEnabled } from '@/lib/admi
 import { checkRateLimit } from '@/lib/rate-limit';
 
 export async function POST(request: NextRequest) {
-  // Rate limit login attempts: max 5 per minute
-  const rateLimited = checkRateLimit(request, { maxRequests: 5, windowMs: 60_000 });
+  // Rate limit login attempts: max 20 per minute (navigating admin pages re-verifies)
+  const rateLimited = checkRateLimit(request, { maxRequests: 20, windowMs: 60_000 });
   if (rateLimited) return rateLimited;
 
   if (!(await verifyAdminLogin(request))) {

@@ -764,7 +764,7 @@
 
   <!-- VIDEO TAB -->
   <div class="panel" id="tab-video">
-    <p class="subtitle" style="margin-bottom:8px">Genereer prompts voor AI video (Runway, Kling, Sora, Minimax, Pika)</p>
+    <p class="subtitle" style="margin-bottom:8px">Genereer ultra-gedetailleerde prompts voor AI video (Veo, Runway, Kling, Sora)</p>
 
     <p class="subtitle" style="margin-bottom:8px">Snelle presets</p>
     <div class="presets">
@@ -780,145 +780,157 @@
       <div class="preset" onclick="applyVideoPreset('verjaardag')">Verjaardag</div>
       <div class="preset" onclick="applyVideoPreset('regen')">Regen</div>
       <div class="preset" onclick="applyVideoPreset('dansen')">Samen dansen</div>
+      <div class="preset" onclick="applyVideoPreset('slaapvallen')">In slaap vallen</div>
+      <div class="preset" onclick="applyVideoPreset('vliegtuigje')">Vliegtuigje</div>
+      <div class="preset" onclick="applyVideoPreset('tekenen')">Samen tekenen</div>
+      <div class="preset" onclick="applyVideoPreset('voetbal')">Voetballen</div>
     </div>
 
     <div class="grid">
-      <div class="section-title">Karakter <span class="badge">wie</span></div>
+      <div class="section-title">Karakter <span class="badge">wie - gedetailleerd</span></div>
 
       <div class="field span3">
-        <label>Persoon beschrijving (uit Consistent Karakter of handmatig)</label>
-        <textarea id="vid_person" rows="2" placeholder="Bijv: 32-year-old Dutch man, short dark brown hair, stubble, warm brown eyes, athletic build">32-year-old Dutch Caucasian man, fair skin, short dark brown hair, medium stubble, warm brown eyes, defined jawline, athletic build</textarea>
+        <label>Persoon beschrijving (hoe gedetailleerder, hoe realistischer)</label>
+        <textarea id="vid_person" rows="3" placeholder="Bijv: 32-year-old Dutch man, short dark brown hair, stubble, warm brown eyes, athletic build, visible laugh lines around eyes, natural skin texture with subtle freckles on nose">32-year-old Dutch Caucasian man, fair skin with natural texture and subtle pores visible, short dark brown hair with slight wave, medium stubble with natural growth pattern, warm brown eyes with visible iris detail, defined jawline, athletic build, visible laugh lines around eyes when smiling, natural eyebrow shape</textarea>
       </div>
 
       <div class="field">
-        <label>Kleding</label>
-        <input id="vid_clothing" value="casual grey henley shirt, dark jeans" />
+        <label>Kleding (texturen noemen)</label>
+        <input id="vid_clothing" value="slightly worn-in grey henley shirt with visible fabric texture, dark indigo jeans, sleeves pushed up showing forearms" />
       </div>
 
       <div class="field">
         <label>Kind</label>
         <select id="vid_child">
-          <option value="his 4-year-old daughter in a pink dress">Dochter (4 jaar)</option>
-          <option value="his 3-year-old son in a striped t-shirt" selected>Zoon (3 jaar)</option>
-          <option value="his 6-year-old son in jeans and hoodie">Zoon (6 jaar)</option>
-          <option value="his 8-year-old daughter">Dochter (8 jaar)</option>
-          <option value="his toddler son, about 2 years old">Peuter (2 jaar)</option>
-          <option value="his baby, about 8 months old">Baby (8 maanden)</option>
-          <option value="his teenage son, about 14">Tiener zoon (14)</option>
-          <option value="his teenage daughter, about 13">Tiener dochter (13)</option>
+          <option value="his 4-year-old daughter with light brown curly hair in a soft pink cotton dress, chubby cheeks, big curious eyes">Dochter (4 jaar)</option>
+          <option value="his 3-year-old son with messy blond hair in a striped cotton t-shirt and little jeans, round face, bright blue eyes" selected>Zoon (3 jaar)</option>
+          <option value="his 6-year-old son with short brown hair in jeans and a hoodie, gap-toothed smile, energetic">Zoon (6 jaar)</option>
+          <option value="his 8-year-old daughter with a ponytail, wearing a colorful sweater, expressive face">Dochter (8 jaar)</option>
+          <option value="his toddler son, about 2 years old, chubby legs, diaper visible under shorts, wispy hair, wobbly walk">Peuter (2 jaar)</option>
+          <option value="his baby, about 8 months old, round face, drool on chin, tiny grasping hands, sitting supported">Baby (8 maanden)</option>
+          <option value="his teenage son, about 14, lanky build, starting to grow, messy hair, trying to look cool">Tiener zoon (14)</option>
+          <option value="his teenage daughter, about 13, long hair, braces visible when smiling">Tiener dochter (13)</option>
           <option value="">Geen kind (solo)</option>
         </select>
       </div>
 
       <div class="field">
-        <label>Emotie / expressie</label>
+        <label>Emotie / microexpressies</label>
         <select id="vid_emotion">
-          <option value="warm smile, genuine happiness" selected>Warm / blij</option>
-          <option value="laughing out loud, pure joy">Hard lachen</option>
-          <option value="tender, emotional, loving">Ontroerd / liefdevol</option>
-          <option value="focused and patient">Gefocust / geduldig</option>
-          <option value="playful and silly">Speels / gek</option>
-          <option value="peaceful, calm, content">Rustig / vredig</option>
-          <option value="tired but smiling, exhausted love">Moe maar blij</option>
-          <option value="proud, beaming">Trots</option>
+          <option value="warm genuine smile that reaches his eyes, slight crow's feet, relaxed jaw, natural breathing" selected>Warm / blij</option>
+          <option value="laughing out loud with head tilted back slightly, visible teeth, eyes squinting from laughter, chest rising with each laugh">Hard lachen</option>
+          <option value="tender emotional expression, slightly glistening eyes, gentle closed-lip smile, chin slightly trembling with emotion">Ontroerd / liefdevol</option>
+          <option value="focused patient expression, slight furrow between brows, calm steady gaze, relaxed shoulders">Gefocust / geduldig</option>
+          <option value="playful silly expression, exaggerated wide eyes, goofy grin, animated hand gestures">Speels / gek</option>
+          <option value="peaceful content expression, soft half-smile, heavy relaxed eyelids, slow deep breathing visible">Rustig / vredig</option>
+          <option value="exhausted but loving, dark circles under eyes, messy hair, tired smile that still conveys deep love">Moe maar blij</option>
+          <option value="beaming with pride, chest slightly puffed, wide smile, eyes bright and locked on child, nodding slowly">Trots</option>
+          <option value="surprised delight, eyebrows raised, mouth open in amazed smile, reaching forward instinctively">Verrast / blij</option>
         </select>
       </div>
 
-      <div class="section-title">Scene <span class="badge">wat + waar</span></div>
+      <div class="section-title">Scene <span class="badge">actie + micro-details</span></div>
 
       <div class="field span2">
         <label>Actie / scenario</label>
         <select id="vid_action">
-          <option value="Father walks through front door, drops his bag, kneels down as child runs into his arms for a tight hug" selected>Thuiskomen - kind rent naar hem toe</option>
-          <option value="Father and child wrestling playfully on living room floor, rolling around, both laughing">Stoeien op de grond</option>
-          <option value="Father reading a picture book to child on his lap, turning pages, child pointing at pictures">Voorlezen op schoot</option>
-          <option value="Father and child walking hand in hand through a forest path, child skipping alongside">Hand in hand wandelen</option>
-          <option value="Father and child cooking together, child stirring a bowl, flour on their faces, messy and fun">Samen koken / bakken</option>
-          <option value="Father kneeling at child's eye level, gently wiping tears, holding child's hands">Kind troosten</option>
-          <option value="Father running alongside child learning to ride a bicycle, letting go, child pedaling on their own">Fietsen leren</option>
-          <option value="Father carrying child on his shoulders walking through park, child pointing at something, both smiling">Op schouders door het park</option>
-          <option value="Father and child building a sandcastle on the beach, waves in background, golden light">Zandkasteel bouwen</option>
-          <option value="Father lifting child in the air, spinning slowly, child arms spread like airplane, pure joy">Kind optillen / vliegtuigje</option>
-          <option value="Father and child sitting on couch, child falls asleep on father's chest, father gently strokes child's hair">In slaap vallen op de bank</option>
-          <option value="Father teaching child to kick a soccer ball in the backyard, celebrating when child scores">Samen voetballen</option>
-          <option value="Father braiding daughter's hair at kitchen table, focused and gentle, daughter sitting patiently">Haar vlechten</option>
-          <option value="Morning routine: father making breakfast, child sitting at table, pouring cereal, morning sunlight">Ochtendroutine</option>
-          <option value="Father and child dancing together in living room, father holding child's hands, spinning and laughing">Samen dansen</option>
-          <option value="Father pushing child on swing in park, child leaning back laughing, autumn leaves falling">Schommelen in het park</option>
-          <option value="Father and child running through rain puddles, splashing, raincoats on, laughing together">Door de regen rennen</option>
-          <option value="Father blowing out birthday candles with child, cake on table, balloons in background">Verjaardag vieren</option>
+          <option value="Father pushes open the front door, drops his messenger bag on the floor with a soft thud. He kneels down and opens his arms wide as his child sprints across the hallway with arms outstretched, crashing into a tight embrace. Father wraps both arms around the child, lifts slightly, and buries his face in the child's hair" selected>Thuiskomen - kind rent naar hem toe</option>
+          <option value="Father and child wrestling playfully on the living room floor, father pretending to be pinned down while child climbs on top, both rolling sideways, child's hair bouncing with each movement, father tickling child's belly, feet kicking in the air">Stoeien op de grond</option>
+          <option value="Father sitting in an armchair with child curled up on his lap, slowly turning the pages of a colorful picture book, child's small finger pointing at an illustration, father leaning down to whisper something, child looking up with wide eyes, both sharing a quiet intimate moment">Voorlezen op schoot</option>
+          <option value="Father and child walking hand in hand through a winding forest path, child occasionally skipping and swinging on father's arm, leaves crunching underfoot, child bending down to pick up a stick, father waiting patiently, then continuing together">Hand in hand wandelen</option>
+          <option value="Father and child standing at the kitchen counter, child on a step stool, both covered in flour, child stirring a mixing bowl with an oversized wooden spoon, batter splashing, father wiping flour from child's nose with his thumb, both erupting in laughter">Samen koken / bakken</option>
+          <option value="Father kneeling at child's eye level on the floor, gently cupping child's face with both hands, thumbs carefully wiping away tears from cheeks, child's lower lip still trembling, father pulling child into a gentle hug, hand cradling the back of child's head">Kind troosten</option>
+          <option value="Father jogging alongside a wobbling bicycle, one hand on the back of the seat, child gripping handlebars with white knuckles, father gradually letting go, hand hovering just behind, child suddenly pedaling smoothly on their own, father stopping and throwing his fists in the air in celebration">Fietsen leren</option>
+          <option value="Father with child sitting on his shoulders, child's small hands gripping father's hair, walking through a sun-dappled park, child pointing excitedly at something in the distance, father tilting his head up to look at child, both laughing, leaves drifting around them">Op schouders door het park</option>
+          <option value="Father and child on hands and knees in wet sand, carefully patting sand into a bucket-shaped tower, child pouring water from a small cup into a moat, wave rushing up and lapping at their feet, both jumping back and laughing, then returning to build">Zandkasteel bouwen</option>
+          <option value="Father lifting child high above his head with both arms extended, spinning slowly in place, child's arms spread wide like airplane wings, hair and clothes catching the wind, pure unrestrained joy on both faces, father bringing child back down into a tight chest hug">Kind optillen / vliegtuigje</option>
+          <option value="Father and child on the couch, TV flickering soft light on their faces, child gradually slumping against father's chest, eyes fluttering closed, father noticing, carefully shifting to support child's head, then gently stroking child's hair with one hand, breathing slowly, both still">In slaap vallen op de bank</option>
+          <option value="Father and child in the backyard, father gently kicking a soccer ball that rolls to the child, child winding up for a big kick that goes sideways, both laughing, father retrieving the ball, demonstrating the kick, child trying again and this time the ball hits the makeshift goal, father running to child with arms raised">Samen voetballen</option>
+          <option value="Father sitting behind daughter at the kitchen table, carefully separating hair into three sections, daughter sitting very still with occasional impatient fidgets, father's large hands working surprisingly gently with small hair ties, checking the result, daughter turning to show the braid with a proud smile">Haar vlechten</option>
+          <option value="Morning light streaming through kitchen window, father in pajama bottoms and t-shirt pouring cereal into two bowls, child climbing onto a chair, sleepy face with bed-head hair, father sliding a bowl across the table, both eating together in comfortable morning silence, father yawning">Ochtendroutine</option>
+          <option value="Father holding child's hands in the living room, music implied by their rhythm, father stepping side to side as child stands on father's feet, both swaying together, father spinning child outward then pulling back, child giggling and dizzy, stumbling back into father's arms">Samen dansen</option>
+          <option value="Father standing behind a swing, pushing with measured steady pushes, child leaning back at the peak of each arc with legs extended, hair flowing backward, leaves swirling in their wake, father smiling as he watches the child soar higher each time">Schommelen in het park</option>
+          <option value="Father and child in matching yellow raincoats, running hand in hand down a wet sidewalk, child deliberately jumping into a puddle with both feet, water spraying outward in a fan, father jumping into the next puddle in solidarity, water splashing up their legs, both heads thrown back laughing">Door de regen rennen</option>
+          <option value="Table set with a birthday cake glowing with lit candles, father and child leaning in together, cheeks puffed out, blowing candles simultaneously, smoke curling upward, child looking up at father for approval, father nodding and clapping, balloons bobbing in the background">Verjaardag vieren</option>
+          <option value="Father and child lying on their stomachs on the floor, colored pencils scattered around, both drawing on a large sheet of paper, child showing their drawing to father, father responding with exaggerated amazement, pointing at details, child beaming with pride">Samen tekenen</option>
         </select>
       </div>
 
       <div class="field">
-        <label>Locatie</label>
+        <label>Locatie (omgevingsdetails)</label>
         <select id="vid_location">
-          <option value="modern cozy living room, warm interior" selected>Woonkamer</option>
-          <option value="bright modern kitchen, morning light">Keuken</option>
-          <option value="cozy bedroom, soft lamp light">Slaapkamer</option>
-          <option value="sunlit backyard garden, green grass">Achtertuin</option>
-          <option value="forest path, dappled sunlight through trees">Bos</option>
-          <option value="sandy beach, ocean waves, golden light">Strand</option>
-          <option value="local park, green trees, playground">Park</option>
-          <option value="quiet suburban street, autumn leaves">Straat / buurt</option>
-          <option value="open field, wide horizon, sunset sky">Open veld / zonsondergang</option>
+          <option value="modern cozy living room with warm wood floors, linen sofa with throw pillows, soft rug, family photos on shelves, houseplant in corner, natural light from large windows" selected>Woonkamer</option>
+          <option value="bright Scandinavian-style kitchen, white cabinets, wooden countertops, morning light casting long shadows across tiled floor, coffee mug on counter, fruit bowl visible">Keuken</option>
+          <option value="cozy child's bedroom, soft nightlight glow, stuffed animals on bed, star projector casting faint patterns on ceiling, curtains half-drawn">Slaapkamer</option>
+          <option value="sunlit backyard garden with green grass, wooden fence with climbing ivy, a few toys scattered on the lawn, dappled shade from a tree">Achtertuin</option>
+          <option value="autumn forest path, tall beech trees with golden-orange canopy, dappled sunlight filtering through leaves, fallen leaves covering the path, faint mist between trees">Bos (herfst)</option>
+          <option value="wide sandy beach at golden hour, gentle ocean waves rolling in, wet sand reflecting sky colors, seashells scattered, distant horizon where sea meets orange sky">Strand</option>
+          <option value="Dutch neighborhood park, mature trees with green canopy, gravel path, wooden bench, playground visible in background, birds in trees, other families in soft focus distance">Park</option>
+          <option value="quiet Dutch suburban street lined with brick houses, autumn leaves on sidewalk, bicycle parked against a tree, soft overcast sky with occasional sun breaks">Straat / buurt</option>
+          <option value="open meadow with tall grass swaying in gentle breeze, wide horizon, dramatic sunset sky with orange and purple clouds, silhouette potential">Open veld / zonsondergang</option>
+          <option value="cozy indoor blanket fort, fairy lights draped inside, pillows and blankets, flashlight creating warm glow, intimate enclosed space">Binnenkamp / fort</option>
         </select>
       </div>
 
-      <div class="section-title">Video techniek <span class="badge">camera + stijl</span></div>
+      <div class="section-title">Video techniek <span class="badge">camera + stijl + realisme</span></div>
 
       <div class="field">
-        <label>Camerabewging</label>
+        <label>Camerabeweging</label>
         <select id="vid_camera_move">
-          <option value="Slow dolly in, gradually moving closer" selected>Dolly in (langzaam dichterbij)</option>
-          <option value="Slow dolly out, gradually pulling back to reveal scene">Dolly out (terugtrekken)</option>
-          <option value="Smooth tracking shot following the subjects from the side">Tracking shot (zijwaarts)</option>
-          <option value="Orbiting shot, slowly circling around the subjects">Orbit (rondom draaien)</option>
-          <option value="Static camera, no movement, locked off tripod shot">Statisch (geen beweging)</option>
-          <option value="Slow crane shot moving upward, revealing the environment">Crane up (omhoog)</option>
-          <option value="Handheld camera, subtle natural movement, documentary feel">Handheld (documentaire)</option>
-          <option value="Push in close-up on faces, intimate detail">Push-in close-up</option>
-          <option value="Slow-motion capture at 120fps">Slow motion</option>
-          <option value="Steadicam walking shot, following from behind">Steadicam (volgend)</option>
+          <option value="Slow smooth dolly in, gradually moving closer to the subjects, maintaining eye-level framing, subtle focus pull to faces" selected>Dolly in (langzaam dichterbij)</option>
+          <option value="Slow dolly out, gradually pulling back from close-up to wide shot revealing the full scene and environment">Dolly out (terugtrekken)</option>
+          <option value="Smooth lateral tracking shot following the subjects at walking pace, maintaining consistent distance, slight parallax with background">Tracking shot (zijwaarts)</option>
+          <option value="Slow 180-degree orbiting shot circling around the subjects, maintaining them in center frame, background smoothly rotating">Orbit (rondom draaien)</option>
+          <option value="Locked-off static tripod shot, no camera movement, steady composition allowing the action to unfold naturally within the frame">Statisch (geen beweging)</option>
+          <option value="Slow crane shot rising upward from close-up to elevated wide shot, gradually revealing the environment and context">Crane up (omhoog)</option>
+          <option value="Handheld camera with subtle organic micro-movements, breathing-like rhythm, documentary-feel authenticity, slightly imperfect framing">Handheld (documentaire)</option>
+          <option value="Slow push-in to extreme close-up on faces, capturing micro-expressions, pores, eye reflections, intimate emotional detail">Push-in close-up</option>
+          <option value="120fps slow-motion capture, every detail stretched in time, hair moving in slow waves, fabric rippling, dust particles suspended in light rays">Slow motion (120fps)</option>
+          <option value="Steadicam following from behind at shoulder height, smooth gliding movement, revealing the path ahead as subjects walk">Steadicam (volgend)</option>
+          <option value="Low-angle shot from near ground level looking up at subjects, emphasizing scale and creating a heroic framing">Laag perspectief</option>
+          <option value="Over-the-shoulder shot, shallow focus on child's face with father's shoulder and head softly blurred in foreground">Over-the-shoulder</option>
         </select>
       </div>
 
       <div class="field">
-        <label>Licht</label>
+        <label>Licht (fysiek gedetailleerd)</label>
         <select id="vid_lighting">
-          <option value="warm golden hour sunlight, long soft shadows" selected>Golden hour</option>
-          <option value="soft natural daylight, diffused and even">Zacht daglicht</option>
-          <option value="warm interior lamp light, cozy ambiance">Warm lamplicht</option>
-          <option value="bright morning light through windows">Ochtendlicht</option>
-          <option value="dramatic side lighting, cinematic contrast">Dramatisch zijlicht</option>
-          <option value="overcast outdoor light, soft and moody">Bewolkt</option>
-          <option value="backlit, sun behind subjects, rim light glow">Tegenlicht</option>
-          <option value="rainy day, diffused grey light, wet reflections">Regenlicht</option>
+          <option value="warm golden hour sunlight streaming in at 15-degree angle, long soft amber shadows on skin, volumetric light rays visible through atmosphere, rim light separating subjects from background" selected>Golden hour</option>
+          <option value="soft diffused natural daylight, even illumination without harsh shadows, subtle catchlights in eyes, true-to-life skin tones, naturalistic color rendition">Zacht daglicht</option>
+          <option value="warm tungsten interior lamp light, cozy amber ambiance, soft shadows on walls, practical light sources visible in frame, warm skin glow">Warm lamplicht</option>
+          <option value="crisp morning light through east-facing windows, sharp light shafts with visible dust particles, half the room in warm light half in cool shadow, steam rising from coffee visible in light beam">Ochtendlicht</option>
+          <option value="dramatic Rembrandt-style side lighting, one side of face brightly lit with triangle of light on shadow cheek, deep rich shadows, cinematic contrast ratio, moody and emotional">Dramatisch zijlicht</option>
+          <option value="flat overcast outdoor light, soft and moody, muted tones, no hard shadows, gentle gradations on skin, diffused and melancholic atmosphere">Bewolkt</option>
+          <option value="strong backlit setup, sun directly behind subjects creating bright rim light halo around hair and shoulders, faces in gentle shadow filled by natural bounce, lens flare streaks">Tegenlicht</option>
+          <option value="rainy day light, diffused grey sky, wet surfaces creating reflections and specular highlights, water droplets catching light, moody atmosphere with warm interior glow from windows">Regenlicht</option>
+          <option value="dappled forest light filtering through leaves, creating moving patterns of light and shadow on faces and ground, green-tinted ambient fill from canopy">Boslicht (dappled)</option>
         </select>
       </div>
 
       <div class="field">
-        <label>Videostijl</label>
+        <label>Videostijl / lens</label>
         <select id="vid_style">
-          <option value="cinematic film look, shallow depth of field, anamorphic lens flare, 24fps" selected>Cinematisch</option>
-          <option value="documentary style, handheld, raw and authentic, natural grain">Documentaire</option>
-          <option value="warm lifestyle commercial, bright and polished, soft focus">Lifestyle commercial</option>
-          <option value="dreamy ethereal look, soft glow, lens flare, overexposed highlights">Dromerig / ethereal</option>
-          <option value="moody indie film, desaturated, high contrast, filmic grain">Indie film / moody</option>
-          <option value="home video aesthetic, slightly shaky, nostalgic, warm color cast">Home video / nostalgisch</option>
-          <option value="clean modern commercial, steady, precise, vibrant colors">Modern commercial</option>
+          <option value="cinematic film look shot on ARRI Alexa with Cooke S4 lenses, shallow depth of field at f/1.8, subtle anamorphic lens characteristics, organic film grain, 24fps, 2.39:1 sensibility even in vertical format" selected>Cinematisch (ARRI look)</option>
+          <option value="documentary style shot on handheld Sony FX6, raw and authentic, natural grain, slightly imperfect focus pulls, unscripted energy, observational">Documentaire</option>
+          <option value="warm lifestyle commercial aesthetic, bright and polished, shot on RED Komodo, soft highlight rolloff, clean skin tones, aspirational but relatable">Lifestyle commercial</option>
+          <option value="dreamy ethereal look, vintage Helios 44-2 lens with swirly bokeh, soft glow, lens flare, slightly overexposed highlights bleeding into shadows, romantic">Dromerig / ethereal</option>
+          <option value="moody indie film aesthetic, desaturated color palette, high contrast, 35mm film grain, pushed two stops, Kodak 5219 color science, intimate and raw">Indie film / moody</option>
+          <option value="authentic home video aesthetic, Super 8mm film simulation, visible grain and slight color shifting, warm nostalgic color cast, slightly overexposed, imperfect framing">Home video / nostalgisch</option>
+          <option value="clean modern commercial, steady gimbal movement, precise framing, vibrant true-to-life colors, shot on Sony Venice 2, clean highlight handling">Modern commercial</option>
+          <option value="Kodak Portra 400 film emulation, characteristic warm skin tones with slight magenta cast in shadows, soft creamy highlights, organic grain structure, timeless quality">Film emulatie (Portra)</option>
         </select>
       </div>
 
       <div class="field">
         <label>Kleurenpalet</label>
         <select id="vid_colors">
-          <option value="warm earth tones, amber, golden, honey" selected>Warm / amber</option>
-          <option value="natural muted tones, sage green, cream, soft">Natuurlijk / groen</option>
-          <option value="bright and airy, white, soft pastels">Licht / pastel</option>
-          <option value="rich moody tones, deep blues, shadows">Donker / moody</option>
-          <option value="golden sunset tones, orange, warm highlights">Zonsondergang</option>
-          <option value="faded vintage film, slightly desaturated, nostalgic">Vintage / vervaagd</option>
+          <option value="warm earth tones with amber highlights, golden honey midtones, deep brown shadows, skin rendered in warm peach and bronze" selected>Warm / amber</option>
+          <option value="natural muted tones, sage green and cream, soft desaturated palette, organic warmth without heavy color grading">Natuurlijk / groen</option>
+          <option value="bright and airy palette, lifted shadows, soft pastels in highlights, clean whites, gentle color contrast">Licht / pastel</option>
+          <option value="rich moody tones, deep navy blues, teal shadows, warm skin tones popping against cool background, Trent Parke-inspired">Donker / moody</option>
+          <option value="golden sunset palette, deep orange and amber, purple undertones in shadows, warm gradient across entire frame">Zonsondergang</option>
+          <option value="faded vintage film palette, slightly desaturated, lifted black point, nostalgic amber tint in highlights, muted greens">Vintage / vervaagd</option>
+          <option value="autumn palette, rich burnt orange, deep red, golden yellow, brown earth tones against soft blue sky">Herfst</option>
         </select>
       </div>
 
@@ -929,6 +941,7 @@
           <option value="5 seconds" selected>5 sec</option>
           <option value="8 seconds">8 sec</option>
           <option value="10 seconds">10 sec</option>
+          <option value="16 seconds">16 sec (Veo)</option>
         </select>
       </div>
 
@@ -942,37 +955,67 @@
         </select>
       </div>
 
+      <div class="section-title">Realisme boost <span class="badge">het verschil</span></div>
+
+      <div class="field">
+        <label>Fysiek realisme</label>
+        <select id="vid_physics">
+          <option value="photorealistic natural physics: fabric drapes and moves with body momentum, hair responds to movement with realistic weight, skin catches and diffuses light naturally showing subsurface scattering, natural motion blur on fast movements" selected>Volledig realistisch</option>
+          <option value="hyper-detailed physics: individual hair strands catching backlight, visible skin pores and texture in close-ups, cloth simulation showing fabric weight and friction, micro-expressions with muscle fiber movement visible under skin">Hyper-detail</option>
+          <option value="cinematic physics with slight stylization: enhanced rim lighting on hair, slightly smoothed skin texture while maintaining realism, cloth moves with cinematic weight, hair has volume and body">Cinematisch gestileerd</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Omgevingsdetails</label>
+        <select id="vid_environment">
+          <option value="volumetric atmosphere with visible dust particles floating in light beams, subtle heat haze, natural ambient sounds implied by the scene, lived-in environment with realistic clutter and imperfections" selected>Levendige omgeving</option>
+          <option value="perfectly clean environment with intentional set decoration, every prop placed for visual storytelling, controlled depth of field separating subject from background">Gecontroleerd / schoon</option>
+          <option value="atmospheric haze and bokeh in background, foreground elements creating depth layers, background action happening in soft focus, environmental storytelling through visible details">Diepte en sfeer</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Bewegingskwaliteit</label>
+        <select id="vid_motion">
+          <option value="natural human kinematics with realistic weight transfer, subtle body sway when standing, breathing visible in torso movement, natural blink rate, micro-movements in hands and fingers" selected>Natuurlijk (beste voor realisme)</option>
+          <option value="slightly slowed graceful movement, every gesture flowing into the next, cinematic pacing where moments hang in the air, dreamlike but grounded">Vloeiend / cinematisch</option>
+          <option value="energetic dynamic movement with natural momentum, quick transitions, playful bouncing energy, candid spontaneous feeling">Energiek / spontaan</option>
+        </select>
+      </div>
+
       <div class="section-title">Extra <span class="badge">vrij veld</span></div>
 
       <div class="field span3">
         <label>Extra details / scenario (Nederlands of Engels)</label>
-        <textarea id="vid_extra" placeholder="Bijv: hond rent mee, herfstbladeren vallen, regen op het raam, kind lacht hard..."></textarea>
+        <textarea id="vid_extra" rows="3" placeholder="Bijv: hond rent mee, herfstbladeren vallen, regen op het raam, kind lacht hard, stoom van koffie, speelgoed op de grond..."></textarea>
       </div>
 
       <div class="field span3">
         <label>Negatieve prompt</label>
-        <textarea id="vid_negative">no text, no watermark, no logo, no morphing faces, no extra limbs, no blurry, no glitching, no unnatural movement</textarea>
+        <textarea id="vid_negative">no text overlays, no watermarks, no logos, no morphing or warping faces, no extra fingers or limbs, no blurry or out-of-focus subjects, no glitching or artifacts, no unnatural robotic movement, no uncanny valley expressions, no plastic skin texture, no floating objects, no sudden cuts</textarea>
       </div>
     </div>
 
     <div class="btn-row">
-      <button class="btn-primary" onclick="generateVideoPrompt()">Genereer Video Prompt</button>
+      <button class="btn-primary" onclick="generateVideoVeo()" style="background:#4285F4">Veo (Gemini)</button>
+      <button class="btn-primary" onclick="generateVideoPrompt()">Algemeen</button>
       <button class="btn-secondary" onclick="randomizeVideo()">Willekeurig</button>
-      <button class="btn-secondary" onclick="generateVideoRunway()">Runway format</button>
-      <button class="btn-secondary" onclick="generateVideoKling()">Kling format</button>
-      <button class="btn-secondary" onclick="generateVideoSora()">Sora format</button>
+      <button class="btn-secondary" onclick="generateVideoRunway()">Runway</button>
+      <button class="btn-secondary" onclick="generateVideoKling()">Kling</button>
+      <button class="btn-secondary" onclick="generateVideoSora()">Sora</button>
     </div>
 
-    <div id="vid_output" class="output-area empty">Klik op 'Genereer Video Prompt' om te beginnen...</div>
+    <div id="vid_output" class="output-area empty">Klik op een knop om een prompt te genereren. Veo (Gemini) geeft de meest gedetailleerde prompts.</div>
     <div class="char-badge" id="vid_charcount"></div>
 
     <div class="tip" style="margin-top:16px">
       <strong>Video AI tips:</strong><br>
-      - <strong>Runway Gen-3/4:</strong> Korte, beschrijvende prompts werken het best. Focus op beweging en sfeer.<br>
-      - <strong>Kling:</strong> Gedetailleerde prompts met camera-instructies. Ondersteunt image-to-video.<br>
-      - <strong>Sora:</strong> Langere narratieve prompts. Beschrijf het verhaal, niet alleen het beeld.<br>
-      - <strong>Minimax/Hailuo:</strong> Simpele prompts, focus op een enkele actie.<br>
-      - Upload je beste AI-foto als startframe voor consistentie.
+      - <strong>Veo (Gemini):</strong> Reageert het best op rijke, gelaagde beschrijvingen met fysieke details, lichtinteractie op huid, en specifieke camerabewegingen. Noem texturen, materialen en micro-expressies.<br>
+      - <strong>Runway Gen-3:</strong> Korte, krachtige prompts. Focus op een enkele duidelijke beweging en sfeer. Gebruik first-frame foto voor consistentie.<br>
+      - <strong>Kling 1.6+:</strong> Gedetailleerde prompts met expliciete camera-instructies. Beste voor image-to-video met gezichtsconsistentie.<br>
+      - <strong>Sora:</strong> Narratieve beschrijvingen alsof je een filmscene schrijft. Beschrijf de progressie van de actie.<br>
+      - <strong>Pro tip:</strong> Upload altijd je beste AI-foto als startframe. Dit is het belangrijkste voor karakterconsistentie.
     </div>
   </div>
 
@@ -1567,18 +1610,22 @@ function translateExtra(text) {
 
 // --- VIDEO PROMPT GENERATOR ---
 const videoPresets = {
-  thuiskomen: { vid_action: 'Father walks through front door, drops his bag, kneels down as child runs into his arms for a tight hug', vid_location: 'modern cozy living room, warm interior', vid_lighting: 'warm interior lamp light, cozy ambiance', vid_emotion: 'warm smile, genuine happiness', vid_camera_move: 'Slow dolly in, gradually moving closer', vid_extra: 'front door opening, warm light from hallway, child running with arms wide open' },
-  stoeien: { vid_action: 'Father and child wrestling playfully on living room floor, rolling around, both laughing', vid_location: 'modern cozy living room, warm interior', vid_lighting: 'bright morning light through windows', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Handheld camera, subtle natural movement, documentary feel', vid_extra: 'pillows on the floor, child climbing on dad, pure fun' },
-  voorlezen: { vid_action: 'Father reading a picture book to child on his lap, turning pages, child pointing at pictures', vid_location: 'cozy bedroom, soft lamp light', vid_lighting: 'warm interior lamp light, cozy ambiance', vid_emotion: 'peaceful, calm, content', vid_camera_move: 'Slow dolly in, gradually moving closer', vid_extra: 'blanket over their legs, child leaning into dad, cozy' },
-  wandelen: { vid_action: 'Father and child walking hand in hand through a forest path, child skipping alongside', vid_location: 'forest path, dappled sunlight through trees', vid_lighting: 'warm golden hour sunlight, long soft shadows', vid_emotion: 'peaceful, calm, content', vid_camera_move: 'Steadicam walking shot, following from behind', vid_extra: 'autumn leaves on the ground, beautiful light through trees' },
-  koken: { vid_action: 'Father and child cooking together, child stirring a bowl, flour on their faces, messy and fun', vid_location: 'bright modern kitchen, morning light', vid_lighting: 'bright morning light through windows', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Smooth tracking shot following the subjects from the side', vid_extra: 'flour everywhere, pancake batter, messy but joyful' },
-  troosten: { vid_action: 'Father kneeling at child\'s eye level, gently wiping tears, holding child\'s hands', vid_location: 'cozy bedroom, soft lamp light', vid_lighting: 'soft natural daylight, diffused and even', vid_emotion: 'tender, emotional, loving', vid_camera_move: 'Slow dolly in, gradually moving closer', vid_extra: 'child looking up at dad, tears on cheeks, gentle moment' },
-  fietsen: { vid_action: 'Father running alongside child learning to ride a bicycle, letting go, child pedaling on their own', vid_location: 'quiet suburban street, autumn leaves', vid_lighting: 'warm golden hour sunlight, long soft shadows', vid_emotion: 'proud, beaming', vid_camera_move: 'Smooth tracking shot following the subjects from the side', vid_extra: 'training wheels removed, wobbly first ride, dad letting go' },
-  ochtend: { vid_action: 'Morning routine: father making breakfast, child sitting at table, pouring cereal, morning sunlight', vid_location: 'bright modern kitchen, morning light', vid_lighting: 'bright morning light through windows', vid_emotion: 'tired but smiling, exhausted love', vid_camera_move: 'Slow dolly out, gradually pulling back to reveal scene', vid_extra: 'messy hair, pajamas, cereal on the table, morning chaos' },
-  strand: { vid_action: 'Father and child building a sandcastle on the beach, waves in background, golden light', vid_location: 'sandy beach, ocean waves, golden light', vid_lighting: 'warm golden hour sunlight, long soft shadows', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Orbiting shot, slowly circling around the subjects', vid_extra: 'wet sand, waves rolling in, bucket and shovel, wind in hair' },
-  verjaardag: { vid_action: 'Father blowing out birthday candles with child, cake on table, balloons in background', vid_location: 'modern cozy living room, warm interior', vid_lighting: 'warm interior lamp light, cozy ambiance', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Push in close-up on faces, intimate detail', vid_extra: 'birthday cake with candles, balloons, confetti, party hats' },
-  regen: { vid_action: 'Father and child running through rain puddles, splashing, raincoats on, laughing together', vid_location: 'quiet suburban street, autumn leaves', vid_lighting: 'rainy day, diffused grey light, wet reflections', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Slow-motion capture at 120fps', vid_extra: 'rain drops, splashing puddles, yellow raincoats, wet pavement reflections' },
-  dansen: { vid_action: 'Father and child dancing together in living room, father holding child\'s hands, spinning and laughing', vid_location: 'modern cozy living room, warm interior', vid_lighting: 'warm interior lamp light, cozy ambiance', vid_emotion: 'laughing out loud, pure joy', vid_camera_move: 'Orbiting shot, slowly circling around the subjects', vid_extra: 'spinning, twirling, pure spontaneous fun' },
+  thuiskomen: { vid_emotion: 0, vid_action: 0, vid_location: 0, vid_lighting: 2, vid_camera_move: 0, vid_extra: 'front door swinging open, warm hallway light spilling into the room, child\'s bare feet pattering on wooden floor, messenger bag dropping with a soft thud' },
+  stoeien: { vid_emotion: 1, vid_action: 1, vid_location: 0, vid_lighting: 3, vid_camera_move: 6, vid_extra: 'throw pillows knocked off the couch, child climbing on dad\'s back, socks sliding on wooden floor, pure unscripted chaos' },
+  voorlezen: { vid_emotion: 5, vid_action: 2, vid_location: 2, vid_lighting: 2, vid_camera_move: 0, vid_extra: 'warm fleece blanket draped over their legs, child\'s thumb near mouth, soft breathing, pages rustling' },
+  wandelen: { vid_emotion: 5, vid_action: 3, vid_location: 4, vid_lighting: 0, vid_camera_move: 9, vid_extra: 'crunching leaves underfoot, child picking up a stick, occasional bird song, breath visible in cool autumn air' },
+  koken: { vid_emotion: 1, vid_action: 4, vid_location: 1, vid_lighting: 3, vid_camera_move: 2, vid_extra: 'flour cloud puffing up from the bowl, egg shells on counter, apron too big on child, batter dripping off wooden spoon' },
+  troosten: { vid_emotion: 2, vid_action: 5, vid_location: 2, vid_lighting: 1, vid_camera_move: 7, vid_extra: 'child\'s small hands gripping father\'s shirt collar, single tear rolling down cheek, father\'s thumb gently wiping it away, stuffed animal on the floor nearby' },
+  fietsen: { vid_emotion: 7, vid_action: 6, vid_location: 7, vid_lighting: 0, vid_camera_move: 2, vid_extra: 'training wheels lying on the grass, wobbly handlebars, child\'s knuckles white from gripping, triumphant fist pump when successful' },
+  ochtend: { vid_emotion: 6, vid_action: 13, vid_location: 1, vid_lighting: 3, vid_camera_move: 1, vid_extra: 'steam rising from coffee mug, cereal box on counter, child\'s bed-head hair sticking up, morning sun catching floating dust particles' },
+  strand: { vid_emotion: 1, vid_action: 9, vid_location: 5, vid_lighting: 0, vid_camera_move: 3, vid_extra: 'wet sand glistening, tiny wave washing over their toes, seagull in background, sand on their knees, bucket and plastic shovel' },
+  verjaardag: { vid_emotion: 1, vid_action: 16, vid_location: 0, vid_lighting: 2, vid_camera_move: 7, vid_extra: 'candlelight flickering on their faces, wisp of candle smoke curling upward, child\'s eyes reflecting the flames, colorful sprinkles on cake' },
+  regen: { vid_emotion: 1, vid_action: 15, vid_location: 7, vid_lighting: 7, vid_camera_move: 8, vid_extra: 'rain drops hitting puddles creating concentric circles, yellow rubber boots, water spraying in arcs, reflections of sky in wet pavement, hair plastered to foreheads' },
+  dansen: { vid_emotion: 1, vid_action: 14, vid_location: 0, vid_lighting: 2, vid_camera_move: 3, vid_extra: 'child standing on father\'s feet, socks sliding on floor, spinning motion blurring the background, spontaneous and unrehearsed' },
+  slaapvallen: { vid_emotion: 5, vid_action: 10, vid_location: 0, vid_lighting: 2, vid_camera_move: 0, vid_extra: 'TV casting flickering blue-white light, child\'s breathing slowing down, father\'s chest rising and falling, blanket being slowly pulled up' },
+  vliegtuigje: { vid_emotion: 1, vid_action: 9, vid_location: 3, vid_lighting: 0, vid_camera_move: 8, vid_extra: 'child\'s hair flowing upward, arms spread wide, t-shirt rippling in the spin, grass and trees spinning in background, pure weightless moment' },
+  tekenen: { vid_emotion: 3, vid_action: 17, vid_location: 0, vid_lighting: 1, vid_camera_move: 0, vid_extra: 'colored pencils scattered everywhere, child\'s tongue sticking out in concentration, crayon marks on the table, father drawing something silly' },
+  voetbal: { vid_emotion: 7, vid_action: 11, vid_location: 3, vid_lighting: 0, vid_camera_move: 2, vid_extra: 'grass stains on knees, mini soccer goal made of backpacks, ball bouncing off shoe, celebratory running with arms wide' },
 };
 
 function applyVideoPreset(name) {
@@ -1591,53 +1638,109 @@ function applyVideoPreset(name) {
       document.getElementById('vid_extra').value = value;
     } else {
       const el = document.getElementById(key);
-      if (el) {
-        for (let i = 0; i < el.options.length; i++) {
-          if (el.options[i].value === value) { el.selectedIndex = i; break; }
-        }
+      if (el && el.tagName === 'SELECT' && typeof value === 'number') {
+        el.selectedIndex = Math.min(value, el.options.length - 1);
       }
     }
   }
-  generateVideoPrompt();
+  generateVideoVeo();
+}
+
+function getVideoFields() {
+  return {
+    person: document.getElementById('vid_person').value.trim(),
+    clothing: document.getElementById('vid_clothing').value.trim(),
+    child: document.getElementById('vid_child').value,
+    emotion: document.getElementById('vid_emotion').value,
+    action: document.getElementById('vid_action').value,
+    location: document.getElementById('vid_location').value,
+    cameraMove: document.getElementById('vid_camera_move').value,
+    lighting: document.getElementById('vid_lighting').value,
+    style: document.getElementById('vid_style').value,
+    colors: document.getElementById('vid_colors').value,
+    duration: document.getElementById('vid_duration').value,
+    aspect: document.getElementById('vid_aspect').value,
+    physics: document.getElementById('vid_physics').value,
+    environment: document.getElementById('vid_environment').value,
+    motion: document.getElementById('vid_motion').value,
+    extra: translateExtra(document.getElementById('vid_extra').value.trim()),
+    negative: document.getElementById('vid_negative').value.trim(),
+  };
 }
 
 function buildVideoPrompt() {
-  const person = document.getElementById('vid_person').value.trim();
-  const clothing = document.getElementById('vid_clothing').value.trim();
-  const child = document.getElementById('vid_child').value;
-  const emotion = document.getElementById('vid_emotion').value;
-  const action = document.getElementById('vid_action').value;
-  const location = document.getElementById('vid_location').value;
-  const cameraMove = document.getElementById('vid_camera_move').value;
-  const lighting = document.getElementById('vid_lighting').value;
-  const style = document.getElementById('vid_style').value;
-  const colors = document.getElementById('vid_colors').value;
-  const duration = document.getElementById('vid_duration').value;
-  const extra = translateExtra(document.getElementById('vid_extra').value.trim());
+  const f = getVideoFields();
+  let p = `Photorealistic cinematic video. A ${f.person}, wearing ${f.clothing}. Expression: ${f.emotion}.`;
+  if (f.child) p += ` Together with ${f.child}.`;
+  p += ` ${f.action}.`;
+  p += ` Setting: ${f.location}. Lighting: ${f.lighting}.`;
+  p += ` Camera: ${f.cameraMove}.`;
+  if (f.extra) p += ` Details: ${f.extra}.`;
+  p += ` ${f.style}. Color palette: ${f.colors}. ${f.physics}. ${f.motion}.`;
+  p += ` Ultra-realistic, shot on professional cinema camera, natural human movement and expressions, consistent character appearance throughout, ${f.duration}.`;
+  return p;
+}
 
-  let p = `Cinematic video of a ${person}. Wearing ${clothing}. Expression: ${emotion}.`;
+function buildVeoPrompt() {
+  const f = getVideoFields();
 
-  if (child) {
-    p += ` Together with ${child}.`;
+  let p = `Photorealistic cinematic video captured on an ARRI Alexa Mini with Cooke anamorphic lenses. `;
+  p += `The scene opens on a ${f.person}. He is wearing ${f.clothing} - the fabric texture is clearly visible, catching and folding naturally with his movements. `;
+  p += `His expression: ${f.emotion}. `;
+
+  if (f.child) {
+    p += `He is together with ${f.child}. The physical scale difference between father and child is anatomically accurate. `;
   }
 
-  p += ` ${action}.`;
-  p += ` Setting: ${location}. ${lighting}.`;
-  p += ` Camera: ${cameraMove}.`;
+  p += `\n\n`;
+  p += `ACTION: ${f.action}. `;
+  if (f.extra) p += `Additional details: ${f.extra}. `;
 
-  if (extra) p += ` ${extra}.`;
+  p += `\n\n`;
+  p += `ENVIRONMENT: ${f.location}. `;
+  p += `${f.environment}. `;
 
-  p += ` ${style}. ${colors}.`;
-  p += ` Ultra-realistic, natural human movement and expressions. Consistent character appearance throughout. Professional quality, ${duration}.`;
+  p += `\n\n`;
+  p += `CINEMATOGRAPHY: ${f.cameraMove}. `;
+  p += `Lighting: ${f.lighting}. `;
+  p += `Visual style: ${f.style}. `;
+  p += `Color grading: ${f.colors}. `;
+
+  p += `\n\n`;
+  p += `REALISM: ${f.physics}. `;
+  p += `${f.motion}. `;
+  p += `Skin has natural subsurface scattering with visible pores in close-up. Eyes have realistic catchlights, moisture, and iris detail. `;
+  p += `Hair moves with proper weight and physics, individual strands catching rim light. `;
+  p += `The scene feels completely real and unposed - like a beautifully shot documentary moment captured by a skilled cinematographer who happened to be there.`;
 
   return p;
 }
 
+function generateVideoVeo() {
+  const prompt = buildVeoPrompt();
+  const f = getVideoFields();
+  let output = prompt;
+  output += `\n\n--- SETTINGS ---\nDuration: ${f.duration}\nAspect ratio: ${f.aspect}\nResolution: 1080p`;
+  if (f.negative) output += `\n\n--- NEGATIVE PROMPT ---\n${f.negative}`;
+  output += `\n\n--- TIPS VOOR VEO ---`;
+  output += `\n- Gebruik dit in Google AI Studio (aistudio.google.com) met Veo 2 of Veo 3`;
+  output += `\n- Upload een referentiefoto voor karakterconsistentie`;
+  output += `\n- Veo reageert goed op gelaagde beschrijvingen met fysieke details`;
+  output += `\n- Splits lange scenes op in meerdere korte clips van 4-8 seconden`;
+
+  const el = document.getElementById('vid_output');
+  el.textContent = output;
+  el.classList.remove('empty');
+  addCopyButton(el);
+  document.getElementById('vid_charcount').textContent = `${output.length} tekens`;
+  saveToHistory(prompt);
+}
+
 function generateVideoPrompt() {
   const prompt = buildVideoPrompt();
-  const neg = document.getElementById('vid_negative').value.trim();
+  const f = getVideoFields();
   let output = prompt;
-  if (neg) output += `\n\n--- NEGATIVE PROMPT ---\n${neg}`;
+  if (f.negative) output += `\n\n--- NEGATIVE PROMPT ---\n${f.negative}`;
   const el = document.getElementById('vid_output');
   el.textContent = output;
   el.classList.remove('empty');
@@ -1647,59 +1750,53 @@ function generateVideoPrompt() {
 }
 
 function generateVideoRunway() {
-  const prompt = buildVideoPrompt();
-  const aspect = document.getElementById('vid_aspect').value;
-  const duration = document.getElementById('vid_duration').value;
-  let runway = `[PROMPT]\n${prompt}\n\n[DURATION]\n${duration}\n\n[ASPECT RATIO]\n${aspect}`;
-  const neg = document.getElementById('vid_negative').value.trim();
-  if (neg) runway += `\n\n[NEGATIVE]\n${neg}`;
-  runway += `\n\n[TIP] Upload je beste AI-foto als "First Frame" voor karakterconsistentie.`;
+  const f = getVideoFields();
+  // Runway wants concise prompts focused on one clear motion
+  let prompt = `Cinematic video of a ${f.person} wearing ${f.clothing}, ${f.emotion}.`;
+  if (f.child) prompt += ` With ${f.child}.`;
+  prompt += ` ${f.action}. ${f.location}. ${f.lighting}. ${f.cameraMove}. ${f.style}.`;
+  if (f.extra) prompt += ` ${f.extra}.`;
+  prompt += ` Photorealistic, natural human movement, professional cinematography.`;
+
+  let output = `[PROMPT]\n${prompt}\n\n[DURATION]\n${f.duration}\n\n[ASPECT RATIO]\n${f.aspect}`;
+  if (f.negative) output += `\n\n[NEGATIVE]\n${f.negative}`;
+  output += `\n\n[TIP] Upload je AI-foto als "First Frame". Runway Gen-3 Alpha werkt best met korte, directe prompts en een startframe.`;
+
   const el = document.getElementById('vid_output');
-  el.textContent = runway;
+  el.textContent = output;
   el.classList.remove('empty');
   addCopyButton(el);
-  document.getElementById('vid_charcount').textContent = `${runway.length} tekens`;
+  document.getElementById('vid_charcount').textContent = `${output.length} tekens`;
 }
 
 function generateVideoKling() {
   const prompt = buildVideoPrompt();
-  const aspect = document.getElementById('vid_aspect').value;
-  const duration = document.getElementById('vid_duration').value;
-  const cameraMove = document.getElementById('vid_camera_move').value;
-  let kling = `[PROMPT]\n${prompt}\n\n[CAMERA CONTROL]\n${cameraMove}\n\n[DURATION]\n${duration}\n\n[ASPECT RATIO]\n${aspect}\n\n[MODE]\nProfessional`;
-  const neg = document.getElementById('vid_negative').value.trim();
-  if (neg) kling += `\n\n[NEGATIVE]\n${neg}`;
-  kling += `\n\n[TIP] Gebruik "Image to Video" met je AI-foto als startframe. Kling 1.6 heeft de beste gezichtsconsistentie.`;
+  const f = getVideoFields();
+  let output = `[PROMPT]\n${prompt}\n\n[CAMERA CONTROL]\n${f.cameraMove}\n\n[DURATION]\n${f.duration}\n\n[ASPECT RATIO]\n${f.aspect}\n\n[MODE]\nProfessional\n\n[CREATIVITY]\n0.5`;
+  if (f.negative) output += `\n\n[NEGATIVE]\n${f.negative}`;
+  output += `\n\n[TIP] Gebruik "Image to Video" met je AI-foto als startframe. Kling 1.6 Pro mode voor beste kwaliteit. Creativity op 0.5 voor realisme.`;
+
   const el = document.getElementById('vid_output');
-  el.textContent = kling;
+  el.textContent = output;
   el.classList.remove('empty');
   addCopyButton(el);
-  document.getElementById('vid_charcount').textContent = `${kling.length} tekens`;
+  document.getElementById('vid_charcount').textContent = `${output.length} tekens`;
 }
 
 function generateVideoSora() {
-  // Sora prefers more narrative prompts
-  const person = document.getElementById('vid_person').value.trim();
-  const clothing = document.getElementById('vid_clothing').value.trim();
-  const child = document.getElementById('vid_child').value;
-  const emotion = document.getElementById('vid_emotion').value;
-  const action = document.getElementById('vid_action').value;
-  const location = document.getElementById('vid_location').value;
-  const cameraMove = document.getElementById('vid_camera_move').value;
-  const lighting = document.getElementById('vid_lighting').value;
-  const style = document.getElementById('vid_style').value;
-  const extra = translateExtra(document.getElementById('vid_extra').value.trim());
-  const aspect = document.getElementById('vid_aspect').value;
-  const duration = document.getElementById('vid_duration').value;
+  const f = getVideoFields();
+  // Sora prefers narrative, storytelling prompts
+  let sora = `The video begins in ${f.location}. A ${f.person}, wearing ${f.clothing}, stands with an expression of ${f.emotion}.`;
+  if (f.child) sora += ` He is with ${f.child}.`;
+  sora += ` What unfolds: ${f.action}.`;
+  sora += ` The light is ${f.lighting.toLowerCase()}. The camera movement: ${f.cameraMove.toLowerCase()}.`;
+  if (f.extra) sora += ` ${f.extra}.`;
+  sora += ` The overall feeling is ${f.style.toLowerCase()}, with ${f.colors.toLowerCase()}.`;
+  sora += ` Every detail is photorealistic. The movement is natural and human, the kind of moment that makes you feel like you are watching real life through a master cinematographer's lens.`;
 
-  let sora = `A ${person}, wearing ${clothing}, ${emotion}.`;
-  if (child) sora += ` He is with ${child}.`;
-  sora += ` ${action}. The scene takes place in ${location}. ${lighting}. The camera: ${cameraMove}.`;
-  if (extra) sora += ` ${extra}.`;
-  sora += ` The video has a ${style} look. Ultra-realistic, natural movement.`;
-
-  let output = `[SORA PROMPT]\n${sora}\n\n[RESOLUTION]\n1080p\n\n[DURATION]\n${duration}\n\n[ASPECT RATIO]\n${aspect}`;
-  output += `\n\n[TIP] Sora werkt het best met narratieve beschrijvingen. Beschrijf wat er gebeurt alsof je een filmscene schrijft.`;
+  let output = `[SORA PROMPT]\n${sora}\n\n[RESOLUTION]\n1080p\n\n[DURATION]\n${f.duration}\n\n[ASPECT RATIO]\n${f.aspect}`;
+  if (f.negative) output += `\n\n[NEGATIVE]\n${f.negative}`;
+  output += `\n\n[TIP] Sora werkt best met narratieve beschrijvingen. Beschrijf de progressie van de actie alsof je een filmscene schrijft.`;
 
   const el = document.getElementById('vid_output');
   el.textContent = output;
@@ -1712,7 +1809,7 @@ function randomizeVideo() {
   document.querySelectorAll('#tab-video select').forEach(sel => {
     sel.selectedIndex = Math.floor(Math.random() * sel.options.length);
   });
-  generateVideoPrompt();
+  generateVideoVeo();
 }
 
 // --- APPLY TRANSLATION TO EXISTING PHOTO GENERATOR ---
