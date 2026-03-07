@@ -152,7 +152,7 @@ export async function fetchRecentComments(): Promise<CommentEntry[]> {
   try {
     // Get recent media
     const mediaRes = await fetch(
-      `https://graph.instagram.com/v21.0/${accountId}/media?fields=id,caption,timestamp&limit=10&access_token=${token}`,
+      `https://graph.facebook.com/v21.0/${accountId}/media?fields=id,caption,timestamp&limit=10&access_token=${token}`,
     );
     const mediaData = await mediaRes.json();
     if (!mediaData.data) return [];
@@ -168,7 +168,7 @@ export async function fetchRecentComments(): Promise<CommentEntry[]> {
     for (const post of mediaData.data) {
       try {
         const commentsRes = await fetch(
-          `https://graph.instagram.com/v21.0/${post.id}/comments?fields=id,text,username,timestamp,replies{id}&limit=50&access_token=${token}`,
+          `https://graph.facebook.com/v21.0/${post.id}/comments?fields=id,text,username,timestamp,replies{id}&limit=50&access_token=${token}`,
         );
         const commentsData = await commentsRes.json();
         if (!commentsData.data) continue;
@@ -204,7 +204,7 @@ export async function postCommentReply(commentId: string, replyText: string): Pr
 
   try {
     const res = await fetch(
-      `https://graph.instagram.com/v21.0/${commentId}/replies`,
+      `https://graph.facebook.com/v21.0/${commentId}/replies`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

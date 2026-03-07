@@ -114,7 +114,7 @@ export async function PATCH(request: NextRequest) {
 }
 
 async function publishReel(accountId: string, accessToken: string, videoUrl: string, caption: string): Promise<string> {
-  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+  const containerRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ media_type: 'REELS', video_url: videoUrl, caption, access_token: accessToken }),
@@ -129,14 +129,14 @@ async function publishReel(accountId: string, accessToken: string, videoUrl: str
   while (Date.now() - start < maxWait) {
     await new Promise((resolve) => setTimeout(resolve, 3000));
     const statusRes = await fetch(
-      `https://graph.instagram.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
+      `https://graph.facebook.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
     );
     const statusData = await statusRes.json();
     if (statusData.status_code === 'FINISHED') break;
     if (statusData.status_code === 'ERROR') throw new Error('Instagram kon de video niet verwerken');
   }
 
-  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: containerId, access_token: accessToken }),
@@ -147,7 +147,7 @@ async function publishReel(accountId: string, accessToken: string, videoUrl: str
 }
 
 async function publishSingle(accountId: string, accessToken: string, imageUrl: string, caption: string): Promise<string> {
-  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+  const containerRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ image_url: imageUrl, caption, access_token: accessToken }),
@@ -155,7 +155,7 @@ async function publishSingle(accountId: string, accessToken: string, imageUrl: s
   const containerData = await containerRes.json();
   if (containerData.error) throw new Error(containerData.error.message);
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: containerData.id, access_token: accessToken }),
@@ -168,7 +168,7 @@ async function publishSingle(accountId: string, accessToken: string, imageUrl: s
 async function publishCarousel(accountId: string, accessToken: string, imageUrls: string[], caption: string): Promise<string> {
   const containerIds: string[] = [];
   for (const url of imageUrls) {
-    const res = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+    const res = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ image_url: url, is_carousel_item: true, access_token: accessToken }),
@@ -177,7 +177,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
     if (data.error) throw new Error(`Slide: ${data.error.message}`);
     containerIds.push(data.id);
   }
-  const carouselRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+  const carouselRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ media_type: 'CAROUSEL', children: containerIds.join(','), caption, access_token: accessToken }),
@@ -185,7 +185,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
   const carouselData = await carouselRes.json();
   if (carouselData.error) throw new Error(`Carousel: ${carouselData.error.message}`);
   await new Promise((resolve) => setTimeout(resolve, 8000));
-  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: carouselData.id, access_token: accessToken }),
@@ -196,7 +196,7 @@ async function publishCarousel(accountId: string, accessToken: string, imageUrls
 }
 
 async function publishStory(accountId: string, accessToken: string, imageUrl: string): Promise<string> {
-  const containerRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media`, {
+  const containerRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ media_type: 'STORIES', image_url: imageUrl, access_token: accessToken }),
@@ -206,7 +206,7 @@ async function publishStory(accountId: string, accessToken: string, imageUrl: st
 
   await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  const publishRes = await fetch(`https://graph.instagram.com/v21.0/${accountId}/media_publish`, {
+  const publishRes = await fetch(`https://graph.facebook.com/v21.0/${accountId}/media_publish`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ creation_id: containerData.id, access_token: accessToken }),

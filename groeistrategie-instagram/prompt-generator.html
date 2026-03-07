@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Influencer Prompt Generator - De Vadercoach</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; min-height: 100vh; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+  h1 { font-size: 24px; margin-bottom: 8px; color: #F59E0B; }
+  .subtitle { color: #888; margin-bottom: 32px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+  @media (max-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .grid { grid-template-columns: 1fr; } }
+  label { display: block; font-size: 12px; color: #999; margin-bottom: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+  select, input, textarea {
+    width: 100%; padding: 8px 10px; background: #1a1a1a; border: 1px solid #333;
+    border-radius: 6px; color: #e0e0e0; font-size: 13px; font-family: inherit;
+    transition: border-color 0.2s;
+  }
+  select:focus, input:focus, textarea:focus { outline: none; border-color: #F59E0B; }
+  textarea { resize: vertical; min-height: 50px; }
+  .field { display: flex; flex-direction: column; }
+  .span2 { grid-column: span 2; }
+  .span3 { grid-column: 1 / -1; }
+  .section-title {
+    font-size: 13px; font-weight: 600; color: #F59E0B; margin: 12px 0 4px;
+    grid-column: 1 / -1; border-top: 1px solid #222; padding-top: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .section-title .badge { font-size: 10px; background: #333; color: #888; padding: 2px 8px; border-radius: 10px; font-weight: 400; }
+  button {
+    padding: 10px 20px; border: none; border-radius: 6px; font-size: 13px;
+    font-weight: 600; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-primary { background: #F59E0B; color: #000; }
+  .btn-primary:hover { background: #D97706; }
+  .btn-secondary { background: #222; color: #e0e0e0; border: 1px solid #333; }
+  .btn-secondary:hover { background: #333; }
+  .btn-sm { padding: 6px 14px; font-size: 12px; }
+  .btn-row { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .output-area {
+    background: #1a1a1a; border: 1px solid #333; border-radius: 10px;
+    padding: 16px; min-height: 100px; white-space: pre-wrap; font-size: 13px;
+    line-height: 1.7; position: relative; margin-bottom: 12px;
+  }
+  .output-area.empty { color: #555; font-style: italic; }
+  .copy-btn {
+    position: absolute; top: 10px; right: 10px; background: #333;
+    color: #e0e0e0; border: none; padding: 5px 12px; border-radius: 5px;
+    font-size: 11px; cursor: pointer;
+  }
+  .copy-btn:hover { background: #444; }
+  .copy-btn.copied { background: #059669; color: white; }
+  .presets { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+  .preset {
+    padding: 5px 12px; background: #1a1a1a; border: 1px solid #333;
+    border-radius: 16px; font-size: 11px; color: #ccc; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .preset:hover, .preset.active { border-color: #F59E0B; color: #F59E0B; }
+  .tabs { display: flex; gap: 0; margin-bottom: 20px; border-bottom: 1px solid #333; }
+  .tab {
+    padding: 8px 16px; background: none; border: none; color: #888;
+    font-size: 13px; cursor: pointer; border-bottom: 2px solid transparent;
+    font-weight: 500;
+  }
+  .tab.active { color: #F59E0B; border-bottom-color: #F59E0B; }
+  .tab:hover { color: #e0e0e0; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .char-badge { display: inline-block; font-size: 11px; color: #666; margin-top: 6px; }
+  .history-item {
+    background: #1a1a1a; border: 1px solid #222; border-radius: 6px;
+    padding: 10px; margin-bottom: 6px; cursor: pointer; font-size: 12px;
+    color: #aaa; transition: border-color 0.2s;
+  }
+  .history-item:hover { border-color: #F59E0B; }
+  .history-item .time { font-size: 10px; color: #555; }
+  .tip { background: #1a1a00; border: 1px solid #333300; border-radius: 6px; padding: 10px; font-size: 12px; color: #cca; margin-bottom: 20px; }
+  .progress-bar { height: 4px; background: #222; border-radius: 2px; margin-bottom: 20px; overflow: hidden; }
+  .progress-fill { height: 100%; background: #F59E0B; border-radius: 2px; transition: width 0.3s; }
+  .aspect-btns { display: flex; gap: 6px; margin-top: 4px; }
+  .aspect-btn {
+    padding: 4px 10px; background: #222; border: 1px solid #333; border-radius: 4px;
+    font-size: 11px; color: #aaa; cursor: pointer;
+  }
+  .aspect-btn:hover, .aspect-btn.active { border-color: #F59E0B; color: #F59E0B; }
+  .dropzone {
+    border: 2px dashed #333; border-radius: 10px; padding: 32px; text-align: center;
+    cursor: pointer; transition: all 0.3s; margin-bottom: 16px; position: relative;
+  }
+  .dropzone:hover, .dropzone.dragover { border-color: #F59E0B; background: #1a1800; }
+  .dropzone img { max-width: 300px; max-height: 300px; border-radius: 8px; margin-top: 12px; }
+  .dropzone .label { color: #888; font-size: 13px; }
+  .dropzone .sublabel { color: #555; font-size: 11px; margin-top: 4px; }
+  .analyzing { color: #F59E0B; font-size: 13px; margin: 12px 0; }
+  .analyzing::after { content: '...'; animation: dots 1.5s infinite; }
+  @keyframes dots { 0%{content:'.'} 33%{content:'..'} 66%{content:'...'} }
+  .re-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .re-field label { font-size: 11px; color: #666; }
+  .re-field .val { color: #e0e0e0; font-size: 13px; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>AI Influencer Prompt Generator</h1>
+  <p class="subtitle">Genereer ultra-realistische prompts voor vaderschap content</p>
+
+  <div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('generator')">Generator</button>
+    <button class="tab" onclick="switchTab('consistent')">Consistent Karakter</button>
+    <button class="tab" onclick="switchTab('reverse')">Reverse Engineer</button>
+    <button class="tab" onclick="switchTab('history')">Geschiedenis</button>
+  </div>
+
+  <!-- GENERATOR TAB -->
+  <div class="panel active" id="tab-generator">
+    <p class="subtitle" style="margin-bottom:8px">Snelle presets</p>
+    <div class="presets">
+      <div class="preset" onclick="applyPreset('thuiskomen')">Vader komt thuis</div>
+      <div class="preset" onclick="applyPreset('stoeien')">Stoeien</div>
+      <div class="preset" onclick="applyPreset('voorlezen')">Voorlezen</div>
+      <div class="preset" onclick="applyPreset('koken')">Samen koken</div>
+      <div class="preset" onclick="applyPreset('troost')">Troosten</div>
+      <div class="preset" onclick="applyPreset('wandelen')">Wandelen</div>
+      <div class="preset" onclick="applyPreset('ochtend')">Ochtend</div>
+      <div class="preset" onclick="applyPreset('bank')">Op de bank</div>
+      <div class="preset" onclick="applyPreset('portret')">Solo portret</div>
+      <div class="preset" onclick="applyPreset('schouders')">Op schouders</div>
+      <div class="preset" onclick="applyPreset('strand')">Strand</div>
+      <div class="preset" onclick="applyPreset('sport')">Sport / buiten</div>
+      <div class="preset" onclick="applyPreset('verjaardag')">Verjaardag</div>
+    </div>
+
+    <div class="grid">
+      <!-- PHYSICAL IDENTITY -->
+      <div class="section-title">Fysieke identiteit <span class="badge">gezicht</span></div>
+
+      <div class="field">
+        <label>Leeftijd</label>
+        <select id="age">
+          <option value="25-year-old">25 jaar</option>
+          <option value="28-year-old">28 jaar</option>
+          <option value="30-year-old">30 jaar</option>
+          <option value="32-year-old" selected>32 jaar</option>
+          <option value="35-year-old">35 jaar</option>
+          <option value="38-year-old">38 jaar</option>
+          <option value="40-year-old">40 jaar</option>
+          <option value="43-year-old">43 jaar</option>
+          <option value="45-year-old">45 jaar</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Etniciteit</label>
+        <select id="ethnicity">
+          <option value="Dutch Caucasian">Nederlands</option>
+          <option value="Scandinavian">Scandinavisch</option>
+          <option value="Southern European, Mediterranean">Mediterraan</option>
+          <option value="Eastern European, Slavic features">Oost-Europees</option>
+          <option value="Middle Eastern">Midden-Oosters</option>
+          <option value="North African, Moroccan">Noord-Afrikaans</option>
+          <option value="Black African">Afrikaans</option>
+          <option value="African American">Afro-Amerikaans</option>
+          <option value="South Asian, Indian">Zuid-Aziatisch</option>
+          <option value="East Asian, Korean">Oost-Aziatisch</option>
+          <option value="Southeast Asian">Zuidoost-Aziatisch</option>
+          <option value="Latino, Hispanic">Latino</option>
+          <option value="mixed race, biracial">Gemengd</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Huidskleur</label>
+        <select id="skin_tone">
+          <option value="very fair, pale skin">Zeer licht</option>
+          <option value="fair skin with warm undertone" selected>Licht warm</option>
+          <option value="light skin with cool undertone">Licht koel</option>
+          <option value="olive skin tone">Olijfkleurig</option>
+          <option value="medium brown skin">Medium bruin</option>
+          <option value="warm brown skin">Warm bruin</option>
+          <option value="dark brown skin">Donkerbruin</option>
+          <option value="deep dark skin, rich complexion">Diep donker</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Gezichtsvorm</label>
+        <select id="face_shape">
+          <option value="oval face shape" selected>Ovaal</option>
+          <option value="round face shape">Rond</option>
+          <option value="square face shape, strong jawline">Vierkant</option>
+          <option value="rectangular, long face shape">Rechthoekig</option>
+          <option value="heart-shaped face, wider forehead">Hartvormig</option>
+          <option value="diamond face shape, prominent cheekbones">Diamant</option>
+          <option value="triangular face shape">Driehoekig</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Oogkleur</label>
+        <select id="eye_color">
+          <option value="warm brown eyes" selected>Bruin</option>
+          <option value="dark brown, almost black eyes">Donkerbruin</option>
+          <option value="hazel eyes with green flecks">Hazel / groen</option>
+          <option value="bright green eyes">Groen</option>
+          <option value="clear blue eyes">Blauw</option>
+          <option value="steel grey-blue eyes">Grijsblauw</option>
+          <option value="light amber eyes">Amber</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Oogvorm</label>
+        <select id="eye_shape">
+          <option value="almond-shaped eyes" selected>Amandelvormig</option>
+          <option value="round, open eyes">Rond</option>
+          <option value="hooded eyes, deep-set">Halfgesloten / diep</option>
+          <option value="upturned eyes">Opwaarts</option>
+          <option value="downturned eyes, gentle expression">Neerwaarts</option>
+          <option value="monolid eyes">Monolid</option>
+          <option value="wide-set eyes">Wijd uit elkaar</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Neustype</label>
+        <select id="nose">
+          <option value="straight nose, proportional" selected>Recht</option>
+          <option value="slightly upturned nose">Wipneus</option>
+          <option value="Roman nose, slight bump on bridge">Romeins (bultje)</option>
+          <option value="wide nose, broad bridge">Breed</option>
+          <option value="narrow, pointed nose">Smal / puntig</option>
+          <option value="button nose, small and round">Knopneus</option>
+          <option value="strong, prominent nose">Groot / markant</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Kaaklijin</label>
+        <select id="jawline">
+          <option value="defined jawline" selected>Gedefinieerd</option>
+          <option value="strong, angular jawline">Sterk / hoekig</option>
+          <option value="soft, rounded jawline">Zacht / rond</option>
+          <option value="wide jaw, broad face">Breed</option>
+          <option value="narrow, V-shaped jawline">Smal / V-vorm</option>
+          <option value="slightly double chin, natural">Licht dubbele kin</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Sproeten / kenmerken</label>
+        <select id="skin_features">
+          <option value="" selected>Geen</option>
+          <option value="light freckles across nose and cheeks">Sproeten (licht)</option>
+          <option value="heavy freckles across face">Sproeten (veel)</option>
+          <option value="beauty mark near mouth">Moedervlek bij mond</option>
+          <option value="small scar on eyebrow">Litteken wenkbrauw</option>
+          <option value="slight crow's feet, laugh lines around eyes">Lachlijntjes</option>
+          <option value="forehead wrinkles, expressive face">Voorhoofd rimpels</option>
+          <option value="dimples when smiling">Kuiltjes bij lachen</option>
+        </select>
+      </div>
+
+      <!-- HAIR -->
+      <div class="section-title">Haar <span class="badge">hoofd + gezicht</span></div>
+
+      <div class="field">
+        <label>Haarlengte</label>
+        <select id="hair_length">
+          <option value="buzzcut">Buzzcut</option>
+          <option value="short" selected>Kort</option>
+          <option value="medium length">Halflang</option>
+          <option value="longer, past ears">Lang</option>
+          <option value="bald, shaved head">Kaal</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Haarkleur</label>
+        <select id="hair_color">
+          <option value="dark brown" selected>Donkerbruin</option>
+          <option value="light brown">Lichtbruin</option>
+          <option value="black">Zwart</option>
+          <option value="blonde">Blond</option>
+          <option value="dark blonde, dirty blonde">Donkerblond</option>
+          <option value="auburn, reddish brown">Roodbruin</option>
+          <option value="red, ginger">Rood</option>
+          <option value="grey, salt and pepper">Grijs / pepper</option>
+          <option value="dark with grey at temples">Donker met grijze slapen</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Haartextuur</label>
+        <select id="hair_texture">
+          <option value="straight, neatly styled" selected>Steil, netjes</option>
+          <option value="straight, messy and tousled">Steil, rommelig</option>
+          <option value="wavy, natural texture">Golvend</option>
+          <option value="curly">Krullend</option>
+          <option value="tight curls, coily">Strak krullend / kroeshaar</option>
+          <option value="slicked back">Achterover gekamd</option>
+          <option value="textured crop, modern fade">Textured crop / fade</option>
+          <option value="man bun, pulled back">Man bun</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Gezichtshaar</label>
+        <select id="facial_hair">
+          <option value="clean shaven, smooth face">Gladgeschoren</option>
+          <option value="light stubble, 2-day beard shadow">Stoppels (2 dagen)</option>
+          <option value="medium stubble, 5-day growth" selected>Stoppels (5 dagen)</option>
+          <option value="well-groomed short beard">Kort baardje</option>
+          <option value="full thick beard, well-maintained">Volle baard</option>
+          <option value="goatee">Sik / goatee</option>
+          <option value="handlebar mustache">Snor</option>
+          <option value="patchy, natural growing beard">Onregelmatig baardje</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Wenkbrauwen</label>
+        <select id="eyebrows">
+          <option value="natural, well-shaped eyebrows" selected>Natuurlijk</option>
+          <option value="thick, bushy eyebrows">Dik / vol</option>
+          <option value="thin, groomed eyebrows">Dun / verzorgd</option>
+          <option value="straight, flat eyebrows">Recht / vlak</option>
+          <option value="arched eyebrows">Gebogen</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Lippen</label>
+        <select id="lips">
+          <option value="natural, medium-sized lips" selected>Normaal</option>
+          <option value="full, thick lips">Vol / dik</option>
+          <option value="thin lips">Dun</option>
+          <option value="wide mouth, expressive lips">Breed / expressief</option>
+        </select>
+      </div>
+
+      <!-- BUILD & FASHION -->
+      <div class="section-title">Lichaam & kleding <span class="badge">build & fashion</span></div>
+
+      <div class="field">
+        <label>Lichaamsbouw</label>
+        <select id="build">
+          <option value="slim, lean build">Slank</option>
+          <option value="average build, not muscular" selected>Gemiddeld</option>
+          <option value="athletic, toned build">Sportief / fit</option>
+          <option value="muscular, broad shoulders">Gespierd</option>
+          <option value="stocky, heavyset build">Stevig / breed</option>
+          <option value="dad-bod, soft midsection, relatable">Dad-bod</option>
+          <option value="tall and lanky">Lang en slungelig</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Lengte</label>
+        <select id="height">
+          <option value="shorter stature, compact">Klein (170cm)</option>
+          <option value="average height" selected>Gemiddeld (178cm)</option>
+          <option value="tall, above average height">Lang (185cm)</option>
+          <option value="very tall, towering presence">Heel lang (190cm+)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Kleding bovenkant</label>
+        <select id="top">
+          <option value="plain white t-shirt">Wit t-shirt</option>
+          <option value="navy blue t-shirt" selected>Donkerblauw t-shirt</option>
+          <option value="black t-shirt">Zwart t-shirt</option>
+          <option value="earth-tone henley shirt">Henley shirt</option>
+          <option value="cozy grey hoodie">Grijze hoodie</option>
+          <option value="olive green sweater">Olijfgroene trui</option>
+          <option value="cream knit sweater">Creme gebreide trui</option>
+          <option value="casual button-up shirt, sleeves rolled up">Overhemd, mouwen op</option>
+          <option value="plaid flannel shirt, open over t-shirt">Flanellen hemd open</option>
+          <option value="denim jacket over white tee">Spijkerjack</option>
+          <option value="no shirt, bare chest">Shirtloos</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Kleding onderkant</label>
+        <select id="bottom">
+          <option value="dark blue jeans" selected>Donkerblauwe jeans</option>
+          <option value="light wash jeans">Lichte jeans</option>
+          <option value="khaki chinos">Khaki chinos</option>
+          <option value="black joggers">Zwarte jogger</option>
+          <option value="grey sweatpants">Grijze joggingbroek</option>
+          <option value="cargo shorts">Cargo shorts</option>
+          <option value="beige linen pants">Beige linnen broek</option>
+          <option value="athletic shorts">Sportbroekje</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Schoenen</label>
+        <select id="shoes">
+          <option value="" selected>Niet zichtbaar</option>
+          <option value="white sneakers">Witte sneakers</option>
+          <option value="worn leather boots">Leren boots</option>
+          <option value="casual loafers">Loafers</option>
+          <option value="running shoes">Hardloopschoenen</option>
+          <option value="sandals">Sandalen</option>
+          <option value="barefoot">Blootsvoets</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Accessoires</label>
+        <select id="accessories">
+          <option value="" selected>Geen</option>
+          <option value="simple watch on wrist">Horloge</option>
+          <option value="glasses, modern rectangular frames">Bril (rechthoekig)</option>
+          <option value="round glasses, intellectual look">Bril (rond)</option>
+          <option value="baseball cap">Petje</option>
+          <option value="beanie hat">Muts / beanie</option>
+          <option value="wedding ring visible">Trouwring</option>
+          <option value="tattoo sleeve on left arm">Tattoo sleeve (links)</option>
+          <option value="small forearm tattoo">Kleine tattoo onderarm</option>
+          <option value="necklace, simple chain">Ketting</option>
+          <option value="watch and wedding ring">Horloge + trouwring</option>
+        </select>
+      </div>
+
+      <!-- KIND -->
+      <div class="section-title">Kind <span class="badge">optioneel</span></div>
+
+      <div class="field">
+        <label>Leeftijd kind</label>
+        <select id="child_age">
+          <option value="a newborn baby, tiny and fragile">Pasgeboren</option>
+          <option value="a baby (around 6 months-1 year old)">Baby (6mnd-1jr)</option>
+          <option value="a toddler (around 2-3 years old)">Peuter (2-3 jaar)</option>
+          <option value="a young child (around 4-5 years old)" selected>Kleuter (4-5 jaar)</option>
+          <option value="a child (around 6-8 years old)">Kind (6-8 jaar)</option>
+          <option value="an older child (around 9-11 years old)">Ouder kind (9-11)</option>
+          <option value="a teenager (around 13-15 years old)">Tiener (13-15)</option>
+          <option value="two children, a toddler and an older child">Twee kinderen</option>
+          <option value="no child (solo portrait)">Geen kind (solo)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Geslacht kind</label>
+        <select id="child_gender">
+          <option value="son">Zoon</option>
+          <option value="daughter" selected>Dochter</option>
+          <option value="son and daughter">Zoon en dochter</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Kleding kind</label>
+        <select id="child_clothing">
+          <option value="" selected>Standaard</option>
+          <option value="wearing colorful pajamas">Pyjama</option>
+          <option value="wearing a cute dress">Jurkje</option>
+          <option value="wearing overalls">Tuinbroek</option>
+          <option value="wearing a raincoat and boots">Regenjas + laarzen</option>
+          <option value="wearing a superhero costume">Superheldenpak</option>
+          <option value="wearing school uniform">Schooluniform</option>
+          <option value="wearing sporty clothes">Sportkleding</option>
+        </select>
+      </div>
+
+      <!-- SCENE -->
+      <div class="section-title">Scene & omgeving <span class="badge">setting</span></div>
+
+      <div class="field">
+        <label>Locatie</label>
+        <select id="location">
+          <option value="modern minimalist living room, cozy interior" selected>Woonkamer</option>
+          <option value="cozy bedroom, bed visible, warm atmosphere">Slaapkamer</option>
+          <option value="bright modern kitchen, marble countertops">Keuken</option>
+          <option value="nursery room, soft colors, crib visible">Kinderkamer</option>
+          <option value="sunlit backyard garden, green grass">Tuin</option>
+          <option value="local park, green trees, park bench">Park</option>
+          <option value="forest path, dappled sunlight through trees">Bos</option>
+          <option value="sandy beach, ocean waves in background">Strand</option>
+          <option value="European city street, cobblestones, cafe terraces">Straat</option>
+          <option value="playground, colorful equipment, sand">Speeltuin</option>
+          <option value="car interior, backseat, road trip">Auto</option>
+          <option value="cozy cabin interior, fireplace, wooden beams">Huisje / cabin</option>
+          <option value="rooftop terrace, city skyline background">Dakterras</option>
+          <option value="sports field, grass, soccer goal">Sportveld</option>
+          <option value="supermarket aisle, shopping cart">Supermarkt</option>
+          <option value="hospital room, newborn context">Ziekenhuis</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Actie / moment</label>
+        <select id="action">
+          <option value="playing together, laughing, genuine candid moment">Samen spelen / lachen</option>
+          <option value="father hugging child tightly, emotional tender moment" selected>Knuffelen</option>
+          <option value="father reading a picture book to child, cozy and intimate">Voorlezen</option>
+          <option value="cooking together, flour on faces, messy and fun">Samen koken</option>
+          <option value="father carrying child on shoulders, both smiling wide">Kind op schouders</option>
+          <option value="father kneeling at child's eye level, gentle conversation">Op ooghoogte praten</option>
+          <option value="father comforting crying child, patient and gentle">Kind troosten</option>
+          <option value="walking hand in hand, seen from behind">Hand in hand lopen</option>
+          <option value="both asleep on couch, child on father's chest">Samen in slaap</option>
+          <option value="rough-housing, wrestling playfully, laughing">Stoeien</option>
+          <option value="father watching child play, proud gentle smile from distance">Trots toekijken</option>
+          <option value="doing homework together at table, focused">Huiswerk maken</option>
+          <option value="playing soccer together in the yard">Samen voetballen</option>
+          <option value="father teaching child to ride a bike">Fietsen leren</option>
+          <option value="bath time, bubbles, playful splashing">Badtijd</option>
+          <option value="building with blocks or lego on the floor">Samen bouwen</option>
+          <option value="father braiding daughter's hair, focused and gentle">Haar vlechten</option>
+          <option value="piggyback ride, running, child laughing">Op de rug rennen</option>
+          <option value="father looking directly at camera, warm confident expression">Solo portret</option>
+          <option value="father sitting alone, reflective, contemplative">Solo reflectief</option>
+          <option value="dancing together in living room, silly and fun">Samen dansen</option>
+          <option value="high-five moment, celebrating achievement">High-five / vieren</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Emotie vader</label>
+        <select id="emotion">
+          <option value="warm, genuine smile, content" selected>Warm / glimlach</option>
+          <option value="laughing hard, eyes crinkling, pure joy">Hard lachen</option>
+          <option value="tender, emotional, eyes slightly watery">Ontroerd</option>
+          <option value="focused, determined, serious but kind">Gefocust / serieus</option>
+          <option value="playful, goofy expression, silly face">Speels / gek</option>
+          <option value="proud, beaming with pride">Trots</option>
+          <option value="peaceful, calm, serene expression">Rustig / vredig</option>
+          <option value="thoughtful, contemplative, looking into distance">Nadenkend</option>
+          <option value="tired but happy, exhausted smile">Moe maar blij</option>
+          <option value="surprised, mouth open, genuine reaction">Verrast</option>
+        </select>
+      </div>
+
+      <!-- PHOTOGRAPHY -->
+      <div class="section-title">Fotografie <span class="badge">technisch</span></div>
+
+      <div class="field">
+        <label>Licht</label>
+        <select id="lighting">
+          <option value="warm golden hour sunlight, long shadows" selected>Golden hour</option>
+          <option value="soft diffused natural daylight">Zacht daglicht</option>
+          <option value="warm interior lamplight, cozy ambiance">Warm lamplicht</option>
+          <option value="bright morning light streaming through windows">Ochtendlicht</option>
+          <option value="moody dramatic side lighting, high contrast">Dramatisch zijlicht</option>
+          <option value="overcast soft outdoor light, even illumination">Bewolkt buitenlicht</option>
+          <option value="backlit, silhouette rim light, halo effect">Tegenlicht / silhouet</option>
+          <option value="neon city lights at night, urban glow">Nacht / stadslicht</option>
+          <option value="candlelight, intimate, warm glow">Kaarslicht</option>
+          <option value="window light, soft directional, Rembrandt lighting">Raamlicht / Rembrandt</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Camera / lens</label>
+        <select id="camera">
+          <option value="shot on 85mm f/1.4 lens, shallow depth of field, creamy bokeh" selected>85mm f/1.4 (portret)</option>
+          <option value="shot on 35mm f/1.8 lens, environmental portrait">35mm f/1.8 (omgeving)</option>
+          <option value="shot on 50mm f/1.2 lens, natural perspective">50mm f/1.2 (naturel)</option>
+          <option value="close-up on 105mm f/2 macro lens, extreme detail">105mm macro (close-up)</option>
+          <option value="wide angle 24mm f/2.8, full scene, slight distortion">24mm wijdhoek</option>
+          <option value="shot on 135mm f/2 lens, compressed background, dreamy">135mm f/2 (dromerig)</option>
+          <option value="shot on vintage 50mm lens, subtle chromatic aberration">Vintage 50mm</option>
+          <option value="iPhone style photo, casual, slightly wide angle">iPhone / casual</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Camerahoek</label>
+        <select id="angle">
+          <option value="eye level, straight on" selected>Ooghoogte</option>
+          <option value="slightly above, looking down gently">Van boven (licht)</option>
+          <option value="low angle looking up, empowering">Van onderen (krachtig)</option>
+          <option value="over the shoulder perspective">Over schouder</option>
+          <option value="bird's eye view, directly overhead">Bovenaanzicht</option>
+          <option value="Dutch angle, slight tilt, dynamic">Schuin / dynamisch</option>
+          <option value="from behind, viewer perspective">Van achteren</option>
+          <option value="profile view, side angle">Profiel / zijkant</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Fotostijl</label>
+        <select id="style">
+          <option value="editorial lifestyle photography, magazine quality" selected>Lifestyle editorial</option>
+          <option value="candid documentary photography, raw and authentic">Documentaire / candid</option>
+          <option value="warm film photography, Kodak Portra 400 aesthetic">Film / Kodak Portra</option>
+          <option value="clean commercial photography, bright and airy">Commercieel / helder</option>
+          <option value="moody cinematic photography, desaturated, filmic">Cinematisch / moody</option>
+          <option value="soft and dreamy photography, ethereal glow, lens flare">Zacht en dromerig</option>
+          <option value="photojournalistic, unposed, real moment captured">Fotojournalistiek</option>
+          <option value="fine art portrait, studio quality, precise lighting">Fine art portret</option>
+          <option value="iPhone candid, social media authentic, slightly imperfect">iPhone / social media</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Kleurenpalet</label>
+        <select id="colors">
+          <option value="warm earth tones, amber, brown, honey" selected>Warm / amber</option>
+          <option value="muted natural tones, sage green, cream, beige">Natuurlijk / groen</option>
+          <option value="bright and airy, white, soft pastels, clean">Licht / pastel</option>
+          <option value="rich moody tones, deep blues, shadows, contrast">Donker / blauw</option>
+          <option value="golden warm tones, sunset orange, honey light">Gouden zonsondergang</option>
+          <option value="neutral minimalist, black white beige, low saturation">Minimalistisch</option>
+          <option value="vibrant and saturated, bold colors, punchy">Levendig / verzadigd</option>
+          <option value="faded vintage, slightly desaturated, film grain">Vintage / vervaagd</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Beeldverhouding</label>
+        <div class="aspect-btns">
+          <div class="aspect-btn active" onclick="setAspect(this,'4:5')">4:5 Insta</div>
+          <div class="aspect-btn" onclick="setAspect(this,'1:1')">1:1 Vierkant</div>
+          <div class="aspect-btn" onclick="setAspect(this,'9:16')">9:16 Reel</div>
+          <div class="aspect-btn" onclick="setAspect(this,'16:9')">16:9 Breed</div>
+          <div class="aspect-btn" onclick="setAspect(this,'3:4')">3:4</div>
+        </div>
+      </div>
+
+      <!-- EXTRA -->
+      <div class="section-title">Extra <span class="badge">vrij veld</span></div>
+
+      <div class="field span3">
+        <label>Extra details / scenario</label>
+        <textarea id="extra" placeholder="Bijv: regen op het raam, speelgoed op de grond, hond in de achtergrond, kerst decoratie..."></textarea>
+      </div>
+
+      <div class="field span3">
+        <label>Negatieve prompt (wat NIET in de foto)</label>
+        <textarea id="negative" placeholder="Bijv: no text, no watermark, no logo, no cartoon, no anime...">no text, no watermark, no logo, no cartoon, no anime, no extra fingers, no deformed hands, no blurry face</textarea>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-primary" onclick="generatePrompt()">Genereer Prompt</button>
+      <button class="btn-secondary" onclick="randomize()">Willekeurig</button>
+      <button class="btn-secondary" onclick="generateBatch()">3 Variaties</button>
+      <button class="btn-secondary" onclick="generateForMidjourney()">Midjourney format</button>
+      <button class="btn-secondary" onclick="generateForFlux()">Flux format</button>
+    </div>
+
+    <div id="output" class="output-area empty">Klik op 'Genereer Prompt' om te beginnen...</div>
+    <div class="char-badge" id="charcount"></div>
+  </div>
+
+  <!-- CONSISTENT CHARACTER TAB -->
+  <div class="panel" id="tab-consistent">
+    <p class="subtitle" style="margin-bottom:12px">Definieer een vast karakter zodat elke foto dezelfde persoon toont. Vul de velden in op basis van je generator-instellingen of typ handmatig.</p>
+
+    <div class="btn-row">
+      <button class="btn-secondary btn-sm" onclick="autoFillCharacter()">Vul in vanuit Generator</button>
+    </div>
+
+    <div class="grid">
+      <div class="field">
+        <label>Naam (referentie)</label>
+        <input id="char_name" value="Thomas" />
+      </div>
+      <div class="field span2">
+        <label>Kleding stijl</label>
+        <input id="char_style" value="casual modern dad style, earth-tone colors, clean simple clothing" />
+      </div>
+      <div class="field span3">
+        <label>Gezicht & lichaam beschrijving</label>
+        <textarea id="char_desc" rows="4">32-year-old Dutch Caucasian man, fair skin with warm undertone, oval face shape, warm brown eyes, almond-shaped eyes, straight nose, defined jawline, natural well-shaped eyebrows, natural medium-sized lips, short dark brown straight neatly styled hair, medium stubble 5-day growth, average build, average height, dimples when smiling</textarea>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top:12px">
+      <button class="btn-primary" onclick="saveCharacter()">Opslaan</button>
+      <button class="btn-secondary" onclick="generateWithCharacter()">Genereer met dit karakter</button>
+      <button class="btn-secondary" onclick="generateCharBatch()">3 Variaties met karakter</button>
+    </div>
+
+    <div class="tip" style="margin-top:16px">
+      <strong>Consistentie tips:</strong><br>
+      - Midjourney: gebruik <code>--cref [image_url]</code> + <code>--cw 100</code> met je beste foto<br>
+      - Flux: gebruik "character reference image" upload<br>
+      - DALL-E: voeg "same person as reference" toe<br>
+      - Begin altijd met exact dezelfde gezichtsbeschrijving<br>
+      - Bewaar je beste 3 foto's als "ankerfoto's"
+    </div>
+
+    <div id="char_output" class="output-area empty">Sla eerst je karakter op...</div>
+  </div>
+
+  <!-- REVERSE ENGINEER TAB -->
+  <div class="panel" id="tab-reverse">
+    <p class="subtitle" style="margin-bottom:12px">Upload een foto en genereer automatisch een prompt die deze foto nabootst.</p>
+
+    <div class="tip">
+      Deze tool beschrijft wat er in de foto te zien is en maakt daar een prompt van. Gebruik dit om de stijl van een bestaande foto te reproduceren met AI. Je foto wordt NIET geupload - alles gebeurt lokaal in je browser.
+    </div>
+
+    <div class="dropzone" id="dropzone" onclick="document.getElementById('file-input').click()">
+      <input type="file" id="file-input" accept="image/*" style="display:none" onchange="handleFile(this.files[0])">
+      <div class="label">Sleep een foto hierheen of klik om te uploaden</div>
+      <div class="sublabel">JPG, PNG, WebP - max 10MB</div>
+      <div id="preview"></div>
+    </div>
+
+    <div id="re-status"></div>
+
+    <div class="grid" style="margin-bottom:16px">
+      <div class="field span3">
+        <label>Jouw API Key (OpenAI - voor GPT-4 Vision analyse)</label>
+        <input type="password" id="api_key" placeholder="sk-..." style="font-family:monospace" />
+        <div style="font-size:11px;color:#555;margin-top:4px">Je key wordt alleen lokaal opgeslagen in je browser. Nooit verstuurd naar andere servers.</div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-primary" onclick="analyzeImage()" id="analyze-btn">Analyseer foto</button>
+      <button class="btn-secondary" onclick="applyAnalysis()">Pas toe in Generator</button>
+      <button class="btn-secondary" onclick="manualDescribe()">Handmatig beschrijven</button>
+    </div>
+
+    <div id="re-output" class="output-area empty">Upload een foto om te beginnen...</div>
+
+    <div style="margin-top:16px">
+      <div class="section-title">Handmatige beschrijving <span class="badge">zonder API</span></div>
+      <p style="font-size:12px;color:#888;margin-bottom:8px">Geen API key? Beschrijf de foto handmatig en genereer een prompt.</p>
+      <div class="grid">
+        <div class="field">
+          <label>Wie zie je?</label>
+          <input id="manual_who" placeholder="Bijv: vader van 30, kort bruin haar, stoppelbaard" />
+        </div>
+        <div class="field">
+          <label>Wat gebeurt er?</label>
+          <input id="manual_what" placeholder="Bijv: vader leest voor aan kind op schoot" />
+        </div>
+        <div class="field">
+          <label>Waar?</label>
+          <input id="manual_where" placeholder="Bijv: slaapkamer, warm lamplicht" />
+        </div>
+        <div class="field">
+          <label>Sfeer / stijl?</label>
+          <input id="manual_mood" placeholder="Bijv: warm, intiem, golden hour" />
+        </div>
+        <div class="field">
+          <label>Camera stijl?</label>
+          <input id="manual_camera" placeholder="Bijv: close-up, wazige achtergrond" />
+        </div>
+        <div class="field">
+          <label>Extra details?</label>
+          <input id="manual_extra" placeholder="Bijv: deken, boek zichtbaar, kind lacht" />
+        </div>
+      </div>
+      <button class="btn-primary btn-sm" onclick="generateFromManual()" style="margin-top:8px">Genereer prompt</button>
+    </div>
+  </div>
+
+  <!-- HISTORY TAB -->
+  <div class="panel" id="tab-history">
+    <p class="subtitle" style="margin-bottom:12px">Laatst gegenereerde prompts (opgeslagen in browser)</p>
+    <div id="history-list"></div>
+    <button class="btn-secondary btn-sm" onclick="clearHistory()" style="margin-top:10px">Geschiedenis wissen</button>
+  </div>
+</div>
+
+<script>
+let currentAspect = '4:5';
+
+const presets = {
+  thuiskomen: { action: 'father hugging child tightly, emotional tender moment', location: 'modern minimalist living room, cozy interior', lighting: 'warm interior lamplight, cozy ambiance', emotion: 'warm, genuine smile, content', extra: 'just arrived home from work, child running into his arms, pure joy' },
+  stoeien: { action: 'rough-housing, wrestling playfully, laughing', location: 'modern minimalist living room, cozy interior', lighting: 'bright morning light streaming through windows', emotion: 'laughing hard, eyes crinkling, pure joy', extra: 'pillows on the floor, playful chaos, genuine fun' },
+  voorlezen: { action: 'father reading a picture book to child, cozy and intimate', location: 'cozy bedroom, bed visible, warm atmosphere', lighting: 'warm interior lamplight, cozy ambiance', emotion: 'peaceful, calm, serene expression', extra: 'child sitting on fathers lap, under a blanket together, picture book visible' },
+  koken: { action: 'cooking together, flour on faces, messy and fun', location: 'bright modern kitchen, marble countertops', lighting: 'bright morning light streaming through windows', emotion: 'laughing hard, eyes crinkling, pure joy', extra: 'flour on their faces, messy but fun, pancakes' },
+  troost: { action: 'father comforting crying child, patient and gentle', location: 'cozy bedroom, bed visible, warm atmosphere', lighting: 'soft diffused natural daylight', emotion: 'tender, emotional, eyes slightly watery', extra: 'father on his knees at child eye level, child has tears, tender gentle moment' },
+  wandelen: { action: 'walking hand in hand, seen from behind', location: 'forest path, dappled sunlight through trees', lighting: 'warm golden hour sunlight, long shadows', emotion: 'peaceful, calm, serene expression', angle: 'from behind, viewer perspective', extra: 'beautiful autumn path, leaves on ground' },
+  ochtend: { action: 'cooking together, flour on faces, messy and fun', location: 'bright modern kitchen, marble countertops', lighting: 'bright morning light streaming through windows', emotion: 'tired but happy, exhausted smile', top: 'cozy grey hoodie', bottom: 'grey sweatpants', extra: 'morning chaos, child in pajamas, making pancakes, messy hair' },
+  bank: { action: 'both asleep on couch, child on father\'s chest', location: 'modern minimalist living room, cozy interior', lighting: 'warm interior lamplight, cozy ambiance', emotion: 'peaceful, calm, serene expression', extra: 'both asleep, blanket draped over them, TV remote fallen, afternoon nap' },
+  portret: { action: 'father looking directly at camera, warm confident expression', child_age: 'no child (solo portrait)', location: 'modern minimalist living room, cozy interior', lighting: 'window light, soft directional, Rembrandt lighting', camera: 'close-up on 105mm f/2 macro lens, extreme detail', emotion: 'warm, genuine smile, content', extra: 'direct eye contact, warm and confident, slight smile, headshot' },
+  schouders: { action: 'father carrying child on shoulders, both smiling wide', location: 'local park, green trees, park bench', lighting: 'warm golden hour sunlight, long shadows', emotion: 'laughing hard, eyes crinkling, pure joy', extra: 'child laughing, hands on fathers head, looking up at child' },
+  strand: { action: 'playing together, laughing, genuine candid moment', location: 'sandy beach, ocean waves in background', lighting: 'warm golden hour sunlight, long shadows', emotion: 'laughing hard, eyes crinkling, pure joy', top: 'plain white t-shirt', bottom: 'cargo shorts', shoes: 'barefoot', extra: 'wet sand, waves in background, splashing, golden light on water' },
+  sport: { action: 'playing soccer together in the yard', location: 'sunlit backyard garden, green grass', lighting: 'bright morning light streaming through windows', emotion: 'playful, goofy expression, silly face', top: 'plain white t-shirt', bottom: 'athletic shorts', shoes: 'running shoes', extra: 'soccer ball, green grass, active and energetic' },
+  verjaardag: { action: 'high-five moment, celebrating achievement', location: 'modern minimalist living room, cozy interior', lighting: 'warm interior lamplight, cozy ambiance', emotion: 'proud, beaming with pride', extra: 'birthday cake with candles, balloons, party hats, celebration, confetti' },
+};
+
+function applyPreset(name) {
+  const p = presets[name];
+  document.querySelectorAll('.preset').forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+  const fields = ['action','location','lighting','camera','child_age','emotion','angle','top','bottom','shoes'];
+  fields.forEach(f => { if (p[f]) setSelect(f, p[f]); });
+  if (p.extra) document.getElementById('extra').value = p.extra;
+  generatePrompt();
+}
+
+function setSelect(id, value) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  for (let i = 0; i < el.options.length; i++) {
+    if (el.options[i].value === value) { el.selectedIndex = i; return; }
+  }
+}
+
+function val(id) {
+  const el = document.getElementById(id);
+  return el ? el.value : '';
+}
+
+function setAspect(btn, ratio) {
+  currentAspect = ratio;
+  document.querySelectorAll('.aspect-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function buildFaceDesc() {
+  const parts = [];
+  parts.push(val('age'));
+  parts.push(val('ethnicity') + ' man');
+  parts.push(val('skin_tone'));
+  parts.push(val('face_shape'));
+  parts.push(val('eye_color'));
+  parts.push(val('eye_shape'));
+  parts.push(val('nose'));
+  parts.push(val('jawline'));
+  parts.push(val('eyebrows'));
+  parts.push(val('lips'));
+  const sf = val('skin_features');
+  if (sf) parts.push(sf);
+  return parts.join(', ');
+}
+
+function buildHairDesc() {
+  const length = val('hair_length');
+  const color = val('hair_color');
+  const texture = val('hair_texture');
+  const facial = val('facial_hair');
+  if (length === 'bald, shaved head') return `bald, shaved head, ${facial}`;
+  return `${length} ${color} ${texture} hair, ${facial}`;
+}
+
+function buildClothingDesc() {
+  let parts = [val('top'), val('bottom')];
+  const shoes = val('shoes');
+  const acc = val('accessories');
+  if (shoes) parts.push(shoes);
+  if (acc) parts.push(acc);
+  return parts.join(', ');
+}
+
+function buildPrompt(overrides = {}) {
+  const face = overrides.face || buildFaceDesc();
+  const hair = overrides.hair || buildHairDesc();
+  const build = overrides.build || val('build');
+  const height = overrides.height || val('height');
+  const clothing = overrides.clothing || buildClothingDesc();
+  const child_age = overrides.child_age || val('child_age');
+  const child_gender = overrides.child_gender || val('child_gender');
+  const child_clothing = val('child_clothing');
+  const location = overrides.location || val('location');
+  const action = overrides.action || val('action');
+  const emotion = overrides.emotion || val('emotion');
+  const lighting = overrides.lighting || val('lighting');
+  const camera = overrides.camera || val('camera');
+  const angle = overrides.angle || val('angle');
+  const style = overrides.style || val('style');
+  const colors = overrides.colors || val('colors');
+  const extra = overrides.extra || val('extra');
+
+  const isSolo = child_age.includes('no child');
+  const genderMap = { son: 'son', daughter: 'daughter', 'son and daughter': 'son and daughter' };
+  const childWord = genderMap[child_gender] || 'child';
+
+  let p = `Ultra-realistic photograph of a ${face}. ${hair}. ${build}, ${height}. Wearing ${clothing}. Expression: ${emotion}.`;
+
+  if (!isSolo) {
+    p += ` Together with his ${child_age.replace(/^a /, '')} ${childWord}`;
+    if (child_clothing) p += `, ${child_clothing}`;
+    p += `.`;
+  }
+
+  p += ` ${action}. Setting: ${location}. ${lighting}. Camera angle: ${angle}.`;
+
+  if (extra.trim()) p += ` ${extra.trim()}.`;
+
+  p += ` ${style}, ${colors}. ${camera}.`;
+  p += ` Hyper-detailed skin texture with natural pores, subtle skin imperfections, peach fuzz, realistic lighting on skin. No AI artifacts, anatomically correct hands and fingers, natural body proportions.`;
+  p += ` Professional photograph, indistinguishable from real photo.`;
+
+  return p;
+}
+
+function buildNegative() {
+  return val('negative') || '';
+}
+
+function generatePrompt() {
+  const prompt = buildPrompt();
+  const neg = buildNegative();
+  let output = prompt;
+  if (neg) output += `\n\n--- NEGATIVE PROMPT ---\n${neg}`;
+  showOutput('output', output);
+  updateProgress();
+}
+
+function generateBatch() {
+  const variations = [
+    { lighting: 'warm golden hour sunlight, long shadows', camera: 'shot on 85mm f/1.4 lens, shallow depth of field, creamy bokeh', angle: 'eye level, straight on' },
+    { lighting: 'soft diffused natural daylight', camera: 'shot on 35mm f/1.8 lens, environmental portrait', angle: 'slightly above, looking down gently' },
+    { lighting: 'window light, soft directional, Rembrandt lighting', camera: 'close-up on 105mm f/2 macro lens, extreme detail', angle: 'profile view, side angle' },
+  ];
+  const neg = buildNegative();
+  let result = '';
+  variations.forEach((v, i) => {
+    const p = buildPrompt(v);
+    result += `--- VARIATIE ${i + 1} ---\n${p}\n\n`;
+    saveToHistory(p);
+  });
+  if (neg) result += `--- NEGATIVE PROMPT (voor alle 3) ---\n${neg}`;
+  showOutput('output', result.trim());
+}
+
+function generateForMidjourney() {
+  const prompt = buildPrompt();
+  const neg = buildNegative();
+  let mj = prompt;
+  if (neg) mj += ` --no ${neg.replace(/no /g, '').replace(/, /g, ', ')}`;
+  mj += ` --ar ${currentAspect} --v 6.1 --style raw`;
+  showOutput('output', mj);
+}
+
+function generateForFlux() {
+  const prompt = buildPrompt();
+  let flux = `[PROMPT]\n${prompt}\n\n[ASPECT RATIO]\n${currentAspect}\n\n[GUIDANCE SCALE]\n3.5`;
+  const neg = buildNegative();
+  if (neg) flux += `\n\n[NEGATIVE PROMPT]\n${neg}`;
+  showOutput('output', flux);
+}
+
+function showOutput(id, text) {
+  const output = document.getElementById(id);
+  output.textContent = text;
+  output.classList.remove('empty');
+  addCopyButton(output);
+  document.getElementById('charcount').textContent = `${text.length} tekens`;
+  saveToHistory(text.split('\n---')[0]);
+}
+
+function updateProgress() {
+  const selects = document.querySelectorAll('#tab-generator select');
+  let filled = 0;
+  selects.forEach(s => { if (s.value) filled++; });
+  const pct = Math.round((filled / selects.length) * 100);
+  document.getElementById('progress').style.width = pct + '%';
+}
+
+// Character tab
+function autoFillCharacter() {
+  const face = buildFaceDesc();
+  const hair = buildHairDesc();
+  const build = val('build');
+  const height = val('height');
+  document.getElementById('char_desc').value = `${face}, ${hair}, ${build}, ${height}`;
+}
+
+function buildCharPrompt(overrides = {}) {
+  const charDesc = document.getElementById('char_desc').value;
+  const charName = document.getElementById('char_name').value;
+  const charStyle = document.getElementById('char_style').value;
+
+  const child_age = overrides.child_age || val('child_age');
+  const child_gender = val('child_gender');
+  const child_clothing = val('child_clothing');
+  const location = overrides.location || val('location');
+  const action = overrides.action || val('action');
+  const emotion = overrides.emotion || val('emotion');
+  const lighting = overrides.lighting || val('lighting');
+  const camera = overrides.camera || val('camera');
+  const angle = overrides.angle || val('angle');
+  const style = overrides.style || val('style');
+  const colors = overrides.colors || val('colors');
+  const extra = val('extra');
+
+  const isSolo = child_age.includes('no child');
+  const genderMap = { son: 'son', daughter: 'daughter', 'son and daughter': 'son and daughter' };
+  const childWord = genderMap[child_gender] || 'child';
+
+  let p = `Ultra-realistic photograph of ${charName}: ${charDesc}. ${charStyle}. Expression: ${emotion}.`;
+
+  if (!isSolo) {
+    p += ` Together with his ${child_age.replace(/^a /, '')} ${childWord}`;
+    if (child_clothing) p += `, ${child_clothing}`;
+    p += `.`;
+  }
+
+  p += ` ${action}. Setting: ${location}. ${lighting}. Camera angle: ${angle}.`;
+  if (extra.trim()) p += ` ${extra.trim()}.`;
+  p += ` ${style}, ${colors}. ${camera}.`;
+  p += ` Same person as reference, consistent facial features and identity throughout. Hyper-detailed skin texture, natural pores, realistic imperfections.`;
+  p += ` Professional photograph, indistinguishable from real photo.`;
+
+  return p;
+}
+
+function generateWithCharacter() {
+  const prompt = buildCharPrompt();
+  const neg = buildNegative();
+  let output = prompt;
+  if (neg) output += `\n\n--- NEGATIVE PROMPT ---\n${neg}`;
+  showOutput('char_output', output);
+}
+
+function generateCharBatch() {
+  const variations = [
+    { lighting: 'warm golden hour sunlight, long shadows', camera: 'shot on 85mm f/1.4 lens, shallow depth of field, creamy bokeh', angle: 'eye level, straight on' },
+    { lighting: 'soft diffused natural daylight', camera: 'shot on 35mm f/1.8 lens, environmental portrait', angle: 'slightly above, looking down gently' },
+    { lighting: 'window light, soft directional, Rembrandt lighting', camera: 'close-up on 105mm f/2 macro lens, extreme detail', angle: 'profile view, side angle' },
+  ];
+  const neg = buildNegative();
+  let result = '';
+  variations.forEach((v, i) => {
+    const p = buildCharPrompt(v);
+    result += `--- VARIATIE ${i + 1} ---\n${p}\n\n`;
+    saveToHistory(p);
+  });
+  if (neg) result += `--- NEGATIVE PROMPT (voor alle 3) ---\n${neg}`;
+  showOutput('char_output', result.trim());
+}
+
+function saveCharacter() {
+  const data = {
+    name: document.getElementById('char_name').value,
+    desc: document.getElementById('char_desc').value,
+    style: document.getElementById('char_style').value,
+  };
+  localStorage.setItem('vc_character', JSON.stringify(data));
+  const output = document.getElementById('char_output');
+  output.textContent = `Karakter "${data.name}" opgeslagen! Gebruik de knoppen hierboven om prompts te genereren.`;
+  output.classList.remove('empty');
+}
+
+function randomize() {
+  document.querySelectorAll('#tab-generator select').forEach(sel => {
+    sel.selectedIndex = Math.floor(Math.random() * sel.options.length);
+  });
+  generatePrompt();
+}
+
+function addCopyButton(container) {
+  let existing = container.querySelector('.copy-btn');
+  if (existing) existing.remove();
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = 'Kopieer';
+  btn.onclick = (e) => {
+    e.stopPropagation();
+    const text = container.textContent.replace('Kopieer', '').replace('Gekopieerd!', '').trim();
+    navigator.clipboard.writeText(text);
+    btn.textContent = 'Gekopieerd!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Kopieer'; btn.classList.remove('copied'); }, 2000);
+  };
+  container.appendChild(btn);
+}
+
+function saveToHistory(prompt) {
+  let history = JSON.parse(localStorage.getItem('vc_prompt_history') || '[]');
+  history.unshift({ prompt, time: new Date().toLocaleString('nl-NL') });
+  if (history.length > 50) history = history.slice(0, 50);
+  localStorage.setItem('vc_prompt_history', JSON.stringify(history));
+}
+
+function renderHistory() {
+  const list = document.getElementById('history-list');
+  const history = JSON.parse(localStorage.getItem('vc_prompt_history') || '[]');
+  if (!history.length) { list.innerHTML = '<p style="color:#555">Nog geen geschiedenis.</p>'; return; }
+  list.innerHTML = history.map((h, i) => `
+    <div class="history-item" onclick="copyHistoryItem(${i})">
+      <div class="time">${h.time}</div>
+      ${h.prompt.substring(0, 140)}...
+    </div>
+  `).join('');
+}
+
+function copyHistoryItem(i) {
+  const history = JSON.parse(localStorage.getItem('vc_prompt_history') || '[]');
+  navigator.clipboard.writeText(history[i].prompt);
+  const items = document.querySelectorAll('.history-item');
+  items[i].style.borderColor = '#059669';
+  setTimeout(() => items[i].style.borderColor = '#222', 1500);
+}
+
+function clearHistory() {
+  localStorage.removeItem('vc_prompt_history');
+  renderHistory();
+}
+
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  if (name === 'history') renderHistory();
+}
+
+// --- REVERSE ENGINEER ---
+let uploadedImageBase64 = null;
+let lastAnalysis = null;
+
+const dropzone = document.getElementById('dropzone');
+dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.classList.add('dragover'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+dropzone.addEventListener('drop', (e) => {
+  e.preventDefault();
+  dropzone.classList.remove('dragover');
+  if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+});
+
+function handleFile(file) {
+  if (!file || !file.type.startsWith('image/')) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    uploadedImageBase64 = e.target.result;
+    document.getElementById('preview').innerHTML = `<img src="${e.target.result}" />`;
+    document.getElementById('re-status').innerHTML = '<div style="color:#059669;font-size:12px;margin:8px 0">Foto geladen. Klik op "Analyseer foto" of gebruik handmatige beschrijving.</div>';
+  };
+  reader.readAsDataURL(file);
+}
+
+async function analyzeImage() {
+  const apiKey = document.getElementById('api_key').value.trim();
+  if (!apiKey) {
+    document.getElementById('re-status').innerHTML = '<div style="color:#ef4444;font-size:12px">Vul je OpenAI API key in om automatische analyse te gebruiken. Of gebruik de handmatige beschrijving hieronder.</div>';
+    return;
+  }
+  if (!uploadedImageBase64) {
+    document.getElementById('re-status').innerHTML = '<div style="color:#ef4444;font-size:12px">Upload eerst een foto.</div>';
+    return;
+  }
+
+  localStorage.setItem('vc_openai_key', apiKey);
+
+  const btn = document.getElementById('analyze-btn');
+  btn.disabled = true;
+  btn.textContent = 'Analyseren...';
+  document.getElementById('re-status').innerHTML = '<div class="analyzing">Foto wordt geanalyseerd door AI</div>';
+
+  try {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+      body: JSON.stringify({
+        model: 'gpt-4o',
+        messages: [{
+          role: 'user',
+          content: [
+            { type: 'text', text: `Analyze this photo and describe it in detail for recreating it with AI image generation. Respond in JSON format with these exact fields:
+{
+  "person_age": "estimated age like '32-year-old'",
+  "ethnicity": "e.g. Dutch Caucasian, Middle Eastern, etc",
+  "skin_tone": "detailed skin tone description",
+  "face_shape": "oval, round, square, etc with description",
+  "eye_color": "detailed eye color",
+  "eye_shape": "almond, round, hooded, etc",
+  "nose": "nose type description",
+  "jawline": "jawline description",
+  "skin_features": "freckles, scars, dimples, wrinkles etc or empty",
+  "hair_length": "short, medium, long, bald",
+  "hair_color": "detailed hair color",
+  "hair_texture": "straight, wavy, curly, etc with styling",
+  "facial_hair": "clean shaven, stubble, beard, etc",
+  "eyebrows": "description",
+  "lips": "description",
+  "build": "body build description",
+  "clothing_top": "what they're wearing on top",
+  "clothing_bottom": "what they're wearing on bottom",
+  "shoes": "shoes if visible",
+  "accessories": "watch, glasses, jewelry etc",
+  "child_present": true/false,
+  "child_description": "age, gender, clothing of child if present",
+  "action": "what is happening in the photo",
+  "emotion": "facial expression and mood",
+  "location": "setting/environment description",
+  "lighting": "lighting description",
+  "camera_angle": "camera angle and perspective",
+  "camera_lens": "estimated lens/focal length and depth of field",
+  "photo_style": "photography style",
+  "color_palette": "color grading and palette",
+  "extra_details": "any other notable details"
+}
+Only respond with valid JSON, no other text.` },
+            { type: 'image_url', image_url: { url: uploadedImageBase64 } }
+          ]
+        }],
+        max_tokens: 1500
+      })
+    });
+
+    const data = await response.json();
+    if (data.error) throw new Error(data.error.message);
+
+    const content = data.choices[0].message.content;
+    const jsonStr = content.replace(/```json\n?/g, '').replace(/```/g, '').trim();
+    lastAnalysis = JSON.parse(jsonStr);
+
+    // Build a readable prompt from the analysis
+    const a = lastAnalysis;
+    let prompt = `Ultra-realistic photograph of a ${a.person_age} ${a.ethnicity} man, ${a.skin_tone}, ${a.face_shape} face, ${a.eye_color}, ${a.eye_shape} eyes, ${a.nose}, ${a.jawline}, ${a.eyebrows} eyebrows, ${a.lips} lips`;
+    if (a.skin_features) prompt += `, ${a.skin_features}`;
+    prompt += `. ${a.hair_length} ${a.hair_color} ${a.hair_texture} hair, ${a.facial_hair}. ${a.build}.`;
+    prompt += ` Wearing ${a.clothing_top}, ${a.clothing_bottom}`;
+    if (a.shoes) prompt += `, ${a.shoes}`;
+    if (a.accessories) prompt += `, ${a.accessories}`;
+    prompt += `.`;
+    prompt += ` Expression: ${a.emotion}.`;
+
+    if (a.child_present && a.child_description) {
+      prompt += ` Together with ${a.child_description}.`;
+    }
+
+    prompt += ` ${a.action}. Setting: ${a.location}. ${a.lighting}. Camera angle: ${a.camera_angle}. ${a.camera_lens}.`;
+    if (a.extra_details) prompt += ` ${a.extra_details}.`;
+    prompt += ` ${a.photo_style}, ${a.color_palette}.`;
+    prompt += ` Hyper-detailed skin texture with natural pores, realistic imperfections. Professional photograph, indistinguishable from real photo.`;
+
+    showOutput('re-output', prompt);
+    document.getElementById('re-status').innerHTML = '<div style="color:#059669;font-size:12px;margin:8px 0">Analyse compleet! Prompt gegenereerd. Klik "Pas toe in Generator" om de velden in te vullen.</div>';
+
+  } catch (err) {
+    document.getElementById('re-status').innerHTML = `<div style="color:#ef4444;font-size:12px">Fout: ${err.message}</div>`;
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Analyseer foto';
+}
+
+function applyAnalysis() {
+  if (!lastAnalysis) {
+    document.getElementById('re-status').innerHTML = '<div style="color:#ef4444;font-size:12px">Analyseer eerst een foto.</div>';
+    return;
+  }
+  // Fill character tab with the analysis
+  const a = lastAnalysis;
+  let desc = `${a.person_age} ${a.ethnicity} man, ${a.skin_tone}, ${a.face_shape} face, ${a.eye_color}, ${a.eye_shape} eyes, ${a.nose}, ${a.jawline}, ${a.eyebrows} eyebrows, ${a.lips} lips`;
+  if (a.skin_features) desc += `, ${a.skin_features}`;
+  desc += `, ${a.hair_length} ${a.hair_color} ${a.hair_texture} hair, ${a.facial_hair}, ${a.build}`;
+
+  document.getElementById('char_desc').value = desc;
+  document.getElementById('char_style').value = `${a.clothing_top}, ${a.clothing_bottom}${a.accessories ? ', ' + a.accessories : ''}`;
+
+  switchTab('consistent');
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab')[1].classList.add('active');
+
+  document.getElementById('re-status').innerHTML = '<div style="color:#059669;font-size:12px">Analyse toegepast in Consistent Karakter tab!</div>';
+}
+
+function manualDescribe() {
+  document.querySelector('#tab-reverse .section-title').scrollIntoView({ behavior: 'smooth' });
+}
+
+function generateFromManual() {
+  const who = document.getElementById('manual_who').value.trim();
+  const what = document.getElementById('manual_what').value.trim();
+  const where = document.getElementById('manual_where').value.trim();
+  const mood = document.getElementById('manual_mood').value.trim();
+  const cam = document.getElementById('manual_camera').value.trim();
+  const extra = document.getElementById('manual_extra').value.trim();
+
+  if (!who && !what) {
+    document.getElementById('re-status').innerHTML = '<div style="color:#ef4444;font-size:12px">Vul minimaal "Wie" en "Wat" in.</div>';
+    return;
+  }
+
+  let prompt = `Ultra-realistic photograph of ${who || 'a father'}.`;
+  if (what) prompt += ` ${what}.`;
+  if (where) prompt += ` Setting: ${where}.`;
+  if (mood) prompt += ` Mood: ${mood}.`;
+  if (cam) prompt += ` ${cam}.`;
+  if (extra) prompt += ` ${extra}.`;
+  prompt += ` Hyper-detailed skin texture with natural pores, realistic imperfections. Professional photograph, indistinguishable from real photo.`;
+
+  const neg = buildNegative();
+  if (neg) prompt += `\n\n--- NEGATIVE PROMPT ---\n${neg}`;
+
+  showOutput('re-output', prompt);
+}
+
+// Load saved API key
+const savedKey = localStorage.getItem('vc_openai_key');
+if (savedKey) document.getElementById('api_key').value = savedKey;
+
+// Load saved character
+const saved = localStorage.getItem('vc_character');
+if (saved) {
+  const c = JSON.parse(saved);
+  document.getElementById('char_name').value = c.name || '';
+  document.getElementById('char_desc').value = c.desc || '';
+  document.getElementById('char_style').value = c.style || '';
+}
+
+// Init progress
+updateProgress();
+document.querySelectorAll('#tab-generator select').forEach(s => s.addEventListener('change', updateProgress));
+</script>
+</body>
+</html>

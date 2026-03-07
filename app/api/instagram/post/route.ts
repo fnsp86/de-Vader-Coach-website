@@ -89,7 +89,7 @@ async function postSingle(
   caption: string,
 ): Promise<{ success: boolean; postId?: string; error?: string }> {
   const containerRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media`,
+    `https://graph.facebook.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -104,7 +104,7 @@ async function postSingle(
   await new Promise((resolve) => setTimeout(resolve, 5000));
 
   const publishRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
+    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -128,7 +128,7 @@ async function postCarousel(
   const containerIds: string[] = [];
   for (const url of imageUrls) {
     const res = await fetch(
-      `https://graph.instagram.com/v21.0/${accountId}/media`,
+      `https://graph.facebook.com/v21.0/${accountId}/media`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -143,7 +143,7 @@ async function postCarousel(
   }
 
   const carouselRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media`,
+    `https://graph.facebook.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -163,7 +163,7 @@ async function postCarousel(
   await new Promise((resolve) => setTimeout(resolve, 8000));
 
   const publishRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
+    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -188,7 +188,7 @@ async function postReel(
 ): Promise<{ success: boolean; postId?: string; error?: string }> {
   // Create Reel media container
   const containerRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media`,
+    `https://graph.facebook.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -215,7 +215,7 @@ async function postReel(
     await new Promise((resolve) => setTimeout(resolve, pollInterval));
 
     const statusRes = await fetch(
-      `https://graph.instagram.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
+      `https://graph.facebook.com/v21.0/${containerId}?fields=status_code&access_token=${accessToken}`,
     );
     const statusData = await statusRes.json();
 
@@ -228,7 +228,7 @@ async function postReel(
 
   // Publish the Reel
   const publishRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
+    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -251,7 +251,7 @@ async function postStory(
   imageUrl: string,
 ): Promise<{ success: boolean; storyId?: string; error?: string }> {
   const containerRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media`,
+    `https://graph.facebook.com/v21.0/${accountId}/media`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -270,7 +270,7 @@ async function postStory(
   await new Promise((resolve) => setTimeout(resolve, 5000));
 
   const publishRes = await fetch(
-    `https://graph.instagram.com/v21.0/${accountId}/media_publish`,
+    `https://graph.facebook.com/v21.0/${accountId}/media_publish`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
