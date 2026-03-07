@@ -28,7 +28,16 @@ export async function GET(request: NextRequest) {
     results.tokenRefresh = { error: e instanceof Error ? e.message : String(e) };
   }
 
-  // ── 1. Instagram scheduled posts ───────────────────
+  // ── 1. Auto-publish (elke 3 dagen) ──────────────────
+  // Runs BEFORE scheduled posts so auto-created posts get published in the same cron run
+  try {
+    const auto = await executeAutoPublish();
+    results.autoPublish = auto;
+  } catch (e) {
+    results.autoPublish = { error: e instanceof Error ? e.message : String(e) };
+  }
+
+  // ── 2. Instagram scheduled posts ───────────────────
   try {
     const duePosts = await getDuePosts();
     if (duePosts.length > 0) {
@@ -101,7 +110,7 @@ export async function GET(request: NextRequest) {
     results.instagram = { error: e instanceof Error ? e.message : String(e) };
   }
 
-  // ── 2. Drip email queue ────────────────────────────
+  // ── 3. Drip email queue ────────────────────────────
   try {
     const drip = await processDripQueue();
     results.drip = drip;
@@ -109,20 +118,12 @@ export async function GET(request: NextRequest) {
     results.drip = { error: e instanceof Error ? e.message : String(e) };
   }
 
-  // ── 3. Monthly newsletter (1st of each month) ─────
+  // ── 4. Monthly newsletter (1st of each month) ─────
   try {
     const monthly = await processMonthlyNewsletter();
     results.monthly = monthly;
   } catch (e) {
     results.monthly = { error: e instanceof Error ? e.message : String(e) };
-  }
-
-  // ── 4. Automatisch Instagram posten (elke 3 dagen) ──
-  try {
-    const auto = await executeAutoPublish();
-    results.autoPublish = auto;
-  } catch (e) {
-    results.autoPublish = { error: e instanceof Error ? e.message : String(e) };
   }
 
   return NextResponse.json({ ok: true, results });

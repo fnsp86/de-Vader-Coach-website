@@ -11,19 +11,16 @@ export async function GET(request: NextRequest) {
     const data = await getAnalytics(Math.min(days, 90));
 
     if (!data) {
-      const hasRedisUrl = !!process.env.REDIS_URL;
       return NextResponse.json(
-        {
-          error: `Analytics niet geconfigureerd. REDIS_URL ${hasRedisUrl ? 'is set' : 'is MISSING'}.`,
-        },
+        { error: 'Analytics niet beschikbaar.' },
         { status: 503 }
       );
     }
 
     return NextResponse.json(data);
-  } catch (e) {
+  } catch {
     return NextResponse.json(
-      { error: `Analytics error: ${e instanceof Error ? e.message : String(e)}` },
+      { error: 'Er ging iets mis bij het laden van analytics.' },
       { status: 500 }
     );
   }

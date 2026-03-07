@@ -99,9 +99,10 @@ export async function exchangeForLongLivedToken(shortLivedToken: string): Promis
 }
 
 /**
- * Refresh the Instagram long-lived token.
+ * Refresh the Instagram/Facebook long-lived token.
+ * Supports both Page tokens (Graph API) and Instagram User tokens (Basic Display API).
  * Tokens can be refreshed after 24h and before they expire (60 days).
- * Stores the new token in Redis.
+ * Page tokens that don't expire return early without refreshing.
  */
 export async function refreshInstagramToken(): Promise<{ success: boolean; expiresIn?: number; error?: string }> {
   const currentToken = await getInstagramToken();
@@ -110,8 +111,24 @@ export async function refreshInstagramToken(): Promise<{ success: boolean; expir
   }
 
   try {
+    // First check if this is a Page token by calling /me - Page tokens return a "name" field
+    const meRes = await fetch(
+      `https://graph.facebook.com/v21.0/me?fields=id,name&access_token=${encodeURIComponent(currentToken)}`,
+    );
+    const meData = await meRes.json();
+
+    if (meData.error) {
+      return { success: false, error: meData.error.message };
+    }
+
+    // Page tokens have a "name" field; they don't expire and don't need refreshing
+    if (meData.name) {
+      return { success: true, expiresIn: undefined };
+    }
+
+    // For User tokens: use the Graph API v21.0 endpoint (not the deprecated ig_refresh_token)
     const res = await fetch(
-      `https://graph.facebook.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${encodeURIComponent(currentToken)}`,
+      `https://graph.facebook.com/v21.0/oauth/access_token?grant_type=fb_exchange_token&client_id=${process.env.META_APP_ID}&client_secret=${process.env.META_APP_SECRET}&fb_exchange_token=${encodeURIComponent(currentToken)}`,
     );
     const data = await res.json();
 
@@ -122,7 +139,6 @@ export async function refreshInstagramToken(): Promise<{ success: boolean; expir
     const newToken = data.access_token;
     const expiresIn = data.expires_in;
 
-    // Store in Redis
     if (newToken) {
       await storeInstagramToken(newToken);
     }

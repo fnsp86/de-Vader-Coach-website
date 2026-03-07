@@ -16,6 +16,9 @@ build/
 .env
 .env*.local
 
+# experience tokens (contain user data)
+data/experience-tokens/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

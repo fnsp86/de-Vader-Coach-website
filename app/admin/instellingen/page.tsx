@@ -46,7 +46,7 @@ function PasswordSection({ password }: { password: string }) {
       const res = await fetch('/api/admin/settings', {
         method: 'POST',
         headers: { 'x-admin-password': currentPw, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'change-password', newPassword: newPw }),
+        body: JSON.stringify({ action: 'change-password', newPassword: newPw, currentPassword: currentPw }),
       });
       const data = await res.json();
       if (res.ok) {

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAdminAuth, unauthorizedResponse, is2FAEnabled, hashPassword } from '@/lib/admin-auth';
+import { verifyAdminAuth, unauthorizedResponse, is2FAEnabled, hashPassword, verifyPasswordHash } from '@/lib/admin-auth';
 import { getTOTPUri, generateSecret } from '@/lib/totp';
+import { checkRateLimit } from '@/lib/rate-limit';
 import Redis from 'ioredis';
 
 let redis: Redis | null = null;
@@ -25,12 +26,22 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   if (!(await verifyAdminAuth(request))) return unauthorizedResponse();
 
-  const { action, newPassword } = await request.json();
+  const rateLimited = checkRateLimit(request, { maxRequests: 5, windowMs: 60_000 });
+  if (rateLimited) return rateLimited;
+
+  const { action, newPassword, currentPassword } = await request.json();
 
   if (action === 'change-password') {
     if (!newPassword || typeof newPassword !== 'string' || newPassword.length < 8) {
       return NextResponse.json(
         { error: 'Wachtwoord moet minimaal 8 tekens zijn.' },
+        { status: 400 },
+      );
+    }
+
+    if (!currentPassword || typeof currentPassword !== 'string') {
+      return NextResponse.json(
+        { error: 'Huidig wachtwoord is vereist.' },
         { status: 400 },
       );
     }
@@ -41,6 +52,20 @@ export async function POST(request: NextRequest) {
         { error: 'Redis niet beschikbaar. Wijzig ADMIN_PASSWORD in Vercel Environment Variables.' },
         { status: 500 },
       );
+    }
+
+    // Verify the current password explicitly (not just from auth header)
+    const storedHash = await r.get('admin:password_hash');
+    if (storedHash) {
+      if (!verifyPasswordHash(currentPassword, storedHash)) {
+        return NextResponse.json({ error: 'Huidig wachtwoord is onjuist.' }, { status: 403 });
+      }
+    } else {
+      // Fallback: verify against env var
+      const envPassword = process.env.ADMIN_PASSWORD;
+      if (!envPassword || currentPassword !== envPassword) {
+        return NextResponse.json({ error: 'Huidig wachtwoord is onjuist.' }, { status: 403 });
+      }
     }
 
     // Store hashed password in Redis (overrides env var)
