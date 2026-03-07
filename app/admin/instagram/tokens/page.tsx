@@ -165,12 +165,11 @@ export default function TokensPage() {
             <button
               onClick={() => setMode('exchange')}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${
-                mode === 'exchange' ? 'ring-2' : 'opacity-60'
+                mode === 'exchange' ? 'ring-2 ring-amber-500' : 'opacity-60'
               }`}
               style={{
                 backgroundColor: mode === 'exchange' ? 'var(--amber-bg)' : 'var(--bg)',
                 color: mode === 'exchange' ? 'var(--amber-text)' : 'var(--muted)',
-                ringColor: 'var(--amber-text)',
               }}
             >
               Short-lived omwisselen
@@ -178,12 +177,11 @@ export default function TokensPage() {
             <button
               onClick={() => setMode('direct')}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${
-                mode === 'direct' ? 'ring-2' : 'opacity-60'
+                mode === 'direct' ? 'ring-2 ring-amber-500' : 'opacity-60'
               }`}
               style={{
                 backgroundColor: mode === 'direct' ? 'var(--amber-bg)' : 'var(--bg)',
                 color: mode === 'direct' ? 'var(--amber-text)' : 'var(--muted)',
-                ringColor: 'var(--amber-text)',
               }}
             >
               Token direct opslaan
