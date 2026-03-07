@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin/', '/experience/toegang/', '/experience/profiel/', '/cursussen/bedankt/'],
+      disallow: ['/api/', '/admin/', '/tools/', '/experience/toegang/', '/experience/profiel/', '/cursussen/bedankt/'],
     },
     sitemap: 'https://devadercoach.nl/sitemap.xml',
   };
