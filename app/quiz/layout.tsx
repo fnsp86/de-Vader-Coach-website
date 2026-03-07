@@ -1,13 +1,18 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vadervaardigheden Quiz - Test jezelf',
+  title: 'Vaderschap Quiz - Ontdek jouw sterke en zwakke opvoedvaardigheden',
   description:
-    'Doe de gratis vadervaardigheden quiz en ontdek waar jouw sterke punten liggen. Persoonlijk resultaat met tips om te groeien als vader.',
+    'Doe de gratis vaderschap quiz en ontdek welke van de 8 opvoedvaardigheden jouw sterkste kant is en waar je kunt groeien. Duurt maar 3 minuten.',
+  keywords: [
+    'vaderschap quiz', 'opvoedtest', 'opvoedvaardigheden test',
+    'vader test', 'opvoeding quiz', 'ben ik een goede vader',
+  ],
   openGraph: {
-    title: 'Vadervaardigheden Quiz - De Vadercoach',
+    title: 'Vaderschap Quiz - Test je opvoedvaardigheden',
     description:
-      'Doe de gratis vadervaardigheden quiz en ontdek waar jouw sterke punten liggen als vader.',
+      'Doe de gratis quiz en ontdek welke van de 8 opvoedvaardigheden jouw sterkste kant is. Duurt maar 3 minuten.',
+    type: 'website',
     url: 'https://devadercoach.nl/quiz',
   },
   alternates: {

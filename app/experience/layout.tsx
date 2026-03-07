@@ -1,13 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vader Experience - 22-Daagse Persoonlijke Ontwikkeling Training',
+  title: 'De Vader Experience - 22 dagen programma voor betere vaders',
   description:
-    'Persoonlijke ontwikkeling training voor vaders in 22 dagen. Oefen met grenzen stellen, emotiecoaching, zelfregulatie en 5 andere opvoedvaardigheden. Herkenbare situaties, audio-intro en een persoonlijk vaderprofiel. €19,99 eenmalig.',
+    'In 22 dagen word je een bewustere, aanwezigere vader. Elke dag een korte oefening gebaseerd op de 8 vadervaardigheden. Wetenschappelijk onderbouwd en direct toepasbaar.',
+  keywords: [
+    'vader experience', 'vaderschapsprogramma', 'beter worden als vader',
+    'opvoedprogramma', '22 dagen challenge', 'vaderschap verbeteren',
+  ],
   openGraph: {
-    title: 'Vader Experience - 22-Daagse Persoonlijke Ontwikkeling Training',
+    title: 'De Vader Experience - 22 dagen programma',
     description:
-      'Persoonlijke ontwikkeling training voor vaders in 22 dagen. Oefen met 8 opvoedvaardigheden via herkenbare situaties, audio en reflectie. €19,99 eenmalig.',
+      'In 22 dagen word je een bewustere, aanwezigere vader. Elke dag een korte oefening gebaseerd op de 8 vadervaardigheden.',
+    type: 'website',
+    url: 'https://devadercoach.nl/experience',
   },
   alternates: {
     canonical: 'https://devadercoach.nl/experience',

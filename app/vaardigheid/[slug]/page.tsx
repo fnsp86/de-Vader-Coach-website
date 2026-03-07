@@ -67,9 +67,22 @@ export default async function SkillPage({ params }: { params: Promise<{ slug: st
     ],
   };
 
+  const faqSchema = skill.faq?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: skill.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  } : null;
+
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       <nav className="flex items-center gap-1.5 text-[13px] mb-8" style={{ color: 'var(--text3)' }}>
         <Link href="/" className="hover:underline">Home</Link>
@@ -94,6 +107,51 @@ export default async function SkillPage({ params }: { params: Promise<{ slug: st
           {skill.description}
         </p>
       </div>
+
+      {/* Extended content sections */}
+      {skill.sections && skill.sections.length > 0 && (
+        <div className="mb-12 space-y-8">
+          {skill.sections.map((section, i) => (
+            <section key={i}>
+              <h2 className="text-xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
+                {section.heading}
+              </h2>
+              <p className="text-[15px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                {section.body}
+              </p>
+            </section>
+          ))}
+        </div>
+      )}
+
+      {/* FAQ */}
+      {skill.faq && skill.faq.length > 0 && (
+        <section className="mb-12">
+          <h2 className="text-xl font-extrabold mb-5" style={{ color: 'var(--text)' }}>
+            Veelgestelde vragen over {skill.name.toLowerCase()}
+          </h2>
+          <div className="space-y-4">
+            {skill.faq.map((item, i) => (
+              <details
+                key={i}
+                className="rounded-xl border p-5 group"
+                style={{ borderColor: 'var(--border)' }}
+              >
+                <summary
+                  className="flex items-center justify-between cursor-pointer text-[15px] font-bold list-none"
+                  style={{ color: 'var(--text)' }}
+                >
+                  {item.question}
+                  <ChevronRight className="h-4 w-4 shrink-0 transition-transform group-open:rotate-90" style={{ color: 'var(--text3)' }} />
+                </summary>
+                <p className="mt-3 text-[14px] leading-relaxed" style={{ color: 'var(--text2)' }}>
+                  {item.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Course */}
       {course && courseSlug && (
