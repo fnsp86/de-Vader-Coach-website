@@ -7,6 +7,7 @@ import { getAllCourses, SKILL_COLORS } from '@/lib/courses';
 import { EXPERIENCE_DAYS } from '@/lib/experience';
 import { SOCIAL_CONTENT, type SocialContent } from '@/lib/instagram-content';
 import { REEL_LIBRARY, type ReelSequence } from '@/lib/instagram-reel-content';
+import { GROWTH_POSTS, POST_TYPE_LABELS, POST_TYPE_COLORS, type GrowthPost, type GrowthPostType } from '@/lib/instagram-growth-posts';
 
 // Always use production URL for Instagram image URLs (Instagram can't reach localhost)
 const IG_IMAGE_BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
@@ -52,7 +53,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
-type Tab = 'blog' | 'cursussen' | 'experience' | 'bibliotheek';
+type Tab = 'blog' | 'cursussen' | 'experience' | 'bibliotheek' | 'groeistrategie';
 type PostStatus = 'idle' | 'posting' | 'success' | 'error';
 
 const TEMPLATE_LABELS: Record<Template, string> = {
@@ -85,6 +86,7 @@ export default function InstagramPage() {
   const [postToFacebook, setPostToFacebook] = useState(false);
   const [postAsStory, setPostAsStory] = useState(false);
   const [libFilter, setLibFilter] = useState<string>('all');
+  const [growthFilter, setGrowthFilter] = useState<string>('all');
   const [autoStatus, setAutoStatus] = useState<{ enabled: boolean; lastPostAt: string | null; nextPostAt: string | null; postedCount: number } | null>(null);
   const [autoToggling, setAutoToggling] = useState(false);
 
@@ -204,6 +206,41 @@ export default function InstagramPage() {
   const filteredLibrary = libFilter === 'all'
     ? SOCIAL_CONTENT
     : SOCIAL_CONTENT.filter((c: SocialContent) => c.type === libFilter || c.skill === libFilter);
+
+  const filteredGrowth = growthFilter === 'all'
+    ? GROWTH_POSTS
+    : GROWTH_POSTS.filter((p: GrowthPost) => p.type === growthFilter || `maand-${p.month}` === growthFilter);
+
+  function selectGrowthPost(post: GrowthPost) {
+    const captionWithHashtags = `${post.caption}\n\n${post.hashtags}`;
+    if (post.type === 'carrousel' && post.slides) {
+      setSlides(post.slides.map((text, i) => ({
+        template: i === 0 ? 'tip' as const : 'quote' as const,
+        text,
+        color: POST_TYPE_COLORS[post.type],
+        skill: `Post ${post.id}`,
+        subtitle: '',
+        number: i === 0 ? '' : String(i),
+        items: [],
+      })));
+      setActiveSlide(0);
+    } else {
+      const text = post.imageText || post.concept || post.title;
+      setSlides([{
+        template: 'quote' as const,
+        text,
+        color: POST_TYPE_COLORS[post.type],
+        skill: `Post ${post.id}`,
+        subtitle: '',
+        number: '',
+        items: [],
+      }]);
+      setActiveSlide(0);
+    }
+    setCaption(captionWithHashtags);
+    setSelectedTitle(`Groei #${post.id}: ${post.title}`);
+    resetStatus();
+  }
 
   function startVrijePost() {
     setSlides([{ template: 'quote', text: 'Typ hier je tekst', color: '#F59E0B', skill: '', subtitle: '', number: '', items: [] }]);
@@ -675,6 +712,7 @@ export default function InstagramPage() {
               { id: 'cursussen' as Tab, label: 'Cursussen', icon: BookOpen, count: courses.length },
               { id: 'experience' as Tab, label: 'Experience', icon: Calendar, count: 22 },
               { id: 'bibliotheek' as Tab, label: 'Bibliotheek', icon: Library, count: SOCIAL_CONTENT.length },
+              { id: 'groeistrategie' as Tab, label: 'Groei', icon: Sparkles, count: GROWTH_POSTS.length },
             ]).map((t) => (
               <button
                 key={t.id}
@@ -751,6 +789,35 @@ export default function InstagramPage() {
                     badgeColor={SKILL_COLORS[item.skill] ?? '#F59E0B'}
                     active={selectedTitle === item.text.slice(0, 50)}
                     onClick={() => selectLibraryContent(item)}
+                  />
+                ))}
+              </>
+            )}
+            {tab === 'groeistrategie' && (
+              <>
+                <div className="flex flex-wrap gap-1 mb-2">
+                  {(['all', 'carrousel', 'reel', 'verhaal', 'quote', 'maand-1', 'maand-2', 'maand-3'] as const).map((f) => (
+                    <button
+                      key={f}
+                      onClick={() => setGrowthFilter(f)}
+                      className="text-[10px] font-bold px-2 py-1 rounded-lg transition-colors"
+                      style={{
+                        backgroundColor: growthFilter === f ? '#F59E0B' : 'var(--bg)',
+                        color: growthFilter === f ? '#000' : 'var(--text3)',
+                      }}
+                    >
+                      {f === 'all' ? 'Alles' : f === 'maand-1' ? 'Maand 1' : f === 'maand-2' ? 'Maand 2' : f === 'maand-3' ? 'Maand 3' : POST_TYPE_LABELS[f as GrowthPostType]}
+                    </button>
+                  ))}
+                </div>
+                {filteredGrowth.map((post: GrowthPost) => (
+                  <ContentItem
+                    key={post.id}
+                    title={`#${post.id} ${post.title}`}
+                    badge={`${POST_TYPE_LABELS[post.type]} - ${post.dag}`}
+                    badgeColor={POST_TYPE_COLORS[post.type]}
+                    active={selectedTitle === `Groei #${post.id}: ${post.title}`}
+                    onClick={() => selectGrowthPost(post)}
                   />
                 ))}
               </>
