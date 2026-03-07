@@ -149,7 +149,7 @@ async function postCarousel(
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         media_type: 'CAROUSEL',
-        children: containerIds.join(','),
+        children: containerIds,
         caption,
         access_token: accessToken,
       }),

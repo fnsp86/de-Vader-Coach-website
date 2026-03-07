@@ -448,7 +448,9 @@ export default function InstagramPage() {
     setErrorMsg('');
     try {
       const formData = new FormData();
-      formData.append('video', new File([blob], 'reel.mp4', { type: 'video/mp4' }));
+      const isWebm = blob.type.includes('webm');
+      const fileName = isWebm ? 'reel.webm' : 'reel.mp4';
+      formData.append('video', new File([blob], fileName, { type: blob.type || 'video/mp4' }));
       const res = await fetch('/api/instagram/upload-video', {
         method: 'POST',
         headers: { 'x-admin-password': password },

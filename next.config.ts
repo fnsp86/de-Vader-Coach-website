@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const securityHeaders = [
   // Prevent clickjacking
-  { key: 'X-Frame-Options', value: 'DENY' },
+  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   // Prevent MIME type sniffing
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   // Control referrer information
@@ -23,7 +23,7 @@ const securityHeaders = [
       "img-src 'self' data: https:",
       "font-src 'self' data:",
       "connect-src 'self' https://api.resend.com https://va.vercel-scripts.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
-      "frame-ancestors 'none'",
+      "frame-ancestors 'self'",
       "base-uri 'self'",
       "form-action 'self'",
     ].join('; '),

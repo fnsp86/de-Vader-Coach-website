@@ -40,12 +40,15 @@ export default function ReelGenerator({
   const generate = useCallback(async () => {
     if (!canvasRef.current || slides.length === 0) return;
 
-    // Check MP4 MediaRecorder support
-    if (!MediaRecorder.isTypeSupported('video/mp4')) {
+    // Check MediaRecorder support (MP4 preferred, webm fallback)
+    const supportsMp4 = MediaRecorder.isTypeSupported('video/mp4');
+    const supportsWebm = MediaRecorder.isTypeSupported('video/webm;codecs=vp9');
+    if (!supportsMp4 && !supportsWebm) {
       setStatus('error');
-      setErrorMsg('Je browser ondersteunt geen MP4 opname. Gebruik Chrome 124+ voor het genereren van Reels.');
+      setErrorMsg('Je browser ondersteunt geen video-opname. Gebruik Chrome 124+ of Firefox.');
       return;
     }
+    const mimeType = supportsMp4 ? 'video/mp4' : 'video/webm;codecs=vp9';
 
     abortRef.current = false;
     setStatus('loading');
@@ -120,7 +123,7 @@ export default function ReelGenerator({
       }
 
       const recorder = new MediaRecorder(combinedStream, {
-        mimeType: 'video/mp4',
+        mimeType,
         videoBitsPerSecond: 2_000_000,
       });
 
@@ -131,7 +134,7 @@ export default function ReelGenerator({
 
       const recordingDone = new Promise<Blob>((resolve) => {
         recorder.onstop = () => {
-          resolve(new Blob(chunks, { type: 'video/mp4' }));
+          resolve(new Blob(chunks, { type: mimeType }));
         };
       });
 

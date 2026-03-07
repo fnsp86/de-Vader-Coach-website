@@ -15,8 +15,8 @@ export async function POST(request: NextRequest) {
 
     // Validate file type
     const name = file.name.toLowerCase();
-    if (!name.endsWith('.mp4') && !name.endsWith('.mov')) {
-      return NextResponse.json({ error: 'Alleen .mp4 en .mov bestanden zijn toegestaan' }, { status: 400 });
+    if (!name.endsWith('.mp4') && !name.endsWith('.mov') && !name.endsWith('.webm')) {
+      return NextResponse.json({ error: 'Alleen .mp4, .mov en .webm bestanden zijn toegestaan' }, { status: 400 });
     }
 
     // Validate file size (50MB)

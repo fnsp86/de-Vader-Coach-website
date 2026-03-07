@@ -17,6 +17,7 @@ import {
   Users,
   Globe,
   Monitor,
+  Wand2,
 } from 'lucide-react';
 
 interface Stats {
@@ -154,6 +155,7 @@ export default function AdminDashboard() {
       {/* Quick links */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
         <QuickLink href="/admin/instagram" label="Instagram Tool" icon={Instagram} />
+        <QuickLink href="/admin/prompt-generator" label="AI Prompt Generator" icon={Wand2} />
         <QuickLink href="https://my.mollie.com/dashboard" label="Mollie Dashboard" icon={CreditCard} external />
         <QuickLink href="https://resend.com/emails" label="Resend E-mails" icon={ExternalLink} external />
         <QuickLink href="https://vercel.com/dashboard" label="Vercel Analytics" icon={BarChart3} external />
