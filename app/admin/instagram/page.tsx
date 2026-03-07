@@ -23,6 +23,7 @@ import {
 } from '@/lib/instagram-captions';
 import { BRAND_COLORS, SKILL_ICONS, TEMPLATE_INFO } from '@/lib/instagram-assets';
 import ReelGenerator from '@/components/ReelGenerator';
+import TextReelGenerator from '@/components/TextReelGenerator';
 import {
   FileText,
   BookOpen,
@@ -87,6 +88,7 @@ export default function InstagramPage() {
   const [postAsStory, setPostAsStory] = useState(false);
   const [libFilter, setLibFilter] = useState<string>('all');
   const [growthFilter, setGrowthFilter] = useState<string>('all');
+  const [activeGrowthPost, setActiveGrowthPost] = useState<GrowthPost | null>(null);
   const [autoStatus, setAutoStatus] = useState<{ enabled: boolean; lastPostAt: string | null; nextPostAt: string | null; postedCount: number } | null>(null);
   const [autoToggling, setAutoToggling] = useState(false);
 
@@ -156,6 +158,7 @@ export default function InstagramPage() {
     setActiveSlide(0);
     setCaption(generateBlogCaption({ ...meta, content: full?.content }));
     setSelectedTitle(meta.title);
+    setActiveGrowthPost(null);
     resetStatus();
   }
 
@@ -167,6 +170,7 @@ export default function InstagramPage() {
     setActiveSlide(0);
     setCaption(generateCourseCaption(course));
     setSelectedTitle(course.title);
+    setActiveGrowthPost(null);
     resetStatus();
   }
 
@@ -178,6 +182,7 @@ export default function InstagramPage() {
     setActiveSlide(0);
     setCaption(generateExperienceCaption(day));
     setSelectedTitle(`Dag ${day.dag}: ${day.title}`);
+    setActiveGrowthPost(null);
     resetStatus();
   }
 
@@ -200,6 +205,7 @@ export default function InstagramPage() {
       setCaption(`${item.text}\n\n${hashtags}`);
     }
     setSelectedTitle(item.text.slice(0, 50));
+    setActiveGrowthPost(null);
     resetStatus();
   }
 
@@ -247,6 +253,7 @@ export default function InstagramPage() {
     }
     setCaption(captionWithHashtags);
     setSelectedTitle(`Groei #${post.id}: ${post.title}`);
+    setActiveGrowthPost(post);
     resetStatus();
   }
 
@@ -885,61 +892,91 @@ export default function InstagramPage() {
 
               {reelTab === 'upload' && (
                 /* Upload video tab */
-                <div
-                  className="rounded-2xl border p-4 sm:p-6"
-                  style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
-                >
-                  <div className="flex items-center gap-2 mb-4">
-                    <Upload className="h-4 w-4" style={{ color: '#F59E0B' }} />
-                    <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Video uploaden</span>
-                  </div>
-
-                  {reelVideoPreview ? (
-                    <div className="space-y-3">
-                      <video
-                        src={reelVideoPreview}
-                        controls
-                        className="w-full rounded-xl"
-                        style={{ maxHeight: 400 }}
-                      />
-                      <button
-                        onClick={() => {
-                          if (reelVideoPreview) URL.revokeObjectURL(reelVideoPreview);
-                          setReelVideoPreview(null);
-                          setReelVideoUrl(null);
-                          setReelVideoBlob(null);
-                        }}
-                        className="text-xs hover:underline"
-                        style={{ color: 'var(--text3)' }}
-                      >
-                        Andere video kiezen
-                      </button>
-                    </div>
-                  ) : (
-                    <label
-                      className="flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-8 cursor-pointer transition-colors hover:border-amber-500/40"
-                      style={{ borderColor: 'var(--border)' }}
+                <div className="space-y-4">
+                  {/* Text Reel Generator - shown when a growth reel is selected */}
+                  {activeGrowthPost?.type === 'reel' && activeGrowthPost.concept && (
+                    <div
+                      className="rounded-2xl border p-4 sm:p-6"
+                      style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
                     >
-                      <Video className="h-10 w-10 opacity-30" style={{ color: 'var(--text3)' }} />
-                      <span className="text-sm font-medium" style={{ color: 'var(--text3)' }}>
-                        {reelUploading ? 'Uploaden...' : 'Klik om een video te kiezen'}
-                      </span>
-                      <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
-                        .mp4 of .mov, max 50MB, max 90 seconden
-                      </span>
-                      <input
-                        type="file"
-                        accept="video/mp4,video/quicktime,.mp4,.mov"
-                        className="hidden"
-                        disabled={reelUploading}
-                        onChange={(e) => {
-                          const f = e.target.files?.[0];
-                          if (f) handleVideoUpload(f);
-                        }}
+                      <div className="flex items-center gap-2 mb-3">
+                        <Film className="h-4 w-4" style={{ color: '#EC4899' }} />
+                        <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>
+                          Video genereren - #{activeGrowthPost.id} {activeGrowthPost.title}
+                        </span>
+                      </div>
+                      <p className="text-xs mb-3" style={{ color: 'var(--text3)' }}>
+                        Genereert een tekst-video van het reel concept. Kies achtergrond, animatie en tempo.
+                      </p>
+                      <TextReelGenerator
+                        textSlides={activeGrowthPost.concept
+                          .split('\n')
+                          .map((l) => l.replace(/^[""\u201C\u201D]|[""\u201C\u201D]$/g, '').trim())
+                          .filter((l) => l.length > 0 && !l.startsWith('Muziek:') && !l.startsWith('muziek:'))}
+                        audioSrc={audioSrc || undefined}
+                        audioVolume={audioVolume}
+                        onComplete={handleReelGenerated}
                       />
-                      {reelUploading && <Loader2 className="h-5 w-5 animate-spin" style={{ color: '#F59E0B' }} />}
-                    </label>
+                    </div>
                   )}
+
+                  {/* Manual upload */}
+                  <div
+                    className="rounded-2xl border p-4 sm:p-6"
+                    style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
+                  >
+                    <div className="flex items-center gap-2 mb-4">
+                      <Upload className="h-4 w-4" style={{ color: '#F59E0B' }} />
+                      <span className="text-sm font-bold" style={{ color: 'var(--text)' }}>Video uploaden</span>
+                    </div>
+
+                    {reelVideoPreview ? (
+                      <div className="space-y-3">
+                        <video
+                          src={reelVideoPreview}
+                          controls
+                          className="w-full rounded-xl"
+                          style={{ maxHeight: 400 }}
+                        />
+                        <button
+                          onClick={() => {
+                            if (reelVideoPreview) URL.revokeObjectURL(reelVideoPreview);
+                            setReelVideoPreview(null);
+                            setReelVideoUrl(null);
+                            setReelVideoBlob(null);
+                          }}
+                          className="text-xs hover:underline"
+                          style={{ color: 'var(--text3)' }}
+                        >
+                          Andere video kiezen
+                        </button>
+                      </div>
+                    ) : (
+                      <label
+                        className="flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-8 cursor-pointer transition-colors hover:border-amber-500/40"
+                        style={{ borderColor: 'var(--border)' }}
+                      >
+                        <Video className="h-10 w-10 opacity-30" style={{ color: 'var(--text3)' }} />
+                        <span className="text-sm font-medium" style={{ color: 'var(--text3)' }}>
+                          {reelUploading ? 'Uploaden...' : 'Klik om een video te kiezen'}
+                        </span>
+                        <span className="text-[11px]" style={{ color: 'var(--text3)' }}>
+                          .mp4 of .mov, max 50MB, max 90 seconden
+                        </span>
+                        <input
+                          type="file"
+                          accept="video/mp4,video/quicktime,.mp4,.mov"
+                          className="hidden"
+                          disabled={reelUploading}
+                          onChange={(e) => {
+                            const f = e.target.files?.[0];
+                            if (f) handleVideoUpload(f);
+                          }}
+                        />
+                        {reelUploading && <Loader2 className="h-5 w-5 animate-spin" style={{ color: '#F59E0B' }} />}
+                      </label>
+                    )}
+                  </div>
                 </div>
               )}
 
