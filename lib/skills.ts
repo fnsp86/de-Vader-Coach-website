@@ -186,7 +186,7 @@ export const SKILLS: Skill[] = [
       },
       {
         heading: 'Het verschil tussen loslaten en verwaarlozen',
-        body: 'Loslaten is niet hetzelfde als je niet interesseren. Het is juist het tegenovergestelde: je bent betrokken genoeg om te zien dat je kind iets zelf kan, en moedig genoeg om een stap terug te doen. Je blijft beschikbaar, je blijft geinteresseerd, maar je neemt het niet over. Een kind dat weet dat papa er is als het echt nodig is, maar dat hij vertrouwen heeft in zijn kind, groeit op met een stevig zelfbeeld.',
+        body: 'Loslaten is niet hetzelfde als je niet interesseren. Het is juist het tegenovergestelde: je bent betrokken genoeg om te zien dat je kind iets zelf kan, en moedig genoeg om een stap terug te doen. Je blijft beschikbaar, je blijft betrokken, maar je neemt het niet over. Een kind dat weet dat papa er is als het echt nodig is, maar dat hij vertrouwen heeft in zijn kind, groeit op met een stevig zelfbeeld.',
       },
     ],
     faq: [

@@ -629,7 +629,7 @@ Als je een scherm afpakt tijdens het gebruik, ervaar je kind een plotselinge dop
 
 **10-12 jaar:** Betrek je kind bij het maken van regels. "Wat denk jij dat eerlijk is?" Kinderen die meedenken over afspraken houden zich er beter aan. Bespreek online veiligheid. Weet welke games je kind speelt en met wie.
 
-**13+ jaar:** Een telefoon verbieden is niet realistisch en ook niet wenselijk - het is hun sociale leven. Focus op afspraken in plaats van verboden. Telefoonvrije momenten (tafel, slaapkamer, eerste uur na schooltijd) zijn effectiever dan een minutenlimiet. En voer het gesprek over wat ze online tegenkomen. Niet controlerend, maar geinteresseerd.
+**13+ jaar:** Een telefoon verbieden is niet realistisch en ook niet wenselijk - het is hun sociale leven. Focus op afspraken in plaats van verboden. Telefoonvrije momenten (tafel, slaapkamer, eerste uur na schooltijd) zijn effectiever dan een minutenlimiet. En voer het gesprek over wat ze online tegenkomen. Niet controlerend, maar met oprechte interesse.
 
 ## Jouw eigen schermgedrag
 
@@ -1595,6 +1595,524 @@ Een kinderpsycholoog kan je kind helpen met verwerking en weerbaarheid. De huisa
 2. **Luister naar het onuitgesproken.** Let op de signalen, niet alleen de woorden.
 3. **Versterk de thuisbasis.** Een kind dat thuis gezien en gehoord wordt, kan meer aan op school.
 4. **Wees er.** Niet als redder, niet als vechtmachine, maar als vader. Dat is genoeg.`,
+  },
+  {
+    slug: 'stiefvader-worden',
+    datePublished: '2026-03-01',
+    title: 'Stiefvader Worden: Praktische Gids voor een Sterke Band',
+    description:
+      'Hoe bouw je als stiefvader een goede relatie op met je stiefkinderen? Praktische tips over grenzen, geduld en je plek vinden in een samengesteld gezin.',
+    keywords: [
+      'stiefvader worden', 'samengesteld gezin', 'bonusvader tips',
+      'stiefvader rol', 'relatie stiefkinderen', 'stiefouder opvoeden',
+    ],
+    relatedCourses: ['verbinding-met-je-tiener', 'grenzen-stellen-met-liefde'],
+    relatedPosts: ['stiefvader-tips', 'herstellen-na-fout'],
+    faq: [
+      {
+        question: 'Hoe lang duurt het voordat een stiefkind je accepteert?',
+        answer: 'Onderzoekers geven aan dat het gemiddeld twee tot vijf jaar duurt voordat een samengesteld gezin goed functioneert. Dat klinkt lang, maar het is normaal. Forceer het niet. Laat de relatie groeien op het tempo van het kind.',
+      },
+      {
+        question: 'Mag ik als stiefvader grenzen stellen?',
+        answer: 'Ja, maar bouw eerst een vertrouwensband op. In het begin is het beter om de biologische ouder het voortouw te laten nemen bij discipline. Zodra het kind je vertrouwt en respecteert, kun je steeds meer een opvoedende rol innemen.',
+      },
+      {
+        question: 'Wat doe ik als mijn stiefkind zegt "jij bent mijn vader niet"?',
+        answer: 'Dit is een veelgehoorde reactie en het is niet persoonlijk bedoeld. Het kind verwerkt loyaliteit naar de biologische ouder. Reageer kalm: "Dat klopt, ik ben niet je vader. Maar ik geef wel om je en ik wil het fijn maken voor ons allebei." Geef ruimte, straf niet voor deze uitspraak.',
+      },
+    ],
+    content: `Je bent verliefd geworden op iemand die al kinderen heeft. Prachtig. Maar nu begint het echte werk. Want stiefvader worden is niet hetzelfde als vader zijn. De verwachtingen zijn anders, de dynamiek is anders, en je plek in het gezin moet je zelf zien te vinden.
+
+## Waarom het zo lastig is
+
+Als biologische vader groei je mee met je kind vanaf dag een. Als stiefvader stap je in een rijdende trein. Er is al een geschiedenis, er zijn al gewoontes, en er is al een band tussen moeder en kind waar jij niet bij was. Dat is geen probleem, dat is gewoon de realiteit.
+
+Het lastige is dat je van jezelf verwacht dat je meteen een goede vaderfiguur bent. Dat je je stiefkinderen meteen leuk vindt, dat zij jou meteen accepteren, en dat het gezin direct soepel draait. Die verwachting is onrealistisch en zorgt voor frustratie.
+
+Samengestelde gezinnen hebben tijd nodig. Veel tijd. En dat is oké.
+
+## Je rol vinden
+
+De grootste fout die stiefvaders maken is te snel te veel willen zijn. Je bent geen vervanging van de biologische vader. Je bent ook geen vriend. Je bent iets daartussenin, en die rol mag je zelf invullen.
+
+**Begin als een betrokken volwassene.** Niet als opvoeder, niet als autoriteit, maar als iemand die aanwezig is en interesse toont. Stel vragen over school, over hobby's, over wat het kind bezighoudt. Luister meer dan je praat.
+
+**Laat discipline aan de biologische ouder.** Dit is moeilijk, vooral als je dingen ziet die je anders zou aanpakken. Maar in het begin heb je nog geen "opvoedkrediet" bij het kind. Als jij grenzen stelt voordat er vertrouwen is, roep je weerstand op.
+
+**Bouw een eigen band.** Doe dingen samen die jullie allebei leuk vinden. Een wandeling, een spelletje, samen koken. Het hoeft niet groot te zijn. Het gaat om gedeelde positieve ervaringen, stukje bij beetje.
+
+## De loyaliteitsstrijd
+
+Kinderen in een samengesteld gezin zitten vaak klem tussen twee ouders. Ze houden van hun biologische vader en voelen zich schuldig als ze jou ook aardig vinden. Dat heet loyaliteitsconflict en het is een van de moeilijkste dingen in een stiefgezin.
+
+Wat helpt:
+- Praat nooit negatief over de biologische vader, ook niet als je het niet eens bent met zijn aanpak
+- Geef het kind expliciet toestemming om van beide vaders te houden ("Het is fijn dat je een leuk weekend bij papa hebt gehad")
+- Verwacht geen gelijkwaardige liefde. Acceptatie is al een groot resultaat
+
+## Omgaan met afwijzing
+
+Er komen momenten dat je stiefkind je afwijst. "Jij bent mijn vader niet." "Ik wil naar mama." "Je hoeft me niet te helpen." Die woorden doen pijn, ook al weet je dat het niet persoonlijk is.
+
+Het is belangrijk om deze afwijzing niet met afwijzing te beantwoorden. Trek je niet terug, word niet boos, en straf het kind niet. Laat zien dat jouw aanwezigheid niet afhankelijk is van de reactie van het kind. Dat is precies wat veilige gehechtheid betekent: er zijn, ook als het moeilijk is.
+
+## De relatie met je partner
+
+Een sterk samengesteld gezin begint bij een sterke relatie. Jullie zijn het team. Bespreek regelmatig hoe het gaat. Wat werkt, wat niet, waar zitten de spanningen?
+
+Veelvoorkomende valkuilen:
+- **Verschillende opvoedstijlen.** Bespreek verwachtingen over regels en grenzen voordat ze tot conflict leiden
+- **Je buitengesloten voelen.** Als moeder en kinderen een hechte eenheid zijn, kan jij je overbodig voelen. Bespreek dit openlijk
+- **Overcompenseren.** Niet alles hoeft perfect. Een samengesteld gezin mag rommelig zijn
+
+## Praktische tips die werken
+
+1. **Neem de tijd.** Twee tot vijf jaar is normaal. Houd vol
+2. **Wees voorspelbaar.** Kinderen hebben baat bij een stiefouder die betrouwbaar en stabiel is
+3. **Zoek je eigen rituelen.** Een vast moment samen, iets wat alleen van jullie is
+4. **Praat met andere stiefvaders.** Je bent niet de enige die hiermee worstelt
+5. **Verwacht geen dankbaarheid.** Je doet dit niet voor erkenning, maar omdat je om dit gezin geeft
+
+## Wat je vandaag kunt doen
+
+Kies een kind en doe iets kleins samen. Geen groot uitje, geen duur cadeau. Gewoon even aandacht. Vraag wat het op school deed. Luister. Meer is het niet. Die kleine momenten zijn het fundament waarop de band groeit.`,
+  },
+  {
+    slug: 'alleenstaande-vader-tips',
+    datePublished: '2026-03-01',
+    title: 'Alleenstaande Vader: Tips voor Opvoeden in je Eentje',
+    description:
+      'Praktische tips voor alleenstaande vaders. Hoe combineer je werk, opvoeding en je eigen welzijn? Eerlijk advies zonder suikerlaag.',
+    keywords: [
+      'alleenstaande vader', 'alleen opvoeden', 'alleenstaande vader tips',
+      'single dad', 'vader alleen met kinderen', 'co-ouderschap vader',
+    ],
+    relatedCourses: ['zelfregulatie-als-vader', 'aanwezig-vaderschap'],
+    relatedPosts: ['scheiden-en-vader-zijn', 'vader-burn-out-opvoeding', 'vader-kind-weekendvader'],
+    faq: [
+      {
+        question: 'Hoe voorkom ik een burn-out als alleenstaande vader?',
+        answer: 'Plan structureel tijd voor jezelf in, ook al is het maar een half uur per dag. Vraag hulp aan familie, vrienden of buren. Perfectie is niet het doel. Een vader die goed voor zichzelf zorgt, is een betere vader voor zijn kinderen.',
+      },
+      {
+        question: 'Hoe leg ik aan mijn kind uit dat papa en mama niet meer samen zijn?',
+        answer: 'Houd het simpel en eerlijk, afgestemd op de leeftijd. "Papa en mama houden allebei heel veel van jou, maar wonen niet meer samen." Vermijd schuld en details over de breuk. Herhaal zo vaak als nodig dat het niet de schuld van het kind is.',
+      },
+      {
+        question: 'Moet ik als alleenstaande vader ook de moederrol vervullen?',
+        answer: 'Nee. Je hoeft geen moeder te zijn, je bent vader. Kinderen hebben baat bij een betrokken ouder die er is, ongeacht het geslacht. Doe wat natuurlijk voor je voelt. Troosten, koken, voorlezen - dat zijn geen moedertaken, dat zijn oudertaken.',
+      },
+    ],
+    content: `Je had dit niet gepland. Geen enkele vader droomt ervan om zijn kinderen alleen op te voeden. Toch is dit je realiteit, en het is zwaarder dan iemand je had verteld.
+
+Maar laten we eerlijk zijn: je doet het. Elke dag weer. En dat verdient respect.
+
+## De eerste fase: overleven
+
+Na een scheiding of het verlies van je partner is opvoeden niet je enige taak. Je verwerkt ook je eigen verdriet, boosheid of opluchting. Alles tegelijk. En ondertussen moet er eten op tafel staan, moeten er broodtrommels worden gevuld, en moet je om zeven uur 's ochtends functioneren.
+
+In deze fase is overleven het doel. Niet perfectie, niet de vader van het jaar worden. Gewoon de dag doorkomen. Dat is genoeg.
+
+Praktisch:
+- Maak routines. Kinderen gedijen op voorspelbaarheid, juist in onzekere tijden
+- Accepteer hulp. Van je ouders, van vrienden, van buren. "Ik red het wel" is geen deugd als je op je tandvlees loopt
+- Laat dingen los. De was kan wachten. Een avond beeldschermtijd is geen ramp
+
+## Structuur is je beste vriend
+
+Alleenstaande vaders die het goed doen, hebben een ding gemeen: structuur. Niet strak en militair, maar een herkenbaar ritme waar je kind op kan vertrouwen.
+
+**Ochtendroutine.** Kleding klaarleggen de avond ervoor. Ontbijt simpel houden. Dezelfde volgorde elke dag.
+
+**Na school.** Even rustig aankomen, iets eten, dan huiswerk of spelen. Geen overvolle agenda.
+
+**Avondroutine.** Samen eten, even praten over de dag, voorlezen of een spelletje, en op tijd naar bed. Dit ritueel is goud waard.
+
+Structuur geeft niet alleen je kind houvast, het geeft jou houvast. Als de basisroutine staat, hoef je minder beslissingen te nemen en houd je meer energie over.
+
+## Werk en opvoeding combineren
+
+Dit is misschien wel de grootste uitdaging. Werk vereist focus en aanwezigheid. Je kinderen ook. En er is maar een van jou.
+
+Wat kan helpen:
+- **Bespreek je situatie met je werkgever.** Veel werkgevers zijn flexibeler dan je denkt, zeker als je open communiceert
+- **Buitenschoolse opvang.** Het is niet "je kind parkeren". Het is een plek waar je kind speelt en leert terwijl jij werkt
+- **Netwerk opbouwen.** Andere ouders op school, de buurvrouw die een keer kan inspringen. Een vangnet maakt het verschil
+- **Laat schuldgevoel los.** Je bent geen slechtere vader omdat je werkt. Je bent een vader die zorgt voor zijn gezin
+
+## Zorgen voor jezelf
+
+Dit is waar de meeste alleenstaande vaders tekortschieten. Niet uit onwil, maar uit tijdgebrek. Alles gaat naar de kinderen, en voor jezelf blijft er niets over.
+
+Maar een lege batterij kan niets opladen. Als jij niet goed voor jezelf zorgt, merk je kinderen dat. Ze zien je stress, je ongeduld, je vermoeidheid. En ze nemen die spanning over.
+
+Wat minimaal moet:
+- **Slaap.** Ga op tijd naar bed, ook als de verleiding groot is om 's avonds laat eindelijk "je eigen tijd" te pakken
+- **Beweging.** Het hoeft geen sportschool te zijn. Een wandeling van twintig minuten is al genoeg
+- **Sociaal contact.** Niet alleen met je kinderen. Bel een vriend, spreek af, praat met iemand die naar jou luistert
+- **Professionele hulp.** Een scheiding verwerken doe je niet alleen. Een psycholoog of coach is geen zwakte, het is verstandig
+
+## De relatie met je ex
+
+Als je kinderen een moeder hebben, heb je ook met haar te maken. Co-ouderschap is een van de moeilijkste dingen die er bestaan, vooral als de scheiding niet vriendelijk was.
+
+Het uitgangspunt: je kinderen staan centraal. Niet jullie conflict, niet je gekwetstheid, niet wie er gelijk had. Je kinderen hebben baat bij twee ouders die respectvol met elkaar omgaan.
+
+- Communiceer zakelijk en kort. Gebruik een app als praten te moeilijk is
+- Spreek nooit negatief over je ex waar de kinderen bij zijn. Nooit
+- Maak duidelijke afspraken over haal- en brengtijden, vakanties, verjaardagen
+- Wees flexibel waar het kan, maar houd je aan afspraken
+
+## De kracht van alleenstaand vaderschap
+
+Het is niet alleen maar zwaar. Er zijn ook dingen die je als alleenstaande vader beter kunt doen dan je denkt.
+
+Je bouwt een unieke band met je kinderen. Zonder partner als tussenpersoon leer je je kinderen op een diepere manier kennen. Jij bent degene die troost, die luistert, die er is. Die band is onvervangbaar.
+
+Je kinderen leren veerkracht. Ze zien een vader die doorzet, die problemen oplost, die niet opgeeft. Dat is een van de krachtigste lessen die je kunt geven.
+
+## Wat je vandaag kunt doen
+
+1. **Plan een vast moment met elk kind.** Tien minuten onverdeelde aandacht per dag is meer waard dan een heel weekend vol activiteiten
+2. **Vraag hulp aan iemand.** Concreet. Niet "als je een keer kunt..." maar "kun je donderdag om vier uur de kinderen ophalen?"
+3. **Doe iets voor jezelf.** Vanavond. Een wandeling, een boek, een telefoontje met een vriend. Jij telt ook.`,
+  },
+  {
+    slug: 'nieuwe-vader-tips',
+    datePublished: '2026-03-01',
+    title: 'Net Vader Geworden: Tips voor de Eerste Maanden',
+    description:
+      'Je bent net vader geworden. Gefeliciteerd. En nu? Praktische tips voor de eerste maanden, van slapeloze nachten tot je nieuwe rol als vader.',
+    keywords: [
+      'net vader geworden', 'tips voor nieuwe vaders', 'eerste kind vader',
+      'pasgeboren baby vader', 'vader worden tips', 'prille vader',
+    ],
+    relatedCourses: ['aanwezig-vaderschap', 'emotiecoaching-voor-vaders'],
+    relatedPosts: ['nieuwe-baby-als-vader', 'aanwezig-zijn-voor-kind', 'schuldgevoel-als-vader'],
+    faq: [
+      {
+        question: 'Hoe kan ik helpen als moeder borstvoeding geeft?',
+        answer: 'Je kunt enorm veel doen: boeren laten, verschonen, huid-op-huidcontact, het huishouden overnemen, eten klaarmaken, en in de nacht de baby naar moeder brengen. De eerste weken draait het om teamwork. Jouw ondersteuning maakt het verschil.',
+      },
+      {
+        question: 'Is het normaal dat ik me nog niet verbonden voel met mijn baby?',
+        answer: 'Ja, dit komt veel vaker voor dan je denkt. Bij veel vaders groeit de band geleidelijk in de eerste weken en maanden. Huid-op-huidcontact, verzorgende taken en gewoon aanwezig zijn helpen enorm. Als het gevoel na een paar maanden uitblijft, bespreek het met je huisarts.',
+      },
+      {
+        question: 'Kan een vader ook een postnatale depressie krijgen?',
+        answer: 'Ja. Ongeveer 10% van de nieuwe vaders ervaart een postnatale depressie. Symptomen zijn aanhoudende somberheid, prikkelbaarheid, terugtrekking, slaapproblemen en verlies van interesse. Neem het serieus en zoek professionele hulp als je dit herkent.',
+      },
+    ],
+    content: `De baby is er. Iedereen feliciteert je. Je partner herstelt van de bevalling. En jij staat daar met een klein mensje in je armen en denkt: wat nu?
+
+Dat gevoel is normaal. Welkom bij het vaderschap.
+
+## De eerste weken: chaos als nieuwe standaard
+
+Laten we eerlijk zijn: de eerste weken zijn overweldigend. Slaapdeprivatie, een huilende baby die je niet begrijpt, een partner die herstelt en jij die probeert alles bij elkaar te houden.
+
+Het goede nieuws: iedereen voelt dit. Het slechte nieuws: niemand vertelt je dit van tevoren. Je bent niet slecht voorbereid, het is gewoon zo.
+
+Wat helpt in deze fase:
+- **Verlaag je verwachtingen.** Het huis is een puinhoop? Prima. Je eet drie avonden achter elkaar tosti's? Prima. Overleven is de norm
+- **Slaap als de baby slaapt.** Dit cliche is een cliche omdat het werkt
+- **Beperk bezoek.** Iedereen wil de baby zien. Maar jullie hebben rust nodig. Stel grenzen
+
+## Je rol als vader vinden
+
+In de eerste weken kan het voelen alsof moeder alles doet en jij erbij staat. Zeker als ze borstvoeding geeft, lijkt jouw rol beperkt. Maar dat is niet zo.
+
+**Neem taken over die jij kunt doen.** Verschonen, in bad doen, boeren laten, wiegen, huid-op-huidcontact. Hoe meer je doet, hoe sneller je vertrouwen groeit en hoe sterker de band met je baby wordt.
+
+**Neem het huishouden over.** Koken, wassen, boodschappen, schoonmaken. Dit is niet "helpen", dit is je verantwoordelijkheid. Je partner herstelt van een ingrijpende lichamelijke gebeurtenis.
+
+**Wees de poortwachter.** Bepaal samen wanneer bezoek welkom is, hoe lang ze blijven, en zorg dat je partner rust krijgt. Dit is een van de meest waardevolle dingen die je als kersverse vader kunt doen.
+
+## De band met je baby
+
+Bij veel moeders is de band met de baby er direct. Bij vaders duurt het vaak langer. Dat is biologisch verklaarbaar en zegt niets over je als vader.
+
+De band groeit door contact. Fysiek contact, oogcontact, je stem. Hoe meer je aanwezig bent in de dagelijkse verzorging, hoe sneller de hechting groeit.
+
+Tips om de band te versterken:
+- **Huid-op-huidcontact.** Trek je shirt uit, leg de baby op je borst. Dit verlaagt stress bij de baby en verhoogt oxytocine bij jou
+- **Praat tegen je baby.** Het maakt niet uit wat je zegt. Je stem is vertrouwd van voor de geboorte
+- **Draag je baby.** Een draagdoek of drager zorgt voor nabijheid terwijl je handen vrij hebt
+- **Nachtvoedingen.** Als het met fles kan, neem een nachtvoeding over. Die stille momenten samen zijn onbetaalbaar
+
+## De relatie met je partner
+
+Een baby verandert je relatie. Dat is onvermijdelijk. De romantiek maakt plaats voor luiers, en jullie tijd samen krimpt tot de paar minuten voor het slapen.
+
+Dit is normaal, maar het vraagt aandacht. Relaties die het goed doen na een baby, zijn relaties waar beide ouders expliciet investeren.
+
+- **Praat met elkaar.** Niet alleen over de baby. Vraag hoe het met je partner gaat, echt gaat
+- **Verdeel taken eerlijk.** Niet fifty-fifty, maar naar draagkracht. Als zij de nacht doet, doe jij de ochtend
+- **Accepteer dat seks even op de achtergrond staat.** Dat is normaal en tijdelijk. Intimiteit kan ook een arm om haar heen zijn
+- **Wees een team.** Geen concurrentie over wie het zwaarst heeft. Jullie doen dit samen
+
+## Let op jezelf
+
+Nieuwe vaders vergeten vaak zichzelf. De focus ligt op baby en partner, en jouw welzijn komt op de laatste plaats. Maar een uitgeputte, gefrustreerde vader is geen goede vader.
+
+Watch out voor:
+- **Aanhoudende somberheid of prikkelbaarheid.** Postnatale depressie komt ook bij vaders voor, bij ongeveer 1 op de 10
+- **Terugtrekking.** Als je merkt dat je je steeds meer afsluit, is dat een signaal
+- **Overmatig werken.** Het kantoor als vlucht uit de chaos thuis is een valkuil
+
+Herken je dit? Praat erover. Met je partner, met een vriend, met je huisarts. Er is geen schaamte in hulp vragen - dat is juist kracht.
+
+## De eerste mijlpalen
+
+Na de chaos van de eerste weken komen de beloningen. De eerste echte glimlach. Het moment dat je baby je herkent. De eerste keer dat die kleine hand om je vinger sluit.
+
+Die momenten zijn het allemaal waard. En ze komen vaker dan je denkt.
+
+## Wat je vandaag kunt doen
+
+1. **Pak de baby op.** Niet omdat het moet, maar om er te zijn. Huid op huid, rustig ademhalen
+2. **Vraag aan je partner: hoe gaat het echt met je?** En luister zonder oplossingen te geven
+3. **Verlaag de lat.** Wat er vandaag niet af komt, komt morgen. Je baby heeft geen perfect huis nodig, maar een aanwezige vader`,
+  },
+  {
+    slug: 'opvoedstress-verminderen',
+    datePublished: '2026-03-01',
+    title: 'Opvoedstress Verminderen: Praktische Tips voor Vaders',
+    description:
+      'Opvoedstress herkennen en verminderen. Praktische tips voor vaders die merken dat de druk van het ouderschap te hoog oploopt.',
+    keywords: [
+      'opvoedstress', 'stress opvoeding', 'opvoedstress verminderen',
+      'vader stress', 'opvoeding zwaar', 'burn-out vader',
+    ],
+    relatedCourses: ['zelfregulatie-als-vader', 'aanwezig-vaderschap'],
+    relatedPosts: ['vader-burn-out-opvoeding', 'geduld-verliezen-als-vader', 'vader-eigen-emoties'],
+    faq: [
+      {
+        question: 'Hoe herken ik opvoedstress bij mezelf?',
+        answer: 'Signalen zijn onder andere: snel geprikkeld raken door kleine dingen, het gevoel dat alles te veel is, slecht slapen terwijl je moe bent, je terugtrekken van je gezin, snauwen naar je kinderen of partner, en het gevoel dat je tekortschiet als vader.',
+      },
+      {
+        question: 'Is het normaal dat ik soms geen zin heb in mijn kinderen?',
+        answer: 'Ja, dat is menselijk en eerlijk. Het betekent niet dat je een slechte vader bent. Opvoeden is intensief en het is normaal dat je soms even op bent. Het wordt een probleem als dit gevoel aanhoudt en je je structureel terugtrekt.',
+      },
+      {
+        question: 'Wanneer moet ik professionele hulp zoeken voor opvoedstress?',
+        answer: 'Zoek hulp als de stress langer dan een paar weken aanhoudt, als je merkt dat je je kinderen anders behandelt dan je wilt, als je lichamelijke klachten krijgt, of als je partner of omgeving zich zorgen maakt. De huisarts is een goed startpunt.',
+      },
+    ],
+    content: `Je komt thuis na een lange werkdag. De kinderen zijn druk, het huis is een chaos, je partner is moe, en je voelt die bekende spanning in je schouders. Binnen vijf minuten heb je al gesnauwd. Niet omdat je boos bent op je kinderen, maar omdat je op is.
+
+Herkenbaar? Dan heb je te maken met opvoedstress. En je bent niet de enige.
+
+## Wat is opvoedstress precies?
+
+Opvoedstress is het verschil tussen wat het ouderschap van je vraagt en wat je aankan. Als de balans scheef staat - te veel druk, te weinig hersteltijd - loopt de emmer over.
+
+Het verschilt van gewone stress doordat het direct je kinderen raakt. Bij werkstress kun je de deur dichttrekken en uitblazen. Bij opvoedstress ben je constant "aan" en zijn de mensen die je het meest liefhebt ook de trigger.
+
+## Waarom vaders hier slecht over praten
+
+De meeste vaders praten niet over opvoedstress. Ze vinden dat ze het moeten aankunnen. "Mijn vader deed het ook zonder te klagen." "Andere vaders hebben het ook druk." "Ik moet gewoon doorzetten."
+
+Dit is een val. Niet praten over stress is geen kracht, het is een recept voor een burn-out. Onderzoek laat zien dat vaders die hun stress delen, beter functioneren als ouder. Niet slechter, beter.
+
+## De signalen herkennen
+
+Opvoedstress sluipt erin. Het begint klein en bouwt op. Let op deze waarschuwingssignalen:
+
+**Lichamelijk:**
+- Spanning in nek en schouders
+- Slecht slapen
+- Hoofdpijn
+- Vermoeidheid die niet weggaat met rust
+
+**Emotioneel:**
+- Kort lontje, sneller boos dan normaal
+- Het gevoel dat je tekortschiet
+- Geen plezier meer in dingen die je leuk vond
+- Schuldgevoel na elke uitbarsting
+
+**Gedrag:**
+- Je terugtrekken. Langer op je telefoon, langer op het werk
+- Snauwen naar je partner of kinderen
+- Minder geduld, meer schreeuwen
+- Troost zoeken in alcohol, eten of andere verdoving
+
+Herken je drie of meer van deze punten? Dan is het tijd om actie te ondernemen.
+
+## Wat niet werkt
+
+Voordat we het over oplossingen hebben, even wat niet werkt:
+
+- **Harder je best doen.** Meer inzet bij dezelfde druk maakt het erger, niet beter
+- **Alles alleen doen.** Je hoeft geen superheld te zijn
+- **Ontkennen.** "Het valt wel mee" is de gevaarlijkste zin bij opvoedstress
+- **Compenseren met cadeaus of uitjes.** Je kinderen hebben geen entertainment nodig, maar een ontspannen vader
+
+## Wat wel werkt
+
+### 1. Herken je triggers
+
+Niet elk moment is even zwaar. Leer herkennen wanneer de stress piekt. Is het de ochtendroutine? Het moment na werk? Bedtijd? Het weekend?
+
+Als je weet wanneer het escaleert, kun je je voorbereiden. Dat betekent niet dat het makkelijk wordt, maar je wordt minder verrast.
+
+### 2. Verlaag de druk
+
+Veel opvoedstress komt van te hoge verwachtingen. Van jezelf, van je kinderen, van hoe het gezin "hoort" te functioneren.
+
+Vraag jezelf af:
+- Moet dit echt vandaag?
+- Moet dit echt perfect?
+- Verwacht ik dingen van mijn kind die niet bij zijn leeftijd passen?
+
+Elke verwachting die je loslaat, is een stukje druk minder.
+
+### 3. Bouw herstelmomenten in
+
+Je kunt niet de hele dag geven zonder bij te tanken. Plan dagelijks een moment voor jezelf. Niet als luxe, maar als noodzaak.
+
+- Een half uur 's ochtends voor iedereen wakker is
+- Een wandeling in de lunchpauze
+- Een half uur 's avonds na bedtijd van de kinderen
+
+Het maakt niet uit wat je doet, als het maar iets is dat jou energie geeft.
+
+### 4. Vraag hulp
+
+Concreet. Niet "als je een keer kunt" maar "kun jij woensdag de kinderen ophalen zodat ik even kan sporten?" Mensen willen helpen, maar ze weten niet wat je nodig hebt.
+
+### 5. Praat erover
+
+Met je partner. Met een vriend. Met een professional. Opvoedstress is geen falen, het is een signaal dat je grenzen bereikt. En grenzen herkennen is volwassen, niet zwak.
+
+## Het effect op je kinderen
+
+Dit is het deel dat pijn doet, maar belangrijk is om te weten: kinderen voelen jouw stress. Ze passen hun gedrag aan, worden stiller of juist drukker, en nemen de spanning over.
+
+Het goede nieuws: kinderen zijn ook veerkrachtig. Ze hebben geen perfecte vader nodig. Ze hebben een vader nodig die zijn best doet, fouten erkent en aan zichzelf werkt. Dat is wat ze van jou leren.
+
+## Wat je vandaag kunt doen
+
+1. **Benoem het.** Zeg hardop: "Ik merk dat ik gestrest ben." Dat is stap een
+2. **Schrap iets.** Kijk naar je agenda voor deze week en haal er een ding uit dat niet per se moet
+3. **Plan tien minuten voor jezelf.** Vandaag nog. Niet morgen, vandaag`,
+  },
+  {
+    slug: 'tiener-motiveren',
+    datePublished: '2026-03-01',
+    title: 'Je Tiener Motiveren: Gids voor Vaders',
+    description:
+      'Hoe motiveer je een tiener die nergens zin in heeft? Praktische aanpak voor vaders over schoolmotivatie, eigenaarschap en verbinding met je puber.',
+    keywords: [
+      'tiener motiveren', 'puber motivatie', 'kind geen zin in school',
+      'tiener lui', 'puber schoolmotivatie', 'motivatie adolescent',
+    ],
+    relatedCourses: ['verbinding-met-je-tiener', 'autonomie-en-loslaten'],
+    relatedPosts: ['praten-met-je-tiener', 'huiswerk-strijd', 'tiener-praat-niet-meer'],
+    faq: [
+      {
+        question: 'Waarom is mijn tiener nergens gemotiveerd voor?',
+        answer: 'In de puberteit verandert het beloningssysteem in het brein. Dingen die eerder leuk waren, geven minder voldoening. Tegelijk groeit de behoefte aan autonomie en eigen keuzes. Een tiener die "nergens zin in heeft" zoekt eigenlijk naar iets dat van hemzelf is, niet iets dat door volwassenen wordt opgelegd.',
+      },
+      {
+        question: 'Moet ik straffen als mijn tiener slechte cijfers haalt?',
+        answer: 'Straffen werkt bij tieners vrijwel nooit voor motivatie. Het creert weerstand en beschadigt de relatie. Effectiever is het om te onderzoeken wat er achter de slechte cijfers zit. Is het te moeilijk? Te saai? Sociale problemen? Pas als je de oorzaak kent, kun je samen werken aan een oplossing.',
+      },
+      {
+        question: 'Hoe geef ik mijn tiener meer verantwoordelijkheid zonder de controle te verliezen?',
+        answer: 'Begin klein en bouw op. Geef verantwoordelijkheid over dingen die er minder toe doen (kleding, inrichting kamer) en werk toe naar grotere zaken (planning huiswerk, besteding zakgeld). Maak duidelijk wat de verwachtingen zijn en wat de gevolgen als het misgaat. Falen hoort erbij en is leerzaam.',
+      },
+    ],
+    content: `Je tiener hangt op de bank. Telefoon in de hand, gordijnen dicht, en als je vraagt of het huiswerk al af is, krijg je een brom als antwoord. Je hebt het gevoel dat je praat tegen een muur. Herkenbaar? Welkom bij de puberteit.
+
+## Waarom tieners doen wat ze doen
+
+Om je tiener te motiveren, moet je eerst begrijpen waarom motivatie zo lastig is in deze fase. Het antwoord zit in het brein.
+
+Tijdens de puberteit wordt het brein grondig verbouwd. Het beloningssysteem verandert: dezelfde activiteiten geven minder voldoening dan vroeger. Tegelijk is de prefrontale cortex - verantwoordelijk voor planning en overzicht - nog niet klaar. Het resultaat: een tiener die weet dat huiswerk belangrijk is, maar het gevoel mist om er iets mee te doen.
+
+Daar komt bij dat tieners biologisch geprogrammeerd zijn om zich los te maken van hun ouders. Ze willen eigen keuzes maken, risico's nemen en uitzoeken wie ze zijn. Dat is geen opstandigheid, dat is ontwikkeling.
+
+## Wat niet werkt
+
+Laten we beginnen met wat je waarschijnlijk al hebt geprobeerd:
+
+**Preken.** "Je moet nu hard werken voor je toekomst." Je tiener hoort dit, begrijpt het misschien zelfs, maar het raakt hem niet. Abstracte toekomstmotivatie werkt niet bij een brein dat leeft in het nu.
+
+**Belonen en straffen.** "Als je een acht haalt, krijg je..." Dit werkt kortstondig, maar ondergraaft de intrinsieke motivatie. Je tiener leert: ik doe het voor de beloning, niet voor mezelf.
+
+**Vergelijken.** "Je neef haalt alleen maar tienen." Dit creert schaamte, geen motivatie. En het beschadigt jullie relatie.
+
+**Overnemen.** Zijn huiswerk controleren, zijn agenda bijhouden, zijn leraren mailen. Je bedoelt het goed, maar je stuurt een boodschap: ik vertrouw je niet. En een tiener die niet vertrouwd wordt, gaat zich daarnaar gedragen.
+
+## Wat wel werkt
+
+### 1. Verbinding eerst, motivatie daarna
+
+Je kunt een tiener niet motiveren vanuit een afstandelijke relatie. Als de verbinding er niet is, komen je woorden niet aan. Investeer eerst in de band.
+
+Dat betekent:
+- Interesse tonen in zijn wereld, niet alleen in zijn cijfers
+- Luisteren zonder meteen advies te geven
+- Samen dingen doen die hij leuk vindt, ook al is dat gamen of series kijken
+- Aanwezig zijn zonder agenda
+
+### 2. Geef autonomie
+
+Tieners zijn gemotiveerder als ze het gevoel hebben dat ze zelf kiezen. Dit is een van de sterkste bevindingen uit motivatieonderzoek.
+
+Praktisch:
+- Laat je tiener kiezen wanneer hij huiswerk maakt, niet of hij het maakt
+- Betrek hem bij beslissingen die hem aangaan (schoolkeuze, sport, vakantie)
+- Accepteer keuzes die anders zijn dan jij zou maken, zolang ze niet schadelijk zijn
+
+### 3. Stel verwachtingen, geen eisen
+
+Er is een verschil tussen "je moet een acht halen" en "ik verwacht dat je je best doet." Het eerste is een eis waar je tiener tegen in verzet gaat. Het tweede is een norm die ruimte laat.
+
+Goede verwachtingen zijn:
+- Helder ("afspraken nakomen" in plaats van "beter je best doen")
+- Haalbaar (niet elke tiener wordt een tienstudent)
+- Bespreekbaar (je tiener mag er iets van vinden)
+
+### 4. Laat natuurlijke gevolgen hun werk doen
+
+Als je tiener zijn huiswerk niet maakt, haalt hij een slecht cijfer. Dat is vervelend, maar leerzaam. Als jij die consequentie voorkomt door in te grijpen, ontneemt je hem een les.
+
+Dit is moeilijk. Je wilt beschermen. Maar een tiener die zelf de gevolgen ervaart, leert meer dan een tiener die constant gered wordt.
+
+Uitzonderingen: grijp wel in als de veiligheid in het geding is of als er sprake is van een structureel probleem (depressie, pesten, leerstoornis).
+
+### 5. Zoek het vuur
+
+Elke tiener heeft iets dat hem boeit. Misschien is het niet school. Misschien is het muziek, sport, techniek, tekenen, of iets waar jij niets van begrijpt. Dat maakt niet uit.
+
+Ondersteun waar de passie zit. Een tiener die ergens in uitblinkt, bouwt zelfvertrouwen op. En dat zelfvertrouwen werkt door naar andere gebieden, ook school.
+
+## De rol van de vader
+
+Vaders hebben een unieke positie bij tieners. Onderzoek laat zien dat betrokken vaders een positief effect hebben op schoolprestaties, zelfvertrouwen en sociaal gedrag van tieners.
+
+Maar "betrokken" betekent niet "controlerend". Het betekent aanwezig, beschikbaar en betrokken. Een vader die vraagt "hoe was je dag?" en echt luistert naar het antwoord. Een vader die er is als het moeilijk wordt, zonder alles over te nemen.
+
+## Wat als er meer aan de hand is?
+
+Soms is gebrek aan motivatie een symptoom van iets diepers:
+- Depressie (komt vaker voor bij tieners dan je denkt)
+- Faalangst
+- Pesten
+- Een leerstoornis die niet herkend is
+- Sociale problemen
+
+Als je tiener structureel terugtrekt, somber is, of totaal geen interesse meer toont in dingen die hij eerder leuk vond, neem het serieus. Praat erover en schakel een professional in als dat nodig is.
+
+## Wat je vandaag kunt doen
+
+1. **Stel een vraag zonder agenda.** Niet over school, niet over cijfers. Vraag iets over zijn interesses, zijn vrienden, zijn wereld
+2. **Geef een keuze.** Ergens waar je normaal de regie zou nemen, laat je tiener beslissen
+3. **Laat iets los.** Een strijd die je elke dag voert en die niets oplevert - laat het een week gaan en kijk wat er gebeurt`,
   },
 ];
 

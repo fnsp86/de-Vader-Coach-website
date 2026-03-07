@@ -36,6 +36,11 @@ const GUIDE_SLUGS = [
   'vader-dochter-relatie',
   'druk-kind-tot-rust-brengen',
   'kind-gepest-op-school',
+  'stiefvader-worden',
+  'alleenstaande-vader-tips',
+  'nieuwe-vader-tips',
+  'opvoedstress-verminderen',
+  'tiener-motiveren',
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
