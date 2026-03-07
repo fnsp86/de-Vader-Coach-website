@@ -52,6 +52,7 @@ import {
   Upload,
   Music,
   Volume2,
+  Key,
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -578,6 +579,14 @@ export default function InstagramPage() {
           >
             <MessageCircle className="h-3.5 w-3.5" />
             Comments
+          </Link>
+          <Link
+            href="/admin/instagram/tokens"
+            className="flex items-center gap-1.5 text-xs font-bold rounded-xl border px-3 sm:px-4 py-2 sm:py-2.5 transition-colors hover:border-amber-500/30"
+            style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
+          >
+            <Key className="h-3.5 w-3.5" />
+            Tokens
           </Link>
           <Link
             href="/admin/instagram/kalender"

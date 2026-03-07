@@ -21,6 +21,9 @@ export async function GET(request: NextRequest) {
   if (action === 'refresh') {
     // Poll Instagram for new comments
     const result = await processNewComments();
+    if (result.error) {
+      return NextResponse.json({ success: false, error: result.error }, { status: 400 });
+    }
     return NextResponse.json({ success: true, ...result });
   }
 

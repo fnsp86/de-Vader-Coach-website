@@ -144,58 +144,73 @@ export async function generateReply(
 }
 
 // ─── Instagram Graph API ─────────────────────────────────────────
-export async function fetchRecentComments(): Promise<CommentEntry[]> {
+
+/**
+ * Resolve the Instagram Business Account ID.
+ * Tries INSTAGRAM_BUSINESS_ACCOUNT_ID env var first,
+ * then queries the Facebook Page for its linked IG account.
+ */
+async function resolveInstagramAccountId(token: string): Promise<string | null> {
+  const envId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
+  if (envId) return envId;
+
+  const pageId = process.env.FACEBOOK_PAGE_ID;
+  if (!pageId) return null;
+
+  const res = await fetch(
+    `https://graph.facebook.com/v21.0/${pageId}?fields=instagram_business_account&access_token=${encodeURIComponent(token)}`,
+  );
+  const data = await res.json();
+  return data.instagram_business_account?.id || null;
+}
+
+export async function fetchRecentComments(): Promise<{ comments: CommentEntry[]; error?: string }> {
   const token = await getInstagramToken();
-  const accountId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
-  if (!token || !accountId) return [];
+  if (!token) return { comments: [], error: 'Geen Instagram token geconfigureerd. Ga naar Tokens om er een in te stellen.' };
 
-  try {
-    // Get recent media
-    const mediaRes = await fetch(
-      `https://graph.facebook.com/v21.0/${accountId}/media?fields=id,caption,timestamp&limit=10&access_token=${token}`,
-    );
-    const mediaData = await mediaRes.json();
-    if (!mediaData.data) return [];
+  const accountId = await resolveInstagramAccountId(token);
+  if (!accountId) return { comments: [], error: 'Geen Instagram Business Account ID gevonden. Controleer INSTAGRAM_BUSINESS_ACCOUNT_ID of FACEBOOK_PAGE_ID.' };
 
-    const comments: CommentEntry[] = [];
-    const existingIds = new Set<string>();
-
-    // Load existing comment IDs to avoid duplicates
-    const existing = await getComments(200);
-    for (const c of existing) existingIds.add(c.id);
-
-    // Fetch comments for each post
-    for (const post of mediaData.data) {
-      try {
-        const commentsRes = await fetch(
-          `https://graph.facebook.com/v21.0/${post.id}/comments?fields=id,text,username,timestamp,replies{id}&limit=50&access_token=${token}`,
-        );
-        const commentsData = await commentsRes.json();
-        if (!commentsData.data) continue;
-
-        for (const c of commentsData.data) {
-          if (existingIds.has(c.id)) continue;
-          // Skip our own replies
-          if (c.replies?.data?.length > 0) continue;
-
-          comments.push({
-            id: c.id,
-            postId: post.id,
-            username: c.username,
-            text: c.text,
-            timestamp: c.timestamp,
-            status: 'pending',
-          });
-        }
-      } catch {
-        // Skip individual post errors
-      }
-    }
-
-    return comments;
-  } catch {
-    return [];
+  // Get recent media
+  const mediaRes = await fetch(
+    `https://graph.facebook.com/v21.0/${accountId}/media?fields=id,caption,timestamp&limit=10&access_token=${encodeURIComponent(token)}`,
+  );
+  const mediaData = await mediaRes.json();
+  if (mediaData.error) {
+    return { comments: [], error: `Instagram API fout bij media ophalen: ${mediaData.error.message}` };
   }
+  if (!mediaData.data?.length) return { comments: [], error: 'Geen posts gevonden op dit account.' };
+
+  const comments: CommentEntry[] = [];
+  const existingIds = new Set<string>();
+
+  // Load existing comment IDs to avoid duplicates
+  const existing = await getComments(200);
+  for (const c of existing) existingIds.add(c.id);
+
+  // Fetch comments for each post
+  for (const post of mediaData.data) {
+    const commentsRes = await fetch(
+      `https://graph.facebook.com/v21.0/${post.id}/comments?fields=id,text,username,timestamp&limit=50&access_token=${encodeURIComponent(token)}`,
+    );
+    const commentsData = await commentsRes.json();
+    if (commentsData.error || !commentsData.data) continue;
+
+    for (const c of commentsData.data) {
+      if (existingIds.has(c.id)) continue;
+
+      comments.push({
+        id: c.id,
+        postId: post.id,
+        username: c.username || c.from?.username || 'onbekend',
+        text: c.text,
+        timestamp: c.timestamp,
+        status: 'pending',
+      });
+    }
+  }
+
+  return { comments };
 }
 
 export async function postCommentReply(commentId: string, replyText: string): Promise<{ success: boolean; replyId?: string; error?: string }> {
@@ -231,12 +246,15 @@ export async function processNewComments(): Promise<{
   fetched: number;
   replied: number;
   queued: number;
+  error?: string;
 }> {
   const mode = await getAutoReplyMode();
   if (mode === 'off') return { fetched: 0, replied: 0, queued: 0 };
 
   // Fetch new comments
-  const newComments = await fetchRecentComments();
+  const result = await fetchRecentComments();
+  if (result.error) return { fetched: 0, replied: 0, queued: 0, error: result.error };
+  const newComments = result.comments;
 
   let replied = 0;
   let queued = 0;
