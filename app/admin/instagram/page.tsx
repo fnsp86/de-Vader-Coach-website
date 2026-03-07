@@ -224,6 +224,7 @@ export default function InstagramPage() {
         items: [],
       })));
       setActiveSlide(0);
+      setPostMode('feed');
     } else {
       const text = post.imageText || post.concept || post.title;
       setSlides([{
@@ -236,6 +237,13 @@ export default function InstagramPage() {
         items: [],
       }]);
       setActiveSlide(0);
+      // Reels: switch to reel mode with upload tab ready
+      if (post.type === 'reel') {
+        setPostMode('reel');
+        setReelTab('upload');
+      } else {
+        setPostMode('feed');
+      }
     }
     setCaption(captionWithHashtags);
     setSelectedTitle(`Groei #${post.id}: ${post.title}`);
