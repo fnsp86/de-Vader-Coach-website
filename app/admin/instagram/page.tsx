@@ -706,7 +706,7 @@ export default function InstagramPage() {
           className="rounded-2xl border overflow-hidden order-2 lg:order-1"
           style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}
         >
-          <div className="flex border-b" style={{ borderColor: 'var(--border)' }}>
+          <div className="flex overflow-x-auto border-b" style={{ borderColor: 'var(--border)' }}>
             {([
               { id: 'blog' as Tab, label: 'Blog', icon: FileText, count: POSTS_LIST.length },
               { id: 'cursussen' as Tab, label: 'Cursussen', icon: BookOpen, count: courses.length },
@@ -717,7 +717,7 @@ export default function InstagramPage() {
               <button
                 key={t.id}
                 onClick={() => setTab(t.id)}
-                className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-2.5 sm:py-3 text-[11px] sm:text-xs font-bold transition-colors"
+                className="flex-none flex items-center justify-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-2.5 sm:py-3 text-[11px] sm:text-xs font-bold transition-colors whitespace-nowrap"
                 style={{
                   color: tab === t.id ? '#F59E0B' : 'var(--text3)',
                   borderBottom: tab === t.id ? '2px solid #F59E0B' : '2px solid transparent',
