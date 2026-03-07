@@ -47,6 +47,7 @@ import {
   Instagram,
   Film,
   Library,
+  MessageCircle,
   Video,
   Upload,
   Music,
@@ -570,6 +571,14 @@ export default function InstagramPage() {
           Instagram
         </h1>
         <div className="flex items-center gap-2">
+          <Link
+            href="/admin/instagram/comments"
+            className="flex items-center gap-1.5 text-xs font-bold rounded-xl border px-3 sm:px-4 py-2 sm:py-2.5 transition-colors hover:border-amber-500/30"
+            style={{ borderColor: 'var(--border)', color: 'var(--text2)' }}
+          >
+            <MessageCircle className="h-3.5 w-3.5" />
+            Comments
+          </Link>
           <Link
             href="/admin/instagram/kalender"
             className="flex items-center gap-1.5 text-xs font-bold rounded-xl border px-3 sm:px-4 py-2 sm:py-2.5 transition-colors hover:border-amber-500/30"
