@@ -26,7 +26,7 @@ export const BRAND_COLORS: Array<{ name: string; hex: string }> = [
   { name: 'Licht', hex: '#F0F2F8' },
 ];
 
-// Skill icons — Lucide components (same as used on the website)
+// Skill icons - Lucide components (same as used on the website)
 export const SKILL_ICONS: Record<string, { icon: LucideIcon; emoji: string }> = {
   Aanwezigheid: { icon: Eye, emoji: '👁️' },
   Emotiecoaching: { icon: Heart, emoji: '💛' },

@@ -256,7 +256,7 @@ export const SKILLS: Skill[] = [
       },
       {
         heading: 'Verbinding opbouwen door samen te doen',
-        body: 'De sterkste band bouw je niet op door erover te praten, maar door samen dingen te doen. Kook samen, repareer iets, maak een wandeling, speel een bordspel. Activiteiten creeren gedeelde ervaringen en herinneringen. Voor jonge kinderen is samen spelen de taal van verbinding. Voor tieners is samen iets doen, zonder dat je er iets van moet leren, de manier om de relatie te onderhouden. Het gaat niet om de activiteit zelf, maar om de boodschap: ik wil tijd met je doorbrengen.',
+        body: 'De sterkste band bouw je niet op door erover te praten, maar door samen dingen te doen. Kook samen, repareer iets, maak een wandeling, speel een bordspel. Activiteiten zorgen voor gedeelde ervaringen en herinneringen. Voor jonge kinderen is samen spelen de taal van verbinding. Voor tieners is samen iets doen, zonder dat je er iets van moet leren, de manier om de relatie te onderhouden. Het gaat niet om de activiteit zelf, maar om de boodschap: ik wil tijd met je doorbrengen.',
       },
       {
         heading: 'Verbinding met je tiener behouden',

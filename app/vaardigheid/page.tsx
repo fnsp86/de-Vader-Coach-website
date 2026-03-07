@@ -27,8 +27,18 @@ export const metadata: Metadata = {
 export default function SkillsOverviewPage() {
   const skills = getAllSkills();
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://devadercoach.nl' },
+      { '@type': 'ListItem', position: 2, name: 'Vaardigheden', item: 'https://devadercoach.nl/vaardigheid' },
+    ],
+  };
+
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-extrabold mb-3" style={{ color: 'var(--text)' }}>
           De 8 Vadervaardigheden

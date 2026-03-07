@@ -1926,7 +1926,7 @@ export const SOCIAL_CONTENT: SocialContent[] = [
     id: 'tip-verb-11',
     type: 'tip',
     skill: 'Verbinding',
-    text: 'Maak een playlist samen. Muziek delen creëert een gedeelde taal die verder gaat dan woorden.',
+    text: 'Maak een playlist samen. Muziek delen vormt een gedeelde taal die verder gaat dan woorden.',
     template: 'tip',
   },
   {

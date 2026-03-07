@@ -46,7 +46,7 @@ export const COURSES: Record<string, Course> = {
       'Jouw aanwezigheidsstijl herkennen',
       'Hoe je telefoon je aanwezigheid saboteert',
       'Micro-oefeningen voor elke dag',
-      'Rituelen die verbinding creëren',
+      'Rituelen die verbinding opbouwen',
       'Aanwezig luisteren en spelen',
     ],
     forWho: [
@@ -146,7 +146,7 @@ export const COURSES: Record<string, Course> = {
       'De wetenschap achter autonomie en motivatie',
       'Jouw loslaatstijl herkennen',
       'Verantwoordelijkheid gefaseerd overdragen',
-      'Faalruimte creëren voor je kind',
+      'Faalruimte geven aan je kind',
       'Digitale autonomie begeleiden',
     ],
     forWho: [

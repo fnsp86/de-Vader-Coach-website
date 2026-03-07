@@ -644,7 +644,7 @@ Onderzoek van Brandon McDaniel, expert in "technoference," toont dat ouders die 
 
 ## Alternatieven die echt werken
 
-Het probleem met "ga maar buiten spelen" is dat het brein van een kind dat net van een scherm af komt, niks kan met die opdracht. Na een half uur dopamine is de echte wereld saai. Je moet het verlangen creeren.
+Het probleem met "ga maar buiten spelen" is dat het brein van een kind dat net van een scherm af komt, niks kan met die opdracht. Na een half uur dopamine is de echte wereld saai. Je moet het verlangen opwekken.
 
 - **Doe samen.** Niet "ga maar buiten spelen" maar "zullen we samen een hut bouwen?" Verbinding is krachtiger dan elke game.
 - **Maak het fysiek.** Voetballen, stoeien, fietsen. Beweging maakt endorfine aan en dat compenseert deels de dopaminedip van het stoppen met schermen.
@@ -719,7 +719,7 @@ Het verschil is subtiel. Het effect is enorm.
 
 ## Vijf dingen die vaders doen die zelfvertrouwen ondermijnen
 
-Dit is het moeilijke gedeelte. Niet om je een slecht gevoel te geven, maar om bewustzijn te creeren. Want de meeste vaders ondermijnen het zelfvertrouwen van hun kind met de beste bedoelingen.
+Dit is het moeilijke gedeelte. Niet om je een slecht gevoel te geven, maar om bewustzijn te kweken. Want de meeste vaders ondermijnen het zelfvertrouwen van hun kind met de beste bedoelingen.
 
 **1. Overnemen.** Je kind worstelt met een puzzel. Je ziet de oplossing. Je pakt het stukje en legt het neer. Wat je kind leert: ik kan het niet zelf. De volgende keer zal het sneller opgeven of meteen om hulp vragen. Beter: "Ik zie dat het lastig is. Welk stukje zou je nu eens kunnen proberen?" Laat ze worstelen. Worstelen is leren.
 
@@ -1075,7 +1075,7 @@ Russell Barkley stelt dat kinderen met ADHD qua executieve functies gemiddeld 30
 
 ## De kracht van structuur en routine
 
-Als er één ding is dat wetenschappelijk bewezen effectief is bij ADHD, dan is het structuur. Het ADHD-brein heeft moeite met zelf structuur creëren. Dus moet de omgeving dat doen.
+Als er één ding is dat wetenschappelijk bewezen effectief is bij ADHD, dan is het structuur. Het ADHD-brein heeft moeite met zelf structuur aanbrengen. Dus moet de omgeving dat doen.
 
 **Praktische structuurtips:**
 
@@ -1397,7 +1397,7 @@ De beste momenten met je dochter zijn vaak niet gepland. Maar het helpt om bewus
     datePublished: '2026-03-06',
     title: 'Druk Kind tot Rust Brengen: Wat Werkt (en Wat Niet)',
     description:
-      'Is je kind altijd druk en onrustig? Ontdek waarom kinderen druk zijn, wat het verschil is met ADHD, en welke technieken echt helpen om rust te creëren.',
+      'Is je kind altijd druk en onrustig? Ontdek waarom kinderen druk zijn, wat het verschil is met ADHD, en welke technieken echt helpen om rust te brengen.',
     keywords: [
       'druk kind', 'druk kind kalmeren', 'hyperactief kind',
       'kind kan niet stilzitten', 'onrustig kind', 'druk kind tot rust brengen', 'energiek kind',

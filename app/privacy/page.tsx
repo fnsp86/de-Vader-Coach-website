@@ -3,6 +3,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacybeleid',
   description: 'Privacyverklaring van De Vadercoach. Hoe wij omgaan met je gegevens conform de AVG/GDPR.',
+  openGraph: {
+    title: 'Privacybeleid - De Vadercoach',
+    description: 'Privacyverklaring van De Vadercoach. Hoe wij omgaan met je gegevens conform de AVG/GDPR.',
+    type: 'website',
+    url: 'https://devadercoach.nl/privacy',
+  },
   alternates: {
     canonical: 'https://devadercoach.nl/privacy',
   },

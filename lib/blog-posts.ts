@@ -22,7 +22,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Een vader legt zijn telefoon neer. Zijn dochter kijkt op. En er gebeurt iets dat hij niet had verwacht.',
     slug: 'aanwezig-zijn-voor-kind',
     date: '2026-02-20',
-    readTime: 5,
+    readTime: 4,
     category: 'Aanwezigheid',
   },
   {
@@ -38,7 +38,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Waarom je kind niet luistert als je het voor de vierde keer zegt. (Hint: het ligt niet aan je kind.)',
     slug: 'grenzen-zonder-schreeuwen',
     date: '2026-02-10',
-    readTime: 5,
+    readTime: 6,
     category: 'Grenzen',
   },
   {
@@ -54,7 +54,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je overleeft een werkdag van acht uur zonder je stem te verheffen. Maar een beker melk? Dat is de druppel.',
     slug: 'waarom-je-kind-je-triggers',
     date: '2026-01-28',
-    readTime: 5,
+    readTime: 7,
     category: 'Zelfregulatie',
   },
   {
@@ -62,7 +62,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Mijn dochter wil haar jas zelf dichtritsen. Het duurt. Het duurt lang. Mijn handen jeuken.',
     slug: 'loslaten-zonder-angst',
     date: '2026-01-20',
-    readTime: 5,
+    readTime: 4,
     category: 'Autonomie',
   },
   {
@@ -70,7 +70,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Mijn zoon praat niet met mij. Behalve in de auto. Om kwart over tien. In het donker.',
     slug: 'praten-met-je-tiener',
     date: '2026-01-12',
-    readTime: 5,
+    readTime: 6,
     category: 'Verbinding',
   },
   {
@@ -86,7 +86,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je kind hoort je wel, maar luistert niet. Dat verschil veranderde alles voor mij als vader.',
     slug: 'kind-luistert-niet',
     date: '2026-02-25',
-    readTime: 5,
+    readTime: 3,
     category: 'Grenzen',
   },
   {
@@ -94,7 +94,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Mijn peuter krijste alsof de wereld verging. Over een banaan. Dit is wat ik leerde over dat kleine brein.',
     slug: 'peuter-driftbui-wat-doen',
     date: '2026-02-22',
-    readTime: 5,
+    readTime: 6,
     category: 'Emotiecoaching',
   },
   {
@@ -110,7 +110,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Opvoeden op een leeg reservoir. Als vader alles geven tot er niks meer is. Herkenbaar?',
     slug: 'vader-burn-out-opvoeding',
     date: '2026-02-14',
-    readTime: 5,
+    readTime: 7,
     category: 'Zelfregulatie',
   },
   {
@@ -118,7 +118,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Quality time hoeft geen uitje te zijn. Soms is het vijf minuten op de grond met je volle aandacht.',
     slug: 'quality-time-kind',
     date: '2026-02-11',
-    readTime: 5,
+    readTime: 4,
     category: 'Aanwezigheid',
   },
   {
@@ -134,7 +134,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Vader zijn na een scheiding. De autodeur die dichtslaat. Het stille huis. En toch een goede vader zijn.',
     slug: 'scheiden-en-vader-zijn',
     date: '2026-02-04',
-    readTime: 5,
+    readTime: 6,
     category: 'Verbinding',
   },
   {
@@ -142,7 +142,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Mijn puber zit de hele dag op zijn telefoon. Ik zei: leg neer. Het werd ruzie. Er is een betere manier.',
     slug: 'puber-telefoon-verslaving',
     date: '2026-01-30',
-    readTime: 5,
+    readTime: 7,
     category: 'Grenzen',
   },
   {
@@ -158,7 +158,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je kind slaat op school. Je schrikt. Je schaamt je. Maar er zit iets achter dat gedrag. Dit is mijn verhaal.',
     slug: 'kind-slaat-andere-kinderen',
     date: '2026-01-22',
-    readTime: 5,
+    readTime: 4,
     category: 'Emotiecoaching',
   },
   {
@@ -166,7 +166,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je schreeuwt tegen je kind en weet: dit gaat niet over wat er net gebeurde. Waar komt die boosheid vandaan?',
     slug: 'vader-eigen-emoties',
     date: '2026-01-17',
-    readTime: 5,
+    readTime: 6,
     category: 'Zelfregulatie',
   },
   {
@@ -182,7 +182,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je kind wil niet naar school. Elke ochtend strijd. Is het aanstellen? Of is er iets anders aan de hand?',
     slug: 'kind-wil-niet-naar-school',
     date: '2026-01-10',
-    readTime: 5,
+    readTime: 7,
     category: 'Autonomie',
   },
   {
@@ -190,7 +190,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Stiefvader worden. Die ene zin die alles samenvat. En wat ik leerde over de rol die niemand je uitlegt.',
     slug: 'stiefvader-tips',
     date: '2026-01-07',
-    readTime: 5,
+    readTime: 6,
     category: 'Verbinding',
   },
   {
@@ -198,7 +198,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Weekendvader. Twee dagen per week. De uitdaging om in beperkte tijd een echte band te bouwen.',
     slug: 'vader-kind-weekendvader',
     date: '2026-01-03',
-    readTime: 5,
+    readTime: 4,
     category: 'Verbinding',
   },
   {
@@ -214,7 +214,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Acht uur geduld op je werk. Thuis knapt het bij het aantrekken van een schoen. Herkenbaar?',
     slug: 'geduld-verliezen-als-vader',
     date: '2026-03-01',
-    readTime: 5,
+    readTime: 6,
     category: 'Zelfregulatie',
   },
   {
@@ -230,7 +230,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Hij vertelde alles. Over school, over vrienden, over alles. Nu krijg je "goed" en een dichte deur. Wat is er gebeurd?',
     slug: 'tiener-praat-niet-meer',
     date: '2026-02-24',
-    readTime: 5,
+    readTime: 7,
     category: 'Verbinding',
   },
   {
@@ -238,7 +238,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je kind klampt zich aan je been. Je maakt de vingers los. Je loopt weg. En in de auto zit je stil.',
     slug: 'kind-scheidsangst-vader',
     date: '2026-02-21',
-    readTime: 5,
+    readTime: 4,
     category: 'Emotiecoaching',
   },
   {
@@ -246,7 +246,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je komt de slaapkamer in voor het slapengaan. Je kind schreeuwt. Niet van blijdschap. Van afwijzing.',
     slug: 'kind-wil-alleen-mama',
     date: '2026-02-17',
-    readTime: 5,
+    readTime: 6,
     category: 'Aanwezigheid',
   },
   {
@@ -262,7 +262,7 @@ export const POSTS_LIST: BlogPostMeta[] = [
     description: 'Je hebt geschreeuwd. Je wilt het goedmaken. Je zegt sorry. En dan gebeurt er niks.',
     slug: 'sorry-zeggen-tegen-kind',
     date: '2026-02-09',
-    readTime: 5,
+    readTime: 3,
     category: 'Herstel',
   },
 ];
@@ -280,7 +280,7 @@ const POSTS: Record<string, BlogPostFull> = {
     title: 'De Twee Minuten Die Alles Veranderden',
     description: 'Een vader legt zijn telefoon neer. Zijn dochter kijkt op. En er gebeurt iets dat hij niet had verwacht.',
     date: '2026-02-20',
-    readTime: 5,
+    readTime: 6,
     category: 'Aanwezigheid',
     content: `
 ## De telefoon lag op tafel
@@ -450,7 +450,7 @@ De vraag is: hoe? Wat zei ik? En waarom werkte het?
     title: 'Ik Heb Het Al Drie Keer Gezegd',
     description: 'Waarom je kind niet luistert als je het voor de vierde keer zegt. (Hint: het ligt niet aan je kind.)',
     date: '2026-02-10',
-    readTime: 5,
+    readTime: 7,
     category: 'Grenzen',
     content: `
 ## Het getal is altijd drie
@@ -524,7 +524,7 @@ De vraag is niet of je grenzen moet stellen. Kinderen hebben grenzen nodig zoals
     title: 'Vanmorgen Was Ik Die Vader',
     description: 'Ik schreeuwde om een beker melk. Mijn dochter keek me aan. En ik zag het.',
     date: '2026-02-05',
-    readTime: 5,
+    readTime: 4,
     category: 'Herstel',
     content: `
 ## Het was maar een beker melk
@@ -678,7 +678,7 @@ De vraag is niet: hoe stop ik met boos worden? De vraag is: wat maakt dat ik zo 
     title: 'De Jas Met De Rits',
     description: 'Mijn dochter wil haar jas zelf dichtritsen. Het duurt. Het duurt lang. Mijn handen jeuken.',
     date: '2026-01-20',
-    readTime: 5,
+    readTime: 6,
     category: 'Autonomie',
     content: `
 ## Twee minuten en drieendertig seconden
@@ -746,7 +746,7 @@ Twee minuten en drieendertig seconden. Dat is de prijs van zelfvertrouwen. En he
     title: 'Het Gesprek Dat Niet Aan Tafel Gebeurde',
     description: 'Mijn zoon praat niet met mij. Behalve in de auto. Om kwart over tien. In het donker.',
     date: '2026-01-12',
-    readTime: 5,
+    readTime: 7,
     category: 'Verbinding',
     content: `
 ## "Hoe was school?" "Goed."
@@ -819,7 +819,7 @@ Er zijn situaties die uitnodigen tot praten. En er zijn situaties die praten onm
 
 ## Wat ik nu anders doe
 
-Ik plan geen gesprekken meer. Ik creeer momenten. En soms zegt hij niks. En soms zegt hij alles.
+Ik plan geen gesprekken meer. Ik maak momenten. En soms zegt hij niks. En soms zegt hij alles.
 
 Het enige wat ik doe is: er zijn. Naast hem. Zonder agenda. Zonder de vraag "hoe was school" als een sleutel die ik steeds in hetzelfde slot probeer te duwen.
 
@@ -910,7 +910,7 @@ Maar hoe kijk je in die rugzak? Waar begin je?
     title: 'Hij Keek Me Recht Aan En Deed Het Toch',
     description: 'Je kind hoort je wel, maar luistert niet. Dat verschil veranderde alles voor mij als vader.',
     date: '2026-02-25',
-    readTime: 5,
+    readTime: 4,
     category: 'Grenzen',
     content: `
 ## Ik stond in de deuropening
@@ -996,7 +996,7 @@ Er zit een mechanisme achter. Iets in hoe een kinderbrein omgaat met taal, met g
     title: 'Drie Jaar Oud En De Baas Van Het Hele Huis',
     description: 'Mijn peuter krijste alsof de wereld verging. Over een banaan. Dit is wat ik leerde over dat kleine brein.',
     date: '2026-02-22',
-    readTime: 5,
+    readTime: 6,
     category: 'Emotiecoaching',
     content: `
 ## De banaan was verkeerd
@@ -1146,7 +1146,7 @@ De echte vraag is een andere. En die vraag veranderde alles voor mij.
     title: 'Ik Had Niks Meer Over',
     description: 'Opvoeden op een leeg reservoir. Als vader alles geven tot er niks meer is. Herkenbaar?',
     date: '2026-02-14',
-    readTime: 5,
+    readTime: 7,
     category: 'Zelfregulatie',
     content: `
 ## Het moment dat ik het wist
@@ -1226,7 +1226,7 @@ Maar hoe vul je een tank bij die je niet eens leeg voelde worden? Hoe merk je de
     title: 'Het Moment Dat Ik Mijn Telefoon In De Lade Legde',
     description: 'Quality time hoeft geen uitje te zijn. Soms is het vijf minuten op de grond met je volle aandacht.',
     date: '2026-02-11',
-    readTime: 5,
+    readTime: 6,
     category: 'Aanwezigheid',
     content: `
 ## Dierentuin, speeltuin, pretpark
@@ -1291,7 +1291,7 @@ De momenten die het meest ertoe doen - een kind dat tegen je aanleunt, een verha
 
 ## De mythe van kwaliteitstijd
 
-We noemen het "quality time" en we denken dat het gaat over activiteiten. Over bijzondere dingen doen. Over ervaringen creeren.
+We noemen het "quality time" en we denken dat het gaat over activiteiten. Over bijzondere dingen doen. Over ervaringen maken.
 
 Maar kinderen meten quality time niet in activiteiten. Ze meten het in aandacht.
 
@@ -1348,7 +1348,7 @@ En ik vraag me af: hoe doe je dat? Hoe train je jezelf om er echt te zijn? Niet 
     title: 'Er Zit Een Monster Onder Mijn Bed',
     description: 'Mijn zoon is bang in het donker. Elke avond weer. Ik zei dat er niks was. Dat hielp niet.',
     date: '2026-02-08',
-    readTime: 5,
+    readTime: 4,
     category: 'Emotiecoaching',
     content: `
 ## Elke avond hetzelfde
@@ -1600,7 +1600,7 @@ Dat is de vraag waar ik mee zat. Daar zit ik soms nog steeds mee. En ik heb gele
     title: 'De Telefoon Die Nooit Uitgaat',
     description: 'Mijn puber zit de hele dag op zijn telefoon. Ik zei: leg neer. Het werd ruzie. Er is een betere manier.',
     date: '2026-01-30',
-    readTime: 5,
+    readTime: 6,
     category: 'Grenzen',
     content: `
 ## Half elf op een schoolavond
@@ -1852,7 +1852,7 @@ Hoe doe je dat als niemand het je uitlegt?
     title: 'Het Telefoontje Van School',
     description: 'Je kind slaat op school. Je schrikt. Je schaamt je. Maar er zit iets achter dat gedrag. Dit is mijn verhaal.',
     date: '2026-01-22',
-    readTime: 5,
+    readTime: 7,
     category: 'Emotiecoaching',
     content: `
 ## Dinsdag, kwart over twee
@@ -1926,7 +1926,7 @@ En eerlijk? Ik wist niet hoe ik dat gesprek moest voeren. Ik wist niet hoe ik te
     title: 'Ik Was Niet Boos Om De Lego',
     description: 'Je schreeuwt tegen je kind en weet: dit gaat niet over wat er net gebeurde. Waar komt die boosheid vandaan?',
     date: '2026-01-17',
-    readTime: 5,
+    readTime: 4,
     category: 'Zelfregulatie',
     content: `
 ## Tien blokjes op de trap
@@ -1998,7 +1998,7 @@ Maar het begint met eerlijk kijken naar je eigen patroon. Naar de vraag: wat bre
     title: 'Iedere Avond Hetzelfde Gevecht',
     description: 'Huiswerk. Elke avond strijd. Elke avond ruzie. Ik ontdekte dat het niet over het huiswerk ging.',
     date: '2026-01-14',
-    readTime: 5,
+    readTime: 6,
     category: 'Grenzen',
     content: `
 ## Kwart over vijf
@@ -2152,7 +2152,7 @@ Maar dit keer wist ik: de vraag is niet of zijn buik pijn doet. De vraag is wat 
     title: 'Jij Bent Mijn Vader Niet',
     description: 'Stiefvader worden. Die ene zin die alles samenvat. En wat ik leerde over de rol die niemand je uitlegt.',
     date: '2026-01-07',
-    readTime: 5,
+    readTime: 3,
     category: 'Verbinding',
     content: `
 ## De eerste keer dat ze het zei
@@ -2230,7 +2230,7 @@ Goed bedoelen was niet genoeg. Ik had iets nodig dat verder ging dan instinct.
     title: 'Elke Zondag Hetzelfde Afscheid',
     description: 'Weekendvader. Twee dagen per week. De uitdaging om in beperkte tijd een echte band te bouwen.',
     date: '2026-01-03',
-    readTime: 5,
+    readTime: 6,
     category: 'Verbinding',
     content: `
 ## De koffer
@@ -2420,7 +2420,7 @@ Is dat zo? Of is er een andere manier?
     title: 'Het Ging Om De Schoenen',
     description: 'Acht uur geduld op je werk. Thuis knapt het bij het aantrekken van een schoen. Herkenbaar?',
     date: '2026-03-01',
-    readTime: 5,
+    readTime: 7,
     category: 'Zelfregulatie',
     content: `
 ## Maandagochtend, 07:48
@@ -2544,7 +2544,7 @@ Wat gebeurt er eigenlijk op het moment dat je geduld op is?
     title: 'Ik Had Mezelf Beloofd Dat Ik Nooit Zou Schreeuwen',
     description: 'Het is zes uur. Je bent moe. Ze luisteren niet. En dan hoor je jezelf. Die stem. Die je niet wilde zijn.',
     date: '2026-02-27',
-    readTime: 5,
+    readTime: 4,
     category: 'Zelfregulatie',
     content: `
 ## De belofte in het ziekenhuis
@@ -2768,7 +2768,7 @@ Hoe vind je de balans tussen vasthouden en loslaten? Tussen aanwezig zijn en rui
     title: 'Ik Liep Weg Terwijl Ze Mijn Naam Schreeuwde',
     description: 'Je kind klampt zich aan je been. Je maakt de vingers los. Je loopt weg. En in de auto zit je stil.',
     date: '2026-02-21',
-    readTime: 5,
+    readTime: 6,
     category: 'Emotiecoaching',
     content: `
 ## Het schoolplein, maandagochtend
@@ -2882,7 +2882,7 @@ Dat is de vraag die ik nog niet kon beantwoorden.
     title: 'Nee, Niet Papa. Mama.',
     description: 'Je komt de slaapkamer in voor het slapengaan. Je kind schreeuwt. Niet van blijdschap. Van afwijzing.',
     date: '2026-02-17',
-    readTime: 5,
+    readTime: 7,
     category: 'Aanwezigheid',
     content: `
 ## Dinsdagavond, halfacht
@@ -3082,7 +3082,7 @@ De vraag is niet: hoe voorkom je die meltdowns na school? Die kun je niet voorko
     title: 'Ik Zei Sorry. Ze Haalde Haar Schouders Op',
     description: 'Je hebt geschreeuwd. Je wilt het goedmaken. Je zegt sorry. En dan gebeurt er niks.',
     date: '2026-02-09',
-    readTime: 5,
+    readTime: 4,
     category: 'Herstel',
     content: `
 ## Kwart over acht vanmorgen

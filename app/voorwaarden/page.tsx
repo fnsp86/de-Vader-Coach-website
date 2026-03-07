@@ -3,6 +3,12 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Algemene Voorwaarden',
   description: 'Algemene voorwaarden van De Vadercoach. Toepasselijkheid, betalingen, herroeping, aansprakelijkheid en meer.',
+  openGraph: {
+    title: 'Algemene Voorwaarden - De Vadercoach',
+    description: 'Algemene voorwaarden van De Vadercoach. Toepasselijkheid, betalingen, herroeping, aansprakelijkheid en meer.',
+    type: 'website',
+    url: 'https://devadercoach.nl/voorwaarden',
+  },
   alternates: {
     canonical: 'https://devadercoach.nl/voorwaarden',
   },
