@@ -12,7 +12,15 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Payment not configured' }, { status: 500 });
   }
 
-  const { slug, email, discountCode } = await request.json();
+  const body = await request.json();
+  const { slug, email, discountCode } = body;
+
+  if (typeof slug !== 'string' || slug.length > 100 ||
+      (email && typeof email === 'string' && email.length > 320) ||
+      (discountCode && typeof discountCode === 'string' && discountCode.length > 50)) {
+    return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
+  }
+
   const course = getCourse(slug);
 
   if (!course || course.status !== 'available' || !course.pdfPath) {

@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
 
   const { code, slug } = await request.json();
 
-  if (!code || typeof code !== 'string') {
+  if (!code || typeof code !== 'string' || code.length > 50) {
     return NextResponse.json({ valid: false, error: 'Ongeldige code' });
   }
 

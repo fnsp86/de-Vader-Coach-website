@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { NextRequest, NextResponse } from 'next/server';
+import { checkRateLimit } from '@/lib/rate-limit';
 
 // No edge runtime - Instagram can't fetch from edge functions
 
@@ -119,6 +120,9 @@ function SkillBadge({ skill, color }: { skill: string; color: string }) {
 }
 
 export async function GET(request: NextRequest) {
+  const rateLimited = checkRateLimit(request, { maxRequests: 20, windowMs: 60_000 });
+  if (rateLimited) return rateLimited;
+
   try {
     const { searchParams } = request.nextUrl;
     const template = searchParams.get('template') ?? 'quote';
@@ -195,7 +199,7 @@ export async function GET(request: NextRequest) {
     );
   } catch (e) {
     return NextResponse.json(
-      { error: `Image generation failed: ${e instanceof Error ? e.message : String(e)}` },
+      { error: 'Image generation failed' },
       { status: 500 },
     );
   }

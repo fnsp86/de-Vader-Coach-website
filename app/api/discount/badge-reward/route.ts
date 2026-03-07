@@ -30,7 +30,10 @@ export async function POST(request: NextRequest) {
   const body = await request.json();
   const { badgeId, email, appSecret } = body;
 
-  if (!badgeId || !email || !appSecret) {
+  if (!badgeId || !email || !appSecret ||
+      typeof badgeId !== 'string' || badgeId.length > 50 ||
+      typeof email !== 'string' || email.length > 320 ||
+      typeof appSecret !== 'string' || appSecret.length > 200) {
     return NextResponse.json({ error: 'Missing parameters' }, { status: 400 });
   }
 

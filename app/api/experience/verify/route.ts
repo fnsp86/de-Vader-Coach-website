@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
   try {
     const { token } = await request.json();
 
-    if (!token || typeof token !== 'string') {
+    if (!token || typeof token !== 'string' || token.length > 200) {
       return NextResponse.json({ error: 'Token is vereist.' }, { status: 400 });
     }
 

@@ -14,6 +14,13 @@ export async function cacheImageForInstagram(imageUrl: string): Promise<CachedIm
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://devadercoach.nl';
   const fullUrl = imageUrl.startsWith('http') ? imageUrl : `${baseUrl}${imageUrl}`;
 
+  // Prevent SSRF: only allow our own domain
+  const parsed = new URL(fullUrl);
+  const allowedHosts = ['devadercoach.nl', 'www.devadercoach.nl', 'localhost'];
+  if (!allowedHosts.some((h) => parsed.hostname === h || parsed.hostname.endsWith(`.${h}`))) {
+    throw new Error(`Niet-toegestaan domein: ${parsed.hostname}`);
+  }
+
   const res = await fetch(fullUrl);
   if (!res.ok) throw new Error(`Kon afbeelding niet ophalen (${res.status})`);
 
