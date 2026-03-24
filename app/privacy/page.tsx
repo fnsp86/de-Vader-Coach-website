@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <h1 className="text-3xl font-extrabold mb-2" style={{ color: 'var(--text)' }}>
         Privacyverklaring
       </h1>
-      <p className="text-sm mb-8" style={{ color: 'var(--text3)' }}>Laatst bijgewerkt: 28 februari 2026</p>
+      <p className="text-sm mb-8" style={{ color: 'var(--text3)' }}>Laatst bijgewerkt: 24 maart 2026</p>
 
       <div className="space-y-6 text-sm leading-relaxed" style={{ color: 'var(--text2)' }}>
         <p>
@@ -35,10 +35,17 @@ export default function PrivacyPage() {
         <ul className="list-disc pl-5 space-y-1">
           <li>E-mail: <a href="mailto:info@devadercoach.nl" className="text-amber-400 hover:underline">info@devadercoach.nl</a></li>
           <li>Website: devadercoach.nl</li>
+          <li>App: De Vadercoach (iOS en Android)</li>
         </ul>
+        <p>
+          Deze privacyverklaring is van toepassing op zowel onze website (devadercoach.nl) als onze mobiele app
+          (De Vadercoach, beschikbaar via de App Store en Google Play).
+        </p>
 
         <h2 className="text-lg font-bold pt-4" style={{ color: 'var(--text)' }}>2. Welke gegevens verzamelen wij?</h2>
         <p>Wij verzamelen uitsluitend de gegevens die nodig zijn om onze producten en diensten te leveren:</p>
+
+        <h3 className="text-base font-semibold pt-2" style={{ color: 'var(--text)' }}>Via de website</h3>
         <ul className="list-disc pl-5 space-y-1">
           <li><strong style={{ color: 'var(--text)' }}>E-mailadres</strong> &ndash; bij het downloaden van de gratis snelgids, bij een aankoop, of bij contact via het contactformulier.</li>
           <li><strong style={{ color: 'var(--text)' }}>Betaalgegevens</strong> &ndash; worden verwerkt door onze betaalprovider Mollie B.V. Wij slaan zelf geen betaalgegevens op zoals creditcardnummers of bankrekeningnummers.</li>
@@ -46,9 +53,20 @@ export default function PrivacyPage() {
           <li><strong style={{ color: 'var(--text)' }}>Nieuwsbriefstatus</strong> &ndash; wij houden bij in welke fase van de automatische mailreeks je zit en of je bent uitgeschreven.</li>
           <li><strong style={{ color: 'var(--text)' }}>Geanonimiseerde gebruiksgegevens</strong> &ndash; paginabezoeken op de website worden anoniem bijgehouden voor statistische doeleinden. Deze gegevens zijn niet herleidbaar tot een persoon.</li>
         </ul>
+
+        <h3 className="text-base font-semibold pt-2" style={{ color: 'var(--text)' }}>Via de app</h3>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><strong style={{ color: 'var(--text)' }}>Account</strong> &ndash; e-mailadres en een zelfgekozen wachtwoord voor het aanmaken van je account. Je wachtwoord wordt versleuteld opgeslagen en is niet voor ons inzichtelijk.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Profielgegevens</strong> &ndash; je naam, optioneel een profielfoto, bio en stad. Deze gegevens zijn zichtbaar voor andere gebruikers in de community.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Voortgang en activiteit</strong> &ndash; je taakvoortgang, leerresultaten, reflecties en Vader Pulse check-ins. Deze worden lokaal op je apparaat opgeslagen.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Community-berichten</strong> &ndash; berichten, tips en ervaringen die je deelt in de community zijn zichtbaar voor andere gebruikers.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Push-notificatiepermissie</strong> &ndash; als je notificaties inschakelt, ontvangen wij een token om meldingen te kunnen sturen. Dit token is niet herleidbaar tot je persoon zonder koppeling aan je account.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Locatie (optioneel)</strong> &ndash; alleen als je dit expliciet toestaat om vaders bij jou in de buurt te vinden. Je locatie wordt nooit gedeeld met derden.</li>
+        </ul>
+
         <p>
-          Wij verzamelen <strong style={{ color: 'var(--text)' }}>geen</strong> namen, adressen, telefoonnummers
-          of andere persoonsgegevens buiten het bovenstaande, tenzij je deze zelf verstrekt via het contactformulier.
+          Wij verzamelen <strong style={{ color: 'var(--text)' }}>geen</strong> telefoonnummers, adressen
+          of andere persoonsgegevens buiten het bovenstaande, tenzij je deze zelf verstrekt.
         </p>
 
         <h2 className="text-lg font-bold pt-4" style={{ color: 'var(--text)' }}>3. Grondslagen voor verwerking</h2>
@@ -107,6 +125,8 @@ export default function PrivacyPage() {
           <li><strong style={{ color: 'var(--text)' }}>Resend</strong> (VS) &ndash; verzending van e-mails (nieuwsbrieven, welkomstmails, automatische reeks). Resend verwerkt je e-mailadres uitsluitend voor het afleveren van onze berichten.</li>
           <li><strong style={{ color: 'var(--text)' }}>Vercel Inc.</strong> (VS) &ndash; hosting van onze website. Vercel verwerkt verkeersgegevens voor het serveren van pagina&apos;s.</li>
           <li><strong style={{ color: 'var(--text)' }}>Upstash</strong> (EU) &ndash; opslag van e-mailadressen, nieuwsbriefstatus en kortingscodes via een versleutelde Redis-database.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Supabase Inc.</strong> (VS, data in EU) &ndash; authenticatie, database en opslag voor de mobiele app. Supabase verwerkt je accountgegevens, profielinformatie en community-berichten.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Expo / EAS</strong> (VS) &ndash; distributie van app-updates en verzending van push-notificaties. Expo verwerkt push-tokens voor het afleveren van meldingen.</li>
         </ul>
         <p>
           Voor verwerkers buiten de EU (Resend, Vercel) is de doorgifte gebaseerd op de Standard Contractual
@@ -133,6 +153,9 @@ export default function PrivacyPage() {
           <li><strong style={{ color: 'var(--text)' }}>Aankoopgegevens</strong> &ndash; zolang nodig voor het leveren van toegang tot gekochte producten, met een minimum van 7 jaar voor factuurgegevens (fiscale bewaarplicht).</li>
           <li><strong style={{ color: 'var(--text)' }}>Kortingscodes</strong> &ndash; maximaal 1 jaar na verloopdatum.</li>
           <li><strong style={{ color: 'var(--text)' }}>Contactformulierberichten</strong> &ndash; maximaal 1 jaar na afhandeling.</li>
+          <li><strong style={{ color: 'var(--text)' }}>App-account</strong> &ndash; zolang je account actief is. Bij verwijdering van je account worden je gegevens binnen 30 dagen verwijderd.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Community-berichten</strong> &ndash; zolang je account actief is. Bij verwijdering van je account worden je berichten geanonimiseerd of verwijderd.</li>
+          <li><strong style={{ color: 'var(--text)' }}>Lokale app-gegevens</strong> &ndash; voortgang, reflecties en instellingen worden lokaal op je apparaat opgeslagen en verdwijnen bij het verwijderen van de app.</li>
         </ul>
 
         <h2 className="text-lg font-bold pt-4" style={{ color: 'var(--text)' }}>10. Beveiliging</h2>
