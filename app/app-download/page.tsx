@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'De Vadercoach App - Opvoedtools voor Vaders',
     description:
-      'Dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders. Eenmalige aankoop, geen abonnement.',
+      'Gratis app met dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders.',
     url: 'https://devadercoach.nl/app-download',
   },
   alternates: {
@@ -75,8 +75,9 @@ const appSchema = {
     'Dagelijkse oefeningen, trainingen over 8 opvoedvaardigheden en een community van vaders.',
   offers: {
     '@type': 'Offer',
+    price: '0',
     priceCurrency: 'EUR',
-    availability: 'https://schema.org/PreOrder',
+    availability: 'https://schema.org/InStock',
   },
 };
 
@@ -107,53 +108,54 @@ export default function AppDownloadPage() {
             </p>
             <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--text2)' }}>
               De app bevat korte trainingen over elk onderwerp, van emotiecoaching tot grenzen stellen.
-              Eenmalige aankoop, geen abonnement. Koop eenmaal en krijg toegang tot alles.
+              Compleet gratis, geen abonnement, geen verborgen kosten.
             </p>
 
             <div className="rounded-xl border p-4 mb-6 flex items-center gap-4" style={{ backgroundColor: 'var(--surface)', borderColor: 'var(--border)' }}>
               <div className="text-2xl font-extrabold" style={{ color: 'var(--amber-text)' }}>
-                Eenmalig
+                Gratis
               </div>
               <div>
-                <p className="text-sm font-semibold" style={{ color: 'var(--text)' }}>Geen abonnement</p>
-                <p className="text-xs" style={{ color: 'var(--text3)' }}>Koop eenmaal, krijg alle trainingen en updates</p>
+                <p className="text-sm font-semibold" style={{ color: 'var(--text)' }}>Helemaal gratis</p>
+                <p className="text-xs" style={{ color: 'var(--text3)' }}>Alle trainingen, oefeningen en updates zonder kosten</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://apps.apple.com/us/app/de-vadercoach/id6759968429"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl text-center text-sm font-bold transition-colors hover:opacity-90"
+                style={{ backgroundColor: 'var(--amber-text)', color: '#000' }}
+              >
+                Download in App Store
+              </a>
               <div
                 className="px-6 py-3 rounded-xl text-center text-sm font-bold"
                 style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
               >
-                App Store · Binnenkort
-              </div>
-              <div
-                className="px-6 py-3 rounded-xl text-center text-sm font-bold"
-                style={{ backgroundColor: 'var(--surface2)', color: 'var(--text3)' }}
-              >
-                Google Play · Binnenkort
+                Google Play - Binnenkort
               </div>
             </div>
           </div>
 
-          {/* App preview placeholder */}
+          {/* App promo video */}
           <div className="flex justify-center">
             <div
-              className="w-64 h-[520px] rounded-[36px] border-4 flex flex-col items-center justify-center gap-4 overflow-hidden"
+              className="w-72 sm:w-80 rounded-[28px] border-4 overflow-hidden"
               style={{ borderColor: 'var(--border)', backgroundColor: '#111318' }}
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl" style={{ backgroundColor: '#F59E0B' }}>
-                <Heart className="h-8 w-8 text-black" strokeWidth={2.5} />
-              </div>
-              <span className="text-base font-extrabold text-white">De Vadercoach</span>
-              <div className="grid grid-cols-4 gap-1.5 px-4 mt-2">
-                {SKILLS.map((s) => (
-                  <div key={s.name} className="flex h-8 w-8 items-center justify-center rounded-lg" style={{ backgroundColor: s.color + '20' }}>
-                    <s.icon className="h-3.5 w-3.5" style={{ color: s.color }} />
-                  </div>
-                ))}
-              </div>
-              <span className="text-xs text-gray-500 mt-2">App preview</span>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto"
+                poster="/brand/app-icon.png"
+              >
+                <source src="/app-promo.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

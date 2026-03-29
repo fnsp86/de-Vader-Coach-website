@@ -44,7 +44,7 @@ const FAQ_ALGEMEEN = [
   },
   {
     q: 'Heb ik een abonnement nodig?',
-    a: 'Nee. Alle producten van De Vadercoach zijn eenmalige aankopen. Je betaalt een keer en krijgt permanent toegang. Er zijn geen maandelijkse kosten of verborgen abonnementen.',
+    a: 'Nee. De Vadercoach app is helemaal gratis. De cursussen en Experience zijn eenmalige aankopen zonder abonnement.',
   },
   {
     q: 'Hoe kan ik contact opnemen?',
@@ -59,7 +59,7 @@ const FAQ_APP = [
   },
   {
     q: 'Wat kost de app?',
-    a: 'De app is beschikbaar voor een eenmalige bijdrage. Je betaalt een keer en krijgt volledige toegang tot alle content, inclusief de cursussen over de 8 vadervaardigheden. Er zijn geen in-app aankopen of abonnementen.',
+    a: 'De app is helemaal gratis. Je krijgt volledige toegang tot alle content, inclusief de cursussen over de 8 vadervaardigheden. Er zijn geen in-app aankopen of abonnementen.',
   },
   {
     q: 'Op welke telefoons werkt de app?',

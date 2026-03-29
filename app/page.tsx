@@ -268,9 +268,9 @@ export default function HomePage() {
                   ))}
                 </ul>
                 <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'var(--border)' }}>
-                  <span className="text-[13px]" style={{ color: 'var(--text3)' }}>Eenmalige aankoop</span>
+                  <span className="text-[13px] font-bold" style={{ color: 'var(--amber-text)' }}>Gratis</span>
                   <Link href="/app-download" className="inline-flex items-center gap-1 text-sm font-bold hover:gap-2 transition-all" style={{ color: 'var(--amber-text)' }}>
-                    Bekijk app <ArrowRight className="h-3.5 w-3.5" />
+                    Download app <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </div>
               </div>
@@ -763,7 +763,7 @@ export default function HomePage() {
                 name: 'Heb ik een abonnement nodig?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Nee. Alle producten van De Vadercoach zijn eenmalige aankopen. Je betaalt een keer en krijgt permanent toegang. Er zijn geen maandelijkse kosten of verborgen abonnementen.',
+                  text: 'Nee. De Vadercoach app is helemaal gratis. De cursussen en Experience zijn eenmalige aankopen zonder abonnement.',
                 },
               },
             ],
