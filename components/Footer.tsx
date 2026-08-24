@@ -81,6 +81,14 @@ export default function Footer() {
         <div className="mt-10 pt-6 border-t text-center" style={{ borderColor: 'var(--border)' }}>
           <p className="text-xs" style={{ color: 'var(--text3)' }}>
             &copy; {new Date().getFullYear()} De Vadercoach. Alle rechten voorbehouden.
+            {' · '}
+            <a
+              href="https://orembaworks.nl"
+              className="transition-colors hover:text-amber-400"
+              style={{ color: 'var(--text3)' }}
+            >
+              Website door Oremba Works
+            </a>
           </p>
         </div>
       </div>
